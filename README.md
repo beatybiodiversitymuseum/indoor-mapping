@@ -39,52 +39,6 @@ Mapped indoor gallery features reference one confirmed underground level:
 ```text
 41d0e8ca-d315-4b25-938c-7955db2daf2e
 ```
-
-## Current Data Status
-
-The existing GeoJSON is generally well formed:
-
-- Each file is valid JSON and uses a `FeatureCollection`.
-- Fixture polygons are closed.
-- Coordinates are in normal longitude/latitude order.
-- Fixture `display_point` values appear to be inside their polygons.
-- Feature `id` values and `feature_type` values are present.
-
-Confirmed modeling decisions:
-
-- `geojson/venue.geojson` uses a locally confirmed convex hull around the Beaty, Biodiversity Research Centre, AERL, and AERL/Beaty overhang footprints.
-- Fossil excavations are represented as searchable exhibit points in `geojson/amenity.geojson` and as walkable glass-covered floor polygons in `geojson/detail.geojson`.
-- Cabinets and drawer/island boxes are modeled as `furniture` fixtures in `geojson/fixture.geojson` because they are important to pedestrian navigation and the visitor experience.
-- Cabinet and drawer exhibit viewing points have been derived from the original wayfinding offset points and stored in `geojson/amenity.geojson`.
-- Confirmed walking routes are stored in `geojson/navigation.geojson` as a local extension layer for routing and app use. IMDF 1.0 does not define a standard pedestrian routing graph layer.
-
-Remaining improvements:
-
-1. Add real openings.
-   `geojson/opening.geojson` is currently empty because entrances and doors need ground-truth placement. Official indoor maps should add pedestrian entrances, internal thresholds, and accessibility information where known.
-
-2. Decide whether future integrations need anchors.
-   Many features have their own geometry and do not need anchors. Navigation nodes can be used as anchor candidates later if an app, export, or collection-management integration needs stable attachment points.
-
-3. Review open data dictionary questions.
-   `DATA_DICTIONARY.md` defines local terms and lists a few museum-language questions that still need confirmation.
-
-
-## Basic Editing Rules
-
-Small edits are safest. Change one thing at a time, then test the file.
-
-Please keep these rules in mind:
-
-- Do not change coordinates unless you are intentionally moving a map feature.
-- Keep longitude first and latitude second: `[longitude, latitude]`.
-- Keep every feature `id` unique.
-- Keep `alt_name` values unique within a file when they are used like identifiers. In these files, labels use language objects such as `{ "en": "Column 1, Cabinet 01" }`.
-- Keep `level_id` unchanged unless a feature truly belongs to a different floor.
-- For polygons, the first and last coordinate pair in each ring must match.
-- Use clear names that museum staff and visitors can understand.
-- Avoid deleting features unless you are sure the object no longer belongs on the map.
-
 ## Testing With geojson.io
 
 [geojson.io](https://geojson.io/) is a beginner-friendly website for checking and previewing GeoJSON.
@@ -107,26 +61,6 @@ Before saving a change, confirm:
 - There are no JSON errors.
 - You did not accidentally remove the opening `{`, closing `}`, or commas between features.
 
-## Suggested Contribution Workflow
-
-For contributors who are new to GitHub:
-
-1. Make a copy or branch before editing.
-2. Edit only one GeoJSON file at a time.
-3. Test the edited file in geojson.io.
-4. Write down what changed in plain language.
-5. Ask another person to review the map visually.
-6. Submit the change with a short description, such as:
-
-```text
-Moved Cabinet 24 display point and corrected its name.
-```
-
-Good change descriptions answer three questions:
-
-- What object changed?
-- What changed about it?
-- Why was the change needed?
 
 ## Adding Amenities and Openings
 
