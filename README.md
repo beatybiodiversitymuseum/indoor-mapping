@@ -128,42 +128,241 @@ Good change descriptions answer three questions:
 - What changed about it?
 - Why was the change needed?
 
-## Adding Openings And Amenities
+## Adding Amenities and Openings
 
 Two common contributions are openings and amenities. You do not need to know how to program, but please be precise and test the file in geojson.io before submitting changes.
-
-### Openings
-
-Openings are places where a person can pass through a boundary, such as exterior entrances, doors, and internal thresholds between spaces. They belong in `geojson/opening.geojson`.
-
-`geojson/opening.geojson` is currently empty because these locations still need someone to measure or confirm them in person. Please do not add guessed doorway locations.
-
-For each opening, record:
-
-- What it is: for example, main entrance, gallery door, staff-only door, elevator threshold, or accessible entrance.
-- Where it is: mark the point or short doorway line in geojson.io, or provide a photo/sketch with enough context for someone else to place it.
-- Whether visitors can use it.
-- Whether it is accessible for wheelchairs, strollers, or mobility devices.
-- Any restrictions: for example, staff only, emergency exit only, locked after hours, or one-way.
-- How you confirmed it: measured on site, checked against a floor plan, or visually confirmed in the museum.
-
-If you are not comfortable editing GeoJSON directly, it is enough to submit those notes with a screenshot from geojson.io or a marked-up floor plan. A maintainer can turn the notes into the correct `opening.geojson` feature.
 
 ### Amenities
 
 Amenities are visitor-facing points of interest, such as exhibits, fossil excavation viewing points, cabinet exhibit points, drawer exhibit points, kiosks, service points, or other things a visitor may search for or navigate to. They belong in `geojson/amenity.geojson`.
 
-For each amenity, record:
+You do not need to know how to code to help add an amenity. The most important thing is to collect clear, accurate information so that the JSON entry can be created or reviewed correctly.
 
-- The visitor-facing name.
-- The amenity type or local category, if known.
-- The exact point visitors should navigate to, not necessarily the center of the object.
-- Whether the point is visible to visitors.
-- Whether it is important for pedestrian navigation.
-- Any related fixture, such as a cabinet or drawer box, if you know it.
-- How you confirmed it: visually confirmed, derived from existing wayfinding data, measured on site, or checked against another source.
+If you are submitting a new amenity, please use the GitHub issue template for amenity contributions. The issue template asks for the information a maintainer needs without requiring you to edit GeoJSON.
 
-When placing an amenity in geojson.io, use a point marker. Put the point where a visitor would naturally stand, look, or arrive. For cabinet and drawer exhibits, that is usually the viewing position near the fixture rather than the fixture centroid.
+Each amenity should answer these questions:
+
+#### 1. What is the visitor-facing name?
+
+Use the name that a visitor, museum staff member, or exhibit label would recognize.
+
+Good examples:
+
+```text
+Fossil Excavation Viewing Area
+Column 1, Cabinet 01
+Drawer Island 03
+```
+
+Avoid vague names such as:
+
+```text
+Thing near wall
+Display
+Cabinet
+```
+
+If there is a label on the object, copy the label exactly. If there is no label, describe it clearly and consistently.
+
+#### 2. What kind of amenity is it?
+
+Write down what the point represents.
+
+Examples:
+
+```text
+fossil excavation viewing point
+cabinet exhibit point
+drawer exhibit point
+kiosk
+service point
+visitor information point
+```
+
+If you are not sure which category to use, write your best plain-language description. A maintainer can choose the final category.
+
+#### 3. Where should a visitor navigate to?
+
+The amenity point should usually mark where a visitor should stand, look, or arrive — not necessarily the exact middle of the object.
+
+For example:
+
+- For a cabinet, place the point in front of the cabinet where a visitor would stand to view it.
+- For a drawer or island exhibit, place the point at the normal viewing side.
+- For a fossil excavation, place the point where visitors are expected to stop and look.
+- For a kiosk or service point, place the point where a visitor would approach it.
+
+Do not guess. If you are unsure, leave a note explaining the uncertainty.
+
+#### 4. How did you confirm the location?
+
+Every new amenity should include how the location was confirmed. This helps reviewers know whether the point is reliable.
+
+Use one of these methods where possible:
+
+```text
+visually confirmed on site
+measured on site
+recorded with phone GPS
+derived from existing wayfinding data
+checked against a floor plan
+confirmed by museum staff
+```
+
+Phone GPS can be useful, but indoor GPS is often inaccurate. If you use a phone, record the location while standing as close as possible to the amenity and include a note that it was collected indoors with a phone.
+
+#### 5. How can someone measure the location without editing JSON?
+
+If you cannot confidently place the point in GeoJSON, collect enough information for someone else to place it.
+
+Useful options:
+
+- Use your phone to record GPS coordinates while standing at the visitor viewing point.
+- Take a photo showing the amenity and nearby fixed objects, such as walls, doors, stairs, elevators, columns, or cabinets.
+- Measure with a tape measure from a confirmed spot already on the map.
+- Mark the point on a printed floor plan or screenshot.
+- Write a short description of the location using nearby landmarks.
+
+Good measurement examples:
+
+```text
+Standing point is 1.2 m in front of Cabinet 01, centered on the cabinet face.
+```
+
+```text
+Point is 0.8 m east of the southwest corner of Drawer Island 03.
+```
+
+```text
+Point is directly in front of the fossil excavation glass, aligned with the center of the viewing edge.
+```
+
+```text
+Phone GPS recorded while standing at the viewing point. Indoor GPS may be approximate.
+```
+
+If measuring from a confirmed spot, use a spot that is unlikely to move, such as:
+
+- a wall corner
+- a doorway
+- a column
+- a stair or elevator entrance
+- a cabinet or fixture already mapped in `geojson/fixture.geojson`
+
+Avoid measuring from movable objects such as chairs, temporary signs, or garbage bins.
+
+#### 6. Is the amenity visible to visitors?
+
+Record whether a normal visitor can see or access the amenity.
+
+Examples:
+
+```text
+visible to visitors
+not visible to visitors
+staff-only
+temporarily hidden
+behind glass
+inside cabinet
+```
+
+#### 7. Is it important for navigation?
+
+Record whether visitors may reasonably search for this amenity or use it as a destination.
+
+Examples:
+
+```text
+yes, visitors may search for it
+yes, it is a major exhibit point
+no, it is only supporting information
+unknown
+```
+
+#### 8. Is it related to a fixture?
+
+If the amenity belongs to a cabinet, drawer box, island, or other mapped object, write down the related fixture name or ID if you know it.
+
+Examples:
+
+```text
+related to Cabinet 01
+related to Drawer Island 03
+related fixture unknown
+```
+
+Do not invent a fixture ID. If you do not know it, leave a note.
+
+---
+
+#### Beginner-friendly checklist for a new amenity
+
+Before submitting a new amenity, make sure you have recorded:
+
+- Name of the amenity
+- Type of amenity
+- Exact visitor standing/viewing point
+- How the location was confirmed
+- Whether it is visible to visitors
+- Whether it is useful for navigation
+- Related cabinet, drawer, island, or fixture, if known
+- Any uncertainty or notes for the reviewer
+
+---
+
+#### Example notes for a new amenity
+
+A contributor who does not want to edit JSON directly can submit notes like this:
+
+```text
+Amenity name: Column 1, Cabinet 01
+Amenity type: cabinet exhibit point
+Visitor point: Stand in front of the cabinet, centered on the cabinet face.
+Location confirmation: Measured on site.
+Measurement: Point is 1.0 m directly in front of the cabinet face.
+Visible to visitors: Yes.
+Important for navigation: Yes.
+Related fixture: Cabinet 01.
+Notes: Point should be the viewing position, not the center of the cabinet.
+```
+
+Another example:
+
+```text
+Amenity name: Fossil Excavation Viewing Area
+Amenity type: fossil excavation viewing point
+Visitor point: On the glass viewing edge where visitors naturally stop.
+Location confirmation: Phone GPS and photo taken on site.
+Measurement: Not measured with tape.
+Visible to visitors: Yes.
+Important for navigation: Yes.
+Related fixture: None known.
+Notes: Indoor phone GPS may be approximate. Photo shows nearby wall and cabinet for placement.
+```
+
+A maintainer can turn these notes into a correct entry in `geojson/amenity.geojson`.
+
+---
+
+#### If you are editing the JSON directly
+
+Copy an existing amenity entry that is similar to the one you want to add, paste it as a new feature, and then change only the values that describe the new amenity.
+
+Be careful to:
+
+- Give the new feature a unique `id`.
+- Keep coordinates in this order: `[longitude, latitude]`.
+- Use a point marker for the amenity location.
+- Keep the existing `level_id` unless the amenity is on a different floor.
+- Keep commas between features.
+- Test the full file in geojson.io before submitting.
+
+If you are not sure what a field means, do not guess. Add a plain-language note instead, or ask a maintainer to review it.
+
+
+### Openings
+
+Openings are places where a person can pass through a boundary, such as exterior entrances, doors, and internal thresholds between spaces. Follow the same process as Amenities, but record them as openings.
 
 ## Useful References
 
