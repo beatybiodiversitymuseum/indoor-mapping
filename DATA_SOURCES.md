@@ -76,6 +76,50 @@ These features are modeled as `category: "furniture"` because they are important
 - `review_status: "locally_confirmed"`.
 - `source_collection`, recording whether the feature came from the former cabinet or drawer source file.
 
+## Derived Cabinet And Drawer Exhibit Amenities
+
+`geojson/amenity.geojson` includes exhibit points derived from `geojson/wayfinding.geojson` for exhibits built into or associated with cabinets and drawer/island boxes.
+
+Extraction method:
+
+- Use wayfinding points with `wayfinding_type: "cabinet_offset_point"` or `wayfinding_type: "di_offset_point"`.
+- Match each wayfinding point to a furniture fixture in `geojson/fixture.geojson` by `alt_name`.
+- Create an amenity point at the wayfinding offset coordinate with `category: "exhibit"`.
+- Link the amenity back to its furniture polygon with `related_fixture_id`.
+- Preserve the source point with `source_wayfinding_id` and `source_wayfinding_type`.
+
+These amenities are marked with:
+
+- `local_category: "cabinet_exhibit"` or `local_category: "drawer_exhibit"`.
+- `pedestrian_importance: true`.
+- `visible_to_visitors: true`.
+- `review_status: "derived_from_wayfinding_offset"`.
+
+The cabinet and drawer offset points were consumed into `geojson/amenity.geojson`. Fossil center points duplicate the fossil excavation exhibit/detail data and were not preserved as a separate layer.
+
+## Confirmed Pedestrian Navigation
+
+`geojson/navigation.geojson` is a local extension layer for confirmed pedestrian routing. IMDF 1.0 does not define a standard routing graph layer, so this file preserves the museum's app/navigation graph separately from architectural layers.
+
+Translated from the former `geojson/wayfinding.geojson` file:
+
+- `walking_grid_point` features became navigation nodes with `category: "walking_node"` and `node_type: "grid_point"`.
+- `walking_path` features became route edges with `category: "walking_route"` and `edge_type: "walking_path"`.
+- `connection_line` features became connection edges with `category: "walking_connection"` and `edge_type: "fixture_or_exhibit_connection"`.
+
+Each navigation feature preserves the original route fields where present, including:
+
+- `grid_index`.
+- `path_index`.
+- `connection_index`.
+- `source`.
+- `target`.
+- `start_point`.
+- `end_point`.
+- `radius`.
+
+Navigation features are marked with `navigation_mode: "pedestrian"`, `indoor: true`, `route_confirmed: true`, and `review_status: "locally_confirmed"`.
+
 ## Confirmed Fossil Excavation Exhibits
 
 Fossil excavations are represented in two layers:

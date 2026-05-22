@@ -19,15 +19,15 @@ The current map data is in the `geojson/` folder:
 | `geojson/unit.geojson` | Estimated underground cabinet gallery unit | `unit` |
 | `geojson/opening.geojson` | Entrances and doors, currently empty | `opening` |
 | `geojson/anchor.geojson` | Starter anchor point for the gallery unit | `anchor` |
-| `geojson/amenity.geojson` | Fossil excavation exhibit points | `amenity` |
+| `geojson/amenity.geojson` | Fossil excavation, cabinet, and drawer exhibit points | `amenity` |
 | `geojson/occupant.geojson` | Occupants, currently empty | `occupant` |
 | `geojson/detail.geojson` | Walkable glass-covered fossil excavation polygons | `detail` |
 | `geojson/section.geojson` | Sections, currently empty | `section` |
 | `geojson/geofence.geojson` | Geofences, currently empty | `geofence` |
 | `geojson/kiosk.geojson` | Kiosks, currently empty | `kiosk` |
+| `geojson/navigation.geojson` | Confirmed pedestrian route graph extension | `navigation` |
 | `geojson/relationship.geojson` | Feature relationships, currently empty | `relationship` |
 | `geojson/fixture.geojson` | Display cabinet and drawer/island box polygons | `fixture` |
-| `geojson/wayfinding.geojson` | Walking grid points, paths, and object connection lines | `wayfinding` |
 
 All current features reference one level:
 
@@ -59,20 +59,17 @@ Recommended updates before treating this as a full IMDF-style indoor map:
 4. Convert `name` and `alt_name` to localized label objects if strict IMDF compatibility is required.
    IMDF examples use label objects such as `{ "en": "Ground Floor" }`, not plain strings. Plain strings are easy to edit and work well in many GeoJSON tools, but strict IMDF tooling may expect localized label objects.
 
-5. Fix duplicate `alt_name` values in `geojson/wayfinding.geojson`.
-   The walking path alternate names repeat later in the file. For example, `path_001`, `path_002`, and following values appear more than once. Alternate identifiers should be unique if they are used by scripts, search, or imports.
+5. Treat `geojson/navigation.geojson` as a custom extension layer.
+   IMDF 1.0 does not define a pedestrian routing graph layer. Confirmed walking grid points, walking paths, and connection lines are stored in `geojson/navigation.geojson` as a local extension for routing and app use.
 
-6. Treat `geojson/wayfinding.geojson` as a custom extension layer.
-   IMDF 1.0 does not define a `wayfinding` feature type. If this data is for a custom website or app, that can be fine. If the goal is Apple Maps or strict IMDF ingestion, represent navigable space with `unit`, `opening`, `amenity`, and `anchor` features, and keep routing edges in a documented extension layer or separate application-specific file.
-
-7. Add real openings.
+6. Add real openings.
    `geojson/opening.geojson` is currently empty because entrances and doors need ground-truth placement. Official indoor maps should add pedestrian entrances, internal thresholds, and accessibility information where known.
 
-8. Add more anchors or remove unused anchor fields.
+7. Add more anchors or remove unused anchor fields.
    The repo now has one starter anchor for the gallery unit, but every existing fixture still has `anchor_id: null`. That is valid for fixtures, but anchors become useful when tying addresses, occupants, amenities, or searchable exhibit records to a physical location.
 
-9. Add a data dictionary for local terms.
-   Terms such as `di_box`, `cabinet_offset_point`, `walking_grid_point`, and `fossil_center_point` are meaningful to this project but not standard IMDF categories. Keep them documented so future contributors know what they mean.
+8. Add a data dictionary for local terms.
+   Terms such as `di_box`, `cabinet_exhibit`, `walking_grid_point`, and `fossil_center_point` are meaningful to this project but not standard IMDF categories. Keep them documented so future contributors know what they mean.
 
 ## Basic Editing Rules
 
