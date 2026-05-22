@@ -1,0 +1,107 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "2bb3dd3d-2be8-4de8-9481-3e4de63a1b42",
+      "type": "Feature",
+      "feature_type": "building",
+      "geometry": null,
+      "properties": {
+        "category": "unspecified",
+        "restriction": null,
+        "name": {
+          "en": "Beaty Biodiversity Museum"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [-123.25092585, 49.2632137]
+        },
+        "address_id": "6f5e5d6f-ec3b-4a6e-bf5d-87c1dc0d7e2a",
+        "source": "OpenStreetMap",
+        "source_url": "https://www.openstreetmap.org/way/36835375",
+        "source_license": "ODbL-1.0",
+        "source_attribution": "OpenStreetMap contributors",
+        "osm_type": "way",
+        "osm_id": "36835375",
+        "osm_name": "Beaty Biodiversity Museum",
+        "osm_building": "yes",
+        "osm_building_levels": "2",
+        "osm_tourism": "museum",
+        "osm_website": "https://beatymuseum.ubc.ca/",
+        "local_category": "museum",
+        "relationship_to_museum": "museum_public_building",
+        "review_status": "locally_confirmed",
+        "local_note": "Primary named OpenStreetMap footprint for the Beaty Biodiversity Museum."
+      }
+    },
+    {
+      "id": "ed437194-4458-4b20-a845-92ababc0b446",
+      "type": "Feature",
+      "feature_type": "building",
+      "geometry": null,
+      "properties": {
+        "category": "unspecified",
+        "restriction": null,
+        "name": {
+          "en": "Biodiversity Research Center"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [-123.2505351, 49.26305005]
+        },
+        "address_id": null,
+        "source": "OpenStreetMap",
+        "source_license": "ODbL-1.0",
+        "source_attribution": "OpenStreetMap contributors",
+        "source_osm_ids": [
+          "83435229",
+          "1395853158"
+        ],
+        "source_urls": [
+          "https://www.openstreetmap.org/way/83435229",
+          "https://www.openstreetmap.org/way/1395853158"
+        ],
+        "local_category": "research_center",
+        "relationship_to_museum": "museum_research_center",
+        "review_status": "locally_confirmed",
+        "local_note": "Locally confirmed as the Biodiversity Research Center. Includes museum labs and offices."
+      }
+    },
+    {
+      "id": "333e92e9-5ea6-4539-9f75-597820d15dbc",
+      "type": "Feature",
+      "feature_type": "building",
+      "geometry": null,
+      "properties": {
+        "category": "unspecified",
+        "restriction": null,
+        "name": {
+          "en": "Aquatic Ecosystems Research Laboratory"
+        },
+        "alt_name": {
+          "en": "AERL"
+        },
+        "display_point": {
+          "type": "Point",
+          "coordinates": [-123.2509852, 49.26374375]
+        },
+        "address_id": null,
+        "source": "OpenStreetMap",
+        "source_url": "https://www.openstreetmap.org/way/33176122",
+        "source_license": "ODbL-1.0",
+        "source_attribution": "OpenStreetMap contributors",
+        "osm_type": "way",
+        "osm_id": "33176122",
+        "osm_name": "Aquatic Ecosystems Research Laboratory",
+        "osm_building": "university",
+        "osm_building_levels": "4",
+        "local_category": "adjacent_research_laboratory",
+        "relationship_to_museum": "shares_overhang_and_bike_parking",
+        "review_status": "locally_confirmed",
+        "local_note": "Shares an overhang and bike parking with the Beaty and should be kept in this source set."
+      }
+    }
+  ]
+}

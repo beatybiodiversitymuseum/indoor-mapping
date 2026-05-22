@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+      "type": "Feature",
+      "feature_type": "level",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-123.2510135, 49.26330852224385],
+            [-123.2501680727888, 49.26330852224385],
+            [-123.2501680727888, 49.26365041140521],
+            [-123.2510135, 49.26365041140521],
+            [-123.2510135, 49.26330852224385]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "unspecified",
+        "restriction": null,
+        "outdoor": false,
+        "ordinal": -1,
+        "name": {
+          "en": "Underground Museum Gallery"
+        },
+        "short_name": {
+          "en": "B1"
+        },
+        "display_point": {
+          "type": "Point",
+          "coordinates": [-123.2505907863944, 49.26347946682453]
+        },
+        "address_id": null,
+        "building_ids": [
+          "2bb3dd3d-2be8-4de8-9481-3e4de63a1b42",
+          "ed437194-4458-4b20-a845-92ababc0b446",
+          "333e92e9-5ea6-4539-9f75-597820d15dbc"
+        ],
+        "geometry_source": "local_confirmed_estimate",
+        "geometry_method": "Rectangle estimated from the overhang southeast corner, eastward projection to the Biodiversity Research Center footprint, and mapped fixture north/south extent.",
+        "source_osm_ids": [
+          "89366251",
+          "83435229"
+        ],
+        "source_urls": [
+          "https://www.openstreetmap.org/way/89366251",
+          "https://www.openstreetmap.org/way/83435229"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    }
+  ]
+}

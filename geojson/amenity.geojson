@@ -1,0 +1,248 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "f3d78fc9-3a75-4a67-b54f-8a368e5f9ab8",
+      "type": "Feature",
+      "feature_type": "amenity",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.25083376571862, 49.26342423854332]
+      },
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fossil Excavation 1"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_1"
+        },
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "address_id": null,
+        "correlation_id": null
+      }
+    },
+    {
+      "id": "5c2dd1ef-5a87-4066-95d8-568e92279dbb",
+      "type": "Feature",
+      "feature_type": "amenity",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.25077594407955, 49.26344480019221]
+      },
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fossil Excavation 2"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_2"
+        },
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "address_id": null,
+        "correlation_id": null
+      }
+    },
+    {
+      "id": "d6638509-f8fc-4c95-b540-e609236b7028",
+      "type": "Feature",
+      "feature_type": "amenity",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.25071854426675, 49.26340572239984]
+      },
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fossil Excavation 3"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_3"
+        },
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "address_id": null,
+        "correlation_id": null
+      }
+    },
+    {
+      "id": "87c661aa-b3b8-41ca-883f-31f457f1ae59",
+      "type": "Feature",
+      "feature_type": "amenity",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.25073744833351, 49.26345865018695]
+      },
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fossil Excavation 4"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_4"
+        },
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "address_id": null,
+        "correlation_id": null
+      }
+    },
+    {
+      "id": "3ee0d9e0-2394-4044-b08c-ddc5fdb8ef51",
+      "type": "Feature",
+      "feature_type": "amenity",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.25048740166173, 49.26348828826163]
+      },
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fossil Excavation 5"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_5"
+        },
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "address_id": null,
+        "correlation_id": null
+      }
+    },
+    {
+      "id": "5cf6b89b-13f6-4990-88da-00ab552f987e",
+      "type": "Feature",
+      "feature_type": "amenity",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.2505097781329, 49.26354538922869]
+      },
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fossil Excavation 6"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_6"
+        },
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "address_id": null,
+        "correlation_id": null
+      }
+    },
+    {
+      "id": "9e69a160-b543-4cb7-b9fd-28b364303284",
+      "type": "Feature",
+      "feature_type": "amenity",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.25044496207497, 49.26349739718059]
+      },
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fossil Excavation 7"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_7"
+        },
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "address_id": null,
+        "correlation_id": null
+      }
+    },
+    {
+      "id": "ad863b1b-b79b-4bd4-b379-1cb5c85b7c30",
+      "type": "Feature",
+      "feature_type": "amenity",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.25034863152653, 49.26353178849791]
+      },
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fossil Excavation 8"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_8"
+        },
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "address_id": null,
+        "correlation_id": null
+      }
+    },
+    {
+      "id": "da26df4f-88e4-455c-880b-0b3fb36b729e",
+      "type": "Feature",
+      "feature_type": "amenity",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.2503715372993, 49.263589323502465]
+      },
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fossil Excavation 9"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_9"
+        },
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "address_id": null,
+        "correlation_id": null
+      }
+    }
+  ]
+}

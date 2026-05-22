@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "9a5e1973-69e9-4be4-b348-38744dcff44e",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-123.2510135, 49.26330852224385],
+            [-123.2501680727888, 49.26330852224385],
+            [-123.2501680727888, 49.26365041140521],
+            [-123.2510135, 49.26365041140521],
+            [-123.2510135, 49.26330852224385]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "room",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "en": "Underground Cabinet Gallery"
+        },
+        "alt_name": null,
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "display_point": {
+          "type": "Point",
+          "coordinates": [-123.2505907863944, 49.26347946682453]
+        },
+        "geometry_source": "local_confirmed_estimate",
+        "geometry_method": "Rectangle estimated from the overhang southeast corner, eastward projection to the Biodiversity Research Center footprint, and mapped fixture north/south extent.",
+        "source_osm_ids": [
+          "89366251",
+          "83435229"
+        ],
+        "source_urls": [
+          "https://www.openstreetmap.org/way/89366251",
+          "https://www.openstreetmap.org/way/83435229"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    }
+  ]
+}

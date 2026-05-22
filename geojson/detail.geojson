@@ -1,0 +1,491 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "fe2ec37b-aa5f-498e-a995-f8008a176fb3",
+      "type": "Feature",
+      "feature_type": "detail",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.2508436251142,
+              49.26343109894651
+            ],
+            [
+              -123.25083720251125,
+              49.263433391907036
+            ],
+            [
+              -123.25082390632306,
+              49.26341737813914
+            ],
+            [
+              -123.25083032892599,
+              49.26341508517788
+            ],
+            [
+              -123.2508436251142,
+              49.26343109894651
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "floor",
+        "name": "Fossil Excavation 1",
+        "alt_name": "fossil_excavation_1",
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25083376571862,
+            49.26342423854332
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "local_category": "glass_floor_exhibit",
+        "material": "glass",
+        "walkable": true,
+        "pedestrian_importance": true,
+        "visible_to_visitors": true,
+        "related_amenity_id": "f3d78fc9-3a75-4a67-b54f-8a368e5f9ab8",
+        "review_status": "locally_confirmed",
+        "note": "Glass-covered fossil excavation detail. Visitors can walk on it, and it is also represented as an exhibit point in amenity.geojson."
+      }
+    },
+    {
+      "id": "781b9819-26d6-4553-8b3d-b51b22458edc",
+      "type": "Feature",
+      "feature_type": "detail",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25078585566986,
+              49.26345172345525
+            ],
+            [
+              -123.25077943306691,
+              49.26345401641478
+            ],
+            [
+              -123.25076603248925,
+              49.2634378769282
+            ],
+            [
+              -123.25077245509218,
+              49.26343558396791
+            ],
+            [
+              -123.25078585566986,
+              49.26345172345525
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "floor",
+        "name": "Fossil Excavation 2",
+        "alt_name": "fossil_excavation_2",
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25077594407955,
+            49.26344480019221
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "local_category": "glass_floor_exhibit",
+        "material": "glass",
+        "walkable": true,
+        "pedestrian_importance": true,
+        "visible_to_visitors": true,
+        "related_amenity_id": "5c2dd1ef-5a87-4066-95d8-568e92279dbb",
+        "review_status": "locally_confirmed",
+        "note": "Glass-covered fossil excavation detail. Visitors can walk on it, and it is also represented as an exhibit point in amenity.geojson."
+      }
+    },
+    {
+      "id": "cf30cc74-af8c-414e-9511-6ed927e91968",
+      "type": "Feature",
+      "feature_type": "detail",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25072833210504,
+              49.26341249662285
+            ],
+            [
+              -123.2507219095021,
+              49.26341478958423
+            ],
+            [
+              -123.2507087564285,
+              49.26339894817591
+            ],
+            [
+              -123.2507151790314,
+              49.26339665521379
+            ],
+            [
+              -123.25072833210504,
+              49.26341249662285
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "floor",
+        "name": "Fossil Excavation 3",
+        "alt_name": "fossil_excavation_3",
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25071854426675,
+            49.26340572239984
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "local_category": "glass_floor_exhibit",
+        "material": "glass",
+        "walkable": true,
+        "pedestrian_importance": true,
+        "visible_to_visitors": true,
+        "related_amenity_id": "d6638509-f8fc-4c95-b540-e609236b7028",
+        "review_status": "locally_confirmed",
+        "note": "Glass-covered fossil excavation detail. Visitors can walk on it, and it is also represented as an exhibit point in amenity.geojson."
+      }
+    },
+    {
+      "id": "dab88da1-ba77-47a3-a732-f658239f7988",
+      "type": "Feature",
+      "feature_type": "detail",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25074723617178,
+              49.26346542440271
+            ],
+            [
+              -123.25074081356883,
+              49.26346771736162
+            ],
+            [
+              -123.25072766049523,
+              49.263451875970276
+            ],
+            [
+              -123.25073408309817,
+              49.263449583010626
+            ],
+            [
+              -123.25074723617178,
+              49.26346542440271
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "floor",
+        "name": "Fossil Excavation 4",
+        "alt_name": "fossil_excavation_4",
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25073744833351,
+            49.26345865018695
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "local_category": "glass_floor_exhibit",
+        "material": "glass",
+        "walkable": true,
+        "pedestrian_importance": true,
+        "visible_to_visitors": true,
+        "related_amenity_id": "87c661aa-b3b8-41ca-883f-31f457f1ae59",
+        "review_status": "locally_confirmed",
+        "note": "Glass-covered fossil excavation detail. Visitors can walk on it, and it is also represented as an exhibit point in amenity.geojson."
+      }
+    },
+    {
+      "id": "71778974-b6bb-4eb0-8e81-01dc95f2b56d",
+      "type": "Feature",
+      "feature_type": "detail",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25049721812292,
+              49.26349509694635
+            ],
+            [
+              -123.25049079552001,
+              49.26349738990389
+            ],
+            [
+              -123.25047758520056,
+              49.26348147957596
+            ],
+            [
+              -123.25048400780348,
+              49.26347918661768
+            ],
+            [
+              -123.25049721812292,
+              49.26349509694635
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "floor",
+        "name": "Fossil Excavation 5",
+        "alt_name": "fossil_excavation_5",
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25048740166173,
+            49.26348828826163
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "local_category": "glass_floor_exhibit",
+        "material": "glass",
+        "walkable": true,
+        "pedestrian_importance": true,
+        "visible_to_visitors": true,
+        "related_amenity_id": "3ee0d9e0-2394-4044-b08c-ddc5fdb8ef51",
+        "review_status": "locally_confirmed",
+        "note": "Glass-covered fossil excavation detail. Visitors can walk on it, and it is also represented as an exhibit point in amenity.geojson."
+      }
+    },
+    {
+      "id": "80cdd9a0-6b14-4161-bd62-92b896fefd9c",
+      "type": "Feature",
+      "feature_type": "detail",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25051804222159,
+              49.263550328251725
+            ],
+            [
+              -123.25051161961866,
+              49.26355262120669
+            ],
+            [
+              -123.25050151404419,
+              49.26354045020519
+            ],
+            [
+              -123.25050793664711,
+              49.26353815724966
+            ],
+            [
+              -123.25051804222159,
+              49.263550328251725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "floor",
+        "name": "Fossil Excavation 6",
+        "alt_name": "fossil_excavation_6",
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2505097781329,
+            49.26354538922869
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "local_category": "glass_floor_exhibit",
+        "material": "glass",
+        "walkable": true,
+        "pedestrian_importance": true,
+        "visible_to_visitors": true,
+        "related_amenity_id": "5cf6b89b-13f6-4990-88da-00ab552f987e",
+        "review_status": "locally_confirmed",
+        "note": "Glass-covered fossil excavation detail. Visitors can walk on it, and it is also represented as an exhibit point in amenity.geojson."
+      }
+    },
+    {
+      "id": "719822af-cc01-4227-9457-c849d3fdacc6",
+      "type": "Feature",
+      "feature_type": "detail",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25045859127748,
+              49.26350879787595
+            ],
+            [
+              -123.25045216867456,
+              49.26351109083286
+            ],
+            [
+              -123.25043133287247,
+              49.26348599648264
+            ],
+            [
+              -123.25043775547539,
+              49.26348370352457
+            ],
+            [
+              -123.25045859127748,
+              49.26350879787595
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "floor",
+        "name": "Fossil Excavation 7",
+        "alt_name": "fossil_excavation_7",
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25044496207497,
+            49.26349739718059
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "local_category": "glass_floor_exhibit",
+        "material": "glass",
+        "walkable": true,
+        "pedestrian_importance": true,
+        "visible_to_visitors": true,
+        "related_amenity_id": "9e69a160-b543-4cb7-b9fd-28b364303284",
+        "review_status": "locally_confirmed",
+        "note": "Glass-covered fossil excavation detail. Visitors can walk on it, and it is also represented as an exhibit point in amenity.geojson."
+      }
+    },
+    {
+      "id": "3399edf4-21dd-41bd-b5e8-3e028210d3f9",
+      "type": "Feature",
+      "feature_type": "detail",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25036226072905,
+              49.2635431891853
+            ],
+            [
+              -123.25035583812613,
+              49.2635454821406
+            ],
+            [
+              -123.25033500232404,
+              49.26352038780787
+            ],
+            [
+              -123.25034142492696,
+              49.2635180948514
+            ],
+            [
+              -123.25036226072905,
+              49.2635431891853
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "floor",
+        "name": "Fossil Excavation 8",
+        "alt_name": "fossil_excavation_8",
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25034863152653,
+            49.26353178849791
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "local_category": "glass_floor_exhibit",
+        "material": "glass",
+        "walkable": true,
+        "pedestrian_importance": true,
+        "visible_to_visitors": true,
+        "related_amenity_id": "ad863b1b-b79b-4bd4-b379-1cb5c85b7c30",
+        "review_status": "locally_confirmed",
+        "note": "Glass-covered fossil excavation detail. Visitors can walk on it, and it is also represented as an exhibit point in amenity.geojson."
+      }
+    },
+    {
+      "id": "c3b9436d-379b-4bd2-932c-0278961a5c35",
+      "type": "Feature",
+      "feature_type": "detail",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25038130072389,
+              49.26359606829685
+            ],
+            [
+              -123.25037487812097,
+              49.263598361249706
+            ],
+            [
+              -123.2503617738747,
+              49.26358257870717
+            ],
+            [
+              -123.25036819647764,
+              49.2635802857536
+            ],
+            [
+              -123.25038130072389,
+              49.26359606829685
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "floor",
+        "name": "Fossil Excavation 9",
+        "alt_name": "fossil_excavation_9",
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2503715372993,
+            49.263589323502465
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "local_category": "glass_floor_exhibit",
+        "material": "glass",
+        "walkable": true,
+        "pedestrian_importance": true,
+        "visible_to_visitors": true,
+        "related_amenity_id": "da26df4f-88e4-455c-880b-0b3fb36b729e",
+        "review_status": "locally_confirmed",
+        "note": "Glass-covered fossil excavation detail. Visitors can walk on it, and it is also represented as an exhibit point in amenity.geojson."
+      }
+    }
+  ]
+}

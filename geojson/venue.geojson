@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "3d5be8b7-5e72-4e98-9d3a-3db9e3f5bd1f",
+      "type": "Feature",
+      "feature_type": "venue",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-123.2514679, 49.2636836],
+            [-123.2513302, 49.2635154],
+            [-123.2508381, 49.262973],
+            [-123.2505496, 49.2629501],
+            [-123.2504014, 49.2630004],
+            [-123.2496391, 49.2632971],
+            [-123.2500504, 49.2638129],
+            [-123.2502888, 49.2639127],
+            [-123.2506401, 49.2639721],
+            [-123.2514679, 49.2636836]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "museum",
+        "restriction": null,
+        "name": {
+          "en": "Beaty Biodiversity Museum"
+        },
+        "alt_name": {
+          "en": "Beaty Museum"
+        },
+        "hours": null,
+        "phone": "+1-604-827-4955",
+        "website": "https://beatymuseum.ubc.ca/",
+        "display_point": {
+          "type": "Point",
+          "coordinates": [-123.2505535, 49.2634611]
+        },
+        "address_id": "6f5e5d6f-ec3b-4a6e-bf5d-87c1dc0d7e2a",
+        "geometry_source": "local_confirmed_footprint_hull",
+        "geometry_method": "Convex hull of locally confirmed Beaty Biodiversity Museum, Biodiversity Research Center, Aquatic Ecosystems Research Laboratory, and AERL/Beaty overhang footprints.",
+        "source_footprint_ids": [
+          "c1e04c24-7f79-42c3-b82d-e63f4f5f389b",
+          "80c58049-84e8-4b68-b3b5-1fe9bf5afc80",
+          "f1c495a4-1f4c-469b-8bd6-24b7d63d9898",
+          "c88cbbe7-56af-4afa-94dd-cb89e674e338",
+          "2f776791-e343-43cb-922c-821d4fe19257"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    }
+  ]
+}

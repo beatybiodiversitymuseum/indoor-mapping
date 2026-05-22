@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "6f5e5d6f-ec3b-4a6e-bf5d-87c1dc0d7e2a",
+      "type": "Feature",
+      "feature_type": "address",
+      "geometry": null,
+      "properties": {
+        "address": "2212 Main Mall",
+        "unit": null,
+        "locality": "Vancouver",
+        "province": "CA-BC",
+        "country": "CA",
+        "postal_code": "V6T 1Z4",
+        "postal_code_ext": null,
+        "postal_code_vanity": null
+      }
+    }
+  ]
+}
