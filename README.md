@@ -257,7 +257,7 @@ If you are not sure what a field means, do not guess. Add a plain-language note 
 Openings are places where a person can pass through a boundary, such as exterior entrances, doors, and internal thresholds between spaces. Follow the same process as Amenities, but record them as openings.
 
 ### Submission Instructions
-Submit your Amenity or Opening edit as a GitHub Issue by clicking "Issues" and using the provided "Amenity and Opening Template".
+Submit your Amenity or Opening edit as a GitHub Issue by clicking "Issues" and using the provided "Add or correct an Amenity or Opening".
 
 ## Useful References
 
