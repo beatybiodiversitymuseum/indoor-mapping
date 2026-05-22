@@ -31,7 +31,7 @@
           "coordinates": [-123.2505907863944, 49.26347946682453]
         },
         "geometry_source": "local_confirmed_estimate",
-        "geometry_method": "Rectangle estimated from the overhang southeast corner, eastward projection to the Biodiversity Research Center footprint, and mapped fixture north/south extent.",
+        "geometry_method": "Rectangle estimated from the overhang southeast corner, eastward projection to the Biodiversity Research Centre footprint, and mapped fixture north/south extent.",
         "source_osm_ids": [
           "89366251",
           "83435229"

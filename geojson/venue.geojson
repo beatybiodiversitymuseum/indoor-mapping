@@ -40,7 +40,7 @@
         },
         "address_id": "6f5e5d6f-ec3b-4a6e-bf5d-87c1dc0d7e2a",
         "geometry_source": "local_confirmed_footprint_hull",
-        "geometry_method": "Convex hull of locally confirmed Beaty Biodiversity Museum, Biodiversity Research Center, Aquatic Ecosystems Research Laboratory, and AERL/Beaty overhang footprints.",
+        "geometry_method": "Convex hull of locally confirmed Beaty Biodiversity Museum, Biodiversity Research Centre, Aquatic Ecosystems Research Laboratory, and AERL/Beaty overhang footprints.",
         "source_footprint_ids": [
           "c1e04c24-7f79-42c3-b82d-e63f4f5f389b",
           "80c58049-84e8-4b68-b3b5-1fe9bf5afc80",

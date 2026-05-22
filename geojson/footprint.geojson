@@ -45,7 +45,7 @@
       "properties": {
         "category": "ground",
         "name": {
-          "en": "Biodiversity Research Center"
+          "en": "Biodiversity Research Centre"
         },
         "building_ids": [
           "ed437194-4458-4b20-a845-92ababc0b446"
@@ -62,7 +62,7 @@
         "local_category": "research_center",
         "relationship_to_museum": "museum_research_center",
         "review_status": "locally_confirmed",
-        "local_note": "Locally confirmed as part of the Biodiversity Research Center."
+        "local_note": "Locally confirmed as part of the Biodiversity Research Centre."
       }
     },
     {
@@ -76,7 +76,7 @@
       "properties": {
         "category": "ground",
         "name": {
-          "en": "Biodiversity Research Center"
+          "en": "Biodiversity Research Centre"
         },
         "building_ids": [
           "ed437194-4458-4b20-a845-92ababc0b446"
@@ -93,7 +93,7 @@
         "local_category": "research_center",
         "relationship_to_museum": "museum_labs_and_offices",
         "review_status": "locally_confirmed",
-        "local_note": "Locally confirmed as part of the Biodiversity Research Center and containing museum labs and offices."
+        "local_note": "Locally confirmed as part of the Biodiversity Research Centre and containing museum labs and offices."
       }
     },
     {

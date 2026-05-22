@@ -20,10 +20,10 @@ License and attribution:
 
 Local review notes:
 
-- [OpenStreetMap way 83435229](https://www.openstreetmap.org/way/83435229) has been locally identified as part of the Biodiversity Research Center.
+- [OpenStreetMap way 83435229](https://www.openstreetmap.org/way/83435229) has been locally identified as part of the Biodiversity Research Centre.
 - [OpenStreetMap way 89366251](https://www.openstreetmap.org/way/89366251) has been locally identified as the overhang between Aquatic Ecosystems Research Laboratory and the Beaty Biodiversity Museum.
 - [OpenStreetMap way 33176122](https://www.openstreetmap.org/way/33176122), `name=Aquatic Ecosystems Research Laboratory`, shares an overhang and bike parking with the Beaty and should be kept in the reference source set.
-- [OpenStreetMap way 1395853158](https://www.openstreetmap.org/way/1395853158), currently tagged `building=construction` in OSM, has been locally identified as part of the Biodiversity Research Center and contains the museum labs and offices.
+- [OpenStreetMap way 1395853158](https://www.openstreetmap.org/way/1395853158), currently tagged `building=construction` in OSM, has been locally identified as part of the Biodiversity Research Centre and contains the museum labs and offices.
 
 Metadata conventions:
 
@@ -39,7 +39,7 @@ Metadata conventions:
 Method:
 
 - Start from the southeast corner of the locally confirmed overhang feature, [OpenStreetMap way 89366251](https://www.openstreetmap.org/way/89366251).
-- Project east to the first intersection with the locally confirmed Biodiversity Research Center footprint, [OpenStreetMap way 83435229](https://www.openstreetmap.org/way/83435229).
+- Project east to the first intersection with the locally confirmed Biodiversity Research Centre footprint, [OpenStreetMap way 83435229](https://www.openstreetmap.org/way/83435229).
 - Use the north/south extent of the current cabinet, drawer/island box, and fossil excavation fixture polygons, with a small buffer, so the mapped fixture geometry fits inside the rectangle.
 
 Current confirmed rectangle:
@@ -55,12 +55,12 @@ This geometry is marked with `geometry_source: "local_confirmed_estimate"` and `
 
 ## Confirmed Venue Boundary
 
-`geojson/venue.geojson` contains the overall venue boundary for the connected Beaty/AERL/Biodiversity Research Center area.
+`geojson/venue.geojson` contains the overall venue boundary for the connected Beaty/AERL/Biodiversity Research Centre area.
 
 Method:
 
 - Use the locally confirmed footprint polygons in `geojson/footprint.geojson`.
-- Compute a single convex hull around the Beaty Biodiversity Museum, Biodiversity Research Center, Aquatic Ecosystems Research Laboratory, and AERL/Beaty overhang footprints.
+- Compute a single convex hull around the Beaty Biodiversity Museum, Biodiversity Research Centre, Aquatic Ecosystems Research Laboratory, and AERL/Beaty overhang footprints.
 - Store that hull as the venue geometry with `geometry_source: "local_confirmed_footprint_hull"` and `review_status: "locally_confirmed"`.
 
 This gives the venue one continuous boundary while keeping the more detailed building footprints in `geojson/footprint.geojson`.

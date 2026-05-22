@@ -34,8 +34,12 @@
       },
       "properties": {
         "category": "floor",
-        "name": "Fossil Excavation 1",
-        "alt_name": "fossil_excavation_1",
+        "name": {
+          "en": "Fossil Excavation 1"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_1"
+        },
         "anchor_id": null,
         "display_point": {
           "type": "Point",
@@ -88,8 +92,12 @@
       },
       "properties": {
         "category": "floor",
-        "name": "Fossil Excavation 2",
-        "alt_name": "fossil_excavation_2",
+        "name": {
+          "en": "Fossil Excavation 2"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_2"
+        },
         "anchor_id": null,
         "display_point": {
           "type": "Point",
@@ -142,8 +150,12 @@
       },
       "properties": {
         "category": "floor",
-        "name": "Fossil Excavation 3",
-        "alt_name": "fossil_excavation_3",
+        "name": {
+          "en": "Fossil Excavation 3"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_3"
+        },
         "anchor_id": null,
         "display_point": {
           "type": "Point",
@@ -196,8 +208,12 @@
       },
       "properties": {
         "category": "floor",
-        "name": "Fossil Excavation 4",
-        "alt_name": "fossil_excavation_4",
+        "name": {
+          "en": "Fossil Excavation 4"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_4"
+        },
         "anchor_id": null,
         "display_point": {
           "type": "Point",
@@ -250,8 +266,12 @@
       },
       "properties": {
         "category": "floor",
-        "name": "Fossil Excavation 5",
-        "alt_name": "fossil_excavation_5",
+        "name": {
+          "en": "Fossil Excavation 5"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_5"
+        },
         "anchor_id": null,
         "display_point": {
           "type": "Point",
@@ -304,8 +324,12 @@
       },
       "properties": {
         "category": "floor",
-        "name": "Fossil Excavation 6",
-        "alt_name": "fossil_excavation_6",
+        "name": {
+          "en": "Fossil Excavation 6"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_6"
+        },
         "anchor_id": null,
         "display_point": {
           "type": "Point",
@@ -358,8 +382,12 @@
       },
       "properties": {
         "category": "floor",
-        "name": "Fossil Excavation 7",
-        "alt_name": "fossil_excavation_7",
+        "name": {
+          "en": "Fossil Excavation 7"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_7"
+        },
         "anchor_id": null,
         "display_point": {
           "type": "Point",
@@ -412,8 +440,12 @@
       },
       "properties": {
         "category": "floor",
-        "name": "Fossil Excavation 8",
-        "alt_name": "fossil_excavation_8",
+        "name": {
+          "en": "Fossil Excavation 8"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_8"
+        },
         "anchor_id": null,
         "display_point": {
           "type": "Point",
@@ -466,8 +498,12 @@
       },
       "properties": {
         "category": "floor",
-        "name": "Fossil Excavation 9",
-        "alt_name": "fossil_excavation_9",
+        "name": {
+          "en": "Fossil Excavation 9"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_9"
+        },
         "anchor_id": null,
         "display_point": {
           "type": "Point",

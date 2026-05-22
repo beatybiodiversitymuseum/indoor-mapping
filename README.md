@@ -4,6 +4,11 @@ This repository stores indoor mapping data for the Beaty Biodiversity Museum. Th
 
 The long-term goal is to keep the data easy to review in common map tools while moving it closer to indoor mapping conventions such as Apple's Indoor Mapping Data Format (IMDF), now also published as an OGC Community Standard.
 
+Supporting documentation:
+
+- `DATA_SOURCES.md` explains source data, local review decisions, and derivation methods.
+- `DATA_DICTIONARY.md` defines local fields, local category values, and terms that need museum confirmation.
+
 ## What's Here
 
 The current map data is in the `geojson/` folder:
@@ -15,8 +20,8 @@ The current map data is in the `geojson/` folder:
 | `geojson/venue.geojson` | Confirmed overall venue boundary around Beaty, BRC, AERL, and the overhang | `venue` |
 | `geojson/building.geojson` | Confirmed building records for Beaty, BRC, and AERL | `building` |
 | `geojson/footprint.geojson` | Confirmed OSM-derived building and overhang footprints | `footprint` |
-| `geojson/level.geojson` | Estimated underground museum gallery level | `level` |
-| `geojson/unit.geojson` | Estimated underground cabinet gallery unit | `unit` |
+| `geojson/level.geojson` | Confirmed underground museum gallery level | `level` |
+| `geojson/unit.geojson` | Confirmed underground cabinet gallery unit | `unit` |
 | `geojson/opening.geojson` | Entrances and doors, currently empty | `opening` |
 | `geojson/anchor.geojson` | Starter anchor point for the gallery unit | `anchor` |
 | `geojson/amenity.geojson` | Fossil excavation, cabinet, and drawer exhibit points | `amenity` |
@@ -29,13 +34,13 @@ The current map data is in the `geojson/` folder:
 | `geojson/relationship.geojson` | Feature relationships, currently empty | `relationship` |
 | `geojson/fixture.geojson` | Display cabinet and drawer/island box polygons | `fixture` |
 
-All current features reference one level:
+Mapped indoor gallery features reference one confirmed underground level:
 
 ```text
 41d0e8ca-d315-4b25-938c-7955db2daf2e
 ```
 
-## Current Data Review
+## Current Data Status
 
 The existing GeoJSON is generally well formed:
 
@@ -45,31 +50,25 @@ The existing GeoJSON is generally well formed:
 - Fixture `display_point` values appear to be inside their polygons.
 - Feature `id` values and `feature_type` values are present.
 
-Recommended updates before treating this as a full IMDF-style indoor map:
+Confirmed modeling decisions:
 
-1. Replace confirmed hull geometry with plan-verified geometry if needed.
-   The venue layer now uses a locally confirmed convex hull around the Beaty, Biodiversity Research Center, AERL, and AERL/Beaty overhang footprints. This is a useful overall boundary, but a future plan-verified venue boundary may be more precise.
+- `geojson/venue.geojson` uses a locally confirmed convex hull around the Beaty, Biodiversity Research Centre, AERL, and AERL/Beaty overhang footprints.
+- Fossil excavations are represented as searchable exhibit points in `geojson/amenity.geojson` and as walkable glass-covered floor polygons in `geojson/detail.geojson`.
+- Cabinets and drawer/island boxes are modeled as `furniture` fixtures in `geojson/fixture.geojson` because they are important to pedestrian navigation and the visitor experience.
+- Cabinet and drawer exhibit viewing points have been derived from the original wayfinding offset points and stored in `geojson/amenity.geojson`.
+- Confirmed walking routes are stored in `geojson/navigation.geojson` as a local extension layer for routing and app use. IMDF 1.0 does not define a standard pedestrian routing graph layer.
 
-2. Keep fossil excavations split between amenity and detail layers.
-   Fossil excavations are represented as searchable/visitor-facing exhibit points in `geojson/amenity.geojson` and as walkable glass-covered floor polygons in `geojson/detail.geojson`.
+Remaining improvements:
 
-3. Keep cabinet and drawer boxes in `fixture.geojson`.
-   Cabinets and drawer/island boxes are modeled as `furniture` fixtures because they are important to pedestrian navigation and the visitor experience in the underground gallery.
-
-4. Convert `name` and `alt_name` to localized label objects if strict IMDF compatibility is required.
-   IMDF examples use label objects such as `{ "en": "Ground Floor" }`, not plain strings. Plain strings are easy to edit and work well in many GeoJSON tools, but strict IMDF tooling may expect localized label objects.
-
-5. Treat `geojson/navigation.geojson` as a custom extension layer.
-   IMDF 1.0 does not define a pedestrian routing graph layer. Confirmed walking grid points, walking paths, and connection lines are stored in `geojson/navigation.geojson` as a local extension for routing and app use.
-
-6. Add real openings.
+1. Add real openings.
    `geojson/opening.geojson` is currently empty because entrances and doors need ground-truth placement. Official indoor maps should add pedestrian entrances, internal thresholds, and accessibility information where known.
 
-7. Add more anchors or remove unused anchor fields.
-   The repo now has one starter anchor for the gallery unit, but every existing fixture still has `anchor_id: null`. That is valid for fixtures, but anchors become useful when tying addresses, occupants, amenities, or searchable exhibit records to a physical location.
+2. Decide whether future integrations need anchors.
+   Many features have their own geometry and do not need anchors. Navigation nodes can be used as anchor candidates later if an app, export, or collection-management integration needs stable attachment points.
 
-8. Add a data dictionary for local terms.
-   Terms such as `di_box`, `cabinet_exhibit`, `walking_grid_point`, and `fossil_center_point` are meaningful to this project but not standard IMDF categories. Keep them documented so future contributors know what they mean.
+3. Review open data dictionary questions.
+   `DATA_DICTIONARY.md` defines local terms and lists a few museum-language questions that still need confirmation.
+
 
 ## Basic Editing Rules
 
@@ -80,7 +79,7 @@ Please keep these rules in mind:
 - Do not change coordinates unless you are intentionally moving a map feature.
 - Keep longitude first and latitude second: `[longitude, latitude]`.
 - Keep every feature `id` unique.
-- Keep `alt_name` values unique within a file when they are used like identifiers.
+- Keep `alt_name` values unique within a file when they are used like identifiers. In these files, labels use language objects such as `{ "en": "Column 1, Cabinet 01" }`.
 - Keep `level_id` unchanged unless a feature truly belongs to a different floor.
 - For polygons, the first and last coordinate pair in each ring must match.
 - Use clear names that museum staff and visitors can understand.

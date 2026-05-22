@@ -44,7 +44,7 @@
         "category": "unspecified",
         "restriction": null,
         "name": {
-          "en": "Biodiversity Research Center"
+          "en": "Biodiversity Research Centre"
         },
         "alt_name": null,
         "display_point": {
@@ -66,7 +66,7 @@
         "local_category": "research_center",
         "relationship_to_museum": "museum_research_center",
         "review_status": "locally_confirmed",
-        "local_note": "Locally confirmed as the Biodiversity Research Center. Includes museum labs and offices."
+        "local_note": "Locally confirmed as the Biodiversity Research Centre. Includes museum labs and offices."
       }
     },
     {
