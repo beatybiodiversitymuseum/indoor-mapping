@@ -1,7 +1,7 @@
 ---
-name: Create a todo for a location
-about: Checklist for locations that need processing.
-title: "Create a Location TODO."
+name: Create a location TODO
+about: Add a location to the TODO list.
+title: "Enter location..."
 labels: ["todo", "help wanted"]
 assignees: ""
 ---
