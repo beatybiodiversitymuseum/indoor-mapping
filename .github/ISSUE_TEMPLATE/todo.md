@@ -2,7 +2,7 @@
 name: Create a todo for a location
 about: Checklist for locations that need processing.
 title: "Create a Location TODO."
-labels: ["todo"]
+labels: ["todo". "help wanted"]
 assignees: ""
 ---
 
