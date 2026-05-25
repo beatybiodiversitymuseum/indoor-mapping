@@ -62,19 +62,18 @@ Before saving a change, confirm:
 - You did not accidentally remove the opening `{`, closing `}`, or commas between features.
 
 
-## Adding Amenities and Openings
+## Adding Locations
 
-Two common contributions are openings and amenities. You do not need to know how to program, but please be precise and test the file in geojson.io before submitting changes.
+Many locations at the Beaty can be added to our maps. Consider visitor-facing points of interest, such as exhibits, fossil excavation viewing points, cabinet exhibit points, drawer exhibit points, kiosks, service points, or other things a visitor may search for or navigate to.
 
-### Amenities
+You do not need to know how to code to help add a location. The most important thing is to collect clear, accurate information so that the JSON entry can be created or reviewed correctly.
 
-Amenities are visitor-facing points of interest, such as exhibits, fossil excavation viewing points, cabinet exhibit points, drawer exhibit points, kiosks, service points, or other things a visitor may search for or navigate to. They belong in `geojson/amenity.geojson`.
+If you are submitting a new location, please use the GitHub issue template for amenity contributions. The issue template asks for the information a maintainer needs without requiring you to edit GeoJSON.
 
-You do not need to know how to code to help add an amenity. The most important thing is to collect clear, accurate information so that the JSON entry can be created or reviewed correctly.
+The best way to figure out the location is to use multiple GPS readings. However, the GPS is not always great underground. Then, use confirmed points and measure from them. It's best if you can establish a reference point along a straight line.
 
-If you are submitting a new amenity, please use the GitHub issue template for amenity contributions. The issue template asks for the information a maintainer needs without requiring you to edit GeoJSON.
+Measuring from existing maps is a very helpful approach as well.
 
-Each amenity should answer these questions:
 
 #### 1. What is the visitor-facing name?
 
