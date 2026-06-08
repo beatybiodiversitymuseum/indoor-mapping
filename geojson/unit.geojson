@@ -2,18 +2,1227 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "id": "9a5e1973-69e9-4be4-b348-38744dcff44e",
+      "id": "361ab87d-35ae-4c29-b240-38483504d1cf",
       "type": "Feature",
       "feature_type": "unit",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [-123.2510135, 49.26330852224385],
-            [-123.2501680727888, 49.26330852224385],
-            [-123.2501680727888, 49.26365041140521],
-            [-123.2510135, 49.26365041140521],
-            [-123.2510135, 49.26330852224385]
+            [
+              -123.25125685508134,
+              49.263483445170166
+            ],
+            [
+              -123.25125492206593,
+              49.26348108956954
+            ],
+            [
+              -123.25124581585287,
+              49.26348429015906
+            ],
+            [
+              -123.25124774886797,
+              49.26348664575982
+            ],
+            [
+              -123.25125685508134,
+              49.263483445170166
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25125133546703,
+            49.26348386766466
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "e1c6ee46-ac8b-425f-9cb7-140898227070",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25121517110256,
+              49.26343264841222
+            ],
+            [
+              -123.25121315169953,
+              49.26343018753263
+            ],
+            [
+              -123.25120404549313,
+              49.26343338811888
+            ],
+            [
+              -123.25120606489581,
+              49.26343584899864
+            ],
+            [
+              -123.25121517110256,
+              49.26343264841222
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25120960829774,
+            49.2634330182656
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "1d6144bc-45ce-46fe-9c0f-bca8a6388c87",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25117339001918,
+              49.263381733200596
+            ],
+            [
+              -123.25117145701174,
+              49.263379377598554
+            ],
+            [
+              -123.25116235081194,
+              49.26338257818152
+            ],
+            [
+              -123.25116428381908,
+              49.26338493378372
+            ],
+            [
+              -123.25117339001918,
+              49.263381733200596
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25116787041547,
+            49.26338215569112
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "143f26a0-9846-4326-82db-3d77e7653eaf",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25113160902191,
+              49.26333081797328
+            ],
+            [
+              -123.25112967601842,
+              49.26332846237049
+            ],
+            [
+              -123.25112056982529,
+              49.26333166295018
+            ],
+            [
+              -123.25112250282847,
+              49.263334018553124
+            ],
+            [
+              -123.25113160902191,
+              49.26333081797328
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25112608942351,
+            49.263331240461774
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "bbe26d7a-e5ac-4ece-a4de-18850677e160",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25108992530068,
+              49.263280021168406
+            ],
+            [
+              -123.2510879923012,
+              49.26327766556489
+            ],
+            [
+              -123.25107888611468,
+              49.26328086614133
+            ],
+            [
+              -123.25108081911385,
+              49.26328322174499
+            ],
+            [
+              -123.25108992530068,
+              49.263280021168406
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2510844057076,
+            49.26328044365492
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "df181608-d3aa-4e6b-8b5e-da877e3e5f64",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25104814447543,
+              49.26322910590972
+            ],
+            [
+              -123.25104621147995,
+              49.26322675030549
+            ],
+            [
+              -123.25103710530004,
+              49.26322995087864
+            ],
+            [
+              -123.25103903829526,
+              49.26323230648301
+            ],
+            [
+              -123.25104814447543,
+              49.26322910590972
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25104262488766,
+            49.26322952839423
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "c7f09eb0-ea76-4769-9144-95bf5d652330",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25100646092584,
+              49.26317830907356
+            ],
+            [
+              -123.25100443074477,
+              49.26317583503036
+            ],
+            [
+              -123.25099532457155,
+              49.26317903560025
+            ],
+            [
+              -123.25099735475227,
+              49.2631815096436
+            ],
+            [
+              -123.25100646092584,
+              49.26317830907356
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25100089274862,
+            49.26317867233695
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "0a28785c-1405-43aa-a701-0f5ef12f7a2d",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25096468027262,
+              49.26312739378352
+            ],
+            [
+              -123.25096274728507,
+              49.26312503817783
+            ],
+            [
+              -123.25095364111847,
+              49.263128238744436
+            ],
+            [
+              -123.25095557410569,
+              49.26313059435028
+            ],
+            [
+              -123.25096468027262,
+              49.26312739378352
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25095916069547,
+            49.26312781626404
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "cfff696e-aa3d-4535-a19f-d11316f0c3b4",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25092289970554,
+              49.263076478477764
+            ],
+            [
+              -123.25092096672195,
+              49.263074122871366
+            ],
+            [
+              -123.25091186056197,
+              49.263077323434686
+            ],
+            [
+              -123.25091379354525,
+              49.26307967904125
+            ],
+            [
+              -123.25092289970554,
+              49.263076478477764
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25091738013367,
+            49.26307690095627
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "f5fd5376-2006-4259-b961-fc1b3b749dd4",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25088121641346,
+              49.26302568159467
+            ],
+            [
+              -123.25087928343386,
+              49.26302332598755
+            ],
+            [
+              -123.25087017728053,
+              49.263026526547605
+            ],
+            [
+              -123.2508721102598,
+              49.26302888215488
+            ],
+            [
+              -123.25088121641346,
+              49.26302568159467
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25087569684692,
+            49.26302610407118
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "ce74adaf-d692-4c31-8efa-baa678e6c01c",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25083944681712,
+              49.26297477941739
+            ],
+            [
+              -123.25083751384153,
+              49.262972423809515
+            ],
+            [
+              -123.25082840769481,
+              49.26297562436631
+            ],
+            [
+              -123.25083034067012,
+              49.26297797997433
+            ],
+            [
+              -123.25083944681712,
+              49.26297477941739
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2508339272559,
+            49.262975201891905
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "8a1edb60-a1d7-4763-aae9-1d5c9a6ce5e6",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25109385804065,
+              49.26354073408529
+            ],
+            [
+              -123.25109192503072,
+              49.26353837848196
+            ],
+            [
+              -123.25108264451451,
+              49.263541640313704
+            ],
+            [
+              -123.25108457752413,
+              49.26354399591716
+            ],
+            [
+              -123.25109385804065,
+              49.26354073408529
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25108825127747,
+            49.263541187199536
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "7628751c-740d-446a-9e58-6c25cd34700f",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25105217418046,
+              49.26348993726888
+            ],
+            [
+              -123.25105015478319,
+              49.26348747638644
+            ],
+            [
+              -123.25104087427378,
+              49.263490738214834
+            ],
+            [
+              -123.25104289367071,
+              49.26349319909742
+            ],
+            [
+              -123.25105217418046,
+              49.26348993726888
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25104652422704,
+            49.2634903377419
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "62f55bcf-8d93-4940-8d07-f35e67ea8e13",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25101039321599,
+              49.263439021998614
+            ],
+            [
+              -123.25100846021404,
+              49.26343666639386
+            ],
+            [
+              -123.25099917971136,
+              49.26343992821891
+            ],
+            [
+              -123.25100111271298,
+              49.26344228382382
+            ],
+            [
+              -123.25101039321599,
+              49.263439021998614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2510047864636,
+            49.26343947510882
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "2f475212-b686-4163-bb60-0801756c43a7",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25096861233759,
+              49.263388106712654
+            ],
+            [
+              -123.25096667933961,
+              49.26338575110717
+            ],
+            [
+              -123.25095739884372,
+              49.26338901292889
+            ],
+            [
+              -123.25095933184139,
+              49.26339136853452
+            ],
+            [
+              -123.25096861233759,
+              49.263388106712654
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25096300559058,
+            49.26338855982081
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "0197638c-b09e-4b52-a418-8ad48cd2ede6",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25092692873498,
+              49.263337309849305
+            ],
+            [
+              -123.25092499574097,
+              49.26333495424307
+            ],
+            [
+              -123.25091571525184,
+              49.26333821606146
+            ],
+            [
+              -123.25091764824552,
+              49.26334057166785
+            ],
+            [
+              -123.25092692873498,
+              49.263337309849305
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25092132199333,
+            49.26333776295544
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "7ea9fd8f-b662-4625-a655-dfb66d8fc8b3",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25088514802862,
+              49.26328639453199
+            ],
+            [
+              -123.25088321503863,
+              49.26328403892504
+            ],
+            [
+              -123.25087393455624,
+              49.26328730074009
+            ],
+            [
+              -123.25087586754594,
+              49.263289656347176
+            ],
+            [
+              -123.25088514802862,
+              49.26328639453199
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25087954129233,
+            49.263286847636095
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "80a19cf2-73f6-41f0-8b95-b2b984ddac3d",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25084346459764,
+              49.26323559763733
+            ],
+            [
+              -123.25084143442236,
+              49.2632331235913
+            ],
+            [
+              -123.25083215394676,
+              49.26323638540302
+            ],
+            [
+              -123.25083418412171,
+              49.2632388594492
+            ],
+            [
+              -123.25084346459764,
+              49.26323559763733
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25083780927213,
+            49.263235991520226
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "74ec0a12-0344-4b81-950e-20e6615b7331",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.2508016840633,
+              49.26318468228867
+            ],
+            [
+              -123.25079975108125,
+              49.263182326680266
+            ],
+            [
+              -123.25079047061242,
+              49.26318558848864
+            ],
+            [
+              -123.25079240359413,
+              49.2631879440972
+            ],
+            [
+              -123.2508016840633,
+              49.26318468228867
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25079607733777,
+            49.263185135388696
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "7cf20379-250a-4b00-80ea-1410bbfc200d",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25075990361509,
+              49.263133766924284
+            ],
+            [
+              -123.25075797063701,
+              49.263131411315165
+            ],
+            [
+              -123.25074869017494,
+              49.263134673120206
+            ],
+            [
+              -123.2507506231527,
+              49.263137028729496
+            ],
+            [
+              -123.25075990361509,
+              49.263133766924284
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25075429689493,
+            49.263134220022295
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "9cb5f4b2-ced3-4947-91a2-2176b2f5954e",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25071822044163,
+              49.2630829699827
+            ],
+            [
+              -123.25071628746754,
+              49.26308061437285
+            ],
+            [
+              -123.25070700701222,
+              49.263083876174555
+            ],
+            [
+              -123.25070893998601,
+              49.26308623178455
+            ],
+            [
+              -123.25071822044163,
+              49.2630829699827
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25071261372686,
+            49.263083423078676
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "f280f5bd-b576-42cd-bf99-677f9e59fd37",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25067645096418,
+              49.2630320677468
+            ],
+            [
+              -123.25067451799406,
+              49.26302971213624
+            ],
+            [
+              -123.2506652375455,
+              49.263032973934614
+            ],
+            [
+              -123.2506671705153,
+              49.263035329545325
+            ],
+            [
+              -123.25067645096418,
+              49.2630320677468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "column",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25067084425477,
+            49.26303252084075
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Pillars",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "cb2ebfc2-4aa9-4f42-a91c-b1abb3938a55",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25080412380865,
+              49.263142504785485
+            ],
+            [
+              -123.2509004793218,
+              49.26310863859109
+            ],
+            [
+              -123.25090437885257,
+              49.263107268015396
+            ],
+            [
+              -123.25089646333865,
+              49.263097621871516
+            ],
+            [
+              -123.2508925638084,
+              49.263098992446956
+            ],
+            [
+              -123.25089817917912,
+              49.263105835550625
+            ],
+            [
+              -123.25090003091155,
+              49.26310518471863
+            ],
+            [
+              -123.25090104599802,
+              49.263106421741185
+            ],
+            [
+              -123.25089919426551,
+              49.26310707257318
+            ],
+            [
+              -123.25080283875454,
+              49.26314093876651
+            ],
+            [
+              -123.25080081273853,
+              49.263141650851566
+            ],
+            [
+              -123.25079979765385,
+              49.26314041382814
+            ],
+            [
+              -123.25080182366983,
+              49.26313970174312
+            ],
+            [
+              -123.25079832486765,
+              49.263135437960266
+            ],
+            [
+              -123.2508484524024,
+              49.2631178195886
+            ],
+            [
+              -123.25084615226224,
+              49.2631150165471
+            ],
+            [
+              -123.2508437341161,
+              49.26311586645596
+            ],
+            [
+              -123.25084493278061,
+              49.26311732719591
+            ],
+            [
+              -123.25079722339302,
+              49.26313409565822
+            ],
+            [
+              -123.25079620830859,
+              49.263132858634776
+            ],
+            [
+              -123.25079213449186,
+              49.26313429046143
+            ],
+            [
+              -123.25080004999137,
+              49.263143936612416
+            ],
+            [
+              -123.25080412380865,
+              49.263142504785485
+            ]
           ]
         ]
       },
@@ -21,26 +1230,770 @@
         "category": "room",
         "restriction": null,
         "accessibility": null,
-        "name": {
-          "en": "Underground Cabinet Gallery"
-        },
+        "name": null,
         "alt_name": null,
-        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "display_point": {
           "type": "Point",
-          "coordinates": [-123.2505907863944, 49.26347946682453]
+          "coordinates": [
+            -123.2508500929562,
+            49.26312533911169
+          ]
         },
-        "geometry_source": "local_confirmed_estimate",
-        "geometry_method": "Rectangle estimated from the overhang southeast corner, eastward projection to the Biodiversity Research Centre footprint, and mapped fixture north/south extent.",
-        "source_osm_ids": [
-          "89366251",
-          "83435229"
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Bathrooms",
+        "source_kind": "polygon",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "645fcc61-6038-4c42-b884-ca1ad37ba363",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25078617625358,
+              49.26312063315782
+            ],
+            [
+              -123.2508324042454,
+              49.2631043853648
+            ],
+            [
+              -123.25083627020669,
+              49.263109096580536
+            ],
+            [
+              -123.25083775159338,
+              49.26310857591574
+            ],
+            [
+              -123.25083793517258,
+              49.2631087996327
+            ],
+            [
+              -123.25084035331847,
+              49.26310794972396
+            ],
+            [
+              -123.25083630377772,
+              49.26310301479139
+            ],
+            [
+              -123.25088253173655,
+              49.263086766978326
+            ],
+            [
+              -123.25088456190785,
+              49.2630892410237
+            ],
+            [
+              -123.25088846143754,
+              49.26308787044855
+            ],
+            [
+              -123.25088054592986,
+              49.263078224303555
+            ],
+            [
+              -123.25087664640071,
+              49.263079594878434
+            ],
+            [
+              -123.2508813330717,
+              49.263085306238736
+            ],
+            [
+              -123.25081711062248,
+              49.26310787859546
+            ],
+            [
+              -123.25079475718043,
+              49.26308063776146
+            ],
+            [
+              -123.25076262416124,
+              49.263091931577065
+            ],
+            [
+              -123.25075866101955,
+              49.263087101920405
+            ],
+            [
+              -123.25075663500513,
+              49.26308781400468
+            ],
+            [
+              -123.25075571711142,
+              49.26308669541931
+            ],
+            [
+              -123.25085595029196,
+              49.263051466347854
+            ],
+            [
+              -123.25085686818727,
+              49.26305258493244
+            ],
+            [
+              -123.25085501645623,
+              49.263053235763735
+            ],
+            [
+              -123.25086873089663,
+              49.263069948732614
+            ],
+            [
+              -123.25087263042523,
+              49.263068578157984
+            ],
+            [
+              -123.25085671303513,
+              49.263049180586584
+            ],
+            [
+              -123.25075238426076,
+              49.26308584914081
+            ],
+            [
+              -123.25076830162185,
+              49.263105246726475
+            ],
+            [
+              -123.2507723754369,
+              49.26310381490066
+            ],
+            [
+              -123.25076382282279,
+              49.2630933923179
+            ],
+            [
+              -123.25079353769728,
+              49.26308294840975
+            ],
+            [
+              -123.25081000581066,
+              49.26310301714073
+            ],
+            [
+              -123.25077621711205,
+              49.26311489287916
+            ],
+            [
+              -123.25078413260533,
+              49.26312453903129
+            ],
+            [
+              -123.25078820642149,
+              49.263123107204905
+            ],
+            [
+              -123.25078617625358,
+              49.26312063315782
+            ],
+            [
+              -123.25078617625358,
+              49.26312063315782
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "room",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25077951929649,
+            49.26308693444936
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Bathrooms",
+        "source_kind": "path_closed",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "ef5a846f-1ce2-42a3-96fc-68763c1b9de3",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25078148959021,
+              49.2631149217937
+            ],
+            [
+              -123.25078497759074,
+              49.263119172417255
+            ],
+            [
+              -123.2508146924762,
+              49.26310872850372
+            ],
+            [
+              -123.25081120447386,
+              49.26310447788104
+            ],
+            [
+              -123.25078148959021,
+              49.2631149217937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "room",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25079809103264,
+            49.26311182514899
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Bathrooms",
+        "source_kind": "path_closed",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "0fd942c4-04b5-4cf5-ad27-e957d0f69f5f",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25103929107729,
+              49.26347423762792
+            ],
+            [
+              -123.25104709018841,
+              49.26347149646712
+            ],
+            [
+              -123.25104561073766,
+              49.26346969357455
+            ],
+            [
+              -123.25103781162674,
+              49.26347243473525
+            ],
+            [
+              -123.25069061888482,
+              49.26304933345009
+            ],
+            [
+              -123.25084433434849,
+              49.26299530691353
+            ],
+            [
+              -123.25119152802208,
+              49.263418407739245
+            ],
+            [
+              -123.25106212393614,
+              49.26346388966277
+            ],
+            [
+              -123.25106360338732,
+              49.2634656925551
+            ],
+            [
+              -123.2511930074766,
+              49.26342021062993
+            ],
+            [
+              -123.251195599913,
+              49.26341929945857
+            ],
+            [
+              -123.2511941204584,
+              49.26341749656792
+            ],
+            [
+              -123.25084692676909,
+              49.262994395749956
+            ],
+            [
+              -123.25084544733993,
+              49.26299259285465
+            ],
+            [
+              -123.2508428549194,
+              49.2629935040182
+            ],
+            [
+              -123.25068913945971,
+              49.263047530552804
+            ],
+            [
+              -123.25068654703342,
+              49.263048441712854
+            ],
+            [
+              -123.25068802645846,
+              49.26305024461016
+            ],
+            [
+              -123.25103521918466,
+              49.26347334590307
+            ],
+            [
+              -123.25103669863513,
+              49.26347514879576
+            ],
+            [
+              -123.25103929107729,
+              49.26347423762792
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "structure",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25104176814963,
+            49.26323387058904
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Walls",
+        "source_kind": "polygon",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "d5cfca4b-6d36-4fcb-a205-345a8d1672e0",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25117726263035,
+              49.26340102366087
+            ],
+            [
+              -123.25117588036734,
+              49.26339933920806
+            ],
+            [
+              -123.25103887327676,
+              49.26344749336303
+            ],
+            [
+              -123.25104025553645,
+              49.26344917781747
+            ],
+            [
+              -123.25117726263035,
+              49.26340102366087
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "structure",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25110806795028,
+            49.26342425851322
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Walls",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "f70cefd3-a355-4221-8129-5cb70ae3a701",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25113262579809,
+              49.263414558960655
+            ],
+            [
+              -123.2509439803207,
+              49.263184670400044
+            ],
+            [
+              -123.25094008078496,
+              49.26318604097705
+            ],
+            [
+              -123.2511287262495,
+              49.263415929544
+            ],
+            [
+              -123.25113262579809,
+              49.263414558960655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "structure",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25103635334482,
+            49.26330030003928
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Ramp_walls",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "33d60c14-f423-4b24-9a83-686c79f61fe2",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25114829349116,
+              49.263396471354085
+            ],
+            [
+              -123.25095964801035,
+              49.263166582818336
+            ],
+            [
+              -123.25095574847646,
+              49.263167953395865
+            ],
+            [
+              -123.2511443939444,
+              49.26339784193797
+            ],
+            [
+              -123.25114829349116,
+              49.263396471354085
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "structure",
+        "restriction": null,
+        "accessibility": null,
+        "name": null,
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25105202103715,
+            49.263282212445496
+          ]
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "source_layer": "Ramp_walls",
+        "source_kind": "rect",
+        "source_note": "Candidate classification from SVG layer; review topology/overlaps before IMDF validation.",
+        "combined_source": "base_units"
+      }
+    },
+    {
+      "id": "c367c3fd-5cc4-4c92-a507-3ab2a39df677",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25117524878459,
+              49.26339952728164
+            ],
+            [
+              -123.25116349955297,
+              49.26338520943199
+            ],
+            [
+              -123.25112038668956,
+              49.26340036242197
+            ],
+            [
+              -123.25113213591237,
+              49.26341468027597
+            ],
+            [
+              -123.25117524878459,
+              49.26339952728164
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "ramp",
+        "restriction": null,
+        "accessibility": null,
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "name": {
+          "en": "Upper Ramp Landing"
+        },
+        "source_layer": "Ramp",
+        "ramp_role": "upper_landing",
+        "ramp_sequence": 1,
+        "source_svg_rect": {
+          "x": 4.54,
+          "y": 66.41,
+          "width": 19.79,
+          "height": 10.88
+        },
+        "qa_centroid": {
+          "type": "Point",
+          "coordinates": [
+            -123.25114781773485,
+            49.26339994485325
+          ]
+        },
+        "qa_bounds": [
+          -123.25117524878459,
+          49.26338520943199,
+          -123.25112038668956,
+          49.26341468027597
         ],
-        "source_urls": [
-          "https://www.openstreetmap.org/way/89366251",
-          "https://www.openstreetmap.org/way/83435229"
+        "combined_source": "ramp_units"
+      }
+    },
+    {
+      "id": "6f3c9444-b540-4af6-ab2e-0d7c8cb9ef50",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25116349955297,
+              49.26338520943199
+            ],
+            [
+              -123.25097897919535,
+              49.26316034796691
+            ],
+            [
+              -123.25095937260338,
+              49.263167239140884
+            ],
+            [
+              -123.25114389289782,
+              49.263392100637105
+            ],
+            [
+              -123.25116349955297,
+              49.26338520943199
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "ramp",
+        "restriction": null,
+        "accessibility": null,
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "name": {
+          "en": "Upper Descending Ramp"
+        },
+        "source_layer": "Ramp",
+        "ramp_role": "upper_descending_left",
+        "ramp_sequence": 2,
+        "source_svg_rect": {
+          "x": 4.54,
+          "y": 77.29,
+          "width": 9.0,
+          "height": 170.87
+        },
+        "qa_centroid": {
+          "type": "Point",
+          "coordinates": [
+            -123.25106143611634,
+            49.26327622436006
+          ]
+        },
+        "qa_bounds": [
+          -123.25116349955297,
+          49.26316034796691,
+          -123.25095937260338,
+          49.263392100637105
         ],
-        "review_status": "locally_confirmed"
+        "combined_source": "ramp_units"
+      }
+    },
+    {
+      "id": "7d4f6814-e717-4ec8-804b-ec11b4c8c245",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25097897919535,
+              49.26316034796691
+            ],
+            [
+              -123.25096748924913,
+              49.263146345931936
+            ],
+            [
+              -123.25094788266107,
+              49.26315323710396
+            ],
+            [
+              -123.25095937260338,
+              49.263167239140884
+            ],
+            [
+              -123.25097897919535,
+              49.26316034796691
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "ramp",
+        "restriction": null,
+        "accessibility": null,
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "name": {
+          "en": "Ramp Landing"
+        },
+        "source_layer": "Ramp",
+        "ramp_role": "middle_landing",
+        "ramp_sequence": 3,
+        "source_svg_rect": {
+          "x": 4.54,
+          "y": 248.16,
+          "width": 9.0,
+          "height": 10.64
+        },
+        "qa_centroid": {
+          "type": "Point",
+          "coordinates": [
+            -123.25096343092738,
+            49.26315679253619
+          ]
+        },
+        "qa_bounds": [
+          -123.25097897919535,
+          49.263146345931936,
+          -123.25094788266107,
+          49.263167239140884
+        ],
+        "combined_source": "ramp_units"
+      }
+    },
+    {
+      "id": "3f9ffcf0-b7b7-44f7-a1f5-14759447bff8",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25113999335129,
+              49.263393471220844
+            ],
+            [
+              -123.25096541878533,
+              49.26318072990201
+            ],
+            [
+              -123.25094581218337,
+              49.263187621073676
+            ],
+            [
+              -123.25112038668956,
+              49.26340036242197
+            ],
+            [
+              -123.25113999335129,
+              49.263393471220844
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "ramp",
+        "restriction": null,
+        "accessibility": null,
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "name": {
+          "en": "Lower Descending Ramp"
+        },
+        "source_layer": "Ramp",
+        "ramp_role": "lower_descending_right",
+        "ramp_sequence": 4,
+        "source_svg_rect": {
+          "x": 15.33,
+          "y": 77.29,
+          "width": 9.0,
+          "height": 161.66
+        },
+        "qa_centroid": {
+          "type": "Point",
+          "coordinates": [
+            -123.25104290280068,
+            49.263290546213554
+          ]
+        },
+        "qa_bounds": [
+          -123.25113999335129,
+          49.26318072990201,
+          -123.25094581218337,
+          49.26340036242197
+        ],
+        "combined_source": "ramp_units"
       }
     }
   ]
