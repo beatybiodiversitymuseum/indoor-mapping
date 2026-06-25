@@ -33,7 +33,7 @@ The current map data is in the `geojson/` folder:
 | `geojson/navigation.geojson` | Confirmed pedestrian route graph extension | `navigation` |
 | `geojson/relationship.geojson` | Feature relationships, currently empty | `relationship` |
 | `geojson/fixture.geojson` | Display cabinet and drawer/island box polygons | `fixture` |
-| `preview.geojson` | Stacked GeoJSON.io review file containing unit, level, footprint, kiosk, detail, fixture, and amenity features so amenities draw on top | mixed |
+| [`preview.geojson`](preview.geojson) | Stacked GeoJSON.io review file containing unit, level, footprint, kiosk, detail, fixture, and amenity features so amenities draw on top | mixed |
 
 Mapped indoor gallery features reference one confirmed underground level:
 
@@ -44,12 +44,12 @@ Mapped indoor gallery features reference one confirmed underground level:
 
 [geojson.io](https://geojson.io/) is a beginner-friendly website for checking and previewing GeoJSON.
 
-Use `preview.geojson` when you want the easiest visual review. It combines the main review layers in draw order so unit/level/footprint shapes load first and amenity points load last.
+Use [`preview.geojson`](preview.geojson) when you want the easiest visual review. It combines the main review layers in draw order so unit/level/footprint shapes load first and amenity points load last.
 
 ### Import The Preview
 
 1. Go to [geojson.io](https://geojson.io/).
-2. Click `Import`, choose `preview.geojson`, and wait for the map to load near UBC in Vancouver.
+2. Click `Import`, choose [`preview.geojson`](preview.geojson), and wait for the map to load near UBC in Vancouver.
 3. Look for red error messages in the main right-side `JSON` editor.
 4. Click existing features on the map to orient yourself before adding a new point.
 
@@ -108,11 +108,11 @@ The workflow:
 1. Reads open `map data` issues.
 2. Parses a pasted GeoJSON `Point` feature when one is provided, or builds a candidate point from the issue name and GPS coordinates.
 3. Updates `geojson/amenity.geojson` or `geojson/opening.geojson`.
-4. Rebuilds `preview.geojson` for GeoJSON.io review.
+4. Rebuilds [`preview.geojson`](preview.geojson) for GeoJSON.io review.
 5. Writes `reports/issue-geojson-review.md`.
 6. Opens or updates a pull request labeled `needs review`.
 
-Generated features include `source_issue_number`, `source_issue_title`, and `source_url`. The pull request review is the approval gate: review the map changes in the PR, edit the generated GeoJSON if needed, and merge only after the candidate data is accepted. Generated point features must fall within the configured UBC Vancouver bounding box, and the generated PR body includes `Closes #...` lines for issues that were converted into candidate GeoJSON. The validation workflow rebuilds `preview.geojson` on pull requests and fails if the committed preview is stale, so accepted PRs land with the source layer and preview in sync.
+Generated features include `source_issue_number`, `source_issue_title`, and `source_url`. The pull request review is the approval gate: review the map changes in the PR, edit the generated GeoJSON if needed, and merge only after the candidate data is accepted. Generated point features must fall within the configured UBC Vancouver bounding box, and the generated PR body includes `Closes #...` lines for issues that were converted into candidate GeoJSON. The validation workflow rebuilds [`preview.geojson`](preview.geojson) on pull requests and fails if the committed preview is stale, so accepted PRs land with the source layer and preview in sync.
 
 The best way to figure out the location is to use multiple GPS readings. However, the GPS is not always great underground. Then, use confirmed points and measure from them. It's best if you can establish a reference point along a straight line.
 
