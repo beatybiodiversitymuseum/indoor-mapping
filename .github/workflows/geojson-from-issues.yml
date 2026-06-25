@@ -23,7 +23,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'map data')
+    if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'map data') || startsWith(github.event.issue.title, 'Amenity or Opening:')
     env:
       BRANCH_NAME: automation/geojson-from-issues
       DEFAULT_LEVEL_ID: 41d0e8ca-d315-4b25-938c-7955db2daf2e
@@ -37,14 +37,51 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Ensure workflow labels exist
+        run: |
+          gh label create "map data" \
+            --description "Issue can be consumed into map data." \
+            --color "0e8a16" \
+            || true
+          gh label create "needs review" \
+            --description "Generated or submitted map data needs maintainer review." \
+            --color "fbca04" \
+            || true
+
       - name: Fetch open map data issues
         run: |
           gh issue list \
             --state open \
-            --label "map data" \
             --limit 200 \
             --json number,title,body,url,labels \
+            > /tmp/open-issues.json
+
+          if [ "$GITHUB_EVENT_NAME" = "issues" ]; then
+            jq '[.issue | {number, title, body, url: .html_url, labels}]' "$GITHUB_EVENT_PATH" \
+              > /tmp/event-issue.json
+          else
+            printf '[]\n' > /tmp/event-issue.json
+          fi
+
+          jq -s '
+            add
+            | map(select(
+                any(.labels[]?; .name == "map data")
+                or (.title | startswith("Amenity or Opening:"))
+              ))
+            | unique_by(.number)
+            | sort_by(.number)
+          ' /tmp/open-issues.json /tmp/event-issue.json \
             > /tmp/map-data-issues.json
+
+          jq -r '"Fetched \(length) map issue(s): " + (map("#" + (.number|tostring)) | join(", "))' \
+            /tmp/map-data-issues.json
+
+      - name: Apply workflow labels to matching issues
+        run: |
+          jq -r '.[].number' /tmp/map-data-issues.json | while read -r issue_number; do
+            gh issue edit "$issue_number" --add-label "map data" --add-label "needs review" || true
+          done
 
       - name: Generate candidate GeoJSON
         run: |
@@ -61,7 +98,7 @@ jobs:
 
       - name: Create or update approval PR
         run: |
-          if git diff --quiet -- geojson preview.geojson; then
+          if [ -z "$(git status --porcelain -- geojson preview.geojson reports)" ]; then
             echo "No generated GeoJSON changes."
             exit 0
           fi

@@ -73,7 +73,7 @@ If you are submitting a new location, please use the GitHub issue template for a
 
 ## Issue-To-GeoJSON Review Flow
 
-Open issues labeled `map data` can be consumed by the `Generate GeoJSON from Issues` GitHub Actions workflow. The workflow runs when a `map data` issue is opened, edited, labeled, or reopened, and it can also be run manually or by its weekly scheduled backstop.
+Open issues labeled `map data` or titled with the `Amenity or Opening:` prefix can be consumed by the `Generate GeoJSON from Issues` GitHub Actions workflow. The workflow runs when a matching issue is opened, edited, labeled, or reopened, and it can also be run manually or by its weekly scheduled backstop. Issue-triggered runs include the triggering issue directly and also batch any other open matching issues found by the GitHub CLI. The workflow also creates the `map data` and `needs review` labels if they are missing, then applies them to matching issues.
 
 The workflow:
 

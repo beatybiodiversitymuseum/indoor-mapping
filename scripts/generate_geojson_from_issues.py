@@ -175,33 +175,10 @@ def common_properties(issue: dict, body: str) -> dict:
     }
 
 
-def build_feature(issue: dict, args: argparse.Namespace) -> tuple[str | None, dict | str]:
-    body = issue.get("body") or ""
-    pasted = optional_geojson_feature(body)
-    layer = layer_for(issue, pasted)
-
-    if pasted:
-        geometry = pasted.get("geometry") or {}
-        if geometry.get("type") != "Point" or not valid_point(geometry.get("coordinates")):
-            return None, "pasted GeoJSON is not a valid Point feature"
-        if not in_bounds(geometry["coordinates"], args):
-            return None, bounds_message(geometry["coordinates"], args)
-        feature = pasted
-        feature["id"] = feature.get("id") or candidate_id(issue, layer)
-        feature["feature_type"] = layer
-        feature.setdefault("properties", {})
-        feature["properties"].update(common_properties(issue, body))
-        return layer, feature
-
-    coords = coordinates_from_body(body)
-    if coords is None:
-        return None, "no usable latitude/longitude found"
-    if not in_bounds(coords, args):
-        return None, bounds_message(coords, args)
-
+def default_properties(issue: dict, body: str, layer: str, args: argparse.Namespace) -> dict | str:
     name = first_fenced_text(section(body, 1)) or issue.get("title", "").replace("Amenity or Opening:", "").strip()
     if not name:
-        return None, "missing location name"
+        return "missing location name"
 
     props = {
         "category": "pedestrian" if layer == "opening" else args.default_amenity_category,
@@ -224,6 +201,41 @@ def build_feature(issue: dict, args: argparse.Namespace) -> tuple[str | None, di
                 "address_id": None,
             }
         )
+    return props
+
+
+def build_feature(issue: dict, args: argparse.Namespace) -> tuple[str | None, dict | str]:
+    body = issue.get("body") or ""
+    pasted = optional_geojson_feature(body)
+    layer = layer_for(issue, pasted)
+
+    if pasted:
+        geometry = pasted.get("geometry") or {}
+        if geometry.get("type") != "Point" or not valid_point(geometry.get("coordinates")):
+            return None, "pasted GeoJSON is not a valid Point feature"
+        if not in_bounds(geometry["coordinates"], args):
+            return None, bounds_message(geometry["coordinates"], args)
+        feature = pasted
+        feature["id"] = feature.get("id") or candidate_id(issue, layer)
+        feature["feature_type"] = layer
+        feature.setdefault("properties", {})
+        defaults = default_properties(issue, body, layer, args)
+        if isinstance(defaults, str):
+            return None, defaults
+        defaults.update(feature["properties"])
+        defaults.update(common_properties(issue, body))
+        feature["properties"] = defaults
+        return layer, feature
+
+    coords = coordinates_from_body(body)
+    if coords is None:
+        return None, "no usable latitude/longitude found"
+    if not in_bounds(coords, args):
+        return None, bounds_message(coords, args)
+
+    props = default_properties(issue, body, layer, args)
+    if isinstance(props, str):
+        return None, props
     props.update(common_properties(issue, body))
 
     return layer, {
@@ -295,7 +307,7 @@ def main() -> int:
     lines = [
         "# Issue GeoJSON Review",
         "",
-        "Generated candidate GeoJSON from open GitHub issues labeled `map data`.",
+        "Generated candidate GeoJSON from open GitHub issues labeled `map data` or titled `Amenity or Opening:`.",
         "Review each feature in this PR before merging. Generated records use `review_status: pending_pr_approval`.",
         "Generated points must fall within the configured UBC Vancouver bounding box.",
         "",
