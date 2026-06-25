@@ -33,6 +33,7 @@ The current map data is in the `geojson/` folder:
 | `geojson/navigation.geojson` | Confirmed pedestrian route graph extension | `navigation` |
 | `geojson/relationship.geojson` | Feature relationships, currently empty | `relationship` |
 | `geojson/fixture.geojson` | Display cabinet and drawer/island box polygons | `fixture` |
+| `preview.geojson` | Stacked GeoJSON.io review file containing amenity, fixture, detail, kiosk, footprint, level, and unit features | mixed |
 
 Mapped indoor gallery features reference one confirmed underground level:
 
@@ -69,6 +70,21 @@ Many locations at the Beaty can be added to our maps. Consider visitor-facing po
 You do not need to know how to code to help add a location. The most important thing is to collect clear, accurate information so that the JSON entry can be created or reviewed correctly.
 
 If you are submitting a new location, please use the GitHub issue template for amenity contributions. The issue template asks for the information a maintainer needs without requiring you to edit GeoJSON.
+
+## Issue-To-GeoJSON Review Flow
+
+Open issues labeled `map data` can be consumed by the `Generate GeoJSON from Issues` GitHub Actions workflow. The workflow runs when a `map data` issue is opened, edited, labeled, or reopened, and it can also be run manually or by its weekly scheduled backstop.
+
+The workflow:
+
+1. Reads open `map data` issues.
+2. Parses a pasted GeoJSON `Point` feature when one is provided, or builds a candidate point from the issue name and GPS coordinates.
+3. Updates `geojson/amenity.geojson` or `geojson/opening.geojson`.
+4. Rebuilds `preview.geojson` for GeoJSON.io review.
+5. Writes `reports/issue-geojson-review.md`.
+6. Opens or updates a pull request labeled `needs review`.
+
+Generated features are marked with `review_status: "pending_pr_approval"` and include `source_issue_number`, `source_issue_title`, and `source_url`. The pull request review is the approval gate: review the map changes in the PR, edit the generated GeoJSON if needed, and merge only after the candidate data is accepted. Generated point features must fall within the configured UBC Vancouver bounding box, and the generated PR body includes `Closes #...` lines for issues that were converted into candidate GeoJSON. The validation workflow rebuilds `preview.geojson` on pull requests and fails if the committed preview is stale, so accepted PRs land with the source layer and preview in sync.
 
 The best way to figure out the location is to use multiple GPS readings. However, the GPS is not always great underground. Then, use confirmed points and measure from them. It's best if you can establish a reference point along a straight line.
 

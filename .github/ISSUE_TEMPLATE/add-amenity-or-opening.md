@@ -15,13 +15,20 @@ These could include doorways, hallways, exhibits, fossil viewing points, cabinet
 
 ---
 
-## 1. Location name
+## 1. Location name (required)
 
 Use the name a visitor, staff member, or exhibit label would recognize.
 
 Examples: `Accessible Restroom`, `Visitor Information Kiosk`, `Discovery Lab`
 
+Include `opening`, `door`, `entrance`, or `exit` in the issue title or labels when the location should be generated into `geojson/opening.geojson`. Other point submissions are generated into `geojson/amenity.geojson`.
+
 ```text
+
+
+
+
+
 
 ```
 
@@ -29,7 +36,7 @@ Examples: `Accessible Restroom`, `Visitor Information Kiosk`, `Discovery Lab`
 
 ## 2. How was the location confirmed?
 
-Choose all that apply:
+Choose one or more that apply:
 
 - [ ] Visually confirmed on site
 - [ ] Measured on site
@@ -43,6 +50,11 @@ Details:
 
 ```text
 
+
+
+
+
+
 ```
 
 ---
@@ -54,30 +66,16 @@ Use fixed reference points where possible, such as walls, doorways, columns, sta
 
 ```text
 
+
+
+
+
 ```
+
 
 ---
 
-## 4. GPS coordinates
-Add GPS coordinates for each important point along with a short description. If you don't know the GPS coordinates, measure from a known point and use GeoJSON.io to confirm.
-
-For single-point amenities and openings, just use one point. For lines or footprints, use multiple points.
-
-```text
-Point1:
-- Description:
-- Latitude:
-- Longitude:
-
-Point2:
-- Description:
-- Latitude:
-- Longitude:
-```
-
----
-
-## 5. Photos, screenshots, or marked-up plans
+## 4. Photos, screenshots, or marked-up plans (optional)
 
 Attach helpful files, such as:
 - Photo of the amenity
@@ -86,15 +84,10 @@ Attach helpful files, such as:
 - Marked-up floor plan
 - Sketch showing measurements
 
-Notes:
-
-```text
-
-```
 
 ---
 
-## 6. Notes
+## 5. Notes (optional)
 
 List anything that should be checked before adding this to the map.
 
@@ -106,11 +99,15 @@ Examples:
 
 ```text
 
+
+
+
+
 ```
 
 ---
 
-# Optional: pasted GeoJSON feature
+# 6. Pasted GeoJSON feature (optional)
 
 Only fill this in if you are comfortable editing GeoJSON. It is fine to leave blank.
 
@@ -122,5 +119,9 @@ Before pasting GeoJSON, check that:
 - The file was tested in geojson.io.
 
 ```json
+
+
+
+
 
 ```

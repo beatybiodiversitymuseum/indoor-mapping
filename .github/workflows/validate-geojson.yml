@@ -1,0 +1,41 @@
+name: Validate GeoJSON
+
+on:
+  pull_request:
+    paths:
+      - "geojson/**"
+      - "preview.geojson"
+      - "scripts/**"
+      - ".github/workflows/validate-geojson.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "geojson/**"
+      - "preview.geojson"
+      - "scripts/**"
+      - ".github/workflows/validate-geojson.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Rebuild preview
+        run: python3 scripts/build_preview_geojson.py
+
+      - name: Check preview is committed
+        run: |
+          if ! git diff --quiet -- preview.geojson; then
+            echo "preview.geojson is stale. Run python3 scripts/build_preview_geojson.py and commit the result."
+            git diff --stat -- preview.geojson
+            exit 1
+          fi
+
+      - name: Validate GeoJSON
+        run: python3 scripts/validate_geojson.py

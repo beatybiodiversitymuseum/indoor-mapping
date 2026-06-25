@@ -1,0 +1,90 @@
+name: Generate GeoJSON from Issues
+
+on:
+  workflow_dispatch:
+  issues:
+    types:
+      - opened
+      - edited
+      - labeled
+      - reopened
+  schedule:
+    - cron: "17 18 * * 1"
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: geojson-from-issues
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'map data')
+    env:
+      BRANCH_NAME: automation/geojson-from-issues
+      DEFAULT_LEVEL_ID: 41d0e8ca-d315-4b25-938c-7955db2daf2e
+      DEFAULT_AMENITY_CATEGORY: exhibit
+      UBC_BOUNDS_WEST: -123.2705
+      UBC_BOUNDS_SOUTH: 49.2460
+      UBC_BOUNDS_EAST: -123.2250
+      UBC_BOUNDS_NORTH: 49.2820
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Fetch open map data issues
+        run: |
+          gh issue list \
+            --state open \
+            --label "map data" \
+            --limit 200 \
+            --json number,title,body,url,labels \
+            > /tmp/map-data-issues.json
+
+      - name: Generate candidate GeoJSON
+        run: |
+          python3 scripts/generate_geojson_from_issues.py \
+            --issues /tmp/map-data-issues.json \
+            --geojson-dir geojson \
+            --report reports/issue-geojson-review.md
+
+      - name: Build GeoJSON.io preview
+        run: python3 scripts/build_preview_geojson.py
+
+      - name: Validate GeoJSON
+        run: python3 scripts/validate_geojson.py
+
+      - name: Create or update approval PR
+        run: |
+          if git diff --quiet -- geojson preview.geojson; then
+            echo "No generated GeoJSON changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH_NAME"
+          git add geojson reports preview.geojson
+          git commit -m "Generate GeoJSON candidates from issues"
+          git push --force-with-lease origin "$BRANCH_NAME"
+
+          existing_pr_url="$(gh pr list --head "$BRANCH_NAME" --json url --jq '.[0].url')"
+          if [ -n "$existing_pr_url" ]; then
+            gh pr edit "$existing_pr_url" \
+              --title "Review generated GeoJSON from map data issues" \
+              --body-file reports/issue-geojson-review.md
+            gh pr edit "$existing_pr_url" --add-label "map data" --add-label "needs review" || true
+            echo "Updated $existing_pr_url"
+          else
+            new_pr_url="$(gh pr create \
+              --base "${{ github.event.repository.default_branch }}" \
+              --head "$BRANCH_NAME" \
+              --title "Review generated GeoJSON from map data issues" \
+              --body-file reports/issue-geojson-review.md)"
+            gh pr edit "$new_pr_url" --add-label "map data" --add-label "needs review" || true
+          fi
