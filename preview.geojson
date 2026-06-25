@@ -69630,6 +69630,593 @@
       }
     },
     {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/6",
+        "source_issue_number": 6,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan"
+        ],
+        "confirmation_details": "62cm from cabinet 51 corner, 58cm from cabinet 52 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 51.26 and Cabinet 52.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2500802,
+          49.2634957
+        ]
+      },
+      "id": "2a0f9ac8-55fa-5b66-bb37-0c6a50e35a0b",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/8",
+        "source_issue_number": 8,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan"
+        ],
+        "confirmation_details": "58cm away from cabinet 48 corner, 62cm away from cabinet 47 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 47.22 and Cabinet 48.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501432,
+          49.2634738
+        ]
+      },
+      "id": "1fac3f0b-1993-5efb-96a2-47874ef74e56",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/9",
+        "source_issue_number": 9,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "62cm from cabinet 44 corner, 58cm from cabinet 43 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 43.24 and Cabinet 44.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502067,
+          49.2634517
+        ]
+      },
+      "id": "d4cab4a2-2889-5603-a692-9f9668b03dc1",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/10",
+        "source_issue_number": 10,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 39 corner, 62cm away from cabinet 40 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 39.26 and Cabinet 40.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502697,
+          49.2634297
+        ]
+      },
+      "id": "4f6e09e7-7132-573a-bac4-e132683b83ca",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/11",
+        "source_issue_number": 11,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 35 corner, 62cm away from cabinet 36 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinter 35.17 and Cabinet 36.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503327,
+          49.2634079
+        ]
+      },
+      "id": "619fa456-ddf4-5b6d-b39d-011000be737d",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/12",
+        "source_issue_number": 12,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 31 corner, 62cm away from cabinet 32 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 31.16 and Cabinet 32.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503956,
+          49.2633858
+        ]
+      },
+      "id": "1c1a326f-a411-5096-88f9-a0a3b8598ef6",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/13",
+        "source_issue_number": 13,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 27 corner, 62cm away from cabinet 28 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 27.26 and Cabinet 28.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504585,
+          49.263364
+        ]
+      },
+      "id": "00527250-88b5-5525-9930-b86312e4a195",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/14",
+        "source_issue_number": 14,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 23 corner, 62cm away from cabinet 24 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 23.16 and Cabinet 24.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2505209,
+          49.2633424
+        ]
+      },
+      "id": "5dcfbe8d-b58e-5049-9926-5ef24c1e593a",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/15",
+        "source_issue_number": 15,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 20 corner, 62cm away from cabinet 19 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 19.26 and Cabinet 20.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2505838,
+          49.2633205
+        ]
+      },
+      "id": "9e8a64b5-0070-52ef-a71b-e06f882456b0",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/16",
+        "source_issue_number": 16,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 16 corner, 62cm away from cabinet 15 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 15.26 and Cabinet 16.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2506468,
+          49.2632986
+        ]
+      },
+      "id": "ca26c454-da65-5134-9f2c-db3a63e9d5a7",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/17",
+        "source_issue_number": 17,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 11 corner, 62cm away from cabinet 12 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 11.26 and Cabinet 12.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507104,
+          49.2632765
+        ]
+      },
+      "id": "2a95f9f9-7c24-5fb7-a3e2-fbddd19a535f",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/18",
+        "source_issue_number": 18,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 7 corner, 62cm away from cabinet 8 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 7.14 and Cabinet 8.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507731,
+          49.2632545
+        ]
+      },
+      "id": "4033ad85-0065-5baf-a053-68dfba8dbea4",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "review_status": "pending_pr_approval",
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/19",
+        "source_issue_number": 19,
+        "source_issue_title": "Amenity or Opening: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 3 corner, 62cm away from cabinet 4 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 3.24 and Cabinet 4.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508364,
+          49.2632326
+        ]
+      },
+      "id": "9d7cc155-aed6-57b8-98ff-1e203e625bd6",
+      "feature_type": "amenity"
+    },
+    {
       "id": "4281423a-cd23-44c9-aa87-d04ed3857627",
       "type": "Feature",
       "feature_type": "fixture",
