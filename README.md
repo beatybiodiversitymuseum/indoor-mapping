@@ -33,7 +33,7 @@ The current map data is in the `geojson/` folder:
 | `geojson/navigation.geojson` | Confirmed pedestrian route graph extension | `navigation` |
 | `geojson/relationship.geojson` | Feature relationships, currently empty | `relationship` |
 | `geojson/fixture.geojson` | Display cabinet and drawer/island box polygons | `fixture` |
-| `preview.geojson` | Stacked GeoJSON.io review file containing amenity, fixture, detail, kiosk, footprint, level, and unit features | mixed |
+| `preview.geojson` | Stacked GeoJSON.io review file containing unit, level, footprint, kiosk, detail, fixture, and amenity features so amenities draw on top | mixed |
 
 Mapped indoor gallery features reference one confirmed underground level:
 
@@ -44,16 +44,44 @@ Mapped indoor gallery features reference one confirmed underground level:
 
 [geojson.io](https://geojson.io/) is a beginner-friendly website for checking and previewing GeoJSON.
 
-To test a file:
+Use `preview.geojson` when you want the easiest visual review. It combines the main review layers in draw order so unit/level/footprint shapes load first and amenity points load last.
+
+### Import The Preview
 
 1. Go to [geojson.io](https://geojson.io/).
-2. Open the file from this repository in a text editor.
-3. Select all of the text and copy it.
-4. In geojson.io, click the `JSON` tab on the right.
-5. Paste the file contents into the editor.
-6. Check that the map appears near UBC in Vancouver.
-7. Look for red error messages in the JSON editor.
-8. If you edit the data in geojson.io, copy the full updated JSON back into the same file in this repository.
+2. Click `Import`, choose `preview.geojson`, and wait for the map to load near UBC in Vancouver.
+3. Look for red error messages in the main right-side `JSON` editor.
+4. Click existing features on the map to orient yourself before adding a new point.
+
+![GeoJSON.io import control for preview.geojson](docs/geojsonio-import-preview.png)
+
+### Measure A Reference Distance
+
+1. Select an existing feature, or draw a temporary `Line` between two known reference points.
+2. With the feature selected, click the `Measurements` button in the top toolbar.
+3. For a line, the measurement dialog shows the bounding box, length, selectable units such as meters, and vertex count.
+4. Use meters for museum measurements unless another unit is clearer.
+5. Delete the temporary line before copying final GeoJSON if it was only used for measurement.
+
+![GeoJSON.io Measurements dialog](docs/geojsonio-measure-line.png)
+
+### Add And Copy A Point
+
+1. Click the `Point` drawing tool in the top toolbar.
+2. Click the map where the new location should go.
+3. Select the new point.
+4. In the lower `Feature Editor` panel, click the `GeoJSON` tab. This lower panel edits only the selected feature.
+5. Hover over the lower GeoJSON snippet so its `Copy` button appears.
+6. Click `Copy` to copy only the selected point feature.
+
+### Paste Into The Issue
+
+1. Open a new `Add or correct an Amenity or Opening` issue.
+2. Fill in the name, confirmation method, reference points, GPS coordinates, photos, and notes.
+3. In `Optional: pasted GeoJSON feature`, paste the copied selected point feature between the fenced `json` lines.
+4. Confirm the pasted feature is a single `Point` feature and uses `[longitude, latitude]` coordinate order.
+
+![GitHub issue optional GeoJSON feature paste example](docs/github-issue-paste-geojson-example.svg)
 
 Before saving a change, confirm:
 
@@ -84,7 +112,7 @@ The workflow:
 5. Writes `reports/issue-geojson-review.md`.
 6. Opens or updates a pull request labeled `needs review`.
 
-Generated features are marked with `review_status: "pending_pr_approval"` and include `source_issue_number`, `source_issue_title`, and `source_url`. The pull request review is the approval gate: review the map changes in the PR, edit the generated GeoJSON if needed, and merge only after the candidate data is accepted. Generated point features must fall within the configured UBC Vancouver bounding box, and the generated PR body includes `Closes #...` lines for issues that were converted into candidate GeoJSON. The validation workflow rebuilds `preview.geojson` on pull requests and fails if the committed preview is stale, so accepted PRs land with the source layer and preview in sync.
+Generated features include `source_issue_number`, `source_issue_title`, and `source_url`. The pull request review is the approval gate: review the map changes in the PR, edit the generated GeoJSON if needed, and merge only after the candidate data is accepted. Generated point features must fall within the configured UBC Vancouver bounding box, and the generated PR body includes `Closes #...` lines for issues that were converted into candidate GeoJSON. The validation workflow rebuilds `preview.geojson` on pull requests and fails if the committed preview is stale, so accepted PRs land with the source layer and preview in sync.
 
 The best way to figure out the location is to use multiple GPS readings. However, the GPS is not always great underground. Then, use confirmed points and measure from them. It's best if you can establish a reference point along a straight line.
 

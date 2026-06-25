@@ -9,13 +9,13 @@ from pathlib import Path
 
 
 PREVIEW_LAYERS = [
-    "amenity",
-    "fixture",
-    "detail",
-    "kiosk",
-    "footprint",
-    "level",
     "unit",
+    "level",
+    "footprint",
+    "kiosk",
+    "detail",
+    "fixture",
+    "amenity",
 ]
 
 

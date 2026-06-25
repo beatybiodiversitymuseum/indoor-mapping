@@ -24,7 +24,6 @@ Known values:
 
 - `locally_confirmed`: Confirmed by project/local museum review.
 - `derived_from_wayfinding_offset`: Created from a confirmed wayfinding offset point, but not directly hand-authored as a standalone exhibit point.
-- `pending_pr_approval`: Generated from a GitHub issue and awaiting pull request review before being treated as accepted map data.
 
 `pedestrian_importance`
 : Boolean. `true` means the feature matters to pedestrian navigation, visitor orientation, or visitor experience.

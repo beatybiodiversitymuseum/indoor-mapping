@@ -163,7 +163,6 @@ def layer_for(issue: dict, feature: dict | None) -> str:
 def common_properties(issue: dict, body: str) -> dict:
     confirmation = section(body, 2)
     return {
-        "review_status": "pending_pr_approval",
         "source": "GitHub issue",
         "source_url": issue_url(issue),
         "source_issue_number": issue.get("number"),
@@ -253,12 +252,22 @@ def accepted_feature_exists(collections: dict[str, dict], issue_number: int | No
     for collection in collections.values():
         for feature in collection.get("features", []):
             properties = feature.get("properties", {})
-            if (
-                properties.get("source_issue_number") == issue_number
-                and properties.get("review_status") != "pending_pr_approval"
-            ):
+            if properties.get("source_issue_number") == issue_number:
                 return True
     return False
+
+
+def remove_stale_pr_status(collection: dict) -> bool:
+    changed = False
+    for feature in collection.get("features", []):
+        properties = feature.get("properties", {})
+        if (
+            properties.get("source_issue_number") is not None
+            and properties.get("review_status") == "pending_pr_approval"
+        ):
+            del properties["review_status"]
+            changed = True
+    return changed
 
 
 def main() -> int:
@@ -274,6 +283,10 @@ def main() -> int:
     }
 
     touched_layers = set()
+    for layer, collection in collections.items():
+        if remove_stale_pr_status(collection):
+            touched_layers.add(layer)
+
     summaries = []
     skipped = []
     for issue in sorted(issues, key=lambda item: item.get("number", 0)):
@@ -289,10 +302,7 @@ def main() -> int:
         collection["features"] = [
             feature
             for feature in collection.get("features", [])
-            if not (
-                feature.get("properties", {}).get("source_issue_number") == issue_number
-                and feature.get("properties", {}).get("review_status") == "pending_pr_approval"
-            )
+            if feature.get("properties", {}).get("source_issue_number") != issue_number
         ]
         collection["features"].append(result)
         touched_layers.add(layer)
@@ -308,7 +318,7 @@ def main() -> int:
         "# Issue GeoJSON Review",
         "",
         "Generated candidate GeoJSON from open GitHub issues labeled `map data` or titled `Amenity or Opening:`.",
-        "Review each feature in this PR before merging. Generated records use `review_status: pending_pr_approval`.",
+        "Review each feature in this PR before merging. The pull request is the approval record.",
         "Generated points must fall within the configured UBC Vancouver bounding box.",
         "",
         "## Generated",
