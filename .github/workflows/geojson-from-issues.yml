@@ -118,10 +118,13 @@ jobs:
             gh pr edit "$existing_pr_url" --add-label "map data" --add-label "needs review" || true
             echo "Updated $existing_pr_url"
           else
-            new_pr_url="$(gh pr create \
+            if ! new_pr_url="$(gh pr create \
               --base "${{ github.event.repository.default_branch }}" \
               --head "$BRANCH_NAME" \
               --title "Review generated GeoJSON from map data issues" \
-              --body-file reports/issue-geojson-review.md)"
+              --body-file reports/issue-geojson-review.md)"; then
+              echo "::warning::Generated GeoJSON was pushed to $BRANCH_NAME, but GitHub refused pull request creation. Enable repository Actions setting 'Allow GitHub Actions to create and approve pull requests', or open a PR manually from $BRANCH_NAME."
+              exit 0
+            fi
             gh pr edit "$new_pr_url" --add-label "map data" --add-label "needs review" || true
           fi
