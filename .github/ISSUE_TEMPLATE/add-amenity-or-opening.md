@@ -1,7 +1,7 @@
 ---
 name: Add or correct an Amenity or Opening
 about: Submit a visitor-facing map point
-title: "Amenity or Opening: "
+title: "Amenity: "
 labels: ["amenity", "map data", "needs review"]
 assignees: ""
 ---
