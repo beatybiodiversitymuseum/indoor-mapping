@@ -171,8 +171,8 @@ export default function Viewer() {
 
   useEffect(() => {
     Promise.all([
-      fetch("/api/map-data").then((response) => response.json()),
-      fetch("/api/navigation").then((response) => response.json()),
+      fetch("/map/api/map-data").then((response) => response.json()),
+      fetch("/map/api/navigation").then((response) => response.json()),
     ]).then(([mapData, navigation]) => {
       setData(mapData);
       setNavigationData(navigation);
