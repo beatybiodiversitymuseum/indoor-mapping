@@ -32,7 +32,7 @@ Metadata conventions:
 - `review_status: "locally_confirmed"` means the local interpretation has been reviewed by project maintainers.
 - `source`, `source_url`, `source_license`, and `source_attribution` preserve the OSM source trail for each promoted feature.
 
-## Confirmed Underground Cabinet Gallery
+## Confirmed Museum Floor
 
 `geojson/level.geojson` and `geojson/unit.geojson` contain a locally confirmed underground rectangle for the cabinet gallery section.
 
@@ -119,6 +119,10 @@ Each navigation feature preserves the original route fields where present, inclu
 - `radius`.
 
 Navigation features are marked with `navigation_mode: "pedestrian"`, `indoor: true`, `route_confirmed: true`, and `review_status: "locally_confirmed"`.
+
+The walking grid was recentered in UTM Zone 10N (`EPSG:26910`) after local review. Museum north-south follows the long axis of the Column 1 cabinet run, and museum east-west is perpendicular to it. Enclosed aisle centerlines were derived from fixture faces on both sides; one-sided perimeter routes were preserved. Every walking path remains aligned to one of the two museum axes, inside the Museum Floor Unit, and outside fixture polygons. The approved Stage 1 review artifacts are in `reports/navigation-proposals/01-centered.geojson` and `01-centered.png`.
+
+Five corner-to-corner paths were added after Stage 2 review. Each remains inside a closed walking-grid face, keeps at least 0.35 m fixture clearance, and reduced the graph distance between its endpoints by at least 1 m when selected. The review artifacts are in `reports/navigation-proposals/02-diagonals.geojson` and `02-diagonals.png`.
 
 ## Confirmed Fossil Excavation Exhibits
 

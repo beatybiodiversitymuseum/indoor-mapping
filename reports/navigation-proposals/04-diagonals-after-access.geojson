@@ -195896,6 +195896,138 @@
         "route_confirmed": true,
         "node_type": "fixture_access_point"
       }
+    },
+    {
+      "id": "58adeba0-635e-5d51-973b-c5b776c0c267",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25021534922061,
+            49.263542028930694
+          ],
+          [
+            -123.25022622947861,
+            49.263505253275824
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Diagonal Path 1"
+        },
+        "alt_name": {
+          "en": "path_210"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25022078934961,
+            49.26352364110326
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 210,
+        "start_point": [
+          -123.25021534922061,
+          49.263542028930694
+        ],
+        "end_point": [
+          -123.25022622947861,
+          49.263505253275824
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_diagonal",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "proposal_saving_m": 5.18,
+        "proposal_length_m": 4.164,
+        "proposal_face_index": 32,
+        "proposal_number": 1
+      }
+    },
+    {
+      "id": "e241d8b0-1504-5e60-aa1b-bd43cf98aa68",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2502469351055,
+            49.263531239013886
+          ],
+          [
+            -123.2502577994041,
+            49.263494481192936
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Diagonal Path 2"
+        },
+        "alt_name": {
+          "en": "path_211"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2502523672548,
+            49.26351286010341
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 211,
+        "start_point": [
+          -123.2502469351055,
+          49.263531239013886
+        ],
+        "end_point": [
+          -123.2502577994041,
+          49.263494481192936
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_diagonal",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "proposal_saving_m": Infinity,
+        "proposal_length_m": 4.162,
+        "proposal_face_index": 34,
+        "proposal_number": 2
+      }
     }
-  ]
+  ],
+  "proposal": {
+    "stage": "04-diagonals-after-access",
+    "status": "pending_approval",
+    "crs_used_for_derivation": "EPSG:26910",
+    "closed_faces_evaluated": 88,
+    "candidate_diagonals": 2,
+    "accepted_diagonals": 2,
+    "parameters": {
+      "minimum_saving_m": 1.0,
+      "fixture_clearance_m": 0.35,
+      "hard_boundaries": [
+        "Museum Floor exterior",
+        "fixture polygons"
+      ]
+    }
+  }
 }

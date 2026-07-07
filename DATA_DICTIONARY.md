@@ -7,7 +7,7 @@ Some fields come from IMDF-style indoor mapping concepts. Others are local exten
 ## Label Fields
 
 `name`
-: Human-readable label for a feature. Labels are stored as language objects, for example `{ "en": "Underground Cabinet Gallery" }`.
+: Human-readable label for a feature. Labels are stored as language objects, for example `{ "en": "Museum Floor" }`.
 
 `alt_name`
 : Alternate label or stable short identifier. In this repository, `alt_name` is often used as a machine-friendly lookup key, also stored as a language object such as `{ "en": "col_1_cab_01" }`.
@@ -115,7 +115,7 @@ Examples:
 : The confirmed underground museum gallery level.
 
 `category: "room"` in `unit.geojson`
-: The underground cabinet gallery unit.
+: The Museum Floor unit.
 
 ## Fixtures
 

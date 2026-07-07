@@ -195896,6 +195896,3502 @@
         "route_confirmed": true,
         "node_type": "fixture_access_point"
       }
+    },
+    {
+      "id": "cca1ca30-9776-5f46-ad93-8f152267efe0",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25074435736609,
+          49.263344805333126
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 873"
+        },
+        "alt_name": {
+          "en": "wp_873"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25074435736609,
+            49.263344805333126
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 873,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "f5116046-4808-5f62-8128-6526def0e27c",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507758705094,
+            49.26333405031166
+          ],
+          [
+            -123.25074435736609,
+            49.263344805333126
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 1"
+        },
+        "alt_name": {
+          "en": "path_210"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25076011393774,
+            49.263339427822395
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 210,
+        "start_point": [
+          -123.2507758705094,
+          49.26333405031166
+        ],
+        "end_point": [
+          -123.25074435736609,
+          49.263344805333126
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_185",
+        "target": "wp_873",
+        "proposal_length_m": 2.586,
+        "proposal_direction": "east",
+        "proposal_number": 1
+      }
+    },
+    {
+      "id": "265e73a5-b922-5dee-91fe-64e01378bb64",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25085357473097,
+          49.263331780182675
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 874"
+        },
+        "alt_name": {
+          "en": "wp_874"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25085357473097,
+            49.263331780182675
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 874,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "86a0d4c7-aeb2-504c-8a47-1997ce7addfc",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25082200575964,
+            49.26334255428501
+          ],
+          [
+            -123.25085357473097,
+            49.263331780182675
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 2"
+        },
+        "alt_name": {
+          "en": "path_211"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2508377902453,
+            49.26333716723384
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 211,
+        "start_point": [
+          -123.25082200575964,
+          49.26334255428501
+        ],
+        "end_point": [
+          -123.25085357473097,
+          49.263331780182675
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_475",
+        "target": "wp_874",
+        "proposal_length_m": 2.59,
+        "proposal_direction": "west",
+        "proposal_number": 2
+      }
+    },
+    {
+      "id": "12b90813-27b2-50ea-ab65-c4598876c7f3",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25077485614099,
+          49.26333277728799
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 875"
+        },
+        "alt_name": {
+          "en": "wp_875"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25077485614099,
+            49.26333277728799
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 875,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "2c0cbebc-bc55-5185-81b2-94dcb49c17b4",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25074334299829,
+            49.26334353230918
+          ],
+          [
+            -123.25077485614099,
+            49.26333277728799
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 3"
+        },
+        "alt_name": {
+          "en": "path_212"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25075909956965,
+            49.26333815479859
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 212,
+        "start_point": [
+          -123.25074334299829,
+          49.26334353230918
+        ],
+        "end_point": [
+          -123.25077485614099,
+          49.26333277728799
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_240",
+        "target": "wp_875",
+        "proposal_length_m": 2.586,
+        "proposal_direction": "west",
+        "proposal_number": 3
+      }
+    },
+    {
+      "id": "f94cffa7-583b-57c0-818f-937c647a4aa6",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25075201693204,
+          49.26335441802822
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 876"
+        },
+        "alt_name": {
+          "en": "wp_876"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25075201693204,
+            49.26335441802822
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 876,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "103cde64-3dac-509f-abee-7c074c0567dc",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25078353007976,
+            49.26334366300467
+          ],
+          [
+            -123.25075201693204,
+            49.26335441802822
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 4"
+        },
+        "alt_name": {
+          "en": "path_213"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2507677735059,
+            49.263349040516445
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 213,
+        "start_point": [
+          -123.25078353007976,
+          49.26334366300467
+        ],
+        "end_point": [
+          -123.25075201693204,
+          49.26335441802822
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_444",
+        "target": "wp_876",
+        "proposal_length_m": 2.586,
+        "proposal_direction": "east",
+        "proposal_number": 4
+      }
+    },
+    {
+      "id": "c9d74b69-dd26-514d-8a5a-2b5e2df713b6",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25086123431484,
+          49.26334139286897
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 877"
+        },
+        "alt_name": {
+          "en": "wp_877"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25086123431484,
+            49.26334139286897
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 877,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "48391f10-ad78-5956-ba4b-7be55ff01fc1",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25082966533905,
+            49.26335216697338
+          ],
+          [
+            -123.25086123431484,
+            49.26334139286897
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 5"
+        },
+        "alt_name": {
+          "en": "path_214"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25084544982695,
+            49.26334677992118
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 214,
+        "start_point": [
+          -123.25082966533905,
+          49.26335216697338
+        ],
+        "end_point": [
+          -123.25086123431484,
+          49.26334139286897
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_519",
+        "target": "wp_877",
+        "proposal_length_m": 2.59,
+        "proposal_direction": "west",
+        "proposal_number": 5
+      }
+    },
+    {
+      "id": "41e0943d-d48b-5070-9a20-7dc64c496ad4",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25078508391864,
+          49.263345613058206
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 878"
+        },
+        "alt_name": {
+          "en": "wp_878"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25078508391864,
+            49.263345613058206
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 878,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "2dd7f731-9ffc-5448-8775-50f11be367f8",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25075357077002,
+            49.263356368082164
+          ],
+          [
+            -123.25078508391864,
+            49.263345613058206
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 6"
+        },
+        "alt_name": {
+          "en": "path_215"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25076932734433,
+            49.26335099057019
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 215,
+        "start_point": [
+          -123.25075357077002,
+          49.263356368082164
+        ],
+        "end_point": [
+          -123.25078508391864,
+          49.263345613058206
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_491",
+        "target": "wp_878",
+        "proposal_length_m": 2.586,
+        "proposal_direction": "west",
+        "proposal_number": 6
+      }
+    },
+    {
+      "id": "92150303-3972-51fb-b854-e25941f320d4",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25092506146113,
+          49.26337010120575
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 879"
+        },
+        "alt_name": {
+          "en": "wp_879"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25092506146113,
+            49.26337010120575
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 879,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "e6cdd5af-91ce-56b2-8a66-7743af3cb301",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25095666757213,
+            49.26335931439826
+          ],
+          [
+            -123.25092506146113,
+            49.26337010120575
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 7"
+        },
+        "alt_name": {
+          "en": "path_216"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25094086451662,
+            49.263364707802005
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 216,
+        "start_point": [
+          -123.25095666757213,
+          49.26335931439826
+        ],
+        "end_point": [
+          -123.25092506146113,
+          49.26337010120575
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_436",
+        "target": "wp_879",
+        "proposal_length_m": 2.593,
+        "proposal_direction": "east",
+        "proposal_number": 7
+      }
+    },
+    {
+      "id": "1a7c7384-b315-56b4-93b5-6523f70b2e31",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2506588666415,
+          49.26338906821998
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 880"
+        },
+        "alt_name": {
+          "en": "wp_880"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2506588666415,
+            49.26338906821998
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 880,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "1efc1ed6-836c-5607-9270-d297146d904d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25069047278161,
+            49.26337828149932
+          ],
+          [
+            -123.2506588666415,
+            49.26338906821998
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 8"
+        },
+        "alt_name": {
+          "en": "path_217"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25067466971156,
+            49.263383674859654
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 217,
+        "start_point": [
+          -123.25069047278161,
+          49.26337828149932
+        ],
+        "end_point": [
+          -123.2506588666415,
+          49.26338906821998
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_564",
+        "target": "wp_880",
+        "proposal_length_m": 2.593,
+        "proposal_direction": "east",
+        "proposal_number": 8
+      }
+    },
+    {
+      "id": "1853186d-d7b2-5582-bc5d-89be973f69ed",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25083198002832,
+          49.26340446716221
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 881"
+        },
+        "alt_name": {
+          "en": "wp_881"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25083198002832,
+            49.26340446716221
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 881,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "2aec646d-36ba-55cc-93d2-80a4ba29ba0d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25086292412222,
+            49.26339390633286
+          ],
+          [
+            -123.25083198002832,
+            49.26340446716221
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 9"
+        },
+        "alt_name": {
+          "en": "path_218"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25084745207528,
+            49.263399186747534
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 218,
+        "start_point": [
+          -123.25086292412222,
+          49.26339390633286
+        ],
+        "end_point": [
+          -123.25083198002832,
+          49.26340446716221
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_740",
+        "target": "wp_881",
+        "proposal_length_m": 2.539,
+        "proposal_direction": "east",
+        "proposal_number": 9
+      }
+    },
+    {
+      "id": "481e7822-6e86-51ce-b283-b83c8c4f12f4",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25089449311731,
+          49.26338313221941
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 882"
+        },
+        "alt_name": {
+          "en": "wp_882"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25089449311731,
+            49.26338313221941
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 882,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "4fec8594-116a-54e7-94be-24b37ee24dc1",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25086292412222,
+            49.26339390633286
+          ],
+          [
+            -123.25089449311731,
+            49.26338313221941
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 10"
+        },
+        "alt_name": {
+          "en": "path_219"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25087870861977,
+            49.263388519276134
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 219,
+        "start_point": [
+          -123.25086292412222,
+          49.26339390633286
+        ],
+        "end_point": [
+          -123.25089449311731,
+          49.26338313221941
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_740",
+        "target": "wp_882",
+        "proposal_length_m": 2.59,
+        "proposal_direction": "west",
+        "proposal_number": 10
+      }
+    },
+    {
+      "id": "14ff96c5-b437-51e2-86d5-b0dbb15e6254",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508642869646,
+          49.26339561668139
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 883"
+        },
+        "alt_name": {
+          "en": "wp_883"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2508642869646,
+            49.26339561668139
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 883,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "5ab99ab8-3b08-5be6-b999-6187f915253a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25083334286995,
+            49.26340617751111
+          ],
+          [
+            -123.2508642869646,
+            49.26339561668139
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 11"
+        },
+        "alt_name": {
+          "en": "path_220"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25084881491728,
+            49.26340089709625
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 220,
+        "start_point": [
+          -123.25083334286995,
+          49.26340617751111
+        ],
+        "end_point": [
+          -123.2508642869646,
+          49.26339561668139
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_274",
+        "target": "wp_883",
+        "proposal_length_m": 2.539,
+        "proposal_direction": "west",
+        "proposal_number": 11
+      }
+    },
+    {
+      "id": "6bf667a3-4632-5d37-b758-5f8693bc09fe",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25058268106714,
+          49.26339937355018
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 884"
+        },
+        "alt_name": {
+          "en": "wp_884"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25058268106714,
+            49.26339937355018
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 884,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "be002c74-b019-5d3b-86c8-5daf105406dc",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25055741099625,
+            49.26340799782902
+          ],
+          [
+            -123.25058268106714,
+            49.26339937355018
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 12"
+        },
+        "alt_name": {
+          "en": "path_221"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2505700460317,
+            49.263403685689596
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 221,
+        "start_point": [
+          -123.25055741099625,
+          49.26340799782902
+        ],
+        "end_point": [
+          -123.25058268106714,
+          49.26339937355018
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_302",
+        "target": "wp_884",
+        "proposal_length_m": 2.074,
+        "proposal_direction": "west",
+        "proposal_number": 12
+      }
+    },
+    {
+      "id": "d1485b53-1611-50cd-b574-bdb25caf7868",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507650385922,
+          49.26342149397451
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 885"
+        },
+        "alt_name": {
+          "en": "wp_885"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2507650385922,
+            49.26342149397451
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 885,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "f03ccaa0-5d5c-5358-b369-d6a6f3fd523c",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25079682123187,
+            49.263410646987026
+          ],
+          [
+            -123.2507650385922,
+            49.26342149397451
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 13"
+        },
+        "alt_name": {
+          "en": "path_222"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25078092991204,
+            49.26341607048077
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 222,
+        "start_point": [
+          -123.25079682123187,
+          49.263410646987026
+        ],
+        "end_point": [
+          -123.2507650385922,
+          49.26342149397451
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_499",
+        "target": "wp_885",
+        "proposal_length_m": 2.608,
+        "proposal_direction": "east",
+        "proposal_number": 13
+      }
+    },
+    {
+      "id": "4e8c3c94-bfb5-50f5-82eb-56361d9df683",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25059290880021,
+          49.26341220932649
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 886"
+        },
+        "alt_name": {
+          "en": "wp_886"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25059290880021,
+            49.26341220932649
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 886,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "57b19b0b-1495-5e54-a8ba-ccbe4b74bfd4",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25056763872459,
+            49.26342083360754
+          ],
+          [
+            -123.25059290880021,
+            49.26341220932649
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 14"
+        },
+        "alt_name": {
+          "en": "path_223"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25058027376241,
+            49.263416521467015
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 223,
+        "start_point": [
+          -123.25056763872459,
+          49.26342083360754
+        ],
+        "end_point": [
+          -123.25059290880021,
+          49.26341220932649
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_515",
+        "target": "wp_886",
+        "proposal_length_m": 2.074,
+        "proposal_direction": "west",
+        "proposal_number": 14
+      }
+    },
+    {
+      "id": "0e7750a2-4721-5dfb-9eeb-a1d102a01a1d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25077526637617,
+          49.26343432973337
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 887"
+        },
+        "alt_name": {
+          "en": "wp_887"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25077526637617,
+            49.26343432973337
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 887,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "e46ea29f-93e2-5200-8c47-3212eb227c51",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25080704902184,
+            49.26342348274308
+          ],
+          [
+            -123.25077526637617,
+            49.26343432973337
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 15"
+        },
+        "alt_name": {
+          "en": "path_224"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25079115769901,
+            49.263428906238225
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 224,
+        "start_point": [
+          -123.25080704902184,
+          49.26342348274308
+        ],
+        "end_point": [
+          -123.25077526637617,
+          49.26343432973337
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_359",
+        "target": "wp_887",
+        "proposal_length_m": 2.608,
+        "proposal_direction": "east",
+        "proposal_number": 15
+      }
+    },
+    {
+      "id": "f9c1036b-ab7c-57ae-a387-b42694a17ecf",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25073390736586,
+          49.263432791562145
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 888"
+        },
+        "alt_name": {
+          "en": "wp_888"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25073390736586,
+            49.263432791562145
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 888,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "b653adfb-cd60-5373-9100-41286d86dd7c",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507023012005,
+            49.26344357829461
+          ],
+          [
+            -123.25073390736586,
+            49.263432791562145
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 16"
+        },
+        "alt_name": {
+          "en": "path_225"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25071810428318,
+            49.263438184928376
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 225,
+        "start_point": [
+          -123.2507023012005,
+          49.26344357829461
+        ],
+        "end_point": [
+          -123.25073390736586,
+          49.263432791562145
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_500",
+        "target": "wp_888",
+        "proposal_length_m": 2.593,
+        "proposal_direction": "west",
+        "proposal_number": 16
+      }
+    },
+    {
+      "id": "a408a528-3420-5c81-bcfe-e44b5038c5ce",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25043880379333,
+          49.263457479513185
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 889"
+        },
+        "alt_name": {
+          "en": "wp_889"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25043880379333,
+            49.263457479513185
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 889,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "9418b351-fd50-5a03-abaf-16ca8abd0d03",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25046113893536,
+            49.26344985691677
+          ],
+          [
+            -123.25043880379333,
+            49.263457479513185
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 17"
+        },
+        "alt_name": {
+          "en": "path_226"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25044997136435,
+            49.26345366821498
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 226,
+        "start_point": [
+          -123.25046113893536,
+          49.26344985691677
+        ],
+        "end_point": [
+          -123.25043880379333,
+          49.263457479513185
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_321",
+        "target": "wp_889",
+        "proposal_length_m": 1.833,
+        "proposal_direction": "east",
+        "proposal_number": 17
+      }
+    },
+    {
+      "id": "917dece3-6293-5991-b757-3e3fb1a0ff32",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25061091512434,
+          49.263475145318175
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 890"
+        },
+        "alt_name": {
+          "en": "wp_890"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25061091512434,
+            49.263475145318175
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 890,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "99bce093-2692-588f-9d8c-09c9906774e5",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25063618522015,
+            49.26346652102768
+          ],
+          [
+            -123.25061091512434,
+            49.263475145318175
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 18"
+        },
+        "alt_name": {
+          "en": "path_227"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25062355017224,
+            49.26347083317293
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 227,
+        "start_point": [
+          -123.25063618522015,
+          49.26346652102768
+        ],
+        "end_point": [
+          -123.25061091512434,
+          49.263475145318175
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_862",
+        "target": "wp_890",
+        "proposal_length_m": 2.074,
+        "proposal_direction": "east",
+        "proposal_number": 18
+      }
+    },
+    {
+      "id": "c0c4d5c8-c4b9-525a-a2f9-7176a71dd4f1",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25039980359546,
+          49.26346739788447
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 891"
+        },
+        "alt_name": {
+          "en": "wp_891"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25039980359546,
+            49.26346739788447
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 891,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "b9fd8b17-b081-5aeb-985c-35aadacaf9bb",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25036789373235,
+            49.26347828813956
+          ],
+          [
+            -123.25039980359546,
+            49.26346739788447
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 19"
+        },
+        "alt_name": {
+          "en": "path_228"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2503838486639,
+            49.26347284301201
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 228,
+        "start_point": [
+          -123.25036789373235,
+          49.26347828813956
+        ],
+        "end_point": [
+          -123.25039980359546,
+          49.26346739788447
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_287",
+        "target": "wp_891",
+        "proposal_length_m": 2.618,
+        "proposal_direction": "west",
+        "proposal_number": 19
+      }
+    },
+    {
+      "id": "7078589d-040f-59c0-8ccb-0ec35c06c1fe",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25062114287233,
+          49.263487981081504
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 892"
+        },
+        "alt_name": {
+          "en": "wp_892"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25062114287233,
+            49.263487981081504
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 892,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "738974a6-1c1d-5830-9621-999048f84f1c",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25064641297287,
+            49.2634793567888
+          ],
+          [
+            -123.25062114287233,
+            49.263487981081504
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 20"
+        },
+        "alt_name": {
+          "en": "path_229"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2506337779226,
+            49.26348366893515
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 229,
+        "start_point": [
+          -123.25064641297287,
+          49.2634793567888
+        ],
+        "end_point": [
+          -123.25062114287233,
+          49.263487981081504
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_318",
+        "target": "wp_892",
+        "proposal_length_m": 2.074,
+        "proposal_direction": "east",
+        "proposal_number": 20
+      }
+    },
+    {
+      "id": "10ea2adc-19d4-5011-bac8-03b347fe043b",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25029588079929,
+          49.263490878341116
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 893"
+        },
+        "alt_name": {
+          "en": "wp_893"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25029588079929,
+            49.263490878341116
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 893,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "9c12098e-12ed-56aa-b37f-64c42755b205",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25032712462769,
+            49.263480215419165
+          ],
+          [
+            -123.25029588079929,
+            49.263490878341116
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 21"
+        },
+        "alt_name": {
+          "en": "path_230"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25031150271349,
+            49.26348554688014
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 230,
+        "start_point": [
+          -123.25032712462769,
+          49.263480215419165
+        ],
+        "end_point": [
+          -123.25029588079929,
+          49.263490878341116
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_388",
+        "target": "wp_893",
+        "proposal_length_m": 2.564,
+        "proposal_direction": "east",
+        "proposal_number": 21
+      }
+    },
+    {
+      "id": "80ed773e-ae6b-5a6e-ad44-574b599320ad",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25040741804322,
+          49.263476954038815
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 894"
+        },
+        "alt_name": {
+          "en": "wp_894"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25040741804322,
+            49.263476954038815
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 894,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "dcc0d199-f92c-57f1-b4ed-5f2769e31e69",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25037550817567,
+            49.26348784429601
+          ],
+          [
+            -123.25040741804322,
+            49.263476954038815
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 22"
+        },
+        "alt_name": {
+          "en": "path_231"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25039146310945,
+            49.263482399167415
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 231,
+        "start_point": [
+          -123.25037550817567,
+          49.26348784429601
+        ],
+        "end_point": [
+          -123.25040741804322,
+          49.263476954038815
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_203",
+        "target": "wp_894",
+        "proposal_length_m": 2.618,
+        "proposal_direction": "west",
+        "proposal_number": 22
+      }
+    },
+    {
+      "id": "22aa52e6-2083-52c1-bc62-a74cecbeff12",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250509686795,
+          49.26351078445243
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 895"
+        },
+        "alt_name": {
+          "en": "wp_895"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.250509686795,
+            49.26351078445243
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 895,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "7b566ab1-4e04-5aaa-a46a-30146efa5df4",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25048735163303,
+            49.263518407058164
+          ],
+          [
+            -123.250509686795,
+            49.26351078445243
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 23"
+        },
+        "alt_name": {
+          "en": "path_232"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.250498519214,
+            49.2635145957553
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 232,
+        "start_point": [
+          -123.25048735163303,
+          49.263518407058164
+        ],
+        "end_point": [
+          -123.250509686795,
+          49.26351078445243
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_861",
+        "target": "wp_895",
+        "proposal_length_m": 1.833,
+        "proposal_direction": "west",
+        "proposal_number": 23
+      }
+    },
+    {
+      "id": "6b55b18c-df2e-5fa5-9c0d-f5a84a438d8e",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25045058161444,
+            49.26353112436781
+          ],
+          [
+            -123.2504186717215,
+            49.26354201463687
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 24"
+        },
+        "alt_name": {
+          "en": "path_233"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25043462666798,
+            49.263536569502335
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 233,
+        "start_point": [
+          -123.25045058161444,
+          49.26353112436781
+        ],
+        "end_point": [
+          -123.2504186717215,
+          49.26354201463687
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_415",
+        "target": "wp_214",
+        "proposal_length_m": 2.618,
+        "proposal_direction": "east",
+        "proposal_number": 24
+      }
+    },
+    {
+      "id": "01a3d9e7-a03c-586d-8bd5-d393fb7e2af0",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25042378557282,
+          49.263548432522036
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 896"
+        },
+        "alt_name": {
+          "en": "wp_896"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25042378557282,
+            49.263548432522036
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 896,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "2bec0073-f6e2-54da-8508-288707e83275",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25045569546872,
+            49.26353754225157
+          ],
+          [
+            -123.25042378557282,
+            49.263548432522036
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 25"
+        },
+        "alt_name": {
+          "en": "path_234"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25043974052076,
+            49.2635429873868
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 234,
+        "start_point": [
+          -123.25045569546872,
+          49.26353754225157
+        ],
+        "end_point": [
+          -123.25042378557282,
+          49.263548432522036
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_416",
+        "target": "wp_896",
+        "proposal_length_m": 2.618,
+        "proposal_direction": "east",
+        "proposal_number": 25
+      }
+    },
+    {
+      "id": "86b1a645-199e-548c-bd73-dfdbbd5bb790",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25041804153987,
+            49.26354122375855
+          ],
+          [
+            -123.25044995143242,
+            49.26353033348966
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 26"
+        },
+        "alt_name": {
+          "en": "path_235"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25043399648615,
+            49.2635357786241
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 235,
+        "start_point": [
+          -123.25041804153987,
+          49.26354122375855
+        ],
+        "end_point": [
+          -123.25044995143242,
+          49.26353033348966
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_214",
+        "target": "wp_415",
+        "proposal_length_m": 2.618,
+        "proposal_direction": "west",
+        "proposal_number": 26
+      }
+    },
+    {
+      "id": "555ba649-5247-5c48-81e4-d225b52fc67e",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25016907573654,
+          49.26353534999418
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 897"
+        },
+        "alt_name": {
+          "en": "wp_897"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25016907573654,
+            49.26353534999418
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 897,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "63fce7e6-16ff-5e73-b79a-38d109becf5e",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25014015720829,
+            49.26354521927472
+          ],
+          [
+            -123.25016907573654,
+            49.26353534999418
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 27"
+        },
+        "alt_name": {
+          "en": "path_236"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25015461647241,
+            49.263540284634445
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 236,
+        "start_point": [
+          -123.25014015720829,
+          49.26354521927472
+        ],
+        "end_point": [
+          -123.25016907573654,
+          49.26353534999418
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_146",
+        "target": "wp_897",
+        "proposal_length_m": 2.373,
+        "proposal_direction": "west",
+        "proposal_number": 27
+      }
+    },
+    {
+      "id": "6497f815-1ead-5177-adb5-0b07d79c746d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25017930337292,
+          49.26354818578455
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 898"
+        },
+        "alt_name": {
+          "en": "wp_898"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25017930337292,
+            49.26354818578455
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 898,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "cf71e50b-7e04-5558-97c6-a41f1640141c",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2501503848392,
+            49.263558055067634
+          ],
+          [
+            -123.25017930337292,
+            49.26354818578455
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 28"
+        },
+        "alt_name": {
+          "en": "path_237"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25016484410605,
+            49.263553120426096
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 237,
+        "start_point": [
+          -123.2501503848392,
+          49.263558055067634
+        ],
+        "end_point": [
+          -123.25017930337292,
+          49.26354818578455
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_481",
+        "target": "wp_898",
+        "proposal_length_m": 2.373,
+        "proposal_direction": "west",
+        "proposal_number": 28
+      }
+    },
+    {
+      "id": "4a24aa4d-2d51-5b46-809b-1b8e040ee2cf",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25039081509266,
+            49.26356014717637
+          ],
+          [
+            -123.25042407527107,
+            49.26354879609337
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 29"
+        },
+        "alt_name": {
+          "en": "path_238"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25040744518186,
+            49.26355447163487
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 238,
+        "start_point": [
+          -123.25039081509266,
+          49.26356014717637
+        ],
+        "end_point": [
+          -123.25042407527107,
+          49.26354879609337
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_372",
+        "target": "wp_896",
+        "proposal_length_m": 2.729,
+        "proposal_direction": "west",
+        "proposal_number": 29
+      }
+    },
+    {
+      "id": "6c16c182-49ea-5fcc-ab6f-37755babed55",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25042918912169,
+          49.26355521397565
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 899"
+        },
+        "alt_name": {
+          "en": "wp_899"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25042918912169,
+            49.26355521397565
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 899,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "061a2a71-c341-5d76-bd42-585507174015",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25039592894015,
+            49.26356656506013
+          ],
+          [
+            -123.25042918912169,
+            49.26355521397565
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 30"
+        },
+        "alt_name": {
+          "en": "path_239"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25041255903092,
+            49.26356088951789
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 239,
+        "start_point": [
+          -123.25039592894015,
+          49.26356656506013
+        ],
+        "end_point": [
+          -123.25042918912169,
+          49.26355521397565
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_398",
+        "target": "wp_899",
+        "proposal_length_m": 2.729,
+        "proposal_direction": "west",
+        "proposal_number": 30
+      }
+    },
+    {
+      "id": "6f19486b-60e8-5e10-a4d5-9edcc582c867",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25033770806644,
+          49.26359476623305
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 900"
+        },
+        "alt_name": {
+          "en": "wp_900"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25033770806644,
+            49.26359476623305
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 900,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "398c16ac-cebd-542a-a99d-31a61bf0c02a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25036990438863,
+            49.26358377825122
+          ],
+          [
+            -123.25033770806644,
+            49.26359476623305
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 31"
+        },
+        "alt_name": {
+          "en": "path_240"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25035380622754,
+            49.26358927224213
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 240,
+        "start_point": [
+          -123.25036990438863,
+          49.26358377825122
+        ],
+        "end_point": [
+          -123.25033770806644,
+          49.26359476623305
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_445",
+        "target": "wp_900",
+        "proposal_length_m": 2.642,
+        "proposal_direction": "east",
+        "proposal_number": 31
+      }
+    },
+    {
+      "id": "df90a0db-bdde-564e-84f0-46343b5e0fe7",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25034282190911,
+          49.26360118411722
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 901"
+        },
+        "alt_name": {
+          "en": "wp_901"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25034282190911,
+            49.26360118411722
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 901,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "af4ef77e-cde2-5af4-85b2-b3d382b51d30",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25037501823438,
+            49.26359019613398
+          ],
+          [
+            -123.25034282190911,
+            49.26360118411722
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 32"
+        },
+        "alt_name": {
+          "en": "path_241"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25035892007175,
+            49.2635956901256
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 241,
+        "start_point": [
+          -123.25037501823438,
+          49.26359019613398
+        ],
+        "end_point": [
+          -123.25034282190911,
+          49.26360118411722
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_463",
+        "target": "wp_901",
+        "proposal_length_m": 2.642,
+        "proposal_direction": "east",
+        "proposal_number": 32
+      }
+    },
+    {
+      "id": "b8bba67a-e5e2-5829-824c-17ae96990741",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25016168565399,
+          49.26363140068584
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 902"
+        },
+        "alt_name": {
+          "en": "wp_902"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25016168565399,
+            49.26363140068584
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 902,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "75a1c2a6-459f-53cb-bc03-8c34848ba0cd",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25019874851607,
+            49.263618751928114
+          ],
+          [
+            -123.25016168565399,
+            49.26363140068584
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 33"
+        },
+        "alt_name": {
+          "en": "path_242"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25018021708503,
+            49.26362507630698
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 242,
+        "start_point": [
+          -123.25019874851607,
+          49.263618751928114
+        ],
+        "end_point": [
+          -123.25016168565399,
+          49.26363140068584
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_490",
+        "target": "wp_902",
+        "proposal_length_m": 3.041,
+        "proposal_direction": "east",
+        "proposal_number": 33
+      }
+    },
+    {
+      "id": "98422b92-876f-5df1-9dbc-cca33c746331",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502750995029,
+          49.2636170159287
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 903"
+        },
+        "alt_name": {
+          "en": "wp_903"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2502750995029,
+            49.2636170159287
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 903,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "825253ec-fcb8-5610-835f-07a38a2d7685",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25024290307623,
+            49.26362800390516
+          ],
+          [
+            -123.2502750995029,
+            49.2636170159287
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 34"
+        },
+        "alt_name": {
+          "en": "path_243"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25025900128956,
+            49.26362250991693
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 243,
+        "start_point": [
+          -123.25024290307623,
+          49.26362800390516
+        ],
+        "end_point": [
+          -123.2502750995029,
+          49.2636170159287
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_361",
+        "target": "wp_903",
+        "proposal_length_m": 2.642,
+        "proposal_direction": "west",
+        "proposal_number": 34
+      }
+    },
+    {
+      "id": "b15b3c0a-97e8-54ca-bcf0-230c32a7fbfe",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25017191329786,
+          49.2636442364634
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 904"
+        },
+        "alt_name": {
+          "en": "wp_904"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25017191329786,
+            49.2636442364634
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 904,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "d3a609ad-ffa6-5ff7-a2f9-851165a4a66a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25020897616692,
+            49.263631587702434
+          ],
+          [
+            -123.25017191329786,
+            49.2636442364634
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 35"
+        },
+        "alt_name": {
+          "en": "path_244"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.2501904447324,
+            49.26363791208291
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 244,
+        "start_point": [
+          -123.25020897616692,
+          49.263631587702434
+        ],
+        "end_point": [
+          -123.25017191329786,
+          49.2636442364634
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_473",
+        "target": "wp_904",
+        "proposal_length_m": 3.041,
+        "proposal_direction": "east",
+        "proposal_number": 35
+      }
+    },
+    {
+      "id": "b122417d-68e0-5f87-a3d5-0a4b0dd41392",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25028021333675,
+          49.26362343381183
+        ]
+      },
+      "properties": {
+        "category": "walking_node",
+        "name": {
+          "en": "Proposed Connector Junction 905"
+        },
+        "alt_name": {
+          "en": "wp_905"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25028021333675,
+            49.26362343381183
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_grid_point",
+        "radius": 2.12,
+        "grid_index": 905,
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_junction",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "node_type": "connector_junction"
+      }
+    },
+    {
+      "id": "4d8269e0-729e-5f8b-aa7d-6ed463fe140b",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25024801690707,
+            49.263634421789696
+          ],
+          [
+            -123.25028021333675,
+            49.26362343381183
+          ]
+        ]
+      },
+      "properties": {
+        "category": "walking_route",
+        "name": {
+          "en": "Proposed Connector Path 36"
+        },
+        "alt_name": {
+          "en": "path_245"
+        },
+        "anchor_id": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25026411512191,
+            49.26362892780077
+          ]
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "path_index": 245,
+        "start_point": [
+          -123.25024801690707,
+          49.263634421789696
+        ],
+        "end_point": [
+          -123.25028021333675,
+          49.26362343381183
+        ],
+        "original_category": "wayfinding",
+        "source_layer": "navigation_proposal",
+        "source_wayfinding_type": "proposed_connector_path",
+        "review_status": "pending_approval",
+        "navigation_mode": "pedestrian",
+        "indoor": true,
+        "route_confirmed": false,
+        "edge_type": "walking_path",
+        "source": "wp_406",
+        "target": "wp_905",
+        "proposal_length_m": 2.642,
+        "proposal_direction": "west",
+        "proposal_number": 36
+      }
     }
-  ]
+  ],
+  "proposal": {
+    "stage": "04-cardinal-connectors",
+    "status": "pending_approval",
+    "crs_used_for_derivation": "EPSG:26910",
+    "raw_candidates": 36,
+    "accepted_connectors": 36,
+    "new_junction_nodes": 33,
+    "parameters": {
+      "projection_direction": "museum_east_west",
+      "source_nodes": "fixture_access_point",
+      "target_paths": "north_south_walking_paths",
+      "fixture_clearance_m": 0.1,
+      "ray_length_m": 30.0,
+      "endpoint_deduplication_m": 0.1,
+      "maximum_existing_path_hausdorff_m": 1.0,
+      "maximum_parallel_existing_path_overlap_ratio": 0.5,
+      "overlap_buffer_m": 0.25
+    }
+  }
 }

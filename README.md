@@ -9,6 +9,29 @@ Supporting documentation:
 - `DATA_SOURCES.md` explains source data, local review decisions, and derivation methods.
 - `DATA_DICTIONARY.md` defines local fields, local category values, and terms that need museum confirmation.
 
+## IDMF Viewer
+
+This repository includes a Next.js viewer for exploring the canonical files in `geojson/`. It provides layer controls, ground and basement filtering, feature search, fixture-to-fixture routing, and an inspector for useful IDMF properties and issue provenance.
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). For a production build, run `npm run build` followed by `npm start`. The viewer reads the repository GeoJSON through `/api/map-data`, so accepted map-data pull requests appear after the site is rebuilt or restarted.
+
+Routes are constrained to locally confirmed LineStrings in `geojson/navigation.geojson`. Every actual intersection between confirmed walking and connection lines becomes a graph junction, and routing minimizes total distance across those approved segments. The fixture-facing tail of each connection remains terminal, so a route cannot pass through a cabinet as a shortcut. Unit polygons are never treated as free routing space, and the viewer reports that no approved route is available instead of inventing a shortcut. Select a searchable fixture or click one on the map, then use `Start here` and `Route here` in the inspector.
+
+The `Museum Floor` Unit is derived from the Basement Level minus its Ramp Units. Rebuild it after changing either source geometry:
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 scripts/build_gallery_unit.py
+python3 scripts/build_preview_geojson.py
+```
+
+Navigation revisions are generated as approval artifacts before canonical data changes. Rebuild the approved corridor-centering proposal with `python3 scripts/build_navigation_proposals.py centered`; applying it requires explicit review and uses `python3 scripts/build_navigation_proposals.py apply-centered`.
+
 ## What's Here
 
 The current map data is in the `geojson/` folder:
@@ -21,7 +44,7 @@ The current map data is in the `geojson/` folder:
 | `geojson/building.geojson` | Confirmed building records for Beaty, BRC, and AERL | `building` |
 | `geojson/footprint.geojson` | Confirmed OSM-derived building and overhang footprints | `footprint` |
 | `geojson/level.geojson` | Confirmed underground museum gallery level | `level` |
-| `geojson/unit.geojson` | Confirmed underground cabinet gallery unit | `unit` |
+| `geojson/unit.geojson` | Confirmed Museum Floor unit | `unit` |
 | `geojson/opening.geojson` | Entrances and doors, currently empty | `opening` |
 | `geojson/anchor.geojson` | Starter anchor point for the gallery unit | `anchor` |
 | `geojson/amenity.geojson` | Fossil excavation, cabinet, and drawer exhibit points | `amenity` |
