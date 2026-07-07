@@ -11,14 +11,9 @@ Supporting documentation:
 
 ## IDMF Viewer
 
-This repository includes a Next.js viewer for exploring the canonical files in `geojson/`. It provides layer controls, ground and basement filtering, feature search, fixture-to-fixture routing, and an inspector for useful IDMF properties and issue provenance.
+This repository includes a viewer for exploring the canonical files in `geojson/`. It provides layer controls, ground and basement filtering, feature search, fixture-to-fixture routing, and an inspector for useful IDMF properties and issue provenance.
 
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000). For a production build, run `npm run build` followed by `npm start`. The viewer reads the repository GeoJSON through `/api/map-data`, so accepted map-data pull requests appear after the site is rebuilt or restarted.
+Visit the live demo here: [https://apps.beatymuseum.ubc.ca/map](https://apps.beatymuseum.ubc.ca/map)
 
 Routes are constrained to locally confirmed LineStrings in `geojson/navigation.geojson`. Every actual intersection between confirmed walking and connection lines becomes a graph junction, and routing minimizes total distance across those approved segments. The fixture-facing tail of each connection remains terminal, so a route cannot pass through a cabinet as a shortcut. Unit polygons are never treated as free routing space, and the viewer reports that no approved route is available instead of inventing a shortcut. Select a searchable fixture or click one on the map, then use `Start here` and `Route here` in the inspector.
 
