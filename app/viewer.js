@@ -188,6 +188,8 @@ export default function Viewer() {
       container: mapNode.current,
       center: MAP.center,
       zoom: MAP.initialZoom,
+      bearing: MAP.bearing,
+      pitch: MAP.pitch,
       maxZoom: MAP.maxZoom,
       attributionControl: false,
       style: {
@@ -244,6 +246,35 @@ export default function Viewer() {
       map.addLayer({ id: "approved-route", type: "line", source: "approved-route", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": ROUTING.lineColor, "line-width": ROUTING.lineWidth, "line-opacity": ROUTING.lineOpacity } });
       map.addLayer({ id: "approved-route-endpoints", type: "circle", source: "approved-route-endpoints", paint: { "circle-color": ["match", ["get", "endpoint"], "start", ROUTING.startColor, ROUTING.destinationColor], "circle-radius": ROUTING.endpointRadius, "circle-stroke-color": ROUTING.endpointStrokeColor, "circle-stroke-width": ROUTING.endpointStrokeWidth } });
       map.addLayer({ id: "approved-route-endpoint-labels", type: "symbol", source: "approved-route-endpoints", layout: { "text-field": ["get", "label"], "text-font": [ROUTING.endpointFont], "text-size": ROUTING.endpointFontSize }, paint: { "text-color": ROUTING.endpointTextColor } });
+      map.addLayer({
+        id: "imdf-fixture-extrusion",
+        type: "fill-extrusion",
+        source: "imdf",
+        filter: [
+          "all",
+          ["==", ["geometry-type"], "Polygon"],
+          ["==", ["get", "viewer_layer"], "fixture"]
+        ],
+        paint: {
+          "fill-extrusion-color": matchColors,
+
+          "fill-extrusion-height": [
+            "match",
+            ["get", "local_category"],
+
+            "display_cabinet", 0.33,
+            "drawer_island_box", 0.11,
+            "table", 1.0,
+            "case", 1.6,
+            "wall_case", 2.5,
+
+            1.0 // fallback height
+          ],
+
+          "fill-extrusion-base": 0,
+          "fill-extrusion-opacity": 0.85
+        }
+      });
       const openDrawerGroup = async (event) => {
         const group = event.features?.[0];
         if (!group) return;
@@ -320,7 +351,7 @@ export default function Viewer() {
     }
     const result = findApprovedRoute(routingNetwork, routeFrom, routeTo);
     setRouteResult(result);
-    setRouteError(result ? "" : "No approved route connects these fixtures.");
+    setRouteError(result ? "" : "No route connects these fixtures.");
   }, [routingNetwork, routeFrom, routeTo]);
 
   useEffect(() => {
@@ -373,16 +404,16 @@ export default function Viewer() {
     <button className={`sidebar-toggle icon-button ${sidebarOpen ? "is-open" : ""}`} onClick={() => setSidebarOpen((value) => !value)} title={sidebarOpen ? "Close layers panel" : "Open layers panel"}>{sidebarOpen ? <ChevronLeft /> : <ChevronRight />}</button>
     <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
       <div className="search-wrap"><Search size={ICON_SIZE.search} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search features" aria-label="Search features" />{query && <button className="clear-button" onClick={() => setQuery("")} title="Clear search"><X size={ICON_SIZE.clear} /></button>}</div>
-      {query && <div className="search-results">{matches.length ? matches.map((feature) => <button key={`${feature.properties.viewer_layer}-${feature.id}`} onClick={() => focusFeature(feature)}><span>{nameOf(feature)}</span><small>{feature.properties.viewer_layer}</small></button>) : <p>No matching visible features</p>}</div>}
+      {query && <div className="search-results">{matches.length ? matches.map((feature) => <button key={`${feature.properties.viewer_layer}-${feature.id}`} onClick={() => focusFeature(feature)}><span>{nameOf(feature)}</span><small>{feature.properties.viewer_layer}</small></button>) : <p>No matching features on current level.</p>}</div>}
       <section className="route-panel"><div className="section-title"><Route size={ICON_SIZE.section} /><h2>Route</h2>{(routeFrom || routeTo) && <button className="clear-button" onClick={clearRoute} title="Clear route"><X size={ICON_SIZE.clear} /></button>}</div>
         <div className="route-endpoint"><span>A</span><div><small>Start</small><strong>{routeFrom ? nameOf(routeFrom) : "Select a fixture"}</strong></div>{routeFrom && <button className="clear-button" onClick={() => setRouteFrom(null)} title="Clear start"><X size={ICON_SIZE.clear} /></button>}</div>
         <div className="route-endpoint"><span>B</span><div><small>Destination</small><strong>{routeTo ? nameOf(routeTo) : "Select a fixture"}</strong></div>{routeTo && <button className="clear-button" onClick={() => setRouteTo(null)} title="Clear destination"><X size={ICON_SIZE.clear} /></button>}</div>
-        {routeResult && <p className="route-status"><Navigation size={14} /> Approved route · {Math.round(routeResult.distanceMeters)} m</p>}
+        {routeResult && <p className="route-status"><Navigation size={14} /> Route · {Math.round(routeResult.distanceMeters)} m</p>}
         {routeError && <p className="route-error">{routeError}</p>}
       </section>
       <section><div className="section-title"><Layers3 size={ICON_SIZE.section} /><h2>Layers</h2><span>{visibleData?.features.length || 0}</span></div><div className="layer-list">
         {LAYERS.map((layer) => <label key={layer.id}><input type="checkbox" checked={activeLayers.has(layer.id)} onChange={() => toggleLayer(layer.id)} /><i style={{ background: layer.color }} /><span>{layer.label}</span><small>{data?.features.filter((feature) => feature.properties.viewer_layer === layer.id).length || 0}</small></label>)}
-        <label><input type="checkbox" checked={showNavigationDebug} onChange={() => setShowNavigationDebug((value) => !value)} /><i style={{ background: MAP_LAYERS.navigationDebug.lineColor }} /><span>Navigation debug</span><small>{navigationData?.features.length || 0}</small></label>
+        <label><input type="checkbox" checked={showNavigationDebug} onChange={() => setShowNavigationDebug((value) => !value)} /><i style={{ background: MAP_LAYERS.navigationDebug.lineColor }} /><span>Navigation</span><small>{navigationData?.features.length || 0}</small></label>
       </div></section>
       <section><div className="section-title"><Building2 size={ICON_SIZE.section} /><h2>Level</h2></div><div className="segments">{LEVELS.map((level) => <button className={activeLevel === level.id ? "active" : ""} key={level.id} onClick={() => setActiveLevel(level.id)}>{level.label}</button>)}</div></section>
     </aside>

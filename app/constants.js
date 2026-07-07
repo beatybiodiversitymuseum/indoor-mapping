@@ -24,6 +24,8 @@ export const MAP = {
   maxZoom: 24,
   flyDurationMs: 900,
   backgroundColor: "#e8ecee",
+  bearing: 340,
+  pitch: 45
 };
 
 export const BASEMAP = {
