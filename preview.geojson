@@ -152766,6 +152766,622 @@
       },
       "id": "9d7cc155-aed6-57b8-98ff-1e203e625bd6",
       "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/22",
+        "source_issue_number": 22,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 52 corner, 62cm away from cabinet 51 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 52.26 and Cabinet 51.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502418,
+          49.263699
+        ]
+      },
+      "id": "a1df0eba-90ff-5c90-884f-e377af0015bd",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/23",
+        "source_issue_number": 23,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "59cm away from cabinet 48 corner, 61cm away from cabinet 47 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 48.22 and Cabinet 47.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250305,
+          49.2636769
+        ]
+      },
+      "id": "83f68ad6-7e8e-572b-9849-d6eb2ba579de",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/24",
+        "source_issue_number": 24,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "62cm away from cabinet 44 corner, 58cm away from cabinet 43 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 44.24 and Cabinet 43.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503689,
+          49.2636547
+        ]
+      },
+      "id": "4840d4bc-cbf6-5a6a-8c01-418e056b61c2",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/25",
+        "source_issue_number": 25,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "61cm away from cabinet 40 corner, 59cm away from cabinet 39 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 40.26 and Cabinet 39.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504316,
+          49.2636328
+        ]
+      },
+      "id": "383e81ae-a198-5130-8d68-006fcab3d0a3",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/26",
+        "source_issue_number": 26,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 36 corner, 62cm away from cabinet 35 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 36.17 and Cabinet 35.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504938,
+          49.263611
+        ]
+      },
+      "id": "83ff78e2-17a3-5cc9-a2af-0fddb4776484",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/27",
+        "source_issue_number": 27,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "62cm away from cabinet 32 corner, 58cm away from cabinet 31 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 32.16 and Cabinet 31.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2505576,
+          49.2635889
+        ]
+      },
+      "id": "e4760f2c-b497-519d-a5b1-a5baf3033508",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/28",
+        "source_issue_number": 28,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 28 corner, 62cm away from cabinet 27 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 28.26 and Cabinet 27.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2506195,
+          49.2635673
+        ]
+      },
+      "id": "089527f8-234a-5d81-b85f-99826dd2cfef",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/29",
+        "source_issue_number": 29,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "58cm away from cabinet 24 corner, 62cm away from cabinet 23 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 24.16 and Cabinet 23.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2506826,
+          49.2635453
+        ]
+      },
+      "id": "a501f5ca-f67d-51e5-8a22-1951d61ae524",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/30",
+        "source_issue_number": 30,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "60cm away from cabinet 20 corner, 60cm away from cabinet 19 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 20.26 and Cabinet 19.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507458,
+          49.2635234
+        ]
+      },
+      "id": "da2ea8e1-42f4-59e1-b474-015cb1d16ba3",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/31",
+        "source_issue_number": 31,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "62cm away from cabinet 16 corner, 58cm away from cabinet 15 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 16.26 and Cabinet 15.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508092,
+          49.2635015
+        ]
+      },
+      "id": "43a6e53e-3513-5d3d-ac96-60b858a7ddfe",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/32",
+        "source_issue_number": 32,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site"
+        ],
+        "confirmation_details": "62cm away from cabinet 12 corner, 58cm away from cabinet 11 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 12.26 and Cabinet 11.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508724,
+          49.2634793
+        ]
+      },
+      "id": "2388ba21-0c4f-5382-8219-19149cec689b",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/33",
+        "source_issue_number": 33,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "58cm away from cabinet 8 corner, 62cm away from cabinet 7 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 8.26 and Cabinet 7.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509346,
+          49.2634577
+        ]
+      },
+      "id": "815c1aae-c8d2-511a-ac13-25e4eb98c2ac",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Fire Extinguisher"
+        },
+        "alt_name": {
+          "en": "fire_extinguisher"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/34",
+        "source_issue_number": 34,
+        "source_issue_title": "Amenity: Fire Extinguisher",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "58cm away from cabinet 4 corner, 62cm away from cabinet 3 corner, 8cm away from cabinet edges",
+        "reference_points": "Cabinet 4.24 and Cabinet 3.01",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509971,
+          49.2634359
+        ]
+      },
+      "id": "949563ce-7d6e-54c9-b92e-b0c52fb27e0d",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Blue Whale Skeleton"
+        },
+        "alt_name": {
+          "en": "blue_whale_skeleton"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/36",
+        "source_issue_number": 36,
+        "source_issue_title": "Amenity: Blue Whale Centroid",
+        "confirmation_methods": [
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Position calculated via floor plans and used Cabinet 1 as a landmark. Refer to picture for measurements.",
+        "reference_points": "Cabinet 1.21",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509732,
+          49.2632654
+        ]
+      },
+      "id": "d7cadbc8-b3b6-5913-9ea2-ffcb9d66e337",
+      "feature_type": "amenity"
     }
   ]
 }

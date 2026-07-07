@@ -1,4 +1,125 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Ramp Exit"
+        },
+        "alt_name": {
+          "en": "ramp_exit"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/35",
+        "source_issue_number": 35,
+        "source_issue_title": "Amenity: Ramp Exit",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Used corner of cabinet 1 as landmark. Refer to picture for measurements.",
+        "reference_points": "Cabinet 1.21",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509487,
+          49.2631852
+        ]
+      },
+      "id": "ef67ab39-a525-5c14-b21f-4a51460fc194",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Ramp Entrance"
+        },
+        "alt_name": {
+          "en": "ramp_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/37",
+        "source_issue_number": 37,
+        "source_issue_title": "Amenity: Ramp Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Position calculated via floor plans and used Cabinet 1 as a landmark. Refer to picture for measurements.",
+        "reference_points": "Cabinet 1.21",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509509,
+          49.2631523
+        ]
+      },
+      "id": "9015d390-25fc-5cf1-b135-e2af2a573ee7",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Front Entrance"
+        },
+        "alt_name": {
+          "en": "front_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/38",
+        "source_issue_number": 38,
+        "source_issue_title": "Amenity: Front Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Position calculated via floor plans and used Cabinet 1 as a landmark. Refer to picture for measurements.",
+        "reference_points": "Cabinet 1.01",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2510352,
+          49.2634339
+        ]
+      },
+      "id": "e6503b8d-fd63-5f9f-9550-2f469641bdef",
+      "feature_type": "opening"
+    }
+  ]
 }
