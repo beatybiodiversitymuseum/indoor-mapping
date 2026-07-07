@@ -52,9 +52,10 @@ export function buildRoutingNetwork(collection) {
   const connections = new Map();
   const navigationNodes = new Map(
     collection.features
-      .filter((feature) => feature.properties?.wayfinding_type === "walking_grid_point")
+      .filter((feature) => ["walking_grid_point", "access_projection"].includes(feature.properties?.wayfinding_type))
       .map((feature) => [englishAltName(feature), feature.geometry.coordinates]),
   );
+  const accessProjectionFeatures = collection.features.filter((feature) => feature.geometry?.type === "Point" && feature.properties?.wayfinding_type === "access_projection");
   const routeLinesByKey = new Map();
   const connectionRecords = [];
 
@@ -83,6 +84,29 @@ export function buildRoutingNetwork(collection) {
   }
 
   const routeLines = [...routeLinesByKey.values()];
+  for (const feature of accessProjectionFeatures) {
+    const fixtureIds = feature.properties?.sources?.length ? feature.properties.sources : [feature.properties?.source].filter(Boolean);
+    const coordinate = feature.geometry.coordinates;
+    if (!fixtureIds.length) continue;
+
+    let best = null;
+    for (const line of routeLines.filter((item) => item.isWalking)) {
+      const fraction = fractionOnSegment(coordinate, line.coordinates[0], line.coordinates.at(-1));
+      if (fraction === null) continue;
+      const projected = [
+        line.coordinates[0][0] + fraction * (line.coordinates.at(-1)[0] - line.coordinates[0][0]),
+        line.coordinates[0][1] + fraction * (line.coordinates.at(-1)[1] - line.coordinates[0][1]),
+      ];
+      const distance = distanceMeters(coordinate, projected);
+      if (!best || distance < best.distance) best = { line, fraction, coordinate: projected, distance };
+    }
+    if (!best) continue;
+    best.line.splits.push({ coordinate: best.coordinate, fraction: best.fraction });
+    for (const fixtureId of fixtureIds) {
+      connectionRecords.push({ fixtureId, line: best.line, sourceCoordinate: best.coordinate, sourceFraction: best.fraction, projectedAccess: true });
+    }
+  }
+
   for (let firstIndex = 0; firstIndex < routeLines.length; firstIndex++) {
     const first = routeLines[firstIndex];
     for (let secondIndex = firstIndex + 1; secondIndex < routeLines.length; secondIndex++) {
@@ -127,6 +151,15 @@ export function buildRoutingNetwork(collection) {
   }
 
   for (const record of connectionRecords) {
+    if (record.projectedAccess) {
+      const targetNode = coordinateKey(record.sourceCoordinate);
+      if (!graph.hasNode(targetNode) || networkDegree(graph, targetNode) === 0) continue;
+      const coordinates = [record.sourceCoordinate, record.sourceCoordinate];
+      const connection = { fixtureId: record.fixtureId, targetNode, coordinates, weight: 0 };
+      connections.set(record.fixtureId, [...(connections.get(record.fixtureId) || []), connection]);
+      continue;
+    }
+
     for (const split of record.line.orderedSplits) {
       if (Math.abs(split.fraction - record.sourceFraction) < ROUTING.intersectionEpsilon) continue;
       const targetNode = coordinateKey(split.coordinate);

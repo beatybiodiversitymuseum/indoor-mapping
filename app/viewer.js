@@ -130,9 +130,12 @@ export default function Viewer() {
   const mapNode = useRef(null);
   const mapRef = useRef(null);
   const visibleDataRef = useRef(null);
+  const navigationDataRef = useRef(null);
   const [data, setData] = useState(null);
+  const [navigationData, setNavigationData] = useState(null);
   const [routingNetwork, setRoutingNetwork] = useState(null);
   const [activeLayers, setActiveLayers] = useState(() => new Set(LAYERS.filter(({ enabledByDefault }) => enabledByDefault).map(({ id }) => id)));
+  const [showNavigationDebug, setShowNavigationDebug] = useState(false);
   const [activeLevel, setActiveLevel] = useState("all");
   const [selected, setSelected] = useState(null);
   const [selectedGroup, setSelectedGroup] = useState(null);
@@ -164,6 +167,7 @@ export default function Viewer() {
   }, [query, visibleData]);
 
   visibleDataRef.current = visibleData;
+  navigationDataRef.current = navigationData;
 
   useEffect(() => {
     Promise.all([
@@ -171,6 +175,7 @@ export default function Viewer() {
       fetch("/api/navigation").then((response) => response.json()),
     ]).then(([mapData, navigation]) => {
       setData(mapData);
+      setNavigationData(navigation);
       setRoutingNetwork(buildRoutingNetwork(navigation));
     }).catch(() => setData({ type: "FeatureCollection", features: [] })).finally(() => setLoading(false));
     if (window.matchMedia(VIEWER.mobileMediaQuery).matches) setSidebarOpen(false);
@@ -226,11 +231,15 @@ export default function Viewer() {
       });
       map.addSource("approved-route", { type: "geojson", data: emptyCollection() });
       map.addSource("approved-route-endpoints", { type: "geojson", data: emptyCollection() });
+      map.addSource("navigation-debug", { type: "geojson", data: emptyCollection() });
       map.addLayer({ id: "imdf-fill", type: "fill", source: "imdf", filter: ["==", ["geometry-type"], "Polygon"], paint: { "fill-color": matchColors, "fill-opacity": ["match", ["get", "viewer_layer"], "fixture", MAP_LAYERS.fillOpacity.fixture, "unit", MAP_LAYERS.fillOpacity.unit, "level", MAP_LAYERS.fillOpacity.level, MAP_LAYERS.fillOpacity.fallback] } });
       map.addLayer({ id: "imdf-line", type: "line", source: "imdf", filter: ["!=", ["geometry-type"], "Point"], paint: { "line-color": matchColors, "line-width": ["match", ["get", "viewer_layer"], "venue", MAP_LAYERS.lineWidth.venue, "level", MAP_LAYERS.lineWidth.level, MAP_LAYERS.lineWidth.fallback], "line-opacity": MAP_LAYERS.lineOpacity } });
       map.addLayer({ id: "imdf-point", type: "circle", source: "imdf-points", filter: ["all", ["!=", ["get", "local_category"], POINT_CATEGORIES.cabinet], ["!=", ["get", "local_category"], POINT_CATEGORIES.fossilExcavation]], paint: { "circle-color": matchColors, "circle-radius": ["interpolate", ["linear"], ["zoom"], MAP_LAYERS.pointRadius.minZoom, MAP_LAYERS.pointRadius.min, MAP_LAYERS.pointRadius.maxZoom, MAP_LAYERS.pointRadius.max], "circle-stroke-color": MAP_LAYERS.pointStrokeColor, "circle-stroke-width": MAP_LAYERS.pointStrokeWidth } });
       map.addLayer({ id: "imdf-drawer-group", type: "circle", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, paint: { "circle-color": DRAWER_GROUPS.color, "circle-radius": DRAWER_GROUPS.radius, "circle-stroke-color": DRAWER_GROUPS.strokeColor, "circle-stroke-width": DRAWER_GROUPS.strokeWidth } });
       map.addLayer({ id: "imdf-drawer-group-count", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, layout: { "text-field": ["to-string", ["get", "drawer_count"]], "text-font": [DRAWER_GROUPS.countFont], "text-size": DRAWER_GROUPS.countFontSize }, paint: { "text-color": DRAWER_GROUPS.strokeColor } });
+      map.addLayer({ id: "navigation-debug-line", type: "line", source: "navigation-debug", filter: ["==", ["geometry-type"], "LineString"], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": MAP_LAYERS.navigationDebug.lineColor, "line-width": MAP_LAYERS.navigationDebug.lineWidth, "line-opacity": MAP_LAYERS.navigationDebug.lineOpacity } });
+      map.addLayer({ id: "navigation-debug-point", type: "circle", source: "navigation-debug", filter: ["==", ["geometry-type"], "Point"], paint: { "circle-color": MAP_LAYERS.navigationDebug.pointColor, "circle-radius": MAP_LAYERS.navigationDebug.pointRadius, "circle-stroke-color": MAP_LAYERS.navigationDebug.pointStrokeColor, "circle-stroke-width": MAP_LAYERS.navigationDebug.pointStrokeWidth } });
+      map.addLayer({ id: "navigation-debug-label", type: "symbol", source: "navigation-debug", minzoom: MAP_LAYERS.navigationDebug.labelMinZoom, layout: { "text-field": ["get", "debug_id"], "text-font": [DRAWER_GROUPS.countFont], "text-size": MAP_LAYERS.navigationDebug.labelSize, "text-offset": [0, 1.1], "text-anchor": "top", "text-allow-overlap": false }, paint: { "text-color": MAP_LAYERS.navigationDebug.labelColor, "text-halo-color": MAP_LAYERS.navigationDebug.labelHaloColor, "text-halo-width": MAP_LAYERS.navigationDebug.labelHaloWidth } });
       map.addLayer({ id: "approved-route-casing", type: "line", source: "approved-route", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": ROUTING.lineCasingColor, "line-width": ROUTING.lineCasingWidth, "line-opacity": ROUTING.lineOpacity } });
       map.addLayer({ id: "approved-route", type: "line", source: "approved-route", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": ROUTING.lineColor, "line-width": ROUTING.lineWidth, "line-opacity": ROUTING.lineOpacity } });
       map.addLayer({ id: "approved-route-endpoints", type: "circle", source: "approved-route-endpoints", paint: { "circle-color": ["match", ["get", "endpoint"], "start", ROUTING.startColor, ROUTING.destinationColor], "circle-radius": ROUTING.endpointRadius, "circle-stroke-color": ROUTING.endpointStrokeColor, "circle-stroke-width": ROUTING.endpointStrokeWidth } });
@@ -249,6 +258,18 @@ export default function Viewer() {
       };
       map.on("click", "imdf-drawer-group", openDrawerGroup);
       map.on("click", "imdf-drawer-group-count", openDrawerGroup);
+      for (const layer of ["navigation-debug-line", "navigation-debug-point", "navigation-debug-label"]) {
+        map.on("click", layer, (event) => {
+          const renderedFeature = event.features?.[0];
+          if (!renderedFeature) return;
+          const sourceFeature = navigationDataRef.current?.features.find((feature) => feature.id === renderedFeature.id || feature.properties?.debug_id === renderedFeature.properties?.debug_id || feature.properties?.alt_name?.en === renderedFeature.properties?.alt_name?.en);
+          setSelected(sourceFeature || renderedFeature);
+          setSelectedGroup(null);
+          setQuery("");
+        });
+        map.on("mouseenter", layer, () => { map.getCanvas().style.cursor = "pointer"; });
+        map.on("mouseleave", layer, () => { map.getCanvas().style.cursor = ""; });
+      }
       for (const layer of ["imdf-fill", "imdf-line", "imdf-point"]) {
         map.on("click", layer, (event) => {
           if (["imdf-fill", "imdf-line"].includes(layer)) {
@@ -285,6 +306,11 @@ export default function Viewer() {
     const drawerSource = mapRef.current?.getSource("imdf-drawers");
     if (drawerSource && visibleData) drawerSource.setData(drawerGroups(visibleData));
   }, [visibleData]);
+
+  useEffect(() => {
+    const source = mapRef.current?.getSource("navigation-debug");
+    if (source) source.setData(showNavigationDebug && navigationData ? navigationData : emptyCollection());
+  }, [navigationData, showNavigationDebug]);
 
   useEffect(() => {
     if (!routingNetwork || !routeFrom || !routeTo) {
@@ -340,6 +366,7 @@ export default function Viewer() {
   }
 
   const properties = selected?.properties || {};
+  const selectedLayerLabel = properties.viewer_layer || properties.wayfinding_type || properties.category || "feature";
   return <main className="viewer-shell">
     <div ref={mapNode} className="map" />
     <header className="brand-bar"><div className="brand-mark"><Building2 size={ICON_SIZE.brand} /></div><div><strong>Beaty IDMF Viewer</strong><span>Indoor map data</span></div></header>
@@ -355,6 +382,7 @@ export default function Viewer() {
       </section>
       <section><div className="section-title"><Layers3 size={ICON_SIZE.section} /><h2>Layers</h2><span>{visibleData?.features.length || 0}</span></div><div className="layer-list">
         {LAYERS.map((layer) => <label key={layer.id}><input type="checkbox" checked={activeLayers.has(layer.id)} onChange={() => toggleLayer(layer.id)} /><i style={{ background: layer.color }} /><span>{layer.label}</span><small>{data?.features.filter((feature) => feature.properties.viewer_layer === layer.id).length || 0}</small></label>)}
+        <label><input type="checkbox" checked={showNavigationDebug} onChange={() => setShowNavigationDebug((value) => !value)} /><i style={{ background: MAP_LAYERS.navigationDebug.lineColor }} /><span>Navigation debug</span><small>{navigationData?.features.length || 0}</small></label>
       </div></section>
       <section><div className="section-title"><Building2 size={ICON_SIZE.section} /><h2>Level</h2></div><div className="segments">{LEVELS.map((level) => <button className={activeLevel === level.id ? "active" : ""} key={level.id} onClick={() => setActiveLevel(level.id)}>{level.label}</button>)}</div></section>
     </aside>
@@ -362,11 +390,17 @@ export default function Viewer() {
     {selectedGroup && <aside className="inspector group-inspector"><div className="inspector-head"><div className="feature-icon"><Layers3 size={ICON_SIZE.feature} /></div><div><small>Grouped location</small><h2>{selectedGroup.every((feature) => feature.properties.local_category === "drawer_exhibit") ? "Drawers at this position" : "Features at this position"}</h2></div><button className="icon-button" onClick={() => setSelectedGroup(null)} title="Close grouped features"><X /></button></div><div className="group-list">
       {selectedGroup.map((feature) => <button key={feature.id} onClick={() => focusFeature(feature)}><span>{nameOf(feature)}</span><small>{feature.properties.alt_name?.en || feature.properties.viewer_layer}</small></button>)}
     </div></aside>}
-    {selected && <aside className="inspector"><div className="inspector-head"><div className="feature-icon"><MapPin size={ICON_SIZE.feature} /></div><div><small>{properties.viewer_layer}</small><h2>{nameOf(selected)}</h2></div><button className="icon-button" onClick={() => setSelected(null)} title="Close feature details"><X /></button></div>
+    {selected && <aside className="inspector"><div className="inspector-head"><div className="feature-icon"><MapPin size={ICON_SIZE.feature} /></div><div><small>{selectedLayerLabel}</small><h2>{nameOf(selected)}</h2></div><button className="icon-button" onClick={() => setSelected(null)} title="Close feature details"><X /></button></div>
       {isRoutableFeature(routingNetwork, selected) && <div className="route-actions"><button onClick={() => setRouteEndpoint("from", selected)}><MapPin size={15} /> Start here</button><button onClick={() => setRouteEndpoint("to", selected)}><Navigation size={15} /> Route here</button></div>}
       <dl>
       {properties.local_category && <><dt>Local category</dt><dd>{properties.local_category.replaceAll("_", " ")}</dd></>}
+      {properties.debug_id && <><dt>Debug ID</dt><dd className="mono">{properties.debug_id}</dd></>}
       {properties.alt_name?.en && <><dt>Feature ID</dt><dd className="mono">{properties.alt_name.en}</dd></>}
+      {properties.wayfinding_type && <><dt>Wayfinding</dt><dd>{properties.wayfinding_type.replaceAll("_", " ")}</dd></>}
+      {properties.sources?.length && <><dt>Sources</dt><dd className="mono">{properties.sources.join(", ")}</dd></>}
+      {properties.targets?.length && <><dt>Targets</dt><dd className="mono">{properties.targets.join(", ")}</dd></>}
+      {properties.source && !properties.sources?.length && <><dt>Source</dt><dd className="mono">{properties.source}</dd></>}
+      {properties.target && !properties.targets?.length && <><dt>Target</dt><dd className="mono">{properties.target}</dd></>}
       {properties.short_name?.en && <><dt>Short name</dt><dd>{properties.short_name.en}</dd></>}
       {properties.ordinal !== undefined && <><dt>Ordinal</dt><dd>{properties.ordinal}</dd></>}
       {properties.source_issue_number && <><dt>Source issue</dt><dd><a href={properties.source_url} target="_blank" rel="noreferrer">#{properties.source_issue_number}</a></dd></>}
