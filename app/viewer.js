@@ -2,9 +2,14 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
+import MiniSearch from "minisearch";
 import { Building2, ChevronLeft, ChevronRight, Layers3, LocateFixed, MapPin, Navigation, Route, Search, X } from "lucide-react";
 import { BASEMAP, DRAWER_GROUPS, GEOJSON, ICON_SIZE, LAYERS, LEVELS, MAP, MAP_LAYERS, POINT_CATEGORIES, ROUTING, VIEWER } from "./constants.js";
 import { buildRoutingNetwork, findApprovedRoute, isRoutableFeature } from "./routing.js";
+
+const SEARCH_FIELDS = ["name", "altName", "layer", "category", "localCategory", "reference", "publicClass", "scientificNames", "commonNames", "narrative", "notes", "specimenText", "fullText"];
+const STORE_FIELDS = ["id", ...SEARCH_FIELDS];
+const ROUTE_SEARCH_LIMIT = 6;
 
 function nameOf(feature) {
   return feature?.properties?.name?.en || "Unnamed feature";
@@ -126,6 +131,186 @@ function drawerGroups(collection) {
   };
 }
 
+function exhibitImageUrl(exhibit) {
+  const image = exhibit.properties?.image;
+  const archive = exhibit.properties?.archive;
+  const path = image?.path;
+  if (!path || !archive?.collection) return "";
+  const filename = path.split("/").at(-1);
+  if (archive.collection === "labels") return `https://explore.beatymuseum.ubc.ca/docs/labels/${path.replace(/^labels\//, "")}`;
+  if (archive.collection === "drawers" && filename) return `https://explore.beatymuseum.ubc.ca/docs/drawers/img/${filename}`;
+  if (archive.collection === "shadowboxes" && filename) return `https://explore.beatymuseum.ubc.ca/docs/shadowboxes/img/${filename.toLowerCase()}`;
+  return "";
+}
+
+function exhibitSummary(exhibit) {
+  const properties = exhibit.properties || {};
+  const archive = properties.archive || {};
+  return archive.public_reference_code || archive.id || properties.image?.id || exhibit.id;
+}
+
+function exhibitSubtitle(exhibit) {
+  const properties = exhibit.properties || {};
+  return [properties.exhibit_type, properties.public_class].filter(Boolean).join(" · ");
+}
+
+function exhibitSpecimenNames(exhibit) {
+  const specimens = exhibit.properties?.specimens;
+  if (!Array.isArray(specimens)) return [];
+  const seen = new Set();
+  return specimens
+    .map((specimen) => ({
+      scientificName: specimen.scientificName,
+      commonName: specimen.commonName,
+    }))
+    .filter(({ scientificName, commonName }) => scientificName || commonName)
+    .filter(({ scientificName, commonName }) => {
+      const key = `${scientificName || ""}|${commonName || ""}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, 5);
+}
+
+function exhibitNarrative(exhibit) {
+  return exhibit.properties?.details?.text?.en || "";
+}
+
+function exhibitNotes(exhibit) {
+  return exhibit.properties?.details?.notes || "";
+}
+
+function exhibitSpecimens(exhibit) {
+  const specimens = exhibit.properties?.specimens;
+  return Array.isArray(specimens) ? specimens : [];
+}
+
+function compactText(values) {
+  return values.flat().filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
+}
+
+function specimenSearchText(specimen) {
+  return compactText([specimen.scientificName, specimen.commonName, specimen.specimenType, specimen.presence, specimen.catalogNumber, specimen.notes]);
+}
+
+function featureSearchDocument(feature) {
+  const properties = feature.properties || {};
+  const archive = properties.archive || {};
+  const specimens = exhibitSpecimens(feature);
+  const scientificNames = specimens.map((specimen) => specimen.scientificName).filter(Boolean);
+  const commonNames = specimens.map((specimen) => specimen.commonName).filter(Boolean);
+  const specimenText = specimens.map(specimenSearchText).filter(Boolean);
+  const reference = compactText([archive.public_reference_code, archive.id, properties.image?.id]);
+  const baseFields = {
+    id: feature.id || properties.viewer_feature_id,
+    name: nameOf(feature),
+    altName: properties.alt_name?.en || "",
+    layer: properties.viewer_layer || properties.wayfinding_type || "",
+    category: properties.category || "",
+    localCategory: properties.local_category || "",
+    reference,
+    publicClass: properties.public_class || "",
+    scientificNames: scientificNames.join(" "),
+    commonNames: commonNames.join(" "),
+    narrative: exhibitNarrative(feature),
+    notes: exhibitNotes(feature),
+    specimenText: specimenText.join(" "),
+  };
+  return {
+    ...baseFields,
+    fullText: compactText(Object.values(baseFields)),
+  };
+}
+
+function buildSearchContext(features) {
+  const documents = features.map(featureSearchDocument).filter((document) => document.id);
+  const index = new MiniSearch({
+    fields: SEARCH_FIELDS,
+    storeFields: STORE_FIELDS,
+    searchOptions: {
+      boost: { name: 5, altName: 4, reference: 4, scientificNames: 3, commonNames: 3, localCategory: 2 },
+      prefix: true,
+      fuzzy: 0.18,
+    },
+  });
+  index.addAll(documents);
+  return {
+    index,
+    documentsById: new Map(documents.map((document) => [document.id, document])),
+    featuresById: new Map(features.map((feature) => [feature.id || feature.properties?.viewer_feature_id, feature])),
+  };
+}
+
+function searchTokens(query) {
+  return [...new Set(query.toLowerCase().match(/[a-z0-9_.-]+/g) || [])].filter((token) => token.length > 1);
+}
+
+function searchContextResults(searchContext, query, { filter = () => true, limit = VIEWER.searchResultLimit } = {}) {
+  const term = query.trim();
+  if (!term || !searchContext) return [];
+  return searchContext.index.search(term)
+    .map((result) => {
+      const feature = searchContext.featuresById.get(result.id);
+      const document = searchContext.documentsById.get(result.id);
+      return feature && document ? { feature, document, terms: result.terms || result.queryTerms || [] } : null;
+    })
+    .filter(Boolean)
+    .filter(({ feature }) => filter(feature))
+    .slice(0, limit);
+}
+
+function highlightedText(text, tokens) {
+  const value = String(text || "");
+  if (!value || !tokens.length) return value;
+  const pattern = new RegExp(`(${tokens.map((token) => token.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "ig");
+  return value.split(pattern).map((part, index) => tokens.some((token) => part.toLowerCase() === token.toLowerCase())
+    ? <mark key={`${part}-${index}`}>{part}</mark>
+    : part);
+}
+
+function searchSnippet(document, tokens) {
+  if (!tokens.length) return "";
+  const fields = [document.scientificNames, document.commonNames, document.narrative, document.notes, document.specimenText, document.fullText];
+  const text = fields.find((field) => tokens.some((token) => field?.toLowerCase().includes(token))) || "";
+  if (!text) return "";
+  const lower = text.toLowerCase();
+  const firstMatch = Math.max(0, Math.min(...tokens.map((token) => lower.indexOf(token)).filter((index) => index >= 0)));
+  const start = Math.max(0, firstMatch - 44);
+  const end = Math.min(text.length, firstMatch + 110);
+  return `${start ? "... " : ""}${text.slice(start, end).trim()}${end < text.length ? " ..." : ""}`;
+}
+
+function drawerStackAltNames(altName) {
+  const match = altName?.match(/^(di_\d+_\d+)_(top|L1|L2|L3)(?:_exhibits)?$/);
+  if (!match) return [];
+  const suffix = altName.endsWith("_exhibits") ? "_exhibits" : "";
+  return ["top", "L1", "L2", "L3"].map((level) => `${match[1]}_${level}${suffix}`);
+}
+
+function specimenLabel(specimen, index) {
+  return specimen.scientificName || specimen.commonName || specimen.catalogNumber || `Specimen ${index + 1}`;
+}
+
+function relatedExhibitsForFeature(feature, collection) {
+  if (!feature || !collection?.features) return [];
+  if (feature.properties?.viewer_layer === "exhibit") return [feature];
+  const selectedId = feature.id || feature.properties?.viewer_feature_id;
+  const selectedAltName = feature.properties?.alt_name?.en;
+  const fixtureAltNames = new Set([selectedAltName, ...drawerStackAltNames(selectedAltName)].filter(Boolean));
+  const amenityAltNames = new Set([selectedAltName, ...drawerStackAltNames(selectedAltName)].filter(Boolean));
+  return collection.features
+    .filter((candidate) => candidate.properties?.viewer_layer === "exhibit")
+    .filter((candidate) => {
+      const properties = candidate.properties;
+      return properties.fixture_ids?.includes(selectedId)
+        || properties.amenity_ids?.includes(selectedId)
+        || properties.fixture_alt_names?.some((altName) => fixtureAltNames.has(altName))
+        || properties.amenity_alt_names?.some((altName) => amenityAltNames.has(altName));
+    })
+    .sort((a, b) => exhibitSummary(a).localeCompare(exhibitSummary(b), undefined, { numeric: true }));
+}
+
 export default function Viewer() {
   const mapNode = useRef(null);
   const mapRef = useRef(null);
@@ -140,6 +325,8 @@ export default function Viewer() {
   const [selected, setSelected] = useState(null);
   const [selectedGroup, setSelectedGroup] = useState(null);
   const [query, setQuery] = useState("");
+  const [routeQueries, setRouteQueries] = useState({ from: "", to: "" });
+  const [activeRouteSearch, setActiveRouteSearch] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [loading, setLoading] = useState(true);
   const [routeFrom, setRouteFrom] = useState(null);
@@ -160,11 +347,15 @@ export default function Viewer() {
     };
   }, [data, activeLayers, activeLevel]);
 
-  const matches = useMemo(() => {
-    const term = query.trim().toLowerCase();
-    if (!term || !visibleData) return [];
-    return visibleData.features.filter((feature) => `${nameOf(feature)} ${feature.properties.alt_name?.en || ""} ${feature.properties.category || ""} ${feature.properties.local_category || ""}`.toLowerCase().includes(term)).slice(0, VIEWER.searchResultLimit);
-  }, [query, visibleData]);
+  const searchContext = useMemo(() => data ? buildSearchContext(data.features) : null, [data]);
+  const searchResultTokens = useMemo(() => searchTokens(query), [query]);
+
+  const matches = useMemo(() => searchContextResults(searchContext, query), [query, searchContext]);
+
+  const routeSearchResults = useMemo(() => ({
+    from: searchContextResults(searchContext, routeQueries.from, { filter: (feature) => isRoutableFeature(routingNetwork, feature), limit: ROUTE_SEARCH_LIMIT }),
+    to: searchContextResults(searchContext, routeQueries.to, { filter: (feature) => isRoutableFeature(routingNetwork, feature), limit: ROUTE_SEARCH_LIMIT }),
+  }), [routeQueries.from, routeQueries.to, routingNetwork, searchContext]);
 
   visibleDataRef.current = visibleData;
   navigationDataRef.current = navigationData;
@@ -384,9 +575,23 @@ export default function Viewer() {
   function setRouteEndpoint(endpoint, feature) {
     if (endpoint === "from") setRouteFrom(feature);
     else setRouteTo(feature);
+    setRouteQueries((current) => ({ ...current, [endpoint]: nameOf(feature) }));
+    setActiveRouteSearch(null);
     setSelected(feature);
     setSelectedGroup(null);
     setQuery("");
+  }
+
+  function updateRouteQuery(endpoint, value) {
+    setRouteQueries((current) => ({ ...current, [endpoint]: value }));
+    if (endpoint === "from" && routeFrom && value !== nameOf(routeFrom)) setRouteFrom(null);
+    if (endpoint === "to" && routeTo && value !== nameOf(routeTo)) setRouteTo(null);
+  }
+
+  function clearRouteEndpoint(endpoint) {
+    if (endpoint === "from") setRouteFrom(null);
+    else setRouteTo(null);
+    setRouteQueries((current) => ({ ...current, [endpoint]: "" }));
   }
 
   function clearRoute() {
@@ -394,20 +599,48 @@ export default function Viewer() {
     setRouteTo(null);
     setRouteResult(null);
     setRouteError("");
+    setRouteQueries({ from: "", to: "" });
+    setActiveRouteSearch(null);
+  }
+
+  function routeEndpointControl(endpoint, label, selectedFeature) {
+    const tokens = searchTokens(routeQueries[endpoint]);
+    const results = activeRouteSearch === endpoint ? routeSearchResults[endpoint] : [];
+    return <div className="route-endpoint route-search">
+      <span>{label}</span>
+      <div>
+        <small>{endpoint === "from" ? "Start" : "Destination"}</small>
+        <div className="route-input-wrap"><Search size={13} /><input value={routeQueries[endpoint]} onChange={(event) => updateRouteQuery(endpoint, event.target.value)} onFocus={() => setActiveRouteSearch(endpoint)} placeholder={endpoint === "from" ? "Search start" : "Search destination"} aria-label={endpoint === "from" ? "Search route start" : "Search route destination"} /></div>
+      </div>
+      {(selectedFeature || routeQueries[endpoint]) && <button className="clear-button" onClick={() => clearRouteEndpoint(endpoint)} title={endpoint === "from" ? "Clear start" : "Clear destination"}><X size={ICON_SIZE.clear} /></button>}
+      {routeQueries[endpoint] && <div className="route-search-results">
+        {results.length ? results.map(({ feature, document }) => <button key={`${endpoint}-${feature.id}`} onMouseDown={(event) => event.preventDefault()} onClick={() => setRouteEndpoint(endpoint, feature)}>
+          <span>{highlightedText(document.name, tokens)}</span>
+          <small>{highlightedText(document.altName || document.localCategory || document.layer, tokens)}</small>
+        </button>) : <p>No routable matches.</p>}
+      </div>}
+    </div>;
   }
 
   const properties = selected?.properties || {};
   const selectedLayerLabel = properties.viewer_layer || properties.wayfinding_type || properties.category || "feature";
+  const selectedExhibits = relatedExhibitsForFeature(selected, data);
   return <main className="viewer-shell">
     <div ref={mapNode} className="map" />
     <header className="brand-bar"><div className="brand-mark"><Building2 size={ICON_SIZE.brand} /></div><div><strong>Beaty IDMF Viewer</strong><span>Indoor map data</span></div></header>
     <button className={`sidebar-toggle icon-button ${sidebarOpen ? "is-open" : ""}`} onClick={() => setSidebarOpen((value) => !value)} title={sidebarOpen ? "Close layers panel" : "Open layers panel"}>{sidebarOpen ? <ChevronLeft /> : <ChevronRight />}</button>
     <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
       <div className="search-wrap"><Search size={ICON_SIZE.search} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search features" aria-label="Search features" />{query && <button className="clear-button" onClick={() => setQuery("")} title="Clear search"><X size={ICON_SIZE.clear} /></button>}</div>
-      {query && <div className="search-results">{matches.length ? matches.map((feature) => <button key={`${feature.properties.viewer_layer}-${feature.id}`} onClick={() => focusFeature(feature)}><span>{nameOf(feature)}</span><small>{feature.properties.viewer_layer}</small></button>) : <p>No matching features on current level.</p>}</div>}
+      {query && <div className="search-results">{matches.length ? matches.map(({ feature, document }) => {
+        const snippet = searchSnippet(document, searchResultTokens);
+        return <button key={`${feature.properties.viewer_layer}-${feature.id}`} onClick={() => focusFeature(feature)}>
+          <span><strong>{highlightedText(document.name, searchResultTokens)}</strong>{snippet && <em>{highlightedText(snippet, searchResultTokens)}</em>}</span>
+          <small>{feature.properties.viewer_layer}</small>
+        </button>;
+      }) : <p>No matching features.</p>}</div>}
       <section className="route-panel"><div className="section-title"><Route size={ICON_SIZE.section} /><h2>Route</h2>{(routeFrom || routeTo) && <button className="clear-button" onClick={clearRoute} title="Clear route"><X size={ICON_SIZE.clear} /></button>}</div>
-        <div className="route-endpoint"><span>A</span><div><small>Start</small><strong>{routeFrom ? nameOf(routeFrom) : "Select a fixture"}</strong></div>{routeFrom && <button className="clear-button" onClick={() => setRouteFrom(null)} title="Clear start"><X size={ICON_SIZE.clear} /></button>}</div>
-        <div className="route-endpoint"><span>B</span><div><small>Destination</small><strong>{routeTo ? nameOf(routeTo) : "Select a fixture"}</strong></div>{routeTo && <button className="clear-button" onClick={() => setRouteTo(null)} title="Clear destination"><X size={ICON_SIZE.clear} /></button>}</div>
+        {routeEndpointControl("from", "A", routeFrom)}
+        {routeEndpointControl("to", "B", routeTo)}
         {routeResult && <p className="route-status"><Navigation size={14} /> Route · {Math.round(routeResult.distanceMeters)} m</p>}
         {routeError && <p className="route-error">{routeError}</p>}
       </section>
@@ -423,6 +656,30 @@ export default function Viewer() {
     </div></aside>}
     {selected && <aside className="inspector"><div className="inspector-head"><div className="feature-icon"><MapPin size={ICON_SIZE.feature} /></div><div><small>{selectedLayerLabel}</small><h2>{nameOf(selected)}</h2></div><button className="icon-button" onClick={() => setSelected(null)} title="Close feature details"><X /></button></div>
       {isRoutableFeature(routingNetwork, selected) && <div className="route-actions"><button onClick={() => setRouteEndpoint("from", selected)}><MapPin size={15} /> Start here</button><button onClick={() => setRouteEndpoint("to", selected)}><Navigation size={15} /> Route here</button></div>}
+      {selectedExhibits.length > 0 && <section className="exhibit-panel"><div className="section-title"><MapPin size={ICON_SIZE.section} /><h2>Exhibits at this spot</h2><span>{selectedExhibits.length}</span></div><div className="exhibit-list">
+        {selectedExhibits.map((exhibit) => {
+          const imageUrl = exhibitImageUrl(exhibit);
+          const specimenNames = exhibitSpecimenNames(exhibit);
+          const specimens = exhibitSpecimens(exhibit);
+          const narrative = exhibitNarrative(exhibit);
+          const notes = exhibitNotes(exhibit);
+          return <article className="exhibit-card" key={exhibit.id}>
+            {imageUrl && <a href={imageUrl} target="_blank" rel="noreferrer"><img src={imageUrl} alt={nameOf(exhibit)} loading="lazy" /></a>}
+            <div><small>{exhibitSubtitle(exhibit)}</small><strong>{exhibitSummary(exhibit)}</strong><span>{nameOf(exhibit)}</span>
+              {specimenNames.length > 0 && <ul className="exhibit-names">{specimenNames.map(({ scientificName, commonName }) => <li key={`${scientificName || ""}-${commonName || ""}`}>{scientificName && <em>{scientificName}</em>}{scientificName && commonName ? " · " : ""}{commonName}</li>)}</ul>}
+              {(specimens.length > 0 || narrative || notes) && <details className="exhibit-details"><summary>Full details</summary>
+                {narrative && <section><h3>Narrative</h3><p>{narrative}</p></section>}
+                {notes && <section><h3>Notes</h3><p>{notes}</p></section>}
+                {specimens.length > 0 && <section><h3>Specimens</h3><ul>{specimens.map((specimen, index) => <li key={`${specimenLabel(specimen, index)}-${index}`}>
+                  <strong>{specimen.scientificName && <em>{specimen.scientificName}</em>}{specimen.scientificName && specimen.commonName ? " · " : ""}{specimen.commonName || (!specimen.scientificName ? specimenLabel(specimen, index) : "")}</strong>
+                  {[specimen.specimenType, specimen.presence, specimen.catalogNumber].filter(Boolean).length > 0 && <span>{[specimen.specimenType, specimen.presence, specimen.catalogNumber].filter(Boolean).join(" · ")}</span>}
+                  {specimen.notes && <p>{specimen.notes}</p>}
+                </li>)}</ul></section>}
+              </details>}
+            </div>
+          </article>;
+        })}
+      </div></section>}
       <dl>
       {properties.local_category && <><dt>Local category</dt><dd>{properties.local_category.replaceAll("_", " ")}</dd></>}
       {properties.debug_id && <><dt>Debug ID</dt><dd className="mono">{properties.debug_id}</dd></>}

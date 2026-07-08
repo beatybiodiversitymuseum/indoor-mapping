@@ -1,0 +1,786 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "archive_shadowbox_s001",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S001"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S001",
+          "location_code": "S001",
+          "public_reference_code": "S001",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S001",
+          "path": "shadowboxes/archive/s001.jpg",
+          "type": "shadowbox"
+        },
+        "specimens": [
+          {
+            "scientificName": null,
+            "commonName": "Theropod",
+            "specimenType": "footprint, silicone cast",
+            "presence": "displayed",
+            "catalogNumber": "2008-128a-319",
+            "notes": "Label reads: Theropoda / Theropod (footprint, silicone cast) / Moose Site, Kakwa Provincial Park, BC / No. 2008-128a-319. Two casts displayed; same catalog number appears on both labels."
+          },
+          {
+            "scientificName": "Tetrapodosaurus",
+            "commonName": null,
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null,
+            "notes": "Referenced in narrative text only; no specimen displayed."
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "Two outdoorsmen in northern British Columbia's remote Kakwa Provincial Park chanced on a remarkable find: thousands of dinosaur footprints scattered across a cliff. The dinosaur stomping ground was trampled by theropods, ornithopods, and Tetrapodosaurus back in the Cretaceous, then preserved in stone, only to be discovered some 140 million years later."
+          },
+          "notes": "Map of British Columbia with Kakwa Provincial Park marked. Photo at bottom left captioned 'Prince George, BC, 2000' shows Garnet Fraser, described as amateur paleontologist and general physician in Prince George, BC. His friend Bryan Monroe first spotted the tracks back in 2000. Illustration of a theropod dinosaur alongside cast. S001 label visible at bottom right."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s030",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S030"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S030",
+          "location_code": "S030",
+          "public_reference_code": "S030",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S030",
+          "path": "shadowboxes/archive/s030.jpg",
+          "type": "shadowbox"
+        },
+        "taxonomy": {
+          "common_group_name": "Algae"
+        },
+        "specimens": [
+          {
+            "scientificName": "Delesseria decipiens",
+            "commonName": "Red alga",
+            "catalogNumber": "A 52717",
+            "disposition": "displayed",
+            "taxonomicAuthority": "J. Agardh",
+            "collectionLocation": "Hope Island, Roller Bay, west end of Cobblestone Beach (low intertidal, fully to moderately exposed)",
+            "coordinates": "50°56'N, 127°55.5'W",
+            "collector": "Gary J. Court",
+            "collectionDate": "15/IV/75",
+            "determinedBy": "J.L. Celestino",
+            "determinationDate": "6/7/75",
+            "accessionNumber": "30788"
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "Algae in our oceans, like the tropical rainforests, maintain about one-fifth of the world's oxygen supply. They turn sunlight, carbon dioxide into sugars and oxygen for other organisms to eat and breathe, and they provide important habitat for marine organisms."
+          },
+          "notes": "Herbarium sheet from UBC Phycological Herbarium (A 52717). ALGAE OF BRITISH COLUMBIA collection. Species Delesseria decipiens J. Agardh now fully legible via zoom -- previously listed as NULL/NULL. Pressed red alga specimen on cream herbarium sheet. Decorative ocean surface illustration with bubbles above the narrative text. All label details confirmed: collector Gary J. Court, date 15/IV/75, determined by J.L. Celestino on 6/7/75, accession no. 30788. S030 label visible at bottom right."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s036",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S036"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S036",
+          "location_code": "S036",
+          "public_reference_code": "S036",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S036",
+          "path": "shadowboxes/archive/s036.jpg",
+          "type": "shadowbox"
+        },
+        "taxonomy": {
+          "common_group_name": "Coralline algae"
+        },
+        "specimens": [
+          {
+            "scientificName": "Calliarthron tuberculosum",
+            "commonName": null,
+            "specimenType": "specimen",
+            "presence": "displayed",
+            "catalogNumber": "E.0053",
+            "notes": "July 9, 2010 / Botanical Beach, BC / No. E.0053"
+          },
+          {
+            "scientificName": null,
+            "commonName": "Assorted coralline algae",
+            "specimenType": "specimen",
+            "presence": "displayed",
+            "catalogNumber": "E.0058",
+            "notes": "July 10, 2010 / Botanical Beach, BC / No. E.0058"
+          },
+          {
+            "scientificName": "Bossiella sp.",
+            "commonName": null,
+            "specimenType": "specimen",
+            "presence": "displayed",
+            "catalogNumber": "E.0054",
+            "notes": "July 9, 2010 / Botanical Beach, BC / No. E.0054"
+          },
+          {
+            "scientificName": "Corallina officinalis",
+            "commonName": null,
+            "specimenType": "specimen",
+            "presence": "displayed",
+            "catalogNumber": "E.0056",
+            "notes": "July 10, 2010 / Botanical Beach, BC / No. E.0056"
+          },
+          {
+            "scientificName": "Corallina vancouveriensis",
+            "commonName": null,
+            "specimenType": "specimen",
+            "presence": "displayed",
+            "catalogNumber": "E.0057",
+            "notes": "July 10, 2010 / Botanical Beach, BC / No. E.0057"
+          },
+          {
+            "scientificName": "Serraticardia macmillanii",
+            "commonName": null,
+            "specimenType": "specimen",
+            "presence": "displayed",
+            "catalogNumber": "E.0055",
+            "notes": "July 10, 2010 / Botanical Beach, BC / No. E.0055"
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "Millions of coralline algae, ranging from flat crusts to finely branched forms, live on Vancouver Island's rocky shores. Coralline algae don't grow near Vancouver because our sea water is not salty enough: it's diluted by the Fraser River."
+          },
+          "notes": "Six coralline algae specimens displayed, all collected from Botanical Beach, BC in July 2010. S036 label visible at bottom right."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s057",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S057"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S057",
+          "location_code": "S121",
+          "public_reference_code": "S057",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S057",
+          "path": "shadowboxes/archive/s057.jpg",
+          "type": "shadowbox"
+        },
+        "specimens": [
+          {
+            "scientificName": "Polystichum acrostichoides",
+            "commonName": "Christmas fern",
+            "catalogNumber": null,
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Polystichum munitum",
+            "commonName": "Sword fern",
+            "catalogNumber": null,
+            "disposition": "referenced"
+          },
+          {
+            "scientificName": "Monotis sp.",
+            "commonName": "Clam (fossil)",
+            "catalogNumber": "2010-76__",
+            "disposition": "displayed",
+            "collectionLocation": "Peace River, Alberta"
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "Christmas fern is green all year round, even at Christmas. In winter, its fronds don't brown and wither like those of most other ferns, they just lay flat to the ground. Next year's growth comes up tall and green in spring."
+          },
+          "notes": "WARNING: File s057.jpg actually contains content for display S121, not S057. The on-image label reads S121. Upper half features Christmas fern herbarium sheet and habitat photo captioned 'Christmas fern lives in eastern North America, but looks like our local sword fern (P. munitum).' Lower half features a fossil clam (Monotis sp.) from Peace River, Alberta, with large clam shell illustration by Mari Chijiiwa. Partial text visible about fossils being 200 million years old, found in British Columbia, Austria, the Himalayas, with hypothesis about attaching themselves to floating [debris/wood]. Catalog number partially cut off at 2010-76... Previously had only 1 species listed; now 3 identified (including referenced P. munitum). Fossil Monotis sp. was completely missed in original extraction."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s060",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S060"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S060",
+          "location_code": "D026",
+          "public_reference_code": "S060",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S060",
+          "path": "shadowboxes/archive/s060.jpg",
+          "type": "display"
+        },
+        "taxonomy": {
+          "common_group_name": "Corals"
+        },
+        "specimens": [
+          {
+            "scientificName": "Montipora sp.",
+            "commonName": "Scleractinian coral",
+            "catalogNumber": "MI4205",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Symphyllia sp.",
+            "commonName": "Indo-Pacific scleractinian coral",
+            "catalogNumber": "MI4214",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Corallium sp.",
+            "commonName": "Precious coral",
+            "catalogNumber": "MI4210",
+            "disposition": "displayed",
+            "collectionLocation": "Coast of Africa"
+          },
+          {
+            "scientificName": "Acropora sp.",
+            "commonName": "Indo-Pacific scleractinian coral",
+            "catalogNumber": "MI4207",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Halomitra pileus",
+            "commonName": "Mushroom coral",
+            "catalogNumber": "MI4092",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Tubipora musica",
+            "commonName": "Organ pipe coral",
+            "catalogNumber": "MI421_",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Subergorgia sp.",
+            "commonName": "Gorgonian sea fan",
+            "catalogNumber": "MI25",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": null,
+            "commonName": "Gorgonian sea fan",
+            "catalogNumber": "MI4212",
+            "disposition": "displayed",
+            "taxonomicGroup": "Octocorallia"
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "Every piece of hard or soft coral, from tropical reef-builders to cold-water dwellers, is a community of tiny polyps, related to anemones. Most tropical coral polyps harbour microscopic algae called zooxanthellae 'zo-zan-thell-ee,' which convert sunlight into nutrients that help corals form hard skeletons. Cold-water corals often survive without them."
+          },
+          "notes": "WARNING: File s060.jpg actually contains content for display D026, not S060. The on-image label reads D026. This is a coral display case, not the broom moss (Dicranum scoparium) shadowbox described in the original extraction. The original extraction (1 species: Dicranum scoparium / Broom moss with catalog numbers E.0451 and E.0618, Emily Carr painting) is entirely wrong for this image. Upper portion of image also shows unlabeled dried botanical specimens (peppers, berries, dragon fruit, citrus) which may be from an adjacent or overlapping display. 8 coral species identified; previously listed as 1 moss species."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s063",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S063"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S063",
+          "location_code": "D028",
+          "public_reference_code": "S063",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S063",
+          "path": "shadowboxes/archive/s063.jpg",
+          "type": "display"
+        },
+        "taxonomy": {
+          "common_group_name": "Marine invertebrates and coral reef organisms"
+        },
+        "specimens": [
+          {
+            "scientificName": "Clanculus pharaonius",
+            "commonName": "Mantle clanculus",
+            "catalogNumber": "MI4097 a-f",
+            "disposition": "displayed",
+            "collectionLocation": "Indian Ocean; intertidal"
+          },
+          {
+            "scientificName": "Goniopora sp.",
+            "commonName": "Scleractinian coral",
+            "catalogNumber": "MI4092",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Caulastrea furcata",
+            "commonName": "Indo-Pacific scleractinian coral",
+            "catalogNumber": "MI4091",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Angaria melanacantha",
+            "commonName": "Imperial delphinula",
+            "catalogNumber": "MI4202",
+            "disposition": "displayed",
+            "collectionLocation": "Philippines; coral reefs"
+          },
+          {
+            "scientificName": "Nerita peloronta",
+            "commonName": "Bleeding tooth nerite",
+            "catalogNumber": "MI4098 a-g",
+            "disposition": "displayed",
+            "collectionLocation": "South Florida, West Indies, Bermuda; shore areas, close relatives live on mangrove trees"
+          },
+          {
+            "scientificName": "Hippocampus spp.",
+            "commonName": "Seahorses (fish)",
+            "catalogNumber": "MI805",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Lambis scorpius",
+            "commonName": "Scorpio conch",
+            "catalogNumber": "MI4201",
+            "disposition": "displayed",
+            "collectionLocation": "Western Pacific; coral and sand near reefs"
+          },
+          {
+            "scientificName": "Mitra mitra",
+            "commonName": "Episcopal mitre",
+            "catalogNumber": "MI4030",
+            "disposition": "displayed",
+            "collectionLocation": "Indo-Pacific; coral reefs"
+          },
+          {
+            "scientificName": "Ellisella sp.",
+            "commonName": "Gorgonian sea whip",
+            "catalogNumber": "MI4093",
+            "disposition": "displayed"
+          },
+          {
+            "scientificName": "Cribrochalina sp.",
+            "commonName": "Vase sponge",
+            "catalogNumber": "MI4095",
+            "disposition": "displayed"
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "Tropical corals need coastal mangrove forests. Mangroves clean water flowing from the land, and nearby seagrass beds provide nursery habitat for baby fish, invertebrate animals, and other reef life. When mangroves are destroyed by coastal development, marine life suffers and corals die from cloudy, polluted waters. One-third of all corals and the animals that depend on them are endangered."
+          },
+          "notes": "WARNING: File s063.jpg actually contains content for display D028, not S063. The on-image label reads D028. This is a coral reef marine display, not the water plants / biofiltration shadowbox described in the original extraction. The original extraction (4 species: Pistia stratiotes, Eichhornia sp., Lemna minor, Azolla sp. with bacterium/biofiltration content) is entirely wrong for this image. Display organized into sections: Mangrove forest, Seagrass beds, Coral reef. 10 marine species identified; previously listed as 4 aquatic plant species. Additional specimens visible but labels partially cut off (e.g. a large spiny shell in bottom-center row, likely a murex species, labeled with 'coral reef areas / shallow water')."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s067",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S067"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S067",
+          "location_code": "D103",
+          "public_reference_code": "S067",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S067",
+          "path": "shadowboxes/archive/s067.jpg",
+          "type": "display"
+        },
+        "taxonomy": {
+          "common_group_name": "Fruits (dried botanical specimens)"
+        },
+        "details": {
+          "text": {
+            "en": "What do you see in this drawer: fruits or vegetables? If you said fruits, you think like a botanist -- a scientist who studies plants. Fruits contain the seeds of flowering plants. This means many culinary vegetables, such as tomatoes, bean pods, okra, eggplants, peppers, and squash, are technically fruits."
+          },
+          "notes": "WARNING: File s067.jpg actually contains content for display D103, not S067. The on-image label reads D103. This is a dried fruits drawer display, not the sundew/pitcher plant shadowbox described in the original extraction. The original extraction (2 species: Drosera rotundifolia / Sundew and Sarracenia leucophylla / Tussok pitcher plant) is entirely wrong for this image. Visible dried specimens include chili peppers, berries, citrus cross-sections, dragon fruit, tamarind pod, mangosteen, passion fruit, figs, and various other tropical/subtropical fruits. No individual specimen labels are visible at this resolution -- only the narrative text panel. Species list emptied because no labeled species can be confirmed. Legibility remains partial due to lack of visible individual labels."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s072",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S072"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S072",
+          "location_code": "S072",
+          "public_reference_code": "S072",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S072",
+          "path": "shadowboxes/archive/s072.jpg",
+          "type": "shadowbox"
+        },
+        "specimens": [
+          {
+            "scientificName": "Cornus nuttallii",
+            "commonName": "Pacific dogwood",
+            "specimenType": "herbarium sheet",
+            "presence": "displayed",
+            "catalogNumber": "V154653",
+            "notes": "Pressed specimen with bracts and flowerhead visible; herbarium label reads HERBARIUM UNIVERSITY of B.C."
+          },
+          {
+            "scientificName": "Cornus nuttallii",
+            "commonName": "Pacific dogwood",
+            "specimenType": "herbarium sheet",
+            "presence": "displayed",
+            "catalogNumber": "V159653",
+            "notes": "Second herbarium sheet partially visible beneath the first; University of British Columbia Herbarium label, FLORA OF B.C., collected May 17, 1975, No. 1118"
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "These \"flowers\" are not flowers at all. The white petals of Pacific dogwood are actually modified leaves, called bracts, encircling 30 to 40 small green flowers. The big white \"petals\" attract pollinators to the tiny real flowers."
+          },
+          "notes": "Inset diagram labels: \"Flowerhead with small, dense, individual flowers.\" Bottom-left label: Pacific dogwood / Cornus nuttallii / May 4, 2011 / Point Roberts, Washington / No. E.0003. Decorative line drawings of dogwood flowers in background."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s085",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S085"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S085",
+          "location_code": "S085",
+          "public_reference_code": "S085",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S085",
+          "path": "shadowboxes/archive/s085.jpg",
+          "type": "shadowbox"
+        },
+        "specimens": [
+          {
+            "scientificName": "Tremella aurantialba",
+            "commonName": null,
+            "specimenType": "fungus specimen",
+            "presence": "displayed",
+            "catalogNumber": null,
+            "notes": "Small dried fungus specimen displayed in centre of panel"
+          },
+          {
+            "scientificName": "Tremella aurantialba",
+            "commonName": null,
+            "specimenType": "microscope image",
+            "presence": "displayed",
+            "catalogNumber": null,
+            "notes": "Circular microscope photograph showing stained cross-section with red/pink cells"
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "If you discover and describe a new species, you can give it a name. Whenever we refer to the species, even if centuries from now, we would use this name and remember that you described it. Most species of fungi are undescribed—there may be one awaiting discovery in your backyard! R.J. Bandoni and M. Zang described and named this fungus, so we refer to it as Tremella aurantialba Bandoni & Zang."
+          },
+          "notes": "Top-right caption: Tremella aurantialba (illustration) / Published in R. J. Bandoni and M. Zang, / Transactions of the Mycological... Vol. 81 (2) / 1990, pp. 270-275. Label on left: Basidia (spore producing cell). Illustrated line drawings of fungal structures in background. Bottom-right credit partially legible."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s115",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S115"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S115",
+          "location_code": "S115",
+          "public_reference_code": "S115",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S115",
+          "path": "shadowboxes/archive/s115.jpg",
+          "type": "shadowbox"
+        },
+        "specimens": [
+          {
+            "scientificName": "Cyrtograptus sp.",
+            "commonName": "Graptolite",
+            "specimenType": "fossil",
+            "presence": "displayed",
+            "catalogNumber": "2010-7654",
+            "notes": "Upper fossil specimen; Silurian age"
+          },
+          {
+            "scientificName": "Cyrtograptus sp.",
+            "commonName": "Graptolite",
+            "specimenType": "fossil",
+            "presence": "displayed",
+            "catalogNumber": "2010-7655",
+            "notes": "Lower fossil specimen; Silurian age"
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "Graptolites are extinct filter-feeding animals that lived from 500 to 350 million years ago. They lived as colonies, their small, soft bodies protected by a common skeleton. Most graptolite fossils show the skeleton flattened like a pancake, preserved as a ghostly carbon film on the rocks. This is what graptolite colonies might have looked like in life."
+          },
+          "notes": "Upper label: Graptolite / Cyrtograptus sp. / Silurian / No. 2010-7654. Lower label: Graptolite / Cyrtograptus sp. / Silurian / No. 2010-7655. Decorative line drawings of graptolite colonies and marine organisms in background. Illustration credit: Derek Tan. S115 marker at bottom right."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    },
+    {
+      "id": "archive_shadowbox_s126",
+      "type": "Feature",
+      "feature_type": "exhibit",
+      "geometry": null,
+      "properties": {
+        "category": "exhibit",
+        "name": {
+          "en": "Archived Shadowbox S126"
+        },
+        "duration_type": "archived",
+        "archive_status": "archived",
+        "exhibit_type": "shadowbox",
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "fixture_ids": [],
+        "amenity_ids": [],
+        "fixture_alt_names": [],
+        "amenity_alt_names": [],
+        "archive": {
+          "collection": "shadowboxes",
+          "id": "S126",
+          "location_code": "S126",
+          "public_reference_code": "S126",
+          "public_reference_url": "https://explore.beatymuseum.ubc.ca/docs/shadowboxes/"
+        },
+        "image": {
+          "id": "S126",
+          "path": "shadowboxes/archive/s126.jpg",
+          "type": "shadowbox"
+        },
+        "specimens": [
+          {
+            "scientificName": "Dryopteris sp.",
+            "commonName": "Wood fern",
+            "specimenType": "fossil",
+            "presence": "displayed",
+            "catalogNumber": "2009-5724 a, b",
+            "notes": "Vancouver, BC"
+          },
+          {
+            "scientificName": "Polypodium",
+            "commonName": "Fern",
+            "specimenType": "fossil",
+            "presence": "displayed",
+            "catalogNumber": "2009-5736 a",
+            "notes": "Vancouver, BC"
+          },
+          {
+            "scientificName": "Dryopteris arguta",
+            "commonName": "Coastal woodfern",
+            "specimenType": "fossil",
+            "presence": "displayed",
+            "catalogNumber": "2009-57119",
+            "notes": "Eocene; Vancouver, BC"
+          }
+        ],
+        "details": {
+          "text": {
+            "en": "Underfoot in Vancouver's parks and ravines people have found fossils of ferns, conifers, flowering plants, and shells, some of which date as far back as 55 million years. The fossils you see here were found in Vancouver's neighbourhood of Kitsilano."
+          },
+          "notes": "Three fossil fern specimens displayed with red fern frond illustrations in background. Labels identify each specimen with location as Vancouver, BC. No shadowbox number marker visible in image."
+        },
+        "archive_note": "Archived on the public shadowbox page and intentionally excluded from the active exhibit layer."
+      }
+    }
+  ]
+}

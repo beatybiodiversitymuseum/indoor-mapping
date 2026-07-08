@@ -21,10 +21,13 @@ button { color: inherit; }
 .search-wrap input { min-width: 0; flex: 1; border: 0; outline: 0; font-size: 13px; }
 .clear-button { display: grid; place-items: center; border: 0; background: transparent; padding: 2px; cursor: pointer; }
 .search-results { position: absolute; left: 12px; right: 12px; top: 52px; z-index: 2; background: #fff; border: 1px solid var(--line); box-shadow: 0 8px 20px rgba(24,32,42,.14); }
-.search-results button { width: 100%; display: flex; justify-content: space-between; gap: 8px; padding: 9px 10px; background: #fff; border: 0; border-bottom: 1px solid #edf0f2; text-align: left; cursor: pointer; }
+.search-results button { width: 100%; display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 8px; padding: 9px 10px; background: #fff; border: 0; border-bottom: 1px solid #edf0f2; text-align: left; cursor: pointer; }
 .search-results button:hover, .layer-list label:hover { background: #f3f7f6; }
-.search-results span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
+.search-results span { min-width: 0; display: grid; gap: 2px; font-size: 12px; }
+.search-results strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; font-weight: 700; }
+.search-results em { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--muted); font-size: 10px; line-height: 13px; font-style: normal; }
 .search-results small { color: var(--muted); text-transform: capitalize; }
+.search-results mark, .route-search-results mark { padding: 0 1px; background: #fff1a8; color: inherit; }
 .search-results p { margin: 0; padding: 12px; color: var(--muted); font-size: 12px; }
 .sidebar section { padding-top: 18px; }
 .sidebar .route-panel { padding-top: 16px; }
@@ -35,6 +38,18 @@ button { color: inherit; }
 .route-endpoint small, .route-endpoint strong { display: block; }
 .route-endpoint small { color: var(--muted); font-size: 9px; text-transform: uppercase; }
 .route-endpoint strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; }
+.route-search { align-items: start; }
+.route-input-wrap { height: 25px; display: flex; align-items: center; gap: 5px; margin-top: 2px; padding: 0 6px; border: 1px solid #cbd3da; background: #fff; }
+.route-input-wrap:focus-within { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(23,109,101,.1); }
+.route-input-wrap svg { flex: 0 0 auto; color: var(--muted); }
+.route-input-wrap input { min-width: 0; flex: 1; border: 0; outline: 0; font-size: 11px; }
+.route-search-results { grid-column: 1 / -1; display: grid; margin-top: 2px; border-top: 1px solid #edf0f2; }
+.route-search-results button { display: grid; gap: 2px; padding: 7px 5px 7px 32px; border: 0; border-bottom: 1px solid #edf0f2; background: #fff; text-align: left; cursor: pointer; }
+.route-search-results button:hover { background: #f3f7f6; }
+.route-search-results button:last-child { border-bottom: 0; }
+.route-search-results span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; font-weight: 700; }
+.route-search-results small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; text-transform: none; }
+.route-search-results p { margin: 0; padding: 8px 5px 6px 32px; color: var(--muted); font-size: 10px; }
 .route-status, .route-error { display: flex; align-items: center; gap: 6px; margin: 8px 0 0; font-size: 11px; }
 .route-status { color: var(--accent); }
 .route-error { color: #a83b32; }
@@ -61,6 +76,29 @@ button { color: inherit; }
 .route-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
 .route-actions button { height: 34px; display: flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--accent); background: #fff; color: var(--accent); cursor: pointer; font-size: 11px; font-weight: 700; }
 .route-actions button:last-child { background: var(--accent); color: #fff; }
+.exhibit-panel { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.exhibit-panel .section-title { margin-bottom: 8px; }
+.exhibit-list { display: grid; gap: 8px; }
+.exhibit-card { display: grid; grid-template-columns: 72px 1fr; gap: 9px; min-height: 72px; border: 1px solid #e2e7eb; background: #fbfcfc; }
+.exhibit-card > a { display: block; width: 72px; height: 72px; background: #edf1f2; overflow: hidden; }
+.exhibit-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.exhibit-card div { min-width: 0; display: grid; align-content: start; gap: 3px; padding: 7px 8px 7px 0; }
+.exhibit-card small { color: var(--accent); font-size: 9px; font-weight: 700; text-transform: uppercase; }
+.exhibit-card strong { font-size: 12px; line-height: 15px; }
+.exhibit-card span { color: var(--muted); font-size: 11px; line-height: 14px; overflow-wrap: anywhere; }
+.exhibit-names { display: grid; gap: 1px; margin: 2px 0 0; padding: 0; list-style: none; }
+.exhibit-names li { color: #33404c; font-size: 10px; line-height: 13px; overflow-wrap: anywhere; }
+.exhibit-names em { font-style: italic; }
+.exhibit-details { margin-top: 4px; border-top: 1px solid #e4e9ed; padding-top: 4px; }
+.exhibit-details summary { cursor: pointer; color: var(--accent); font-size: 10px; font-weight: 700; }
+.exhibit-details section { margin-top: 7px; }
+.exhibit-details h3 { margin: 0 0 3px; color: #596572; font-size: 9px; line-height: 12px; text-transform: uppercase; }
+.exhibit-details p { display: block; -webkit-line-clamp: unset; overflow: visible; margin: 0; color: #33404c; font-size: 10px; line-height: 14px; }
+.exhibit-details ul { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.exhibit-details li { display: grid; gap: 2px; padding-top: 5px; border-top: 1px solid #edf0f2; }
+.exhibit-details li:first-child { padding-top: 0; border-top: 0; }
+.exhibit-details li strong { font-size: 10px; line-height: 13px; font-weight: 700; overflow-wrap: anywhere; }
+.exhibit-details li span { color: #596572; font-size: 9px; line-height: 12px; }
 .inspector dt { color: var(--muted); }
 .inspector dd { margin: 0; text-transform: capitalize; overflow-wrap: anywhere; }
 .inspector a { color: var(--accent); }

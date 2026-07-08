@@ -9,6 +9,7 @@ export const LAYERS = [
   { id: "opening", label: "Openings", color: "#d85d4d", enabledByDefault: true },
   { id: "kiosk", label: "Kiosks", color: "#7c5ab8", enabledByDefault: true },
   { id: "amenity", label: "Amenities", color: "#dd3f72", enabledByDefault: true },
+  { id: "exhibit", label: "Exhibits", color: "#0f766e", enabledByDefault: false },
 ];
 
 export const LEVELS = [

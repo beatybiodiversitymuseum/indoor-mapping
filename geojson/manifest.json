@@ -3,5 +3,13 @@
   "created": "2026-05-22T21:08:11Z",
   "generated_by": "Codex starter IMDF layer setup",
   "language": "en-CA",
-  "extensions": null
+  "extensions": {
+    "museum:exhibit": {
+      "version": "1.0.0",
+      "feature_types": [
+        "exhibit"
+      ],
+      "description": "Local permanent exhibit content layer resolved to existing amenity and fixture features."
+    }
+  }
 }

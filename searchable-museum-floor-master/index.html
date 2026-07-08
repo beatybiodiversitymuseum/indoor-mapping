@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beaty Museum Floor Database</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #1a1a2e; color: #e0e0e0; }
+
+  /* --- Top bar --- */
+  .header {
+    position: sticky; top: 0; z-index: 100;
+    background: #16213e; border-bottom: 2px solid #0f3460;
+    padding: 12px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .header h1 { font-size: 18px; color: #e94560; white-space: nowrap; }
+  .header .stats { font-size: 13px; color: #888; }
+  .header-right { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+
+  /* --- Search --- */
+  .search-box {
+    background: #111; border: 1px solid #333; color: #ddd; padding: 5px 10px;
+    border-radius: 4px; font-size: 13px; width: 220px;
+  }
+  .search-box:focus { border-color: #e94560; outline: none; }
+  .search-box::placeholder { color: #666; }
+
+  /* --- Filter bar --- */
+  .filters {
+    background: #16213e; padding: 8px 24px; border-bottom: 1px solid #0f3460;
+    display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+  }
+  .filter-group { display: flex; gap: 4px; align-items: center; }
+  .filter-group::before {
+    content: attr(data-label);
+    font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 0.5px;
+    margin-right: 4px;
+  }
+  .filter-sep { width: 1px; height: 20px; background: #0f3460; margin: 0 6px; }
+  .filter-btn {
+    padding: 3px 10px; border-radius: 12px; border: 1px solid #0f3460;
+    background: transparent; color: #aaa; cursor: pointer; font-size: 11px;
+    white-space: nowrap; transition: all 0.15s;
+  }
+  .filter-btn.active { background: #0f3460; color: #e94560; border-color: #e94560; }
+  .filter-btn:hover { border-color: #e94560; }
+  .filter-btn .count { color: #666; font-size: 10px; margin-left: 3px; }
+  .filter-btn.active .count { color: #c0384f; }
+
+  /* --- Sort & view controls --- */
+  .controls-bar {
+    background: #16213e; padding: 6px 24px; border-bottom: 1px solid #0f3460;
+    display: flex; gap: 12px; align-items: center; font-size: 12px;
+  }
+  .controls-bar label { color: #666; }
+  .controls-bar select {
+    background: #111; border: 1px solid #333; color: #ddd;
+    padding: 3px 6px; border-radius: 4px; font-size: 12px;
+  }
+
+  /* --- Pagination --- */
+  .pagination {
+    display: flex; justify-content: center; align-items: center; gap: 6px;
+    padding: 12px 24px; background: #16213e; border-bottom: 1px solid #0f3460;
+  }
+  .page-btn {
+    padding: 4px 10px; border-radius: 4px; border: 1px solid #333;
+    background: transparent; color: #aaa; cursor: pointer; font-size: 12px;
+  }
+  .page-btn:hover { border-color: #e94560; }
+  .page-btn.active { background: #e94560; color: #fff; border-color: #e94560; }
+  .page-btn:disabled { opacity: 0.3; cursor: default; }
+  .page-info { color: #888; font-size: 12px; min-width: 120px; text-align: center; }
+
+  /* --- Cards --- */
+  .cards { padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+
+  .card {
+    background: #16213e; border-radius: 8px; border: 1px solid #0f3460;
+    overflow: hidden; transition: border-color 0.2s;
+  }
+  .card:hover { border-color: #e94560; }
+
+  .card-header {
+    padding: 8px 16px; background: #1a1a2e;
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .card-id { font-weight: 700; color: #e94560; font-size: 14px; }
+  .badge {
+    padding: 1px 7px; border-radius: 10px; font-size: 10px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.3px;
+  }
+  .type-header { background: #1b4332; color: #95d5b2; }
+  .type-specimen { background: #3d1e06; color: #f4a261; }
+  .type-info { background: #1a1a4e; color: #a0a0ff; }
+  .type-blank { background: #333; color: #888; }
+  .type-shadowbox { background: #2d1b4e; color: #c49bff; }
+  .type-drawer { background: #1b3a4b; color: #89cff0; }
+  .type-unexpected { background: #4a1a1a; color: #ff8888; }
+  .source-labels { background: #1b3320; color: #7bc47f; }
+  .source-shadowboxes { background: #2d1b4e; color: #c49bff; }
+  .source-drawers { background: #1b3a4b; color: #89cff0; }
+
+  .flag-badge { font-size: 10px; padding: 1px 6px; border-radius: 8px; }
+  .flag-error { background: #5c1a1a; color: #ff6b6b; }
+  .flag-warning { background: #4a3a06; color: #ffc857; }
+  .flag-info { background: #1a2a4a; color: #6baeff; }
+
+  .card-legibility { margin-left: auto; font-size: 11px; }
+  .leg-high { color: #4caf50; }
+  .leg-medium { color: #8bc34a; }
+  .leg-partial { color: #ff9800; }
+  .leg-low { color: #f44336; }
+  .leg-none { color: #666; }
+
+  .card-body { display: flex; gap: 0; }
+
+  .image-panel {
+    flex: 1; min-width: 0; position: relative; background: #111;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 180px; max-height: 460px; cursor: zoom-in;
+  }
+  .image-panel img { max-width: 100%; max-height: 460px; object-fit: contain; }
+  .image-panel.zoomed {
+    cursor: zoom-out; position: fixed; inset: 0; z-index: 200;
+    max-height: none; background: rgba(0,0,0,0.95);
+  }
+  .image-panel.zoomed img { max-height: 100vh; max-width: 100vw; }
+
+  .extraction-panel {
+    flex: 1; min-width: 0; padding: 10px 14px;
+    font-size: 13px; line-height: 1.5; overflow-y: auto; max-height: 460px;
+  }
+
+  /* --- Flags panel --- */
+  .flags-panel {
+    padding: 6px 16px 8px; background: #1a1a2e; border-top: 1px solid #0f3460;
+  }
+  .flags-panel summary {
+    cursor: pointer; font-size: 11px; color: #888;
+    list-style: none; user-select: none;
+  }
+  .flags-panel summary::-webkit-details-marker { display: none; }
+  .flags-panel summary::before { content: '\25b6 '; font-size: 9px; }
+  .flags-panel[open] summary::before { content: '\25bc '; }
+  .flag-item {
+    font-size: 11px; padding: 2px 0; color: #bbb;
+    border-left: 2px solid transparent; padding-left: 6px; margin: 2px 0;
+  }
+  .flag-item.sev-error { border-color: #f44336; }
+  .flag-item.sev-warning { border-color: #ffc857; }
+  .flag-item.sev-info { border-color: #6baeff; }
+  .flag-check { color: #888; font-size: 10px; }
+
+  /* --- Species list --- */
+  .species-list { list-style: none; padding: 0; }
+  .species-item {
+    padding: 5px 8px; margin: 3px 0; border-radius: 4px;
+    background: rgba(255,255,255,0.03); border-left: 3px solid #0f3460;
+  }
+  .species-name { font-style: italic; color: #e94560; }
+  .species-common { color: #ccc; }
+  .species-meta { font-size: 11px; color: #888; }
+  .presence-displayed { color: #4caf50; }
+  .presence-referenced { color: #ff9800; }
+
+  .field-label { color: #888; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 6px; }
+  .field-value { color: #ddd; margin-bottom: 3px; }
+  .narrative {
+    font-style: italic; color: #aaa; background: rgba(255,255,255,0.03);
+    padding: 5px 8px; border-radius: 4px; margin: 3px 0;
+    max-height: 120px; overflow-y: auto; font-size: 12px;
+  }
+  .notes { color: #999; font-size: 12px; background: rgba(255,255,255,0.02); padding: 5px 8px; border-radius: 4px; }
+
+  /* --- Bottom pagination --- */
+  .pagination-bottom { border-top: 1px solid #0f3460; border-bottom: none; }
+
+  /* --- Empty state --- */
+  .empty-state {
+    text-align: center; padding: 60px 24px; color: #666; font-size: 14px;
+  }
+
+  /* --- Responsive --- */
+  @media (max-width: 900px) {
+    .card-body { flex-direction: column; }
+    .image-panel { max-height: 280px; }
+    .search-box { width: 160px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Beaty Museum Floor Database</h1>
+  <div class="stats" id="stats"></div>
+  <div class="header-right">
+    <input class="search-box" id="search" type="text"
+           placeholder="Search ID, species, location..."
+           oninput="onSearchDebounced()">
+  </div>
+</div>
+
+<div class="filters" id="filters"></div>
+
+<div class="controls-bar">
+  <label>Sort:</label>
+  <select id="sort-select" onchange="applyFilters()">
+    <option value="id">Image ID</option>
+    <option value="flags-desc">Most flags first</option>
+    <option value="severity">Severity (errors first)</option>
+    <option value="species-desc">Most species first</option>
+    <option value="species-asc">Fewest species first</option>
+  </select>
+  <label>Per page:</label>
+  <select id="perpage-select" onchange="currentPage = 0; renderPage();">
+    <option value="25">25</option>
+    <option value="50" selected>50</option>
+    <option value="100">100</option>
+    <option value="200">200</option>
+  </select>
+</div>
+
+<div class="pagination" id="pagination-top"></div>
+<div class="cards" id="cards"></div>
+<div class="pagination pagination-bottom" id="pagination-bottom"></div>
+
+<script>
+// --- Configuration ---
+// Web base URLs for each image source on explore.beatymuseum.ubc.ca.
+// Local imagePaths don't map 1:1 to web URLs (scraper reorganized on download),
+// so we reconstruct the original web URL from the local path.
+const WEB_BASE = 'https://explore.beatymuseum.ubc.ca/docs/';
+
+function imageUrl(imagePath) {
+  // Labels: "labels/Face01/01.jpg" → same structure on web
+  if (imagePath.startsWith('labels/')) {
+    return WEB_BASE + imagePath;
+  }
+  // Shadowboxes: "shadowboxes/archive/s001.jpg" → "shadowboxes/img/archive/s001.jpg"
+  //              "shadowboxes/active/s002.jpg"  → "shadowboxes/img/s002.jpg"
+  if (imagePath.startsWith('shadowboxes/')) {
+    const file = imagePath.split('/').pop(); // s001.jpg
+    if (imagePath.includes('/archive/')) {
+      return WEB_BASE + 'shadowboxes/img/archive/' + file;
+    }
+    return WEB_BASE + 'shadowboxes/img/' + file;
+  }
+  // Drawers: "drawers/DI.01/d001.jpg" → "drawers/img/d001.jpg"
+  if (imagePath.startsWith('drawers/')) {
+    const file = imagePath.split('/').pop(); // d001.jpg
+    return WEB_BASE + 'drawers/img/' + file;
+  }
+  // Fallback
+  return WEB_BASE + imagePath;
+}
+
+// --- State ---
+let allEntries = [];
+let flagsMap = {};       // imageId -> [{ check, severity, message }]
+let filteredEntries = [];
+let currentPage = 0;
+
+// Debounce search
+let searchTimer = null;
+function onSearchDebounced() {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { currentPage = 0; applyFilters(); }, 200);
+}
+
+// --- Load data ---
+async function load() {
+  const ocrFiles = [
+    { file: 'data/ocr-labels.json', source: 'labels' },
+    { file: 'data/ocr-shadowboxes.json', source: 'shadowboxes' },
+    { file: 'data/ocr-drawers.json', source: 'drawers' },
+  ];
+
+  const loads = ocrFiles.map(async ({ file, source }) => {
+    try {
+      const res = await fetch(file);
+      const data = await res.json();
+      return data.map(e => ({ ...e, _source: source }));
+    } catch (e) { console.warn('Failed to load', file, e); return []; }
+  });
+
+  const flagsLoad = fetch('data/ocr-audit-flags.json')
+    .then(r => r.json())
+    .catch(() => []);
+
+  const [results, flags] = await Promise.all([Promise.all(loads), flagsLoad]);
+  allEntries = results.flat();
+  allEntries.sort((a, b) => a.imageId.localeCompare(b.imageId, undefined, { numeric: true }));
+
+  // Index flags
+  for (const f of flags) {
+    flagsMap[f.imageId] = f.flags || [];
+  }
+
+  buildFilters();
+  applyFilters();
+}
+
+// --- Filters ---
+const activeFilters = { source: null, type: null, legibility: null, severity: null };
+
+function buildFilters() {
+  const container = document.getElementById('filters');
+  container.innerHTML = '';
+
+  // Source
+  const sources = ['labels', 'shadowboxes', 'drawers'];
+  const sourceGroup = makeGroup('Source');
+  sources.forEach(s => {
+    const count = allEntries.filter(e => e._source === s).length;
+    sourceGroup.appendChild(makeFilterBtn(s, count, 'source', s));
+  });
+  container.appendChild(sourceGroup);
+  container.appendChild(makeSep());
+
+  // Image type
+  const types = [...new Set(allEntries.map(e => e.imageType))].sort();
+  const typeGroup = makeGroup('Type');
+  types.forEach(t => {
+    const count = allEntries.filter(e => e.imageType === t).length;
+    typeGroup.appendChild(makeFilterBtn(t, count, 'type', t));
+  });
+  container.appendChild(typeGroup);
+  container.appendChild(makeSep());
+
+  // Legibility
+  const legBuckets = ['high', 'medium', 'partial', 'low', 'none'];
+  const legGroup = makeGroup('Legibility');
+  legBuckets.forEach(l => {
+    const count = allEntries.filter(e => normalizeLegibility(e.legibility) === l).length;
+    if (count > 0) legGroup.appendChild(makeFilterBtn(l, count, 'legibility', l));
+  });
+  container.appendChild(legGroup);
+  container.appendChild(makeSep());
+
+  // Flag severity
+  const sevGroup = makeGroup('Flags');
+  ['error', 'warning', 'info'].forEach(s => {
+    const count = allEntries.filter(e => (flagsMap[e.imageId] || []).some(f => f.severity === s)).length;
+    sevGroup.appendChild(makeFilterBtn(s, count, 'severity', s));
+  });
+  const unflaggedCount = allEntries.filter(e => !(flagsMap[e.imageId]?.length)).length;
+  sevGroup.appendChild(makeFilterBtn('clean', unflaggedCount, 'severity', 'clean'));
+  container.appendChild(sevGroup);
+}
+
+function makeGroup(label) {
+  const div = document.createElement('div');
+  div.className = 'filter-group';
+  div.dataset.label = label;
+  return div;
+}
+
+function makeSep() {
+  const div = document.createElement('div');
+  div.className = 'filter-sep';
+  return div;
+}
+
+function makeFilterBtn(label, count, group, value) {
+  const btn = document.createElement('button');
+  btn.className = 'filter-btn' + (activeFilters[group] === value ? ' active' : '');
+  btn.innerHTML = `${label}<span class="count">${count}</span>`;
+  btn.onclick = () => {
+    if (activeFilters[group] === value) {
+      activeFilters[group] = null;
+      btn.classList.remove('active');
+    } else {
+      const parent = btn.parentElement;
+      parent.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      activeFilters[group] = value;
+      btn.classList.add('active');
+    }
+    currentPage = 0;
+    applyFilters();
+  };
+  return btn;
+}
+
+// --- Legibility normalization ---
+function normalizeLegibility(raw) {
+  if (!raw) return 'none';
+  const l = raw.toLowerCase().trim();
+  if (/^(high|good|clear|legible$|very.?legible|excellent)/.test(l)) return 'high';
+  if (/^(medium|moderate|mostly|fair)/.test(l)) return 'medium';
+  if (/^(partial|some|limited|poor)/.test(l)) return 'partial';
+  if (/^(low|difficult|barely|hard)/.test(l)) return 'low';
+  if (/^(none|illegible|unreadable|blank|no.?text|n\/a)/.test(l)) return 'none';
+  if (l.length > 15) return 'partial';
+  return 'medium';
+}
+
+// --- Severity score for sorting ---
+function maxSeverity(imageId) {
+  const flags = flagsMap[imageId] || [];
+  if (flags.some(f => f.severity === 'error')) return 3;
+  if (flags.some(f => f.severity === 'warning')) return 2;
+  if (flags.some(f => f.severity === 'info')) return 1;
+  return 0;
+}
+
+// --- Apply filters + sort + render ---
+function applyFilters() {
+  const search = document.getElementById('search').value.toLowerCase().trim();
+
+  filteredEntries = allEntries.filter(e => {
+    if (activeFilters.source && e._source !== activeFilters.source) return false;
+    if (activeFilters.type && e.imageType !== activeFilters.type) return false;
+    if (activeFilters.legibility && normalizeLegibility(e.legibility) !== activeFilters.legibility) return false;
+    if (activeFilters.severity) {
+      const flags = flagsMap[e.imageId] || [];
+      if (activeFilters.severity === 'clean') {
+        if (flags.length > 0) return false;
+      } else {
+        if (!flags.some(f => f.severity === activeFilters.severity)) return false;
+      }
+    }
+
+    // Search
+    if (search) {
+      const haystack = [
+        e.imageId, e.location, e.imageType, e.familyName, e.commonGroupName,
+        ...(e.species || []).flatMap(s => [s.scientificName, s.commonName, s.catalogNumber]),
+        e.notes,
+      ].filter(Boolean).join(' ').toLowerCase();
+      if (!haystack.includes(search)) return false;
+    }
+
+    return true;
+  });
+
+  // Sort
+  const sort = document.getElementById('sort-select').value;
+  switch (sort) {
+    case 'id':
+      filteredEntries.sort((a, b) => a.imageId.localeCompare(b.imageId, undefined, { numeric: true }));
+      break;
+    case 'flags-desc':
+      filteredEntries.sort((a, b) =>
+        (flagsMap[b.imageId]?.length || 0) - (flagsMap[a.imageId]?.length || 0)
+        || a.imageId.localeCompare(b.imageId, undefined, { numeric: true }));
+      break;
+    case 'severity':
+      filteredEntries.sort((a, b) =>
+        maxSeverity(b.imageId) - maxSeverity(a.imageId)
+        || (flagsMap[b.imageId]?.length || 0) - (flagsMap[a.imageId]?.length || 0)
+        || a.imageId.localeCompare(b.imageId, undefined, { numeric: true }));
+      break;
+    case 'species-desc':
+      filteredEntries.sort((a, b) => b.species.length - a.species.length);
+      break;
+    case 'species-asc':
+      filteredEntries.sort((a, b) => a.species.length - b.species.length);
+      break;
+  }
+
+  renderPage();
+}
+
+// --- Pagination + render ---
+function getPerPage() { return parseInt(document.getElementById('perpage-select').value); }
+
+function renderPage() {
+  const perPage = getPerPage();
+  const totalPages = Math.max(1, Math.ceil(filteredEntries.length / perPage));
+  if (currentPage >= totalPages) currentPage = totalPages - 1;
+  if (currentPage < 0) currentPage = 0;
+
+  const start = currentPage * perPage;
+  const pageEntries = filteredEntries.slice(start, start + perPage);
+
+  // Stats
+  const totalSpecies = filteredEntries.reduce((n, e) => n + e.species.length, 0);
+  const totalFlags = filteredEntries.reduce((n, e) => n + (flagsMap[e.imageId]?.length || 0), 0);
+  document.getElementById('stats').textContent =
+    `${filteredEntries.length} entries | ${totalSpecies} species | ${totalFlags} flags`;
+
+  // Pagination
+  renderPagination('pagination-top', totalPages);
+  renderPagination('pagination-bottom', totalPages);
+
+  // Cards
+  const container = document.getElementById('cards');
+  container.innerHTML = '';
+
+  if (pageEntries.length === 0) {
+    container.innerHTML = '<div class="empty-state">No entries match the current filters.</div>';
+    return;
+  }
+
+  const frag = document.createDocumentFragment();
+  for (const entry of pageEntries) {
+    try {
+      frag.appendChild(buildCard(entry));
+    } catch (err) {
+      console.error('Failed to render card:', entry.imageId, err);
+      const errCard = document.createElement('div');
+      errCard.className = 'card';
+      errCard.innerHTML = `<div class="card-header"><span class="card-id" style="color:#f44336;">${entry.imageId} — render error: ${esc(err.message)}</span></div>`;
+      frag.appendChild(errCard);
+    }
+  }
+  container.appendChild(frag);
+}
+
+function renderPagination(containerId, totalPages) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+
+  const perPage = getPerPage();
+  const start = currentPage * perPage + 1;
+  const end = Math.min((currentPage + 1) * perPage, filteredEntries.length);
+
+  // Prev
+  const prev = document.createElement('button');
+  prev.className = 'page-btn';
+  prev.textContent = '\u25c0 Prev';
+  prev.disabled = currentPage === 0;
+  prev.onclick = () => { currentPage--; renderPage(); scrollToTop(); };
+  container.appendChild(prev);
+
+  // Page numbers (show max ~9 buttons around current)
+  const maxButtons = 9;
+  let rangeStart = Math.max(0, currentPage - Math.floor(maxButtons / 2));
+  let rangeEnd = Math.min(totalPages - 1, rangeStart + maxButtons - 1);
+  rangeStart = Math.max(0, rangeEnd - maxButtons + 1);
+
+  if (rangeStart > 0) {
+    container.appendChild(makePageBtn(0));
+    if (rangeStart > 1) {
+      const dots = document.createElement('span');
+      dots.textContent = '...';
+      dots.style.cssText = 'color:#666; font-size:12px;';
+      container.appendChild(dots);
+    }
+  }
+
+  for (let i = rangeStart; i <= rangeEnd; i++) {
+    container.appendChild(makePageBtn(i));
+  }
+
+  if (rangeEnd < totalPages - 1) {
+    if (rangeEnd < totalPages - 2) {
+      const dots = document.createElement('span');
+      dots.textContent = '...';
+      dots.style.cssText = 'color:#666; font-size:12px;';
+      container.appendChild(dots);
+    }
+    container.appendChild(makePageBtn(totalPages - 1));
+  }
+
+  // Info
+  const info = document.createElement('span');
+  info.className = 'page-info';
+  info.textContent = `${start}\u2013${end} of ${filteredEntries.length}`;
+  container.appendChild(info);
+
+  // Next
+  const next = document.createElement('button');
+  next.className = 'page-btn';
+  next.textContent = 'Next \u25b6';
+  next.disabled = currentPage >= totalPages - 1;
+  next.onclick = () => { currentPage++; renderPage(); scrollToTop(); };
+  container.appendChild(next);
+}
+
+function makePageBtn(pageIndex) {
+  const btn = document.createElement('button');
+  btn.className = 'page-btn' + (pageIndex === currentPage ? ' active' : '');
+  btn.textContent = pageIndex + 1;
+  btn.onclick = () => { currentPage = pageIndex; renderPage(); scrollToTop(); };
+  return btn;
+}
+
+function scrollToTop() {
+  document.getElementById('pagination-top').scrollIntoView({ behavior: 'smooth' });
+}
+
+// --- Build card ---
+function buildCard(entry) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.id = 'card-' + entry.imageId;
+
+  const flags = flagsMap[entry.imageId] || [];
+  const errors = flags.filter(f => f.severity === 'error').length;
+  const warnings = flags.filter(f => f.severity === 'warning').length;
+  const infos = flags.filter(f => f.severity === 'info').length;
+  const normLeg = normalizeLegibility(entry.legibility);
+
+  // Header
+  let flagBadges = '';
+  if (errors) flagBadges += `<span class="flag-badge flag-error">${errors} error${errors > 1 ? 's' : ''}</span> `;
+  if (warnings) flagBadges += `<span class="flag-badge flag-warning">${warnings} warn</span> `;
+  if (infos) flagBadges += `<span class="flag-badge flag-info">${infos} info</span> `;
+
+  const imgUrl = imageUrl(entry.imagePath);
+
+  card.innerHTML = `
+    <div class="card-header">
+      <span class="card-id">${entry.imageId}</span>
+      <span class="badge type-${entry.imageType}">${entry.imageType}</span>
+      <span class="badge source-${entry._source}">${entry._source}</span>
+      ${flagBadges}
+      <span style="color:#555; font-size:11px; flex:1;">${entry.location || ''}</span>
+      <span class="card-legibility leg-${normLeg}" title="${esc(entry.legibility || 'none')}">${normLeg}</span>
+    </div>
+    <div class="card-body">
+      <div class="image-panel" onclick="toggleZoom(this)">
+        <img src="${imgUrl}" alt="${entry.imageId}" loading="lazy"
+             onerror="this.parentElement.innerHTML='<span style=color:#555>Image not available</span>'">
+      </div>
+      <div class="extraction-panel">
+        ${entry.familyName ? `<div class="field-label">Family</div><div class="field-value">${entry.familyName}${entry.commonGroupName ? ' \u2014 ' + entry.commonGroupName : ''}</div>` : ''}
+        ${entry.taxonomyTree?.length ? `<div class="field-label">Taxonomy</div><div class="field-value">${Array.isArray(entry.taxonomyTree) ? entry.taxonomyTree.join(' \u2192 ') : esc(entry.taxonomyTree)}</div>` : ''}
+
+        <div class="field-label">Species (${entry.species.length})</div>
+        ${entry.species.length === 0 ? '<div class="field-value" style="color:#555;">(none)</div>' : ''}
+        <ul class="species-list">
+          ${entry.species.map(s => `
+            <li class="species-item">
+              <span class="species-name">${esc(s.scientificName) || '\u2014'}</span>
+              ${s.commonName ? `<span class="species-common"> \u00b7 ${esc(s.commonName)}</span>` : ''}
+              <div class="species-meta">
+                <span class="presence-${s.presence}">${s.presence}</span>
+                ${s.specimenType ? ' \u00b7 ' + esc(s.specimenType) : ''}
+                ${s.catalogNumber ? ' \u00b7 ' + esc(s.catalogNumber) : ''}
+              </div>
+            </li>
+          `).join('')}
+        </ul>
+
+        ${entry.narrativeText ? `<div class="field-label">Narrative</div><div class="narrative">${esc(entry.narrativeText)}</div>` : ''}
+        ${entry.notes ? `<div class="field-label">Notes</div><div class="notes">${esc(entry.notes)}</div>` : ''}
+      </div>
+    </div>
+    ${flags.length ? `
+    <details class="flags-panel">
+      <summary>Audit flags (${flags.length})</summary>
+      ${flags.map(f => `
+        <div class="flag-item sev-${f.severity}">
+          <span class="flag-check">[${f.check}]</span> ${esc(f.message)}
+        </div>
+      `).join('')}
+    </details>` : ''}
+  `;
+
+  return card;
+}
+
+// --- HTML escape ---
+function esc(str) {
+  if (!str) return '';
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// --- Zoom ---
+function toggleZoom(panel) {
+  panel.classList.toggle('zoomed');
+}
+
+// --- Keyboard shortcuts ---
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.image-panel.zoomed').forEach(p => p.classList.remove('zoomed'));
+  }
+  if (e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowLeft' && currentPage > 0) {
+    currentPage--;
+    renderPage();
+    scrollToTop();
+  }
+  if (e.key === 'ArrowRight') {
+    const perPage = getPerPage();
+    const totalPages = Math.ceil(filteredEntries.length / perPage);
+    if (currentPage < totalPages - 1) {
+      currentPage++;
+      renderPage();
+      scrollToTop();
+    }
+  }
+});
+
+// --- Init ---
+load();
+</script>
+</body>
+</html>

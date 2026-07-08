@@ -1,0 +1,21 @@
+{
+  "accepted_count": 1490,
+  "archived_count": 11,
+  "unresolved_count": 0,
+  "accepted_by_type": {
+    "label": 1165,
+    "drawer": 209,
+    "shadowbox": 116
+  },
+  "archived_by_type": {
+    "label": 0,
+    "drawer": 0,
+    "shadowbox": 11
+  },
+  "unresolved_by_reason": {},
+  "public_svg_transform": {
+    "sample_count": 31,
+    "max_residual_meters": 0.11424645234144973,
+    "mean_residual_meters": 0.042148083559255936
+  }
+}

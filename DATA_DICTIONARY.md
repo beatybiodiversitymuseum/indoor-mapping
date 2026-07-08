@@ -219,6 +219,41 @@ Known source values:
 `edge_type: "fixture_or_exhibit_connection"`
 : Connection between a walking node and a fixture or exhibit target.
 
+## Exhibit Extension
+
+`feature_type: "exhibit"`
+: Local extension feature type for museum exhibit content. Active exhibit records live in `exhibit.geojson`; archived exhibit records live in `archive.geojson`.
+
+`duration_type: "permanent"`
+: The exhibit is currently treated as permanent display content. Temporary exhibits should use the same layer with a future `duration_type` value.
+
+`duration_type: "archived"`
+: The exhibit record is preserved from the public archive but is not active display content.
+
+`archive_status: "archived"`
+: Indicates an archived record in `archive.geojson`. Archived records are not included in the display app layer list.
+
+`exhibit_type`
+: Content/display type for the exhibit record.
+
+Known values:
+
+- `label`: Cabinet face label or header/specimen label content.
+- `drawer`: Discovery drawer content.
+- `shadowbox`: Shadowbox display content.
+
+`fixture_ids`
+: One or more existing `fixture.geojson` feature IDs that the exhibit corresponds to. Drawer top exhibits can span the two top fixtures for a public `DI.##` position.
+
+`amenity_ids`
+: Existing visitor-facing exhibit amenity IDs corresponding to `fixture_ids` when available.
+
+`archive`
+: Metadata from the public Beaty exhibit archive used to resolve the exhibit, including public reference code, URL, and source collection. This is source identity, not OCR metadata.
+
+`public_class`
+: Public archive grouping class for shadowboxes, such as `herbarium`, `marine`, `entomology`, or `fossils`.
+
 `grid_index`
 : Numeric index from the original walking grid point data.
 
