@@ -69337,6 +69337,2740 @@
       },
       "id": "d7cadbc8-b3b6-5913-9ea2-ffcb9d66e337",
       "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Clades Wall Display"
+        },
+        "alt_name": {
+          "en": "clades_wall_display"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/47",
+        "source_issue_number": 47,
+        "source_issue_title": "Amenity: Clades Wall Display",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Checked against a floor plan"
+        ],
+        "confirmation_details": "4.8m in length and runs along the wall perpendicular to the cabinets. Starts at cabinet 6 corner and ends at cabinet 10 corner.",
+        "reference_points": "Cabinet 6.01 and Cabinet 10.01",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507623,
+          49.2632538
+        ]
+      },
+      "id": "5d706298-9034-5a6b-9a33-2f100baee7ed",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Projector Display"
+        },
+        "alt_name": {
+          "en": "projector_display"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/49",
+        "source_issue_number": 49,
+        "source_issue_title": "Amenity: Projector Display",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Display is somewhat askew but midpoint is about 125cm away from corner of wall.",
+        "reference_points": "",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2500064,
+          49.2635154
+        ]
+      },
+      "id": "09e4b3c0-6a6c-5b47-9b70-bbf613a0ed73",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "We Are All One Artwork"
+        },
+        "alt_name": {
+          "en": "we_are_all_one_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/57",
+        "source_issue_number": 57,
+        "source_issue_title": "Amenity: We Are All One",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan"
+        ],
+        "confirmation_details": "Position calculated via floor plans and used Cabinet 1 as a landmark. Refer to picture for measurements.",
+        "reference_points": "Cabinet 1.01",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25108,
+          49.2634311
+        ]
+      },
+      "id": "a9cea775-476c-5a5a-9002-61d5a0a5ee22",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Daphne Boyer Artist Statement"
+        },
+        "alt_name": {
+          "en": "daphne_boyer_artist_statement"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/58",
+        "source_issue_number": 58,
+        "source_issue_title": "Amenity: Artist Statement",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Object is is 64cm in width and positioned 338cm to the right of We Are All One, attached to the same wall.",
+        "reference_points": "We Are All One Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2510365,
+          49.263448
+        ]
+      },
+      "id": "e8ffc606-f58f-56d9-9ba0-02277629efd0",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Come Visit Sometime Artwork"
+        },
+        "alt_name": {
+          "en": "come_visit_sometime_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/59",
+        "source_issue_number": 59,
+        "source_issue_title": "Amenity: Come Visit Sometime",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 183cm in width and positioned 202cm to the right of Artist Statement, attached to the same wall.",
+        "reference_points": "Artist Statement and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509972,
+          49.2634618
+        ]
+      },
+      "id": "19384922-88f6-5c3c-96b1-0575af5f2c42",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Barn Owl & Moon Artwork"
+        },
+        "alt_name": {
+          "en": "barn_owl_moon_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/60",
+        "source_issue_number": 60,
+        "source_issue_title": "Amenity: Barn Owl & Moon",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 141cm in width and positioned 222cm to the right of Come Visit Sometime, attached to the same wall.",
+        "reference_points": "Come Visit Sometime Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509507,
+          49.2634781
+        ]
+      },
+      "id": "7ead0d20-a142-53f4-a40c-ef4c59457130",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Sweetgrass Braid Artwork"
+        },
+        "alt_name": {
+          "en": "sweetgrass_braid_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/61",
+        "source_issue_number": 61,
+        "source_issue_title": "Amenity: Sweetgrass Braid",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 55cm in width and positioned 202cm to the right of Barn Owl & Moon, attached to the same wall.",
+        "reference_points": "Barn Owl & Moon Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509148,
+          49.2634905
+        ]
+      },
+      "id": "7368ac8b-5127-50cc-b46e-21700ec52337",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Porcupine Display Case"
+        },
+        "alt_name": {
+          "en": "porcupine_display_case"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/62",
+        "source_issue_number": 62,
+        "source_issue_title": "Amenity: Porcupine Display Case",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Object is 114cm in width and positioned 215cm to the right of Sweetgrass Braid, attached to the same wall. Display case extends out from wall by 69cm.",
+        "reference_points": "Sweetgrass Braid Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508789,
+          49.2635028
+        ]
+      },
+      "id": "529a6e56-b63f-5eb9-8823-d194ca7ed18c",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Hung Out to Dry Artwork"
+        },
+        "alt_name": {
+          "en": "hung_out_to_dry_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/63",
+        "source_issue_number": 63,
+        "source_issue_title": "Amenity: Hung Out to Dry",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 300cm in width and positioned 183cm to the right of Porcupine Display Case, attached to the same wall.",
+        "reference_points": "Porcupine Display Case and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508315,
+          49.2635195
+        ]
+      },
+      "id": "f350debf-63ed-57b3-8e78-31cacd858273",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "For Jean Guy Artwork"
+        },
+        "alt_name": {
+          "en": "for_jean_guy_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/64",
+        "source_issue_number": 64,
+        "source_issue_title": "Amenity: For Jean Guy",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 171cm in width and positioned 245cm to the right of Hung Out to Dry, attached to the same wall.",
+        "reference_points": "Hung Out to Dry Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507734,
+          49.2635397
+        ]
+      },
+      "id": "46cabcf2-f5bc-5155-a5de-b168d407dd00",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "The Watershed Artwork"
+        },
+        "alt_name": {
+          "en": "the_watershed_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/65",
+        "source_issue_number": 65,
+        "source_issue_title": "Amenity: The Watershed",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 700cm in width and positioned 295cm to the right of For Jean Guy, attached to the same wall.",
+        "reference_points": "For Jean Guy Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250685,
+          49.2635703
+        ]
+      },
+      "id": "680d5e86-3df8-5121-a727-01174a4e1924",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Moss Bag Beading Artwork"
+        },
+        "alt_name": {
+          "en": "moss_bag_beading_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/66",
+        "source_issue_number": 66,
+        "source_issue_title": "Amenity: Moss Bag Beading",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 244cm in width and positioned 264cm to the right of The Watershed, attached to the same wall.",
+        "reference_points": "The Watershed Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2505955,
+          49.2636013
+        ]
+      },
+      "id": "ea728c34-c9c7-5fff-acfe-c525a19a1d6a",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Hemoglobin Artwork"
+        },
+        "alt_name": {
+          "en": "hemoglobin_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/67",
+        "source_issue_number": 67,
+        "source_issue_title": "Amenity: Hemoglobin",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 110cm in width and positioned 267cm to the right of Moss Bag Beading, attached to the same wall.",
+        "reference_points": "Moss Bag Beading Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250542,
+          49.26362
+        ]
+      },
+      "id": "b1516dea-ae33-5866-a68c-7a278983c434",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Poison Ivy and Thorns Artwork"
+        },
+        "alt_name": {
+          "en": "poison_ivy_and_thorns_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/69",
+        "source_issue_number": 69,
+        "source_issue_title": "Amenity: Poison Ivy and Thorns",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 193cm in width and positioned 166cm to the right of Hemoglobin, attached to the same wall.",
+        "reference_points": "Hemoglobin Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2505033,
+          49.2636334
+        ]
+      },
+      "id": "10941a4d-4e4c-5f99-aacc-28c6d3fb00d8",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Bird and Tree Display Case"
+        },
+        "alt_name": {
+          "en": "bird_and_tree_display_case"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/70",
+        "source_issue_number": 70,
+        "source_issue_title": "Amenity: Bird and Tree Display Case",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Object is 114cm in width and positioned 189cm to the right of Poison Ivy and Thorns, attached to the same wall. Display case extends out from wall by 66cm.",
+        "reference_points": "Poison Ivy and Thorns Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504615,
+          49.263648
+        ]
+      },
+      "id": "e1c7d266-5a63-5994-a447-dba54f4e09d7",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "All My Relations Artwork"
+        },
+        "alt_name": {
+          "en": "all_my_relations_artwork"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/71",
+        "source_issue_number": 71,
+        "source_issue_title": "Amenity: All My Relations",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 304cm in width and positioned 155cm to the right of Bird and Tree Display Case, attached to the same wall.",
+        "reference_points": "Bird and Tree Display Case and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504175,
+          49.2636631
+        ]
+      },
+      "id": "169aee0a-cec4-56d0-aa18-4656545f8f39",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Metis Hunting Flag"
+        },
+        "alt_name": {
+          "en": "metis_hunting_flag"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/72",
+        "source_issue_number": 72,
+        "source_issue_title": "Amenity: Metis Hunting Flag",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Artwork is 129cm in width and positioned 198cm to the right of All My Relations, attached to the same wall.",
+        "reference_points": "All My Relations Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503669,
+          49.2636807
+        ]
+      },
+      "id": "271657d9-ba2f-557f-9cb5-540ba053221b",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Daphne Boyer Artist Bio"
+        },
+        "alt_name": {
+          "en": "daphne_boyer_artist_bio"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/73",
+        "source_issue_number": 73,
+        "source_issue_title": "Amenity: Daphne Boyer Bio",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Object is 62cm in width and positioned 140cm to the right of Metis Hunting Flag, attached to the same wall.",
+        "reference_points": "Metis Hunting Flag Artwork and wall perpendicular to cabinets",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250347,
+          49.2636875
+        ]
+      },
+      "id": "5464f763-be51-5b23-967a-9f34f91510db",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Colin Brauner's Lab Poster"
+        },
+        "alt_name": {
+          "en": "colin_brauner_s_lab_poster"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/74",
+        "source_issue_number": 74,
+        "source_issue_title": "Amenity: Colin Brauner's Lab Poster",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan"
+        ],
+        "confirmation_details": "81cm away from corner of wall opposite to cabinet 52.",
+        "reference_points": "Cabinet 52.01 and opposite wall (parallel to cabinets)",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250039,
+          49.2635244
+        ]
+      },
+      "id": "da711e9d-8728-5f2e-916e-b9b1baf6b53d",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Pelagic Ecosystems Lab Poster"
+        },
+        "alt_name": {
+          "en": "pelagic_ecosystems_lab_poster"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/75",
+        "source_issue_number": 75,
+        "source_issue_title": "Amenity: Pelagic Ecosystems Lab Poster",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Poster is 88cm in width and positioned 37cm to the left of Colin Brauner's Lab Poster",
+        "reference_points": "Colin Brauner's Lab Poster",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250047,
+          49.2635343
+        ]
+      },
+      "id": "2df625d0-627f-5e78-8c65-6696d7d7c86f",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Aquaculture and Climate Change Lab Poster"
+        },
+        "alt_name": {
+          "en": "aquaculture_and_climate_change_lab_poster"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/76",
+        "source_issue_number": 76,
+        "source_issue_title": "Amenity: Aquaculture and Climate Change Lab Poster",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Poster is 88cm in width and positioned 37cm to the left of Pelagic Ecosystems Lab Poster",
+        "reference_points": "Pelagic Ecosystems Lab Poster",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2500546,
+          49.2635443
+        ]
+      },
+      "id": "67b9e9b0-a4f6-5b28-832c-4b1324de6864",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Pacific Salmon Ecology and Conservation Laboratory Poster"
+        },
+        "alt_name": {
+          "en": "pacific_salmon_ecology_and_conservation_laboratory_poster"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/77",
+        "source_issue_number": 77,
+        "source_issue_title": "Amenity: Pacific Salmon Ecology and Conservation Laboratory Poster",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Poster is 87cm in width and positioned 39cm to the left of Aquaculture and Climate Change Lab Poster",
+        "reference_points": "Aquaculture and Climate Change Lab Poster",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2500629,
+          49.2635547
+        ]
+      },
+      "id": "48354d41-a21f-5dc2-8a2e-702f3c6c9235",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Stumpy Information Plaque"
+        },
+        "alt_name": {
+          "en": "stumpy_information_plaque"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/78",
+        "source_issue_number": 78,
+        "source_issue_title": "Amenity: Stumpy Information Plaque",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Object is 101cm wide. Left edge is attached to wall perpendicular to cabinets, 41cm to the left of cabinet 52 corner.",
+        "reference_points": "Cabinet 52.26",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502497,
+          49.2637232
+        ]
+      },
+      "id": "846bab0a-c235-5225-bf41-7f8d64b350b3",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Stumpy"
+        },
+        "alt_name": {
+          "en": "stumpy"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/79",
+        "source_issue_number": 79,
+        "source_issue_title": "Amenity: Stumpy",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Object is 184cm across at the widest point and extends 28cm away from the wall. It is 13cm to the right of the right edge of Stumpy Information Plaque.",
+        "reference_points": "Stumpy Information Plaque",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502309,
+          49.2637287
+        ]
+      },
+      "id": "61d9e4d2-d723-53e2-904a-5cf4878c0947",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Footprints in Time Interactive Display"
+        },
+        "alt_name": {
+          "en": "footprints_in_time_interactive_display"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/80",
+        "source_issue_number": 80,
+        "source_issue_title": "Amenity: Footprints in Time",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Object is 115cm wide and extends out from wall by 57cm. Left edge is 267cm from cabinet 52 corner, attached to wall parallel to cabinets.",
+        "reference_points": "Cabinet 52.26",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501707,
+          49.2636894
+        ]
+      },
+      "id": "3455b739-ef59-5036-9368-9a67d5d368eb",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 38.22 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_38_22_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/81",
+        "source_issue_number": 81,
+        "source_issue_title": "Amenity: Cabinet 38.22 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 38.22",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503866,
+          49.2635327
+        ]
+      },
+      "id": "3d9350bf-4fb3-5d38-8659-f55b87230603",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 38.30 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_38_30_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/82",
+        "source_issue_number": 82,
+        "source_issue_title": "Amenity: Cabinet 38.30 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 38.30",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504458,
+          49.2636071
+        ]
+      },
+      "id": "b4472713-e9aa-5799-b55c-6dce89a6f2e5",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 37.03 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_37_03_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/83",
+        "source_issue_number": 83,
+        "source_issue_title": "Amenity: Cabinet 37.03 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 37.03",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504538,
+          49.2636041
+        ]
+      },
+      "id": "5107064e-87da-54f0-b491-84c30a89653c",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 33.19 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_33_19_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/84",
+        "source_issue_number": 84,
+        "source_issue_title": "Amenity: Cabinet 33.19 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 33.19",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504346,
+          49.2634794
+        ]
+      },
+      "id": "7e6f0833-79b7-5989-b790-41108446adfa",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 30.10 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_30_10_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/85",
+        "source_issue_number": 85,
+        "source_issue_title": "Amenity: Cabinet 30.10 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 30.10",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504769,
+          49.2634444
+        ]
+      },
+      "id": "e6178080-090a-5af3-affd-c0b7c4aa8fd4",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 25.09 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_25_09_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/86",
+        "source_issue_number": 86,
+        "source_issue_title": "Amenity: Cabinet 25.09 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 25.09",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2505885,
+          49.263471
+        ]
+      },
+      "id": "d2e16831-45d0-52e8-9719-a079054ff0a8",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 16.09 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_16_09_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/87",
+        "source_issue_number": 87,
+        "source_issue_title": "Amenity: Cabinet 16.09 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 16.09",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250692,
+          49.2633612
+        ]
+      },
+      "id": "c0b17371-9fd3-52eb-82cc-456b81147679",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 15.06 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_15_06_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/88",
+        "source_issue_number": 88,
+        "source_issue_title": "Amenity: Cabinet 15.06 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 15.06",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507791,
+          49.2634579
+        ]
+      },
+      "id": "d1d906eb-a2fa-516e-9bad-96918a2f3248",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 12.13 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_12_13_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/89",
+        "source_issue_number": 89,
+        "source_issue_title": "Amenity: Cabinet 12.13 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 12.13",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507981,
+          49.2633937
+        ]
+      },
+      "id": "4668e6b8-be8f-5174-b150-95cf638ff1e8",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 12.05 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_12_05_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/90",
+        "source_issue_number": 90,
+        "source_issue_title": "Amenity: Cabinet 12.05 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 12.05",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507297,
+          49.2633074
+        ]
+      },
+      "id": "a82259d6-6196-591b-9a10-c1a025960fce",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 12.02 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_12_02_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/91",
+        "source_issue_number": 91,
+        "source_issue_title": "Amenity: Cabinet 12.02 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 12.02",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507148,
+          49.2632884
+        ]
+      },
+      "id": "b4a50130-53ae-561b-b258-f815cec8cec6",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 50.01 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_50_01_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/92",
+        "source_issue_number": 92,
+        "source_issue_title": "Amenity: Cabinet 50.01 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 50.01",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250111,
+          49.2634898
+        ]
+      },
+      "id": "90454287-5a78-5e81-810a-f70d896d8e48",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 50.06 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_50_06_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/93",
+        "source_issue_number": 93,
+        "source_issue_title": "Amenity: Cabinet 50.06 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501367,
+          49.263522
+        ]
+      },
+      "id": "0119dc74-e38a-512c-8452-c7055c9f5122",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 50.07 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_50_07_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/94",
+        "source_issue_number": 94,
+        "source_issue_title": "Amenity: Cabinet 50.07 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 50.07",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501418,
+          49.2635286
+        ]
+      },
+      "id": "2fac1b68-091f-552f-b3ad-7dea5b1fa44e",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 50.15 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_50_15_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/95",
+        "source_issue_number": 95,
+        "source_issue_title": "Amenity: Cabinet 50.15 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 50.15",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502106,
+          49.2636151
+        ]
+      },
+      "id": "8fc619b8-3acc-5e96-bbac-eed0df1183a1",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 50.16 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_50_16_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/96",
+        "source_issue_number": 96,
+        "source_issue_title": "Amenity: Cabinet 50.16 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 50.16",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502158,
+          49.2636213
+        ]
+      },
+      "id": "55ba5639-c08b-55e8-86ef-5c3d7b557dfb",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 50.17 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_50_17_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/97",
+        "source_issue_number": 97,
+        "source_issue_title": "Amenity: Cabinet 50.17 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 50.17",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250221,
+          49.2636278
+        ]
+      },
+      "id": "45920620-2573-534b-b624-e462de20ccd6",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 50.18 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_50_18_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/98",
+        "source_issue_number": 98,
+        "source_issue_title": "Amenity: Cabinet 50.18 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 50.18",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502259,
+          49.2636344
+        ]
+      },
+      "id": "bc0e52f7-de8f-5a4c-a82c-7260e47c964f",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.06 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_49_06_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/99",
+        "source_issue_number": 99,
+        "source_issue_title": "Amenity: Cabinet 49.06 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.06",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250249,
+          49.2636504
+        ]
+      },
+      "id": "d03c2308-8a59-58a5-bd18-82ec0d79177a",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.07 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_49_07_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/100",
+        "source_issue_number": 100,
+        "source_issue_title": "Amenity: Cabinet 49.07 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.07",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502443,
+          49.2636441
+        ]
+      },
+      "id": "4b865930-ea14-59a0-b60e-57fecd4ce735",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.08 Window Upper"
+        },
+        "alt_name": {
+          "en": "cabinet_49_08_window_upper"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/101",
+        "source_issue_number": 101,
+        "source_issue_title": "Amenity: Cabinet 49.08 Window Upper",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.08",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502392,
+          49.2636378
+        ]
+      },
+      "id": "95d85728-a85b-5dff-9663-378a581dea74",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.08 Window Lower"
+        },
+        "alt_name": {
+          "en": "cabinet_49_08_window_lower"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/102",
+        "source_issue_number": 102,
+        "source_issue_title": "Amenity: Cabinet 49.08 Window Lower",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.08",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502392,
+          49.2636378
+        ]
+      },
+      "id": "8277ae32-e159-564f-9e32-a2612259d102",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.09 Window Upper"
+        },
+        "alt_name": {
+          "en": "cabinet_49_09_window_upper"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/103",
+        "source_issue_number": 103,
+        "source_issue_title": "Amenity: Cabinet 49.09 Window Upper",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.09",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502337,
+          49.2636314
+        ]
+      },
+      "id": "8906e3d3-9af9-5816-a0eb-50781dd6f6e4",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.09 Window Lower"
+        },
+        "alt_name": {
+          "en": "cabinet_49_09_window_lower"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/104",
+        "source_issue_number": 104,
+        "source_issue_title": "Amenity: Cabinet 49.09 Window Lower",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.09",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502337,
+          49.2636314
+        ]
+      },
+      "id": "69b5dabd-18ce-5353-8562-f97c42100613",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.10 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_49_10_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/105",
+        "source_issue_number": 105,
+        "source_issue_title": "Amenity: Cabinet 49.10 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.10",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502284,
+          49.2636247
+        ]
+      },
+      "id": "f3c6eb91-18f9-5960-8db5-fb6bcf0179d1",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.11 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_49_11_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/106",
+        "source_issue_number": 106,
+        "source_issue_title": "Amenity: Cabinet 49.11 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.11",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502241,
+          49.2636186
+        ]
+      },
+      "id": "e26a92d4-aa6d-582c-a2f3-46ab7db2b023",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.19 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_49_19_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/107",
+        "source_issue_number": 107,
+        "source_issue_title": "Amenity: Cabinet 49.19 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.19",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501827,
+          49.2635672
+        ]
+      },
+      "id": "d2eb5be3-83dc-5cba-a8d5-734e6d516e80",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.20 Window Upper"
+        },
+        "alt_name": {
+          "en": "cabinet_49_20_window_upper"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/108",
+        "source_issue_number": 108,
+        "source_issue_title": "Amenity: Cabinet 49.20 Window Upper",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501495,
+          49.2635258
+        ]
+      },
+      "id": "b3edd020-b118-5da5-8508-ee459c46c35c",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.20 Window Lower"
+        },
+        "alt_name": {
+          "en": "cabinet_49_20_window_lower"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/109",
+        "source_issue_number": 109,
+        "source_issue_title": "Amenity: Cabinet 49.20 Window Lower",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 49.20",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501495,
+          49.2635258
+        ]
+      },
+      "id": "0db8f440-fbe1-55c0-9311-07034eb57192",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 49.25 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_49_25_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/110",
+        "source_issue_number": 110,
+        "source_issue_title": "Amenity: Cabinet 49.25 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501242,
+          49.2634937
+        ]
+      },
+      "id": "5dac8842-784c-5998-b5c1-e8c126592973",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 48.01 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_48_01_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/111",
+        "source_issue_number": 111,
+        "source_issue_title": "Amenity: Cabinet 48.01 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501422,
+          49.2634789
+        ]
+      },
+      "id": "20049518-df28-5d1e-917a-733ff7126809",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 48.02 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_48_02_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/112",
+        "source_issue_number": 112,
+        "source_issue_title": "Amenity: Cabinet 48.02 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501476,
+          49.2634854
+        ]
+      },
+      "id": "2fd05b0e-8705-5fe7-bd73-499b27f0006f",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 48.03 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_48_03_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/113",
+        "source_issue_number": 113,
+        "source_issue_title": "Amenity: Cabinet 48.03 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501529,
+          49.2634917
+        ]
+      },
+      "id": "924418ac-6bb9-5a0b-82c3-bf446d592af4",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 48.12 Window"
+        },
+        "alt_name": {
+          "en": "cabinet_48_12_window"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/114",
+        "source_issue_number": 114,
+        "source_issue_title": "Amenity: Cabinet 48.12 Window",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 48.12",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502267,
+          49.2635847
+        ]
+      },
+      "id": "5e5f354f-8c31-5c39-b5bb-77c9dece28d4",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 48.16 Window Upper"
+        },
+        "alt_name": {
+          "en": "cabinet_48_16_window_upper"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/115",
+        "source_issue_number": 115,
+        "source_issue_title": "Amenity: Cabinet 48.16 Window Upper",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 48.16",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502473,
+          49.2636104
+        ]
+      },
+      "id": "0619bbe5-2182-540b-a668-6d665ffe4af3",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 48.16 Window Lower"
+        },
+        "alt_name": {
+          "en": "cabinet_48_16_window_lower"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/116",
+        "source_issue_number": 116,
+        "source_issue_title": "Amenity: Cabinet 48.16 Window Lower",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 48.16",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502473,
+          49.2636104
+        ]
+      },
+      "id": "7938260d-c87f-5721-a31f-6323d3cde10b",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 48.17 Window Upper"
+        },
+        "alt_name": {
+          "en": "cabinet_48_17_window_upper"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/117",
+        "source_issue_number": 117,
+        "source_issue_title": "Amenity: Cabinet 48.17 Window Upper",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 48.17",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2502726,
+          49.2636421
+        ]
+      },
+      "id": "0c83e9e4-1072-5221-803f-fe9475b20729",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet 48.17 Window Lower"
+        },
+        "alt_name": {
+          "en": "cabinet_48_17_window_lower"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7952db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/118",
+        "source_issue_number": 118,
+        "source_issue_title": "Amenity: Cabinet 48.17 Window Lower",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Cabinet 48.17",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250278,
+          49.263649
+        ]
+      },
+      "id": "ab5e7530-0b28-53db-afa9-5e470d69dce6",
+      "feature_type": "amenity"
     }
   ]
 }
