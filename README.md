@@ -27,6 +27,47 @@ python3 scripts/build_preview_geojson.py
 
 Navigation revisions are generated as approval artifacts before canonical data changes. Rebuild the approved corridor-centering proposal with `python3 scripts/build_navigation_proposals.py centered`; applying it requires explicit review and uses `python3 scripts/build_navigation_proposals.py apply-centered`.
 
+## Running And Deploying The Viewer
+
+Install the JavaScript dependencies once:
+
+```bash
+npm install
+```
+
+Run the viewer locally in development mode:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000/map](http://localhost:3000/map). The `/map` suffix is required because the application uses that base path.
+
+To test a production build locally:
+
+```bash
+npm run build
+npm run start
+```
+
+The build reads the canonical map layers from `geojson/`. The build script also copies those files into the standalone Next.js output. `preview.geojson` is a review artifact and is not loaded by the viewer.
+
+For the deployed museum map, copy `.env.example` to `.env` and configure these values:
+
+- `APP_HOST` and `APP_PORT`: address and port used by the deployed server.
+- `PM2_APP_NAME`: PM2 process name.
+- `DEPLOY_PATH`: destination for the standalone application.
+- `BUILD_PATH`: standalone build location; normally `.next/standalone`.
+- `DEPLOY_USE_SUDO`: set to `1` when deployment filesystem operations require `sudo`, otherwise `0`.
+
+After changes have been committed and pushed, run this command from the repository checkout on the deployment server:
+
+```bash
+npm run update
+```
+
+This pulls the current branch with `--ff-only`, builds and copies the standalone application, and starts or restarts its PM2 process. To rebuild and deploy the current checkout without pulling, use `npm run deploy`.
+
 ## What's Here
 
 The current map data is in the `geojson/` folder:
