@@ -55,6 +55,47 @@ def validate_file(path: Path) -> list[str]:
     return errors
 
 
+def validate_level_references(paths: list[Path]) -> list[str]:
+    """Ensure level references resolve to a feature in the canonical level layer."""
+    level_path = Path("geojson/level.geojson")
+    try:
+        level_data = json.loads(level_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        # validate_file reports the more useful missing/invalid-file error.
+        return []
+
+    level_ids = {
+        feature.get("id")
+        for feature in level_data.get("features", [])
+        if feature.get("id")
+    }
+    errors = []
+    for path in paths:
+        if path.name == "manifest.json":
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for index, feature in enumerate(data.get("features", [])):
+            properties = feature.get("properties")
+            if not isinstance(properties, dict):
+                continue
+            references = []
+            if properties.get("level_id"):
+                references.append(properties["level_id"])
+            level_ids_value = properties.get("level_ids", [])
+            if isinstance(level_ids_value, list):
+                references.extend(level_ids_value)
+            for level_id in references:
+                if level_id not in level_ids:
+                    errors.append(
+                        f"{path}: feature {index}: level reference {level_id} "
+                        "does not exist in geojson/level.geojson"
+                    )
+    return errors
+
+
 def main() -> int:
     paths = sorted(Path("geojson").glob("*.geojson")) + [Path("geojson/manifest.json")]
     if Path("preview.geojson").exists():
@@ -62,6 +103,7 @@ def main() -> int:
     errors = []
     for path in paths:
         errors.extend(validate_file(path))
+    errors.extend(validate_level_references(paths))
 
     if errors:
         for error in errors:

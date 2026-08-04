@@ -26,7 +26,7 @@ jobs:
     if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'map data') || startsWith(github.event.issue.title, 'Amenity or Opening:')
     env:
       BRANCH_NAME: automation/geojson-from-issues
-      DEFAULT_LEVEL_ID: 41d0e8ca-d315-4b25-938c-7952db2daf2e
+      DEFAULT_LEVEL_ID: 41d0e8ca-d315-4b25-938c-7955db2daf2e
       DEFAULT_AMENITY_CATEGORY: exhibit
       UBC_BOUNDS_WEST: -123.2705
       UBC_BOUNDS_SOUTH: 49.2460
