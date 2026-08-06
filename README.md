@@ -29,10 +29,10 @@ Navigation revisions are generated as approval artifacts before canonical data c
 
 ## Running And Deploying The Viewer
 
-Install the JavaScript dependencies once:
+Install the exact JavaScript dependencies:
 
 ```bash
-npm install
+npm ci
 ```
 
 Run the viewer locally in development mode:
@@ -60,13 +60,34 @@ For the deployed museum map, copy `.env.example` to `.env` and configure these v
 - `BUILD_PATH`: standalone build location; normally `.next/standalone`.
 - `DEPLOY_USE_SUDO`: set to `1` when deployment filesystem operations require `sudo`, otherwise `0`.
 
-After changes have been committed and pushed, run this command from the repository checkout on the deployment server:
+Run the complete local validation before publishing a change:
+
+```bash
+npm run check
+```
+
+For a legacy manual deployment, after changes have been committed and pushed, run this command from the repository checkout on the deployment server:
 
 ```bash
 npm run update
 ```
 
-This pulls the current branch with `--ff-only`, builds and copies the standalone application, and starts or restarts its PM2 process. To rebuild and deploy the current checkout without pulling, use `npm run deploy`.
+This refuses a dirty checkout, pulls with `--ff-only`, installs the exact lockfile with `npm ci`, and invokes the same versioned-release deployment lifecycle used by automation. To build and deploy the current checkout without pulling, use `npm run deploy`.
+
+The deployment creates immutable releases under `$DEPLOY_PATH/releases`, atomically switches `$DEPLOY_PATH/current`, starts PM2 from that symlink, and verifies `/map/api/health`. A failed health check restores the preceding release. Roll back the current deployment with:
+
+```bash
+bash scripts/rollback.sh
+```
+
+Controller-driven Ansible deployment reads `deploy/deployment.yml`. It can supply a prebuilt standalone artifact and immutable release ID without giving the managed host GitHub access:
+
+```bash
+ARTIFACT_PATH=/path/to/artifact RELEASE_ID=<full-commit-sha> \
+  bash scripts/deploy.sh --non-interactive
+```
+
+The artifact must include `server.js` and `.next/static`. Inventory owns host placement, the collision-free `APP_PORT`, rollout/retention policy, and explicit site exceptions; the repository manifest owns application behavior and default paths. The deployed process must remain bound to loopback and be exposed publicly only through nginx.
 
 ## What's Here
 

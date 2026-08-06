@@ -1,0 +1,27 @@
+schema_version: 1
+
+application:
+  name: indoor-mapping
+  profile: nextjs_frontend
+
+deployment:
+  interface: service_creator_v1
+  deploy: scripts/deploy.sh
+  rollback: scripts/rollback.sh
+  test: scripts/validate_frontend.py
+  readiness: scripts/readiness.sh
+  default_root: /var/www/apps/indoor-mapping
+  pm2_name: indoor-mapping
+
+frontend:
+  public_url: https://apps.beatymuseum.ubc.ca/map
+  base_path: /map
+  bind_host: 127.0.0.1
+  require_loopback: true
+  health_path: /map/api/health
+
+artifact:
+  format: nextjs_standalone
+  path: .next/standalone
+  static_path: .next/static
+  package_lock: package-lock.json

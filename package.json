@@ -1,13 +1,18 @@
 {
   "private": true,
   "type": "module",
+  "packageManager": "npm@11.5.1",
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "predev": "node scripts/print-dev-url.mjs",
     "dev": "next dev",
     "build": "next build && npm run copy:standalone-assets",
     "copy:standalone-assets": "rsync -a --delete geojson/ .next/standalone/geojson/",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
+    "check": "npm run lint && npm test && npm run build && python3 scripts/validate_frontend.py .",
     "deploy": "bash scripts/deploy.sh",
     "update": "bash scripts/update.sh",
     "test": "node --test tests/*.test.mjs"
@@ -21,5 +26,9 @@
     "next": "^16.2.10",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.0"
   }
 }
