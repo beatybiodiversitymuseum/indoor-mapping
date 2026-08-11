@@ -5,3 +5,5 @@ out/
 *.log
 .env*.local
 .env
+.deploy-artifact/
+.deploy-artifact.new.*/

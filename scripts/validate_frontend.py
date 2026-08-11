@@ -19,23 +19,25 @@ else:
 expected = {
     "schema_version": "1",
     "name": "indoor-mapping",
-    "profile": "nextjs_frontend",
     "interface": "service_creator_v1",
+    "install": "deploy/controller/install.sh",
+    "rollback": "deploy/controller/rollback.sh",
+    "readiness": "deploy/controller/readiness.sh",
     "default_root": "/var/www/apps/indoor-mapping",
-    "pm2_name": "indoor-mapping",
-    "base_path": "/map",
-    "bind_host": "127.0.0.1",
-    "health_path": "/map/api/health",
-    "format": "nextjs_standalone",
+    "build": "deploy/controller/build.sh",
+    "artifact_root": ".deploy-artifact",
 }
 for key, value in expected.items():
     if not re.search(rf"^\s*{re.escape(key)}:\s*{re.escape(value)}\s*$", manifest, re.MULTILINE):
         errors.append(f"manifest must declare {key}: {value}")
 
 for relative in (
-    "scripts/deploy.sh",
-    "scripts/rollback.sh",
-    "scripts/readiness.sh",
+    "deploy/controller/build.sh",
+    "deploy/controller/install.sh",
+    "deploy/controller/rollback.sh",
+    "deploy/controller/readiness.sh",
+    "deploy/defaults.env",
+    ".env.example",
     "package-lock.json",
     "app/api/health/route.js",
 ):
@@ -49,13 +51,22 @@ if package.get("scripts", {}).get("build") is None:
     errors.append("package.json must define a build command")
 
 next_config = (root / "next.config.ts").read_text(encoding="utf-8")
-if 'output: "standalone"' not in next_config or 'basePath: "/map"' not in next_config:
+if (
+    'output: "standalone"' not in next_config
+    or "process.env.APP_BASE_PATH" not in next_config
+    or '"/map"' not in next_config
+):
     errors.append("Next.js standalone/basePath settings disagree with the manifest")
 
-env_example = (root / ".env.example").read_text(encoding="utf-8")
-for setting in ("APP_HOST=127.0.0.1", "APP_BASE_PATH=/map", "PM2_APP_NAME=indoor-mapping"):
+env_example = (root / "deploy/defaults.env").read_text(encoding="utf-8")
+for setting in ("APP_BASE_PATH=/map", "PM2_APP_NAME=indoor-mapping"):
     if setting not in env_example:
-        errors.append(f".env.example is missing {setting}")
+        errors.append(f"deploy/defaults.env is missing {setting}")
+
+local_environment = (root / ".env.example").read_text(encoding="utf-8")
+for setting in ("APP_HOST=127.0.0.1", "APP_PORT=3001"):
+    if setting not in local_environment:
+        errors.append(f".env.example is missing local setting {setting}")
 
 if errors:
     for error in errors:

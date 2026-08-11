@@ -9,5 +9,5 @@ export default defineConfig([
       "react-hooks/set-state-in-effect": "off",
     },
   },
-  globalIgnores([".next/**", ".venv/**", "reports/**"]),
+  globalIgnores([".next/**", ".deploy-artifact/**", ".venv/**", "reports/**"]),
 ]);

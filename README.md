@@ -52,13 +52,10 @@ npm run start
 
 The build reads the canonical map layers from `geojson/`. The build script also copies those files into the standalone Next.js output. `preview.geojson` is a review artifact and is not loaded by the viewer.
 
-For the deployed museum map, copy `.env.example` to `.env` and configure these values:
-
-- `APP_HOST` and `APP_PORT`: address and port used by the deployed server.
-- `PM2_APP_NAME`: PM2 process name.
-- `DEPLOY_PATH`: destination for the standalone application.
-- `BUILD_PATH`: standalone build location; normally `.next/standalone`.
-- `DEPLOY_USE_SUDO`: set to `1` when deployment filesystem operations require `sudo`, otherwise `0`.
+`.env.example` contains complete local-development values. Production keeps
+`APP_BASE_PATH` and `PM2_APP_NAME` in `deploy/defaults.env`; the
+`indoor_mapping` inventory record supplies `APP_HOST`, `APP_PORT`, and any
+deployment-root override.
 
 Run the complete local validation before publishing a change:
 
@@ -66,28 +63,22 @@ Run the complete local validation before publishing a change:
 npm run check
 ```
 
-For a legacy manual deployment, after changes have been committed and pushed, run this command from the repository checkout on the deployment server:
+Production deployment is owned by `ansible-deploy`. From that controller
+repository, deploy a reviewed revision with:
 
 ```bash
-npm run update
+./scripts/deploy production indoor_mapping <revision>
 ```
 
-This refuses a dirty checkout, pulls with `--ff-only`, installs the exact lockfile with `npm ci`, and invokes the same versioned-release deployment lifecycle used by automation. To build and deploy the current checkout without pulling, use `npm run deploy`.
-
-The deployment creates immutable releases under `$DEPLOY_PATH/releases`, atomically switches `$DEPLOY_PATH/current`, starts PM2 from that symlink, and verifies `/map/api/health`. A failed health check restores the preceding release. Roll back the current deployment with:
-
-```bash
-bash scripts/rollback.sh
-```
-
-Controller-driven Ansible deployment reads `deploy/deployment.yml`. It can supply a prebuilt standalone artifact and immutable release ID without giving the managed host GitHub access:
-
-```bash
-ARTIFACT_PATH=/path/to/artifact RELEASE_ID=<full-commit-sha> \
-  bash scripts/deploy.sh --non-interactive
-```
-
-The artifact must include `server.js` and `.next/static`. Inventory owns host placement, the collision-free `APP_PORT`, rollout/retention policy, and explicit site exceptions; the repository manifest owns application behavior and default paths. The deployed process must remain bound to loopback and be exposed publicly only through nginx.
+Controller-driven deployment reads `deploy/deployment.yml`, runs
+`deploy/controller/build.sh` on the controller, and transfers the resulting
+standalone artifact. The managed host does not need the repository or GitHub
+access. Inventory owns host placement and `APP_HOST`/`APP_PORT`; the repository
+owns installation, readiness, rollback, and the default release root. The
+deployed process remains bound to loopback and is exposed only through nginx.
+The manifest adapters are the only production deployment route; the former
+checkout-based deploy, update, readiness, and rollback scripts have been
+removed.
 
 ## What's Here
 
