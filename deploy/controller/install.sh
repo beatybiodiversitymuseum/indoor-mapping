@@ -38,7 +38,6 @@ else
   trap cleanup EXIT
   rsync -a --delete "$SERVICE_CREATOR_ARTIFACT_DIR/" "$TEMP_RELEASE/"
   mkdir -p "$TEMP_RELEASE/.service-creator"
-  install -m 0755 "$SCRIPT_DIR/rollback.sh" "$TEMP_RELEASE/.service-creator/rollback"
   install -m 0755 "$SCRIPT_DIR/readiness.sh" "$TEMP_RELEASE/.service-creator/readiness"
   install -m 0644 "$SCRIPT_DIR/config.env" "$TEMP_RELEASE/.service-creator/config.env"
   METADATA="$(mktemp)"
@@ -51,28 +50,13 @@ else
   trap - EXIT
 fi
 
-PREVIOUS="$(readlink -e "$CURRENT_LINK" 2>/dev/null || true)"
 start_current() {
   pm2 delete "$PM2_APP_NAME" >/dev/null 2>&1 || true
   HOSTNAME="$APP_HOST" PORT="$APP_PORT" pm2 start "$CURRENT_LINK/server.js" \
     --name "$PM2_APP_NAME" --cwd "$CURRENT_LINK"
 }
-restore() {
-  set +e
-  if [[ -n "$PREVIOUS" ]]; then
-    ln -sfn "$PREVIOUS" "$DEPLOY_ROOT/current.rollback"
-    mv -Tf "$DEPLOY_ROOT/current.rollback" "$CURRENT_LINK"
-    start_current
-    "$CURRENT_LINK/.service-creator/readiness"
-  else
-    rm -f -- "$CURRENT_LINK"
-    pm2 delete "$PM2_APP_NAME" >/dev/null 2>&1 || true
-  fi
-}
-trap restore ERR
 ln -sfn "$RELEASE_PATH" "$DEPLOY_ROOT/current.new"
 mv -Tf "$DEPLOY_ROOT/current.new" "$CURRENT_LINK"
 start_current
 "$CURRENT_LINK/.service-creator/readiness"
 pm2 save
-trap - ERR

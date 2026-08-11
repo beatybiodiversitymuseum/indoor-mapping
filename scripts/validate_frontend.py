@@ -21,7 +21,6 @@ expected = {
     "name": "indoor-mapping",
     "interface": "service_creator_v1",
     "install": "deploy/controller/install.sh",
-    "rollback": "deploy/controller/rollback.sh",
     "readiness": "deploy/controller/readiness.sh",
     "default_root": "/var/www/apps/indoor-mapping",
     "build": "deploy/controller/build.sh",
@@ -34,7 +33,6 @@ for key, value in expected.items():
 for relative in (
     "deploy/controller/build.sh",
     "deploy/controller/install.sh",
-    "deploy/controller/rollback.sh",
     "deploy/controller/readiness.sh",
     "deploy/defaults.env",
     ".env.example",

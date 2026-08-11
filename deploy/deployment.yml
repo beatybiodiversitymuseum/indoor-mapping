@@ -5,7 +5,6 @@ application:
 deployment:
   interface: service_creator_v1
   install: deploy/controller/install.sh
-  rollback: deploy/controller/rollback.sh
   readiness: deploy/controller/readiness.sh
   default_root: /var/www/apps/indoor-mapping
 

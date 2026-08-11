@@ -74,10 +74,10 @@ Controller-driven deployment reads `deploy/deployment.yml`, runs
 `deploy/controller/build.sh` on the controller, and transfers the resulting
 standalone artifact. The managed host does not need the repository or GitHub
 access. Inventory owns host placement and `APP_HOST`/`APP_PORT`; the repository
-owns installation, readiness, rollback, and the default release root. The
+owns installation, readiness, and the default release root. The
 deployed process remains bound to loopback and is exposed only through nginx.
 The manifest adapters are the only production deployment route; the former
-checkout-based deploy, update, readiness, and rollback scripts have been
+checkout-based deploy, update, and readiness scripts have been
 removed.
 
 ## What's Here
