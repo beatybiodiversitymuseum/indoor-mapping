@@ -36,8 +36,8 @@ else
   TEMP_RELEASE="$RELEASES_DIR/.new.$RELEASE_ID.$$"
   cleanup() { rm -rf -- "$TEMP_RELEASE"; }
   trap cleanup EXIT
-  mkdir -p "$TEMP_RELEASE/.service-creator"
   rsync -a --delete "$SERVICE_CREATOR_ARTIFACT_DIR/" "$TEMP_RELEASE/"
+  mkdir -p "$TEMP_RELEASE/.service-creator"
   install -m 0755 "$SCRIPT_DIR/rollback.sh" "$TEMP_RELEASE/.service-creator/rollback"
   install -m 0755 "$SCRIPT_DIR/readiness.sh" "$TEMP_RELEASE/.service-creator/readiness"
   install -m 0644 "$SCRIPT_DIR/config.env" "$TEMP_RELEASE/.service-creator/config.env"
