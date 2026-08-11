@@ -16,4 +16,8 @@ set +a
 APP_BASE_PATH="${APP_BASE_PATH-}"
 [[ "$APP_HOST" == 127.0.0.1 || "$APP_HOST" == ::1 ]] || { echo "Frontend must bind to loopback" >&2; exit 1; }
 pm2 describe "$PM2_APP_NAME" >/dev/null
-curl --fail --silent --show-error "http://$APP_HOST:$APP_PORT$APP_BASE_PATH$HEALTH_SUFFIX" >/dev/null
+curl --fail --silent --show-error \
+  --retry 15 \
+  --retry-delay 1 \
+  --retry-connrefused \
+  "http://$APP_HOST:$APP_PORT$APP_BASE_PATH$HEALTH_SUFFIX" >/dev/null
