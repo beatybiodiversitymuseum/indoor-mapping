@@ -19,7 +19,11 @@ CURRENT="$DEPLOY_ROOT/current"
 [[ "$TARGET_ID" =~ ^[A-Za-z0-9._-]+$ ]] || { echo "Invalid release ID" >&2; exit 2; }
 [[ -x "$TARGET/.service-creator/readiness" && -f "$TARGET/release.env" ]] || { echo "Incomplete rollback target" >&2; exit 1; }
 ORIGINAL="$(readlink -f "$CURRENT")"
-start_current() { HOSTNAME="$APP_HOST" PORT="$APP_PORT" pm2 restart "$PM2_APP_NAME" --update-env; }
+start_current() {
+  pm2 delete "$PM2_APP_NAME" >/dev/null 2>&1 || true
+  HOSTNAME="$APP_HOST" PORT="$APP_PORT" pm2 start "$CURRENT/server.js" \
+    --name "$PM2_APP_NAME" --cwd "$CURRENT"
+}
 restore() {
   set +e
   ln -sfn "$ORIGINAL" "$DEPLOY_ROOT/current.rollback"

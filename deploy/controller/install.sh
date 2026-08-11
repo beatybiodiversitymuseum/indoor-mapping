@@ -53,12 +53,9 @@ fi
 
 PREVIOUS="$(readlink -f "$CURRENT_LINK" 2>/dev/null || true)"
 start_current() {
-  if pm2 describe "$PM2_APP_NAME" >/dev/null 2>&1; then
-    HOSTNAME="$APP_HOST" PORT="$APP_PORT" pm2 restart "$PM2_APP_NAME" --update-env
-  else
-    HOSTNAME="$APP_HOST" PORT="$APP_PORT" pm2 start "$CURRENT_LINK/server.js" \
-      --name "$PM2_APP_NAME" --cwd "$CURRENT_LINK"
-  fi
+  pm2 delete "$PM2_APP_NAME" >/dev/null 2>&1 || true
+  HOSTNAME="$APP_HOST" PORT="$APP_PORT" pm2 start "$CURRENT_LINK/server.js" \
+    --name "$PM2_APP_NAME" --cwd "$CURRENT_LINK"
 }
 restore() {
   set +e
