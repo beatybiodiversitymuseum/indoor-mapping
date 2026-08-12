@@ -27,11 +27,12 @@ python3 scripts/build_preview_geojson.py
 
 Navigation revisions are generated as approval artifacts before canonical data changes. Rebuild the approved corridor-centering proposal with `python3 scripts/build_navigation_proposals.py centered`; applying it requires explicit review and uses `python3 scripts/build_navigation_proposals.py apply-centered`.
 
-## Running And Deploying The Viewer
+## Local development
 
 Install the exact JavaScript dependencies:
 
 ```bash
+cp .env.example .env
 npm ci
 ```
 
@@ -52,10 +53,10 @@ npm run start
 
 The build reads the canonical map layers from `geojson/`. The build script also copies those files into the standalone Next.js output. `preview.geojson` is a review artifact and is not loaded by the viewer.
 
-`.env.example` contains complete local-development values. Production keeps
-`APP_BASE_PATH` and `PM2_APP_NAME` in `deploy/defaults.env`; the
-`indoor_mapping` inventory record supplies `APP_HOST`, `APP_PORT`, and any
-deployment-root override.
+`.env.example` contains the local base path. The deployment manifest owns the
+production application name and `/map` ingress path; the `indoor_mapping`
+inventory record supplies `APP_HOST`, `APP_PORT`, and any deployment-root
+override.
 
 Run the complete local validation before publishing a change:
 
@@ -63,15 +64,17 @@ Run the complete local validation before publishing a change:
 npm run check
 ```
 
-Production deployment is owned by `ansible-deploy`. From that controller
-repository, deploy a reviewed revision with:
+## Production deployment
+
+Production deployment is owned by `ansible-deploy`. From an activated
+controller checkout, deploy a reviewed revision with:
 
 ```bash
-./scripts/deploy production indoor_mapping <revision>
+./scripts/deploy indoor_mapping <revision>
 ```
 
 Controller-driven deployment reads `deploy/deployment.yml`, runs
-`deploy/controller/build.sh` on the controller, and transfers the resulting
+`deploy/build.sh` on the controller, and transfers the resulting
 standalone artifact. The managed host does not need the repository or GitHub
 access. Inventory owns host placement and `APP_HOST`/`APP_PORT`; the repository
 owns installation, readiness, and the default release root. The

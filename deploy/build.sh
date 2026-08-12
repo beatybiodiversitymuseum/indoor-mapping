@@ -2,16 +2,13 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$ROOT"
 
-DEFAULTS_FILE="$SCRIPT_DIR/../defaults.env"
-[[ -f "$DEFAULTS_FILE" ]] || { echo "Missing repository defaults" >&2; exit 1; }
-set -a
-# shellcheck disable=SC1091
-source "$DEFAULTS_FILE"
-set +a
-export APP_BASE_PATH="${APP_BASE_PATH-}"
+: "${SERVICE_CREATOR_INGRESS_PATH:?Controller must set SERVICE_CREATOR_INGRESS_PATH}"
+APP_BASE_PATH="$SERVICE_CREATOR_INGRESS_PATH"
+[[ "$APP_BASE_PATH" == / ]] && APP_BASE_PATH=""
+export APP_BASE_PATH
 npm ci
 npm run build
 

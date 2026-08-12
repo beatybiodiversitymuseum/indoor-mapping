@@ -4,14 +4,14 @@ application:
   name: indoor-mapping
 deployment:
   interface: service_creator_v1
-  install: deploy/controller/install.sh
-  readiness: deploy/controller/readiness.sh
+  install: deploy/install.sh
+  readiness: deploy/readiness.sh
+  health_path: /api/health
   default_root: /var/www/apps/indoor-mapping
 
-  build: deploy/controller/build.sh
+  build: deploy/build.sh
   artifact_root: .deploy-artifact
 
-  defaults_file: deploy/defaults.env
   environment_file: /etc/indoor-mapping/service.env
 
   allocation_env:
@@ -20,4 +20,4 @@ deployment:
 
   ingress:
     type: nginx_proxy
-    path_env: APP_BASE_PATH
+    path: /map

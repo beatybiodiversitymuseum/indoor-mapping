@@ -6,4 +6,4 @@ const host = process.env.HOSTNAME || process.env.HOST || 'localhost';
 const port = process.env.PORT || '3000';
 const url = `http://${host}:${port}${basePath}`;
 
-console.log(`\nPrinted Label Designer: ${url}\n`);
+console.log(`\nIndoor Mapping: ${url}\n`);

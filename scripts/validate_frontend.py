@@ -20,10 +20,10 @@ expected = {
     "schema_version": "1",
     "name": "indoor-mapping",
     "interface": "service_creator_v1",
-    "install": "deploy/controller/install.sh",
-    "readiness": "deploy/controller/readiness.sh",
+    "install": "deploy/install.sh",
+    "readiness": "deploy/readiness.sh",
     "default_root": "/var/www/apps/indoor-mapping",
-    "build": "deploy/controller/build.sh",
+    "build": "deploy/build.sh",
     "artifact_root": ".deploy-artifact",
 }
 for key, value in expected.items():
@@ -31,10 +31,9 @@ for key, value in expected.items():
         errors.append(f"manifest must declare {key}: {value}")
 
 for relative in (
-    "deploy/controller/build.sh",
-    "deploy/controller/install.sh",
-    "deploy/controller/readiness.sh",
-    "deploy/defaults.env",
+    "deploy/build.sh",
+    "deploy/install.sh",
+    "deploy/readiness.sh",
     ".env.example",
     "package-lock.json",
     "app/api/health/route.js",
@@ -56,15 +55,14 @@ if (
 ):
     errors.append("Next.js standalone/basePath settings disagree with the manifest")
 
-env_example = (root / "deploy/defaults.env").read_text(encoding="utf-8")
-for setting in ("APP_BASE_PATH=/map", "PM2_APP_NAME=indoor-mapping"):
-    if setting not in env_example:
-        errors.append(f"deploy/defaults.env is missing {setting}")
+manifest = (root / "deploy/deployment.yml").read_text(encoding="utf-8")
+for setting in ("name: indoor-mapping", "path: /map"):
+    if setting not in manifest:
+        errors.append(f"deploy/deployment.yml is missing {setting}")
 
 local_environment = (root / ".env.example").read_text(encoding="utf-8")
-for setting in ("APP_HOST=127.0.0.1", "APP_PORT=3001"):
-    if setting not in local_environment:
-        errors.append(f".env.example is missing local setting {setting}")
+if "APP_BASE_PATH=/map" not in local_environment:
+    errors.append(".env.example is missing local setting APP_BASE_PATH=/map")
 
 if errors:
     for error in errors:
