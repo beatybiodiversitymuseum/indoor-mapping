@@ -132836,8 +132836,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "534cb1a9-f654-53ae-b016-1cde42a054af"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "blue_whale_skeleton",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -132901,8 +132905,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "7ee1ee1c-b4f8-5b5e-a757-bfd3f7440142"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "clades_wall_display",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -132968,8 +132976,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "aa3beb12-143b-50a0-baea-ff06dfd3dd7e"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "projector_display",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133034,8 +133046,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "8625eba7-f1dc-5843-b297-f9261b904a40"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "we_are_all_one_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133100,8 +133116,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "050d454b-3725-5f3b-9fcf-c4dc9507ef4a"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "daphne_boyer_artist_statement",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133166,8 +133186,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "aae9e0d1-4607-5d24-87d6-1f70ef367031"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "come_visit_sometime_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133232,8 +133256,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "739bb416-a830-5bf9-a3fa-6bef590fa01d"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "barn_owl_moon_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133298,8 +133326,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "44ebd3e9-9946-523e-8f23-7f51b3200bd9"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "sweetgrass_braid_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133364,8 +133396,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "6b340453-ae61-53e9-b96f-f0a351322b06"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "porcupine_display_case",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133430,8 +133466,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "6feb00d5-8431-5605-a665-1a510e74219d"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "hung_out_to_dry_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133496,8 +133536,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "ac2b4604-7b6a-54d2-9d8d-6a2d5a383915"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "for_jean_guy_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133562,8 +133606,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "f963d6c6-6026-5896-b215-c0eb03e22fb6"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "the_watershed_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133628,8 +133676,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "69beedb3-0b05-52b8-b2f4-9053c675e455"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "moss_bag_beading_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133694,8 +133746,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "0350d618-4921-57f2-be04-14285e81ddfa"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "hemoglobin_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133760,8 +133816,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "c42d0fd6-3eab-557c-879f-127739ed3dbd"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "poison_ivy_and_thorns_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133826,8 +133886,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "460fc87c-aa46-5a7e-9dd6-9ee1239059cd"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "bird_and_tree_display_case",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133892,8 +133956,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "fb4ff8c8-64c4-5f4e-9040-efe5196f234f"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "all_my_relations_artwork",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -133958,8 +134026,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "200b7929-9e30-50c0-b7f6-b02440ae0a7a"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "metis_hunting_flag",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134024,8 +134096,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "52a3d0f2-7c73-5111-bfdf-e29e134534a8"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "daphne_boyer_artist_bio",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134090,8 +134166,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "7bf9ced2-6565-54ca-9a8e-8c8445ef5acc"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "colin_brauner_s_lab_poster",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134156,8 +134236,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "963ded10-e102-5bd8-82bd-5aed3b073d11"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "pelagic_ecosystems_lab_poster",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134222,8 +134306,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "bdd3f9f4-635f-5e4c-90c3-c4b53b003db1"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "aquaculture_and_climate_change_lab_poster",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134288,8 +134376,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "c8d52513-b986-5f71-b8a8-8a4868fcc883"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "pacific_salmon_ecology_and_conservation_laboratory_poster",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134354,8 +134446,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "da4a7466-e5c6-5c8d-aceb-52e18f398e1c"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "stumpy_information_plaque",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134420,8 +134516,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "da4a7466-e5c6-5c8d-aceb-52e18f398e1c"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "stumpy",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134486,8 +134586,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "f336cb79-8f7e-5544-91f1-ecee2f73464a"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "footprints_in_time_interactive_display",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134554,8 +134658,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "aa3beb12-143b-50a0-baea-ff06dfd3dd7e"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "beneath_the_emerald_green_waves_photograph",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134622,8 +134730,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "5367f032-9a2c-5902-9a02-63eb686dc983"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "lighting_up_the_cloud_sponge_and_its_resident_photo",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134690,8 +134802,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "5367f032-9a2c-5902-9a02-63eb686dc983"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "lingcod_in_a_crack_covered_with_zoanthid_polyps_photo",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134758,8 +134874,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "e65a3ceb-4344-51e1-97b9-d3a4c4ed043b"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "deep_sea_gorgonian_coral_photo",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134826,8 +134946,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "ca46cb4e-acf0-5743-a7e4-4a008815f826"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "the_life_on_a_buoy_line_photo",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134894,8 +135018,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "ca46cb4e-acf0-5743-a7e4-4a008815f826"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "sea_lion_pack_photo",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -134962,8 +135090,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "86ab5be6-b49b-50e3-90df-6ed6e725c58d"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "peek_a_boo_from_the_feather_nest_photo",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -135038,8 +135170,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "c398721c-8a17-59ea-b974-cef65eda1266"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "cabinet_46_18_upper",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -135105,8 +135241,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "8a6eb9ea-ff35-5405-9961-1181fb5c4cd6"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "irish_elk_skull",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",
@@ -135174,8 +135314,12 @@
           }
         },
         "specimens": [],
-        "navigation_point_ids": [],
-        "stopping_point_ids": []
+        "navigation_point_ids": [
+          "4551773b-d968-527a-b0b2-cf9c5dcd89b1"
+        ],
+        "stopping_point_ids": [],
+        "route_fixture_id": "life_on_earth_timeline",
+        "route_association": "nearest_approved_access_projection"
       },
       "geometry": {
         "type": "Point",

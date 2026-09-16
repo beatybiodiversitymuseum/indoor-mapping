@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { relatedExhibitsForFeature } from '../app/exhibits.js';
-import { buildRoutingNetwork, findApprovedRoute } from '../app/routing.js';
+import { buildRoutingNetwork, findApprovedRoute, isRoutableFeature } from '../app/routing.js';
 const read = name => JSON.parse(readFileSync(new URL(`../geojson/${name}.geojson`, import.meta.url)));
 const exhibits = read('exhibit'), fixtures = read('fixture'), navigation = read('navigation');
 test('exhibit migration separates services, fixture content and stopping points', () => {
@@ -20,9 +20,16 @@ test('exhibit migration separates services, fixture content and stopping points'
     for(const id of exhibit.properties.stopping_point_ids) assert.ok(ids.has(id));
   }
   const floors = exhibits.features.filter(f=>f.properties.exhibit_type==='floor');
+  const standaloneDisplays = exhibits.features.filter(f=>f.properties.exhibit_type==='display');
   const floorFixtures = fixtures.features.filter(f=>f.properties.local_category==='floor_display_fixture');
   assert.equal(floors.length,9);
   assert.equal(floorFixtures.length,9);
+  assert.equal(standaloneDisplays.length,36);
+  for (const display of standaloneDisplays) {
+    assert.equal(display.properties.route_association, 'nearest_approved_access_projection');
+    assert.equal(display.properties.navigation_point_ids.length, 1);
+    assert.ok(isRoutableFeature(network, display));
+  }
   for(const floor of floors){
     assert.equal(floor.geometry.type,'Point');
     assert.equal(floor.properties.walkable,true);

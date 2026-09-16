@@ -2,7 +2,8 @@
 """Separate exhibit locations, fixtures, services and navigation stopping points.
 
 Idempotent. Cabinet-face positions are derived from existing plans, not surveys.
-No new walking paths or route connections are created.
+Standalone displays reuse their nearest approved access projection; no new walking
+paths are created.
 """
 import json
 import math
@@ -34,6 +35,10 @@ def migrate():
         key = f['properties'].get('related_fixture_id')
         if key:
             stops_by_fixture[key] = f
+    navigation[:] = [
+        f for f in navigation
+        if f['properties'].get('route_association') != 'standalone_display_connection'
+    ]
     access = {}
     for f in navigation:
         if f['properties'].get('wayfinding_type') == 'access_projection':
@@ -73,6 +78,46 @@ def migrate():
             remaining.append(f)
     data['amenity']['features'] = remaining
     data['detail']['features'] = [f for f in data['detail']['features'] if f['id'] not in moved_surfaces]
+
+    def distance_meters(a, b):
+        latitude = math.radians((a[1] + b[1]) / 2)
+        x = (b[0] - a[0]) * math.cos(latitude) * 6371000 * math.pi / 180
+        y = (b[1] - a[1]) * 6371000 * math.pi / 180
+        return math.hypot(x, y)
+
+    access_points = [
+        feature for feature in navigation
+        if feature['properties'].get('wayfinding_type') == 'access_projection'
+    ]
+    for exhibit in data['exhibit']['features']:
+        p = exhibit['properties']
+        if p.get('exhibit_type') != 'display' or exhibit['geometry'].get('type') != 'Point':
+            continue
+        route_key = p.get('route_fixture_id') or p.get('alt_name', {}).get('en')
+        if not route_key or route_key in access:
+            continue
+        same_level = [
+            point for point in access_points
+            if point['properties'].get('level_id') == p.get('level_id')
+        ]
+        candidates = same_level or access_points
+        if not candidates:
+            continue
+        nearest = min(
+            candidates,
+            key=lambda point: distance_meters(exhibit['geometry']['coordinates'], point['geometry']['coordinates']),
+        )
+        nearest_properties = nearest['properties']
+        sources = nearest_properties.setdefault('sources', [nearest_properties.get('source')])
+        sources[:] = list(dict.fromkeys(source for source in [*sources, route_key] if source))
+        metadata = nearest_properties.setdefault('metadata', {})
+        metadata['standalone_display_associations'] = list(dict.fromkeys([
+            *metadata.get('standalone_display_associations', []),
+            exhibit['id'],
+        ]))
+        p['route_fixture_id'] = route_key
+        p['route_association'] = 'nearest_approved_access_projection'
+        access.setdefault(route_key, []).append(nearest['id'])
 
     def face_point(fixture, point):
         ring = fixture['geometry']['coordinates'][0]

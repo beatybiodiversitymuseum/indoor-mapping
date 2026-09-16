@@ -7595,7 +7595,8 @@
         "node_type": "access_projection",
         "source": "col_1_cab_01",
         "sources": [
-          "col_1_cab_01"
+          "col_1_cab_01",
+          "we_are_all_one_artwork"
         ],
         "target": "path_004",
         "targets": [
@@ -7632,7 +7633,10 @@
             }
           ],
           "projection_distance_meters": 1.2575,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "a9cea775-476c-5a5a-9002-61d5a0a5ee22"
+          ]
         }
       }
     },
@@ -7749,7 +7753,8 @@
         "node_type": "access_projection",
         "source": "col_1_cab_03",
         "sources": [
-          "col_1_cab_03"
+          "col_1_cab_03",
+          "irish_elk_skull"
         ],
         "target": "path_004",
         "targets": [
@@ -7786,7 +7791,10 @@
             }
           ],
           "projection_distance_meters": 1.2575,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "9fdc7a49-bf94-50ee-b379-9fc8ea6907e1"
+          ]
         }
       }
     },
@@ -8673,7 +8681,8 @@
         "node_type": "access_projection",
         "source": "col_1_cab_15",
         "sources": [
-          "col_1_cab_15"
+          "col_1_cab_15",
+          "blue_whale_skeleton"
         ],
         "target": "path_004",
         "targets": [
@@ -8710,7 +8719,10 @@
             }
           ],
           "projection_distance_meters": 1.2574,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "d7cadbc8-b3b6-5913-9ea2-ffcb9d66e337"
+          ]
         }
       }
     },
@@ -10829,7 +10841,8 @@
         "node_type": "access_projection",
         "source": "col_3_cab_01",
         "sources": [
-          "col_3_cab_01"
+          "col_3_cab_01",
+          "daphne_boyer_artist_statement"
         ],
         "target": "path_003",
         "targets": [
@@ -10866,7 +10879,10 @@
             }
           ],
           "projection_distance_meters": 0.9626,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "e8ffc606-f58f-56d9-9ba0-02277629efd0"
+          ]
         }
       }
     },
@@ -14525,7 +14541,8 @@
         "node_type": "access_projection",
         "source": "col_5_cab_01",
         "sources": [
-          "col_5_cab_01"
+          "col_5_cab_01",
+          "come_visit_sometime_artwork"
         ],
         "target": "path_007",
         "targets": [
@@ -14562,7 +14579,10 @@
             }
           ],
           "projection_distance_meters": 0.9616,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "19384922-88f6-5c3c-96b1-0575af5f2c42"
+          ]
         }
       }
     },
@@ -15603,7 +15623,8 @@
         "node_type": "access_projection",
         "source": "col_6_cab_14",
         "sources": [
-          "col_6_cab_14"
+          "col_6_cab_14",
+          "barn_owl_moon_artwork"
         ],
         "target": "path_009",
         "targets": [
@@ -15640,7 +15661,10 @@
             }
           ],
           "projection_distance_meters": 1.2803,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "7ead0d20-a142-53f4-a40c-ef4c59457130"
+          ]
         }
       }
     },
@@ -18760,7 +18784,8 @@
         "node_type": "access_projection",
         "source": "col_8_cab_01",
         "sources": [
-          "col_8_cab_01"
+          "col_8_cab_01",
+          "clades_wall_display"
         ],
         "target": "path_093",
         "targets": [
@@ -18797,7 +18822,10 @@
             }
           ],
           "projection_distance_meters": 1.0091,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "5d706298-9034-5a6b-9a33-2f100baee7ed"
+          ]
         }
       }
     },
@@ -21917,7 +21945,8 @@
         "node_type": "access_projection",
         "source": "col_11_cab_01",
         "sources": [
-          "col_11_cab_01"
+          "col_11_cab_01",
+          "sweetgrass_braid_artwork"
         ],
         "target": "path_013",
         "targets": [
@@ -21954,7 +21983,10 @@
             }
           ],
           "projection_distance_meters": 0.9561,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "7368ac8b-5127-50cc-b46e-21700ec52337"
+          ]
         }
       }
     },
@@ -25921,7 +25953,8 @@
         "node_type": "access_projection",
         "source": "col_13_cab_01",
         "sources": [
-          "col_13_cab_01"
+          "col_13_cab_01",
+          "porcupine_display_case"
         ],
         "target": "path_015",
         "targets": [
@@ -25958,7 +25991,10 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "529a6e56-b63f-5eb9-8823-d194ca7ed18c"
+          ]
         }
       }
     },
@@ -30233,7 +30269,8 @@
         "node_type": "access_projection",
         "source": "col_15_cab_01",
         "sources": [
-          "col_15_cab_01"
+          "col_15_cab_01",
+          "hung_out_to_dry_artwork"
         ],
         "target": "path_017",
         "targets": [
@@ -30270,7 +30307,10 @@
             }
           ],
           "projection_distance_meters": 0.9605,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "f350debf-63ed-57b3-8e78-31cacd858273"
+          ]
         }
       }
     },
@@ -36701,7 +36741,8 @@
         "node_type": "access_projection",
         "source": "col_19_cab_01",
         "sources": [
-          "col_19_cab_01"
+          "col_19_cab_01",
+          "for_jean_guy_artwork"
         ],
         "target": "path_021",
         "targets": [
@@ -36738,7 +36779,10 @@
             }
           ],
           "projection_distance_meters": 0.9631,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "46cabcf2-f5bc-5155-a5de-b168d407dd00"
+          ]
         }
       }
     },
@@ -47173,7 +47217,8 @@
         "node_type": "access_projection",
         "source": "col_25_cab_01",
         "sources": [
-          "col_25_cab_01"
+          "col_25_cab_01",
+          "the_watershed_artwork"
         ],
         "target": "path_030",
         "targets": [
@@ -47210,7 +47255,10 @@
             }
           ],
           "projection_distance_meters": 1.2219,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "680d5e86-3df8-5121-a727-01174a4e1924"
+          ]
         }
       }
     },
@@ -51100,7 +51148,8 @@
         "node_type": "access_projection",
         "source": "col_26_cab_01",
         "sources": [
-          "col_26_cab_01"
+          "col_26_cab_01",
+          "life_on_earth_timeline"
         ],
         "target": "path_120",
         "targets": [
@@ -51137,7 +51186,10 @@
             }
           ],
           "projection_distance_meters": 0.9625,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "2c2ce243-517b-5e08-99ae-ba9a914bacf0"
+          ]
         }
       }
     },
@@ -59185,7 +59237,8 @@
         "node_type": "access_projection",
         "source": "col_31_cab_01",
         "sources": [
-          "col_31_cab_01"
+          "col_31_cab_01",
+          "moss_bag_beading_artwork"
         ],
         "target": "path_036",
         "targets": [
@@ -59222,7 +59275,10 @@
             }
           ],
           "projection_distance_meters": 0.7031,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "ea728c34-c9c7-5fff-acfe-c525a19a1d6a"
+          ]
         }
       }
     },
@@ -65961,7 +66017,8 @@
         "node_type": "access_projection",
         "source": "col_35_cab_01",
         "sources": [
-          "col_35_cab_01"
+          "col_35_cab_01",
+          "hemoglobin_artwork"
         ],
         "target": "path_040",
         "targets": [
@@ -65998,7 +66055,10 @@
             }
           ],
           "projection_distance_meters": 0.9609,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "b1516dea-ae33-5866-a68c-7a278983c434"
+          ]
         }
       }
     },
@@ -68579,7 +68639,8 @@
         "node_type": "access_projection",
         "source": "col_37_cab_01",
         "sources": [
-          "col_37_cab_01"
+          "col_37_cab_01",
+          "poison_ivy_and_thorns_artwork"
         ],
         "target": "path_042",
         "targets": [
@@ -68616,7 +68677,10 @@
             }
           ],
           "projection_distance_meters": 0.964,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "10941a4d-4e4c-5f99-aacc-28c6d3fb00d8"
+          ]
         }
       }
     },
@@ -73507,7 +73571,8 @@
         "node_type": "access_projection",
         "source": "col_39_cab_01",
         "sources": [
-          "col_39_cab_01"
+          "col_39_cab_01",
+          "bird_and_tree_display_case"
         ],
         "target": "path_044",
         "targets": [
@@ -73544,7 +73609,10 @@
             }
           ],
           "projection_distance_meters": 0.9667,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "e1c7d266-5a63-5994-a447-dba54f4e09d7"
+          ]
         }
       }
     },
@@ -77511,7 +77579,8 @@
         "node_type": "access_projection",
         "source": "col_41_cab_01",
         "sources": [
-          "col_41_cab_01"
+          "col_41_cab_01",
+          "all_my_relations_artwork"
         ],
         "target": "path_047",
         "targets": [
@@ -77548,7 +77617,10 @@
             }
           ],
           "projection_distance_meters": 0.9661,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "169aee0a-cec4-56d0-aa18-4656545f8f39"
+          ]
         }
       }
     },
@@ -84518,7 +84590,8 @@
         "node_type": "access_projection",
         "source": "col_44_cab_01",
         "sources": [
-          "col_44_cab_01"
+          "col_44_cab_01",
+          "peek_a_boo_from_the_feather_nest_photo"
         ],
         "target": "path_187",
         "targets": [
@@ -84555,7 +84628,10 @@
             }
           ],
           "projection_distance_meters": 0.9629,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "7b6ee56f-ef27-5b19-bc19-c351e3e53279"
+          ]
         }
       }
     },
@@ -84595,7 +84671,8 @@
         "node_type": "access_projection",
         "source": "col_45_cab_01",
         "sources": [
-          "col_45_cab_01"
+          "col_45_cab_01",
+          "metis_hunting_flag"
         ],
         "target": "path_051",
         "targets": [
@@ -84632,7 +84709,10 @@
             }
           ],
           "projection_distance_meters": 0.9629,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "271657d9-ba2f-557f-9cb5-540ba053221b"
+          ]
         }
       }
     },
@@ -86905,7 +86985,8 @@
         "node_type": "access_projection",
         "source": "col_46_cab_18",
         "sources": [
-          "col_46_cab_18"
+          "col_46_cab_18",
+          "cabinet_46_18_upper"
         ],
         "target": "path_053",
         "targets": [
@@ -86942,7 +87023,10 @@
             }
           ],
           "projection_distance_meters": 0.9626,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "20f1ded2-bb7b-5df1-81c0-4079bbb6137b"
+          ]
         }
       }
     },
@@ -88214,7 +88298,9 @@
         "node_type": "access_projection",
         "source": "col_46_cab_01",
         "sources": [
-          "col_46_cab_01"
+          "col_46_cab_01",
+          "the_life_on_a_buoy_line_photo",
+          "sea_lion_pack_photo"
         ],
         "target": "path_190",
         "targets": [
@@ -88251,7 +88337,11 @@
             }
           ],
           "projection_distance_meters": 0.9625,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "97076185-ea94-5f1b-afad-4d56b6fc6aa8",
+            "f7c691e5-00c1-5bbc-9c06-19170e0d1ff7"
+          ]
         }
       }
     },
@@ -88291,7 +88381,8 @@
         "node_type": "access_projection",
         "source": "col_47_cab_01",
         "sources": [
-          "col_47_cab_01"
+          "col_47_cab_01",
+          "daphne_boyer_artist_bio"
         ],
         "target": "path_053",
         "targets": [
@@ -88328,7 +88419,10 @@
             }
           ],
           "projection_distance_meters": 0.9625,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "5464f763-be51-5b23-967a-9f34f91510db"
+          ]
         }
       }
     },
@@ -91602,7 +91696,8 @@
         "node_type": "access_projection",
         "source": "col_48_cab_01",
         "sources": [
-          "col_48_cab_01"
+          "col_48_cab_01",
+          "deep_sea_gorgonian_coral_photo"
         ],
         "target": "path_193",
         "targets": [
@@ -91639,7 +91734,10 @@
             }
           ],
           "projection_distance_meters": 1.3945,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "e3618c10-852e-54a3-9b3b-23d30e6d28eb"
+          ]
         }
       }
     },
@@ -95606,7 +95704,9 @@
         "node_type": "access_projection",
         "source": "col_50_cab_01",
         "sources": [
-          "col_50_cab_01"
+          "col_50_cab_01",
+          "lighting_up_the_cloud_sponge_and_its_resident_photo",
+          "lingcod_in_a_crack_covered_with_zoanthid_polyps_photo"
         ],
         "target": "path_195",
         "targets": [
@@ -95643,7 +95743,11 @@
             }
           ],
           "projection_distance_meters": 0.9625,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "26486eb2-b834-5235-a4fe-949837e68ecb",
+            "6756d596-e33c-5203-b311-96eb994218de"
+          ]
         }
       }
     },
@@ -97685,7 +97789,9 @@
         "node_type": "access_projection",
         "source": "col_52_cab_26",
         "sources": [
-          "col_52_cab_26"
+          "col_52_cab_26",
+          "stumpy_information_plaque",
+          "stumpy"
         ],
         "target": "path_066",
         "targets": [
@@ -97722,7 +97828,11 @@
             }
           ],
           "projection_distance_meters": 1.4119,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "846bab0a-c235-5225-bf41-7f8d64b350b3",
+            "61d9e4d2-d723-53e2-904a-5cf4878c0947"
+          ]
         }
       }
     },
@@ -97993,7 +98103,8 @@
         "node_type": "access_projection",
         "source": "col_52_cab_22",
         "sources": [
-          "col_52_cab_22"
+          "col_52_cab_22",
+          "footprints_in_time_interactive_display"
         ],
         "target": "path_066",
         "targets": [
@@ -98030,7 +98141,10 @@
             }
           ],
           "projection_distance_meters": 1.4119,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "3455b739-ef59-5036-9368-9a67d5d368eb"
+          ]
         }
       }
     },
@@ -99148,7 +99262,8 @@
         "node_type": "access_projection",
         "source": "col_52_cab_07",
         "sources": [
-          "col_52_cab_07"
+          "col_52_cab_07",
+          "pacific_salmon_ecology_and_conservation_laboratory_poster"
         ],
         "target": "path_068",
         "targets": [
@@ -99185,7 +99300,10 @@
             }
           ],
           "projection_distance_meters": 1.4118,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "48354d41-a21f-5dc2-8a2e-702f3c6c9235"
+          ]
         }
       }
     },
@@ -99302,7 +99420,8 @@
         "node_type": "access_projection",
         "source": "col_52_cab_05",
         "sources": [
-          "col_52_cab_05"
+          "col_52_cab_05",
+          "aquaculture_and_climate_change_lab_poster"
         ],
         "target": "path_068",
         "targets": [
@@ -99339,7 +99458,10 @@
             }
           ],
           "projection_distance_meters": 1.4118,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "67b9e9b0-a4f6-5b28-832c-4b1324de6864"
+          ]
         }
       }
     },
@@ -99379,7 +99501,8 @@
         "node_type": "access_projection",
         "source": "col_52_cab_04",
         "sources": [
-          "col_52_cab_04"
+          "col_52_cab_04",
+          "pelagic_ecosystems_lab_poster"
         ],
         "target": "path_068",
         "targets": [
@@ -99416,7 +99539,10 @@
             }
           ],
           "projection_distance_meters": 1.4118,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "2df625d0-627f-5e78-8c65-6696d7d7c86f"
+          ]
         }
       }
     },
@@ -99533,7 +99659,8 @@
         "node_type": "access_projection",
         "source": "col_52_cab_02",
         "sources": [
-          "col_52_cab_02"
+          "col_52_cab_02",
+          "colin_brauner_s_lab_poster"
         ],
         "target": "path_068",
         "targets": [
@@ -99570,7 +99697,10 @@
             }
           ],
           "projection_distance_meters": 1.4117,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "da711e9d-8728-5f2e-916e-b9b1baf6b53d"
+          ]
         }
       }
     },
@@ -99610,7 +99740,9 @@
         "node_type": "access_projection",
         "source": "col_52_cab_01",
         "sources": [
-          "col_52_cab_01"
+          "col_52_cab_01",
+          "projector_display",
+          "beneath_the_emerald_green_waves_photograph"
         ],
         "target": "path_068",
         "targets": [
@@ -99647,7 +99779,11 @@
             }
           ],
           "projection_distance_meters": 1.4117,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "standalone_display_associations": [
+            "09e4b3c0-6a6c-5b47-9b70-bbf613a0ed73",
+            "db205dfb-a3c4-5c73-9a4c-36d20a46bfde"
+          ]
         }
       }
     },
