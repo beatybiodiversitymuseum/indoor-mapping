@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {nextRouteSelection,routeStoppingCoordinate,isMapBackground} from '../app/route-interaction.js';
+import {nextRouteSelection,routeEndpointHighlight,routeStoppingCoordinate,isMapBackground} from '../app/route-interaction.js';
 const place = id => ({feature_type:'exhibit',geometry:{type:'Point',coordinates:[1,2]},properties:{route_fixture_id:id}});
 test('clicks set A then B, repeat location does not create a zero-length route, third starts a new route',()=>{
  const a=place('a'),b=place('b'),c=place('c');
@@ -20,4 +20,12 @@ test('background clears selection but a floor exhibit is selectable',()=>{
  for(const layer of ['unit','footprint','level','building','venue']) assert.equal(isMapBackground({properties:{viewer_layer:layer}}),true);
  assert.equal(isMapBackground({feature_type:'exhibit',properties:{exhibit_type:'floor'}}),false);
  assert.equal(isMapBackground({feature_type:'fixture'}),false);
+});
+
+test('route endpoint highlights follow the current map selection',()=>{
+ const a=place('a'), b=place('b');
+ assert.equal(routeEndpointHighlight('from',a,null),'current');
+ assert.equal(routeEndpointHighlight('from',a,b),'previous');
+ assert.equal(routeEndpointHighlight('to',a,b),'current');
+ assert.equal(routeEndpointHighlight('to',a,null),null);
 });

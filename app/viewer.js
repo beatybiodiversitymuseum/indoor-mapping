@@ -4,8 +4,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 import MiniSearch from "minisearch";
 import { exhibitMarkerVisible } from "./exhibit-visibility.js";
+import { fixtureHighlightState } from "./fixture-highlight.js";
+import { DRAWER_MARKER_OFFSET_PX, DRAWER_TOP_ICON_SCALE, EXHIBIT_ICON_SCALE, ICON_LAYER_ID, UBC_NORTH_BEARING, countOffsetForBearing, drawerCountFilter, drawerMarkerShape, drawerSourceOptions, exhibitImageExpression, exhibitPointFilter } from "./marker-style.js";
 import { DRAWER_OVERLAY_LAYERS, INTERACTIVE_MAP_LAYERS } from "./map-layer-policy.js";
-import { nextRouteSelection, routeStoppingCoordinate, isMapBackground } from "./route-interaction.js";
+import { nextRouteSelection, routeEndpointHighlight, routeStoppingCoordinate, isMapBackground } from "./route-interaction.js";
 import { relatedExhibitsForFeature } from "./exhibits.js";
 import { Building2, ChevronLeft, ChevronRight, Layers3, LocateFixed, MapPin, Navigation, Route, Search, X } from "lucide-react";
 import { BASEMAP, DRAWER_GROUPS, GEOJSON, ICON_SIZE, LAYERS, LEVELS, MAP, MAP_LAYERS, POINT_CATEGORIES, ROUTING, VIEWER } from "./constants.js";
@@ -98,15 +100,15 @@ function routeDisplayLine(route) {
 }
 
 function routeDisplayEndpoints(route, from, to, network) {
-  if (!route?.features.length) return { type: "FeatureCollection", features: [[from, "start", "A"], [to, "destination", "B"]].filter(([feature]) => feature && routeStoppingCoordinate(network, feature)).map(([feature, endpoint, label]) => ({ type: "Feature", properties: { endpoint, label }, geometry: { type: "Point", coordinates: routeStoppingCoordinate(network, feature) } })) };
+  if (!route?.features.length) return { type: "FeatureCollection", features: [[from, "from", "A"], [to, "to", "B"]].filter(([feature]) => feature && routeStoppingCoordinate(network, feature)).map(([feature, endpoint, label]) => ({ type: "Feature", properties: { endpoint, label, highlight: routeEndpointHighlight(endpoint, from, to) }, geometry: { type: "Point", coordinates: routeStoppingCoordinate(network, feature) } })) };
   const first = route.features[0].geometry.coordinates[0];
   const lastCoordinates = route.features.at(-1).geometry.coordinates;
   const last = lastCoordinates.at(-1);
   return {
     type: "FeatureCollection",
     features: [
-      { type: "Feature", properties: { endpoint: "start", label: "A" }, geometry: { type: "Point", coordinates: first } },
-      { type: "Feature", properties: { endpoint: "destination", label: "B" }, geometry: { type: "Point", coordinates: last } },
+      { type: "Feature", properties: { endpoint: "from", label: "A", highlight: routeEndpointHighlight("from", from, to) }, geometry: { type: "Point", coordinates: first } },
+      { type: "Feature", properties: { endpoint: "to", label: "B", highlight: routeEndpointHighlight("to", from, to) }, geometry: { type: "Point", coordinates: last } },
     ],
   };
 }
@@ -129,6 +131,9 @@ function drawerGroups(collection) {
       properties: {
         drawer_count: features.length,
         viewer_group_key: key,
+        marker_bearing: features[0].properties.marker_bearing,
+        marker_shape: drawerMarkerShape(features),
+        count_offset: countOffsetForBearing(features[0].properties.marker_bearing || 0),
       },
     })),
   };
@@ -325,9 +330,20 @@ export default function Viewer() {
         if (activeLevel === "all") return true;
         const properties = feature.properties;
         return properties.viewer_level_id === activeLevel || properties.level_ids?.includes(activeLevel) || (feature.id === activeLevel && properties.viewer_layer === "level");
-      }).map(feature => feature.id === selected?.id ? { ...feature, properties: { ...feature.properties, viewer_selected: true } } : feature),
+      }).map((feature) => {
+        const highlight = fixtureHighlightState(feature, selected, routeFrom, routeTo);
+        if (feature.id !== selected?.id && !highlight) return feature;
+        return {
+          ...feature,
+          properties: {
+            ...feature.properties,
+            ...(feature.id === selected?.id || highlight === "current" ? { viewer_selected: true } : {}),
+            ...(highlight === "previous" ? { viewer_route_previous: true } : {}),
+          },
+        };
+      }),
     };
-  }, [data, activeLayers, activeLevel, selected?.id]);
+  }, [data, activeLayers, activeLevel, selected, routeFrom, routeTo]);
 
   const searchContext = useMemo(() => data ? buildSearchContext(data.features) : null, [data]);
   const searchResultTokens = useMemo(() => searchTokens(query), [query]);
@@ -376,7 +392,7 @@ export default function Viewer() {
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
     map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
-    map.on("load", () => {
+    map.on("load", async () => {
       map.addSource("osm", { type: "raster", tiles: BASEMAP.tiles, tileSize: BASEMAP.tileSize, attribution: BASEMAP.attribution });
       map.addLayer({ id: "osm", type: "raster", source: "osm", paint: { "raster-saturation": BASEMAP.saturation, "raster-opacity": BASEMAP.opacity } });
       map.addSource("imdf", {
@@ -389,31 +405,27 @@ export default function Viewer() {
         data: pointFeatures(visibleDataRef.current, (feature) => !isDrawer(feature)),
         promoteId: "viewer_feature_id",
       });
-      map.addSource("imdf-drawers", {
-        type: "geojson",
-        data: drawerGroups(visibleDataRef.current),
-        cluster: true,
-        maxzoom: DRAWER_GROUPS.sourceMaxZoom,
-        clusterMaxZoom: DRAWER_GROUPS.clusterMaxZoom,
-        clusterRadius: DRAWER_GROUPS.clusterRadius,
-        clusterProperties: {
-          drawer_count: ["+", ["get", "drawer_count"]],
-        },
-      });
+      map.addSource("imdf-drawers", drawerSourceOptions(drawerGroups(visibleDataRef.current)));
       map.addSource("approved-route", { type: "geojson", data: emptyCollection() });
       map.addSource("approved-route-endpoints", { type: "geojson", data: emptyCollection() });
       map.addSource("navigation-debug", { type: "geojson", data: emptyCollection() });
       map.addLayer({ id: "imdf-fill", type: "fill", source: "imdf", filter: ["==", ["geometry-type"], "Polygon"], paint: { "fill-color": matchColors, "fill-opacity": ["match", ["get", "viewer_layer"], "fixture", MAP_LAYERS.fillOpacity.fixture, "unit", MAP_LAYERS.fillOpacity.unit, "level", MAP_LAYERS.fillOpacity.level, MAP_LAYERS.fillOpacity.fallback] } });
       map.addLayer({ id: "imdf-line", type: "line", source: "imdf", filter: ["!=", ["geometry-type"], "Point"], paint: { "line-color": matchColors, "line-width": ["match", ["get", "viewer_layer"], "venue", MAP_LAYERS.lineWidth.venue, "level", MAP_LAYERS.lineWidth.level, MAP_LAYERS.lineWidth.fallback], "line-opacity": MAP_LAYERS.lineOpacity } });
-      map.addLayer({ id: "imdf-point", type: "circle", source: "imdf-points", filter: ["all", ["!=", ["get", "local_category"], POINT_CATEGORIES.cabinet], ["!=", ["get", "local_category"], POINT_CATEGORIES.fossilExcavation]], paint: { "circle-color": matchColors, "circle-radius": ["interpolate", ["linear"], ["zoom"], MAP_LAYERS.pointRadius.minZoom, MAP_LAYERS.pointRadius.min, MAP_LAYERS.pointRadius.maxZoom, MAP_LAYERS.pointRadius.max], "circle-stroke-color": ["case", ["==", ["get", "viewer_selected"], true], "#f5b942", MAP_LAYERS.pointStrokeColor], "circle-stroke-width": ["case", ["==", ["get", "viewer_selected"], true], 3, MAP_LAYERS.pointStrokeWidth] } });
-      map.addLayer({ id: "imdf-drawer-group", type: "circle", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, paint: { "circle-color": DRAWER_GROUPS.color, "circle-radius": DRAWER_GROUPS.radius, "circle-stroke-color": DRAWER_GROUPS.strokeColor, "circle-stroke-width": DRAWER_GROUPS.strokeWidth } });
-      map.addLayer({ id: "imdf-drawer-group-count", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, layout: { "text-field": ["to-string", ["get", "drawer_count"]], "text-font": [DRAWER_GROUPS.countFont], "text-size": DRAWER_GROUPS.countFontSize }, paint: { "text-color": DRAWER_GROUPS.strokeColor } });
+      map.addLayer({ id: "imdf-point", type: "circle", source: "imdf-points", filter: exhibitPointFilter, paint: { "circle-color": matchColors, "circle-radius": ["interpolate", ["linear"], ["zoom"], MAP_LAYERS.pointRadius.minZoom, MAP_LAYERS.pointRadius.min, MAP_LAYERS.pointRadius.maxZoom, MAP_LAYERS.pointRadius.max], "circle-stroke-color": ["case", ["==", ["get", "viewer_selected"], true], "#f5b942", MAP_LAYERS.pointStrokeColor], "circle-stroke-width": ["case", ["==", ["get", "viewer_selected"], true], 3, MAP_LAYERS.pointStrokeWidth] } });
+      await Promise.all(["half-circle", "full-circle", "half-circle-tab"].map(async (type) => {
+        const image = await map.loadImage(`/map/marker-icons/${type}.png`);
+        map.addImage(`exhibit-${type}`, image.data);
+      }));
+      map.addLayer({ id: ICON_LAYER_ID, type: "symbol", source: "imdf-points", filter: ["in", ["get", "exhibit_type"], ["literal", ["window", "shadowbox", "floor"]]], layout: { "icon-image": exhibitImageExpression, "icon-size": ["interpolate", ["linear"], ["zoom"], EXHIBIT_ICON_SCALE.minZoom, EXHIBIT_ICON_SCALE.min, EXHIBIT_ICON_SCALE.maxZoom, EXHIBIT_ICON_SCALE.max], "icon-allow-overlap": true, "icon-pitch-alignment": "map", "icon-rotation-alignment": "map", "icon-rotate": ["coalesce", ["get", "marker_bearing"], 0] } });
+      map.addLayer({ id: "imdf-drawer-group-half", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, filter: ["==", ["get", "marker_shape"], "half-circle-tab"], layout: { "icon-image": "exhibit-half-circle-tab", "icon-offset": [0, -DRAWER_MARKER_OFFSET_PX], "icon-pitch-alignment": "map", "icon-rotation-alignment": "map", "icon-rotate": ["coalesce", ["get", "marker_bearing"], 0], "icon-allow-overlap": true } });
+      map.addLayer({ id: "imdf-drawer-group", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, filter: ["==", ["get", "marker_shape"], "full-circle"], layout: { "icon-image": "exhibit-full-circle", "icon-size": DRAWER_TOP_ICON_SCALE, "icon-pitch-alignment": "map", "icon-rotation-alignment": "map", "icon-allow-overlap": true } });
+      map.addLayer({ id: "imdf-drawer-group-count", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, filter: drawerCountFilter, layout: { "text-field": ["to-string", ["get", "drawer_count"]], "text-font": [DRAWER_GROUPS.countFont], "text-size": DRAWER_GROUPS.countFontSize, "text-offset": ["get", "count_offset"], "text-pitch-alignment": "map", "text-rotation-alignment": "map", "text-rotate": UBC_NORTH_BEARING }, paint: { "text-color": DRAWER_GROUPS.strokeColor } });
       map.addLayer({ id: "navigation-debug-line", type: "line", source: "navigation-debug", filter: ["==", ["geometry-type"], "LineString"], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": MAP_LAYERS.navigationDebug.lineColor, "line-width": MAP_LAYERS.navigationDebug.lineWidth, "line-opacity": MAP_LAYERS.navigationDebug.lineOpacity } });
       map.addLayer({ id: "navigation-debug-point", type: "circle", source: "navigation-debug", filter: ["==", ["geometry-type"], "Point"], paint: { "circle-color": MAP_LAYERS.navigationDebug.pointColor, "circle-radius": MAP_LAYERS.navigationDebug.pointRadius, "circle-stroke-color": MAP_LAYERS.navigationDebug.pointStrokeColor, "circle-stroke-width": MAP_LAYERS.navigationDebug.pointStrokeWidth } });
       map.addLayer({ id: "navigation-debug-label", type: "symbol", source: "navigation-debug", minzoom: MAP_LAYERS.navigationDebug.labelMinZoom, layout: { "text-field": ["get", "debug_id"], "text-font": [DRAWER_GROUPS.countFont], "text-size": MAP_LAYERS.navigationDebug.labelSize, "text-offset": [0, 1.1], "text-anchor": "top", "text-allow-overlap": false }, paint: { "text-color": MAP_LAYERS.navigationDebug.labelColor, "text-halo-color": MAP_LAYERS.navigationDebug.labelHaloColor, "text-halo-width": MAP_LAYERS.navigationDebug.labelHaloWidth } });
       map.addLayer({ id: "approved-route-casing", type: "line", source: "approved-route", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": ROUTING.lineCasingColor, "line-width": ROUTING.lineCasingWidth, "line-opacity": ROUTING.lineOpacity } });
       map.addLayer({ id: "approved-route", type: "line", source: "approved-route", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": ROUTING.lineColor, "line-width": ROUTING.lineWidth, "line-opacity": ROUTING.lineOpacity } });
-      map.addLayer({ id: "approved-route-endpoints", type: "circle", source: "approved-route-endpoints", paint: { "circle-color": ["match", ["get", "endpoint"], "start", ROUTING.startColor, ROUTING.destinationColor], "circle-radius": ROUTING.endpointRadius, "circle-stroke-color": ROUTING.endpointStrokeColor, "circle-stroke-width": ROUTING.endpointStrokeWidth } });
+      map.addLayer({ id: "approved-route-endpoints", type: "circle", source: "approved-route-endpoints", paint: { "circle-color": ["match", ["get", "highlight"], "previous", ROUTING.previousSelectionColor, ROUTING.currentSelectionColor], "circle-radius": ROUTING.endpointRadius, "circle-stroke-color": ROUTING.endpointStrokeColor, "circle-stroke-width": ROUTING.endpointStrokeWidth } });
       map.addLayer({ id: "approved-route-endpoint-labels", type: "symbol", source: "approved-route-endpoints", layout: { "text-field": ["get", "label"], "text-font": [ROUTING.endpointFont], "text-size": ROUTING.endpointFontSize }, paint: { "text-color": ROUTING.endpointTextColor } });
       map.addLayer({
         id: "imdf-fixture-extrusion",
@@ -426,7 +438,14 @@ export default function Viewer() {
           ["!=", ["get", "local_category"], "floor_display_fixture"]
         ],
         paint: {
-          "fill-extrusion-color": matchColors,
+          "fill-extrusion-color": [
+            "case",
+            ["==", ["get", "viewer_selected"], true],
+            ROUTING.currentSelectionColor,
+            ["==", ["get", "viewer_route_previous"], true],
+            ROUTING.previousSelectionColor,
+            matchColors
+          ],
 
           "fill-extrusion-height": [
             "match",
@@ -541,7 +560,8 @@ export default function Viewer() {
   };
 
   function routeEndpointControl(endpoint, label, selectedFeature) {
-    return <div className="route-endpoint">
+    const highlight = routeEndpointHighlight(endpoint, routeFrom, routeTo);
+    return <div className={`route-endpoint${highlight ? ` ${highlight}` : ""}`}>
       <span>{label}</span>
       <div className="endpoint-select">
         <small>{endpoint === "from" ? "Start" : "Destination"}</small>
@@ -635,19 +655,7 @@ export default function Viewer() {
           </article>;
         })}
       </div></section>}
-      <dl>
-      {properties.local_category && !properties.source_issue_number && <><dt>Local category</dt><dd>{properties.local_category.replaceAll("_", " ")}</dd></>}
-      {properties.debug_id && <><dt>Debug ID</dt><dd className="mono">{properties.debug_id}</dd></>}
-      {properties.alt_name?.en && !properties.source_issue_number && <><dt>Feature ID</dt><dd className="mono">{properties.alt_name.en}</dd></>}
-      {properties.wayfinding_type && <><dt>Wayfinding</dt><dd>{properties.wayfinding_type.replaceAll("_", " ")}</dd></>}
-      {properties.sources?.length && <><dt>Sources</dt><dd className="mono">{properties.sources.join(", ")}</dd></>}
-      {properties.targets?.length && <><dt>Targets</dt><dd className="mono">{properties.targets.join(", ")}</dd></>}
-      {properties.source && !properties.source_issue_number && !properties.sources?.length && <><dt>Source</dt><dd className="mono">{properties.source}</dd></>}
-      {properties.target && !properties.targets?.length && <><dt>Target</dt><dd className="mono">{properties.target}</dd></>}
-      {properties.short_name?.en && <><dt>Short name</dt><dd>{properties.short_name.en}</dd></>}
-      {properties.ordinal !== undefined && <><dt>Ordinal</dt><dd>{properties.ordinal}</dd></>}
-      {properties.category && <><dt>Category</dt><dd>{properties.category}</dd></>}
-    </dl></aside>}
+    </aside>}
     {loading && <div className="loading">Loading indoor map...</div>}
   </main>;
 }

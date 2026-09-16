@@ -61,3 +61,12 @@ Archive and ticket reconciliation rebuilds reapply the migration. Full archive r
 ## Exhibit marker visibility
 
 Labels default to `selection-only`; windows, drawers, shadowboxes, floor exhibits and other displays default to `always`. Optional `map_display` overrides accept those two values. This only controls rendered geometry: search indexes and fixture associations use the full exhibit collection, and routing is unchanged. Selecting a search result temporarily reveals its marker, including when the Exhibits layer is off. Clearing selection hides selection-only markers again.
+
+The primary marker style uses map-flat semicircles for cabinet-mounted exhibits. Their straight edges lie on the associated fixture faces and their curved sides point toward the viewing stops. In-floor exhibits and drawer-stack tops use full circles. Other drawer groups use a semicircle with a short rectangular extension on its flat side, giving the count room without an outline crossing the glyph. Drawer groups sit on the floor-plan edge beside the drawers, and only they carry numbers. Their count glyphs use the Walking Path 4 museum-north axis (332.53°), so their tops consistently face UBC north and their baselines remain perpendicular to that axis.
+
+Tabbed drawer semicircles render below raised drawer extrusions so the fixture can occlude their inward portion. Stack-top circles and count glyphs render above the fixtures.
+Stack-top circles do not display a redundant count of one.
+Stack-top circles are 25% smaller than the other drawer glyphs; count-label sizing is unchanged.
+Tabbed semicircles and their counts are offset together along each drawer's outward normal. The icon uses an offset in its fixture-facing orientation; the count uses the equivalent offset in the independently rotated UBC-north text coordinate system. This keeps the complete numbered glyph clear of fixture edges as the map rotates.
+
+Drawer groups are aggregated only when they share the same fixture-edge coordinate. Map zoom does not cluster separate drawers into a centroid, so zooming out cannot pull their counts away from the fixture sides.

@@ -33,7 +33,9 @@ button { color: inherit; }
 .sidebar .route-panel { padding-top: 16px; }
 .route-endpoint { min-height: 43px; display: grid; grid-template-columns: 24px 1fr 20px; align-items: center; gap: 8px; padding: 6px 7px; border: 1px solid var(--line); border-bottom: 0; }
 .route-endpoint:nth-of-type(3) { border-bottom: 1px solid var(--line); }
-.route-endpoint > span { display: grid; place-items: center; width: 22px; height: 22px; color: #fff; background: var(--accent); font-size: 10px; font-weight: 700; }
+.route-endpoint > span { display: grid; place-items: center; width: 22px; height: 22px; color: #fff; background: #aeb8c1; font-size: 10px; font-weight: 700; }
+.route-endpoint.current > span { background: #f5b942; }
+.route-endpoint.previous > span { background: #3b82f6; }
 .route-endpoint div { min-width: 0; }
 .route-endpoint small, .route-endpoint strong { display: block; }
 .route-endpoint small { color: var(--muted); font-size: 9px; text-transform: uppercase; }
@@ -72,7 +74,6 @@ button { color: inherit; }
 .feature-icon { display: grid; place-items: center; width: 36px; height: 36px; background: #f2e7eb; color: #a92f58; }
 .inspector-head small { color: var(--accent); font-size: 10px; text-transform: uppercase; font-weight: 700; }
 .inspector-head h2 { margin: 2px 0 0; font-size: 17px; line-height: 22px; overflow-wrap: anywhere; }
-.inspector dl { display: grid; grid-template-columns: 105px 1fr; margin: 0; padding: 14px; gap: 9px 12px; font-size: 12px; }
 .route-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
 .route-actions button { height: 34px; display: flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--accent); background: #fff; color: var(--accent); cursor: pointer; font-size: 11px; font-weight: 700; }
 .route-actions button:last-child { background: var(--accent); color: #fff; }
@@ -99,8 +100,6 @@ button { color: inherit; }
 .exhibit-details li:first-child { padding-top: 0; border-top: 0; }
 .exhibit-details li strong { font-size: 10px; line-height: 13px; font-weight: 700; overflow-wrap: anywhere; }
 .exhibit-details li span { color: #596572; font-size: 9px; line-height: 12px; }
-.inspector dt { color: var(--muted); }
-.inspector dd { margin: 0; text-transform: capitalize; overflow-wrap: anywhere; }
 .inspector a { color: var(--accent); }
 .inspector .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: none; font-size: 10px; }
 .group-list { display: grid; }

@@ -86,6 +86,13 @@ def migrate():
             if best is None or distance < best[0]: best = (distance,q)
         return best[1]
 
+    def bearing(origin, destination):
+        latitude = math.radians((origin[1] + destination[1]) / 2)
+        return round(math.degrees(math.atan2(
+            (destination[0] - origin[0]) * math.cos(latitude),
+            destination[1] - origin[1],
+        )) % 360, 2)
+
     for f in data['exhibit']['features']:
         p = f['properties']
         if p.get('exhibit_type') == 'floor':
@@ -121,14 +128,23 @@ def migrate():
                 f['geometry'] = {'type':'Point','coordinates':face_point(fixture,stop['geometry']['coordinates'])}
                 p.pop('display_point',None)
                 p['location_review_status'] = 'derived_cabinet_face'
+                p['marker_bearing'] = bearing(f['geometry']['coordinates'], stop['geometry']['coordinates'])
         if p.get('exhibit_type') == 'drawer' and focused:
-            points = [x['properties']['display_point']['coordinates'] for x in focused]
-            f['geometry'] = {'type':'Point','coordinates':[sum(q[i] for q in points)/len(points) for i in range(2)]}
+            pairs = [(x, stops_by_fixture.get(x['id'])) for x in focused]
+            pairs = [(x, stop) for x, stop in pairs if stop]
+            points = [face_point(x, stop['geometry']['coordinates']) for x, stop in pairs]
+            viewing_points = [stop['geometry']['coordinates'] for _, stop in pairs]
+            if points:
+                location = [sum(q[i] for q in points)/len(points) for i in range(2)]
+                viewing = [sum(q[i] for q in viewing_points)/len(viewing_points) for i in range(2)]
+                f['geometry'] = {'type':'Point','coordinates':location}
+                p['marker_bearing'] = bearing(location, viewing)
             p.pop('display_point', None)
-            p['location_review_status'] = 'derived_fixture_display_position'
+            p['location_review_status'] = 'derived_drawer_face'
         keys = p.get('fixture_alt_names', []) or [p.get('route_fixture_id') or p.get('alt_name',{}).get('en')]
         p['navigation_point_ids'] = list(dict.fromkeys(i for key in keys for i in access.get(key, [])))
         p['stopping_point_ids'] = [stops_by_fixture[x['id']]['id'] for x in focused if x['id'] in stops_by_fixture]
+        p.pop('marker_label', None)
         for field in ['amenity_id','amenity_ids','amenity_alt_names']:
             p.pop(field,None)
     for name,collection in data.items():

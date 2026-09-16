@@ -39,4 +39,14 @@ test('exhibit migration separates services, fixture content and stopping points'
     assert.equal(relatedExhibitsForFeature(floor,collection).length,1);
     assert.equal(relatedExhibitsForFeature(fixture,collection).length,1);
   }
+  for (const exhibit of exhibits.features.filter(f => ['window','shadowbox'].includes(f.properties.exhibit_type))) {
+    assert.ok(Number.isFinite(exhibit.properties.marker_bearing));
+    assert.equal(exhibit.properties.marker_label, undefined);
+  }
+  for (const drawer of exhibits.features.filter(f => f.properties.exhibit_type === 'drawer')) {
+    assert.ok(Number.isFinite(drawer.properties.marker_bearing));
+    assert.equal(drawer.properties.location_review_status, 'derived_drawer_face');
+    const focused = drawer.properties.fixture_ids.map(id => fixtures.features.find(f => f.id === id));
+    assert.equal(focused.some(f => JSON.stringify(f.properties.display_point.coordinates) === JSON.stringify(drawer.geometry.coordinates)), false);
+  }
 });

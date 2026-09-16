@@ -8,6 +8,7 @@ if (!basePath.startsWith("/") || basePath.endsWith("/")) {
 const nextConfig: NextConfig = {
   output: "standalone",
   basePath,
+  allowedDevOrigins: ["localhost", "127.0.0.1"],
 };
 
 export default nextConfig;
