@@ -121,3 +121,19 @@ button { color: inherit; }
   .locate-button { top: 74px; }
 }
 @media (prefers-reduced-motion: reduce) { .sidebar { transition: none; } }
+
+/* Search and route endpoints share one place picker. */
+.sidebar .route-panel { padding-top: 0; }
+.route-endpoint { border-bottom: 1px solid var(--line); }
+.route-endpoint.active { border-color: var(--accent); background: #edf7f5; }
+.endpoint-select { border: 0; background: transparent; padding: 0; text-align: left; cursor: pointer; min-width: 0; }
+.search-modes { display: flex; gap: 5px; margin: 10px 0 6px; }
+.search-modes button { flex: 1; border: 1px solid var(--line); background: white; padding: 5px; cursor: pointer; font-size: 11px; }
+.search-modes button[aria-pressed="true"] { color: white; background: var(--accent); }
+.search-results { position: static; margin-top: 5px; max-height: 340px; overflow: auto; }
+.result-route-actions { display: flex; }
+.result-route-actions button { display: block; width: 50%; font-size: 10px; color: var(--accent); }
+.unroutable-note { display: block; padding: 0 10px 7px; font-size: 10px; }
+
+.sidebar .place-search { padding-top: 0; position: sticky; top: -12px; z-index: 2; background: #fff; padding-bottom: 8px; }
+.route-endpoint .endpoint-select { cursor: default; }

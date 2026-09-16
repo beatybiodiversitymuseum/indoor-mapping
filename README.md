@@ -79,6 +79,10 @@ standalone artifact. The managed host does not need the repository or GitHub
 access. Inventory owns host placement and `APP_HOST`/`APP_PORT`; the repository
 owns installation, readiness, and the default release root. The
 deployed process remains bound to loopback and is exposed only through nginx.
+`deploy/install.sh` initializes once and delegates later deployments to
+`deploy/update.sh`; this stateless frontend's `deploy/initialize.sh` is a no-op.
+Explicit `install.sh --reinstall` repeats initialization without changing map
+data. Normal updates replace only the immutable application release.
 The manifest adapters are the only production deployment route; the former
 checkout-based deploy, update, and readiness scripts have been
 removed.

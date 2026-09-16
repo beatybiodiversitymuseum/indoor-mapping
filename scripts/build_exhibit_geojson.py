@@ -381,7 +381,7 @@ def related_amenities(alt_names: list[str], amenity_by_alt: dict[str, dict[str, 
 
 def main() -> int:
     fixtures = load_json(GEOJSON_DIR / "fixture.geojson")["features"]
-    amenities = load_json(GEOJSON_DIR / "amenity.geojson")["features"]
+    amenities = load_json(GEOJSON_DIR / "amenity.geojson")["features"] + [f for f in load_json(GEOJSON_DIR / "navigation.geojson")["features"] if f["properties"].get("wayfinding_type") == "viewing_stop"]
     fixture_by_alt = {get_alt_name(feature): feature for feature in fixtures if get_alt_name(feature)}
     amenity_by_alt = {get_alt_name(feature): feature for feature in amenities if get_alt_name(feature)}
     labels_reference, label_public_order = parse_labels_reference()
@@ -637,6 +637,12 @@ def main() -> int:
             },
         ))
 
+    # Ticket-derived permanent exhibits have a separate source and survive archive rebuilds.
+    existing_path = GEOJSON_DIR / "exhibit.geojson"
+    if existing_path.exists():
+        features.extend(feature for feature in load_json(existing_path)['features']
+                        if feature.get('properties', {}).get('source_issue_number') is not None or feature.get('properties', {}).get('exhibit_type') == 'floor')
+
     collection = {
         "type": "FeatureCollection",
         "features": sorted(features, key=lambda feature: feature["id"]),
@@ -654,11 +660,11 @@ def main() -> int:
         "unresolved_count": len(report),
         "accepted_by_type": {
             exhibit_type: sum(1 for feature in features if feature["properties"]["exhibit_type"] == exhibit_type)
-            for exhibit_type in ["label", "drawer", "shadowbox"]
+            for exhibit_type in ["label", "drawer", "shadowbox", "window"]
         },
         "archived_by_type": {
             exhibit_type: sum(1 for feature in archive_features if feature["properties"]["exhibit_type"] == exhibit_type)
-            for exhibit_type in ["label", "drawer", "shadowbox"]
+            for exhibit_type in ["label", "drawer", "shadowbox", "window"]
         },
         "unresolved_by_reason": {
             reason: sum(1 for item in report if item["reason"] == reason)
@@ -668,6 +674,8 @@ def main() -> int:
     }
     write_json(REPORT_DIR / "summary.json", summary)
     print(json.dumps(summary, indent=2))
+    from migrate_exhibit_locations import migrate
+    migrate()
     return 0
 
 

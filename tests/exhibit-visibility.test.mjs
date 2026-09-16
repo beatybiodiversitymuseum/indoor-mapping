@@ -1,0 +1,26 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { exhibitMarkerVisible } from '../app/exhibit-visibility.js';
+import { relatedExhibitsForFeature } from '../app/exhibits.js';
+const read = name => JSON.parse(readFileSync(new URL(`../geojson/${name}.geojson`, import.meta.url)));
+const exhibits = read('exhibit');
+test('labels are selection-only while windows, drawers, shadowboxes and floors remain visible', () => {
+  for (const feature of exhibits.features) {
+    assert.equal(exhibitMarkerVisible(feature), feature.properties.exhibit_type !== 'label');
+    assert.equal(exhibitMarkerVisible(feature, feature.id), true);
+  }
+});
+test('hiding label markers retains cabinet associations and record content', () => {
+  const fixture = read('fixture').features.find(f => f.properties.alt_name?.en === 'col_46_cab_12');
+  const related = relatedExhibitsForFeature(fixture, exhibits);
+  assert.ok(related.some(f => f.properties.exhibit_type === 'label'));
+  assert.ok(related.some(f => f.properties.exhibit_type === 'window'));
+  assert.equal(related.filter(f => exhibitMarkerVisible(f)).length, 1);
+});
+test('individual exhibits can opt into selection-only without losing their selected marker', () => {
+  const feature = { id: 'artwork', feature_type: 'exhibit', properties: { exhibit_type: 'display', map_display: 'selection-only' } };
+  assert.equal(exhibitMarkerVisible(feature), false);
+  assert.equal(exhibitMarkerVisible(feature, 'artwork'), true);
+  assert.equal(exhibitMarkerVisible({ ...feature, properties: { exhibit_type: 'label', map_display: 'always' } }), true);
+});

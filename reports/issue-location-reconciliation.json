@@ -1,0 +1,3744 @@
+{
+  "imported_issue_locations": [
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302
+  ],
+  "corrections": [
+    {
+      "issue": 81,
+      "name": "Cabinet 38.22 Window",
+      "original_coordinates": [
+        -123.2503866,
+        49.2635327
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "bea9eebb-d74e-4b0b-91f6-0f7d98e26119",
+        "8192657a-6757-47c2-9f72-2201476bb32a"
+      ],
+      "distance_meters": 0.716,
+      "coordinates": [
+        -123.25037796378764,
+        49.263535793891194
+      ]
+    },
+    {
+      "issue": 82,
+      "name": "Cabinet 38.30 Window",
+      "original_coordinates": [
+        -123.2504458,
+        49.2636071
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "5b9004d0-d447-4285-a409-397ba0871066",
+        "d25605cb-123f-4090-9a21-1daf4bd4ee46"
+      ],
+      "distance_meters": 0.712,
+      "coordinates": [
+        -123.2504368975456,
+        49.26360975483772
+      ]
+    },
+    {
+      "issue": 83,
+      "name": "Cabinet 37.03 Window",
+      "original_coordinates": [
+        -123.2504538,
+        49.2636041
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "5f3eadfa-bb3f-476a-887c-482ad194fdb8",
+        "b6023946-0c0d-4012-b747-d6545df8cd7a"
+      ],
+      "distance_meters": 0.697,
+      "coordinates": [
+        -123.25046211238784,
+        49.263600981124675
+      ]
+    },
+    {
+      "issue": 84,
+      "name": "Cabinet 33.19 Window",
+      "original_coordinates": [
+        -123.2504346,
+        49.2634794
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "ad99feea-dd12-49b8-a528-9ccfa228ddab",
+        "bef98fb6-a3b1-4ac5-8686-8372cddca2cf"
+      ],
+      "distance_meters": 0.71,
+      "coordinates": [
+        -123.25044316632872,
+        49.26347634464176
+      ]
+    },
+    {
+      "issue": 85,
+      "name": "Cabinet 30.10 Window",
+      "original_coordinates": [
+        -123.2504769,
+        49.2634444
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "66ea473e-475b-4232-94ed-ab6ca5782186",
+        "65459a6e-22c9-4fb1-8ecd-56e4940068d3"
+      ],
+      "distance_meters": 0.711,
+      "coordinates": [
+        -123.25046827963163,
+        49.263447419919636
+      ]
+    },
+    {
+      "issue": 86,
+      "name": "Cabinet 25.09 Window",
+      "original_coordinates": [
+        -123.2505885,
+        49.263471
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "bf7f4455-9dfb-4402-aa7e-b4166b4a02f7",
+        "ced034ed-a86f-4069-bc69-897024ad943f"
+      ],
+      "distance_meters": 0.715,
+      "coordinates": [
+        -123.25059712305338,
+        49.26346791324747
+      ]
+    },
+    {
+      "issue": 87,
+      "name": "Cabinet 16.09 Window",
+      "original_coordinates": [
+        -123.250692,
+        49.2633612
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "dc781b35-1aea-416c-b543-3cc3dd24a0d1",
+        "10c7b5c0-4f7a-44a5-92bf-2558a8e9b4a1"
+      ],
+      "distance_meters": 0.715,
+      "coordinates": [
+        -123.25068343664528,
+        49.26336435646906
+      ]
+    },
+    {
+      "issue": 88,
+      "name": "Cabinet 15.06 Window",
+      "original_coordinates": [
+        -123.2507791,
+        49.2634579
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "909c1a17-f9cb-4ac1-9fb6-97bf6f6bb48f",
+        "3525b5c5-cfc8-4d29-a303-4f2034884d23"
+      ],
+      "distance_meters": 0.707,
+      "coordinates": [
+        -123.25078763296479,
+        49.26345485163933
+      ]
+    },
+    {
+      "issue": 89,
+      "name": "Cabinet 12.13 Window",
+      "original_coordinates": [
+        -123.2507981,
+        49.2633937
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "1db29b59-5825-4af2-b6be-16ce8ba874ef",
+        "fdb97d2b-c321-4c5b-a121-ba2441cb2670"
+      ],
+      "distance_meters": 0.697,
+      "coordinates": [
+        -123.25078972717188,
+        49.263396741728286
+      ]
+    },
+    {
+      "issue": 90,
+      "name": "Cabinet 12.05 Window",
+      "original_coordinates": [
+        -123.2507297,
+        49.2633074
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "ca6a3d7d-66f8-4a89-a36a-22b512b416c3",
+        "c8160349-9b5e-4d12-b9e0-405b63ad221f"
+      ],
+      "distance_meters": 0.72,
+      "coordinates": [
+        -123.25072088092374,
+        49.26331034067545
+      ]
+    },
+    {
+      "issue": 91,
+      "name": "Cabinet 12.02 Window",
+      "original_coordinates": [
+        -123.2507148,
+        49.2632884
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "eb38681a-48da-40e5-8794-68f64478dbe4",
+        "291c3378-699b-451e-a3cc-d704458a06f7"
+      ],
+      "distance_meters": 0.737,
+      "coordinates": [
+        -123.25070553921084,
+        49.26329108702221
+      ]
+    },
+    {
+      "issue": 92,
+      "name": "Cabinet 50.01 Window",
+      "original_coordinates": [
+        -123.250111,
+        49.2634898
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "3369d856-1d5c-42a0-a451-154f3ac71797",
+        "646c1990-ee2f-4392-b043-bf6ec221ed6b"
+      ],
+      "distance_meters": 0.711,
+      "coordinates": [
+        -123.25010234850288,
+        49.26349277578216
+      ]
+    },
+    {
+      "issue": 93,
+      "name": "Cabinet 50.06 Window",
+      "original_coordinates": [
+        -123.2501367,
+        49.263522
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "e601df58-d8c0-4670-bd5a-57397107a9f0",
+        "8e3d0337-8bf7-4bae-98a0-00cc499c1813"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.25012791795498,
+        49.2635248651549
+      ]
+    },
+    {
+      "issue": 94,
+      "name": "Cabinet 50.07 Window",
+      "original_coordinates": [
+        -123.2501418,
+        49.2635286
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2be2c2dc-3931-41b5-a56d-3fbf062cc7c0",
+        "dc9b8585-da47-4297-954b-8a467271fa1b"
+      ],
+      "distance_meters": 0.704,
+      "coordinates": [
+        -123.25013303184619,
+        49.26353128302757
+      ]
+    },
+    {
+      "issue": 95,
+      "name": "Cabinet 50.15 Window",
+      "original_coordinates": [
+        -123.2502106,
+        49.2636151
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "99efd930-815e-4610-aabb-bf26e0a442bf",
+        "3fe36585-7a17-453b-bd50-011cf1ec2290"
+      ],
+      "distance_meters": 0.697,
+      "coordinates": [
+        -123.25020187791463,
+        49.26361768393085
+      ]
+    },
+    {
+      "issue": 96,
+      "name": "Cabinet 50.16 Window",
+      "original_coordinates": [
+        -123.2502158,
+        49.2636213
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "28e7ca43-2436-44e2-83e6-ac473d586ff9",
+        "b7b1f50b-cc03-4205-b4fb-2421d7083ec3"
+      ],
+      "distance_meters": 0.713,
+      "coordinates": [
+        -123.25020699180979,
+        49.26362410179441
+      ]
+    },
+    {
+      "issue": 97,
+      "name": "Cabinet 50.17 Window",
+      "original_coordinates": [
+        -123.250221,
+        49.2636278
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "ceafedec-7852-4efa-8782-0fa9e25c5248",
+        "ac1a43e6-be5e-4ea9-974b-2135a4a219ad"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.25021210570515,
+        49.263630519657426
+      ]
+    },
+    {
+      "issue": 98,
+      "name": "Cabinet 50.18 Window",
+      "original_coordinates": [
+        -123.2502259,
+        49.2636344
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "e2396009-1172-43d2-ae08-10e68a1b1539",
+        "266b78ec-3d47-4d40-aa2f-79619bce4218"
+      ],
+      "distance_meters": 0.692,
+      "coordinates": [
+        -123.2502172196008,
+        49.26363693751977
+      ]
+    },
+    {
+      "issue": 99,
+      "name": "Cabinet 49.06 Window",
+      "original_coordinates": [
+        -123.250249,
+        49.2636504
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "6c5dfe78-fdf3-4a93-85d5-253fdc8783fb",
+        "7a9daf18-7449-4dcf-80ba-3abdf0a80a5b"
+      ],
+      "distance_meters": 0.719,
+      "coordinates": [
+        -123.25025777615866,
+        49.26364741741584
+      ]
+    },
+    {
+      "issue": 100,
+      "name": "Cabinet 49.07 Window",
+      "original_coordinates": [
+        -123.2502443,
+        49.2636441
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "646d4551-834b-40aa-880b-3510f79199ca",
+        "d5034fc2-fda6-47c4-badc-489b30d4bb50"
+      ],
+      "distance_meters": 0.699,
+      "coordinates": [
+        -123.25025266226163,
+        49.26364099955496
+      ]
+    },
+    {
+      "issue": 101,
+      "name": "Cabinet 49.08 Window Upper",
+      "original_coordinates": [
+        -123.2502392,
+        49.2636378
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "9713199a-cc52-437e-a5ee-17730eee5b19",
+        "8f029461-5d31-4c4e-b20f-25d6681370e7"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25024754836483,
+        49.26363458169341
+      ]
+    },
+    {
+      "issue": 102,
+      "name": "Cabinet 49.08 Window Lower",
+      "original_coordinates": [
+        -123.2502392,
+        49.2636378
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "9713199a-cc52-437e-a5ee-17730eee5b19",
+        "8f029461-5d31-4c4e-b20f-25d6681370e7"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25024754836483,
+        49.26363458169341
+      ]
+    },
+    {
+      "issue": 103,
+      "name": "Cabinet 49.09 Window Upper",
+      "original_coordinates": [
+        -123.2502337,
+        49.2636314
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "18db705c-7218-4147-9ddb-6f4ab62ea4b7",
+        "a1efb3d3-1126-4524-8a92-b413c12a260c"
+      ],
+      "distance_meters": 0.73,
+      "coordinates": [
+        -123.25024243446828,
+        49.26362816383127
+      ]
+    },
+    {
+      "issue": 104,
+      "name": "Cabinet 49.09 Window Lower",
+      "original_coordinates": [
+        -123.2502337,
+        49.2636314
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "18db705c-7218-4147-9ddb-6f4ab62ea4b7",
+        "a1efb3d3-1126-4524-8a92-b413c12a260c"
+      ],
+      "distance_meters": 0.73,
+      "coordinates": [
+        -123.25024243446828,
+        49.26362816383127
+      ]
+    },
+    {
+      "issue": 105,
+      "name": "Cabinet 49.10 Window",
+      "original_coordinates": [
+        -123.2502284,
+        49.2636247
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "764eef78-2eca-4219-af72-02115bb9153d",
+        "e7ed00db-286e-49b6-b601-bda7e19feb29"
+      ],
+      "distance_meters": 0.727,
+      "coordinates": [
+        -123.25023732057207,
+        49.26362174596847
+      ]
+    },
+    {
+      "issue": 106,
+      "name": "Cabinet 49.11 Window",
+      "original_coordinates": [
+        -123.2502241,
+        49.2636186
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a78a7ce7-4dd3-4fe3-9722-4d705caef619",
+        "02ac3b5a-28b1-4771-9dc8-b326269a6b8c"
+      ],
+      "distance_meters": 0.693,
+      "coordinates": [
+        -123.2502322066761,
+        49.26361532810509
+      ]
+    },
+    {
+      "issue": 107,
+      "name": "Cabinet 49.19 Window",
+      "original_coordinates": [
+        -123.2501827,
+        49.2635672
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a9f678fc-1f10-4696-8901-22fba6ee69a9",
+        "5bab2b29-7c58-48ff-9909-f11ec710a450"
+      ],
+      "distance_meters": 0.72,
+      "coordinates": [
+        -123.25019129551794,
+        49.263563985175345
+      ]
+    },
+    {
+      "issue": 108,
+      "name": "Cabinet 49.20 Window Upper",
+      "original_coordinates": [
+        -123.2501495,
+        49.2635258
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "b3a0c1d4-3f3a-4c8f-9712-92f765f9b49f",
+        "09a5a8de-aac8-45d9-8762-78e92e15d81f"
+      ],
+      "distance_meters": 0.734,
+      "coordinates": [
+        -123.25015824670403,
+        49.26352250933219
+      ]
+    },
+    {
+      "issue": 109,
+      "name": "Cabinet 49.20 Window Lower",
+      "original_coordinates": [
+        -123.2501495,
+        49.2635258
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "b3a0c1d4-3f3a-4c8f-9712-92f765f9b49f",
+        "09a5a8de-aac8-45d9-8762-78e92e15d81f"
+      ],
+      "distance_meters": 0.734,
+      "coordinates": [
+        -123.25015824670403,
+        49.26352250933219
+      ]
+    },
+    {
+      "issue": 110,
+      "name": "Cabinet 49.25 Window",
+      "original_coordinates": [
+        -123.2501242,
+        49.2634937
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "bac29c36-44fd-41a7-a07c-642f131b15b9",
+        "df8cf044-084f-45ca-aea1-f2d93065df00"
+      ],
+      "distance_meters": 0.717,
+      "coordinates": [
+        -123.2501326772477,
+        49.263490419960526
+      ]
+    },
+    {
+      "issue": 111,
+      "name": "Cabinet 48.01 Window",
+      "original_coordinates": [
+        -123.2501422,
+        49.2634789
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "62922994-c54d-453a-9954-840e48f643c7",
+        "78381c7a-1b7f-4d72-b35f-309bc280d6ce"
+      ],
+      "distance_meters": 0.692,
+      "coordinates": [
+        -123.25013380923798,
+        49.26348182878248
+      ]
+    },
+    {
+      "issue": 112,
+      "name": "Cabinet 48.02 Window",
+      "original_coordinates": [
+        -123.2501476,
+        49.2634854
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "216a1ecc-2b44-4eea-a5a1-a980ad0a4b01",
+        "258acd9b-9db5-4c66-b036-58209e6e9a89"
+      ],
+      "distance_meters": 0.706,
+      "coordinates": [
+        -123.2501389231286,
+        49.26348824665878
+      ]
+    },
+    {
+      "issue": 113,
+      "name": "Cabinet 48.03 Window",
+      "original_coordinates": [
+        -123.2501529,
+        49.2634917
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "ecdd1efc-2eb8-4339-90f3-f2a349747a7c",
+        "183e45ed-83e5-475e-a17d-82935482a3a5"
+      ],
+      "distance_meters": 0.724,
+      "coordinates": [
+        -123.25014403701944,
+        49.26349466453452
+      ]
+    },
+    {
+      "issue": 114,
+      "name": "Cabinet 48.12 Window",
+      "original_coordinates": [
+        -123.2502267,
+        49.2635847
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "725457a1-44f1-4f2e-ab7e-301753f86502",
+        "6728a7b6-bd7a-43c8-9f56-8160b96b1a6d"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25021813214703,
+        49.26358765298028
+      ]
+    },
+    {
+      "issue": 115,
+      "name": "Cabinet 48.16 Window Upper",
+      "original_coordinates": [
+        -123.2502473,
+        49.2636104
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f55e9ba5-f5f8-454b-8828-73addb66cb5d",
+        "da40291e-4abd-4150-9138-550e12e0978d"
+      ],
+      "distance_meters": 0.712,
+      "coordinates": [
+        -123.25023858772886,
+        49.26361332444053
+      ]
+    },
+    {
+      "issue": 116,
+      "name": "Cabinet 48.16 Window Lower",
+      "original_coordinates": [
+        -123.2502473,
+        49.2636104
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f55e9ba5-f5f8-454b-8828-73addb66cb5d",
+        "da40291e-4abd-4150-9138-550e12e0978d"
+      ],
+      "distance_meters": 0.712,
+      "coordinates": [
+        -123.25023858772886,
+        49.26361332444053
+      ]
+    },
+    {
+      "issue": 117,
+      "name": "Cabinet 48.17 Window Upper",
+      "original_coordinates": [
+        -123.2502726,
+        49.2636421
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "8242fbc2-8059-4067-9a63-858c2a690a21",
+        "6c123e1f-6742-4653-9dc1-45422b06e168"
+      ],
+      "distance_meters": 0.715,
+      "coordinates": [
+        -123.2502640220431,
+        49.26364524411662
+      ]
+    },
+    {
+      "issue": 118,
+      "name": "Cabinet 48.17 Window Lower",
+      "original_coordinates": [
+        -123.250278,
+        49.263649
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "8242fbc2-8059-4067-9a63-858c2a690a21",
+        "6c123e1f-6742-4653-9dc1-45422b06e168"
+      ],
+      "distance_meters": 1.099,
+      "coordinates": [
+        -123.2502640220431,
+        49.26364524411662
+      ]
+    },
+    {
+      "issue": 120,
+      "name": "Cabinet 48.20 Window",
+      "original_coordinates": [
+        -123.2502884,
+        49.2636619
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "fcd15c7a-31f6-4aaa-8b21-20732f695a80",
+        "2742e09d-ea09-4084-9f65-2cf5526f10e9"
+      ],
+      "distance_meters": 0.718,
+      "coordinates": [
+        -123.25027936373638,
+        49.26366449769586
+      ]
+    },
+    {
+      "issue": 121,
+      "name": "Cabinet 48.21 Window",
+      "original_coordinates": [
+        -123.2502933,
+        49.2636682
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "7d4b058e-2826-4288-b800-51d43188e1ee",
+        "7b028c29-84b4-43f8-a136-995224126e7b"
+      ],
+      "distance_meters": 0.709,
+      "coordinates": [
+        -123.25028447763465,
+        49.26367091555438
+      ]
+    },
+    {
+      "issue": 122,
+      "name": "Cabinet 47.02 Window",
+      "original_coordinates": [
+        -123.2503015,
+        49.2636655
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "cfb9ef83-b238-4c0f-9b1e-1cc4ca49f830",
+        "4eaae3b5-7a09-48f7-a852-005966701f61"
+      ],
+      "distance_meters": 0.703,
+      "coordinates": [
+        -123.25030969250143,
+        49.26366214186428
+      ]
+    },
+    {
+      "issue": 123,
+      "name": "Cabinet 47.06 Window",
+      "original_coordinates": [
+        -123.2502809,
+        49.2636395
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "88e1243b-9ecc-48ac-ab9b-80f92516141d",
+        "7fb5bee5-4563-4fc0-96e3-ad55d2e16ec3"
+      ],
+      "distance_meters": 0.694,
+      "coordinates": [
+        -123.25028923690758,
+        49.26363647042483
+      ]
+    },
+    {
+      "issue": 124,
+      "name": "Cabinet 47.07 Window",
+      "original_coordinates": [
+        -123.2502555,
+        49.2636077
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "5c88abd0-b45b-4fc3-afad-05b601a40483",
+        "aa625fa9-0793-42ab-a492-86973123469d"
+      ],
+      "distance_meters": 0.698,
+      "coordinates": [
+        -123.2502638025904,
+        49.26360455074668
+      ]
+    },
+    {
+      "issue": 125,
+      "name": "Cabinet 47.16 Window",
+      "original_coordinates": [
+        -123.2501813,
+        49.2635148
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "e04374a5-bbb4-4208-8cb3-a913503f02b8",
+        "5fc52100-10d9-42dc-a814-9de21572f516"
+      ],
+      "distance_meters": 0.71,
+      "coordinates": [
+        -123.25018970743872,
+        49.26351156233114
+      ]
+    },
+    {
+      "issue": 126,
+      "name": "Cabinet 47.17 Window",
+      "original_coordinates": [
+        -123.2501762,
+        49.2635084
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "74284e01-5447-4abe-93ab-5665fc9f2a3f",
+        "b9d062f9-4d72-4a17-a74a-a4af2a39c06e"
+      ],
+      "distance_meters": 0.71,
+      "coordinates": [
+        -123.2501845935462,
+        49.26350514445751
+      ]
+    },
+    {
+      "issue": 127,
+      "name": "Cabinet 47.18 Window",
+      "original_coordinates": [
+        -123.250171,
+        49.2635019
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "363f5026-83ec-42de-86ec-e52f9c2bc423",
+        "4a21123e-d338-4821-80d9-4b46d8b48b50"
+      ],
+      "distance_meters": 0.711,
+      "coordinates": [
+        -123.25017947965392,
+        49.26349872658331
+      ]
+    },
+    {
+      "issue": 128,
+      "name": "Cabinet 46.01 Window",
+      "original_coordinates": [
+        -123.250174,
+        49.2634681
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "1912b4fc-ccee-4384-876f-8b0be1edc6e8",
+        "7bedb4bc-a517-4b02-ac9a-ffd648028a34"
+      ],
+      "distance_meters": 0.706,
+      "coordinates": [
+        -123.25016526996711,
+        49.26347088177714
+      ]
+    },
+    {
+      "issue": 129,
+      "name": "Cabinet 46.02 Window",
+      "original_coordinates": [
+        -123.2501788,
+        49.2634743
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2524461a-fcc4-400c-9822-32337d578481",
+        "a5c73356-be16-4920-8944-bcc534bfe372"
+      ],
+      "distance_meters": 0.697,
+      "coordinates": [
+        -123.25017038385845,
+        49.263477299653964
+      ]
+    },
+    {
+      "issue": 130,
+      "name": "Cabinet 46.03 Window",
+      "original_coordinates": [
+        -123.2501838,
+        49.2634808
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "69c0e4b2-092f-4172-b4f8-d6cd07362be3",
+        "c0cd088b-2d3a-4541-9c5b-1e2ab1c78f6a"
+      ],
+      "distance_meters": 0.686,
+      "coordinates": [
+        -123.25017549775004,
+        49.26348371753019
+      ]
+    },
+    {
+      "issue": 131,
+      "name": "Cabinet 46.07 Window",
+      "original_coordinates": [
+        -123.2502045,
+        49.2635068
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "1045ea00-48e8-4fb0-bd53-52a5afc75c2b",
+        "7a7773f7-923c-4944-96cd-95425b4ba0db"
+      ],
+      "distance_meters": 0.685,
+      "coordinates": [
+        -123.25019595331914,
+        49.26350938902876
+      ]
+    },
+    {
+      "issue": 132,
+      "name": "Cabinet 46.08 Window",
+      "original_coordinates": [
+        -123.2502376,
+        49.263548
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "6552b031-6c39-4c01-9c31-1998f138708b",
+        "320e8e3e-09d7-460e-9fc6-604a1faf39fa"
+      ],
+      "distance_meters": 0.702,
+      "coordinates": [
+        -123.25022913730776,
+        49.26355103451122
+      ]
+    },
+    {
+      "issue": 133,
+      "name": "Cabinet 46.11 Window",
+      "original_coordinates": [
+        -123.2502531,
+        49.2635674
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "ca2a5159-926f-4ca0-9b8d-792519aaeeb3",
+        "7939e8ae-4fa6-4aae-822a-a2bc910986f7"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25024447899267,
+        49.26357028811638
+      ]
+    },
+    {
+      "issue": 134,
+      "name": "Cabinet 46.12 Window",
+      "original_coordinates": [
+        -123.250258,
+        49.2635738
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "e895b953-fafa-45a9-bcf1-dee3cb2da1ad",
+        "900fb96a-4f06-4b67-b61f-f661e809b19e"
+      ],
+      "distance_meters": 0.692,
+      "coordinates": [
+        -123.25024959288818,
+        49.26357670598352
+      ]
+    },
+    {
+      "issue": 135,
+      "name": "Cabinet 46.16 Window",
+      "original_coordinates": [
+        -123.2502786,
+        49.2635993
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "7a9ca087-f372-4cb0-ad84-a1e4de579db3",
+        "1f3d7de5-6435-422f-8a27-e558dce01e2e"
+      ],
+      "distance_meters": 0.71,
+      "coordinates": [
+        -123.25027004847297,
+        49.26360237744581
+      ]
+    },
+    {
+      "issue": 136,
+      "name": "Cabinet 46.17 Window Upper",
+      "original_coordinates": [
+        -123.2502837,
+        49.2636058
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f4355727-b821-4716-be14-bf22807d0f68",
+        "2ba1e986-2c1d-44c9-8f3f-f5f6cbf31664"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25027516236982,
+        49.26360879530983
+      ]
+    },
+    {
+      "issue": 137,
+      "name": "Cabinet 46.17 Window Lower",
+      "original_coordinates": [
+        -123.2502837,
+        49.2636058
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f4355727-b821-4716-be14-bf22807d0f68",
+        "2ba1e986-2c1d-44c9-8f3f-f5f6cbf31664"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25027516236982,
+        49.26360879530983
+      ]
+    },
+    {
+      "issue": 139,
+      "name": "Cabinet 46.18 Window Lower",
+      "original_coordinates": [
+        -123.2502993,
+        49.2636251
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "05141cda-24a7-4f50-bb3e-0466122d0a42",
+        "74e70e01-5243-43f8-b794-bc5ae497620a"
+      ],
+      "distance_meters": 0.72,
+      "coordinates": [
+        -123.25029036889289,
+        49.26362787926297
+      ]
+    },
+    {
+      "issue": 140,
+      "name": "Cabinet 46.19 Window",
+      "original_coordinates": [
+        -123.250304,
+        49.2636313
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "3c33a43a-d3e3-4b95-88da-be30de656d35",
+        "3441fa65-c734-490b-96a6-0e77f84cdac3"
+      ],
+      "distance_meters": 0.704,
+      "coordinates": [
+        -123.25029548279083,
+        49.2636342971245
+      ]
+    },
+    {
+      "issue": 141,
+      "name": "Cabinet 45.01 Window",
+      "original_coordinates": [
+        -123.2503378,
+        49.2636609
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "c9046fda-8952-47c8-b428-8ce5f1c0338f",
+        "7a32b574-a30b-4308-be05-92e67c2c8ea0"
+      ],
+      "distance_meters": 0.716,
+      "coordinates": [
+        -123.25034626714717,
+        49.26365761272854
+      ]
+    },
+    {
+      "issue": 142,
+      "name": "Cabinet 45.02 Window",
+      "original_coordinates": [
+        -123.2503321,
+        49.2636544
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "4ed41007-8984-4942-84a5-b6437c422d77",
+        "ea6c42fd-7f54-40b8-9a2b-6a824983fa4c"
+      ],
+      "distance_meters": 0.749,
+      "coordinates": [
+        -123.25034115324726,
+        49.26365119486973
+      ]
+    },
+    {
+      "issue": 143,
+      "name": "Cabinet 45.03 Window",
+      "original_coordinates": [
+        -123.2503275,
+        49.2636479
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "59d2ce08-bed7-470c-9252-6e8266de4654",
+        "41ada690-ecfe-4f96-954d-2e49f6985c1f"
+      ],
+      "distance_meters": 0.712,
+      "coordinates": [
+        -123.25033603934769,
+        49.26364477701028
+      ]
+    },
+    {
+      "issue": 144,
+      "name": "Cabinet 45.07 Window",
+      "original_coordinates": [
+        -123.2503071,
+        49.2636224
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "721ecb13-7ef9-495c-8b66-5dd3661ba552",
+        "7fccf6d6-27c4-40b0-95d8-2a7b356075df"
+      ],
+      "distance_meters": 0.718,
+      "coordinates": [
+        -123.25031558375196,
+        49.26361910556632
+      ]
+    },
+    {
+      "issue": 145,
+      "name": "Cabinet 45.08 Window",
+      "original_coordinates": [
+        -123.2502919,
+        49.263603
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "3af22dea-61b6-4c09-9020-2ea167ba173e",
+        "1ac22974-91e9-4ab5-9309-63efdbc6f12f"
+      ],
+      "distance_meters": 0.7,
+      "coordinates": [
+        -123.25030037722712,
+        49.26360002161191
+      ]
+    },
+    {
+      "issue": 146,
+      "name": "Cabinet 45.15 Window",
+      "original_coordinates": [
+        -123.2502559,
+        49.2635582
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "24e87738-767e-43c8-9fd7-dc7069f0faa8",
+        "d8923c27-c2f4-4ad6-b6ff-4b02d42f6da4"
+      ],
+      "distance_meters": 0.72,
+      "coordinates": [
+        -123.25026457995065,
+        49.2635550965478
+      ]
+    },
+    {
+      "issue": 147,
+      "name": "Cabinet 45.16 Window",
+      "original_coordinates": [
+        -123.2502511,
+        49.2635518
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2104c786-ac04-4516-ac41-0655be664565",
+        "2d89d4d7-ac80-494d-92a3-7de10a73dae6"
+      ],
+      "distance_meters": 0.701,
+      "coordinates": [
+        -123.2502594660551,
+        49.26354867867896
+      ]
+    },
+    {
+      "issue": 148,
+      "name": "Cabinet 45.17 Window",
+      "original_coordinates": [
+        -123.2502456,
+        49.2635452
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "d5754077-9e7d-422a-bd6a-b6aa538b7ce7",
+        "5d3c09d5-c4b9-490e-b215-3cb9a26707b2"
+      ],
+      "distance_meters": 0.716,
+      "coordinates": [
+        -123.2502543521598,
+        49.26354226080956
+      ]
+    },
+    {
+      "issue": 149,
+      "name": "Cabinet 45.22 Window",
+      "original_coordinates": [
+        -123.250192,
+        49.2634778
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "b2624741-f3f2-413a-9729-95ea21598d3c",
+        "eb21cece-304f-472b-804a-df478fe3f220"
+      ],
+      "distance_meters": 0.709,
+      "coordinates": [
+        -123.25020071259594,
+        49.263474943824185
+      ]
+    },
+    {
+      "issue": 150,
+      "name": "Cabinet 45.23 Window",
+      "original_coordinates": [
+        -123.2501871,
+        49.2634716
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "20f2f0d5-3c0e-400c-86ae-33faf462b412",
+        "8e61d5be-a353-41d5-92df-14eb2543e924"
+      ],
+      "distance_meters": 0.706,
+      "coordinates": [
+        -123.25019559870377,
+        49.26346852594752
+      ]
+    },
+    {
+      "issue": 151,
+      "name": "Cabinet 45.24 Window Upper",
+      "original_coordinates": [
+        -123.2501819,
+        49.2634652
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "69cdea92-0e59-485a-ad95-4d2d31acd337",
+        "cab3ddc1-6f93-4da5-9aa8-eef121b6f76a"
+      ],
+      "distance_meters": 0.713,
+      "coordinates": [
+        -123.25019048481185,
+        49.26346210807032
+      ]
+    },
+    {
+      "issue": 152,
+      "name": "Cabinet 45.24 Window Lower",
+      "original_coordinates": [
+        -123.2501819,
+        49.2634652
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "69cdea92-0e59-485a-ad95-4d2d31acd337",
+        "cab3ddc1-6f93-4da5-9aa8-eef121b6f76a"
+      ],
+      "distance_meters": 0.713,
+      "coordinates": [
+        -123.25019048481185,
+        49.26346210807032
+      ]
+    },
+    {
+      "issue": 153,
+      "name": "Cabinet 44.05 Window",
+      "original_coordinates": [
+        -123.250226,
+        49.263483
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "3cfe2e8f-4a4c-42b2-98bd-8dd37e038d52",
+        "9f6a6561-3949-4389-ae40-9c96785abbb1"
+      ],
+      "distance_meters": 0.704,
+      "coordinates": [
+        -123.25021718626012,
+        49.26348560627186
+      ]
+    },
+    {
+      "issue": 154,
+      "name": "Cabinet 44.06 Window",
+      "original_coordinates": [
+        -123.250231,
+        49.2634893
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "dcd6884f-c6c3-42b6-b617-3cd39993770d",
+        "e25cbbbc-f102-4eff-b78f-704ba8280410"
+      ],
+      "distance_meters": 0.702,
+      "coordinates": [
+        -123.25022230015328,
+        49.26349202414668
+      ]
+    },
+    {
+      "issue": 155,
+      "name": "Cabinet 44.07 Window",
+      "original_coordinates": [
+        -123.250236,
+        49.2634957
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "35e3e5cf-a113-45d6-9f64-ba11c3a01617",
+        "3c2b8f60-d56b-41f9-9d85-0d2730f796fc"
+      ],
+      "distance_meters": 0.695,
+      "coordinates": [
+        -123.25022741404666,
+        49.263498442020946
+      ]
+    },
+    {
+      "issue": 156,
+      "name": "Cabinet 44.08 Window",
+      "original_coordinates": [
+        -123.2502695,
+        49.2635375
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "0f09f532-47cd-494d-abf6-3c94a39b7868",
+        "a72b95af-34f5-4857-b3db-fbd42529c31f"
+      ],
+      "distance_meters": 0.709,
+      "coordinates": [
+        -123.25026059803999,
+        49.263540087506726
+      ]
+    },
+    {
+      "issue": 157,
+      "name": "Cabinet 44.09 Window",
+      "original_coordinates": [
+        -123.2502743,
+        49.2635432
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "374aa5fa-4ccb-4ce4-b668-d9712394f2b5",
+        "819958ba-dc04-457e-abf0-91e0ec48ca48"
+      ],
+      "distance_meters": 0.725,
+      "coordinates": [
+        -123.25026571193546,
+        49.2635465053763
+      ]
+    },
+    {
+      "issue": 158,
+      "name": "Cabinet 44.10 Window",
+      "original_coordinates": [
+        -123.2502793,
+        49.2635499
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "c70d8041-2468-4280-8ce0-34bdecb90cab",
+        "63e45fed-2be6-4a37-8ff2-a28de66c074e"
+      ],
+      "distance_meters": 0.702,
+      "coordinates": [
+        -123.25027082583117,
+        49.263552923245165
+      ]
+    },
+    {
+      "issue": 159,
+      "name": "Cabinet 44.13 Window",
+      "original_coordinates": [
+        -123.2502951,
+        49.2635693
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "6fe6dd83-c6c7-43cc-b88c-d1460069566d",
+        "6b8db8d8-e219-4f98-9264-2128f1991b15"
+      ],
+      "distance_meters": 0.724,
+      "coordinates": [
+        -123.25028616751987,
+        49.26357217684815
+      ]
+    },
+    {
+      "issue": 160,
+      "name": "Cabinet 44.16 Window",
+      "original_coordinates": [
+        -123.2503103,
+        49.2635885
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "ab6684fa-4f95-43a0-8827-59177ca8b492",
+        "40456a41-1046-4dd3-b3c9-5c3f2bdb69d3"
+      ],
+      "distance_meters": 0.718,
+      "coordinates": [
+        -123.25030150921107,
+        49.26359143044551
+      ]
+    },
+    {
+      "issue": 161,
+      "name": "Cabinet 44.17 Window",
+      "original_coordinates": [
+        -123.2503156,
+        49.2635951
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "57567a5f-2c70-49fd-8c48-a1e6d46cc516",
+        "54f5f282-823e-48ea-94d5-7cbd708ca333"
+      ],
+      "distance_meters": 0.721,
+      "coordinates": [
+        -123.25030662310863,
+        49.26359784831
+      ]
+    },
+    {
+      "issue": 162,
+      "name": "Cabinet 44.18 Window",
+      "original_coordinates": [
+        -123.2503309,
+        49.2636143
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "3d2e587e-198c-489d-8d51-56c082684db4",
+        "31baad96-d5e6-4ab4-abd8-06fceef08ff3"
+      ],
+      "distance_meters": 0.722,
+      "coordinates": [
+        -123.25032182963392,
+        49.26361693226474
+      ]
+    },
+    {
+      "issue": 163,
+      "name": "Cabinet 44.23 Window",
+      "original_coordinates": [
+        -123.2503562,
+        49.263646
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a107e90e-8ab0-49f2-9b95-bd3ff25cf6d5",
+        "660bc5da-c62d-4b5e-bda6-0d24b831f76f"
+      ],
+      "distance_meters": 0.723,
+      "coordinates": [
+        -123.25034739912994,
+        49.263649021568646
+      ]
+    },
+    {
+      "issue": 164,
+      "name": "Cabinet 43.06 Window",
+      "original_coordinates": [
+        -123.2503437,
+        49.2636176
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "7529dbd0-b4a9-4599-aa65-8240dcb16ae9",
+        "c9da53cd-211e-4c83-91ab-f521aabd6387"
+      ],
+      "distance_meters": 0.701,
+      "coordinates": [
+        -123.25035215838743,
+        49.263614576425994
+      ]
+    },
+    {
+      "issue": 165,
+      "name": "Cabinet 43.07 Window Upper",
+      "original_coordinates": [
+        -123.2503384,
+        49.2636112
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "3e139db6-9e39-4e44-9eed-44cf9b10a0e0",
+        "e4ede189-1958-4361-8b66-7c35a5ad4ff2"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.2503470444882,
+        49.26360815856352
+      ]
+    },
+    {
+      "issue": 166,
+      "name": "Cabinet 43.07 Window Lower",
+      "original_coordinates": [
+        -123.2503384,
+        49.2636112
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "3e139db6-9e39-4e44-9eed-44cf9b10a0e0",
+        "e4ede189-1958-4361-8b66-7c35a5ad4ff2"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.2503470444882,
+        49.26360815856352
+      ]
+    },
+    {
+      "issue": 167,
+      "name": "Cabinet 43.08 Window Upper",
+      "original_coordinates": [
+        -123.2503234,
+        49.263592
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "20d2bfa9-0fb3-491b-8da0-8a9ca5c9ec00",
+        "82930e99-afd7-485d-a5d5-6501e5fd3f11"
+      ],
+      "distance_meters": 0.695,
+      "coordinates": [
+        -123.25033183796118,
+        49.26358907460762
+      ]
+    },
+    {
+      "issue": 168,
+      "name": "Cabinet 43.08 Window Lower",
+      "original_coordinates": [
+        -123.2503234,
+        49.263592
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "20d2bfa9-0fb3-491b-8da0-8a9ca5c9ec00",
+        "82930e99-afd7-485d-a5d5-6501e5fd3f11"
+      ],
+      "distance_meters": 0.695,
+      "coordinates": [
+        -123.25033183796118,
+        49.26358907460762
+      ]
+    },
+    {
+      "issue": 169,
+      "name": "Cabinet 43.09 Window",
+      "original_coordinates": [
+        -123.2503184,
+        49.2635859
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "282e1e21-f6c4-436e-97ae-d894ae385b85",
+        "7b5adaaf-f74d-42c0-a782-78c4969793f9"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25032672406303,
+        49.263582656742656
+      ]
+    },
+    {
+      "issue": 170,
+      "name": "Cabinet 43.12 Window",
+      "original_coordinates": [
+        -123.2503033,
+        49.2635667
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "88c513da-c8bb-4132-b8a2-feba2df68661",
+        "736fe09d-49d9-43ec-871a-7be0ed1f6c64"
+      ],
+      "distance_meters": 0.693,
+      "coordinates": [
+        -123.25031138237007,
+        49.26356340314411
+      ]
+    },
+    {
+      "issue": 171,
+      "name": "Cabinet 43.13 Window",
+      "original_coordinates": [
+        -123.2502976,
+        49.26356
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "de11408d-a4dc-462d-a93d-dcfb6c9abfc7",
+        "8ea9b426-50ae-45ae-9c4e-552f4670061f"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.25030626847297,
+        49.26355698527662
+      ]
+    },
+    {
+      "issue": 172,
+      "name": "Cabinet 43.18 Window",
+      "original_coordinates": [
+        -123.2502441,
+        49.2634929
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "435196ef-9bed-4b60-ae72-6e6a41caf567",
+        "91f52ad5-15e9-48a7-9f63-2139ecd0063d"
+      ],
+      "distance_meters": 0.717,
+      "coordinates": [
+        -123.25025262889014,
+        49.26348966831209
+      ]
+    },
+    {
+      "issue": 173,
+      "name": "Cabinet 43.19 Window",
+      "original_coordinates": [
+        -123.2502387,
+        49.2634864
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "e5249b43-c8e2-4899-a4f1-be2e1c8fdce6",
+        "b4b4225f-cb48-47e6-897d-c2055f731d1b"
+      ],
+      "distance_meters": 0.731,
+      "coordinates": [
+        -123.25024751499613,
+        49.263483250437446
+      ]
+    },
+    {
+      "issue": 174,
+      "name": "Cabinet 43.20 Window",
+      "original_coordinates": [
+        -123.2502341,
+        49.26348
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "285c006b-68dc-498e-b429-cae4a8b5fd4b",
+        "3a118e33-a85e-4153-aaf5-f952d92ba505"
+      ],
+      "distance_meters": 0.699,
+      "coordinates": [
+        -123.25024240110241,
+        49.26347683256219
+      ]
+    },
+    {
+      "issue": 175,
+      "name": "Cabinet 42.01 Window",
+      "original_coordinates": [
+        -123.2502366,
+        49.2634461
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "fec61214-d1ff-43aa-8040-c58d0d50ccf8",
+        "55d85fa1-3f30-4e6d-9b71-cd2c36fc0213"
+      ],
+      "distance_meters": 0.691,
+      "coordinates": [
+        -123.25022819140739,
+        49.26344898774967
+      ]
+    },
+    {
+      "issue": 176,
+      "name": "Cabinet 42.02 Window",
+      "original_coordinates": [
+        -123.2502418,
+        49.2634524
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "b97ac256-a146-4c94-865a-5d71cae2a91b",
+        "98a12df3-2946-4254-ba89-306755c1819d"
+      ],
+      "distance_meters": 0.703,
+      "coordinates": [
+        -123.25023330530021,
+        49.26345540562752
+      ]
+    },
+    {
+      "issue": 177,
+      "name": "Cabinet 42.03 Window",
+      "original_coordinates": [
+        -123.2502471,
+        49.2634593
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "cafa086a-87f4-41e3-91ae-a4cfa6a04b9e",
+        "a4d79738-54d3-47af-bf3c-911fb2bdcda1"
+      ],
+      "distance_meters": 0.691,
+      "coordinates": [
+        -123.25023841919324,
+        49.263461823504784
+      ]
+    },
+    {
+      "issue": 178,
+      "name": "Cabinet 42.08 Window",
+      "original_coordinates": [
+        -123.2503011,
+        49.2635263
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "98198d3a-b717-4c52-93f3-4c04e3a0c720",
+        "70224c07-a8a5-45bd-b402-a0dac7c7af96"
+      ],
+      "distance_meters": 0.73,
+      "coordinates": [
+        -123.25029205876628,
+        49.263529140496665
+      ]
+    },
+    {
+      "issue": 179,
+      "name": "Cabinet 42.16 Window",
+      "original_coordinates": [
+        -123.2503419,
+        49.2635775
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "cdf9b8fe-6111-4f31-9b75-9df99a614104",
+        "bb1a0bc3-4065-4701-8ea5-01fe934f8a66"
+      ],
+      "distance_meters": 0.729,
+      "coordinates": [
+        -123.25033296994316,
+        49.2635804834396
+      ]
+    },
+    {
+      "issue": 180,
+      "name": "Cabinet 42.17 Window",
+      "original_coordinates": [
+        -123.2503671,
+        49.2636097
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "48113aa3-f0f2-4887-bc02-7a8f5c47745f",
+        "d42d5ead-4840-4828-9dcc-ad52eaa21b12"
+      ],
+      "distance_meters": 0.7,
+      "coordinates": [
+        -123.25035840426835,
+        49.26361240312344
+      ]
+    },
+    {
+      "issue": 181,
+      "name": "Cabinet 42.20 Window",
+      "original_coordinates": [
+        -123.2503825,
+        49.2636287
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "46740dc7-ca70-4e89-8358-5dabf40d22d4",
+        "8a49e1fa-86b5-4845-8746-f66559e4f225"
+      ],
+      "distance_meters": 0.717,
+      "coordinates": [
+        -123.25037374596815,
+        49.263631656707325
+      ]
+    },
+    {
+      "issue": 182,
+      "name": "Cabinet 42.21 Window",
+      "original_coordinates": [
+        -123.2503878,
+        49.2636351
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2db44ce5-8947-4e9c-b80e-b53df77eca95",
+        "f5c78b80-0756-4b36-a2cb-6af6b8338ecd"
+      ],
+      "distance_meters": 0.73,
+      "coordinates": [
+        -123.25037885986862,
+        49.263638074567396
+      ]
+    },
+    {
+      "issue": 183,
+      "name": "Cabinet 41.02 Window",
+      "original_coordinates": [
+        -123.2503955,
+        49.2636324
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "1443f06a-4ed9-4835-8292-02c3fdf8e4a2",
+        "c7434829-8e32-42e4-9572-415a0df93217"
+      ],
+      "distance_meters": 0.713,
+      "coordinates": [
+        -123.25040407472103,
+        49.2636293008638
+      ]
+    },
+    {
+      "issue": 184,
+      "name": "Cabinet 41.03 Window",
+      "original_coordinates": [
+        -123.2503907,
+        49.263626
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "ddd0b171-ff49-4e7f-84f8-eb93d7e6684d",
+        "91fd84ab-730a-4964-9091-efbe8651f19c"
+      ],
+      "distance_meters": 0.694,
+      "coordinates": [
+        -123.25039896082,
+        49.26362288300332
+      ]
+    },
+    {
+      "issue": 185,
+      "name": "Cabinet 41.06 Window Upper",
+      "original_coordinates": [
+        -123.2503753,
+        49.263607
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "54b1cc42-7f14-4f52-980c-84d9885b034f",
+        "7a5d5bc5-4ade-4863-aa0d-023e58759c52"
+      ],
+      "distance_meters": 0.712,
+      "coordinates": [
+        -123.25038361911844,
+        49.263603629418164
+      ]
+    },
+    {
+      "issue": 186,
+      "name": "Cabinet 41.06 Window Lower",
+      "original_coordinates": [
+        -123.2503753,
+        49.263607
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "54b1cc42-7f14-4f52-980c-84d9885b034f",
+        "7a5d5bc5-4ade-4863-aa0d-023e58759c52"
+      ],
+      "distance_meters": 0.712,
+      "coordinates": [
+        -123.25038361911844,
+        49.263603629418164
+      ]
+    },
+    {
+      "issue": 187,
+      "name": "Cabinet 41.07 Window Upper",
+      "original_coordinates": [
+        -123.25035,
+        49.2635749
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a91db32e-56de-4b8b-9fe6-616518436d98",
+        "d21cf77d-dadc-43b6-9587-7eeed5f042de"
+      ],
+      "distance_meters": 0.693,
+      "coordinates": [
+        -123.25035818479034,
+        49.263571709732226
+      ]
+    },
+    {
+      "issue": 188,
+      "name": "Cabinet 41.07 Window Lower",
+      "original_coordinates": [
+        -123.25035,
+        49.2635749
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a91db32e-56de-4b8b-9fe6-616518436d98",
+        "d21cf77d-dadc-43b6-9587-7eeed5f042de"
+      ],
+      "distance_meters": 0.693,
+      "coordinates": [
+        -123.25035818479034,
+        49.263571709732226
+      ]
+    },
+    {
+      "issue": 189,
+      "name": "Cabinet 41.08 Window",
+      "original_coordinates": [
+        -123.2503445,
+        49.2635684
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "1b29cd94-51fd-4956-a137-300d75fe6c24",
+        "9418bf02-89fc-4374-a8d5-34e73af0aa62"
+      ],
+      "distance_meters": 0.713,
+      "coordinates": [
+        -123.25035307089168,
+        49.263565291866186
+      ]
+    },
+    {
+      "issue": 190,
+      "name": "Cabinet 41.09 Window",
+      "original_coordinates": [
+        -123.2503392,
+        49.2635618
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f7214402-7200-4757-bcf4-d7869abee988",
+        "f91fba63-3523-4a40-94ea-68c8ada37ba2"
+      ],
+      "distance_meters": 0.715,
+      "coordinates": [
+        -123.25034795699332,
+        49.26355887399947
+      ]
+    },
+    {
+      "issue": 191,
+      "name": "Cabinet 41.10 Window",
+      "original_coordinates": [
+        -123.2503338,
+        49.2635552
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "7199722b-9944-4c7e-8892-019258908ada",
+        "3372aebb-b13c-4949-b6f1-313cc51bd485"
+      ],
+      "distance_meters": 0.725,
+      "coordinates": [
+        -123.25034284309523,
+        49.26355245613208
+      ]
+    },
+    {
+      "issue": 192,
+      "name": "Cabinet 41.20 Window",
+      "original_coordinates": [
+        -123.2502551,
+        49.2634563
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "5c78333d-44ab-4193-bb92-3c909d55e21d",
+        "34dfd2c3-c036-4543-8a45-bc1ceae37519"
+      ],
+      "distance_meters": 0.718,
+      "coordinates": [
+        -123.25026363402962,
+        49.26345304978976
+      ]
+    },
+    {
+      "issue": 193,
+      "name": "Cabinet 41.21 Window",
+      "original_coordinates": [
+        -123.2502499,
+        49.2634494
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "895299cc-184a-4efa-80ab-62b59ff9603d",
+        "8ab6cd4b-7182-4a45-a52f-6c2199aca025"
+      ],
+      "distance_meters": 0.699,
+      "coordinates": [
+        -123.25025852013597,
+        49.26344663191208
+      ]
+    },
+    {
+      "issue": 194,
+      "name": "Cabinet 41.22 Window",
+      "original_coordinates": [
+        -123.2502447,
+        49.2634433
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "34cab06c-2dab-4039-98a4-10192d0b2692",
+        "6732a209-96ce-45b6-8a0a-974c070f844f"
+      ],
+      "distance_meters": 0.72,
+      "coordinates": [
+        -123.25025340624255,
+        49.263440214033814
+      ]
+    },
+    {
+      "issue": 198,
+      "name": "Cabinet 40.07 Window Upper",
+      "original_coordinates": [
+        -123.2502992,
+        49.2634736
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "7bf6b738-05ab-4bd6-9452-afeb4f400be0",
+        "c00d4849-f399-49ff-9cc0-24d15dda679a"
+      ],
+      "distance_meters": 0.716,
+      "coordinates": [
+        -123.25029042801528,
+        49.26347651579132
+      ]
+    },
+    {
+      "issue": 199,
+      "name": "Cabinet 40.07 Window Lower",
+      "original_coordinates": [
+        -123.2502992,
+        49.2634736
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "7bf6b738-05ab-4bd6-9452-afeb4f400be0",
+        "c00d4849-f399-49ff-9cc0-24d15dda679a"
+      ],
+      "distance_meters": 0.716,
+      "coordinates": [
+        -123.25029042801528,
+        49.26347651579132
+      ]
+    },
+    {
+      "issue": 200,
+      "name": "Cabinet 40.08 Window Upper",
+      "original_coordinates": [
+        -123.2503321,
+        49.2635151
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2deed17e-3908-473f-b44e-32698c42a148",
+        "2fbd866f-7d93-432c-8a7b-e2ea6d58aeb2"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25032347684906,
+        49.263517991648534
+      ]
+    },
+    {
+      "issue": 201,
+      "name": "Cabinet 40.08 Window Lower",
+      "original_coordinates": [
+        -123.2503321,
+        49.2635151
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2deed17e-3908-473f-b44e-32698c42a148",
+        "2fbd866f-7d93-432c-8a7b-e2ea6d58aeb2"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25032347684906,
+        49.263517991648534
+      ]
+    },
+    {
+      "issue": 202,
+      "name": "Cabinet 40.17 Window",
+      "original_coordinates": [
+        -123.2503781,
+        49.2635729
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2acf9cd7-d7dd-43b1-b002-7bd0aefc9459",
+        "c38c8f4c-97b5-4098-80e3-d0401ae8f401"
+      ],
+      "distance_meters": 0.701,
+      "coordinates": [
+        -123.25036950193079,
+        49.26357575246128
+      ]
+    },
+    {
+      "issue": 203,
+      "name": "Cabinet 40.18 Window Upper",
+      "original_coordinates": [
+        -123.2503835,
+        49.2635797
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "b760fc0e-2ce2-4c60-b83f-bf6751e79e01",
+        "7074308d-af83-416d-b45d-607728f7926f"
+      ],
+      "distance_meters": 0.702,
+      "coordinates": [
+        -123.25037461583011,
+        49.26358217032625
+      ]
+    },
+    {
+      "issue": 204,
+      "name": "Cabinet 40.18 Window Lower",
+      "original_coordinates": [
+        -123.2503835,
+        49.2635797
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "b760fc0e-2ce2-4c60-b83f-bf6751e79e01",
+        "7074308d-af83-416d-b45d-607728f7926f"
+      ],
+      "distance_meters": 0.702,
+      "coordinates": [
+        -123.25037461583011,
+        49.26358217032625
+      ]
+    },
+    {
+      "issue": 205,
+      "name": "Cabinet 40.19 Window Upper",
+      "original_coordinates": [
+        -123.2503887,
+        49.2635857
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2d51154f-26fe-4bde-8a18-e0a451f327ab",
+        "76f73da6-6360-487a-9062-76d2e16c455f"
+      ],
+      "distance_meters": 0.727,
+      "coordinates": [
+        -123.25037972972969,
+        49.26358858819057
+      ]
+    },
+    {
+      "issue": 206,
+      "name": "Cabinet 40.19 Window Lower",
+      "original_coordinates": [
+        -123.2503887,
+        49.2635857
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2d51154f-26fe-4bde-8a18-e0a451f327ab",
+        "76f73da6-6360-487a-9062-76d2e16c455f"
+      ],
+      "distance_meters": 0.727,
+      "coordinates": [
+        -123.25037972972969,
+        49.26358858819057
+      ]
+    },
+    {
+      "issue": 207,
+      "name": "Cabinet 40.20 Window",
+      "original_coordinates": [
+        -123.2503935,
+        49.2635921
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "9f40707e-f873-416a-b3e5-ebb25fba8ad4",
+        "98a9592e-d8e0-4fb7-944e-b2b5c1175202"
+      ],
+      "distance_meters": 0.708,
+      "coordinates": [
+        -123.25038484362955,
+        49.263595006054295
+      ]
+    },
+    {
+      "issue": 208,
+      "name": "Cabinet 39.01 Window",
+      "original_coordinates": [
+        -123.2504322,
+        49.2636279
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "5fa9d12e-b117-440a-8cb0-f595868f81ca",
+        "d1cca080-68ef-481c-a4da-fa51a51634a1"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.2504407418826,
+        49.263624739515656
+      ]
+    },
+    {
+      "issue": 209,
+      "name": "Cabinet 39.03 Window",
+      "original_coordinates": [
+        -123.2504221,
+        49.2636149
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "4af5c1c6-cfd2-4a55-bd7a-79fe57109967",
+        "fdd4d272-498f-49a1-8966-ebb778738df4"
+      ],
+      "distance_meters": 0.697,
+      "coordinates": [
+        -123.25043051407874,
+        49.263611903794306
+      ]
+    },
+    {
+      "issue": 210,
+      "name": "Cabinet 39.04 Window",
+      "original_coordinates": [
+        -123.2504169,
+        49.2636086
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "73c4dc48-4ea7-475a-8b70-189a1a048d1e",
+        "af7d647b-cecc-4739-bfe7-543a9eee4274"
+      ],
+      "distance_meters": 0.709,
+      "coordinates": [
+        -123.2504254001772,
+        49.26360548593268
+      ]
+    },
+    {
+      "issue": 211,
+      "name": "Cabinet 39.06 Window",
+      "original_coordinates": [
+        -123.2504062,
+        49.2635957
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "02ed245a-dff2-4749-b41d-0bb2091ae605",
+        "19c9eacb-a402-4be9-80e2-996da420c5dd"
+      ],
+      "distance_meters": 0.736,
+      "coordinates": [
+        -123.25041517237494,
+        49.2635926502076
+      ]
+    },
+    {
+      "issue": 212,
+      "name": "Cabinet 39.07 Window",
+      "original_coordinates": [
+        -123.2504014,
+        49.2635891
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2cc74775-ff9f-40eb-bb7d-4e63e4ec72a1",
+        "a88fcfb4-12e2-48bb-9622-29450ef7cf7f"
+      ],
+      "distance_meters": 0.706,
+      "coordinates": [
+        -123.25041005847423,
+        49.263586232344075
+      ]
+    },
+    {
+      "issue": 213,
+      "name": "Cabinet 39.09 Window",
+      "original_coordinates": [
+        -123.2503915,
+        49.2635764
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "525580d6-59ac-4f0d-a403-ab5fd1d3583d",
+        "2541c88c-9781-44a7-a942-b9573d542b0f"
+      ],
+      "distance_meters": 0.692,
+      "coordinates": [
+        -123.25039983067363,
+        49.2635733966152
+      ]
+    },
+    {
+      "issue": 214,
+      "name": "Cabinet 39.10 Window",
+      "original_coordinates": [
+        -123.2503863,
+        49.2635701
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "b0ad9a70-7f8a-49ea-89dd-9999b2c2999b",
+        "f0e0bad5-c21e-4122-a7b7-812be90233ee"
+      ],
+      "distance_meters": 0.704,
+      "coordinates": [
+        -123.25039471677373,
+        49.26356697874982
+      ]
+    },
+    {
+      "issue": 215,
+      "name": "Cabinet 39.12 Window",
+      "original_coordinates": [
+        -123.2503762,
+        49.2635574
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a85e8cfd-1f75-416a-885d-1fc9e3c84e87",
+        "7f3a86a6-77de-4a0b-a1df-b77437a11b6d"
+      ],
+      "distance_meters": 0.703,
+      "coordinates": [
+        -123.25038448897472,
+        49.26355414301724
+      ]
+    },
+    {
+      "issue": 216,
+      "name": "Cabinet 39.13 Window",
+      "original_coordinates": [
+        -123.2503707,
+        49.2635504
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "8e09d937-8297-46ba-af7e-da90b1b3fbdd",
+        "cb50c504-7c66-4dc5-9768-5849daf548ab"
+      ],
+      "distance_meters": 0.698,
+      "coordinates": [
+        -123.25037937507562,
+        49.26354772514997
+      ]
+    },
+    {
+      "issue": 217,
+      "name": "Cabinet 39.14 Window",
+      "original_coordinates": [
+        -123.2503662,
+        49.2635444
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "9e791ec7-3ea8-4ef1-8e2a-2ce5b3c14f73",
+        "5c414831-5c09-45cb-984a-aa4a2c45c8ac"
+      ],
+      "distance_meters": 0.68,
+      "coordinates": [
+        -123.25037426117682,
+        49.263541307282104
+      ]
+    },
+    {
+      "issue": 218,
+      "name": "Cabinet 11.22 Window",
+      "original_coordinates": [
+        -123.2507376,
+        49.2633047
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "53fdd22e-b43f-47a5-af76-315d529b1412",
+        "d681007f-ff58-40e5-ac1d-463d9746c3db"
+      ],
+      "distance_meters": 0.709,
+      "coordinates": [
+        -123.25074609568935,
+        49.26330156689366
+      ]
+    },
+    {
+      "issue": 219,
+      "name": "Cabinet 11.25 Window",
+      "original_coordinates": [
+        -123.2507223,
+        49.2632854
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "80cac529-211b-41a6-b3fe-4b98bbcf6a22",
+        "ec79e549-51a1-4bb5-93e9-0419edb33e5a"
+      ],
+      "distance_meters": 0.704,
+      "coordinates": [
+        -123.25073075397471,
+        49.263282313239216
+      ]
+    },
+    {
+      "issue": 220,
+      "name": "Cabinet 10.04 Window Upper",
+      "original_coordinates": [
+        -123.2507659,
+        49.2633029
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "94f09c9a-c53d-45be-913a-fd20b1b8857d",
+        "fc756828-5804-4be7-9c2e-1a3451ee4a1a"
+      ],
+      "distance_meters": 0.706,
+      "coordinates": [
+        -123.25075727160038,
+        49.26330580320554
+      ]
+    },
+    {
+      "issue": 221,
+      "name": "Cabinet 10.04 Window Lower",
+      "original_coordinates": [
+        -123.2507659,
+        49.2633029
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "94f09c9a-c53d-45be-913a-fd20b1b8857d",
+        "fc756828-5804-4be7-9c2e-1a3451ee4a1a"
+      ],
+      "distance_meters": 0.706,
+      "coordinates": [
+        -123.25075727160038,
+        49.26330580320554
+      ]
+    },
+    {
+      "issue": 222,
+      "name": "Cabinet 10.08 Window",
+      "original_coordinates": [
+        -123.2507976,
+        49.2633416
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "d81244e2-7f38-4733-8d21-ff2a6688efe6",
+        "637b54fc-58cd-490a-9d7b-bcbf848c3154"
+      ],
+      "distance_meters": 0.808,
+      "coordinates": [
+        -123.2507866033459,
+        49.263342614138566
+      ]
+    },
+    {
+      "issue": 223,
+      "name": "Cabinet 10.11 Window Upper",
+      "original_coordinates": [
+        -123.2508171,
+        49.263367
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a24d1fdb-97e5-45ad-b648-a20ce4ab2f4e",
+        "845ce896-3b81-4c50-b0db-f78945804770"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.25080825297326,
+        49.263369784099744
+      ]
+    },
+    {
+      "issue": 224,
+      "name": "Cabinet 10.11 Window Lower",
+      "original_coordinates": [
+        -123.2508171,
+        49.263367
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a24d1fdb-97e5-45ad-b648-a20ce4ab2f4e",
+        "845ce896-3b81-4c50-b0db-f78945804770"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.25080825297326,
+        49.263369784099744
+      ]
+    },
+    {
+      "issue": 225,
+      "name": "Cabinet 10.13 Window",
+      "original_coordinates": [
+        -123.2508308,
+        49.2633846
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "d454491d-682e-434e-a147-8a7e93dcbef9",
+        "cbfefae1-1b02-49f4-bd87-10492785c306"
+      ],
+      "distance_meters": 0.693,
+      "coordinates": [
+        -123.25082226553386,
+        49.26338736964614
+      ]
+    },
+    {
+      "issue": 226,
+      "name": "Cabinet 10.16 Window Upper",
+      "original_coordinates": [
+        -123.2508706,
+        49.2634343
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "6d9ad8e8-fbd6-47e1-8cdd-5337d0fcfe86",
+        "948b6140-35b2-4521-a16b-84c7998f52dc"
+      ],
+      "distance_meters": 0.706,
+      "coordinates": [
+        -123.25086202787513,
+        49.26343727072896
+      ]
+    },
+    {
+      "issue": 227,
+      "name": "Cabinet 10.16 Window Lower",
+      "original_coordinates": [
+        -123.2508706,
+        49.2634343
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "6d9ad8e8-fbd6-47e1-8cdd-5337d0fcfe86",
+        "948b6140-35b2-4521-a16b-84c7998f52dc"
+      ],
+      "distance_meters": 0.706,
+      "coordinates": [
+        -123.25086202787513,
+        49.26343727072896
+      ]
+    },
+    {
+      "issue": 228,
+      "name": "Cabinet 10.19 Window",
+      "original_coordinates": [
+        -123.2508887,
+        49.2634566
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "7899f04b-42f1-4f82-bafd-8082c9de0674",
+        "1490a647-b3f6-4bc6-9f75-0a572de2cf92"
+      ],
+      "distance_meters": 0.752,
+      "coordinates": [
+        -123.25087860866361,
+        49.26345807932793
+      ]
+    },
+    {
+      "issue": 231,
+      "name": "Cabinet 09.04 Window Upper",
+      "original_coordinates": [
+        -123.2508827,
+        49.2634362
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "d59db8df-f569-4fd4-b145-28f6a8ad78c6",
+        "809fdc60-1706-4d0a-841b-0ae35a5e180a"
+      ],
+      "distance_meters": 0.716,
+      "coordinates": [
+        -123.25089233403224,
+        49.263434886549746
+      ]
+    },
+    {
+      "issue": 232,
+      "name": "Cabinet 09.04 Window Lower",
+      "original_coordinates": [
+        -123.2508827,
+        49.2634362
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "d59db8df-f569-4fd4-b145-28f6a8ad78c6",
+        "809fdc60-1706-4d0a-841b-0ae35a5e180a"
+      ],
+      "distance_meters": 0.716,
+      "coordinates": [
+        -123.25089233403224,
+        49.263434886549746
+      ]
+    },
+    {
+      "issue": 233,
+      "name": "Cabinet 09.10 Window Upper",
+      "original_coordinates": [
+        -123.2508248,
+        49.2633642
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "922f2f08-aa96-4420-a924-a4f27af931ad",
+        "9069fc37-a1bd-47e3-aea7-c92bec4bd61f"
+      ],
+      "distance_meters": 0.723,
+      "coordinates": [
+        -123.25083346774056,
+        49.26336101031808
+      ]
+    },
+    {
+      "issue": 234,
+      "name": "Cabinet 09.10 Window Lower",
+      "original_coordinates": [
+        -123.2508248,
+        49.2633642
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "922f2f08-aa96-4420-a924-a4f27af931ad",
+        "9069fc37-a1bd-47e3-aea7-c92bec4bd61f"
+      ],
+      "distance_meters": 0.723,
+      "coordinates": [
+        -123.25083346774056,
+        49.26336101031808
+      ]
+    },
+    {
+      "issue": 235,
+      "name": "Cabinet 09.11 Window",
+      "original_coordinates": [
+        -123.250819,
+        49.2633562
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a5852adb-2159-4a7c-89fa-52bdcf3dada1",
+        "758b1e52-48bf-475f-a0a5-53c21fc530a9"
+      ],
+      "distance_meters": 0.687,
+      "coordinates": [
+        -123.25082711477897,
+        49.26335303744771
+      ]
+    },
+    {
+      "issue": 236,
+      "name": "Cabinet 09.12 Window",
+      "original_coordinates": [
+        -123.2508113,
+        49.2633466
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "26088fd2-cf98-4b4e-b284-9c2e206f63e4",
+        "628c5e8d-0fc0-44d2-af1c-c7acb9e5181c"
+      ],
+      "distance_meters": 0.69,
+      "coordinates": [
+        -123.25081945518045,
+        49.2633434247658
+      ]
+    },
+    {
+      "issue": 237,
+      "name": "Cabinet 09.15 Window",
+      "original_coordinates": [
+        -123.2507885,
+        49.2633179
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a11d56ac-e500-4122-9826-8378879ef949",
+        "0af24f31-eb44-4ca3-8c2f-1752c26c18a3"
+      ],
+      "distance_meters": 0.687,
+      "coordinates": [
+        -123.25079649891666,
+        49.263314614984374
+      ]
+    },
+    {
+      "issue": 238,
+      "name": "Cabinet 09.17 Window Upper",
+      "original_coordinates": [
+        -123.2507738,
+        49.2633
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "9ee9f748-177e-4ce7-b19a-0e046e34b745",
+        "e161f3af-0b2c-4549-876a-3051881a977a"
+      ],
+      "distance_meters": 0.713,
+      "coordinates": [
+        -123.25078248636186,
+        49.263297029419725
+      ]
+    },
+    {
+      "issue": 239,
+      "name": "Cabinet 09.17 Window Lower",
+      "original_coordinates": [
+        -123.2507738,
+        49.2633
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "9ee9f748-177e-4ce7-b19a-0e046e34b745",
+        "e161f3af-0b2c-4549-876a-3051881a977a"
+      ],
+      "distance_meters": 0.713,
+      "coordinates": [
+        -123.25078248636186,
+        49.263297029419725
+      ]
+    },
+    {
+      "issue": 240,
+      "name": "Cabinet 09.19 Window",
+      "original_coordinates": [
+        -123.2507577,
+        49.2632805
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "6088ff00-642e-4f57-a111-8e7d313788bc",
+        "1ff99b82-620c-4856-a3ef-e9e7439bfb1f"
+      ],
+      "distance_meters": 0.765,
+      "coordinates": [
+        -123.2507658605358,
+        49.263276164225964
+      ]
+    },
+    {
+      "issue": 241,
+      "name": "Cabinet 09.20 Window",
+      "original_coordinates": [
+        -123.2507494,
+        49.2632688
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "9295cdf9-855a-4ac0-a1b2-e0d03f54f5c5",
+        "0ae421fe-8a95-4b72-b777-14177cebf735"
+      ],
+      "distance_meters": 0.687,
+      "coordinates": [
+        -123.25075820094206,
+        49.26326655153288
+      ]
+    },
+    {
+      "issue": 242,
+      "name": "Cabinet 08.02 Window",
+      "original_coordinates": [
+        -123.2507814,
+        49.2632716
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "aa9a2e79-7ec5-4ddd-aa2e-870da26b25a4",
+        "7297756a-53ac-44cf-a3af-e673af69a76b"
+      ],
+      "distance_meters": 0.727,
+      "coordinates": [
+        -123.25077210639306,
+        49.263273990901986
+      ]
+    },
+    {
+      "issue": 243,
+      "name": "Cabinet 08.04 Window",
+      "original_coordinates": [
+        -123.2507956,
+        49.2632901
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "9d0b3b77-de39-4898-8e97-eb4c6a3626a7",
+        "f9d2e517-72e9-478a-8b5d-1fd614b198ca"
+      ],
+      "distance_meters": 0.688,
+      "coordinates": [
+        -123.25078742558271,
+        49.263293216284296
+      ]
+    },
+    {
+      "issue": 244,
+      "name": "Cabinet 08.06 Window",
+      "original_coordinates": [
+        -123.2508123,
+        49.2633101
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "04949684-487e-4da1-b4da-3b9fe433a56e",
+        "c26da019-fa2b-4caa-b187-6f4153605994"
+      ],
+      "distance_meters": 0.742,
+      "coordinates": [
+        -123.25080274477477,
+        49.263312441661
+      ]
+    },
+    {
+      "issue": 245,
+      "name": "Cabinet 08.08 Window",
+      "original_coordinates": [
+        -123.2508263,
+        49.2633288
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "4453fd63-4838-47cb-a077-b856be972110",
+        "c4234055-d8a6-469d-9e91-9920ab2ec983"
+      ],
+      "distance_meters": 0.679,
+      "coordinates": [
+        -123.25081806396929,
+        49.26333166703208
+      ]
+    },
+    {
+      "issue": 246,
+      "name": "Cabinet 08.09 Window",
+      "original_coordinates": [
+        -123.2508886,
+        49.2634062
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f6bc5078-7be3-4b9f-8967-ea1c0b9fa43f",
+        "540c32e4-6682-418d-98e1-332448d00ead"
+      ],
+      "distance_meters": 0.722,
+      "coordinates": [
+        -123.25087943088444,
+        49.26340868155046
+      ]
+    },
+    {
+      "issue": 247,
+      "name": "Cabinet 08.13 Window",
+      "original_coordinates": [
+        -123.250919,
+        49.263445
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "7d1d107c-4c15-4931-83cb-a15ec89b1662",
+        "0d64e3eb-9481-4ca9-a859-3ba8fcae0602"
+      ],
+      "distance_meters": 0.692,
+      "coordinates": [
+        -123.25091006930015,
+        49.26344713223078
+      ]
+    },
+    {
+      "issue": 248,
+      "name": "Cabinet 07.01 Window",
+      "original_coordinates": [
+        -123.2509347,
+        49.263451
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a64700ce-91b7-4322-9ffe-5f64a133a112",
+        "58ed3c45-9145-40e1-90a9-74bab0e84917"
+      ],
+      "distance_meters": 0.688,
+      "coordinates": [
+        -123.25094294367699,
+        49.263447971117515
+      ]
+    },
+    {
+      "issue": 249,
+      "name": "Cabinet 07.06 Window",
+      "original_coordinates": [
+        -123.2508956,
+        49.2634029
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "eee2e9f1-57de-4802-a82e-583c656103f6",
+        "5ef1c8fd-83fb-4e4f-ba71-535a7711280d"
+      ],
+      "distance_meters": 0.737,
+      "coordinates": [
+        -123.25090464565149,
+        49.26339990776753
+      ]
+    },
+    {
+      "issue": 250,
+      "name": "Cabinet 07.08 Window",
+      "original_coordinates": [
+        -123.250827,
+        49.2633163
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "bc508f29-5c9f-40ff-8102-1bdc5750f853",
+        "d789e746-02df-453f-a0fd-e996225571a8"
+      ],
+      "distance_meters": 0.711,
+      "coordinates": [
+        -123.25083561913085,
+        49.26331328055868
+      ]
+    },
+    {
+      "issue": 251,
+      "name": "Cabinet 07.09 Window",
+      "original_coordinates": [
+        -123.2508181,
+        49.2633063
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a1db510d-f4f3-42cf-bd82-4a1ea04c0cb8",
+        "c0418c62-a975-44ce-9b33-3820836aacdf"
+      ],
+      "distance_meters": 0.775,
+      "coordinates": [
+        -123.25082795953305,
+        49.26330366787179
+      ]
+    },
+    {
+      "issue": 252,
+      "name": "Cabinet 07.12 Window",
+      "original_coordinates": [
+        -123.2507961,
+        49.2632777
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "c20ab8f2-4200-4af3-bb21-c3a7e359626c",
+        "4906c015-b772-4c84-b28e-51be99011cd8"
+      ],
+      "distance_meters": 0.721,
+      "coordinates": [
+        -123.25080498074318,
+        49.26327482980279
+      ]
+    },
+    {
+      "issue": 256,
+      "name": "Cabinet 06.04 Window",
+      "original_coordinates": [
+        -123.2508279,
+        49.2632797
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "6a832508-7627-4efa-ab82-c23761895eaf",
+        "56a87c62-ea95-4327-94ac-999375f65df3"
+      ],
+      "distance_meters": 0.715,
+      "coordinates": [
+        -123.2508188861957,
+        49.263282269169075
+      ]
+    },
+    {
+      "issue": 257,
+      "name": "Cabinet 06.09 Window",
+      "original_coordinates": [
+        -123.2509338,
+        49.2634125
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "2e26856b-7d46-42f3-a5cb-e53001599602",
+        "eddbf564-8a34-49bd-93dd-dadddf4e4f10"
+      ],
+      "distance_meters": 0.719,
+      "coordinates": [
+        -123.25092492660917,
+        49.263415348253076
+      ]
+    },
+    {
+      "issue": 258,
+      "name": "Cabinet 06.10 Window Upper",
+      "original_coordinates": [
+        -123.2509386,
+        49.2634189
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f5b30f9c-8eda-437e-86be-1cb8bbce9d62",
+        "eb2657b1-460d-4e1b-964c-ecf417afc1e4"
+      ],
+      "distance_meters": 0.7,
+      "coordinates": [
+        -123.25093001799375,
+        49.26342173785177
+      ]
+    },
+    {
+      "issue": 259,
+      "name": "Cabinet 06.10 Window Lower",
+      "original_coordinates": [
+        -123.2509386,
+        49.2634189
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f5b30f9c-8eda-437e-86be-1cb8bbce9d62",
+        "eb2657b1-460d-4e1b-964c-ecf417afc1e4"
+      ],
+      "distance_meters": 0.7,
+      "coordinates": [
+        -123.25093001799375,
+        49.26342173785177
+      ]
+    },
+    {
+      "issue": 260,
+      "name": "Cabinet 06.11 Window",
+      "original_coordinates": [
+        -123.2509435,
+        49.2634253
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f9f40772-8f19-4f0d-b6d5-23bec5f792de",
+        "f5680e41-aae9-4150-a059-28815d0479de"
+      ],
+      "distance_meters": 0.687,
+      "coordinates": [
+        -123.25093513190684,
+        49.26342815572244
+      ]
+    },
+    {
+      "issue": 261,
+      "name": "Cabinet 05.04 Window",
+      "original_coordinates": [
+        -123.2509518,
+        49.2634225
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "7209a026-28f2-43fd-88dd-d572100f5eee",
+        "96842bed-3508-452b-b95e-090e5344ec78"
+      ],
+      "distance_meters": 0.712,
+      "coordinates": [
+        -123.25096034667189,
+        49.263419381936906
+      ]
+    },
+    {
+      "issue": 262,
+      "name": "Cabinet 05.05 Window Upper",
+      "original_coordinates": [
+        -123.2509468,
+        49.2634159
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "fb463a0f-7289-469e-8f44-c54284e47566",
+        "bf8af840-2a50-42d8-8637-09747c266df3"
+      ],
+      "distance_meters": 0.695,
+      "coordinates": [
+        -123.25095523275822,
+        49.26341296406588
+      ]
+    },
+    {
+      "issue": 263,
+      "name": "Cabinet 05.05 Window Lower",
+      "original_coordinates": [
+        -123.2509468,
+        49.2634159
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "fb463a0f-7289-469e-8f44-c54284e47566",
+        "bf8af840-2a50-42d8-8637-09747c266df3"
+      ],
+      "distance_meters": 0.695,
+      "coordinates": [
+        -123.25095523275822,
+        49.26341296406588
+      ]
+    },
+    {
+      "issue": 264,
+      "name": "Cabinet 05.06 Window",
+      "original_coordinates": [
+        -123.2509417,
+        49.2634096
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "22ec53cb-0285-49dc-a9d9-c764d0c314c1",
+        "74847106-b3c7-4f55-93db-10611e1fad77"
+      ],
+      "distance_meters": 0.7,
+      "coordinates": [
+        -123.25095014137307,
+        49.26340657446674
+      ]
+    },
+    {
+      "issue": 265,
+      "name": "Cabinet 05.08 Window",
+      "original_coordinates": [
+        -123.2508582,
+        49.2633053
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "d83942af-2b60-45ac-906c-616e48fa4b58",
+        "375c8b45-79e1-41ed-aa3a-81275978d6dc"
+      ],
+      "distance_meters": 0.725,
+      "coordinates": [
+        -123.25086707974236,
+        49.26330233344124
+      ]
+    },
+    {
+      "issue": 266,
+      "name": "Cabinet 05.11 Window",
+      "original_coordinates": [
+        -123.2508353,
+        49.2632766
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "f269835d-94b9-4394-9baf-85030fd3f922",
+        "7c5890af-7ca4-4c66-9a07-722b30089123"
+      ],
+      "distance_meters": 0.727,
+      "coordinates": [
+        -123.25084410094745,
+        49.26327349537414
+      ]
+    },
+    {
+      "issue": 267,
+      "name": "Cabinet 04.03 Window",
+      "original_coordinates": [
+        -123.2508452,
+        49.263251
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "b1272dea-df55-48a6-bff2-c03df8ca30c9",
+        "0457f39a-96a3-4595-ab5f-7317960439cd"
+      ],
+      "distance_meters": 0.713,
+      "coordinates": [
+        -123.25083633424578,
+        49.263253736475306
+      ]
+    },
+    {
+      "issue": 268,
+      "name": "Cabinet 04.04 Window",
+      "original_coordinates": [
+        -123.2508502,
+        49.2632572
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "dbab2e60-e64a-4612-a857-6680f6b09e1a",
+        "843dc635-1ed2-418f-a48b-77a6eeb7b5e3"
+      ],
+      "distance_meters": 0.716,
+      "coordinates": [
+        -123.25084142562477,
+        49.263260126089165
+      ]
+    },
+    {
+      "issue": 269,
+      "name": "Cabinet 04.08 Window",
+      "original_coordinates": [
+        -123.2508753,
+        49.2632892
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "8953ea86-857e-448e-8514-3ad8b5c646e9",
+        "96bc2b78-e336-443c-8c06-5239d33e08eb"
+      ],
+      "distance_meters": 0.691,
+      "coordinates": [
+        -123.25086697263669,
+        49.26329218723955
+      ]
+    },
+    {
+      "issue": 270,
+      "name": "Cabinet 04.10 Window",
+      "original_coordinates": [
+        -123.2508872,
+        49.2633039
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "9be17b96-b99d-4e10-9431-68ddb64550d0",
+        "6e6462d0-d954-4904-adba-418ef379fc16"
+      ],
+      "distance_meters": 0.703,
+      "coordinates": [
+        -123.250878484564,
+        49.26330663454295
+      ]
+    },
+    {
+      "issue": 271,
+      "name": "Cabinet 04.12 Window",
+      "original_coordinates": [
+        -123.2509026,
+        49.2633231
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "80dc6316-ffe9-4fa8-afd6-41ad0a31bb40",
+        "a9adc2b5-56d7-40a2-961c-b7b6f494e684"
+      ],
+      "distance_meters": 0.71,
+      "coordinates": [
+        -123.25089380376494,
+        49.26332585991247
+      ]
+    },
+    {
+      "issue": 272,
+      "name": "Cabinet 04.14 Window",
+      "original_coordinates": [
+        -123.2509165,
+        49.2633402
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "d490664c-b381-4d05-863a-cfd1f3ad2a8d",
+        "8eef9c48-32fc-4c33-86fa-cc36dd7b57a1"
+      ],
+      "distance_meters": 0.728,
+      "coordinates": [
+        -123.2509078613867,
+        49.2633435020113
+      ]
+    },
+    {
+      "issue": 273,
+      "name": "Cabinet 04.19 Window",
+      "original_coordinates": [
+        -123.2509653,
+        49.2634016
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "b4d24e0b-ad1a-4f06-aa56-839bf374a382",
+        "a5cf79eb-0189-4df7-8d06-152df8832f99"
+      ],
+      "distance_meters": 0.719,
+      "coordinates": [
+        -123.25095640975964,
+        49.263404429415594
+      ]
+    },
+    {
+      "issue": 274,
+      "name": "Cabinet 04.22 Window",
+      "original_coordinates": [
+        -123.2509806,
+        49.2634209
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "4a663e85-6813-4bb0-af85-a5c53f8bb6bc",
+        "64d496e1-f135-4ac3-a720-9ae3bc544af9"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.25097172897284,
+        49.26342365475644
+      ]
+    },
+    {
+      "issue": 275,
+      "name": "Cabinet 03.03 Window",
+      "original_coordinates": [
+        -123.2509886,
+        49.2634181
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "267d8e39-7eb8-4648-a280-97baafa840c4",
+        "a7650943-48f2-4e61-97c6-828ac97c1e0d"
+      ],
+      "distance_meters": 0.705,
+      "coordinates": [
+        -123.25099694373368,
+        49.263414880966884
+      ]
+    },
+    {
+      "issue": 276,
+      "name": "Cabinet 03.06 Window",
+      "original_coordinates": [
+        -123.2509731,
+        49.2633986
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "91c21f44-3314-4f32-9e0f-bea82c3a4f38",
+        "c7c8189d-7a33-42f5-b392-07ce46415d34"
+      ],
+      "distance_meters": 0.701,
+      "coordinates": [
+        -123.25098162451873,
+        49.263395655624734
+      ]
+    },
+    {
+      "issue": 277,
+      "name": "Cabinet 03.10 Window",
+      "original_coordinates": [
+        -123.2509299,
+        49.2633443
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "71c3a90c-3216-4e0a-9ba8-f8a06511fa84",
+        "21012cfd-88bc-46d4-9af9-71c28104fe07"
+      ],
+      "distance_meters": 0.698,
+      "coordinates": [
+        -123.25093821258004,
+        49.26334117436724
+      ]
+    },
+    {
+      "issue": 278,
+      "name": "Cabinet 03.11 Window",
+      "original_coordinates": [
+        -123.2509243,
+        49.2633379
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "55bdae85-1801-4069-8e52-6c6f276be6c2",
+        "e304c4e5-5a44-4a6c-99b0-9e1ee0b834fd"
+      ],
+      "distance_meters": 0.729,
+      "coordinates": [
+        -123.2509330761402,
+        49.26333472821652
+      ]
+    },
+    {
+      "issue": 279,
+      "name": "Cabinet 03.13 Window",
+      "original_coordinates": [
+        -123.2509102,
+        49.26332
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "794c67ae-8c4b-4997-ba38-2faefe80094c",
+        "f55a941e-984f-449c-9e9f-4cb1370162a9"
+      ],
+      "distance_meters": 0.719,
+      "coordinates": [
+        -123.2509190185168,
+        49.263317086116544
+      ]
+    },
+    {
+      "issue": 280,
+      "name": "Cabinet 03.15 Window",
+      "original_coordinates": [
+        -123.2508955,
+        49.2633012
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "a2c1f3b2-0302-4800-9198-ee22ae3d0b99",
+        "f0bd9cb4-9785-4f0c-b104-db54cedd24f5"
+      ],
+      "distance_meters": 0.703,
+      "coordinates": [
+        -123.25090369931414,
+        49.26329786074585
+      ]
+    },
+    {
+      "issue": 281,
+      "name": "Cabinet 03.17 Window",
+      "original_coordinates": [
+        -123.2508835,
+        49.2632864
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "4c8b2a34-ce3f-4b3c-b44c-6b69b3f0bd73",
+        "4c1c2de1-8d31-4e55-aef4-a18583b4b883"
+      ],
+      "distance_meters": 0.714,
+      "coordinates": [
+        -123.25089218738552,
+        49.26328341344149
+      ]
+    },
+    {
+      "issue": 282,
+      "name": "Cabinet 03.21 Window",
+      "original_coordinates": [
+        -123.2508579,
+        49.2632544
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "d1923f3a-b8a1-4efd-bc78-d24ef4e17519",
+        "d5dc96a7-6d0b-44a8-9661-513f3f1282a6"
+      ],
+      "distance_meters": 0.721,
+      "coordinates": [
+        -123.25086664037067,
+        49.263251352289
+      ]
+    },
+    {
+      "issue": 283,
+      "name": "Cabinet 52.10 Window",
+      "original_coordinates": [
+        -123.250126,
+        49.2635585
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "232e3d13-5df2-4a0c-9cb8-8a8bc98260f0",
+        "1eb1fc67-b514-4003-9e2d-7a22171a5115"
+      ],
+      "distance_meters": 0.74,
+      "coordinates": [
+        -123.25011691277382,
+        49.263561483631236
+      ]
+    },
+    {
+      "issue": 284,
+      "name": "Cabinet 52.15 Window",
+      "original_coordinates": [
+        -123.2501511,
+        49.2635908
+      ],
+      "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+      "reference_feature_ids": [
+        "241b6d3c-eafa-47f2-8097-6e229c7ab510",
+        "ba7f8645-421b-47b5-b8f2-75ee6e059c60"
+      ],
+      "distance_meters": 0.699,
+      "coordinates": [
+        -123.2501424822344,
+        49.2635935729732
+      ]
+    },
+    {
+      "issue": 35,
+      "name": "Ramp Exit",
+      "original_coordinates": [
+        -123.2509487,
+        49.2631852
+      ],
+      "method": "Center of the ramp threshold identified in the issue measurement plan.",
+      "reference_feature_ids": [
+        "3f9ffcf0-b7b7-44f7-a1f5-14759447bff8"
+      ],
+      "distance_meters": 0.516,
+      "coordinates": [
+        -123.25095561548504,
+        49.263184175488256
+      ]
+    },
+    {
+      "issue": 37,
+      "name": "Ramp Entrance",
+      "original_coordinates": [
+        -123.2509509,
+        49.2631523
+      ],
+      "method": "Center of the ramp threshold identified in the issue measurement plan.",
+      "reference_feature_ids": [
+        "7d4f6814-e717-4ec8-804b-ec11b4c8c245"
+      ],
+      "distance_meters": 0.567,
+      "coordinates": [
+        -123.25095768595578,
+        49.26314979151837
+      ]
+    },
+    {
+      "issue": 38,
+      "name": "Front Entrance",
+      "original_coordinates": [
+        -123.2510352,
+        49.2634339
+      ],
+      "method": "Center of the interior doorway gap between the short wall end and facing wall in the floor plan.",
+      "reference_feature_ids": [
+        "d5cfca4b-6d36-4fcb-a205-345a8d1672e0",
+        "0fd942c4-04b5-4cf5-ad27-e957d0f69f5f"
+      ],
+      "distance_meters": 1.953,
+      "coordinates": [
+        -123.25103120977671,
+        49.263451272002094
+      ]
+    }
+  ],
+  "unresolved": [],
+  "image_count": 390,
+  "images_with_text": 299,
+  "images_without_text": 91
+}

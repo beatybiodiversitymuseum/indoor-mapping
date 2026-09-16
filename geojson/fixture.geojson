@@ -77976,6 +77976,1062 @@
         "review_status": "locally_confirmed",
         "source_collection": "drawers"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Discovery Lab Table 1"
+        },
+        "alt_name": {
+          "en": "discovery_lab_table_1"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/288",
+        "source_issue_number": 288,
+        "source_issue_title": "Amenity: Discovery Lab Table 1",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "First table on right side after entering the lab. Table center is 320cm away from corner and 110cm from wall.",
+        "reference_points": "Discovery Lab Doors",
+        "contributor_notes": "",
+        "location_review_status": "submitted_coordinates",
+        "imported_by": "issue_location_reconciliation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501565,
+          49.2636958
+        ]
+      },
+      "id": "5fc23413-10ee-5ad2-a5fb-e880ac267aa5",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Discovery Lab Table 2"
+        },
+        "alt_name": {
+          "en": "discovery_lab_table_2"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/289",
+        "source_issue_number": 289,
+        "source_issue_title": "Amenity: Discovery Lab Table 2",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Tables may be moved so location is approximate.",
+        "reference_points": "Discovery Lab Table 1",
+        "contributor_notes": "",
+        "location_review_status": "submitted_coordinates",
+        "imported_by": "issue_location_reconciliation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501464,
+          49.2636831
+        ]
+      },
+      "id": "24c72580-91d9-509c-8ecd-65562e01f77a",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Discovery Lab Table 3"
+        },
+        "alt_name": {
+          "en": "discovery_lab_table_3"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/290",
+        "source_issue_number": 290,
+        "source_issue_title": "Amenity: Discovery Lab Table 3",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Position is approximate as tables can be moved",
+        "reference_points": "Discovery Lab Table 2",
+        "contributor_notes": "",
+        "location_review_status": "submitted_coordinates",
+        "imported_by": "issue_location_reconciliation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501356,
+          49.2636688
+        ]
+      },
+      "id": "834693b9-d8fe-5ae7-9681-dfed0f41c267",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Discovery Lab Table 4"
+        },
+        "alt_name": {
+          "en": "discovery_lab_table_4"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/291",
+        "source_issue_number": 291,
+        "source_issue_title": "Amenity: Discovery Lab Table 4",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Locations are approximate, as tables may be moved.",
+        "reference_points": "Discovery Lab Table 3",
+        "contributor_notes": "",
+        "location_review_status": "submitted_coordinates",
+        "imported_by": "issue_location_reconciliation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501249,
+          49.263655
+        ]
+      },
+      "id": "d7fd32ca-e288-558a-87a5-0f5b17a30b84",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Discovery Lab Table 5"
+        },
+        "alt_name": {
+          "en": "discovery_lab_table_5"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/292",
+        "source_issue_number": 292,
+        "source_issue_title": "Amenity: Discovery Lab Table 5",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "First table on the left side when entering through the doors. Location is approximate as tables can be moved.",
+        "reference_points": "Discovery Lab Table 4",
+        "contributor_notes": "",
+        "location_review_status": "submitted_coordinates",
+        "imported_by": "issue_location_reconciliation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501231,
+          49.2637085
+        ]
+      },
+      "id": "aa0a10b6-2e97-5f54-8638-d60e438bb5cd",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Discovery Lab Table 6"
+        },
+        "alt_name": {
+          "en": "discovery_lab_table_6"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/293",
+        "source_issue_number": 293,
+        "source_issue_title": "Amenity: Discovery Lab Table 6",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Location is approximate as tables may be moved.",
+        "reference_points": "Discovery Lab Table 5",
+        "contributor_notes": "",
+        "location_review_status": "submitted_coordinates",
+        "imported_by": "issue_location_reconciliation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501116,
+          49.2636947
+        ]
+      },
+      "id": "00706558-949d-55f4-8941-89233540aab4",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Discovery Lab Table 7"
+        },
+        "alt_name": {
+          "en": "discovery_lab_table_7"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/294",
+        "source_issue_number": 294,
+        "source_issue_title": "Amenity: Discovery Lab Table 7",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Location is approximate as tables can be moved.",
+        "reference_points": "Discovery Lab Table 8",
+        "contributor_notes": "",
+        "location_review_status": "submitted_coordinates",
+        "imported_by": "issue_location_reconciliation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501015,
+          49.263682
+        ]
+      },
+      "id": "c67771ea-3065-50be-92c5-862692daddd8",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Discovery Lab Table 8"
+        },
+        "alt_name": {
+          "en": "discovery_lab_table_8"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/295",
+        "source_issue_number": 295,
+        "source_issue_title": "Amenity: Discovery Lab Table 8",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Location is approximate as tables can be moved.",
+        "reference_points": "Discovery Lab Table 7",
+        "contributor_notes": "",
+        "location_review_status": "submitted_coordinates",
+        "imported_by": "issue_location_reconciliation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2500902,
+          49.2636684
+        ]
+      },
+      "id": "cb51a5f3-311c-5c07-afbe-1bf7f93eb02b",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Theatre Projection Booth"
+        },
+        "alt_name": {
+          "en": "theatre_projection_booth"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/195",
+        "source_issue_number": 195,
+        "source_issue_title": "Amenity: Theatre Projection Booth",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Refer to image for floor plan",
+        "reference_points": "Cabinet 1.21",
+        "contributor_notes": "",
+        "location_review_status": "derived_from_submitted_geometry",
+        "submitted_geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -123.2508428,
+                49.2631783
+              ],
+              [
+                -123.250821,
+                49.2631533
+              ],
+              [
+                -123.2508818,
+                49.2631311
+              ],
+              [
+                -123.2509021,
+                49.2631564
+              ],
+              [
+                -123.2508428,
+                49.2631783
+              ]
+            ]
+          ]
+        },
+        "placement_method": "Interior representative point of submitted polygon",
+        "image_transcriptions": [
+          {
+            "issue_number": 195,
+            "issue_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/195",
+            "image_url": "https://github.com/user-attachments/assets/ea850b3d-52dc-49c8-bacb-65b5276a47e0",
+            "text": "s.2m\nSm\n- 1800\n0.6m\n3.2m",
+            "engine": "Apple Vision accurate (en-US)",
+            "review_status": "machine_transcribed_unreviewed",
+            "confidence": 1
+          }
+        ],
+        "imported_by": "issue_location_reconciliation",
+        "photo_text": "s.2m\nSm\n- 1800\n0.6m\n3.2m",
+        "photo_text_source_url": "https://github.com/user-attachments/assets/ea850b3d-52dc-49c8-bacb-65b5276a47e0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25086160682018,
+          49.26315484988374
+        ]
+      },
+      "id": "bfa707e7-5932-5e65-9b20-3bf10e815cda",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Theatre Screen"
+        },
+        "alt_name": {
+          "en": "theatre_screen"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "equipment",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/255",
+        "source_issue_number": 255,
+        "source_issue_title": "Amenity: Theatre Screen",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "See image",
+        "reference_points": "Theatre Regular Seating",
+        "contributor_notes": "",
+        "location_review_status": "derived_from_submitted_geometry",
+        "submitted_geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -123.2507197,
+              49.2630532
+            ],
+            [
+              -123.25081,
+              49.263022
+            ]
+          ]
+        },
+        "placement_method": "Midpoint of submitted line",
+        "image_transcriptions": [
+          {
+            "issue_number": 255,
+            "issue_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/255",
+            "image_url": "https://github.com/user-attachments/assets/4177b008-8b91-4c63-b230-6751aad4d3f0",
+            "text": "1.2m\n4.Sm\n7.4m\n1.35m",
+            "engine": "Apple Vision accurate (en-US)",
+            "review_status": "machine_transcribed_unreviewed",
+            "confidence": 1
+          }
+        ],
+        "imported_by": "issue_location_reconciliation",
+        "photo_text": "1.2m\n4.Sm\n7.4m\n1.35m",
+        "photo_text_source_url": "https://github.com/user-attachments/assets/4177b008-8b91-4c63-b230-6751aad4d3f0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25076485001426,
+          49.26303760000882
+        ]
+      },
+      "id": "0c73cd11-7912-5691-ba36-147ba64935b1",
+      "feature_type": "fixture"
+    },
+    {
+      "id": "22ebeff4-9701-5d9a-8a8f-f1a0b523e936",
+      "type": "Feature",
+      "feature_type": "fixture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25095644031829,
+              49.263375648704724
+            ],
+            [
+              -123.25094594727813,
+              49.263379299890204
+            ],
+            [
+              -123.25092815672112,
+              49.26335697303431
+            ],
+            [
+              -123.25093864976041,
+              49.26335332184822
+            ],
+            [
+              -123.25095644031829,
+              49.263375648704724
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "furniture",
+        "name": {
+          "en": "Fossil Excavation 1"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_1_fixture"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25094229851915,
+            49.26336631087041
+          ]
+        },
+        "local_category": "floor_display_fixture",
+        "material": "glass",
+        "walkable": true,
+        "exhibit_ids": [
+          "f3d78fc9-3a75-4a67-b54f-8a368e5f9ab8"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    },
+    {
+      "id": "47d6c0b5-4c1e-52a8-95bd-6143a4641cf7",
+      "type": "Feature",
+      "feature_type": "fixture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25086205845172,
+              49.26340849003324
+            ],
+            [
+              -123.25085156540558,
+              49.26341214121307
+            ],
+            [
+              -123.25083363518112,
+              49.263389639072635
+            ],
+            [
+              -123.2508441282264,
+              49.26338598789217
+            ],
+            [
+              -123.25086205845172,
+              49.26340849003324
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "furniture",
+        "name": {
+          "en": "Fossil Excavation 2"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_2_fixture"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25084784681587,
+            49.26339906455381
+          ]
+        },
+        "local_category": "floor_display_fixture",
+        "material": "glass",
+        "walkable": true,
+        "exhibit_ids": [
+          "5c2dd1ef-5a87-4066-95d8-568e92279dbb"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    },
+    {
+      "id": "61634893-57ae-5da1-b04a-67f7904d09d0",
+      "type": "Feature",
+      "feature_type": "fixture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25077939826795,
+              49.263355160245894
+            ],
+            [
+              -123.25076890522224,
+              49.26335881142564
+            ],
+            [
+              -123.25075130617464,
+              49.2633367248723
+            ],
+            [
+              -123.25076179921948,
+              49.263333073691946
+            ],
+            [
+              -123.25077939826795,
+              49.263355160245894
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "furniture",
+        "name": {
+          "en": "Fossil Excavation 3"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_3_fixture"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25076535222075,
+            49.263345942559965
+          ]
+        },
+        "local_category": "floor_display_fixture",
+        "material": "glass",
+        "walkable": true,
+        "exhibit_ids": [
+          "d6638509-f8fc-4c95-b540-e609236b7028"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    },
+    {
+      "id": "203d88c7-309c-592d-9cf8-013ac26b0aa2",
+      "type": "Feature",
+      "feature_type": "fixture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25079897955611,
+              49.263430319902284
+            ],
+            [
+              -123.25078848650597,
+              49.263433971078385
+            ],
+            [
+              -123.25077088745158,
+              49.263411884548375
+            ],
+            [
+              -123.2507813805009,
+              49.26340823337167
+            ],
+            [
+              -123.25079897955611,
+              49.263430319902284
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "furniture",
+        "name": {
+          "en": "Fossil Excavation 4"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_4_fixture"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25078493350334,
+            49.26342110222618
+          ]
+        },
+        "local_category": "floor_display_fixture",
+        "material": "glass",
+        "walkable": true,
+        "exhibit_ids": [
+          "87c661aa-b3b8-41ca-883f-31f457f1ae59"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    },
+    {
+      "id": "b8964121-abfe-5e06-a155-afa1504f0ba0",
+      "type": "Feature",
+      "feature_type": "fixture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25040179419881,
+              49.26348667430143
+            ],
+            [
+              -123.2503913011292,
+              49.263490325458676
+            ],
+            [
+              -123.25037362551596,
+              49.26346814280002
+            ],
+            [
+              -123.25038411858472,
+              49.26346449164222
+            ],
+            [
+              -123.25040179419881,
+              49.26348667430143
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "furniture",
+        "name": {
+          "en": "Fossil Excavation 5"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_5_fixture"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25038770985685,
+            49.2634774085516
+          ]
+        },
+        "local_category": "floor_display_fixture",
+        "material": "glass",
+        "walkable": true,
+        "exhibit_ids": [
+          "3ee0d9e0-2394-4044-b08c-ddc5fdb8ef51"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    },
+    {
+      "id": "f8c481aa-9de1-5f15-a1d5-d17fb1564898",
+      "type": "Feature",
+      "feature_type": "fixture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.2504239460364,
+              49.263565045195435
+            ],
+            [
+              -123.25041345296225,
+              49.26356869634897
+            ],
+            [
+              -123.25039993154031,
+              49.26355172717172
+            ],
+            [
+              -123.2504104246138,
+              49.263548076017734
+            ],
+            [
+              -123.2504239460364,
+              49.263565045195435
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "furniture",
+        "name": {
+          "en": "Fossil Excavation 6"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_6_fixture"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25041193878808,
+            49.26355838618406
+          ]
+        },
+        "local_category": "floor_display_fixture",
+        "material": "glass",
+        "walkable": true,
+        "exhibit_ids": [
+          "5cf6b89b-13f6-4990-88da-00ab552f987e"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    },
+    {
+      "id": "9be7ecc0-6135-576c-bb76-ccd5b1657447",
+      "type": "Feature",
+      "feature_type": "fixture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25033870365641,
+              49.263508504427065
+            ],
+            [
+              -123.25032821058281,
+              49.26351215558055
+            ],
+            [
+              -123.25030033196445,
+              49.263477168277056
+            ],
+            [
+              -123.25031082503672,
+              49.26347351712262
+            ],
+            [
+              -123.25033870365641,
+              49.263508504427065
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "furniture",
+        "name": {
+          "en": "Fossil Excavation 7"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_7_fixture"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25031951780917,
+            49.263492836354196
+          ]
+        },
+        "local_category": "floor_display_fixture",
+        "material": "glass",
+        "walkable": true,
+        "exhibit_ids": [
+          "9e69a160-b543-4cb7-b9fd-28b364303284"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    },
+    {
+      "id": "971509ce-7b31-5819-b699-826be000cc66",
+      "type": "Feature",
+      "feature_type": "fixture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25018132136228,
+              49.263563266834254
+            ],
+            [
+              -123.2501708282787,
+              49.26356691797836
+            ],
+            [
+              -123.25014294968027,
+              49.263531930689005
+            ],
+            [
+              -123.25015344276251,
+              49.263528279543934
+            ],
+            [
+              -123.25018132136228,
+              49.263563266834254
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "furniture",
+        "name": {
+          "en": "Fossil Excavation 8"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_8_fixture"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25016213552,
+            49.26354759876381
+          ]
+        },
+        "local_category": "floor_display_fixture",
+        "material": "glass",
+        "walkable": true,
+        "exhibit_ids": [
+          "ad863b1b-b79b-4bd4-b379-1cb5c85b7c30"
+        ],
+        "review_status": "locally_confirmed"
+      }
+    },
+    {
+      "id": "d87250df-0277-5e11-81ff-548a78cee74f",
+      "type": "Feature",
+      "feature_type": "fixture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.25020112447352,
+              49.26363834901209
+            ],
+            [
+              -123.25019063138552,
+              49.26364200015264
+            ],
+            [
+              -123.25017309771064,
+              49.26361999564688
+            ],
+            [
+              -123.25018359079783,
+              49.263616344505785
+            ],
+            [
+              -123.25020112447352,
+              49.26363834901209
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "furniture",
+        "name": {
+          "en": "Fossil Excavation 9"
+        },
+        "alt_name": {
+          "en": "fossil_excavation_9_fixture"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
+        "display_point": {
+          "type": "Point",
+          "coordinates": [
+            -123.25018711109158,
+            49.26362917233034
+          ]
+        },
+        "local_category": "floor_display_fixture",
+        "material": "glass",
+        "walkable": true,
+        "exhibit_ids": [
+          "da26df4f-88e4-455c-880b-0b3fb36b729e"
+        ],
+        "review_status": "locally_confirmed"
+      }
     }
   ]
 }

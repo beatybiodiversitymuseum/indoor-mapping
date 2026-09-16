@@ -16,6 +16,8 @@ PREVIEW_LAYERS = [
     "detail",
     "fixture",
     "amenity",
+    "opening",
+    "exhibit",
 ]
 
 

@@ -5,27 +5,26 @@ import test from "node:test";
 const exhibit = JSON.parse(await readFile(new URL("../geojson/exhibit.geojson", import.meta.url), "utf8"));
 const archive = JSON.parse(await readFile(new URL("../geojson/archive.geojson", import.meta.url), "utf8"));
 const fixture = JSON.parse(await readFile(new URL("../geojson/fixture.geojson", import.meta.url), "utf8"));
-const amenity = JSON.parse(await readFile(new URL("../geojson/amenity.geojson", import.meta.url), "utf8"));
 const report = JSON.parse(await readFile(new URL("../reports/exhibit-resolution/unresolved-exhibits.json", import.meta.url), "utf8"));
 
 const fixturesById = new Map(fixture.features.map((feature) => [feature.id, feature]));
-const amenitiesById = new Map(amenity.features.map((feature) => [feature.id, feature]));
 const exhibitsById = new Map(exhibit.features.map((feature) => [feature.id, feature]));
 
 test("accepted exhibits all resolve to existing map features", () => {
   assert.equal(exhibit.type, "FeatureCollection");
-  assert.equal(exhibit.features.length, 1490);
+  assert.equal(exhibit.features.filter((feature) => !feature.properties.source_issue_number).length, 1499);
+  assert.equal(exhibit.features.filter((feature) => feature.properties.source_issue_number).length, 230);
   for (const feature of exhibit.features) {
     assert.equal(feature.feature_type, "exhibit");
     assert.equal(feature.properties.duration_type, "permanent");
-    assert.ok(feature.properties.fixture_ids.length || feature.properties.amenity_ids.length);
-    for (const fixtureId of feature.properties.fixture_ids) assert.ok(fixturesById.has(fixtureId), fixtureId);
-    for (const amenityId of feature.properties.amenity_ids) assert.ok(amenitiesById.has(amenityId), amenityId);
+    assert.ok(feature.geometry);
+    assert.equal(feature.properties.amenity_ids, undefined);
+    for (const fixtureId of feature.properties.fixture_ids || []) assert.ok(fixturesById.has(fixtureId), fixtureId);
     assert.equal("legibility" in feature.properties, false);
     assert.equal("audit_flags" in feature.properties, false);
     assert.equal("public_map_distance_meters" in feature.properties, false);
-    assert.equal("public_svg_x" in feature.properties.archive, false);
-    assert.equal("public_svg_y" in feature.properties.archive, false);
+    assert.equal("public_svg_x" in (feature.properties.archive || {}), false);
+    assert.equal("public_svg_y" in (feature.properties.archive || {}), false);
   }
 });
 
@@ -87,7 +86,7 @@ test("archive layer preserves archived shadowboxes without displaying them", () 
     assert.deepEqual(feature.properties.fixture_ids, []);
     assert.deepEqual(feature.properties.amenity_ids, []);
     assert.equal("public_map_distance_meters" in feature.properties, false);
-    assert.equal("public_svg_x" in feature.properties.archive, false);
-    assert.equal("public_svg_y" in feature.properties.archive, false);
+    assert.equal("public_svg_x" in (feature.properties.archive || {}), false);
+    assert.equal("public_svg_y" in (feature.properties.archive || {}), false);
   }
 });

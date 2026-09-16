@@ -9,7 +9,7 @@
       "feature_types": [
         "exhibit"
       ],
-      "description": "Local permanent exhibit content layer resolved to existing amenity and fixture features."
+      "description": "Exhibit content and physical locations, with optional fixture associations and separate navigation stopping points."
     }
   }
 }

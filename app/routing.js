@@ -178,7 +178,8 @@ function networkDegree(graph, node) {
 }
 
 export function fixtureRouteId(feature) {
-  return feature?.properties?.alt_name?.en || null;
+  const properties = feature?.properties;
+  return properties?.route_fixture_id || (properties?.fixture_alt_names?.length === 1 ? properties.fixture_alt_names[0] : null) || properties?.alt_name?.en?.replace(/_exhibits$/, "") || null;
 }
 
 export function isRoutableFeature(network, feature) {

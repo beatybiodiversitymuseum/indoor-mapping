@@ -155,7 +155,7 @@ def layer_for(issue: dict, feature: dict | None) -> str:
     title = re.sub(r"^amenity or opening:\s*", "", issue.get("title", ""), flags=re.IGNORECASE)
     location_name = first_fenced_text(section(issue.get("body") or "", 1))
     text = f"{title}\n{location_name}".lower()
-    if "opening" in issue_labels or re.search(r"\b(opening|door|entrance|exit)\b", text):
+    if "opening" in issue_labels or re.search(r"\b(openings?|doors?|entrances?|exits?)\b", text):
         return "opening"
     return "amenity"
 
@@ -280,6 +280,8 @@ def main() -> int:
     collections = {
         "amenity": load_json(geojson_dir / "amenity.geojson"),
         "opening": load_json(geojson_dir / "opening.geojson"),
+        "exhibit": load_json(geojson_dir / "exhibit.geojson"),
+        "fixture": load_json(geojson_dir / "fixture.geojson"),
     }
 
     touched_layers = set()
