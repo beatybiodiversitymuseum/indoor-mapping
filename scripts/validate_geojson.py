@@ -96,6 +96,64 @@ def validate_level_references(paths: list[Path]) -> list[str]:
     return errors
 
 
+def load_collection(name: str) -> dict:
+    return json.loads((Path("geojson") / f"{name}.geojson").read_text(encoding="utf-8"))
+
+
+def validate_map_model() -> list[str]:
+    """Check the visitor-facing extension model and its cross-layer references."""
+    layer_names = ["amenity", "opening", "exhibit", "fixture", "navigation"]
+    try:
+        collections = {name: load_collection(name) for name in layer_names}
+    except (OSError, json.JSONDecodeError):
+        return []
+
+    errors = []
+    ids = {name: {feature.get("id") for feature in collection.get("features", [])} for name, collection in collections.items()}
+    alt_names = {
+        name: {
+            feature.get("properties", {}).get("alt_name", {}).get("en")
+            for feature in collection.get("features", [])
+            if isinstance(feature.get("properties", {}).get("alt_name"), dict)
+        }
+        for name, collection in collections.items()
+    }
+    issue_layers = {}
+
+    for layer, collection in collections.items():
+        for index, feature in enumerate(collection.get("features", [])):
+            properties = feature.get("properties", {})
+            prefix = f"geojson/{layer}.geojson: feature {index}"
+            if feature.get("feature_type") != layer:
+                errors.append(f"{prefix}: feature_type must be {layer}")
+            issue_number = properties.get("source_issue_number")
+            if issue_number is not None:
+                previous = issue_layers.setdefault(issue_number, layer)
+                if previous != layer:
+                    errors.append(f"{prefix}: source issue {issue_number} also exists in {previous}.geojson")
+
+            if layer == "amenity" and properties.get("category") == "exhibit":
+                errors.append(f"{prefix}: exhibits belong in exhibit.geojson")
+            if layer == "exhibit":
+                if not properties.get("exhibit_type"):
+                    errors.append(f"{prefix}: exhibit_type is required")
+                for fixture_id in properties.get("fixture_ids", []):
+                    if fixture_id not in ids["fixture"]:
+                        errors.append(f"{prefix}: fixture reference {fixture_id} does not exist")
+                for navigation_id in [*properties.get("navigation_point_ids", []), *properties.get("stopping_point_ids", [])]:
+                    if navigation_id not in ids["navigation"]:
+                        errors.append(f"{prefix}: navigation reference {navigation_id} does not exist")
+                route_id = properties.get("route_fixture_id")
+                fixture_names = properties.get("fixture_alt_names", [])
+                if route_id and route_id not in alt_names["fixture"] and route_id not in alt_names["exhibit"]:
+                    errors.append(f"{prefix}: route fixture {route_id} does not resolve")
+                for fixture_name in fixture_names:
+                    if fixture_name not in alt_names["fixture"]:
+                        errors.append(f"{prefix}: fixture alt name {fixture_name} does not resolve")
+
+    return errors
+
+
 def main() -> int:
     paths = sorted(Path("geojson").glob("*.geojson")) + [Path("geojson/manifest.json")]
     if Path("preview.geojson").exists():
@@ -104,6 +162,7 @@ def main() -> int:
     for path in paths:
         errors.extend(validate_file(path))
     errors.extend(validate_level_references(paths))
+    errors.extend(validate_map_model())
 
     if errors:
         for error in errors:

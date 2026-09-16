@@ -29,7 +29,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--report", default="reports/issue-geojson-review.md")
     parser.add_argument("--default-level-id", default=os.environ.get("DEFAULT_LEVEL_ID", BASEMENT_LEVEL_ID))
     parser.add_argument("--default-unit-id", default=os.environ.get("DEFAULT_UNIT_ID", ""))
-    parser.add_argument("--default-amenity-category", default=os.environ.get("DEFAULT_AMENITY_CATEGORY", "exhibit"))
+    parser.add_argument("--default-amenity-category", default=os.environ.get("DEFAULT_AMENITY_CATEGORY", "service"))
     parser.add_argument("--bounds-west", type=float, default=float(os.environ.get("UBC_BOUNDS_WEST", UBC_BOUNDS["west"])))
     parser.add_argument("--bounds-south", type=float, default=float(os.environ.get("UBC_BOUNDS_SOUTH", UBC_BOUNDS["south"])))
     parser.add_argument("--bounds-east", type=float, default=float(os.environ.get("UBC_BOUNDS_EAST", UBC_BOUNDS["east"])))
@@ -133,6 +133,19 @@ def valid_point(coordinates: object) -> bool:
     return isinstance(lon, (int, float)) and isinstance(lat, (int, float)) and -180 <= lon <= 180 and -90 <= lat <= 90
 
 
+def geometry_points(geometry: dict) -> list[list[float]]:
+    coordinates = geometry.get("coordinates")
+    kind = geometry.get("type")
+    if kind == "Point":
+        return [coordinates] if valid_point(coordinates) else []
+    if kind == "LineString" and isinstance(coordinates, list):
+        return coordinates if len(coordinates) >= 2 and all(valid_point(point) for point in coordinates) else []
+    if kind == "Polygon" and isinstance(coordinates, list) and coordinates:
+        points = [point for ring in coordinates if isinstance(ring, list) for point in ring]
+        return points if points and all(valid_point(point) for point in points) else []
+    return []
+
+
 def in_bounds(coordinates: tuple[float, float] | list[float], args: argparse.Namespace) -> bool:
     lon, lat = coordinates[0], coordinates[1]
     return args.bounds_west <= lon <= args.bounds_east and args.bounds_south <= lat <= args.bounds_north
@@ -149,19 +162,36 @@ def bounds_message(coordinates: tuple[float, float] | list[float], args: argpars
 def layer_for(issue: dict, feature: dict | None) -> str:
     if feature:
         feature_type = str(feature.get("feature_type") or feature.get("properties", {}).get("feature_type") or "").lower()
-        if feature_type in {"amenity", "opening"}:
+        if feature_type in {"amenity", "opening", "exhibit", "fixture"}:
             return feature_type
     issue_labels = labels_for(issue)
-    title = re.sub(r"^amenity or opening:\s*", "", issue.get("title", ""), flags=re.IGNORECASE)
+    requested_layers = issue_labels & {"amenity", "opening", "exhibit", "fixture"}
+    if len(requested_layers) == 1:
+        return requested_layers.pop()
+    layer_section = section(issue.get("body") or "", 2)
+    for item in checked_items(layer_section):
+        layer = item.split("—", 1)[0].split("-", 1)[0].strip().lower()
+        if layer in {"amenity", "opening", "exhibit", "fixture"}:
+            return layer
+    title = re.sub(r"^(?:amenity or opening|location):\s*", "", issue.get("title", ""), flags=re.IGNORECASE)
     location_name = first_fenced_text(section(issue.get("body") or "", 1))
     text = f"{title}\n{location_name}".lower()
     if "opening" in issue_labels or re.search(r"\b(openings?|doors?|entrances?|exits?)\b", text):
         return "opening"
+    if re.search(r"\b(cabinets?|drawers?|tables?|screens?|booths?|fixtures?)\b", text):
+        return "fixture"
+    if re.search(r"\b(exhibits?|windows?|artworks?|displays?|skeletons?|skulls?|timelines?|plaques?|posters?|photos?)\b", text):
+        return "exhibit"
     return "amenity"
 
 
+def has_layer_section(body: str) -> bool:
+    return any(item.split("—", 1)[0].split("-", 1)[0].strip().lower() in {"amenity", "opening", "exhibit", "fixture"} for item in checked_items(section(body, 2)))
+
+
 def common_properties(issue: dict, body: str) -> dict:
-    confirmation = section(body, 2)
+    offset = 1 if has_layer_section(body) else 0
+    confirmation = section(body, 2 + offset)
     return {
         "source": "GitHub issue",
         "source_url": issue_url(issue),
@@ -169,24 +199,25 @@ def common_properties(issue: dict, body: str) -> dict:
         "source_issue_title": issue.get("title"),
         "confirmation_methods": checked_items(confirmation),
         "confirmation_details": first_fenced_text(confirmation.split("Details:", 1)[-1]) if "Details:" in confirmation else "",
-        "reference_points": first_fenced_text(section(body, 3)),
-        "contributor_notes": first_fenced_text(section(body, 6)),
+        "reference_points": first_fenced_text(section(body, 3 + offset)),
+        "contributor_notes": first_fenced_text(section(body, 5 + offset)),
     }
 
 
 def default_properties(issue: dict, body: str, layer: str, args: argparse.Namespace) -> dict | str:
-    name = first_fenced_text(section(body, 1)) or issue.get("title", "").replace("Amenity or Opening:", "").strip()
+    name = first_fenced_text(section(body, 1)) or re.sub(r"^(?:Amenity or Opening|Location):\s*", "", issue.get("title", ""), flags=re.IGNORECASE).strip()
     if not name:
         return "missing location name"
 
+    categories = {"opening": "pedestrian", "exhibit": "exhibit", "fixture": "furniture", "amenity": args.default_amenity_category}
     props = {
-        "category": "pedestrian" if layer == "opening" else args.default_amenity_category,
+        "category": categories[layer],
         "accessibility": None,
         "name": {"en": name},
         "alt_name": {"en": slugify(name)},
         "level_id": args.default_level_id,
         "correlation_id": None,
-        "local_category": "issue_submitted_opening" if layer == "opening" else "issue_submitted_amenity",
+        "local_category": f"issue_submitted_{layer}",
         "pedestrian_importance": True,
         "visible_to_visitors": None,
     }
@@ -200,6 +231,10 @@ def default_properties(issue: dict, body: str, layer: str, args: argparse.Namesp
                 "address_id": None,
             }
         )
+    elif layer == "exhibit":
+        props.update({"duration_type": "permanent", "exhibit_type": "display", "fixture_ids": [], "navigation_point_ids": [], "stopping_point_ids": []})
+    elif layer == "fixture":
+        props.update({"unit_ids": [args.default_unit_id] if args.default_unit_id else []})
     return props
 
 
@@ -210,10 +245,13 @@ def build_feature(issue: dict, args: argparse.Namespace) -> tuple[str | None, di
 
     if pasted:
         geometry = pasted.get("geometry") or {}
-        if geometry.get("type") != "Point" or not valid_point(geometry.get("coordinates")):
-            return None, "pasted GeoJSON is not a valid Point feature"
-        if not in_bounds(geometry["coordinates"], args):
-            return None, bounds_message(geometry["coordinates"], args)
+        allowed_geometry = {"amenity": {"Point"}, "exhibit": {"Point"}, "opening": {"Point", "LineString"}, "fixture": {"Point", "LineString", "Polygon"}}
+        points = geometry_points(geometry)
+        if geometry.get("type") not in allowed_geometry[layer] or not points:
+            return None, f"pasted GeoJSON has invalid geometry for {layer}"
+        outside = next((point for point in points if not in_bounds(point, args)), None)
+        if outside:
+            return None, bounds_message(outside, args)
         feature = pasted
         feature["id"] = feature.get("id") or candidate_id(issue, layer)
         feature["feature_type"] = layer
@@ -319,7 +357,7 @@ def main() -> int:
     lines = [
         "# Issue GeoJSON Review",
         "",
-        "Generated candidate GeoJSON from open GitHub issues labeled `map data` or titled `Amenity or Opening:`.",
+        "Generated candidate GeoJSON from open GitHub issues labeled `map data`.",
         "Review each feature in this PR before merging. The pull request is the approval record.",
         "Generated points must fall within the configured UBC Vancouver bounding box.",
         "",

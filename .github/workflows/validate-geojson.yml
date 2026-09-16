@@ -39,3 +39,6 @@ jobs:
 
       - name: Validate GeoJSON
         run: python3 scripts/validate_geojson.py
+
+      - name: Test issue ingestion
+        run: python3 -m unittest discover -s scripts -p "test_*.py"

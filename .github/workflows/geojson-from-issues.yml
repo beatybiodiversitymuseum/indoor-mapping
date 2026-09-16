@@ -23,11 +23,11 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'map data') || startsWith(github.event.issue.title, 'Amenity or Opening:')
+    if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'map data') || startsWith(github.event.issue.title, 'Location:')
     env:
       BRANCH_NAME: automation/geojson-from-issues
       DEFAULT_LEVEL_ID: 41d0e8ca-d315-4b25-938c-7955db2daf2e
-      DEFAULT_AMENITY_CATEGORY: exhibit
+      DEFAULT_AMENITY_CATEGORY: service
       UBC_BOUNDS_WEST: -123.2705
       UBC_BOUNDS_SOUTH: 49.2460
       UBC_BOUNDS_EAST: -123.2250
@@ -67,7 +67,7 @@ jobs:
             add
             | map(select(
                 any(.labels[]?; .name == "map data")
-                or (.title | startswith("Amenity or Opening:"))
+                or (.title | startswith("Location:"))
               ))
             | unique_by(.number)
             | sort_by(.number)
@@ -95,6 +95,9 @@ jobs:
 
       - name: Validate GeoJSON
         run: python3 scripts/validate_geojson.py
+
+      - name: Test issue ingestion
+        run: python3 -m unittest discover -s scripts -p "test_*.py"
 
       - name: Create or update approval PR
         run: |

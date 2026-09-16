@@ -100,18 +100,19 @@ The current map data is in the `geojson/` folder:
 | `geojson/footprint.geojson` | Confirmed OSM-derived building and overhang footprints | `footprint` |
 | `geojson/level.geojson` | Confirmed underground museum gallery level | `level` |
 | `geojson/unit.geojson` | Confirmed Museum Floor unit | `unit` |
-| `geojson/opening.geojson` | Entrances and doors, currently empty | `opening` |
+| `geojson/opening.geojson` | Doors, entrances, exits, ramps, and other passages | `opening` |
 | `geojson/anchor.geojson` | Starter anchor point for the gallery unit | `anchor` |
-| `geojson/amenity.geojson` | Fossil excavation, cabinet, and drawer exhibit points | `amenity` |
+| `geojson/amenity.geojson` | Restrooms, waste bins, visitor services, and equipment | `amenity` |
+| `geojson/exhibit.geojson` | Permanent exhibits, including windows, drawers, shadowboxes, floor displays, and standalone displays | `exhibit` |
 | `geojson/occupant.geojson` | Occupants, currently empty | `occupant` |
-| `geojson/detail.geojson` | Walkable glass-covered fossil excavation polygons | `detail` |
+| `geojson/detail.geojson` | IMDF detail features, currently empty | `detail` |
 | `geojson/section.geojson` | Sections, currently empty | `section` |
 | `geojson/geofence.geojson` | Geofences, currently empty | `geofence` |
 | `geojson/kiosk.geojson` | Kiosks, currently empty | `kiosk` |
 | `geojson/navigation.geojson` | Confirmed pedestrian route graph extension | `navigation` |
 | `geojson/relationship.geojson` | Feature relationships, currently empty | `relationship` |
-| `geojson/fixture.geojson` | Display cabinet and drawer/island box polygons | `fixture` |
-| [`preview.geojson`](preview.geojson) | Stacked GeoJSON.io review file containing unit, level, footprint, kiosk, detail, fixture, and amenity features so amenities draw on top | mixed |
+| `geojson/fixture.geojson` | Cabinets, drawer/island boxes, tables, cases, and flat floor-display footprints | `fixture` |
+| [`preview.geojson`](preview.geojson) | Stacked GeoJSON.io review file for the canonical map layers | mixed |
 
 Mapped indoor gallery features reference one confirmed underground level:
 
@@ -154,7 +155,7 @@ Use [`preview.geojson`](preview.geojson) when you want the easiest visual review
 
 ### Paste Into The Issue
 
-1. Open a new `Add or correct an Amenity or Opening` issue.
+1. Open a new `Add or correct a map location` issue.
 2. Fill in the name, confirmation method, reference points, GPS coordinates, photos, and notes.
 3. In `Optional: pasted GeoJSON feature`, paste the copied selected point feature between the fenced `json` lines.
 4. Confirm the pasted feature is a single `Point` feature and uses `[longitude, latitude]` coordinate order.
@@ -175,22 +176,22 @@ Many locations at the Beaty can be added to our maps. Consider visitor-facing po
 
 You do not need to know how to code to help add a location. The most important thing is to collect clear, accurate information so that the JSON entry can be created or reviewed correctly.
 
-If you are submitting a new location, please use the GitHub issue template for amenity contributions. The issue template asks for the information a maintainer needs without requiring you to edit GeoJSON.
+If you are submitting a new location, use the map-location issue template and select exactly one layer: exhibit, fixture, amenity, or opening. The template asks for the information a maintainer needs without requiring you to edit GeoJSON.
 
 ## Issue-To-GeoJSON Review Flow
 
-Open issues labeled `map data` or titled with the `Amenity or Opening:` prefix can be consumed by the `Generate GeoJSON from Issues` GitHub Actions workflow. The workflow runs when a matching issue is opened, edited, labeled, or reopened, and it can also be run manually or by its weekly scheduled backstop. Issue-triggered runs include the triggering issue directly and also batch any other open matching issues found by the GitHub CLI. The workflow also creates the `map data` and `needs review` labels if they are missing, then applies them to matching issues.
+Open issues labeled `map data` or titled with the `Location:` prefix can be consumed by the `Generate GeoJSON from Issues` GitHub Actions workflow. The workflow runs when a matching issue is opened, edited, labeled, or reopened, and it can also be run manually or by its weekly scheduled backstop. Issue-triggered runs include the triggering issue directly and also batch any other open matching issues found by the GitHub CLI. The workflow also creates the `map data` and `needs review` labels if they are missing, then applies them to matching issues.
 
 The workflow:
 
 1. Reads open `map data` issues.
-2. Parses a pasted GeoJSON `Point` feature when one is provided, or builds a candidate point from the issue name and GPS coordinates.
-3. Updates `geojson/amenity.geojson` or `geojson/opening.geojson`.
+2. Reads the selected map layer and validates geometry appropriate to that layer.
+3. Updates `geojson/exhibit.geojson`, `fixture.geojson`, `amenity.geojson`, or `opening.geojson`.
 4. Rebuilds [`preview.geojson`](preview.geojson) for GeoJSON.io review.
 5. Writes `reports/issue-geojson-review.md`.
 6. Opens or updates a pull request labeled `needs review`.
 
-Generated features include `source_issue_number`, `source_issue_title`, and `source_url`. The pull request review is the approval gate: review the map changes in the PR, edit the generated GeoJSON if needed, and merge only after the candidate data is accepted. Generated point features must fall within the configured UBC Vancouver bounding box, and the generated PR body includes `Closes #...` lines for issues that were converted into candidate GeoJSON. The validation workflow rebuilds [`preview.geojson`](preview.geojson) on pull requests and fails if the committed preview is stale, so accepted PRs land with the source layer and preview in sync.
+Generated features include `source_issue_number`, `source_issue_title`, and `source_url`. The pull request review is the approval gate: review the map changes in the PR, edit the generated GeoJSON if needed, and merge only after the candidate data is accepted. Geometry must fall within the configured UBC Vancouver bounding box, and the generated PR body includes `Closes #...` lines for converted issues. Validation rejects exhibits stored as amenities, unresolved exhibit-to-fixture or navigation references, duplicate issue records across layers, invalid level references, and stale previews.
 
 The best way to figure out the location is to use multiple GPS readings. However, the GPS is not always great underground. Then, use confirmed points and measure from them. It's best if you can establish a reference point along a straight line.
 
@@ -378,7 +379,7 @@ If you are not sure what a field means, do not guess. Add a plain-language note 
 Openings are places where a person can pass through a boundary, such as exterior entrances, doors, and internal thresholds between spaces. Follow the same process as Amenities, but record them as openings.
 
 ### Submission Instructions
-Submit your Amenity or Opening edit as a GitHub Issue by clicking "Issues" and using the provided "Add or correct an Amenity or Opening".
+Submit your map edit as a GitHub Issue by clicking "Issues" and using the provided "Add or correct a map location" template.
 
 ## Useful References
 
