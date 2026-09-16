@@ -511,12 +511,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.250866321795,
-            49.263489507515
+            -123.250861077053,
+            49.263491286942
           ],
           [
-            -123.250806136829,
-            49.263413976228
+            -123.250800892095,
+            49.263415755655
           ]
         ]
       },
@@ -532,20 +532,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250836229312,
-            49.263451741871
+            -123.250830984574,
+            49.263453521299
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 15,
         "start_point": [
-          -123.250866321795,
-          49.263489507515
+          -123.250861077053,
+          49.263491286942
         ],
         "end_point": [
-          -123.250806136829,
-          49.263413976228
+          -123.250800892095,
+          49.263415755655
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -560,7 +560,15 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-015",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         },
         "debug_id": "PATH-015"
       }
@@ -1318,12 +1326,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.250548848585,
-            49.263597856536
+            -123.250542569774,
+            49.263599986795
           ],
           [
-            -123.250489499013,
-            49.263523373061
+            -123.250483220211,
+            49.26352550332
           ]
         ]
       },
@@ -1339,20 +1347,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250519173799,
-            49.263560614799
+            -123.250512894992,
+            49.263562745057
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 38,
         "start_point": [
-          -123.250548848585,
-          49.263597856536
+          -123.250542569774,
+          49.263599986795
         ],
         "end_point": [
-          -123.250489499013,
-          49.263523373061
+          -123.250483220211,
+          49.26352550332
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -1367,7 +1375,15 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-038",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         },
         "debug_id": "PATH-038"
       }
@@ -1876,12 +1892,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.25028683593,
-            49.263687276656
+            -123.250292108449,
+            49.263685487812
           ],
           [
-            -123.250242671779,
-            49.263631850483
+            -123.250247944292,
+            49.263630061639
           ]
         ]
       },
@@ -1897,20 +1913,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250264753855,
-            49.26365956357
+            -123.250270026371,
+            49.263657774726
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 54,
         "start_point": [
-          -123.25028683593,
-          49.263687276656
+          -123.250292108449,
+          49.263685487812
         ],
         "end_point": [
-          -123.250242671779,
-          49.263631850483
+          -123.250247944292,
+          49.263630061639
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -1925,7 +1941,16 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-054",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         },
         "debug_id": "PATH-054"
       }
@@ -1938,8 +1963,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.250242671779,
-            49.263631850482
+            -123.250247944292,
+            49.263630061639
           ],
           [
             -123.250374336767,
@@ -1959,16 +1984,16 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250308504273,
-            49.263609383122
+            -123.25031114053,
+            49.2636084887
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 56,
         "start_point": [
-          -123.250242671779,
-          49.263631850482
+          -123.250247944292,
+          49.263630061639
         ],
         "end_point": [
           -123.250374336767,
@@ -2003,12 +2028,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.25017271064,
-            49.2635440487
+            -123.250177983144,
+            49.263542259856
           ],
           [
-            -123.250159849256,
-            49.263527907523
+            -123.250165121758,
+            49.263526118679
           ]
         ]
       },
@@ -2024,20 +2049,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250166279948,
-            49.263535978111
+            -123.250171552451,
+            49.263534189268
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 57,
         "start_point": [
-          -123.25017271064,
-          49.2635440487
+          -123.250177983144,
+          49.263542259856
         ],
         "end_point": [
-          -123.250159849256,
-          49.263527907523
+          -123.250165121758,
+          49.263526118679
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -2052,7 +2077,16 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-057",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         },
         "debug_id": "PATH-057"
       }
@@ -2065,12 +2099,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.250242671779,
-            49.263631850483
+            -123.250247944292,
+            49.263630061639
           ],
           [
-            -123.25017271064,
-            49.2635440487
+            -123.250177983144,
+            49.263542259856
           ]
         ]
       },
@@ -2086,20 +2120,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25020769121,
-            49.263587949591
+            -123.250212963718,
+            49.263586160748
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 58,
         "start_point": [
-          -123.250242671779,
-          49.263631850483
+          -123.250247944292,
+          49.263630061639
         ],
         "end_point": [
-          -123.25017271064,
-          49.2635440487
+          -123.250177983144,
+          49.263542259856
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -2114,7 +2148,16 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-058",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         },
         "debug_id": "PATH-058"
       }
@@ -3316,8 +3359,8 @@
             49.263340582431
           ],
           [
-            -123.250754800555,
-            49.263349549717
+            -123.250749555828,
+            49.263351329143
           ]
         ]
       },
@@ -3333,8 +3376,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250767937987,
-            49.263345066074
+            -123.250765315623,
+            49.263345955787
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -3345,8 +3388,8 @@
           49.263340582431
         ],
         "end_point": [
-          -123.250754800555,
-          49.263349549717
+          -123.250749555828,
+          49.263351329143
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -3437,12 +3480,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.250754800555,
-            49.263349549716
+            -123.250749555828,
+            49.263351329143
           ],
           [
-            -123.250806136829,
-            49.263413976228
+            -123.250800892095,
+            49.263415755655
           ]
         ]
       },
@@ -3458,20 +3501,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250780468692,
-            49.263381762972
+            -123.250775223961,
+            49.263383542399
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 89,
         "start_point": [
-          -123.250754800555,
-          49.263349549716
+          -123.250749555828,
+          49.263351329143
         ],
         "end_point": [
-          -123.250806136829,
-          49.263413976228
+          -123.250800892095,
+          49.263415755655
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -3486,7 +3529,15 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-089",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         },
         "debug_id": "PATH-089"
       }
@@ -3499,12 +3550,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.250754800555,
-            49.263349549716
+            -123.250749555828,
+            49.263351329143
           ],
           [
-            -123.250696142029,
-            49.263275933619
+            -123.25069089731,
+            49.263277713046
           ]
         ]
       },
@@ -3520,20 +3571,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250725471292,
-            49.263312741667
+            -123.250720226569,
+            49.263314521095
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 90,
         "start_point": [
-          -123.250754800555,
-          49.263349549716
+          -123.250749555828,
+          49.263351329143
         ],
         "end_point": [
-          -123.250696142029,
-          49.263275933619
+          -123.25069089731,
+          49.263277713046
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -3548,7 +3599,15 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-090",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         },
         "debug_id": "PATH-090"
       }
@@ -3752,8 +3811,8 @@
             49.263448166289
           ],
           [
-            -123.250806136829,
-            49.263413976228
+            -123.250800892095,
+            49.263415755655
           ]
         ]
       },
@@ -3769,8 +3828,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250756046913,
-            49.263431071259
+            -123.250753424547,
+            49.263431960972
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -3781,8 +3840,8 @@
           49.263448166289
         ],
         "end_point": [
-          -123.250806136829,
-          49.263413976228
+          -123.250800892095,
+          49.263415755655
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -5557,12 +5616,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.25043223201,
-            49.263451502959
+            -123.250425953217,
+            49.263453633218
           ],
           [
-            -123.250489499013,
-            49.263523373061
+            -123.250483220211,
+            49.26352550332
           ]
         ]
       },
@@ -5578,20 +5637,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250460865511,
-            49.26348743801
+            -123.250454586714,
+            49.263489568269
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 128,
         "start_point": [
-          -123.25043223201,
-          49.263451502959
+          -123.250425953217,
+          49.263453633218
         ],
         "end_point": [
-          -123.250489499013,
-          49.263523373061
+          -123.250483220211,
+          49.26352550332
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -5606,7 +5665,15 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-128",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         },
         "debug_id": "PATH-128"
       }
@@ -5619,12 +5686,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.25043223201,
-            49.263451502959
+            -123.250425953217,
+            49.263453633218
           ],
           [
-            -123.250378669813,
-            49.263384282174
+            -123.250372391029,
+            49.263386412433
           ]
         ]
       },
@@ -5640,20 +5707,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250405450912,
-            49.263417892567
+            -123.250399172123,
+            49.263420022825
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 129,
         "start_point": [
-          -123.25043223201,
-          49.263451502959
+          -123.250425953217,
+          49.263453633218
         ],
         "end_point": [
-          -123.250378669813,
-          49.263384282174
+          -123.250372391029,
+          49.263386412433
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -5668,7 +5735,15 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-129",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         },
         "debug_id": "PATH-129"
       }
@@ -6310,8 +6385,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.250489499013,
-            49.263523373061
+            -123.250483220211,
+            49.26352550332
           ],
           [
             -123.250640439069,
@@ -6331,16 +6406,16 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250564969041,
-            49.263497616325
+            -123.25056182964,
+            49.263498681455
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 142,
         "start_point": [
-          -123.250489499013,
-          49.263523373061
+          -123.250483220211,
+          49.26352550332
         ],
         "end_point": [
           -123.250640439069,
@@ -7121,12 +7196,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            -123.250116657978,
-            49.263473701911
+            -123.250121930474,
+            49.263471913067
           ],
           [
-            -123.250159849256,
-            49.263527907523
+            -123.250165121758,
+            49.263526118679
           ]
         ]
       },
@@ -7142,20 +7217,20 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250138253617,
-            49.263500804717
+            -123.250143526116,
+            49.263499015873
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
         "wayfinding_type": "walking_path",
         "path_index": 193,
         "start_point": [
-          -123.250116657978,
-          49.263473701911
+          -123.250121930474,
+          49.263471913067
         ],
         "end_point": [
-          -123.250159849256,
-          49.263527907523
+          -123.250165121758,
+          49.263526118679
         ],
         "original_category": "wayfinding",
         "source_layer": "wayfinding",
@@ -7170,7 +7245,16 @@
           "museum_north_reference": "Walking Path 4",
           "cardinal_tolerance_meters": 0.02,
           "debug_id": "PATH-193",
-          "north_south_centered_in_corridor": true
+          "north_south_centered_in_corridor": true,
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         },
         "debug_id": "PATH-193"
       }
@@ -23922,8 +24006,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250858276584,
-          49.263479410903
+          -123.250853031843,
+          49.26348119033
         ]
       },
       "properties": {
@@ -23939,8 +24023,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250858276584,
-            49.263479410903
+            -123.250853031843,
+            49.26348119033
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -23988,7 +24072,15 @@
             }
           ],
           "projection_distance_meters": 0.5332,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -23999,8 +24091,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25085316268,
-          49.263472993033
+          -123.25084791794,
+          49.26347477246
         ]
       },
       "properties": {
@@ -24016,8 +24108,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25085316268,
-            49.263472993033
+            -123.25084791794,
+            49.26347477246
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24065,7 +24157,15 @@
             }
           ],
           "projection_distance_meters": 0.5332,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24076,8 +24176,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250848048777,
-          49.263466575162
+          -123.250842804038,
+          49.263468354589
         ]
       },
       "properties": {
@@ -24093,8 +24193,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250848048777,
-            49.263466575162
+            -123.250842804038,
+            49.263468354589
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24142,7 +24242,15 @@
             }
           ],
           "projection_distance_meters": 0.5332,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24153,8 +24261,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250842934875,
-          49.26346015729
+          -123.250837690136,
+          49.263461936717
         ]
       },
       "properties": {
@@ -24170,8 +24278,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250842934875,
-            49.26346015729
+            -123.250837690136,
+            49.263461936717
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24219,7 +24327,15 @@
             }
           ],
           "projection_distance_meters": 0.5332,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24230,8 +24346,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250837820973,
-          49.263453739417
+          -123.250832576235,
+          49.263455518844
         ]
       },
       "properties": {
@@ -24247,8 +24363,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250837820973,
-            49.263453739417
+            -123.250832576235,
+            49.263455518844
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24296,7 +24412,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24307,8 +24431,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250832707073,
-          49.263447321544
+          -123.250827462336,
+          49.263449100971
         ]
       },
       "properties": {
@@ -24324,8 +24448,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250832707073,
-            49.263447321544
+            -123.250827462336,
+            49.263449100971
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24373,7 +24497,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24384,8 +24516,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250827593174,
-          49.263440903669
+          -123.250822348437,
+          49.263442683096
         ]
       },
       "properties": {
@@ -24401,8 +24533,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250827593174,
-            49.263440903669
+            -123.250822348437,
+            49.263442683096
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24450,7 +24582,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24461,8 +24601,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250822479275,
-          49.263434485794
+          -123.250817234539,
+          49.263436265221
         ]
       },
       "properties": {
@@ -24478,8 +24618,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250822479275,
-            49.263434485794
+            -123.250817234539,
+            49.263436265221
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24527,7 +24667,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24538,8 +24686,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250817365377,
-          49.263428067918
+          -123.250812120642,
+          49.263429847345
         ]
       },
       "properties": {
@@ -24555,8 +24703,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250817365377,
-            49.263428067918
+            -123.250812120642,
+            49.263429847345
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24604,7 +24752,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24615,8 +24771,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25081225148,
-          49.263421650041
+          -123.250807006745,
+          49.263423429468
         ]
       },
       "properties": {
@@ -24632,8 +24788,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25081225148,
-            49.263421650041
+            -123.250807006745,
+            49.263423429468
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24681,7 +24837,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24692,8 +24856,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250807137584,
-          49.263415232164
+          -123.25080189285,
+          49.263417011591
         ]
       },
       "properties": {
@@ -24709,8 +24873,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250807137584,
-            49.263415232164
+            -123.25080189285,
+            49.263417011591
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24758,7 +24922,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24769,8 +24941,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250802023689,
-          49.263408814285
+          -123.250796778956,
+          49.263410593712
         ]
       },
       "properties": {
@@ -24786,8 +24958,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250802023689,
-            49.263408814285
+            -123.250796778956,
+            49.263410593712
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24835,7 +25007,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24846,8 +25026,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250796909795,
-          49.263402396406
+          -123.250791665062,
+          49.263404175833
         ]
       },
       "properties": {
@@ -24863,8 +25043,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250796909795,
-            49.263402396406
+            -123.250791665062,
+            49.263404175833
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24912,7 +25092,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -24923,8 +25111,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250791795901,
-          49.263395978526
+          -123.250786551169,
+          49.263397757953
         ]
       },
       "properties": {
@@ -24940,8 +25128,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250791795901,
-            49.263395978526
+            -123.250786551169,
+            49.263397757953
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -24989,7 +25177,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25000,8 +25196,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250786682009,
-          49.263389560645
+          -123.250781437278,
+          49.263391340072
         ]
       },
       "properties": {
@@ -25017,8 +25213,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250786682009,
-            49.263389560645
+            -123.250781437278,
+            49.263391340072
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25066,7 +25262,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25077,8 +25281,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250781568117,
-          49.263383142763
+          -123.250776323386,
+          49.26338492219
         ]
       },
       "properties": {
@@ -25094,8 +25298,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250781568117,
-            49.263383142763
+            -123.250776323386,
+            49.26338492219
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25143,7 +25347,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25154,8 +25366,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250776454226,
-          49.26337672488
+          -123.250771209496,
+          49.263378504307
         ]
       },
       "properties": {
@@ -25171,8 +25383,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250776454226,
-            49.26337672488
+            -123.250771209496,
+            49.263378504307
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25220,7 +25432,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25231,8 +25451,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250771340336,
-          49.263370306997
+          -123.250766095607,
+          49.263372086424
         ]
       },
       "properties": {
@@ -25248,8 +25468,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250771340336,
-            49.263370306997
+            -123.250766095607,
+            49.263372086424
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25297,7 +25517,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25308,8 +25536,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250738287054,
-          49.263328825398
+          -123.250733042329,
+          49.263330604825
         ]
       },
       "properties": {
@@ -25325,8 +25553,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250738287054,
-            49.263328825398
+            -123.250733042329,
+            49.263330604825
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25374,7 +25602,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25385,8 +25621,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25073317317,
-          49.263322407508
+          -123.250727928446,
+          49.263324186935
         ]
       },
       "properties": {
@@ -25402,8 +25638,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25073317317,
-            49.263322407508
+            -123.250727928446,
+            49.263324186935
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25451,7 +25687,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25462,8 +25706,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250728059288,
-          49.263315989618
+          -123.250722814565,
+          49.263317769045
         ]
       },
       "properties": {
@@ -25479,8 +25723,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250728059288,
-            49.263315989618
+            -123.250722814565,
+            49.263317769045
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25528,7 +25772,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25539,8 +25791,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250722945406,
-          49.263309571726
+          -123.250717700683,
+          49.263311351153
         ]
       },
       "properties": {
@@ -25556,8 +25808,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250722945406,
-            49.263309571726
+            -123.250717700683,
+            49.263311351153
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25605,7 +25857,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25616,8 +25876,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250717831525,
-          49.263303153834
+          -123.250712586803,
+          49.263304933261
         ]
       },
       "properties": {
@@ -25633,8 +25893,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250717831525,
-            49.263303153834
+            -123.250712586803,
+            49.263304933261
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25682,7 +25942,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25693,8 +25961,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250712717644,
-          49.263296735941
+          -123.250707472923,
+          49.263298515368
         ]
       },
       "properties": {
@@ -25710,8 +25978,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250712717644,
-            49.263296735941
+            -123.250707472923,
+            49.263298515368
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25759,7 +26027,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25770,8 +26046,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250707603765,
-          49.263290318048
+          -123.250702359044,
+          49.263292097475
         ]
       },
       "properties": {
@@ -25787,8 +26063,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250707603765,
-            49.263290318048
+            -123.250702359044,
+            49.263292097475
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25836,7 +26112,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25847,8 +26131,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250702489886,
-          49.263283900153
+          -123.250697245166,
+          49.26328567958
         ]
       },
       "properties": {
@@ -25864,8 +26148,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250702489886,
-            49.263283900153
+            -123.250697245166,
+            49.26328567958
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25913,7 +26197,15 @@
             }
           ],
           "projection_distance_meters": 0.5331,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -25924,8 +26216,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250858374506,
-          49.263479533794
+          -123.250853129765,
+          49.263481313221
         ]
       },
       "properties": {
@@ -25941,8 +26233,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250858374506,
-            49.263479533794
+            -123.250853129765,
+            49.263481313221
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -25994,7 +26286,15 @@
           "museum_north_reference": "Walking Path 4",
           "standalone_display_associations": [
             "529a6e56-b63f-5eb9-8823-d194ca7ed18c"
-          ]
+          ],
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26005,8 +26305,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250853260603,
-          49.263473115925
+          -123.250848015863,
+          49.263474895352
         ]
       },
       "properties": {
@@ -26022,8 +26322,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250853260603,
-            49.263473115925
+            -123.250848015863,
+            49.263474895352
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26071,7 +26371,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26082,8 +26390,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.2508481467,
-          49.263466698054
+          -123.25084290196,
+          49.263468477481
         ]
       },
       "properties": {
@@ -26099,8 +26407,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.2508481467,
-            49.263466698054
+            -123.25084290196,
+            49.263468477481
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26148,7 +26456,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26159,8 +26475,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250843032799,
-          49.263460280183
+          -123.25083778806,
+          49.26346205961
         ]
       },
       "properties": {
@@ -26176,8 +26492,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250843032799,
-            49.263460280183
+            -123.25083778806,
+            49.26346205961
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26225,7 +26541,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26236,8 +26560,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250837918898,
-          49.263453862311
+          -123.25083267416,
+          49.263455641738
         ]
       },
       "properties": {
@@ -26253,8 +26577,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250837918898,
-            49.263453862311
+            -123.25083267416,
+            49.263455641738
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26302,7 +26626,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26313,8 +26645,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250832804998,
-          49.263447444438
+          -123.250827560261,
+          49.263449223865
         ]
       },
       "properties": {
@@ -26330,8 +26662,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250832804998,
-            49.263447444438
+            -123.250827560261,
+            49.263449223865
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26379,7 +26711,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26390,8 +26730,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250827691099,
-          49.263441026565
+          -123.250822446362,
+          49.263442805992
         ]
       },
       "properties": {
@@ -26407,8 +26747,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250827691099,
-            49.263441026565
+            -123.250822446362,
+            49.263442805992
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26456,7 +26796,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26467,8 +26815,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250822577201,
-          49.26343460869
+          -123.250817332465,
+          49.263436388117
         ]
       },
       "properties": {
@@ -26484,8 +26832,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250822577201,
-            49.26343460869
+            -123.250817332465,
+            49.263436388117
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26533,7 +26881,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26544,8 +26900,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250817463304,
-          49.263428190815
+          -123.250812218569,
+          49.263429970242
         ]
       },
       "properties": {
@@ -26561,8 +26917,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250817463304,
-            49.263428190815
+            -123.250812218569,
+            49.263429970242
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26610,7 +26966,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26621,8 +26985,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250794637761,
-          49.263399545028
+          -123.250789393029,
+          49.263401324455
         ]
       },
       "properties": {
@@ -26638,8 +27002,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250794637761,
-            49.263399545028
+            -123.250789393029,
+            49.263401324455
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26687,7 +27051,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26698,8 +27070,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250789523868,
-          49.263393127149
+          -123.250784279136,
+          49.263394906576
         ]
       },
       "properties": {
@@ -26715,8 +27087,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250789523868,
-            49.263393127149
+            -123.250784279136,
+            49.263394906576
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26764,7 +27136,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26775,8 +27155,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250784409976,
-          49.263386709268
+          -123.250779165245,
+          49.263388488695
         ]
       },
       "properties": {
@@ -26792,8 +27172,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250784409976,
-            49.263386709268
+            -123.250779165245,
+            49.263388488695
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26841,7 +27221,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26852,8 +27240,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250779296085,
-          49.263380291386
+          -123.250774051355,
+          49.263382070813
         ]
       },
       "properties": {
@@ -26869,8 +27257,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250779296085,
-            49.263380291386
+            -123.250774051355,
+            49.263382070813
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26918,7 +27306,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -26929,8 +27325,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250774182195,
-          49.263373873504
+          -123.250768937465,
+          49.263375652931
         ]
       },
       "properties": {
@@ -26946,8 +27342,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250774182195,
-            49.263373873504
+            -123.250768937465,
+            49.263375652931
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -26995,7 +27391,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27006,8 +27410,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250769068306,
-          49.263367455621
+          -123.250763823577,
+          49.263369235048
         ]
       },
       "properties": {
@@ -27023,8 +27427,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250769068306,
-            49.263367455621
+            -123.250763823577,
+            49.263369235048
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27072,7 +27476,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27083,8 +27495,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250763954418,
-          49.263361037737
+          -123.25075870969,
+          49.263362817164
         ]
       },
       "properties": {
@@ -27100,8 +27512,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250763954418,
-            49.263361037737
+            -123.25075870969,
+            49.263362817164
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27149,7 +27561,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27160,8 +27580,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25075884053,
-          49.263354619852
+          -123.250753595802,
+          49.263356399279
         ]
       },
       "properties": {
@@ -27177,8 +27597,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25075884053,
-            49.263354619852
+            -123.250753595802,
+            49.263356399279
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27226,7 +27646,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27237,8 +27665,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250753726644,
-          49.263348201967
+          -123.250748481917,
+          49.263349981394
         ]
       },
       "properties": {
@@ -27254,8 +27682,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250753726644,
-            49.263348201967
+            -123.250748481917,
+            49.263349981394
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27303,7 +27731,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27314,8 +27750,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250748612758,
-          49.26334178408
+          -123.250743368032,
+          49.263343563507
         ]
       },
       "properties": {
@@ -27331,8 +27767,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250748612758,
-            49.26334178408
+            -123.250743368032,
+            49.263343563507
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27380,7 +27816,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27391,8 +27835,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250743498873,
-          49.263335366193
+          -123.250738254147,
+          49.26333714562
         ]
       },
       "properties": {
@@ -27408,8 +27852,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250743498873,
-            49.263335366193
+            -123.250738254147,
+            49.26333714562
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27457,7 +27901,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27468,8 +27920,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250738384989,
-          49.263328948305
+          -123.250733140264,
+          49.263330727732
         ]
       },
       "properties": {
@@ -27485,8 +27937,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250738384989,
-            49.263328948305
+            -123.250733140264,
+            49.263330727732
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27534,7 +27986,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27545,8 +28005,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250733271106,
-          49.263322530416
+          -123.250728026382,
+          49.263324309843
         ]
       },
       "properties": {
@@ -27562,8 +28022,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250733271106,
-            49.263322530416
+            -123.250728026382,
+            49.263324309843
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27611,7 +28071,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27622,8 +28090,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250728157223,
-          49.263316112526
+          -123.250722912499,
+          49.263317891953
         ]
       },
       "properties": {
@@ -27639,8 +28107,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250728157223,
-            49.263316112526
+            -123.250722912499,
+            49.263317891953
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27688,7 +28156,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27699,8 +28175,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250723043342,
-          49.263309694636
+          -123.250717798619,
+          49.263311474063
         ]
       },
       "properties": {
@@ -27716,8 +28192,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250723043342,
-            49.263309694636
+            -123.250717798619,
+            49.263311474063
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27765,7 +28241,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27776,8 +28260,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250717929461,
-          49.263303276744
+          -123.250712684739,
+          49.263305056171
         ]
       },
       "properties": {
@@ -27793,8 +28277,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250717929461,
-            49.263303276744
+            -123.250712684739,
+            49.263305056171
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27842,7 +28326,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27853,8 +28345,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250712815582,
-          49.263296858852
+          -123.250707570861,
+          49.263298638279
         ]
       },
       "properties": {
@@ -27870,8 +28362,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250712815582,
-            49.263296858852
+            -123.250707570861,
+            49.263298638279
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27919,7 +28411,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -27930,8 +28430,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250707701703,
-          49.263290440959
+          -123.250702456982,
+          49.263292220386
         ]
       },
       "properties": {
@@ -27947,8 +28447,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250707701703,
-            49.263290440959
+            -123.250702456982,
+            49.263292220386
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -27996,7 +28496,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -28007,8 +28515,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250702587825,
-          49.263284023065
+          -123.250697343105,
+          49.263285802492
         ]
       },
       "properties": {
@@ -28024,8 +28532,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250702587825,
-            49.263284023065
+            -123.250697343105,
+            49.263285802492
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -28073,7 +28581,15 @@
             }
           ],
           "projection_distance_meters": 1.3968,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -60444,8 +60960,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250542119523,
-          49.263589411603
+          -123.250535840713,
+          49.263591541862
         ]
       },
       "properties": {
@@ -60461,8 +60977,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250542119523,
-            49.263589411603
+            -123.250535840713,
+            49.263591541862
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -60510,7 +61026,15 @@
             }
           ],
           "projection_distance_meters": 0.6478,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -60521,8 +61045,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250537005656,
-          49.263582993728
+          -123.250530726847,
+          49.263585123987
         ]
       },
       "properties": {
@@ -60538,8 +61062,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250537005656,
-            49.263582993728
+            -123.250530726847,
+            49.263585123987
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -60587,7 +61111,15 @@
             }
           ],
           "projection_distance_meters": 0.6478,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -60598,8 +61130,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25053189179,
-          49.263576575852
+          -123.250525612981,
+          49.263578706111
         ]
       },
       "properties": {
@@ -60615,8 +61147,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25053189179,
-            49.263576575852
+            -123.250525612981,
+            49.263578706111
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -60664,7 +61196,15 @@
             }
           ],
           "projection_distance_meters": 0.6478,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -60675,8 +61215,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25052166406,
-          49.263563740098
+          -123.250515385253,
+          49.263565870357
         ]
       },
       "properties": {
@@ -60692,8 +61232,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25052166406,
-            49.263563740098
+            -123.250515385253,
+            49.263565870357
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -60741,7 +61281,15 @@
             }
           ],
           "projection_distance_meters": 0.6478,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -60752,8 +61300,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250516550196,
-          49.26355732222
+          -123.25051027139,
+          49.263559452479
         ]
       },
       "properties": {
@@ -60769,8 +61317,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250516550196,
-            49.26355732222
+            -123.25051027139,
+            49.263559452479
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -60818,7 +61366,15 @@
             }
           ],
           "projection_distance_meters": 0.6478,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -60829,8 +61385,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250511436334,
-          49.26355090434
+          -123.250505157529,
+          49.263553034599
         ]
       },
       "properties": {
@@ -60846,8 +61402,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250511436334,
-            49.26355090434
+            -123.250505157529,
+            49.263553034599
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -60895,7 +61451,15 @@
             }
           ],
           "projection_distance_meters": 0.6478,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -60906,8 +61470,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250506322472,
-          49.26354448646
+          -123.250500043667,
+          49.263546616719
         ]
       },
       "properties": {
@@ -60923,8 +61487,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250506322472,
-            49.26354448646
+            -123.250500043667,
+            49.263546616719
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -60972,7 +61536,15 @@
             }
           ],
           "projection_distance_meters": 0.6478,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -60983,8 +61555,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250501208611,
-          49.263538068579
+          -123.250494929807,
+          49.263540198838
         ]
       },
       "properties": {
@@ -61000,8 +61572,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250501208611,
-            49.263538068579
+            -123.250494929807,
+            49.263540198838
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61049,7 +61621,15 @@
             }
           ],
           "projection_distance_meters": 0.6478,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61060,8 +61640,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250427244704,
-          49.263445243877
+          -123.250420965912,
+          49.263447374136
         ]
       },
       "properties": {
@@ -61077,8 +61657,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250427244704,
-            49.263445243877
+            -123.250420965912,
+            49.263447374136
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61126,7 +61706,15 @@
             }
           ],
           "projection_distance_meters": 0.6478,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61137,8 +61725,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250422130856,
-          49.263438825984
+          -123.250415852065,
+          49.263440956243
         ]
       },
       "properties": {
@@ -61154,8 +61742,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250422130856,
-            49.263438825984
+            -123.250415852065,
+            49.263440956243
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61203,7 +61791,15 @@
             }
           ],
           "projection_distance_meters": 0.6477,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61214,8 +61810,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250417017009,
-          49.263432408089
+          -123.250410738219,
+          49.263434538348
         ]
       },
       "properties": {
@@ -61231,8 +61827,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250417017009,
-            49.263432408089
+            -123.250410738219,
+            49.263434538348
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61280,7 +61876,15 @@
             }
           ],
           "projection_distance_meters": 0.6477,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61291,8 +61895,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250411903163,
-          49.263425990194
+          -123.250405624374,
+          49.263428120453
         ]
       },
       "properties": {
@@ -61308,8 +61912,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250411903163,
-            49.263425990194
+            -123.250405624374,
+            49.263428120453
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61357,7 +61961,15 @@
             }
           ],
           "projection_distance_meters": 0.6477,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61368,8 +61980,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250406789317,
-          49.263419572298
+          -123.250400510528,
+          49.263421702557
         ]
       },
       "properties": {
@@ -61385,8 +61997,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250406789317,
-            49.263419572298
+            -123.250400510528,
+            49.263421702557
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61434,7 +62046,15 @@
             }
           ],
           "projection_distance_meters": 0.6477,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61445,8 +62065,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25039656163,
-          49.263406736503
+          -123.250390282843,
+          49.263408866762
         ]
       },
       "properties": {
@@ -61462,8 +62082,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25039656163,
-            49.263406736503
+            -123.250390282843,
+            49.263408866762
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61511,7 +62131,15 @@
             }
           ],
           "projection_distance_meters": 0.6477,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61522,8 +62150,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250391447787,
-          49.263400318604
+          -123.250385169001,
+          49.263402448863
         ]
       },
       "properties": {
@@ -61539,8 +62167,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250391447787,
-            49.263400318604
+            -123.250385169001,
+            49.263402448863
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61588,7 +62216,15 @@
             }
           ],
           "projection_distance_meters": 0.6477,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61599,8 +62235,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250386333945,
-          49.263393900705
+          -123.25038005516,
+          49.263396030964
         ]
       },
       "properties": {
@@ -61616,8 +62252,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250386333945,
-            49.263393900705
+            -123.25038005516,
+            49.263396030964
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61665,7 +62301,15 @@
             }
           ],
           "projection_distance_meters": 0.6477,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61676,8 +62320,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250542217269,
-          49.263589534273
+          -123.250535938459,
+          49.263591664532
         ]
       },
       "properties": {
@@ -61693,8 +62337,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250542217269,
-            49.263589534273
+            -123.250535938459,
+            49.263591664532
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61742,7 +62386,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61753,8 +62405,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250537103402,
-          49.263583116399
+          -123.250530824593,
+          49.263585246658
         ]
       },
       "properties": {
@@ -61770,8 +62422,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250537103402,
-            49.263583116399
+            -123.250530824593,
+            49.263585246658
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61819,7 +62471,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61830,8 +62490,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250531989536,
-          49.263576698523
+          -123.250525710727,
+          49.263578828782
         ]
       },
       "properties": {
@@ -61847,8 +62507,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250531989536,
-            49.263576698523
+            -123.250525710727,
+            49.263578828782
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61896,7 +62556,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61907,8 +62575,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250526875671,
-          49.263570280647
+          -123.250520596863,
+          49.263572410906
         ]
       },
       "properties": {
@@ -61924,8 +62592,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250526875671,
-            49.263570280647
+            -123.250520596863,
+            49.263572410906
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -61973,7 +62641,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -61984,8 +62660,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250521761807,
-          49.26356386277
+          -123.250515483,
+          49.263565993029
         ]
       },
       "properties": {
@@ -62001,8 +62677,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250521761807,
-            49.26356386277
+            -123.250515483,
+            49.263565993029
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62050,7 +62726,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62061,8 +62745,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250516647944,
-          49.263557444893
+          -123.250510369138,
+          49.263559575152
         ]
       },
       "properties": {
@@ -62078,8 +62762,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250516647944,
-            49.263557444893
+            -123.250510369138,
+            49.263559575152
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62127,7 +62811,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62138,8 +62830,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250511534082,
-          49.263551027014
+          -123.250505255277,
+          49.263553157273
         ]
       },
       "properties": {
@@ -62155,8 +62847,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250511534082,
-            49.263551027014
+            -123.250505255277,
+            49.263553157273
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62204,7 +62896,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62215,8 +62915,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250506420221,
-          49.263544609135
+          -123.250500141416,
+          49.263546739394
         ]
       },
       "properties": {
@@ -62232,8 +62932,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250506420221,
-            49.263544609135
+            -123.250500141416,
+            49.263546739394
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62281,7 +62981,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62292,8 +63000,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25050130636,
-          49.263538191255
+          -123.250495027556,
+          49.263540321514
         ]
       },
       "properties": {
@@ -62309,8 +63017,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25050130636,
-            49.263538191255
+            -123.250495027556,
+            49.263540321514
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62358,7 +63066,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62369,8 +63085,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.2504961925,
-          49.263531773374
+          -123.250489913697,
+          49.263533903633
         ]
       },
       "properties": {
@@ -62386,8 +63102,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.2504961925,
-            49.263531773374
+            -123.250489913697,
+            49.263533903633
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62435,7 +63151,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62446,8 +63170,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250491078642,
-          49.263525355492
+          -123.25048479984,
+          49.263527485751
         ]
       },
       "properties": {
@@ -62463,8 +63187,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250491078642,
-            49.263525355492
+            -123.25048479984,
+            49.263527485751
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62512,7 +63236,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62523,8 +63255,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250485964784,
-          49.263518937609
+          -123.250479685983,
+          49.263521067868
         ]
       },
       "properties": {
@@ -62540,8 +63272,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250485964784,
-            49.263518937609
+            -123.250479685983,
+            49.263521067868
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62589,7 +63321,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62600,8 +63340,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250480850927,
-          49.263512519726
+          -123.250474572127,
+          49.263514649985
         ]
       },
       "properties": {
@@ -62617,8 +63357,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250480850927,
-            49.263512519726
+            -123.250474572127,
+            49.263514649985
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62666,7 +63406,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62677,8 +63425,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25047573707,
-          49.263506101841
+          -123.25046945827,
+          49.2635082321
         ]
       },
       "properties": {
@@ -62694,8 +63442,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25047573707,
-            49.263506101841
+            -123.25046945827,
+            49.2635082321
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62743,7 +63491,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62754,8 +63510,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250470623215,
-          49.263499683956
+          -123.250464344416,
+          49.263501814215
         ]
       },
       "properties": {
@@ -62771,8 +63527,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250470623215,
-            49.263499683956
+            -123.250464344416,
+            49.263501814215
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62820,7 +63576,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62831,8 +63595,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25046550936,
-          49.26349326607
+          -123.250459230562,
+          49.263495396329
         ]
       },
       "properties": {
@@ -62848,8 +63612,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25046550936,
-            49.26349326607
+            -123.250459230562,
+            49.263495396329
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62897,7 +63661,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62908,8 +63680,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250460395507,
-          49.263486848184
+          -123.25045411671,
+          49.263488978443
         ]
       },
       "properties": {
@@ -62925,8 +63697,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250460395507,
-            49.263486848184
+            -123.25045411671,
+            49.263488978443
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -62974,7 +63746,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -62985,8 +63765,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250455281654,
-          49.263480430296
+          -123.250449002858,
+          49.263482560555
         ]
       },
       "properties": {
@@ -63002,8 +63782,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250455281654,
-            49.263480430296
+            -123.250449002858,
+            49.263482560555
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63051,7 +63831,15 @@
             }
           ],
           "projection_distance_meters": 1.2781,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63062,8 +63850,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250450167802,
-          49.263474012407
+          -123.250443889006,
+          49.263476142666
         ]
       },
       "properties": {
@@ -63079,8 +63867,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250450167802,
-            49.263474012407
+            -123.250443889006,
+            49.263476142666
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63128,7 +63916,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63139,8 +63935,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25042734246,
-          49.263445366562
+          -123.250421063668,
+          49.263447496821
         ]
       },
       "properties": {
@@ -63156,8 +63952,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25042734246,
-            49.263445366562
+            -123.250421063668,
+            49.263447496821
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63205,7 +64001,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63216,8 +64020,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250422228613,
-          49.263438948669
+          -123.250415949822,
+          49.263441078928
         ]
       },
       "properties": {
@@ -63233,8 +64037,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250422228613,
-            49.263438948669
+            -123.250415949822,
+            49.263441078928
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63282,7 +64086,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63293,8 +64105,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250417114767,
-          49.263432530776
+          -123.250410835977,
+          49.263434661035
         ]
       },
       "properties": {
@@ -63310,8 +64122,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250417114767,
-            49.263432530776
+            -123.250410835977,
+            49.263434661035
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63359,7 +64171,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63370,8 +64190,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250412000921,
-          49.263426112881
+          -123.250405722132,
+          49.26342824314
         ]
       },
       "properties": {
@@ -63387,8 +64207,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250412000921,
-            49.263426112881
+            -123.250405722132,
+            49.26342824314
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63436,7 +64256,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63447,8 +64275,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250406887076,
-          49.263419694986
+          -123.250400608287,
+          49.263421825245
         ]
       },
       "properties": {
@@ -63464,8 +64292,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250406887076,
-            49.263419694986
+            -123.250400608287,
+            49.263421825245
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63513,7 +64341,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63524,8 +64360,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250401773232,
-          49.263413277089
+          -123.250395494444,
+          49.263415407348
         ]
       },
       "properties": {
@@ -63541,8 +64377,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250401773232,
-            49.263413277089
+            -123.250395494444,
+            49.263415407348
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63590,7 +64426,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63601,8 +64445,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250396659389,
-          49.263406859192
+          -123.250390380602,
+          49.263408989451
         ]
       },
       "properties": {
@@ -63618,8 +64462,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250396659389,
-            49.263406859192
+            -123.250390380602,
+            49.263408989451
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63667,7 +64511,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63678,8 +64530,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250391545547,
-          49.263400441294
+          -123.250385266761,
+          49.263402571553
         ]
       },
       "properties": {
@@ -63695,8 +64547,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250391545547,
-            49.263400441294
+            -123.250385266761,
+            49.263402571553
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63744,7 +64596,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -63755,8 +64615,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250386431706,
-          49.263394023395
+          -123.250380152921,
+          49.263396153654
         ]
       },
       "properties": {
@@ -63772,8 +64632,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250386431706,
-            49.263394023395
+            -123.250380152921,
+            49.263396153654
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -63821,7 +64681,15 @@
             }
           ],
           "projection_distance_meters": 1.2782,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -90050,8 +90918,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250281160238,
-          49.26368015365
+          -123.250286432756,
+          49.263678364806
         ]
       },
       "properties": {
@@ -90067,8 +90935,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250281160238,
-            49.26368015365
+            -123.250286432756,
+            49.263678364806
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90116,7 +90984,16 @@
             }
           ],
           "projection_distance_meters": 1.3947,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90127,8 +91004,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250276046401,
-          49.263673735771
+          -123.250281318918,
+          49.263671946927
         ]
       },
       "properties": {
@@ -90144,8 +91021,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250276046401,
-            49.263673735771
+            -123.250281318918,
+            49.263671946927
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90193,7 +91070,16 @@
             }
           ],
           "projection_distance_meters": 1.3947,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90204,8 +91090,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250270932565,
-          49.26366731789
+          -123.250276205082,
+          49.263665529046
         ]
       },
       "properties": {
@@ -90221,8 +91107,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250270932565,
-            49.26366731789
+            -123.250276205082,
+            49.263665529046
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90270,7 +91156,16 @@
             }
           ],
           "projection_distance_meters": 1.3947,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90281,8 +91176,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25026581873,
-          49.263660900009
+          -123.250271091246,
+          49.263659111165
         ]
       },
       "properties": {
@@ -90298,8 +91193,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25026581873,
-            49.263660900009
+            -123.250271091246,
+            49.263659111165
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90347,7 +91242,16 @@
             }
           ],
           "projection_distance_meters": 1.3947,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90358,8 +91262,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250260704895,
-          49.263654482128
+          -123.25026597741,
+          49.263652693284
         ]
       },
       "properties": {
@@ -90375,8 +91279,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250260704895,
-            49.263654482128
+            -123.25026597741,
+            49.263652693284
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90424,7 +91328,16 @@
             }
           ],
           "projection_distance_meters": 1.3947,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90435,8 +91348,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250255591062,
-          49.263648064245
+          -123.250260863577,
+          49.263646275401
         ]
       },
       "properties": {
@@ -90452,8 +91365,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250255591062,
-            49.263648064245
+            -123.250260863577,
+            49.263646275401
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90501,7 +91414,16 @@
             }
           ],
           "projection_distance_meters": 1.3947,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90512,8 +91434,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250230163833,
-          49.263616152937
+          -123.250235436344,
+          49.263614364093
         ]
       },
       "properties": {
@@ -90529,8 +91451,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250230163833,
-            49.263616152937
+            -123.250235436344,
+            49.263614364093
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90578,7 +91500,16 @@
             }
           ],
           "projection_distance_meters": 1.3947,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90589,8 +91520,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250225050004,
-          49.26360973505
+          -123.250230322515,
+          49.263607946206
         ]
       },
       "properties": {
@@ -90606,8 +91537,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250225050004,
-            49.26360973505
+            -123.250230322515,
+            49.263607946206
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90655,7 +91586,16 @@
             }
           ],
           "projection_distance_meters": 1.3947,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90666,8 +91606,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250219936177,
-          49.263603317161
+          -123.250225208687,
+          49.263601528317
         ]
       },
       "properties": {
@@ -90683,8 +91623,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250219936177,
-            49.263603317161
+            -123.250225208687,
+            49.263601528317
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90732,7 +91672,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90743,8 +91692,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25021482235,
-          49.263596899272
+          -123.250220094859,
+          49.263595110428
         ]
       },
       "properties": {
@@ -90760,8 +91709,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25021482235,
-            49.263596899272
+            -123.250220094859,
+            49.263595110428
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90809,7 +91758,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90820,8 +91778,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250209708524,
-          49.263590481382
+          -123.250214981032,
+          49.263588692538
         ]
       },
       "properties": {
@@ -90837,8 +91795,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250209708524,
-            49.263590481382
+            -123.250214981032,
+            49.263588692538
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90886,7 +91844,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90897,8 +91864,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250204594699,
-          49.263584063491
+          -123.250209867207,
+          49.263582274647
         ]
       },
       "properties": {
@@ -90914,8 +91881,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250204594699,
-            49.263584063491
+            -123.250209867207,
+            49.263582274647
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -90963,7 +91930,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -90974,8 +91950,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250199480875,
-          49.263577645599
+          -123.250204753382,
+          49.263575856755
         ]
       },
       "properties": {
@@ -90991,8 +91967,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250199480875,
-            49.263577645599
+            -123.250204753382,
+            49.263575856755
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91040,7 +92016,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91051,8 +92036,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250194367052,
-          49.263571227707
+          -123.250199639558,
+          49.263569438863
         ]
       },
       "properties": {
@@ -91068,8 +92053,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250194367052,
-            49.263571227707
+            -123.250199639558,
+            49.263569438863
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91117,7 +92102,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91128,8 +92122,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25018925323,
-          49.263564809813
+          -123.250194525736,
+          49.263563020969
         ]
       },
       "properties": {
@@ -91145,8 +92139,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25018925323,
-            49.263564809813
+            -123.250194525736,
+            49.263563020969
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91194,7 +92188,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91205,8 +92208,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250156058461,
-          49.263523150032
+          -123.250161330962,
+          49.263521361188
         ]
       },
       "properties": {
@@ -91222,8 +92225,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250156058461,
-            49.263523150032
+            -123.250161330962,
+            49.263521361188
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91271,7 +92274,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91282,8 +92294,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250150944645,
-          49.263516732132
+          -123.250156217146,
+          49.263514943288
         ]
       },
       "properties": {
@@ -91299,8 +92311,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250150944645,
-            49.263516732132
+            -123.250156217146,
+            49.263514943288
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91348,7 +92360,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91359,8 +92380,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25014583083,
-          49.263510314232
+          -123.25015110333,
+          49.263508525388
         ]
       },
       "properties": {
@@ -91376,8 +92397,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25014583083,
-            49.263510314232
+            -123.25015110333,
+            49.263508525388
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91425,7 +92446,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91436,8 +92466,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250140717016,
-          49.263503896331
+          -123.250145989515,
+          49.263502107487
         ]
       },
       "properties": {
@@ -91453,8 +92483,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250140717016,
-            49.263503896331
+            -123.250145989515,
+            49.263502107487
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91502,7 +92532,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91513,8 +92552,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250135603202,
-          49.263497478429
+          -123.250140875701,
+          49.263495689585
         ]
       },
       "properties": {
@@ -91530,8 +92569,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250135603202,
-            49.263497478429
+            -123.250140875701,
+            49.263495689585
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91579,7 +92618,16 @@
             }
           ],
           "projection_distance_meters": 1.3946,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91590,8 +92638,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25013048939,
-          49.263491060526
+          -123.250135761888,
+          49.263489271682
         ]
       },
       "properties": {
@@ -91607,8 +92655,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25013048939,
-            49.263491060526
+            -123.250135761888,
+            49.263489271682
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91656,7 +92704,16 @@
             }
           ],
           "projection_distance_meters": 1.3945,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91667,8 +92724,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250125375578,
-          49.263484642622
+          -123.250130648075,
+          49.263482853778
         ]
       },
       "properties": {
@@ -91684,8 +92741,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250125375578,
-            49.263484642622
+            -123.250130648075,
+            49.263482853778
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91737,7 +92794,16 @@
           "museum_north_reference": "Walking Path 4",
           "standalone_display_associations": [
             "e3618c10-852e-54a3-9b3b-23d30e6d28eb"
-          ]
+          ],
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91748,8 +92814,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250281257965,
-          49.263680276298
+          -123.250286530483,
+          49.263678487454
         ]
       },
       "properties": {
@@ -91765,8 +92831,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250281257965,
-            49.263680276298
+            -123.250286530483,
+            49.263678487454
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91814,7 +92880,16 @@
             }
           ],
           "projection_distance_meters": 0.5304,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91825,8 +92900,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250276144129,
-          49.263673858419
+          -123.250281416646,
+          49.263672069575
         ]
       },
       "properties": {
@@ -91842,8 +92917,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250276144129,
-            49.263673858419
+            -123.250281416646,
+            49.263672069575
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91891,7 +92966,16 @@
             }
           ],
           "projection_distance_meters": 0.5304,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91902,8 +92986,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250271030293,
-          49.26366744054
+          -123.25027630281,
+          49.263665651696
         ]
       },
       "properties": {
@@ -91919,8 +93003,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250271030293,
-            49.26366744054
+            -123.25027630281,
+            49.263665651696
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -91968,7 +93052,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -91979,8 +93072,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250265916478,
-          49.263661022684
+          -123.250271188994,
+          49.26365923384
         ]
       },
       "properties": {
@@ -91996,8 +93089,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250265916478,
-            49.263661022684
+            -123.250271188994,
+            49.26365923384
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92045,7 +93138,16 @@
             }
           ],
           "projection_distance_meters": 0.5308,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92056,8 +93158,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250260802625,
-          49.263654604778
+          -123.25026607514,
+          49.263652815934
         ]
       },
       "properties": {
@@ -92073,8 +93175,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250260802625,
-            49.263654604778
+            -123.25026607514,
+            49.263652815934
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92122,7 +93224,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92133,8 +93244,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250255688792,
-          49.263648186896
+          -123.250260961307,
+          49.263646398052
         ]
       },
       "properties": {
@@ -92150,8 +93261,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250255688792,
-            49.263648186896
+            -123.250260961307,
+            49.263646398052
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92199,7 +93310,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92210,8 +93330,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25025057496,
-          49.263641769014
+          -123.250255847474,
+          49.26363998017
         ]
       },
       "properties": {
@@ -92227,8 +93347,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25025057496,
-            49.263641769014
+            -123.250255847474,
+            49.26363998017
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92276,7 +93396,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92287,8 +93416,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250245461128,
-          49.26363535113
+          -123.250250733641,
+          49.263633562286
         ]
       },
       "properties": {
@@ -92304,8 +93433,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250245461128,
-            49.26363535113
+            -123.250250733641,
+            49.263633562286
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92353,7 +93482,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92364,8 +93502,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250240347298,
-          49.263628933246
+          -123.250245619811,
+          49.263627144402
         ]
       },
       "properties": {
@@ -92381,8 +93519,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250240347298,
-            49.263628933246
+            -123.250245619811,
+            49.263627144402
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92430,7 +93568,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92441,8 +93588,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250235233468,
-          49.26362251536
+          -123.25024050598,
+          49.263620726516
         ]
       },
       "properties": {
@@ -92458,8 +93605,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250235233468,
-            49.26362251536
+            -123.25024050598,
+            49.263620726516
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92507,7 +93654,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92518,8 +93674,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250230119639,
-          49.263616097474
+          -123.25023539215,
+          49.26361430863
         ]
       },
       "properties": {
@@ -92535,8 +93691,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250230119639,
-            49.263616097474
+            -123.25023539215,
+            49.26361430863
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92584,7 +93740,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92595,8 +93760,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250225005812,
-          49.263609679587
+          -123.250230278323,
+          49.263607890743
         ]
       },
       "properties": {
@@ -92612,8 +93777,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250225005812,
-            49.263609679587
+            -123.250230278323,
+            49.263607890743
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92661,7 +93826,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92672,8 +93846,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250219891985,
-          49.2636032617
+          -123.250225164495,
+          49.263601472856
         ]
       },
       "properties": {
@@ -92689,8 +93863,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250219891985,
-            49.2636032617
+            -123.250225164495,
+            49.263601472856
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92738,7 +93912,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92749,8 +93932,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250214778159,
-          49.263596843811
+          -123.250220050668,
+          49.263595054967
         ]
       },
       "properties": {
@@ -92766,8 +93949,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250214778159,
-            49.263596843811
+            -123.250220050668,
+            49.263595054967
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92815,7 +93998,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92826,8 +94018,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250209664333,
-          49.263590425922
+          -123.250214936841,
+          49.263588637078
         ]
       },
       "properties": {
@@ -92843,8 +94035,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250209664333,
-            49.263590425922
+            -123.250214936841,
+            49.263588637078
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92892,7 +94084,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92903,8 +94104,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250204550509,
-          49.263584008032
+          -123.250209823017,
+          49.263582219188
         ]
       },
       "properties": {
@@ -92920,8 +94121,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250204550509,
-            49.263584008032
+            -123.250209823017,
+            49.263582219188
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -92969,7 +94170,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -92980,8 +94190,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250199436685,
-          49.263577590141
+          -123.250204709192,
+          49.263575801297
         ]
       },
       "properties": {
@@ -92997,8 +94207,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250199436685,
-            49.263577590141
+            -123.250204709192,
+            49.263575801297
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93046,7 +94256,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -93057,8 +94276,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250194322863,
-          49.263571172249
+          -123.250199595369,
+          49.263569383405
         ]
       },
       "properties": {
@@ -93074,8 +94293,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250194322863,
-            49.263571172249
+            -123.250199595369,
+            49.263569383405
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93123,7 +94342,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -93134,8 +94362,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250189209041,
-          49.263564754356
+          -123.250194481547,
+          49.263562965512
         ]
       },
       "properties": {
@@ -93151,8 +94379,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250189209041,
-            49.263564754356
+            -123.250194481547,
+            49.263562965512
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93200,7 +94428,16 @@
             }
           ],
           "projection_distance_meters": 0.5305,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -93211,8 +94448,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250156156201,
-          49.263523272697
+          -123.250161428702,
+          49.263521483853
         ]
       },
       "properties": {
@@ -93228,8 +94465,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250156156201,
-            49.263523272697
+            -123.250161428702,
+            49.263521483853
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93277,7 +94514,16 @@
             }
           ],
           "projection_distance_meters": 0.5306,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -93288,8 +94534,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250151042385,
-          49.263516854798
+          -123.250156314886,
+          49.263515065954
         ]
       },
       "properties": {
@@ -93305,8 +94551,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250151042385,
-            49.263516854798
+            -123.250156314886,
+            49.263515065954
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93354,7 +94600,16 @@
             }
           ],
           "projection_distance_meters": 0.5306,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -93365,8 +94620,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250145928571,
-          49.263510436898
+          -123.250151201071,
+          49.263508648054
         ]
       },
       "properties": {
@@ -93382,8 +94637,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250145928571,
-            49.263510436898
+            -123.250151201071,
+            49.263508648054
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93431,7 +94686,16 @@
             }
           ],
           "projection_distance_meters": 0.5306,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -93442,8 +94706,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250140814776,
-          49.263504019022
+          -123.250146087275,
+          49.263502230178
         ]
       },
       "properties": {
@@ -93459,8 +94723,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250140814776,
-            49.263504019022
+            -123.250146087275,
+            49.263502230178
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93508,7 +94772,16 @@
             }
           ],
           "projection_distance_meters": 0.531,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -93519,8 +94792,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250135700944,
-          49.263497601096
+          -123.250140973443,
+          49.263495812252
         ]
       },
       "properties": {
@@ -93536,8 +94809,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250135700944,
-            49.263497601096
+            -123.250140973443,
+            49.263495812252
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93585,7 +94858,16 @@
             }
           ],
           "projection_distance_meters": 0.5306,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -93596,8 +94878,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250130587132,
-          49.263491183194
+          -123.25013585963,
+          49.26348939435
         ]
       },
       "properties": {
@@ -93613,8 +94895,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250130587132,
-            49.263491183194
+            -123.25013585963,
+            49.26348939435
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93662,7 +94944,16 @@
             }
           ],
           "projection_distance_meters": 0.5306,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -93673,8 +94964,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250125473321,
-          49.263484765291
+          -123.250130745818,
+          49.263482976447
         ]
       },
       "properties": {
@@ -93690,8 +94981,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250125473321,
-            49.263484765291
+            -123.250130745818,
+            49.263482976447
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -93739,7 +95030,16 @@
             }
           ],
           "projection_distance_meters": 0.5306,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": -0.43121,
+            "path_debug_ids": [
+              "PATH-193",
+              "PATH-057",
+              "PATH-058",
+              "PATH-054"
+            ]
+          }
         }
       }
     },
@@ -100674,8 +101974,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250766226069,
-          49.263363888639
+          -123.25076098134,
+          49.263365668066
         ]
       },
       "properties": {
@@ -100691,8 +101991,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250766226069,
-            49.263363888639
+            -123.25076098134,
+            49.263365668066
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -100773,7 +102073,15 @@
             }
           ],
           "projection_distance_meters": 0.5406,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -100784,8 +102092,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250743400561,
-          49.263335242813
+          -123.250738155835,
+          49.26333702224
         ]
       },
       "properties": {
@@ -100801,8 +102109,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250743400561,
-            49.263335242813
+            -123.250738155835,
+            49.26333702224
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -100883,7 +102191,15 @@
             }
           ],
           "projection_distance_meters": 0.5406,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.42894,
+            "path_debug_ids": [
+              "PATH-015",
+              "PATH-089",
+              "PATH-090"
+            ]
+          }
         }
       }
     },
@@ -104194,8 +105510,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250526777547,
-          49.263570157502
+          -123.250520498739,
+          49.263572287761
         ]
       },
       "properties": {
@@ -104211,8 +105527,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250526777547,
-            49.263570157502
+            -123.250520498739,
+            49.263572287761
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -104293,7 +105609,15 @@
             }
           ],
           "projection_distance_meters": 0.6553,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -104304,8 +105628,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250401675096,
-          49.263413153927
+          -123.250395396308,
+          49.263415284186
         ]
       },
       "properties": {
@@ -104321,8 +105645,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250401675096,
-            49.263413153927
+            -123.250395396308,
+            49.263415284186
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -104403,7 +105727,15 @@
             }
           ],
           "projection_distance_meters": 0.6552,
-          "museum_north_reference": "Walking Path 4"
+          "museum_north_reference": "Walking Path 4",
+          "manual_corridor_centering": {
+            "shift_meters_east": 0.51351,
+            "path_debug_ids": [
+              "PATH-038",
+              "PATH-128",
+              "PATH-129"
+            ]
+          }
         }
       }
     },
@@ -107652,8 +108984,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250696142,
-          49.263275934
+          -123.25069089731,
+          49.263277713046
         ]
       },
       "properties": {
@@ -107669,8 +109001,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250696142,
-            49.263275934
+            -123.25069089731,
+            49.263277713046
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -108308,8 +109640,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250754801,
-          49.26334955
+          -123.250749555828,
+          49.263351329143
         ]
       },
       "properties": {
@@ -108325,8 +109657,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250754801,
-            49.26334955
+            -123.250749555828,
+            49.263351329143
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -108759,8 +110091,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.25037867,
-          49.263384282
+          -123.250372391029,
+          49.263386412433
         ]
       },
       "properties": {
@@ -108776,8 +110108,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.25037867,
-            49.263384282
+            -123.250372391029,
+            49.263386412433
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -109251,8 +110583,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250806137,
-          49.263413976
+          -123.250800892095,
+          49.263415755655
         ]
       },
       "properties": {
@@ -109268,8 +110600,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250806137,
-            49.263413976
+            -123.250800892095,
+            49.263415755655
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -109825,8 +111157,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250432232,
-          49.263451503
+          -123.250425953217,
+          49.263453633218
         ]
       },
       "properties": {
@@ -109842,8 +111174,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250432232,
-            49.263451503
+            -123.250425953217,
+            49.263453633218
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -110194,8 +111526,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250116658,
-          49.263473702
+          -123.250121930474,
+          49.263471913067
         ]
       },
       "properties": {
@@ -110211,8 +111543,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250116658,
-            49.263473702
+            -123.250121930474,
+            49.263471913067
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -110522,8 +111854,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250866322,
-          49.263489508
+          -123.250861077053,
+          49.263491286942
         ]
       },
       "properties": {
@@ -110539,8 +111871,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250866322,
-            49.263489508
+            -123.250861077053,
+            49.263491286942
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -111301,8 +112633,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250489499,
-          49.263523373
+          -123.250483220211,
+          49.26352550332
         ]
       },
       "properties": {
@@ -111318,8 +112650,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250489499,
-            49.263523373
+            -123.250483220211,
+            49.26352550332
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -111465,8 +112797,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250159849,
-          49.263527908
+          -123.250165121758,
+          49.263526118679
         ]
       },
       "properties": {
@@ -111482,8 +112814,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250159849,
-            49.263527908
+            -123.250165121758,
+            49.263526118679
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -111834,8 +113166,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250172711,
-          49.263544049
+          -123.250177983144,
+          49.263542259856
         ]
       },
       "properties": {
@@ -111851,8 +113183,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250172711,
-            49.263544049
+            -123.250177983144,
+            49.263542259856
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -112449,8 +113781,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250548849,
-          49.263597857
+          -123.250542569774,
+          49.263599986795
         ]
       },
       "properties": {
@@ -112466,8 +113798,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250548849,
-            49.263597857
+            -123.250542569774,
+            49.263599986795
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -112736,8 +114068,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250242672,
-          49.26363185
+          -123.250247944292,
+          49.263630061639
         ]
       },
       "properties": {
@@ -112753,8 +114085,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250242672,
-            49.26363185
+            -123.250247944292,
+            49.263630061639
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
@@ -112982,8 +114314,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.250286836,
-          49.263687277
+          -123.250292108449,
+          49.263685487812
         ]
       },
       "properties": {
@@ -112999,8 +114331,8 @@
         "display_point": {
           "type": "Point",
           "coordinates": [
-            -123.250286836,
-            49.263687277
+            -123.250292108449,
+            49.263685487812
           ]
         },
         "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
