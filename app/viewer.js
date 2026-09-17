@@ -1,21 +1,28 @@
 "use client";
 
+/* Remote exhibit images have dynamic archive URLs, so native img elements are intentional. */
+/* eslint-disable @next/next/no-img-element */
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import maplibregl from "maplibre-gl";
 import MiniSearch from "minisearch";
 import { exhibitMarkerVisible } from "./exhibit-visibility.js";
 import { fixtureHighlightState } from "./fixture-highlight.js";
-import { DRAWER_MARKER_OFFSET_PX, DRAWER_TOP_ICON_SCALE, EXHIBIT_ICON_SCALE, ICON_LAYER_ID, UBC_NORTH_BEARING, countOffsetForBearing, drawerCountFilter, drawerMarkerShape, drawerSourceOptions, exhibitImageExpression, exhibitPointFilter } from "./marker-style.js";
+import { CABINET_EXHIBIT_ICON_LAYER_ID, DRAWER_MARKER_OFFSET_PX, DRAWER_TOP_ICON_SCALE, EXHIBIT_ICON_SCALE, FULL_CIRCLE_ICON_SCALE, ICON_LAYER_ID, UBC_NORTH_BEARING, cabinetExhibitCountFilter, cabinetExhibitGroups, cabinetExhibitIconSizeExpression, countOffsetForBearing, drawerCountFilter, drawerMarkerShape, drawerSourceOptions, exhibitImageExpression, exhibitPointFilter, numberedMarkerSizeExpression, numberedMarkerTextSizeExpression } from "./marker-style.js";
 import { DRAWER_OVERLAY_LAYERS, INTERACTIVE_MAP_LAYERS } from "./map-layer-policy.js";
-import { nextRouteSelection, routeEndpointHighlight, routeStoppingCoordinate, isMapBackground } from "./route-interaction.js";
+import { appendRouteStop, findMultiStopRoute, nextRouteSelection, routeStopLabel, routeStoppingCoordinate, isMapBackground } from "./route-interaction.js";
 import { relatedExhibitsForFeature } from "./exhibits.js";
-import { Building2, ChevronLeft, ChevronRight, Layers3, LocateFixed, MapPin, Navigation, Route, Search, X } from "lucide-react";
+import { Building2, ChevronLeft, ChevronRight, Flag, Layers3, LocateFixed, MapPin, Navigation, Route, Search, X } from "lucide-react";
 import { BASEMAP, DRAWER_GROUPS, GEOJSON, ICON_SIZE, LAYERS, LEVELS, MAP, MAP_LAYERS, POINT_CATEGORIES, ROUTING, VIEWER } from "./constants.js";
-import { buildRoutingNetwork, findApprovedRoute, isRoutableFeature } from "./routing.js";
+import { buildRoutingNetwork, isRoutableFeature } from "./routing.js";
 import { COLLECTIONS, COLLECTION_BADGE_SCALE, collectionBadgeFeatures, collectionBadgeIconOffset, collectionFixtureColorExpression, collectionSectionFeatures } from "./collection-style.js";
-import { AMENITY_ICON_IDS, AMENITY_ICON_SIZE_EXPRESSION, amenityIconFeatures } from "./amenity-style.js";
+import { AMENITY_ICON_IDS, AMENITY_ICON_OFFSET_EXPRESSION, AMENITY_ICON_SIZE_EXPRESSION, amenityIconFeatures } from "./amenity-style.js";
 import { POINT_FEATURE_ICON_IDS, POINT_FEATURE_ICON_SCALE, pointFeatureIconFeatures } from "./point-feature-style.js";
+import { KEYBOARD_ROWS, applyVirtualKey, virtualKeyWithCaps } from "./virtual-keyboard.js";
+import { sendUsageEvent } from "./usage-client.js";
+import { REPORT_TYPES } from "./report-issue.js";
+import { WHALE_ICON_SCALE, WHALE_IMAGE_ID, whaleOverlayFeature } from "./whale-style.js";
 
 const SEARCH_FIELDS = ["name", "altName", "layer", "category", "localCategory", "reference", "publicClass", "scientificNames", "commonNames", "narrative", "notes", "specimenText", "fullText"];
 const STORE_FIELDS = ["id", ...SEARCH_FIELDS];
@@ -61,6 +68,25 @@ function fitLevelExtents(map, collection, duration = 0) {
 }
 
 const emptyCollection = () => ({ type: "FeatureCollection", features: [] });
+
+const mapPropertyNames = new Set([
+  "viewer_feature_id", "viewer_layer", "viewer_level_id", "viewer_collection",
+  "level_id", "level_ids", "unit_ids", "name", "alt_name", "category",
+  "local_category", "exhibit_type", "marker_bearing", "display_point",
+  "related_fixture_id", "fixture_id", "fixture_ids", "navigation_point_ids",
+  "stopping_point_ids", "wayfinding_type", "amenity", "public_class",
+]);
+
+function mapRenderCollection(collection) {
+  if (!collection) return null;
+  return {
+    ...collection,
+    features: collection.features.map((feature) => ({
+      ...feature,
+      properties: Object.fromEntries(Object.entries(feature.properties).filter(([name]) => mapPropertyNames.has(name) || name.startsWith("viewer_"))),
+    })),
+  };
+}
 
 function displayDistanceMeters(a, b) {
   const latitude = ((a[1] + b[1]) / 2) * Math.PI / 180;
@@ -120,23 +146,22 @@ function smoothRouteCoordinates(coordinates) {
 
 function routeDisplayLine(route) {
   if (!route?.features.length) return emptyCollection();
-  const rawCoordinates = route.features.flatMap((feature, index) => index ? feature.geometry.coordinates.slice(1) : feature.geometry.coordinates);
-  const coordinates = smoothRouteCoordinates(rawCoordinates);
-  return { type: "FeatureCollection", features: [{ type: "Feature", properties: {}, geometry: { type: "LineString", coordinates } }] };
-}
-
-function routeDisplayEndpoints(route, from, to, network) {
-  if (!route?.features.length) return { type: "FeatureCollection", features: [[from, "from", "A"], [to, "to", "B"]].filter(([feature]) => feature && routeStoppingCoordinate(network, feature)).map(([feature, endpoint, label]) => ({ type: "Feature", properties: { endpoint, label, highlight: routeEndpointHighlight(endpoint, from, to) }, geometry: { type: "Point", coordinates: routeStoppingCoordinate(network, feature) } })) };
-  const first = route.features[0].geometry.coordinates[0];
-  const lastCoordinates = route.features.at(-1).geometry.coordinates;
-  const last = lastCoordinates.at(-1);
+  const routes = route.legRoutes?.length ? route.legRoutes : [route];
   return {
     type: "FeatureCollection",
-    features: [
-      { type: "Feature", properties: { endpoint: "from", label: "A", highlight: routeEndpointHighlight("from", from, to) }, geometry: { type: "Point", coordinates: first } },
-      { type: "Feature", properties: { endpoint: "to", label: "B", highlight: routeEndpointHighlight("to", from, to) }, geometry: { type: "Point", coordinates: last } },
-    ],
+    features: routes.map((leg, legIndex) => {
+      const rawCoordinates = leg.features.flatMap((feature, index) => index ? feature.geometry.coordinates.slice(1) : feature.geometry.coordinates);
+      return { type: "Feature", properties: { leg_index: legIndex }, geometry: { type: "LineString", coordinates: smoothRouteCoordinates(rawCoordinates) } };
+    }),
   };
+}
+
+function routeDisplayEndpoints(stops, network) {
+  return { type: "FeatureCollection", features: stops.flatMap((feature, index) => {
+    const coordinates = routeStoppingCoordinate(network, feature);
+    if (!coordinates) return [];
+    return [{ type: "Feature", properties: { endpoint: index, label: routeStopLabel(index), highlight: index === stops.length - 1 ? "current" : "previous" }, geometry: { type: "Point", coordinates } }];
+  }) };
 }
 
 const isDrawer = (feature) => (feature.properties.exhibit_type === "drawer" || feature.properties.local_category === POINT_CATEGORIES.drawer);
@@ -328,9 +353,16 @@ export default function Viewer() {
   const configuredPitch = MAP.pitch;
   const mapNode = useRef(null);
   const mapRef = useRef(null);
+  const dataRef = useRef(null);
   const didFitInitialView = useRef(false);
+  const userAdjustedView = useRef(false);
   const visibleDataRef = useRef(null);
+  const renderDataRef = useRef(null);
   const navigationDataRef = useRef(null);
+  const usageSessionRef = useRef(null);
+  const usageStartedAtRef = useRef(0);
+  const lastSearchLogRef = useRef("");
+  const lastRouteLogRef = useRef("");
   const [data, setData] = useState(null);
   const [navigationData, setNavigationData] = useState(null);
   const [routingNetwork, setRoutingNetwork] = useState(null);
@@ -344,10 +376,19 @@ export default function Viewer() {
   const clearSelectionRef = useRef(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [loading, setLoading] = useState(true);
-  const [routeFrom, setRouteFrom] = useState(null);
-  const [routeTo, setRouteTo] = useState(null);
+  const [routeStops, setRouteStops] = useState([]);
+  const [appendStopArmed, setAppendStopArmed] = useState(false);
   const [routeResult, setRouteResult] = useState(null);
   const [routeError, setRouteError] = useState("");
+  const [keyboardOpen, setKeyboardOpen] = useState(false);
+  const [keyboardTarget, setKeyboardTarget] = useState("search");
+  const [keyboardCaps, setKeyboardCaps] = useState(false);
+  const [viewedImage, setViewedImage] = useState(null);
+  const [report, setReport] = useState(null);
+  const [reportSubmitting, setReportSubmitting] = useState(false);
+  const [reportError, setReportError] = useState("");
+  const routeFrom = routeStops[0] || null;
+  const routeTo = routeStops.length > 1 ? routeStops.at(-1) : null;
 
   const visibleData = useMemo(() => {
     if (!data) return null;
@@ -360,7 +401,7 @@ export default function Viewer() {
         const properties = feature.properties;
         return properties.viewer_level_id === activeLevel || properties.level_ids?.includes(activeLevel) || (feature.id === activeLevel && properties.viewer_layer === "level");
       }).map((feature) => {
-        const highlight = fixtureHighlightState(feature, selected, routeFrom, routeTo);
+        const highlight = fixtureHighlightState(feature, selected, routeStops);
         if (feature.id !== selected?.id && !highlight) return feature;
         return {
           ...feature,
@@ -372,7 +413,8 @@ export default function Viewer() {
         };
       }),
     };
-  }, [data, activeLayers, activeLevel, selected, routeFrom, routeTo]);
+  }, [data, activeLayers, activeLevel, selected, routeStops]);
+  const renderData = useMemo(() => mapRenderCollection(visibleData), [visibleData]);
 
   const searchContext = useMemo(() => data ? buildSearchContext(data.features) : null, [data]);
   const searchResultTokens = useMemo(() => searchTokens(query), [query]);
@@ -381,18 +423,50 @@ export default function Viewer() {
 
 
   visibleDataRef.current = visibleData;
+  renderDataRef.current = renderData;
+  dataRef.current = data;
   navigationDataRef.current = navigationData;
 
   useEffect(() => {
-    Promise.all([
-      fetch("/map/api/map-data").then((response) => response.json()),
-      fetch("/map/api/navigation").then((response) => response.json()),
-    ]).then(([mapData, navigation]) => {
-      setData(mapData);
-      setNavigationData(navigation);
-      setRoutingNetwork(buildRoutingNetwork(navigation));
-    }).catch(() => setData({ type: "FeatureCollection", features: [] })).finally(() => setLoading(false));
+    const sessionId = crypto.randomUUID();
+    usageSessionRef.current = sessionId;
+    usageStartedAtRef.current = Date.now();
+    sendUsageEvent(sessionId, "session_started");
+    const finishSession = () => sendUsageEvent(sessionId, "session_ended", {
+      metadata: { duration_seconds: Math.round((Date.now() - usageStartedAtRef.current) / 1000) },
+    }, { beacon: true });
+    window.addEventListener("pagehide", finishSession, { once: true });
+    return () => window.removeEventListener("pagehide", finishSession);
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    const loadDeferredData = () => {
+      fetch("/map/api/map-data").then((response) => response.json()).then((mapData) => {
+        const install = () => { if (!cancelled) setData(mapData); };
+        if (window.requestIdleCallback) window.requestIdleCallback(install, { timeout: 2500 });
+        else window.setTimeout(install, 0);
+      }).catch(() => {});
+      fetch("/map/api/navigation").then((response) => response.json()).then((navigation) => {
+        if (cancelled) return;
+        setNavigationData(navigation);
+        const install = () => { if (!cancelled) setRoutingNetwork(buildRoutingNetwork(navigation)); };
+        if (window.requestIdleCallback) window.requestIdleCallback(install, { timeout: 2500 });
+        else window.setTimeout(install, 0);
+      }).catch(() => {});
+    };
+    fetch("/map/api/map-shell").then((response) => response.json()).then((mapData) => {
+      if (!cancelled) setData(mapData);
+    }).catch(() => {
+      if (!cancelled) setData(emptyCollection());
+    }).finally(() => {
+      if (!cancelled) {
+        setLoading(false);
+        loadDeferredData();
+      }
+    });
     if (window.matchMedia(VIEWER.mobileMediaQuery).matches) setSidebarOpen(false);
+    return () => { cancelled = true; };
   }, []);
 
   useEffect(() => {
@@ -424,23 +498,29 @@ export default function Viewer() {
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
     map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
-    map.on("load", async () => {
+    map.on("movestart", (event) => {
+      if (event.originalEvent) userAdjustedView.current = true;
+    });
+    let imageIdleCallback = null;
+    map.on("load", () => {
       map.addSource("osm", { type: "raster", tiles: BASEMAP.tiles, tileSize: BASEMAP.tileSize, attribution: BASEMAP.attribution });
       map.addLayer({ id: "osm", type: "raster", source: "osm", paint: { "raster-saturation": BASEMAP.saturation, "raster-opacity": BASEMAP.opacity } });
       map.addSource("imdf", {
         type: "geojson",
-        data: visibleDataRef.current || { type: "FeatureCollection", features: [] },
+        data: renderDataRef.current || { type: "FeatureCollection", features: [] },
         promoteId: "viewer_feature_id",
       });
       map.addSource("imdf-points", {
         type: "geojson",
-        data: pointFeatures(visibleDataRef.current, (feature) => !isDrawer(feature)),
+        data: pointFeatures(renderDataRef.current, (feature) => !isDrawer(feature)),
         promoteId: "viewer_feature_id",
       });
       map.addSource("imdf-drawers", drawerSourceOptions(drawerGroups(visibleDataRef.current)));
+      map.addSource("imdf-cabinet-exhibits", { type: "geojson", data: cabinetExhibitGroups(dataRef.current), promoteId: "viewer_feature_id" });
       map.addSource("imdf-amenity-icons", { type: "geojson", data: amenityIconFeatures(visibleDataRef.current), promoteId: "viewer_feature_id" });
       map.addSource("imdf-point-feature-icons", { type: "geojson", data: pointFeatureIconFeatures(visibleDataRef.current), promoteId: "viewer_feature_id" });
       map.addSource("collection-badges", { type: "geojson", data: collectionBadgeFeatures(visibleDataRef.current, MAP.bearing) });
+      map.addSource("whale-overlay", { type: "geojson", data: whaleOverlayFeature(visibleDataRef.current) });
       map.addSource("collection-sections", { type: "geojson", data: collectionSectionFeatures(visibleDataRef.current, MAP.bearing) });
       map.addSource("approved-route", { type: "geojson", data: emptyCollection() });
       map.addSource("approved-route-endpoints", { type: "geojson", data: emptyCollection() });
@@ -449,22 +529,6 @@ export default function Viewer() {
       map.addLayer({ id: "imdf-fill", type: "fill", source: "imdf", filter: ["==", ["geometry-type"], "Polygon"], paint: { "fill-color": featureColors, "fill-opacity": ["match", ["get", "viewer_layer"], "fixture", MAP_LAYERS.fillOpacity.fixture, "unit", MAP_LAYERS.fillOpacity.unit, "level", MAP_LAYERS.fillOpacity.level, MAP_LAYERS.fillOpacity.fallback] } });
       map.addLayer({ id: "imdf-line", type: "line", source: "imdf", filter: ["!=", ["geometry-type"], "Point"], paint: { "line-color": matchColors, "line-width": ["match", ["get", "viewer_layer"], "venue", MAP_LAYERS.lineWidth.venue, "level", MAP_LAYERS.lineWidth.level, MAP_LAYERS.lineWidth.fallback], "line-opacity": MAP_LAYERS.lineOpacity } });
       map.addLayer({ id: "imdf-point", type: "circle", source: "imdf-points", filter: exhibitPointFilter, paint: { "circle-color": matchColors, "circle-radius": ["interpolate", ["linear"], ["zoom"], MAP_LAYERS.pointRadius.minZoom, MAP_LAYERS.pointRadius.min, MAP_LAYERS.pointRadius.maxZoom, MAP_LAYERS.pointRadius.max], "circle-stroke-color": ["case", ["==", ["get", "viewer_selected"], true], "#f5b942", MAP_LAYERS.pointStrokeColor], "circle-stroke-width": ["case", ["==", ["get", "viewer_selected"], true], 3, MAP_LAYERS.pointStrokeWidth] } });
-      await Promise.all(["half-circle", "full-circle", "half-circle-tab"].map(async (type) => {
-        const image = await map.loadImage(`/map/marker-icons/${type}.png`);
-        map.addImage(`exhibit-${type}`, image.data);
-      }));
-      await Promise.all(COLLECTIONS.map(async ({ id }) => {
-        const image = await map.loadImage(`/map/collection-badges/${id}.png`);
-        map.addImage(`collection-badge-${id}`, image.data);
-      }));
-      await Promise.all(AMENITY_ICON_IDS.map(async (id) => {
-        const image = await map.loadImage(`/map/amenity-icons/${id}.png`);
-        map.addImage(`amenity-${id}`, image.data);
-      }));
-      await Promise.all(POINT_FEATURE_ICON_IDS.map(async (id) => {
-        const image = await map.loadImage(`/map/point-feature-icons/${id}.png`);
-        map.addImage(`point-feature-${id}`, image.data);
-      }));
       map.addLayer({
         id: "imdf-point-feature-icons",
         type: "symbol",
@@ -485,6 +549,7 @@ export default function Viewer() {
         layout: {
           "icon-image": ["concat", "amenity-", ["get", "amenity_icon"]],
           "icon-size": AMENITY_ICON_SIZE_EXPRESSION,
+          "icon-offset": AMENITY_ICON_OFFSET_EXPRESSION,
           "icon-allow-overlap": true,
           "icon-pitch-alignment": "map",
           "icon-rotation-alignment": "map",
@@ -506,10 +571,26 @@ export default function Viewer() {
           "icon-rotate": UBC_NORTH_BEARING,
         },
       });
-      map.addLayer({ id: ICON_LAYER_ID, type: "symbol", source: "imdf-points", filter: ["in", ["get", "exhibit_type"], ["literal", ["window", "shadowbox", "floor"]]], layout: { "icon-image": exhibitImageExpression, "icon-size": ["interpolate", ["linear"], ["zoom"], EXHIBIT_ICON_SCALE.minZoom, EXHIBIT_ICON_SCALE.min, EXHIBIT_ICON_SCALE.maxZoom, EXHIBIT_ICON_SCALE.max], "icon-allow-overlap": true, "icon-pitch-alignment": "map", "icon-rotation-alignment": "map", "icon-rotate": ["coalesce", ["get", "marker_bearing"], 0] } });
-      map.addLayer({ id: "imdf-drawer-group-half", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, filter: ["==", ["get", "marker_shape"], "half-circle-tab"], layout: { "icon-image": "exhibit-half-circle-tab", "icon-offset": [0, -DRAWER_MARKER_OFFSET_PX], "icon-pitch-alignment": "map", "icon-rotation-alignment": "map", "icon-rotate": ["coalesce", ["get", "marker_bearing"], 0], "icon-allow-overlap": true } });
+      map.addLayer({
+        id: "whale-overlay",
+        type: "symbol",
+        source: "whale-overlay",
+        layout: {
+          "icon-image": WHALE_IMAGE_ID,
+          "icon-size": ["interpolate", ["exponential", 2], ["zoom"], WHALE_ICON_SCALE.minZoom, WHALE_ICON_SCALE.min, WHALE_ICON_SCALE.maxZoom, WHALE_ICON_SCALE.max],
+          "icon-allow-overlap": true,
+          "icon-ignore-placement": true,
+          "icon-pitch-alignment": "map",
+          "icon-rotation-alignment": "map",
+          "icon-rotate": UBC_NORTH_BEARING,
+        },
+      });
+      map.addLayer({ id: ICON_LAYER_ID, type: "symbol", source: "imdf-points", filter: ["==", ["get", "exhibit_type"], "floor"], layout: { "icon-image": exhibitImageExpression, "icon-size": ["interpolate", ["linear"], ["zoom"], FULL_CIRCLE_ICON_SCALE.minZoom, FULL_CIRCLE_ICON_SCALE.min, FULL_CIRCLE_ICON_SCALE.maxZoom, FULL_CIRCLE_ICON_SCALE.max], "icon-allow-overlap": true, "icon-pitch-alignment": "map", "icon-rotation-alignment": "map", "icon-rotate": ["coalesce", ["get", "marker_bearing"], 0] } });
+      map.addLayer({ id: CABINET_EXHIBIT_ICON_LAYER_ID, type: "symbol", source: "imdf-cabinet-exhibits", layout: { "icon-image": ["case", cabinetExhibitCountFilter, "exhibit-half-circle-tab", "exhibit-half-circle"], "icon-offset": ["case", cabinetExhibitCountFilter, ["literal", [0, -DRAWER_MARKER_OFFSET_PX]], ["literal", [0, 0]]], "icon-size": cabinetExhibitIconSizeExpression, "icon-allow-overlap": true, "icon-pitch-alignment": "map", "icon-rotation-alignment": "map", "icon-rotate": ["get", "marker_bearing"] } });
+      map.addLayer({ id: "imdf-cabinet-exhibit-count", type: "symbol", source: "imdf-cabinet-exhibits", filter: cabinetExhibitCountFilter, layout: { "text-field": ["to-string", ["get", "exhibit_count"]], "text-font": [DRAWER_GROUPS.countFont], "text-size": numberedMarkerTextSizeExpression, "text-offset": ["get", "count_offset"], "text-pitch-alignment": "map", "text-rotation-alignment": "map", "text-rotate": UBC_NORTH_BEARING, "text-allow-overlap": true }, paint: { "text-color": DRAWER_GROUPS.strokeColor } });
+      map.addLayer({ id: "imdf-drawer-group-half", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, filter: ["==", ["get", "marker_shape"], "half-circle-tab"], layout: { "icon-image": "exhibit-half-circle-tab", "icon-size": numberedMarkerSizeExpression, "icon-offset": [0, -DRAWER_MARKER_OFFSET_PX], "icon-pitch-alignment": "map", "icon-rotation-alignment": "map", "icon-rotate": ["coalesce", ["get", "marker_bearing"], 0], "icon-allow-overlap": true } });
       map.addLayer({ id: "imdf-drawer-group", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, filter: ["==", ["get", "marker_shape"], "full-circle"], layout: { "icon-image": "exhibit-full-circle", "icon-size": DRAWER_TOP_ICON_SCALE, "icon-pitch-alignment": "map", "icon-rotation-alignment": "map", "icon-allow-overlap": true } });
-      map.addLayer({ id: "imdf-drawer-group-count", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, filter: drawerCountFilter, layout: { "text-field": ["to-string", ["get", "drawer_count"]], "text-font": [DRAWER_GROUPS.countFont], "text-size": DRAWER_GROUPS.countFontSize, "text-offset": ["get", "count_offset"], "text-pitch-alignment": "map", "text-rotation-alignment": "map", "text-rotate": UBC_NORTH_BEARING }, paint: { "text-color": DRAWER_GROUPS.strokeColor } });
+      map.addLayer({ id: "imdf-drawer-group-count", type: "symbol", source: "imdf-drawers", minzoom: DRAWER_GROUPS.minZoom, filter: drawerCountFilter, layout: { "text-field": ["to-string", ["get", "drawer_count"]], "text-font": [DRAWER_GROUPS.countFont], "text-size": numberedMarkerTextSizeExpression, "text-offset": ["get", "count_offset"], "text-pitch-alignment": "map", "text-rotation-alignment": "map", "text-rotate": UBC_NORTH_BEARING }, paint: { "text-color": DRAWER_GROUPS.strokeColor } });
       map.addLayer({ id: "navigation-debug-line", type: "line", source: "navigation-debug", filter: ["==", ["geometry-type"], "LineString"], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": MAP_LAYERS.navigationDebug.lineColor, "line-width": MAP_LAYERS.navigationDebug.lineWidth, "line-opacity": MAP_LAYERS.navigationDebug.lineOpacity } });
       map.addLayer({ id: "navigation-debug-point", type: "circle", source: "navigation-debug", filter: ["==", ["geometry-type"], "Point"], paint: { "circle-color": MAP_LAYERS.navigationDebug.pointColor, "circle-radius": MAP_LAYERS.navigationDebug.pointRadius, "circle-stroke-color": MAP_LAYERS.navigationDebug.pointStrokeColor, "circle-stroke-width": MAP_LAYERS.navigationDebug.pointStrokeWidth } });
       map.addLayer({ id: "navigation-debug-label", type: "symbol", source: "navigation-debug", minzoom: MAP_LAYERS.navigationDebug.labelMinZoom, layout: { "text-field": ["get", "debug_id"], "text-font": [DRAWER_GROUPS.countFont], "text-size": MAP_LAYERS.navigationDebug.labelSize, "text-offset": [0, 1.1], "text-anchor": "top", "text-allow-overlap": false }, paint: { "text-color": MAP_LAYERS.navigationDebug.labelColor, "text-halo-color": MAP_LAYERS.navigationDebug.labelHaloColor, "text-halo-width": MAP_LAYERS.navigationDebug.labelHaloWidth } });
@@ -555,38 +636,69 @@ export default function Viewer() {
         }
       });
       for (const id of DRAWER_OVERLAY_LAYERS) map.moveLayer(id);
+      map.moveLayer("imdf-cabinet-exhibit-count");
+      map.moveLayer("collection-badges", "imdf-point");
+      map.moveLayer("whale-overlay", "imdf-point");
       for (const id of ["approved-route-casing", "approved-route", "approved-route-endpoints", "approved-route-endpoint-labels"]) map.moveLayer(id);
+      const deferredImageLayers = ["imdf-point-feature-icons", "imdf-amenity-icons", "collection-badges", "whale-overlay", ICON_LAYER_ID, CABINET_EXHIBIT_ICON_LAYER_ID, "imdf-drawer-group-half", "imdf-drawer-group"];
+      for (const id of deferredImageLayers) map.setLayoutProperty(id, "visibility", "none");
       map.on("click", (event) => {
         const hits = map.queryRenderedFeatures(event.point, { layers: INTERACTIVE_MAP_LAYERS });
         const hit = hits.find(f => !isMapBackground(f));
         if (!hit) { clearSelectionRef.current(); return; }
         const featureId = hit.id || hit.properties?.viewer_feature_id;
-        const feature = visibleDataRef.current?.features.find(f => f.id === featureId);
-        if (feature) selectPlaceRef.current(feature);
+        const feature = visibleDataRef.current?.features.find(f => f.id === featureId) || dataRef.current?.features.find(f => f.id === featureId);
+        if (feature) selectPlaceRef.current(feature, Boolean(event.originalEvent?.shiftKey));
       });
-      if (!didFitInitialView.current && fitLevelExtents(map, visibleDataRef.current)) didFitInitialView.current = true;
+      if (!didFitInitialView.current && !userAdjustedView.current && fitLevelExtents(map, visibleDataRef.current)) didFitInitialView.current = true;
+
+      const installMapImages = async () => {
+        const images = [
+          ...["half-circle", "full-circle", "half-circle-tab"].map((type) => ({ id: `exhibit-${type}`, url: `/map/marker-icons/${type}.png` })),
+          ...COLLECTIONS.map(({ id }) => ({ id: `collection-badge-${id}`, url: `/map/collection-badges/${id}.png` })),
+          { id: WHALE_IMAGE_ID, url: "/map/floor-graphics/whale.png" },
+          ...AMENITY_ICON_IDS.map((id) => ({ id: `amenity-${id}`, url: `/map/amenity-icons/${id}.png` })),
+          ...POINT_FEATURE_ICON_IDS.map((id) => ({ id: `point-feature-${id}`, url: `/map/point-feature-icons/${id}.png` })),
+        ];
+        await Promise.allSettled(images.map(async ({ id, url }) => {
+          const image = await map.loadImage(url);
+          if (mapRef.current === map && !map.hasImage(id)) map.addImage(id, image.data);
+        }));
+        if (mapRef.current === map) for (const id of deferredImageLayers) map.setLayoutProperty(id, "visibility", "visible");
+      };
+      if (window.requestIdleCallback) imageIdleCallback = window.requestIdleCallback(installMapImages, { timeout: 1500 });
+      else window.setTimeout(installMapImages, 0);
     });
     mapRef.current = map;
-    return () => { map.remove(); mapRef.current = null; };
+    return () => {
+      if (imageIdleCallback !== null && window.cancelIdleCallback) window.cancelIdleCallback(imageIdleCallback);
+      map.remove();
+      mapRef.current = null;
+    };
   }, []);
 
   useEffect(() => {
     const source = mapRef.current?.getSource("imdf");
-    if (source && visibleData) source.setData(visibleData);
+    if (source && renderData) source.setData(renderData);
     const pointSource = mapRef.current?.getSource("imdf-points");
-    if (pointSource && visibleData) pointSource.setData(pointFeatures(visibleData, (feature) => !isDrawer(feature)));
+    if (pointSource && renderData) pointSource.setData(pointFeatures(renderData, (feature) => !isDrawer(feature)));
     const drawerSource = mapRef.current?.getSource("imdf-drawers");
     if (drawerSource && visibleData) drawerSource.setData(drawerGroups(visibleData));
+    const cabinetExhibitSource = mapRef.current?.getSource("imdf-cabinet-exhibits");
+    if (cabinetExhibitSource && data && activeLayers.has("exhibit")) cabinetExhibitSource.setData(cabinetExhibitGroups({ ...data, features: data.features.filter((feature) => activeLevel === "all" || feature.properties.viewer_level_id === activeLevel || feature.properties.level_ids?.includes(activeLevel)) }));
+    else if (cabinetExhibitSource) cabinetExhibitSource.setData(emptyCollection());
     const amenityIconSource = mapRef.current?.getSource("imdf-amenity-icons");
     if (amenityIconSource && visibleData) amenityIconSource.setData(amenityIconFeatures(visibleData));
     const pointFeatureIconSource = mapRef.current?.getSource("imdf-point-feature-icons");
     if (pointFeatureIconSource && visibleData) pointFeatureIconSource.setData(pointFeatureIconFeatures(visibleData));
     const badgeSource = mapRef.current?.getSource("collection-badges");
     if (badgeSource && visibleData) badgeSource.setData(collectionBadgeFeatures(visibleData, configuredBearing));
+    const whaleSource = mapRef.current?.getSource("whale-overlay");
+    if (whaleSource && visibleData) whaleSource.setData(whaleOverlayFeature(visibleData));
     const sectionSource = mapRef.current?.getSource("collection-sections");
     if (sectionSource && visibleData) sectionSource.setData(collectionSectionFeatures(visibleData, configuredBearing));
-    if (!didFitInitialView.current && mapRef.current?.loaded() && fitLevelExtents(mapRef.current, visibleData)) didFitInitialView.current = true;
-  }, [visibleData, configuredBearing]);
+    if (!didFitInitialView.current && !userAdjustedView.current && mapRef.current?.loaded() && fitLevelExtents(mapRef.current, visibleData)) didFitInitialView.current = true;
+  }, [visibleData, renderData, data, activeLayers, activeLevel, configuredBearing]);
 
   useEffect(() => {
     const source = mapRef.current?.getSource("navigation-debug");
@@ -598,22 +710,44 @@ export default function Viewer() {
   }, [configuredBearing, configuredPitch]);
 
   useEffect(() => {
-    if (!routingNetwork || !routeFrom || !routeTo) {
+    if (!routingNetwork || routeStops.length < 2) {
       setRouteResult(null);
       setRouteError("");
       return;
     }
-    const result = findApprovedRoute(routingNetwork, routeFrom, routeTo);
+    const result = findMultiStopRoute(routingNetwork, routeStops);
     setRouteResult(result);
-    setRouteError(result ? "" : "No route connects these fixtures.");
-  }, [routingNetwork, routeFrom, routeTo]);
+    setRouteError(result ? "" : "One or more stops cannot be connected.");
+    const signature = routeStops.map((feature) => feature.id).join(":");
+    if (lastRouteLogRef.current !== signature) {
+      lastRouteLogRef.current = signature;
+      sendUsageEvent(usageSessionRef.current, "route", {
+        feature_id: String(routeTo.id),
+        metadata: { stop_feature_ids: routeStops.map((feature) => String(feature.id)), found: Boolean(result), distance_meters: result ? Math.round(result.distanceMeters * 10) / 10 : null },
+      });
+    }
+  }, [routingNetwork, routeStops, routeTo]);
+
+  useEffect(() => {
+    const normalized = query.trim();
+    if (normalized.length < 2) {
+      if (!normalized) lastSearchLogRef.current = "";
+      return;
+    }
+    const timer = window.setTimeout(() => {
+      if (lastSearchLogRef.current === normalized) return;
+      lastSearchLogRef.current = normalized;
+      sendUsageEvent(usageSessionRef.current, "search", { query: normalized, metadata: { result_count: matches.length } });
+    }, 1200);
+    return () => window.clearTimeout(timer);
+  }, [query, matches.length]);
 
   useEffect(() => {
     const source = mapRef.current?.getSource("approved-route");
     if (!source) return;
     source.setData(routeDisplayLine(routeResult));
-    mapRef.current?.getSource("approved-route-endpoints")?.setData(routeDisplayEndpoints(routeResult, routeFrom, routeTo, routingNetwork));
-  }, [routeResult, routeFrom, routeTo, routingNetwork]);
+    mapRef.current?.getSource("approved-route-endpoints")?.setData(routeDisplayEndpoints(routeStops, routingNetwork));
+  }, [routeResult, routeStops, routingNetwork]);
 
   function toggleLayer(id) {
     setActiveLayers((current) => {
@@ -623,7 +757,13 @@ export default function Viewer() {
     });
   }
 
-  function focusFeature(feature) {
+  function focusFeature(feature, source = "details") {
+    const searchQuery = query.trim();
+    if (source === "search" && searchQuery) {
+      lastSearchLogRef.current = searchQuery;
+      sendUsageEvent(usageSessionRef.current, "search", { query: searchQuery, feature_id: String(feature.id), metadata: { result_count: matches.length, selected: true } });
+    }
+    sendUsageEvent(usageSessionRef.current, "feature_selected", { feature_id: String(feature.id), metadata: { source, layer: feature.properties.viewer_layer } });
     if (activeLevel !== "all" && feature.properties.viewer_level_id) setActiveLevel(feature.properties.viewer_level_id);
     mapRef.current?.flyTo({ center: featureCenter(feature), zoom: MAP.featureZoom, duration: MAP.flyDurationMs });
     setSelected(feature);
@@ -632,13 +772,21 @@ export default function Viewer() {
   }
 
   function clearRoute() {
-    setRouteFrom(null);
-    setRouteTo(null);
+    lastRouteLogRef.current = "";
+    setRouteStops([]);
+    setAppendStopArmed(false);
     setRouteResult(null);
     setRouteError("");
   }
 
-  selectPlaceRef.current = (feature) => {
+  function removeRouteStop(index) {
+    const nextStops = routeStops.filter((_, stopIndex) => stopIndex !== index);
+    setRouteStops(nextStops);
+    setSelected(nextStops.at(-1) || null);
+    setAppendStopArmed(false);
+  }
+
+  selectPlaceRef.current = (feature, append = false) => {
     if (isMapBackground(feature)) {
       clearSelectionRef.current();
       return;
@@ -646,10 +794,13 @@ export default function Viewer() {
     setSelected(feature);
     setSelectedGroup(null);
     setQuery("");
+    sendUsageEvent(usageSessionRef.current, "feature_selected", { feature_id: String(feature.id), metadata: { source: append ? "shift-click" : "map", layer: feature.properties.viewer_layer } });
     if (isRoutableFeature(routingNetwork, feature)) {
-      const [from, to] = nextRouteSelection(routeFrom, routeTo, feature);
-      setRouteFrom(from);
-      setRouteTo(to);
+      if (append || appendStopArmed) setRouteStops((stops) => appendRouteStop(stops, feature));
+      else {
+        const [from, to] = nextRouteSelection(routeFrom, routeTo, feature);
+        setRouteStops([from, to].filter(Boolean));
+      }
     }
   };
   clearSelectionRef.current = () => {
@@ -658,14 +809,16 @@ export default function Viewer() {
     setSelectedGroup(null);
   };
 
-  function routeEndpointControl(endpoint, label, selectedFeature) {
-    const highlight = routeEndpointHighlight(endpoint, routeFrom, routeTo);
-    return <div className={`route-endpoint${highlight ? ` ${highlight}` : ""}`}>
+  function routeEndpointControl(index, selectedFeature, placeholder = false) {
+    const label = routeStopLabel(index);
+    const highlight = selectedFeature ? (index === routeStops.length - 1 ? "current" : "previous") : "";
+    return <div className={`route-endpoint${highlight ? ` ${highlight}` : ""}`} key={`route-stop-${index}-${selectedFeature?.id || "empty"}`}>
       <span>{label}</span>
       <div className="endpoint-select">
-        <small>{endpoint === "from" ? "Start" : "Destination"}</small>
+        <small>{index === 0 ? "Start" : index === routeStops.length - 1 && routeStops.length > 1 ? "Destination" : "Stop"}</small>
         <strong>{selectedFeature ? nameOf(selectedFeature) : "Click a place on the map"}</strong>
       </div>
+      {!placeholder && selectedFeature && <button className="remove-stop" onClick={() => removeRouteStop(index)} title={`Remove stop ${label}`}><X /></button>}
     </div>;
   }
 
@@ -693,28 +846,82 @@ export default function Viewer() {
       details: { text: { en: photos[0].photo_text || "" }, notes: "Automatically transcribed from the clearest photo." },
     },
   }))];
+
+  function openReport() {
+    setReport({ step: "edit", issueType: "incorrect_information", description: "", feature: selected, result: null });
+    setReportError("");
+    setKeyboardOpen(false);
+  }
+
+  function closeReport() {
+    setReport(null);
+    setReportError("");
+    setKeyboardOpen(false);
+  }
+
+  function applyKeyboardKey(key) {
+    if (keyboardTarget === "report") {
+      setReport((current) => current ? { ...current, description: applyVirtualKey(current.description, key).slice(0, 1000) } : current);
+    } else {
+      setQuery((value) => applyVirtualKey(value, key));
+    }
+  }
+
+  async function submitReport() {
+    if (!report || reportSubmitting) return;
+    setReportSubmitting(true);
+    setReportError("");
+    const feature = report.feature;
+    try {
+      const response = await fetch("/map/api/report-issue", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          issue_type: report.issueType,
+          description: report.description,
+          session_id: usageSessionRef.current,
+          occurred_at: new Date().toISOString(),
+          feature_id: feature ? String(feature.id) : "",
+          feature_name: feature ? nameOf(feature) : "",
+          feature_layer: feature?.properties?.viewer_layer || "",
+          coordinates: feature ? featureCenter(feature) : null,
+        }),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "The report could not be submitted.");
+      setReport((current) => ({ ...current, step: "success", result }));
+      sendUsageEvent(usageSessionRef.current, "issue_reported", { feature_id: feature ? String(feature.id) : null, metadata: { issue_type: report.issueType, issue_number: result.number } });
+    } catch (error) {
+      setReportError(error.message || "The report could not be submitted.");
+    } finally {
+      setReportSubmitting(false);
+    }
+  }
+
   return <main className="viewer-shell" onClick={(event) => {
-    if (!mapNode.current?.contains(event.target) && !event.target.closest("button, input, label, a, summary, .search-results, .exhibit-panel")) clearSelectionRef.current();
+    if (!mapNode.current?.contains(event.target) && !event.target.closest("button, input, textarea, label, a, summary, .search-results, .exhibit-panel, .virtual-keyboard, .image-viewer, .report-overlay")) clearSelectionRef.current();
   }}>
     <div ref={mapNode} className="map" />
     <header className="brand-bar"><Image className="brand-logo" src="/map/branding/beaty-logo-stacked.svg" alt="Beaty Biodiversity Museum" width={55} height={64} priority /><span>Indoor map</span></header>
     <button className={`sidebar-toggle icon-button ${sidebarOpen ? "is-open" : ""}`} onClick={() => setSidebarOpen((value) => !value)} title={sidebarOpen ? "Close layers panel" : "Open layers panel"}>{sidebarOpen ? <ChevronLeft /> : <ChevronRight />}</button>
     <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
       <section className="place-search">
-        <div className="search-wrap"><Search size={ICON_SIZE.search} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search places or exhibit text" aria-label="Search places or exhibit text" />{query && <button className="clear-button" onClick={() => setQuery("")} title="Clear search"><X size={ICON_SIZE.clear} /></button>}</div>
+        <div className="search-wrap"><Search size={ICON_SIZE.search} /><input value={query} onChange={(event) => setQuery(event.target.value)} onFocus={() => { setKeyboardTarget("search"); setKeyboardOpen(true); }} inputMode="none" autoComplete="off" placeholder="Search places or exhibit text" aria-label="Search places or exhibit text" />{query && <button className="clear-button" onClick={() => setQuery("")} title="Clear search"><X size={ICON_SIZE.clear} /></button>}</div>
         {query && <div className="search-results">{matches.length ? matches.map(({ feature, document }) => {
           const snippet = searchSnippet(document, searchResultTokens);
           return <div className="search-result" key={`${feature.properties.viewer_layer}-${feature.id}`}>
-            <button onClick={() => focusFeature(feature)}>
+            <button onClick={() => focusFeature(feature, "search")}>
               <span><strong>{highlightedText(document.name, searchResultTokens)}</strong>{snippet && <em>{highlightedText(snippet, searchResultTokens)}</em>}</span>
               <small>Details</small>
             </button>
           </div>;
         }) : <p>No matching places.</p>}</div>}
       </section>
-      <section className="route-panel"><div className="section-title"><Route size={ICON_SIZE.section} /><h2>Route</h2>{(routeFrom || routeTo) && <button className="clear-button" onClick={clearRoute} title="Clear route"><X size={ICON_SIZE.clear} /></button>}</div>
-        {routeEndpointControl("from", "A", routeFrom)}
-        {routeEndpointControl("to", "B", routeTo)}
+      <section className="route-panel"><div className="section-title"><Route size={ICON_SIZE.section} /><h2>Route</h2>{routeStops.length > 0 && <button className="clear-button" onClick={clearRoute} title="Clear route"><X size={ICON_SIZE.clear} /></button>}</div>
+        {routeStops.length ? routeStops.map((feature, index) => routeEndpointControl(index, feature)) : routeEndpointControl(0, null, true)}
+        {routeStops.length < 2 && routeEndpointControl(1, null, true)}
+        {routeStops.length >= 2 && <button className={`add-route-stop${appendStopArmed ? " active" : ""}`} onClick={() => setAppendStopArmed((value) => !value)}>{appendStopArmed ? "Done adding stops" : "+ Add stops"}</button>}
+        {appendStopArmed && <p className="add-stop-hint">Tap each additional destination on the map.</p>}
         {routeResult && <p className="route-status"><Navigation size={14} /> Route · {Math.round(routeResult.distanceMeters)} m</p>}
         {routeError && <p className="route-error">{routeError}</p>}
       </section>
@@ -722,6 +929,8 @@ export default function Viewer() {
         {LAYERS.map((layer) => <label key={layer.id}><input type="checkbox" checked={activeLayers.has(layer.id)} onChange={() => toggleLayer(layer.id)} /><i style={{ background: layer.color }} /><span>{layer.label}</span><small>{data?.features.filter((feature) => feature.properties.viewer_layer === layer.id).length || 0}</small></label>)}
         <label><input type="checkbox" checked={showNavigationDebug} onChange={() => setShowNavigationDebug((value) => !value)} /><i style={{ background: MAP_LAYERS.navigationDebug.lineColor }} /><span>Navigation</span><small>{navigationData?.features.length || 0}</small></label>
       </div></section>
+      <p className="usage-notice">Anonymous searches, routes and exhibit interactions are recorded to improve this map.</p>
+      <button className="report-problem-button" onClick={openReport}><Flag size={16} />Report a problem</button>
       <section><div className="section-title"><Building2 size={ICON_SIZE.section} /><h2>Level</h2></div><div className="segments">{LEVELS.map((level) => <button className={activeLevel === level.id ? "active" : ""} key={level.id} onClick={() => setActiveLevel(level.id)}>{level.label}</button>)}</div></section>
     </aside>
     <button className="locate-button icon-button" onClick={() => mapRef.current && fitLevelExtents(mapRef.current, data, MAP.flyDurationMs)} title="Return to museum"><LocateFixed /></button>
@@ -738,7 +947,7 @@ export default function Viewer() {
           const narrative = exhibitNarrative(exhibit);
           const notes = exhibitNotes(exhibit);
           return <article className="exhibit-card" key={exhibit.id}>
-            {imageUrl && <a href={imageUrl} target="_blank" rel="noreferrer"><img src={imageUrl} alt={nameOf(exhibit)} loading="lazy" /></a>}
+            {imageUrl && <button className="exhibit-image-button" onClick={() => { setViewedImage({ url: imageUrl, alt: nameOf(exhibit) }); sendUsageEvent(usageSessionRef.current, "image_opened", { feature_id: String(exhibit.id) }); }} aria-label={`View image of ${nameOf(exhibit)}`}><img src={imageUrl} alt="" loading="lazy" /></button>}
             <div><small>{exhibitSubtitle(exhibit)}</small><strong>{exhibitSummary(exhibit)}</strong><span>{nameOf(exhibit)}</span>
               {specimenNames.length > 0 && <ul className="exhibit-names">{specimenNames.map(({ scientificName, commonName }) => <li key={`${scientificName || ""}-${commonName || ""}`}>{scientificName && <em>{scientificName}</em>}{scientificName && commonName ? " · " : ""}{commonName}</li>)}</ul>}
               {(specimens.length > 0 || narrative || notes) && <details className="exhibit-details"><summary>Full details</summary>
@@ -755,6 +964,27 @@ export default function Viewer() {
         })}
       </div></section>}
     </aside>}
+    {report && <div className="report-overlay" role="dialog" aria-modal="true" aria-labelledby="report-title">
+      <div className="report-dialog">
+        <div className="report-head"><div><small>Visitor feedback</small><h2 id="report-title">Report a problem</h2></div><button className="icon-button" onClick={closeReport} title="Close report form"><X /></button></div>
+        {report.step === "edit" && <div className="report-content">
+          <div className="report-context"><strong>{report.feature ? nameOf(report.feature) : "General map report"}</strong><span>{report.feature ? `Selected ${report.feature.properties.viewer_layer || "feature"}` : "No map feature selected"}</span></div>
+          <fieldset><legend>What kind of problem is this?</legend><div className="report-types">{REPORT_TYPES.map((type) => <button type="button" className={report.issueType === type.id ? "active" : ""} aria-pressed={report.issueType === type.id} key={type.id} onClick={() => setReport((current) => ({ ...current, issueType: type.id }))}>{type.label}</button>)}</div></fieldset>
+          <label className="report-description"><span>What should we know?</span><textarea value={report.description} maxLength={1000} inputMode="none" placeholder="Describe what is wrong and what you expected to see." onChange={(event) => setReport((current) => ({ ...current, description: event.target.value }))} onFocus={() => { setKeyboardTarget("report"); setKeyboardOpen(true); }} /><small>{report.description.length}/1000</small></label>
+          <div className="report-actions"><button onClick={closeReport}>Cancel</button><button disabled={report.description.trim().length < 10} onClick={() => { setKeyboardOpen(false); setReport((current) => ({ ...current, step: "review" })); }}>Review report</button></div>
+        </div>}
+        {report.step === "review" && <div className="report-content report-review"><p><strong>Issue type</strong><span>{REPORT_TYPES.find(({ id }) => id === report.issueType)?.label}</span></p><p><strong>Map context</strong><span>{report.feature ? nameOf(report.feature) : "General map"}</span></p><p><strong>Description</strong><span>{report.description}</span></p>{reportError && <div className="report-error" role="alert">{reportError}</div>}<div className="report-actions"><button disabled={reportSubmitting} onClick={() => setReport((current) => ({ ...current, step: "edit" }))}>Back</button><button disabled={reportSubmitting} onClick={submitReport}>{reportSubmitting ? "Submitting…" : "Submit report"}</button></div></div>}
+        {report.step === "success" && <div className="report-content report-success"><Flag /><h3>Thank you</h3><p>Your report was submitted as issue #{report.result.number}.</p><button onClick={closeReport}>Done</button></div>}
+      </div>
+    </div>}
+    {keyboardOpen && <section className="virtual-keyboard" aria-label={`On-screen ${keyboardTarget === "report" ? "report" : "search"} keyboard`}>
+      <div className="keyboard-head"><strong>{keyboardTarget === "report" ? "Description keyboard" : "Search keyboard"}</strong><button onClick={() => setKeyboardOpen(false)} aria-label="Close keyboard"><X /></button></div>
+      {KEYBOARD_ROWS.map((row, index) => <div className={`keyboard-row keyboard-row-${index}`} key={index}>{row.map((key) => <button key={key} onPointerDown={(event) => event.preventDefault()} onClick={() => applyKeyboardKey(virtualKeyWithCaps(key, keyboardCaps))}>{key}</button>)}</div>)}
+      <div className="keyboard-row keyboard-actions"><button className={keyboardCaps ? "caps-key active" : "caps-key"} aria-pressed={keyboardCaps} onClick={() => setKeyboardCaps((value) => !value)}>Caps</button><button onClick={() => applyKeyboardKey("clear")}>Clear</button><button className="space-key" onClick={() => applyKeyboardKey("space")}>Space</button><button onClick={() => applyKeyboardKey("backspace")}>⌫</button><button onClick={() => setKeyboardOpen(false)}>Done</button></div>
+    </section>}
+    {viewedImage && <div className="image-viewer" role="dialog" aria-modal="true" aria-label={viewedImage.alt} onClick={() => setViewedImage(null)}>
+      <div className="image-frame" onClick={(event) => event.stopPropagation()}><div className="image-viewer-head"><strong>{viewedImage.alt}</strong><button className="icon-button" onClick={() => setViewedImage(null)} title="Close image"><X /></button></div><img src={viewedImage.url} alt={viewedImage.alt} /></div>
+    </div>}
     {loading && <div className="loading">Loading indoor map...</div>}
   </main>;
 }

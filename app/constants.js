@@ -1,7 +1,7 @@
 export const LAYERS = [
   { id: "venue", label: "Venue", color: "#2563a6", enabledByDefault: false },
   { id: "building", label: "Buildings", color: "#64748b", enabledByDefault: false },
-  { id: "footprint", label: "Footprints", color: "#8898a7", enabledByDefault: true },
+  { id: "footprint", label: "Footprints", color: "#8898a7", enabledByDefault: false },
   { id: "level", label: "Levels", color: "#8b9299", enabledByDefault: true },
   { id: "unit", label: "Units", color: "#a6adb3", enabledByDefault: true },
   { id: "detail", label: "Details", color: "#c9943b", enabledByDefault: true },

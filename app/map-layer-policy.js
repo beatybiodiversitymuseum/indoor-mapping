@@ -7,6 +7,7 @@ export const INTERACTIVE_MAP_LAYERS = [
   "imdf-amenity-icons",
   "imdf-point-feature-icons",
   "imdf-exhibit-icons",
+  "imdf-cabinet-exhibit-icons",
   "imdf-point",
   "imdf-fixture-extrusion",
   "imdf-fill",

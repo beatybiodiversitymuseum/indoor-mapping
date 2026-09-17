@@ -25,8 +25,8 @@ test('exhibit migration separates services, fixture content and stopping points'
   const floorFixtures = fixtures.features.filter(f=>f.properties.local_category==='floor_display_fixture');
   assert.equal(floors.length,9);
   assert.equal(floorFixtures.length,9);
-  assert.equal(displays.length,36);
-  assert.equal(standaloneDisplays.length,35);
+  assert.equal(displays.length,35);
+  assert.equal(standaloneDisplays.length,34);
   for (const display of standaloneDisplays) {
     assert.equal(display.properties.route_association, 'nearest_approved_access_projection');
     assert.equal(display.properties.navigation_point_ids.length, 1);

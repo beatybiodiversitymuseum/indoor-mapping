@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {nextRouteSelection,routeEndpointHighlight,routeStoppingCoordinate,isMapBackground} from '../app/route-interaction.js';
+import {appendRouteStop,nextRouteSelection,routeEndpointHighlight,routeStopLabel,routeStoppingCoordinate,isMapBackground} from '../app/route-interaction.js';
 const place = id => ({feature_type:'exhibit',geometry:{type:'Point',coordinates:[1,2]},properties:{route_fixture_id:id}});
 test('clicks set A then B, repeat location does not create a zero-length route, third starts a new route',()=>{
  const a=place('a'),b=place('b'),c=place('c');
@@ -8,6 +8,14 @@ test('clicks set A then B, repeat location does not create a zero-length route, 
  assert.deepEqual(nextRouteSelection(a,null,b),[a,b]);
  assert.deepEqual(nextRouteSelection(a,null,place('a')),[a,null]);
  assert.deepEqual(nextRouteSelection(a,b,c),[c,null]);
+});
+test('touch and shift-click additions append distinct route stops',()=>{
+ const a=place('a'),b=place('b'),c=place('c');
+ assert.deepEqual(appendRouteStop([a,b],c),[a,b,c]);
+ assert.deepEqual(appendRouteStop([a,b],place('b')),[a,b]);
+ assert.equal(routeStopLabel(0),'A');
+ assert.equal(routeStopLabel(25),'Z');
+ assert.equal(routeStopLabel(26),'AA');
 });
 test('first-click marker uses approved stopping coordinate rather than exhibit position',()=>{
  const a=place('a');

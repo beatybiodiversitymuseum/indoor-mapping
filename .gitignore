@@ -7,3 +7,4 @@ out/
 .env
 .deploy-artifact/
 .deploy-artifact.new.*/
+.data/

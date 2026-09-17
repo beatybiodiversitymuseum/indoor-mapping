@@ -135114,7 +135114,7 @@
         "category": "exhibit",
         "accessibility": null,
         "name": {
-          "en": "Cabinet 46.18 Upper"
+          "en": "Cabinet 46.18 Window Upper"
         },
         "alt_name": {
           "en": "cabinet_46_18_upper"
@@ -135126,7 +135126,9 @@
         "hours": null,
         "phone": null,
         "website": null,
-        "unit_ids": [],
+        "unit_ids": [
+          "9a5e1973-69e9-4be4-b348-38744dcff44e"
+        ],
         "address_id": null,
         "source": "GitHub issue",
         "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/138",
@@ -135139,7 +135141,7 @@
         "confirmation_details": "",
         "reference_points": "Cabinet 46.18",
         "contributor_notes": "",
-        "location_review_status": "submitted_coordinates",
+        "location_review_status": "derived_cabinet_face",
         "image_transcriptions": [
           {
             "issue_number": 138,
@@ -135164,7 +135166,7 @@
         "photo_text": "Female, supermale, or female\nimpersonator? Some parrotfishes\nlive in harems with one large male\ndominating a group of smaller females.\nIf this male dies, the largest female\nchanges sex, size, and colour to become\nthe new \"supermale\". Only females that\nchange sex become \"supermales\". Fish\nthat are born male are smaller, but have\none advantage - they look like females.\nThese sneaky males live among the\nfemales and secretly fertilize their eggs.\n1. Japanese parrotfish\nColotomus japonicus\nManazuru, Japan, 1960\nNo. BC60-0192\n2. Loosetooth parrotfish\nNicholsina denticulata\nItabaca Channel, Galapagos Islands, Ecuador, 1956\nNo. BC56-0434\n3. Parrotfish\nCryptotomus sp.",
         "photo_text_source_url": "https://github.com/user-attachments/assets/e4227afe-213b-40a0-8598-6baa68326368",
         "duration_type": "permanent",
-        "exhibit_type": "display",
+        "exhibit_type": "window",
         "details": {
           "text": {
             "en": "Female, supermale, or female\nimpersonator? Some parrotfishes\nlive in harems with one large male\ndominating a group of smaller females.\nIf this male dies, the largest female\nchanges sex, size, and colour to become\nthe new \"supermale\". Only females that\nchange sex become \"supermales\". Fish\nthat are born male are smaller, but have\none advantage - they look like females.\nThese sneaky males live among the\nfemales and secretly fertilize their eggs.\n1. Japanese parrotfish\nColotomus japonicus\nManazuru, Japan, 1960\nNo. BC60-0192\n2. Loosetooth parrotfish\nNicholsina denticulata\nItabaca Channel, Galapagos Islands, Ecuador, 1956\nNo. BC56-0434\n3. Parrotfish\nCryptotomus sp."
@@ -135174,15 +135176,44 @@
         "navigation_point_ids": [
           "c398721c-8a17-59ea-b974-cef65eda1266"
         ],
-        "stopping_point_ids": [],
-        "route_fixture_id": "cabinet_46_18_upper",
-        "route_association": "nearest_approved_access_projection"
+        "stopping_point_ids": [
+          "74e70e01-5243-43f8-b794-bc5ae497620a"
+        ],
+        "route_fixture_id": "col_46_cab_18",
+        "related_fixture_id": "05141cda-24a7-4f50-bb3e-0466122d0a42",
+        "location_correction": {
+          "original_coordinates": [
+            -123.2502993,
+            49.2636251
+          ],
+          "method": "Use the existing visitor viewing point for the cabinet explicitly named in the submission.",
+          "reference_feature_ids": [
+            "05141cda-24a7-4f50-bb3e-0466122d0a42",
+            "74e70e01-5243-43f8-b794-bc5ae497620a"
+          ],
+          "distance_meters": 0.338
+        },
+        "fixture_ids": [
+          "05141cda-24a7-4f50-bb3e-0466122d0a42"
+        ],
+        "fixture_alt_names": [
+          "col_46_cab_18"
+        ],
+        "archive": {
+          "public_reference_code": "46.18 Upper"
+        },
+        "fixture_id": "05141cda-24a7-4f50-bb3e-0466122d0a42",
+        "marker_bearing": 62.53,
+        "image": {
+          "url": "https://github.com/user-attachments/assets/40f781f9-27c6-4e86-9518-61d31c3fe806",
+          "type": "window"
+        }
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.2502993,
-          49.2636251
+          -123.25029502514585,
+          49.263626299233565
         ]
       },
       "id": "20f1ded2-bb7b-5df1-81c0-4079bbb6137b",
@@ -135257,7 +135288,8 @@
         "fixture_alt_names": [
           "col_1_cab_03"
         ],
-        "fixture_placement": "top"
+        "fixture_placement": "top",
+        "display_count": 2
       },
       "geometry": {
         "type": "Point",

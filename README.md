@@ -80,12 +80,41 @@ access. Inventory owns host placement and `APP_HOST`/`APP_PORT`; the repository
 owns installation, readiness, and the default release root. The
 deployed process remains bound to loopback and is exposed only through nginx.
 `deploy/install.sh` initializes once and delegates later deployments to
-`deploy/update.sh`; this stateless frontend's `deploy/initialize.sh` is a no-op.
+`deploy/update.sh`. Usage events are stored outside immutable releases at
+`$SERVICE_CREATOR_DEPLOY_ROOT/data/usage.sqlite3`, so normal updates preserve them.
 Explicit `install.sh --reinstall` repeats initialization without changing map
 data. Normal updates replace only the immutable application release.
 The manifest adapters are the only production deployment route; the former
 checkout-based deploy, update, and readiness scripts have been
 removed.
+
+## Anonymous usage logging
+
+The viewer records completed searches, selected features, requested routes,
+opened exhibit images, and anonymous session timestamps. It does not record
+map zooms, pans, touch coordinates, or individual keystrokes. Records are kept
+for 365 days by default.
+
+Local data is stored in `.data/usage.sqlite3`. Set `USAGE_DB_PATH` to override
+the location and `USAGE_RETENTION_DAYS` to change retention. Export the current
+database to CSV with:
+
+```bash
+npm run usage:export -- usage-events.csv
+```
+
+## Visitor problem reports
+
+The in-map **Report a problem** form sends a structured issue to GitHub without
+giving visitors access to GitHub credentials or arbitrary issue fields. Configure
+`GITHUB_ISSUE_TOKEN` with a fine-grained token limited to **Issues: read/write**
+on this repository. `GITHUB_ISSUE_REPOSITORY` selects the fixed destination and
+defaults to `beatybiodiversitymuseum/indoor-mapping`.
+
+Reports receive only the `needs review` label so the map-data ingestion workflow
+cannot process visitor text before a maintainer reviews it. The persistent
+per-session submission limit defaults to five reports per hour and can be changed
+with `REPORT_RATE_LIMIT_PER_HOUR`.
 
 ## What's Here
 

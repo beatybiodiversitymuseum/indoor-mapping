@@ -14,10 +14,20 @@ export const AMENITY_ICON_SCALE = { minZoom: 17, min: 0.58, maxZoom: 21, max: 0.
 export const AMENITY_ICON_SIZE_EXPRESSION = [
   "interpolate", ["linear"], ["zoom"],
   AMENITY_ICON_SCALE.minZoom,
-  ["case", ["==", ["get", "amenity_icon"], "fire-extinguisher"], AMENITY_ICON_SCALE.min * 0.5, AMENITY_ICON_SCALE.min],
+  ["case", ["==", ["get", "amenity_icon"], "fire-extinguisher"], AMENITY_ICON_SCALE.min * 0.575, AMENITY_ICON_SCALE.min],
   AMENITY_ICON_SCALE.maxZoom,
-  ["case", ["==", ["get", "amenity_icon"], "fire-extinguisher"], AMENITY_ICON_SCALE.max * 0.5, AMENITY_ICON_SCALE.max],
+  ["case", ["==", ["get", "amenity_icon"], "fire-extinguisher"], AMENITY_ICON_SCALE.max * 0.575, AMENITY_ICON_SCALE.max],
 ];
+export const AMENITY_ICON_OFFSET_EXPRESSION = [
+  "coalesce", ["get", "amenity_icon_offset"], ["literal", [0, 0]],
+];
+
+function amenityIconOffset(feature, icon) {
+  if (icon !== "fire-extinguisher") return [0, 0];
+  // These submissions form two cabinet-wall rows. Move each icon away from
+  // its wall in the rendered view without altering the source coordinates.
+  return Number(feature.properties?.source_issue_number) <= 19 ? [0, 24] : [0, -24];
+}
 
 export function amenityIconName(feature) {
   const properties = feature?.properties || {};
@@ -39,7 +49,7 @@ export function amenityIconFeatures(collection) {
       return [{
         type: "Feature",
         id: feature.id,
-        properties: { ...feature.properties, amenity_icon: icon },
+        properties: { ...feature.properties, amenity_icon: icon, amenity_icon_offset: amenityIconOffset(feature, icon) },
         geometry: { type: "Point", coordinates },
       }];
     }),

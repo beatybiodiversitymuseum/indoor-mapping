@@ -11,7 +11,7 @@ const byIssue = new Map([...amenities, ...openings, ...exhibits].map((feature) =
 
 
 test("submitted cabinet windows use cabinet faces and separate navigation points", () => {
-  assert.equal(submitted.length, 193);
+  assert.equal(submitted.length, 194);
   assert.equal(amenities.some((feature) => /Window/.test(feature.properties.name?.en)), false);
   for (const feature of submitted) {
     assert.equal(feature.feature_type, "exhibit");
@@ -32,6 +32,12 @@ test("submitted cabinet windows use cabinet faces and separate navigation points
   }
   assert.equal(byIssue.get(118).properties.route_fixture_id, "col_48_cab_17");
   assert.deepEqual(byIssue.get(118).geometry, byIssue.get(117).geometry);
+  const upper4618 = byIssue.get(138);
+  const lower4618 = byIssue.get(139);
+  assert.equal(upper4618.properties.exhibit_type, "window");
+  assert.equal(upper4618.properties.fixture_id, lower4618.properties.fixture_id);
+  assert.deepEqual(upper4618.properties.fixture_alt_names, ["col_46_cab_18"]);
+  assert.deepEqual(upper4618.geometry, lower4618.geometry);
 });
 
 test("ticket windows and cabinet viewing amenities reuse approved routing", () => {
@@ -145,6 +151,7 @@ test("Irish elk skull remains on top of and browsable through cabinet 01.03", ()
   const fixture = fixtures.find((item) => item.properties.alt_name?.en === "col_1_cab_03");
   assert.deepEqual(props.fixture_ids, [fixture.id]);
   assert.equal(props.fixture_placement, "top");
+  assert.equal(props.display_count, 2);
   assert.equal(props.route_fixture_id, "col_1_cab_03");
   assert.ok(props.stopping_point_ids.length);
   assert.deepEqual(exhibit.geometry.coordinates, [-123.2510217, 49.2633962]);

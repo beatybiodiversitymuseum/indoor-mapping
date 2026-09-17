@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { buildRoutingNetwork, findApprovedRoute } from "../app/routing.js";
+import { findMultiStopRoute } from "../app/route-interaction.js";
 
 const navigation = JSON.parse(await readFile(new URL("../geojson/navigation.geojson", import.meta.url), "utf8"));
 const network = buildRoutingNetwork(navigation);
@@ -39,4 +40,18 @@ test("uses approved connection interiors between columns 25 and 36", () => {
   const route = findApprovedRoute(network, feature("col_25_cab_09"), feature("col_36_cab_09"));
   assert.ok(route.distanceMeters < 41);
   for (const segment of route.features) assert.ok(isApprovedSubsegment(segment.geometry.coordinates));
+});
+
+test("joins each approved leg of a multi-stop route in order", () => {
+  const stops = [feature("col_25_cab_09"), feature("col_36_cab_09"), feature("col_1_cab_21")];
+  const route = findMultiStopRoute(network, stops);
+  const firstLeg = findApprovedRoute(network, stops[0], stops[1]);
+  const secondLeg = findApprovedRoute(network, stops[1], stops[2]);
+  assert.ok(route);
+  assert.equal(route.legRoutes.length, 2);
+  assert.equal(route.features.length, firstLeg.features.length + secondLeg.features.length);
+  assert.ok(Math.abs(route.distanceMeters - firstLeg.distanceMeters - secondLeg.distanceMeters) < 1e-9);
+  const firstLegEnd = route.legRoutes[0].features.at(-1).geometry.coordinates.at(-1);
+  const secondLegStart = route.legRoutes[1].features[0].geometry.coordinates[0];
+  assert.deepEqual(firstLegEnd, secondLegStart);
 });

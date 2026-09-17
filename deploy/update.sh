@@ -16,6 +16,7 @@ source "$SERVICE_CREATOR_ENV_FILE"
 set +a
 DEPLOY_ROOT="$SERVICE_CREATOR_DEPLOY_ROOT"
 DEPLOY_ROOT="${DEPLOY_ROOT%/}"
+USAGE_DB_PATH="${USAGE_DB_PATH:-$DEPLOY_ROOT/data/usage.sqlite3}"
 : "${APP_HOST:?APP_HOST is required}"
 : "${APP_PORT:?APP_PORT is required}"
 APP_BASE_PATH="$SERVICE_CREATOR_INGRESS_PATH"
@@ -28,6 +29,7 @@ CURRENT_LINK="$DEPLOY_ROOT/current"
 [[ -f "$SERVICE_CREATOR_ARTIFACT_DIR/server.js" ]] || { echo "Missing standalone server" >&2; exit 1; }
 [[ -d "$SERVICE_CREATOR_ARTIFACT_DIR/.next/static" ]] || { echo "Missing standalone static assets" >&2; exit 1; }
 mkdir -p "$RELEASES_DIR"
+mkdir -p "$(dirname "$USAGE_DB_PATH")"
 
 if [[ -e "$RELEASE_PATH" ]]; then
   if [[ ! -f "$RELEASE_PATH/release.env" ]] \
@@ -54,7 +56,7 @@ fi
 
 start_current() {
   pm2 delete "$SERVICE_CREATOR_APPLICATION_NAME" >/dev/null 2>&1 || true
-  APP_BASE_PATH="$APP_BASE_PATH" HOSTNAME="$APP_HOST" PORT="$APP_PORT" \
+  APP_BASE_PATH="$APP_BASE_PATH" HOSTNAME="$APP_HOST" PORT="$APP_PORT" USAGE_DB_PATH="$USAGE_DB_PATH" \
     pm2 start "$CURRENT_LINK/server.js" \
     --name "$SERVICE_CREATOR_APPLICATION_NAME" --cwd "$CURRENT_LINK"
 }

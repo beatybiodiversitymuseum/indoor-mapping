@@ -81,9 +81,11 @@ def main():
             layers[layer]['features'].append(feature)
             features[issue['number']] = feature
         props = feature['properties']
-        match = re.fullmatch(r'(?:Cabinet|Cabiner|Cabient)\s+(\d+)\.(\d+)\s+Window(?:\s+(?:Upper|Lower))?', props['name']['en'], re.I)
+        match = re.fullmatch(r'(?:Cabinet|Cabiner|Cabient)\s+(\d+)\.(\d+)(?:\s+Window)?(?:\s+(?:Upper|Lower))?', props['name']['en'], re.I)
         if match:
             props['name']['en'] = re.sub(r'^Cabin(?:er|et)|^Cabient', 'Cabinet', props['name']['en'])
+            if ' Window' not in props['name']['en']:
+                props['name']['en'] = re.sub(r'(\s+(?:Upper|Lower))$', r' Window\1', props['name']['en'], flags=re.I)
             key = f'col_{int(match[1])}_cab_{int(match[2]):02d}'
             fixture = fixtures.get(key)
             target = viewing.get(fixture['id']) if fixture else None
@@ -180,6 +182,7 @@ def main():
             fixture_ids=[irish_elk_fixture['id']],
             fixture_alt_names=['col_1_cab_03'],
             fixture_placement='top',
+            display_count=2,
             route_fixture_id='col_1_cab_03',
         )
         props.pop('route_association', None)
