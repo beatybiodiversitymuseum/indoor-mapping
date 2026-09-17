@@ -99,7 +99,7 @@ The cabinet and drawer offset points were consumed into `geojson/amenity.geojson
 
 ## Confirmed Pedestrian Navigation
 
-`geojson/navigation.geojson` is a local extension layer for confirmed pedestrian routing. IMDF 1.0 does not define a standard routing graph layer, so this file preserves the museum's app/navigation graph separately from architectural layers.
+`geojson/navigation_path.geojson`, `geojson/navigation_access.geojson`, and `geojson/navigation_stop.geojson` are local extension layers for confirmed pedestrian routing. IMDF 1.0 does not define a standard routing graph layer, so these files preserve walkable paths, explicit access projections, and exhibit viewing stops separately from architectural layers. Junctions are generated from path geometry.
 
 Translated from the former `geojson/wayfinding.geojson` file:
 

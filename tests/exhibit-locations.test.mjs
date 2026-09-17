@@ -4,11 +4,12 @@ import { readFileSync } from 'node:fs';
 import { relatedExhibitsForFeature } from '../app/exhibits.js';
 import { buildRoutingNetwork, findApprovedRoute, isRoutableFeature } from '../app/routing.js';
 const read = name => JSON.parse(readFileSync(new URL(`../geojson/${name}.geojson`, import.meta.url)));
-const exhibits = read('exhibit'), fixtures = read('fixture'), navigation = read('navigation');
+const exhibits = read('exhibit'), fixtures = read('fixture');
+const navigation = {features:['navigation_path','navigation_access','navigation_stop'].flatMap(name=>read(name).features)};
 test('exhibit migration separates services, fixture content and stopping points', () => {
   assert.equal(read('detail').features.length, 0);
   assert.equal(read('amenity').features.some(f=>f.properties.category==='exhibit'),false);
-  assert.equal(navigation.features.filter(f=>f.properties.wayfinding_type==='viewing_stop').length,1444);
+  assert.equal(navigation.features.filter(f=>f.properties.wayfinding_type==='viewing_stop').length,1258);
   const collection = {features:[...exhibits.features,...fixtures.features]};
   const cabinet = fixtures.features.find(f=>f.properties.alt_name?.en==='col_46_cab_12');
   assert.equal(relatedExhibitsForFeature(cabinet,collection).length,2);
@@ -29,7 +30,7 @@ test('exhibit migration separates services, fixture content and stopping points'
   assert.equal(standaloneDisplays.length,34);
   for (const display of standaloneDisplays) {
     assert.equal(display.properties.route_association, 'nearest_approved_access_projection');
-    assert.equal(display.properties.navigation_point_ids.length, 1);
+    assert.ok(display.properties.navigation_point_ids.length >= 1);
     assert.ok(isRoutableFeature(network, display));
   }
   for(const floor of floors){

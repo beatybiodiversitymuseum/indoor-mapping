@@ -15,7 +15,7 @@ This repository includes a viewer for exploring the canonical files in `geojson/
 
 Visit the live demo here: [https://apps.beatymuseum.ubc.ca/map](https://apps.beatymuseum.ubc.ca/map)
 
-Routes are constrained to locally confirmed LineStrings in `geojson/navigation.geojson`. Every actual intersection between confirmed walking and connection lines becomes a graph junction, and routing minimizes total distance across those approved segments. The fixture-facing tail of each connection remains terminal, so a route cannot pass through a cabinet as a shortcut. Unit polygons are never treated as free routing space, and the viewer reports that no approved route is available instead of inventing a shortcut. Select a searchable fixture or click one on the map, then use `Start here` and `Route here` in the inspector.
+Routes are constrained to locally confirmed LineStrings in `geojson/navigation_path.geojson`. Access projections in `navigation_access.geojson` connect fixtures to that network, while deduplicated physical viewing locations live in `navigation_stop.geojson`. Junctions are generated from path geometry during validation and display rather than stored. Routing minimizes total distance across these approved segments. Unit polygons are never treated as free routing space, and the viewer reports that no approved route is available instead of inventing a shortcut.
 
 The `Museum Floor` Unit is derived from the Basement Level minus its Ramp Units. Rebuild it after changing either source geometry:
 
@@ -138,7 +138,9 @@ The current map data is in the `geojson/` folder:
 | `geojson/section.geojson` | Sections, currently empty | `section` |
 | `geojson/geofence.geojson` | Geofences, currently empty | `geofence` |
 | `geojson/kiosk.geojson` | Kiosks, currently empty | `kiosk` |
-| `geojson/navigation.geojson` | Confirmed pedestrian route graph extension | `navigation` |
+| `geojson/navigation_path.geojson` | Confirmed walkable route segments | `navigation` extension |
+| `geojson/navigation_access.geojson` | Explicit fixture-to-path access projections | `navigation` extension |
+| `geojson/navigation_stop.geojson` | Deduplicated exhibit viewing and route-start locations | `navigation` extension |
 | `geojson/relationship.geojson` | Feature relationships, currently empty | `relationship` |
 | `geojson/fixture.geojson` | Cabinets, drawer/island boxes, tables, cases, and flat floor-display footprints | `fixture` |
 | [`preview.geojson`](preview.geojson) | Stacked GeoJSON.io review file for the canonical map layers | mixed |

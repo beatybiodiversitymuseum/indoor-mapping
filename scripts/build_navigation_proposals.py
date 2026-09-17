@@ -41,7 +41,23 @@ COORDINATE_PRECISION = 10
 
 
 def load(name: str) -> dict:
+    if name == "navigation.geojson":
+        features = []
+        for component in ("navigation_path.geojson", "navigation_access.geojson", "navigation_stop.geojson"):
+            features.extend(load(component)["features"])
+        return {"type": "FeatureCollection", "features": features}
     return json.loads((GEOJSON / name).read_text(encoding="utf-8"))
+
+
+def write_navigation(collection: dict) -> None:
+    destinations = {
+        "walking_path": "navigation_path.geojson",
+        "access_projection": "navigation_access.geojson",
+        "viewing_stop": "navigation_stop.geojson",
+    }
+    for wayfinding_type, name in destinations.items():
+        features = [feature for feature in collection["features"] if feature["properties"].get("wayfinding_type") == wayfinding_type]
+        (GEOJSON / name).write_text(json.dumps({"type": "FeatureCollection", "features": features}, indent=2) + "\n", encoding="utf-8")
 
 
 def english(properties: dict, key: str) -> str | None:
@@ -1440,9 +1456,8 @@ def main() -> int:
                 properties["end_point"] = target
                 midpoint = LineString(feature["geometry"]["coordinates"]).interpolate(0.5, normalized=True)
                 properties["display_point"]["coordinates"] = list(midpoint.coords[0])
-        destination = GEOJSON / "navigation.geojson"
-        destination.write_text(json.dumps(proposal, indent=2) + "\n", encoding="utf-8")
-        print(f"Applied approved Stage 1 proposal to {destination.relative_to(ROOT)}")
+        write_navigation(proposal)
+        print(f"Applied approved Stage 1 proposal to the split navigation files")
     elif args.stage == "diagonals":
         proposal, context = build_diagonal_proposal()
         geojson_path = OUTPUT / "02-diagonals.geojson"
@@ -1468,9 +1483,8 @@ def main() -> int:
             properties["route_confirmed"] = True
             for key in ("proposal_saving_m", "proposal_length_m", "proposal_face_index", "proposal_number"):
                 properties.pop(key, None)
-        destination = GEOJSON / "navigation.geojson"
-        destination.write_text(json.dumps(proposal, indent=2) + "\n", encoding="utf-8")
-        print(f"Applied approved Stage 2 diagonals to {destination.relative_to(ROOT)}")
+        write_navigation(proposal)
+        print(f"Applied approved Stage 2 diagonals to the split navigation files")
     elif args.stage == "cardinal":
         proposal, context = build_cardinal_proposal()
         geojson_path = OUTPUT / "02b-cardinal-paths.geojson"
@@ -1554,9 +1568,8 @@ def main() -> int:
                 properties.pop(key, None)
         canonical["features"].extend(selected_nodes)
         canonical["features"].extend(selected_paths)
-        destination = GEOJSON / "navigation.geojson"
-        destination.write_text(json.dumps(canonical, indent=2) + "\n", encoding="utf-8")
-        print(f"Applied cardinal proposals {approved_numbers} to {destination.relative_to(ROOT)}")
+        write_navigation(canonical)
+        print(f"Applied cardinal proposals {approved_numbers} to the split navigation files")
     elif args.stage == "access":
         proposal, context = build_access_proposal()
         geojson_path = OUTPUT / "03-access-points.geojson"
@@ -1586,9 +1599,8 @@ def main() -> int:
                 properties["review_status"] = "locally_confirmed"
                 properties["route_confirmed"] = True
                 properties.pop("proposal_previous_target", None)
-        destination = GEOJSON / "navigation.geojson"
-        destination.write_text(json.dumps(proposal, indent=2) + "\n", encoding="utf-8")
-        print(f"Applied approved fixture access points to {destination.relative_to(ROOT)}")
+        write_navigation(proposal)
+        print(f"Applied approved fixture access points to the split navigation files")
     elif args.stage == "connectors":
         proposal, context = build_connector_proposal()
         geojson_path = OUTPUT / "04-cardinal-connectors.geojson"
@@ -1622,9 +1634,8 @@ def main() -> int:
                 properties["route_confirmed"] = True
                 for key in ("proposal_length_m", "proposal_direction", "proposal_number"):
                     properties.pop(key, None)
-        destination = GEOJSON / "navigation.geojson"
-        destination.write_text(json.dumps(proposal, indent=2) + "\n", encoding="utf-8")
-        print(f"Applied approved fixture access connectors to {destination.relative_to(ROOT)}")
+        write_navigation(proposal)
+        print(f"Applied approved fixture access connectors to the split navigation files")
     elif args.stage == "rerun-diagonals":
         proposal, context = build_diagonal_proposal()
         proposal["proposal"]["stage"] = "05-diagonals-after-connectors"

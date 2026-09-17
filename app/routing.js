@@ -56,6 +56,10 @@ export function buildRoutingNetwork(collection) {
       .map((feature) => [englishAltName(feature), feature.geometry.coordinates]),
   );
   const accessProjectionFeatures = collection.features.filter((feature) => feature.geometry?.type === "Point" && feature.properties?.wayfinding_type === "access_projection");
+  const viewingStops = new Map();
+  for (const feature of collection.features.filter((item) => item.geometry?.type === "Point" && item.properties?.wayfinding_type === "viewing_stop")) {
+    for (const source of feature.properties?.route_sources || []) viewingStops.set(source, feature.geometry.coordinates);
+  }
   const routeLinesByKey = new Map();
   const connectionRecords = [];
 
@@ -103,7 +107,7 @@ export function buildRoutingNetwork(collection) {
     if (!best) continue;
     best.line.splits.push({ coordinate: best.coordinate, fraction: best.fraction });
     for (const fixtureId of fixtureIds) {
-      connectionRecords.push({ fixtureId, line: best.line, sourceCoordinate: best.coordinate, sourceFraction: best.fraction, projectedAccess: true });
+      connectionRecords.push({ fixtureId, line: best.line, sourceCoordinate: best.coordinate, sourceFraction: best.fraction, projectedAccess: true, viewingCoordinate: viewingStops.get(fixtureId) });
     }
   }
 
@@ -154,8 +158,9 @@ export function buildRoutingNetwork(collection) {
     if (record.projectedAccess) {
       const targetNode = coordinateKey(record.sourceCoordinate);
       if (!graph.hasNode(targetNode) || networkDegree(graph, targetNode) === 0) continue;
-      const coordinates = [record.sourceCoordinate, record.sourceCoordinate];
-      const connection = { fixtureId: record.fixtureId, targetNode, coordinates, weight: 0 };
+      const startCoordinate = record.viewingCoordinate || record.sourceCoordinate;
+      const coordinates = [startCoordinate, record.sourceCoordinate];
+      const connection = { fixtureId: record.fixtureId, targetNode, coordinates, weight: lineLength(coordinates) };
       connections.set(record.fixtureId, [...(connections.get(record.fixtureId) || []), connection]);
       continue;
     }
@@ -179,7 +184,7 @@ function networkDegree(graph, node) {
 
 export function fixtureRouteId(feature) {
   const properties = feature?.properties;
-  return properties?.route_fixture_id || (properties?.fixture_alt_names?.length === 1 ? properties.fixture_alt_names[0] : null) || properties?.alt_name?.en?.replace(/_exhibits$/, "") || null;
+  return properties?.route_fixture_id || (properties?.fixture_alt_names?.length === 1 ? properties.fixture_alt_names[0] : null) || (properties?.route_sources?.length === 1 ? properties.route_sources[0] : null) || properties?.alt_name?.en?.replace(/_exhibits$/, "") || null;
 }
 
 export function isRoutableFeature(network, feature) {

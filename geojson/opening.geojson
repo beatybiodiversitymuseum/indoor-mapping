@@ -53,7 +53,10 @@
           }
         ],
         "photo_text": "4.82m\n0.92m\n1.50m\n0.30m",
-        "photo_text_source_url": "https://github.com/user-attachments/assets/3dd36582-3aba-41a2-bfb5-8ad78ce0f669"
+        "photo_text_source_url": "https://github.com/user-attachments/assets/3dd36582-3aba-41a2-bfb5-8ad78ce0f669",
+        "navigation_point_ids": [
+          "408ac6e5-52b3-54ee-82e2-df42a87534cc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -117,7 +120,10 @@
           }
         ],
         "photo_text": "7m\n-11\nYm\n1.50m",
-        "photo_text_source_url": "https://github.com/user-attachments/assets/2b9d92d2-bf11-4052-adf1-ca3f9a27b2c9"
+        "photo_text_source_url": "https://github.com/user-attachments/assets/2b9d92d2-bf11-4052-adf1-ca3f9a27b2c9",
+        "navigation_point_ids": [
+          "a34c1600-54bd-5e62-9d0d-ea7df30b9873"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -140,7 +146,7 @@
         "alt_name": {
           "en": "front_entrance"
         },
-        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
         "correlation_id": null,
         "local_category": "issue_submitted_opening",
         "pedestrian_importance": true,
@@ -251,7 +257,10 @@
         ],
         "imported_by": "issue_location_reconciliation",
         "photo_text": "1.2m\n1.3m",
-        "photo_text_source_url": "https://github.com/user-attachments/assets/ad049e8a-0631-457d-bf0c-63ed6640a4cb"
+        "photo_text_source_url": "https://github.com/user-attachments/assets/ad049e8a-0631-457d-bf0c-63ed6640a4cb",
+        "navigation_point_ids": [
+          "6ec13f82-55d0-56e4-8a7f-887aeb663cff"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -320,7 +329,10 @@
         ],
         "imported_by": "issue_location_reconciliation",
         "photo_text": "1.2m\n4.Sm\n1.35m",
-        "photo_text_source_url": "https://github.com/user-attachments/assets/dc8bce4d-c5bc-4410-900c-8bdae75bcfa5"
+        "photo_text_source_url": "https://github.com/user-attachments/assets/dc8bce4d-c5bc-4410-900c-8bdae75bcfa5",
+        "navigation_point_ids": [
+          "5a215d79-5038-568c-b6b0-15b2968aa9b6"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -375,7 +387,10 @@
           ]
         },
         "placement_method": "Midpoint of submitted line",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "5faf6a41-6f54-595f-b493-d9a134148afc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -622,7 +637,10 @@
         ],
         "imported_by": "issue_location_reconciliation",
         "photo_text": "2.ym\n11.66m",
-        "photo_text_source_url": "https://github.com/user-attachments/assets/55e1c95f-c1ba-4601-9c76-a145e2da6967"
+        "photo_text_source_url": "https://github.com/user-attachments/assets/55e1c95f-c1ba-4601-9c76-a145e2da6967",
+        "navigation_point_ids": [
+          "5e6dc79f-d561-56ec-ab63-a259430aa87a"
+        ]
       },
       "id": "16370992-2f51-5b84-95a3-b9605a6b444a",
       "feature_type": "opening"
@@ -689,7 +707,10 @@
         ],
         "imported_by": "issue_location_reconciliation",
         "photo_text": "2.4m\n11.66m",
-        "photo_text_source_url": "https://github.com/user-attachments/assets/92ca8b68-c79e-40bf-83fa-870edc6d067e"
+        "photo_text_source_url": "https://github.com/user-attachments/assets/92ca8b68-c79e-40bf-83fa-870edc6d067e",
+        "navigation_point_ids": [
+          "b4a91c5d-eb5d-5c25-86b0-41666d2a2080"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -763,7 +784,10 @@
         ],
         "imported_by": "issue_location_reconciliation",
         "photo_text": "26\n2600\n+3.45m\n200 mm\nvent\n0.2m\n5.00m",
-        "photo_text_source_url": "https://github.com/user-attachments/assets/e01c78d6-0d41-4f08-a1b6-d9405e9f3cc0"
+        "photo_text_source_url": "https://github.com/user-attachments/assets/e01c78d6-0d41-4f08-a1b6-d9405e9f3cc0",
+        "navigation_point_ids": [
+          "d5bbed1d-055e-5aca-a13a-44730555a328"
+        ]
       },
       "geometry": {
         "type": "Point",

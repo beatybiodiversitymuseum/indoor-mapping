@@ -18,6 +18,8 @@ from shapely.ops import transform, nearest_points
 
 from generate_geojson_from_issues import build_feature, optional_geojson_feature, UBC_BOUNDS, BASEMENT_LEVEL_ID
 
+GROUND_LEVEL_ID = '553481bd-bdec-4fe2-8e59-6110190e9b94'
+
 
 def read(path):
     return json.loads(Path(path).read_text())
@@ -131,6 +133,7 @@ def main():
     opposite = nearest_points(cap, transform(forward, shape(facing_wall['geometry'])))[1]
     center = transform(inverse, LineString([cap, opposite]).interpolate(.5, normalized=True))
     relocate(features[38], list(center.coords)[0], 'Center of the interior doorway gap between the short wall end and facing wall in the floor plan.', [jamb_wall['id'], facing_wall['id']])
+    features[38]['properties']['level_id'] = GROUND_LEVEL_ID
 
     # Plural door names are openings too. Move only this importer’s new records.
     for feature in list(layers['amenity']['features']):

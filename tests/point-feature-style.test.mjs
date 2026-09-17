@@ -9,7 +9,8 @@ const feature = (layer, name) => ({ properties: { viewer_layer: layer, name: { e
 test("point openings and fixtures receive meaningful icon types", () => {
   assert.equal(pointFeatureIconName(feature("opening", "Front Entrance")), "door");
   assert.equal(pointFeatureIconName(feature("opening", "Front Emergency Exit")), "emergency-exit");
-  assert.equal(pointFeatureIconName(feature("opening", "Ramp Entrance")), "accessible-entrance");
+  assert.equal(pointFeatureIconName(feature("opening", "Ramp Entrance")), "ramp");
+  assert.equal(pointFeatureIconName(feature("opening", "Accessibility Entrance")), "accessible-entrance");
   assert.equal(pointFeatureIconName(feature("opening", "Staff Door")), "staff-door");
   assert.equal(pointFeatureIconName(feature("fixture", "Discovery Lab Table 1")), "table");
   assert.equal(pointFeatureIconName(feature("fixture", "Theatre Projection Booth")), "projector");

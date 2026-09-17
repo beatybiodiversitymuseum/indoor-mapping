@@ -1228,7 +1228,10 @@
         "reference_points": "Discovery Lab Doors",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "957432fe-b99a-5253-b3ea-93357dd9c76f"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1274,7 +1277,10 @@
         "reference_points": "Discovery Lab Doors",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "a41779d6-4ef7-59e1-921d-ab428dd8f7ac"
+        ]
       },
       "geometry": {
         "type": "Point",

@@ -381,9 +381,13 @@ def related_amenities(alt_names: list[str], amenity_by_alt: dict[str, dict[str, 
 
 def main() -> int:
     fixtures = load_json(GEOJSON_DIR / "fixture.geojson")["features"]
-    amenities = load_json(GEOJSON_DIR / "amenity.geojson")["features"] + [f for f in load_json(GEOJSON_DIR / "navigation.geojson")["features"] if f["properties"].get("wayfinding_type") == "viewing_stop"]
+    amenities = load_json(GEOJSON_DIR / "amenity.geojson")["features"] + load_json(GEOJSON_DIR / "navigation_stop.geojson")["features"]
     fixture_by_alt = {get_alt_name(feature): feature for feature in fixtures if get_alt_name(feature)}
-    amenity_by_alt = {get_alt_name(feature): feature for feature in amenities if get_alt_name(feature)}
+    amenity_by_alt = {}
+    for feature in amenities:
+        names = [get_alt_name(feature), *feature.get("properties", {}).get("alt_names", [])]
+        for name in filter(None, names):
+            amenity_by_alt[name] = feature
     labels_reference, label_public_order = parse_labels_reference()
     drawer_reference, drawer_rects = parse_drawer_reference()
     active_shadowboxes, archived_shadowboxes, shadowbox_rects = parse_shadowbox_reference()

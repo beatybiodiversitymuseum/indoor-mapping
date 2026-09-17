@@ -287,7 +287,7 @@ Anchors are not required for every fixture. A fixture polygon already has geomet
 
 Use anchors when another record needs a stable attachment point inside a unit, especially when that record should not carry its own detailed geometry. Examples might include future occupants, departments, entrances, or external collection-management records.
 
-Navigation nodes in `geojson/navigation.geojson` are useful route graph points, but they are not the same thing as IMDF anchors:
+Navigation records in `geojson/navigation_path.geojson`, `geojson/navigation_access.geojson`, and `geojson/navigation_stop.geojson` are route graph extensions, but they are not the same thing as IMDF anchors. Junctions are derived from path endpoints and intersections rather than stored:
 
 - A navigation node is for routing through the gallery.
 - An anchor is a stable attachment point for another feature or external record.

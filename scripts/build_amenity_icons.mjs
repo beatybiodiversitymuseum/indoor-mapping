@@ -29,6 +29,7 @@ for (const [name, [Icon, color]] of Object.entries(icons)) {
 const pointFeatureIcons = {
   door: [DoorOpen, "#b06a38"],
   "emergency-exit": [LogOut, "#b94242"],
+  ramp: [Ramp, "#3979a8"],
   "accessible-entrance": [Accessibility, "#3979a8"],
   "staff-door": [DoorClosed, "#76634d"],
   table: [PhysicalTable, "#65717a"],
@@ -36,6 +37,13 @@ const pointFeatureIcons = {
   screen: [Presentation, "#596574"],
   fixture: [Wrench, "#65717a"],
 };
+
+function Ramp({ x, y, width, height, color, strokeWidth }) {
+  return createElement("svg", { x, y, width, height, viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth, strokeLinecap: "round", strokeLinejoin: "round" },
+    createElement("path", { d: "M3 18h18M4 15h3l10-7h3" }),
+    createElement("path", { d: "M7 15h10V8" }),
+  );
+}
 
 function PhysicalTable({ x, y, width, height, color, strokeWidth }) {
   return createElement("svg", { x, y, width, height, viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth, strokeLinecap: "round", strokeLinejoin: "round" },

@@ -1,0 +1,4092 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "d0d80cec-1ed3-4143-97ce-d11c55ba22e5",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250223446016,
+            49.263708910335
+          ],
+          [
+            -123.251062290913,
+            49.263422625413
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-001",
+        "alt_name": {
+          "en": "path_001"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "600a0991-75f9-4f48-a599-02a035b0bb8f",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.251018912136,
+            49.263437430156
+          ],
+          [
+            -123.250953959182,
+            49.263355915413
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-003",
+        "alt_name": {
+          "en": "path_003"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "5b2389ee-1524-4b28-88eb-c2b300cab69f",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.251062290913,
+            49.263422625413
+          ],
+          [
+            -123.250892110534,
+            49.263209051804
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-004",
+        "alt_name": {
+          "en": "path_004"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "3ccc4760-aba6-4f88-9b90-e88b64c21dc8",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250053268263,
+            49.263495335496
+          ],
+          [
+            -123.250892110534,
+            49.263209051804
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-005",
+        "alt_name": {
+          "en": "path_005"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "8130d9a1-7a4a-493e-b522-66a39352ec40",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25098730369,
+            49.263448217787
+          ],
+          [
+            -123.250946943202,
+            49.263397566125
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-007",
+        "alt_name": {
+          "en": "path_007"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "74510057-b1a1-4960-9676-893d4d015aa8",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250951822889,
+            49.263460326996
+          ],
+          [
+            -123.250911462427,
+            49.263409675322
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-009",
+        "alt_name": {
+          "en": "path_009"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "e5f7b159-fb13-4975-9d3e-94a374fa98fb",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250923540831,
+            49.263469979341
+          ],
+          [
+            -123.25085858799,
+            49.263388464545
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-011",
+        "alt_name": {
+          "en": "path_011"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "f47b56a2-d0ff-4d23-b83d-ed23fca74ff5",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250892596714,
+            49.263480540204
+          ],
+          [
+            -123.25082764391,
+            49.263399025391
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-013",
+        "alt_name": {
+          "en": "path_013"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "97c1b204-1608-40d1-b7fa-305dbbaee3b5",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250861077053,
+            49.263491286942
+          ],
+          [
+            -123.250800892095,
+            49.263415755655
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-015",
+        "alt_name": {
+          "en": "path_015"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "7faad7c6-a46c-44f1-96b3-71765c153541",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250829300856,
+            49.263502142296
+          ],
+          [
+            -123.250769115931,
+            49.26342661099
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-017",
+        "alt_name": {
+          "en": "path_017"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "dde780fd-5377-4621-ba1b-e7c817fa5876",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250797748042,
+            49.26351291086
+          ],
+          [
+            -123.250774627365,
+            49.263483894716
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-019",
+        "alt_name": {
+          "en": "path_019"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "d93b2767-aafc-4a31-8eed-12dcc6976292",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250766141853,
+            49.263523697628
+          ],
+          [
+            -123.250743021189,
+            49.263494681477
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-021",
+        "alt_name": {
+          "en": "path_021"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "b74ec25c-9d7d-411c-a85f-474794a740c0",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250734542586,
+            49.263534482019
+          ],
+          [
+            -123.250711802927,
+            49.263505944003
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-023",
+        "alt_name": {
+          "en": "path_023"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "0d8b8053-3a01-404b-8667-2ceca650cd92",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250699788805,
+            49.263546342987
+          ],
+          [
+            -123.250677049161,
+            49.263517804964
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-024",
+        "alt_name": {
+          "en": "path_024"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "98a89277-0abe-499e-83bc-e79fe091ee42",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250711802927,
+            49.263505944003
+          ],
+          [
+            -123.250677049162,
+            49.263517804964
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-026",
+        "alt_name": {
+          "en": "path_026"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "415c6236-9807-484f-bf95-11021ca3fb82",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250711802927,
+            49.263505944003
+          ],
+          [
+            -123.250623602843,
+            49.263395253532
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-027",
+        "alt_name": {
+          "en": "path_027"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "cfcd3a79-08e1-460f-995f-957ab2890e31",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250677049161,
+            49.263517804964
+          ],
+          [
+            -123.250640439069,
+            49.263471859589
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-028",
+        "alt_name": {
+          "en": "path_028"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "7c05e8d2-346f-4f2c-bda8-e749f11ddcb8",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250674518699,
+            49.263554967302
+          ],
+          [
+            -123.250652040525,
+            49.263526757404
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-030",
+        "alt_name": {
+          "en": "path_030"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "01677002-64c2-41ec-9084-2c5a614fbbb7",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250639770477,
+            49.263566826345
+          ],
+          [
+            -123.250617292318,
+            49.26353861644
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-032",
+        "alt_name": {
+          "en": "path_032"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "4495eac5-57cd-4ec8-a9bf-9c45e3c88081",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250608182829,
+            49.263577606718
+          ],
+          [
+            -123.25058598083,
+            49.263549743369
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-034",
+        "alt_name": {
+          "en": "path_034"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "73f4eb73-dcfa-4019-8a20-a49bcce8f084",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250573437736,
+            49.263589464662
+          ],
+          [
+            -123.250551235751,
+            49.263561601307
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-036",
+        "alt_name": {
+          "en": "path_036"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "d4da110b-a0cc-46e7-a5a1-4007b0f6536a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250542569774,
+            49.263599986795
+          ],
+          [
+            -123.250483220211,
+            49.26352550332
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-038",
+        "alt_name": {
+          "en": "path_038"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "d92491e1-17b4-4b07-a5e9-90019941d2b3",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250513395789,
+            49.26360995598
+          ],
+          [
+            -123.250459402664,
+            49.263542194774
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-040",
+        "alt_name": {
+          "en": "path_040"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "ceeed9fd-66df-437b-bcb6-487bf7972df3",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250481846009,
+            49.263620723375
+          ],
+          [
+            -123.250427852915,
+            49.263552962155
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-042",
+        "alt_name": {
+          "en": "path_042"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "527b7c78-693d-411f-ad65-d11d1d119153",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250450188589,
+            49.263631527493
+          ],
+          [
+            -123.250396195526,
+            49.263563766258
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-044",
+        "alt_name": {
+          "en": "path_044"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "ff1d59b3-5471-4d7a-8611-416dd4dd800e",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250374336767,
+            49.263586915762
+          ],
+          [
+            -123.250291514043,
+            49.263482972897
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-046",
+        "alt_name": {
+          "en": "path_046"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "e3384fef-76ba-44ae-8d78-8bb3d827ea37",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250418501024,
+            49.263642341886
+          ],
+          [
+            -123.250374336767,
+            49.263586915762
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-047",
+        "alt_name": {
+          "en": "path_047"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "ada11a28-bc9f-4f22-bf4e-f1395d001fd6",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250386871491,
+            49.26365313646
+          ],
+          [
+            -123.25034270726,
+            49.263597710324
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-049",
+        "alt_name": {
+          "en": "path_049"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "b72b33c5-b00a-4349-85c6-becf18f7539f",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250355281439,
+            49.263663917546
+          ],
+          [
+            -123.250311117233,
+            49.263608491399
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-051",
+        "alt_name": {
+          "en": "path_051"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "dc236ba6-db89-4159-bd3a-8d88634200bb",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250323689054,
+            49.263674699415
+          ],
+          [
+            -123.250279524874,
+            49.263619273256
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-053",
+        "alt_name": {
+          "en": "path_053"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "dbb2c94b-214a-42f8-ad06-69932f5a8c8a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250292108449,
+            49.263685487812
+          ],
+          [
+            -123.250247944292,
+            49.263630061639
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-054",
+        "alt_name": {
+          "en": "path_054"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "f3dc3bcd-82f1-48cb-a6cb-141b0d053643",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250247944292,
+            49.263630061639
+          ],
+          [
+            -123.250374336767,
+            49.263586915762
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-056",
+        "alt_name": {
+          "en": "path_056"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "d8d3fa35-f2f3-43ea-9bcb-be84f7ead08f",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250177983144,
+            49.263542259856
+          ],
+          [
+            -123.250165121758,
+            49.263526118679
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-057",
+        "alt_name": {
+          "en": "path_057"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "b6530ca7-4dc4-45f1-af24-43e7a54750c4",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250247944292,
+            49.263630061639
+          ],
+          [
+            -123.250177983144,
+            49.263542259856
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-058",
+        "alt_name": {
+          "en": "path_058"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "ef63922d-3f27-4d71-b296-22d41fce17a5",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250279524874,
+            49.263619273256
+          ],
+          [
+            -123.250196702295,
+            49.263515330323
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-060",
+        "alt_name": {
+          "en": "path_060"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "785ce756-4685-4f8d-bdfe-f15f58a5d015",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250311117233,
+            49.263608491399
+          ],
+          [
+            -123.250228294606,
+            49.263504548488
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-062",
+        "alt_name": {
+          "en": "path_062"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "6cad28f2-f5ae-4c86-bcbb-097fc5424fa8",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25034270726,
+            49.263597710324
+          ],
+          [
+            -123.250259884584,
+            49.263493767436
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-063",
+        "alt_name": {
+          "en": "path_063"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "14c9f7c8-5a69-4611-97c8-6a3e8d865bc3",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250260508905,
+            49.263696261537
+          ],
+          [
+            -123.250202773129,
+            49.263623802846
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-065",
+        "alt_name": {
+          "en": "path_065"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "43750c59-b3fb-4047-b809-0c41e500cb0a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250223446016,
+            49.263708910335
+          ],
+          [
+            -123.25016571028,
+            49.263636451625
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-066",
+        "alt_name": {
+          "en": "path_066"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "6deab287-ba63-4baa-a08f-c1295dc23e3a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250053268263,
+            49.263495335496
+          ],
+          [
+            -123.25016571028,
+            49.263636451625
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-068",
+        "alt_name": {
+          "en": "path_068"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "a1361939-8185-4303-a374-25bc4102a88e",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25084381112612,
+            49.26321768097354
+          ],
+          [
+            -123.250953959182,
+            49.263355915413
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-069",
+        "alt_name": {
+          "en": "path_069"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "74bc643e-639a-43b5-b479-3bcf492a2bde",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25082764391,
+            49.263399025391
+          ],
+          [
+            -123.250953959182,
+            49.263355915413
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-071",
+        "alt_name": {
+          "en": "path_071"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "75a177a6-b83e-47cf-9a56-b1342ad38a9a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250922350773,
+            49.263366703027
+          ],
+          [
+            -123.250946943202,
+            49.263397566125
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-072",
+        "alt_name": {
+          "en": "path_072"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "34026f12-e88a-40c9-b88b-dd1f585e16d2",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250922350773,
+            49.263366703027
+          ],
+          [
+            -123.250889365254,
+            49.263325306666
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-073",
+        "alt_name": {
+          "en": "path_073"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "3c2a6f7f-37f1-4804-b62c-e844b1a2c0d5",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250946943202,
+            49.263397566125
+          ],
+          [
+            -123.250911462427,
+            49.263409675322
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-075",
+        "alt_name": {
+          "en": "path_075"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "8efd9ac8-622f-44ca-816a-518cac3e6b12",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250825602509,
+            49.263347068167
+          ],
+          [
+            -123.250889365254,
+            49.263325306666
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-076",
+        "alt_name": {
+          "en": "path_076"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "48714335-84fc-4ca6-9a2d-347aefe6bb70",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250889365254,
+            49.263325306666
+          ],
+          [
+            -123.250817123545,
+            49.263234644068
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-077",
+        "alt_name": {
+          "en": "path_077"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "e202da28-10c5-44dd-aa02-f7e64618b3bb",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250886870014,
+            49.263378812216
+          ],
+          [
+            -123.250911462427,
+            49.263409675322
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-078",
+        "alt_name": {
+          "en": "path_078"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "d16a813b-05cd-4d8c-8008-c4bfed32b0d7",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250886870014,
+            49.263378812216
+          ],
+          [
+            -123.250853884516,
+            49.263337415846
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-079",
+        "alt_name": {
+          "en": "path_079"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "46ba5ea1-932d-4383-b15e-4cd1fc6d8dd8",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250853884516,
+            49.263337415846
+          ],
+          [
+            -123.250781642855,
+            49.263246753225
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-082",
+        "alt_name": {
+          "en": "path_082"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "5f808cb9-a909-48f9-8bfb-07e298a6eed1",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25085858799,
+            49.263388464545
+          ],
+          [
+            -123.250825602509,
+            49.263347068167
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-083",
+        "alt_name": {
+          "en": "path_083"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "bf9fd3fc-6557-4cff-baa6-e919aca2ed56",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250825602509,
+            49.263347068167
+          ],
+          [
+            -123.250780001968,
+            49.263289839911
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-085",
+        "alt_name": {
+          "en": "path_085"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "1ca08275-5bb4-4331-ab1c-31b6431a2ed6",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25082764391,
+            49.263399025391
+          ],
+          [
+            -123.250781075419,
+            49.263340582431
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-086",
+        "alt_name": {
+          "en": "path_086"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "3e5b7d88-3bf8-4b3e-bfdd-96217f57233d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250781075419,
+            49.263340582431
+          ],
+          [
+            -123.250749555828,
+            49.263351329143
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-087",
+        "alt_name": {
+          "en": "path_087"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "4c99d9d8-397d-40e6-aa36-bce23c992e78",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250781075419,
+            49.263340582431
+          ],
+          [
+            -123.250749057933,
+            49.263300400735
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-088",
+        "alt_name": {
+          "en": "path_088"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "4e5902fe-00c0-4f3b-a4c9-86eb5801d32f",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250749555828,
+            49.263351329143
+          ],
+          [
+            -123.250800892095,
+            49.263415755655
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-089",
+        "alt_name": {
+          "en": "path_089"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "7b2bf442-a630-48d5-8a80-03a7fb6d4144",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250749555828,
+            49.263351329143
+          ],
+          [
+            -123.25069089731,
+            49.263277713046
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-090",
+        "alt_name": {
+          "en": "path_090"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "a75c6d1c-7f06-465b-94ef-fcc53f7a121f",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250749057934,
+            49.263300400735
+          ],
+          [
+            -123.250780001968,
+            49.263289839911
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-091",
+        "alt_name": {
+          "en": "path_091"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "2d88dbc2-c835-43b7-85b3-976650040ebe",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250749057933,
+            49.263300400735
+          ],
+          [
+            -123.250722416866,
+            49.263266966346
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-092",
+        "alt_name": {
+          "en": "path_092"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "b6184d98-07d7-488d-97d3-23cca48d4da6",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250780001968,
+            49.263289839911
+          ],
+          [
+            -123.250753360886,
+            49.263256405529
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-093",
+        "alt_name": {
+          "en": "path_093"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "d455fc47-a105-4d9b-99e4-fc35aadd18eb",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250705956998,
+            49.263448166289
+          ],
+          [
+            -123.250800892095,
+            49.263415755655
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-094",
+        "alt_name": {
+          "en": "path_094"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "5ab26e69-c759-4e91-919e-2b5e112eadfc",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250769115931,
+            49.26342661099
+          ],
+          [
+            -123.250659121207,
+            49.263288568345
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-096",
+        "alt_name": {
+          "en": "path_096"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "b93c3108-303d-4463-850a-bc539957c8c2",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250737563152,
+            49.263437379538
+          ],
+          [
+            -123.250774627365,
+            49.263483894716
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-097",
+        "alt_name": {
+          "en": "path_097"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "a35f7b91-e846-418c-a0dd-f73e9e7d5d4f",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250737563152,
+            49.263437379538
+          ],
+          [
+            -123.250686808171,
+            49.263373682434
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-099",
+        "alt_name": {
+          "en": "path_099"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "66f2dee4-63c6-4f88-a19d-842336270006",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250774627365,
+            49.263483894716
+          ],
+          [
+            -123.250743021189,
+            49.263494681477
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-100",
+        "alt_name": {
+          "en": "path_100"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "0b3b4590-d8b4-4239-be34-c2118dfccd8a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250743021189,
+            49.263494681477
+          ],
+          [
+            -123.250705956998,
+            49.263448166289
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-101",
+        "alt_name": {
+          "en": "path_101"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "b8a17a95-e65b-4877-8c26-e08b13058259",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250705956998,
+            49.263448166289
+          ],
+          [
+            -123.250655202046,
+            49.263384469171
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-102",
+        "alt_name": {
+          "en": "path_102"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "00955c46-4a8c-45c9-8426-d3069980a1ce",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250563579079,
+            49.263415738758
+          ],
+          [
+            -123.250686808171,
+            49.263373682434
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-103",
+        "alt_name": {
+          "en": "path_103"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "dfcbaf0a-79b1-4253-89fb-4b5d4b9bbb49",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250655202046,
+            49.263384469171
+          ],
+          [
+            -123.250617375192,
+            49.263336996606
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-105",
+        "alt_name": {
+          "en": "path_105"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "e0a67abd-c7a0-4e3d-8c6c-f28d9bda9983",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250686808171,
+            49.263373682434
+          ],
+          [
+            -123.250648981295,
+            49.263326209879
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-106",
+        "alt_name": {
+          "en": "path_106"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "d939494d-c60f-4cb9-b696-783cd1814c8d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250623602843,
+            49.263395253532
+          ],
+          [
+            -123.250586675182,
+            49.263348909416
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-107",
+        "alt_name": {
+          "en": "path_107"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "a666eeb4-c4d0-442f-a437-274b716169f5",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250586675181,
+            49.263348909415
+          ],
+          [
+            -123.250551921496,
+            49.263360770339
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-109",
+        "alt_name": {
+          "en": "path_109"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "74899d7e-a9b0-4f31-9b9a-2e6b95f68b25",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250586675182,
+            49.263348909416
+          ],
+          [
+            -123.250564363232,
+            49.26332090793
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-110",
+        "alt_name": {
+          "en": "path_110"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "de0d3c10-8654-4b85-b892-243ee5a646d9",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250648981295,
+            49.26332620988
+          ],
+          [
+            -123.250617375192,
+            49.263336996606
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-111",
+        "alt_name": {
+          "en": "path_111"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "c574d838-b76b-48c2-a320-7a8b9541401a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250648981295,
+            49.263326209879
+          ],
+          [
+            -123.250627568491,
+            49.263299336863
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-112",
+        "alt_name": {
+          "en": "path_112"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "abbb9f84-e3d9-443b-a93e-1c1db210b042",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250617375192,
+            49.263336996606
+          ],
+          [
+            -123.250595962401,
+            49.263310123584
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-113",
+        "alt_name": {
+          "en": "path_113"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "79f46405-44c2-40f3-a15a-db19f39b7758",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250551921496,
+            49.263360770339
+          ],
+          [
+            -123.250588849134,
+            49.263407114467
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-114",
+        "alt_name": {
+          "en": "path_114"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "d8631bef-b513-4b82-9124-c5c9669fa0f0",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250551921496,
+            49.263360770339
+          ],
+          [
+            -123.250529609561,
+            49.263332768847
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-115",
+        "alt_name": {
+          "en": "path_115"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "210a88b7-9597-4adf-a3f2-42f8e75c665c",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250526860011,
+            49.263369656355
+          ],
+          [
+            -123.250492111883,
+            49.263381515354
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-116",
+        "alt_name": {
+          "en": "path_116"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "3c6aeb5a-f0f8-443f-b8ba-1462661f6c78",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250526860011,
+            49.263369656355
+          ],
+          [
+            -123.250563579079,
+            49.263415738758
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-117",
+        "alt_name": {
+          "en": "path_117"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "82dac2f9-fae1-4418-9032-4259f93f97e1",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250526860011,
+            49.263369656355
+          ],
+          [
+            -123.250504339534,
+            49.263341393125
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-118",
+        "alt_name": {
+          "en": "path_118"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "c5343017-39bf-4574-bf44-0f9758e64fe3",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250492111883,
+            49.263381515354
+          ],
+          [
+            -123.250580420806,
+            49.263492342917
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-119",
+        "alt_name": {
+          "en": "path_119"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "0baab3b1-8e1c-4a4a-825e-764a1f342060",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250492111883,
+            49.263381515354
+          ],
+          [
+            -123.250469591421,
+            49.263353252117
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-120",
+        "alt_name": {
+          "en": "path_120"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "e11b364b-4d28-4c80-8d24-26d451e33996",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250460865833,
+            49.263392724284
+          ],
+          [
+            -123.250426120834,
+            49.263404582185
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-121",
+        "alt_name": {
+          "en": "path_121"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "2ec07244-0822-4be1-8c78-45d6c4dd3e6d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250460865833,
+            49.263392724284
+          ],
+          [
+            -123.250548833193,
+            49.263503123274
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-122",
+        "alt_name": {
+          "en": "path_122"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "dbf40a3b-efe7-45b8-83e3-197ca1fe2dae",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250460865833,
+            49.263392724284
+          ],
+          [
+            -123.250438003872,
+            49.263364032443
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-123",
+        "alt_name": {
+          "en": "path_123"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "d75e5c74-75ef-4e48-92d4-628b42110201",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250426120834,
+            49.263404582185
+          ],
+          [
+            -123.250456821108,
+            49.26344311111
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-124",
+        "alt_name": {
+          "en": "path_124"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "24e56257-dc92-4125-919f-6184b615f274",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250426120834,
+            49.263404582185
+          ],
+          [
+            -123.250403258887,
+            49.263375890337
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-125",
+        "alt_name": {
+          "en": "path_125"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "74a5a6db-375d-4479-8232-1ad8d857966a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250456821108,
+            49.26344311111
+          ],
+          [
+            -123.250514088137,
+            49.263514981201
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-127",
+        "alt_name": {
+          "en": "path_127"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "34726e2f-fb97-4b30-a37f-2bd391e8ac7e",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250425953217,
+            49.263453633218
+          ],
+          [
+            -123.250483220211,
+            49.26352550332
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-128",
+        "alt_name": {
+          "en": "path_128"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "2ecf64c4-912a-4895-b186-e8b763794bd0",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250425953217,
+            49.263453633218
+          ],
+          [
+            -123.250372391029,
+            49.263386412433
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-129",
+        "alt_name": {
+          "en": "path_129"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "cfb7dc5b-3c5e-4980-802f-5f9bb4c1d308",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250371504247,
+            49.263482244467
+          ],
+          [
+            -123.250463095787,
+            49.263450985841
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-130",
+        "alt_name": {
+          "en": "path_130"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "c511df00-ceb3-4524-a8ff-3038c350d706",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250403053963,
+            49.263471477102
+          ],
+          [
+            -123.250459402664,
+            49.263542194774
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-131",
+        "alt_name": {
+          "en": "path_131"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "ba0e24e6-d35d-4092-b972-1842bd573389",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250403053963,
+            49.263471477102
+          ],
+          [
+            -123.250343217128,
+            49.263396381566
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-132",
+        "alt_name": {
+          "en": "path_132"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "5f198b43-ab2f-4dfa-95ef-ee0aca8fb580",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250371504247,
+            49.263482244468
+          ],
+          [
+            -123.250427852915,
+            49.263552962155
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-133",
+        "alt_name": {
+          "en": "path_133"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "facffc8b-ca71-40c6-a4be-5262ee961974",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250371504247,
+            49.263482244468
+          ],
+          [
+            -123.25035485888,
+            49.263461354456
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-134",
+        "alt_name": {
+          "en": "path_134"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "6de2b63b-825f-481e-8a2b-ffada152a42a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250396195527,
+            49.263563766258
+          ],
+          [
+            -123.250459402664,
+            49.263542194774
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-135",
+        "alt_name": {
+          "en": "path_135"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "1cb8d11d-147b-460e-879b-7274a74fad63",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250396195526,
+            49.263563766258
+          ],
+          [
+            -123.250323201534,
+            49.263472158539
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-137",
+        "alt_name": {
+          "en": "path_137"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "f44e48cc-9d6b-466d-b255-726cd1bb26e5",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250133522293,
+            49.263536892375
+          ],
+          [
+            -123.25035485888,
+            49.263461354456
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-138",
+        "alt_name": {
+          "en": "path_138"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "522f8ec8-b0f3-47a5-95d1-f105d8346f56",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25035485888,
+            49.263461354456
+          ],
+          [
+            -123.250311667447,
+            49.263407148916
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-139",
+        "alt_name": {
+          "en": "path_139"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "8543b022-e6bf-4f9a-85ce-511f5776d0fa",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250323201534,
+            49.263472158539
+          ],
+          [
+            -123.250280010126,
+            49.263417952987
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-140",
+        "alt_name": {
+          "en": "path_140"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "31716f7d-174c-4287-90b3-bbca3cefd859",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250483220211,
+            49.26352550332
+          ],
+          [
+            -123.250640439069,
+            49.263471859589
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-142",
+        "alt_name": {
+          "en": "path_142"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "b9391384-06ab-4b2b-9b4d-08b9f19340bf",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250585980829,
+            49.263549743369
+          ],
+          [
+            -123.250551235751,
+            49.263561601307
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-143",
+        "alt_name": {
+          "en": "path_143"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "c717fe2b-4325-4da6-910f-d1cd003b97b0",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25058598083,
+            49.263549743369
+          ],
+          [
+            -123.250548833192,
+            49.263503123274
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-144",
+        "alt_name": {
+          "en": "path_144"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "dadfa2f1-00b8-4778-b00b-3eb684eb757b",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250551235751,
+            49.263561601307
+          ],
+          [
+            -123.250514088137,
+            49.2635149812
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-145",
+        "alt_name": {
+          "en": "path_145"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "3b7dbcee-6102-4b84-b198-6d1fccda7607",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250617292318,
+            49.26353861644
+          ],
+          [
+            -123.250652040525,
+            49.263526757404
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-146",
+        "alt_name": {
+          "en": "path_146"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "8a633e8f-fea3-4169-9228-0e42d13e1790",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250617292318,
+            49.26353861644
+          ],
+          [
+            -123.250580420806,
+            49.263492342917
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-147",
+        "alt_name": {
+          "en": "path_147"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "a8cefe90-3202-41b2-a5cf-a1271df63668",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250652040525,
+            49.263526757404
+          ],
+          [
+            -123.25061516899,
+            49.263480483892
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-148",
+        "alt_name": {
+          "en": "path_148"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "9e227635-cb12-4700-b0d0-8923c93e2f42",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250640439069,
+            49.263471859589
+          ],
+          [
+            -123.250588849134,
+            49.263407114467
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-150",
+        "alt_name": {
+          "en": "path_150"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "3e500597-47d9-4f36-9024-ab0596c1a14d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25061516899,
+            49.263480483892
+          ],
+          [
+            -123.250563579079,
+            49.263415738758
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-161",
+        "alt_name": {
+          "en": "path_161"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "7650aa65-27fa-4983-8673-4944fa59076d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250248322661,
+            49.263428767333
+          ],
+          [
+            -123.250291514043,
+            49.263482972897
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-181",
+        "alt_name": {
+          "en": "path_181"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "2b0d9657-a178-425b-a08b-b35fb46f55fd",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250216693227,
+            49.263439561861
+          ],
+          [
+            -123.250259884584,
+            49.263493767436
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-184",
+        "alt_name": {
+          "en": "path_184"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "b8b5cc68-341e-4e63-9cf8-7cc9d0f7abe6",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250185103273,
+            49.263450342901
+          ],
+          [
+            -123.250228294606,
+            49.263504548488
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-187",
+        "alt_name": {
+          "en": "path_187"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "89d920be-6c62-4862-96b5-03cfdd7c5031",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250153510987,
+            49.263461124724
+          ],
+          [
+            -123.250196702295,
+            49.263515330323
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-190",
+        "alt_name": {
+          "en": "path_190"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "7d044582-1154-406f-a7c1-250811a5c5b7",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250121930474,
+            49.263471913067
+          ],
+          [
+            -123.250165121758,
+            49.263526118679
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-193",
+        "alt_name": {
+          "en": "path_193"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "229880ae-e410-4ef3-bd73-fa2d043884bd",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250090331036,
+            49.263482686753
+          ],
+          [
+            -123.25014638367,
+            49.263553033555
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-195",
+        "alt_name": {
+          "en": "path_195"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "9d393a97-4cf0-4baf-bd9a-46f01c5e7f5d",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25014638367,
+            49.263553033555
+          ],
+          [
+            -123.250202773129,
+            49.263623802846
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-196",
+        "alt_name": {
+          "en": "path_196"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "f28744ed-7702-48d7-b49e-5d566587c546",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250202773129,
+            49.263623802846
+          ],
+          [
+            -123.25016571028,
+            49.263636451625
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-197",
+        "alt_name": {
+          "en": "path_197"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "61cec99d-679b-41a3-91b7-696badf076a1",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25014638367,
+            49.263553033555
+          ],
+          [
+            -123.250336062956,
+            49.263488299698
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-198",
+        "alt_name": {
+          "en": "path_198"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "b7cbcc83-25e6-5002-a6d7-26fe6401aa11",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250154227877,
+            49.263562878121
+          ],
+          [
+            -123.250343907191,
+            49.263498144252
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-205",
+        "alt_name": {
+          "en": "path_205"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "132226a1-a6fe-58f3-8ca6-6e90be2be4e0",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250445315477,
+            49.263524515363
+          ],
+          [
+            -123.250413765736,
+            49.26353528274
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-209",
+        "alt_name": {
+          "en": "path_209"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "461f9b8d-7333-54d3-8fb5-a6896255dd29",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25095768595578,
+            49.26314979151837
+          ],
+          [
+            -123.25116022857368,
+            49.26339661553159
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-210",
+        "alt_name": {
+          "en": "path_210"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "fc9e521d-52cb-5902-b2ba-010e083a5aa0",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25116022857368,
+            49.26339661553159
+          ],
+          [
+            -123.25113669227616,
+            49.263404840608715
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-211",
+        "alt_name": {
+          "en": "path_211"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "92a1803f-809b-5fab-8614-eb1c62392018",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25113669227616,
+            49.263404840608715
+          ],
+          [
+            -123.25095206586533,
+            49.26317984981494
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-212",
+        "alt_name": {
+          "en": "path_212"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "7cd38b38-36d6-5bbd-87ed-674abfd03e7a",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25095206586533,
+            49.26317984981494
+          ],
+          [
+            -123.25085297246244,
+            49.26321447941536
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-213",
+        "alt_name": {
+          "en": "path_213"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "88eb9e0a-672d-5fcc-804f-6833154ebb87",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25091393323595,
+            49.263193175808055
+          ],
+          [
+            -123.25107721344372,
+            49.26339215353366
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-214",
+        "alt_name": {
+          "en": "path_214"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true
+      }
+    },
+    {
+      "id": "0501d470-f055-58ac-878e-9067c61bbc3b",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25015945000656,
+            49.26372720000399
+          ],
+          [
+            -123.25009700595582,
+            49.26364928162556
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-215",
+        "alt_name": {
+          "en": "path_215"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "lab_spine"
+      }
+    },
+    {
+      "id": "8c79102e-e6f4-5383-ba26-841d899c0645",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25016168473,
+            49.263729988516
+          ],
+          [
+            -123.25015945000656,
+            49.26372720000399
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-216",
+        "alt_name": {
+          "en": "path_216"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "lab_door_to_path_001"
+      }
+    },
+    {
+      "id": "08f99c2c-1e48-5b7b-beb3-0b27046a48ad",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2501565,
+            49.2636958
+          ],
+          [
+            -123.250139056776,
+            49.263701753105
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-217",
+        "alt_name": {
+          "en": "path_217"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_table_1"
+      }
+    },
+    {
+      "id": "c6132c1a-108d-5c0e-9c3d-e826f9a00fd0",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2501464,
+            49.2636831
+          ],
+          [
+            -123.250128895667,
+            49.263689073961
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-218",
+        "alt_name": {
+          "en": "path_218"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_table_2"
+      }
+    },
+    {
+      "id": "b9ec930e-9667-53ba-ac69-4a9161e7ada8",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2501356,
+            49.2636688
+          ],
+          [
+            -123.25011757736,
+            49.263674950851
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-219",
+        "alt_name": {
+          "en": "path_219"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_table_3"
+      }
+    },
+    {
+      "id": "7b54ce2b-f84f-5d98-b528-f3b7189ce1d7",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2501249,
+            49.263655
+          ],
+          [
+            -123.250106595173,
+            49.263661247157
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-220",
+        "alt_name": {
+          "en": "path_220"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_table_4"
+      }
+    },
+    {
+      "id": "849cce0e-dea4-5ec2-90cd-673be609d2d5",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2501231,
+            49.2637085
+          ],
+          [
+            -123.250139875538,
+            49.263702774766
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-221",
+        "alt_name": {
+          "en": "path_221"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_table_5"
+      }
+    },
+    {
+      "id": "6c2f868a-c357-59f0-a286-08a9b3cf5c4f",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2501116,
+            49.2636947
+          ],
+          [
+            -123.250128721538,
+            49.263688856681
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-222",
+        "alt_name": {
+          "en": "path_222"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_table_6"
+      }
+    },
+    {
+      "id": "f3675027-035e-5c68-a21f-2ea6be785e92",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2501015,
+            49.263682
+          ],
+          [
+            -123.250118560429,
+            49.263676177537
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-223",
+        "alt_name": {
+          "en": "path_223"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_table_7"
+      }
+    },
+    {
+      "id": "ad5ad2f8-9b5d-59ab-8b7c-7d4e5fcd1a5f",
+      "type": "Feature",
+      "feature_type": "navigation",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2500902,
+            49.2636684
+          ],
+          [
+            -123.250107575241,
+            49.263662470096
+          ]
+        ]
+      },
+      "properties": {
+        "debug_id": "PATH-224",
+        "alt_name": {
+          "en": "path_224"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_table_8"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "debug_id": "PATH-225",
+        "alt_name": {
+          "en": "path_225"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "lab_door_to_path_001"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250223446016,
+            49.263708910335
+          ],
+          [
+            -123.25016168473,
+            49.263729988516
+          ]
+        ]
+      },
+      "id": "240d3e89-4dca-5376-a71d-c7310c36ef6f"
+    },
+    {
+      "type": "Feature",
+      "id": "ad00e1a1-a57f-50f7-afd3-4cec62da140a",
+      "properties": {
+        "debug_id": "PATH-226",
+        "alt_name": {
+          "en": "path_226"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "whale_center_to_path_004"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2509732,
+            49.2632654
+          ],
+          [
+            -123.25094471283569,
+            49.26327506683746
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "8c93ebd6-efdb-5a1c-adea-7ff658967d3b",
+      "properties": {
+        "debug_id": "PATH-227",
+        "alt_name": {
+          "en": "path_227"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "whale_north_to_path_004"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25107721344372,
+            49.26339215353366
+          ],
+          [
+            -123.25104635433524,
+            49.263402625267005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "b278b3bb-1bad-55ee-ace4-cfe91313b27e",
+      "properties": {
+        "debug_id": "PATH-228",
+        "alt_name": {
+          "en": "path_228"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_sink"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2501234,
+            49.263728
+          ],
+          [
+            -123.25015221109632,
+            49.263718167211586
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "c5e51c38-7da2-537b-8cc3-3b1be305d4ce",
+      "properties": {
+        "debug_id": "PATH-229",
+        "alt_name": {
+          "en": "path_229"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_microscope"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2500656,
+            49.26366
+          ],
+          [
+            -123.25009700595582,
+            49.26364928162556
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "1f844243-db41-5747-9e01-9484acfa1a7c",
+      "properties": {
+        "debug_id": "PATH-230",
+        "alt_name": {
+          "en": "path_230"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "theatre_west_door_to_path_213"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25090675000149,
+            49.26313860000095
+          ],
+          [
+            -123.25094315474402,
+            49.26318296393417
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "4867569c-a5b0-537f-bfd4-96f354192443",
+      "properties": {
+        "debug_id": "PATH-231",
+        "alt_name": {
+          "en": "path_231"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "theatre_east_door_to_path_213"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25081795000158,
+            49.263171800000904
+          ],
+          [
+            -123.25085297246244,
+            49.26321447941536
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "2790e033-bfbb-55e1-835a-5752cc6bf6b0",
+      "properties": {
+        "debug_id": "PATH-232",
+        "alt_name": {
+          "en": "path_232"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "theatre_ramp_entrance_alignment"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25090544999965,
+            49.263115000000056
+          ],
+          [
+            -123.25089141018606,
+            49.26311990640258
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "3b1685f0-8a94-5c62-9c32-84cc931ace3b",
+      "properties": {
+        "debug_id": "PATH-233",
+        "alt_name": {
+          "en": "path_233"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "theatre_ramp_entrance_to_west_door"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25089141018606,
+            49.26311990640258
+          ],
+          [
+            -123.25090675000149,
+            49.26313860000095
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a77b945d-9ea2-51bc-a3a3-b83944a99114",
+      "properties": {
+        "debug_id": "PATH-234",
+        "alt_name": {
+          "en": "path_234"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "theatre_ramp_exit_alignment"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507113000005,
+            49.26305595000027
+          ],
+          [
+            -123.25072030274119,
+            49.26305280387092
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "c1fff452-5b86-5895-b845-f3460468c0f8",
+      "properties": {
+        "debug_id": "PATH-235",
+        "alt_name": {
+          "en": "path_235"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "theatre_ramp_exit_to_east_door"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25072030274119,
+            49.26305280387092
+          ],
+          [
+            -123.25081795000158,
+            49.263171800000904
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "6d69a7ea-8ddc-5042-864f-bc413eab1920",
+      "properties": {
+        "debug_id": "PATH-236",
+        "alt_name": {
+          "en": "path_236"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_emergency_exit_alignment"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25017470000026,
+            49.263749800000156
+          ],
+          [
+            -123.25017694713212,
+            49.26374903308904
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "111d76cc-4496-5733-aec0-c80120e2212d",
+      "properties": {
+        "debug_id": "PATH-237",
+        "alt_name": {
+          "en": "path_237"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "discovery_lab_emergency_exit_to_doors"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25017694713212,
+            49.26374903308904
+          ],
+          [
+            -123.25015945000656,
+            49.26372720000399
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f4f49388-b0ac-5d67-b35a-0f45c2f43f08",
+      "properties": {
+        "debug_id": "PATH-238",
+        "alt_name": {
+          "en": "path_238"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "path_231_to_path_069"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.25085297246244,
+            49.26321447941536
+          ],
+          [
+            -123.25084381112612,
+            49.26321768097354
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "9b8ca305-71f8-5f20-8b43-fb398579fba3",
+      "properties": {
+        "debug_id": "PATH-239",
+        "alt_name": {
+          "en": "path_239"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "wayfinding_type": "walking_path",
+        "route_confirmed": true,
+        "route_role": "path_069_to_path_214_west"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250953959182,
+            49.263355915413
+          ],
+          [
+            -123.25102663534685,
+            49.26333051776769
+          ]
+        ]
+      }
+    }
+  ]
+}

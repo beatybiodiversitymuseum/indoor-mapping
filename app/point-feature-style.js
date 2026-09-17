@@ -1,4 +1,4 @@
-export const POINT_FEATURE_ICON_IDS = ["door", "emergency-exit", "accessible-entrance", "staff-door", "table", "projector", "screen", "fixture"];
+export const POINT_FEATURE_ICON_IDS = ["door", "emergency-exit", "ramp", "accessible-entrance", "staff-door", "table", "projector", "screen", "fixture"];
 export const POINT_FEATURE_ICON_SCALE = { minZoom: 17, min: 0.58, maxZoom: 21, max: 0.82 };
 
 export function pointFeatureIconName(feature) {
@@ -6,7 +6,8 @@ export function pointFeatureIconName(feature) {
   const name = `${properties.name?.en || ""} ${properties.alt_name?.en || ""}`.toLowerCase();
   if (properties.viewer_layer === "opening") {
     if (name.includes("emergency")) return "emergency-exit";
-    if (name.includes("ramp") || name.includes("accessibility")) return "accessible-entrance";
+    if (name.includes("ramp")) return "ramp";
+    if (name.includes("accessibility")) return "accessible-entrance";
     if (name.includes("staff")) return "staff-door";
     return "door";
   }

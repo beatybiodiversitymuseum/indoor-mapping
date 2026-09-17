@@ -78012,7 +78012,10 @@
         "reference_points": "Discovery Lab Doors",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "86deb7d8-8d50-5be6-b418-4afe0e81aaf1"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -78058,7 +78061,10 @@
         "reference_points": "Discovery Lab Table 1",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "e0ce75d4-8401-5ae2-9a12-8a0efcc3c264"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -78104,7 +78110,10 @@
         "reference_points": "Discovery Lab Table 2",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "56694bb3-0533-5b2e-add2-62453457056d"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -78149,7 +78158,10 @@
         "reference_points": "Discovery Lab Table 3",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "4636eef0-e671-5748-8e19-9c165091b78f"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -78195,7 +78207,10 @@
         "reference_points": "Discovery Lab Table 4",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "ebb44d9c-cdcc-5c4c-8734-4ae35d668ce7"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -78240,7 +78255,10 @@
         "reference_points": "Discovery Lab Table 5",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "0d514ea9-4190-5dee-8ff9-c8948cab0bc2"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -78285,7 +78303,10 @@
         "reference_points": "Discovery Lab Table 8",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "3edcff83-b450-5e0e-a1ff-6a71156699bd"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -78330,7 +78351,10 @@
         "reference_points": "Discovery Lab Table 7",
         "contributor_notes": "",
         "location_review_status": "submitted_coordinates",
-        "imported_by": "issue_location_reconciliation"
+        "imported_by": "issue_location_reconciliation",
+        "navigation_point_ids": [
+          "9f4d169f-8e32-5f4e-a65f-47002792edaf"
+        ]
       },
       "geometry": {
         "type": "Point",

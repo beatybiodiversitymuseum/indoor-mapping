@@ -4,7 +4,8 @@ import test from "node:test";
 import { buildRoutingNetwork, fixtureRouteId, isRoutableFeature, findApprovedRoute } from "../app/routing.js";
 
 const read = async (name) => JSON.parse(await readFile(new URL(`../geojson/${name}.geojson`, import.meta.url), "utf8")).features;
-const [amenities, openings, fixtures, navigation, exhibits] = await Promise.all(["amenity", "opening", "fixture", "navigation", "exhibit"].map(read));
+const [amenities, openings, fixtures, paths, access, stops, exhibits] = await Promise.all(["amenity", "opening", "fixture", "navigation_path", "navigation_access", "navigation_stop", "exhibit"].map(read));
+const navigation = [...paths, ...access, ...stops];
 const network = buildRoutingNetwork({ features: navigation });
 const submitted = exhibits.filter((feature) => feature.properties.exhibit_type === "window");
 const byIssue = new Map([...amenities, ...openings, ...exhibits].map((feature) => [feature.properties.source_issue_number, feature]));
@@ -24,7 +25,7 @@ test("submitted cabinet windows use cabinet faces and separate navigation points
   for (const feature of submitted) {
     const properties = feature.properties;
     const fixture = fixtures.find((item) => item.id === properties.related_fixture_id);
-    const viewing = navigation.find((item) => item.properties.wayfinding_type === "viewing_stop" && item.properties.related_fixture_id === fixture.id);
+    const viewing = navigation.find((item) => item.properties.wayfinding_type === "viewing_stop" && item.properties.related_fixture_ids?.includes(fixture.id));
     assert.notDeepEqual(feature.geometry.coordinates, viewing.geometry.coordinates);
     assert.equal(fixtureRouteId(feature), fixture.properties.alt_name.en);
     assert.ok(isRoutableFeature(network, feature));
@@ -44,7 +45,7 @@ test("ticket windows and cabinet viewing amenities reuse approved routing", () =
   const start = byIssue.get(81), end = byIssue.get(118);
   const route = findApprovedRoute(network, start, end);
   assert.ok(route?.distanceMeters > 0);
-  const viewing = navigation.find((feature) => feature.properties.related_fixture_id === start.properties.related_fixture_id && feature.properties.wayfinding_type === "viewing_stop");
+  const viewing = navigation.find((feature) => feature.properties.related_fixture_ids?.includes(start.properties.related_fixture_id) && feature.properties.wayfinding_type === "viewing_stop");
   assert.equal(findApprovedRoute(network, viewing, end).distanceMeters, route.distanceMeters);
 });
 
@@ -60,6 +61,7 @@ test("doorway corrections retain original coordinates and submitted door lines",
   const [a, b] = door.properties.submitted_geometry.coordinates;
   assert.ok(Math.abs(door.geometry.coordinates[0] - (a[0] + b[0]) / 2) < 1e-8);
   assert.ok(Math.abs(door.geometry.coordinates[1] - (a[1] + b[1]) / 2) < 1e-8);
+  assert.equal(byIssue.get(38).properties.level_id, "553481bd-bdec-4fe2-8e59-6110190e9b94");
 });
 
 test("all photo transcriptions preserve their ticket association and evidence URL", () => {
