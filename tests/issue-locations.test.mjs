@@ -11,7 +11,7 @@ const byIssue = new Map([...amenities, ...openings, ...exhibits].map((feature) =
 
 
 test("submitted cabinet windows use cabinet faces and separate navigation points", () => {
-  assert.equal(submitted.length, 194);
+  assert.equal(submitted.length, 193);
   assert.equal(amenities.some((feature) => /Window/.test(feature.properties.name?.en)), false);
   for (const feature of submitted) {
     assert.equal(feature.feature_type, "exhibit");
@@ -127,6 +127,8 @@ test("unreadable OCR is hidden and readable details replace it", () => {
 
 test("46.12 retains family identification and separates the fifth specimen", () => {
   const props = byIssue.get(134).properties;
+  assert.equal(props.exhibit_type, "cabinet_display");
+  assert.equal(props.map_display, "selection-only");
   assert.deepEqual(props.specimens.map(s => s.scientificName), [
     "Scaridae", "Zanclus cornutus", "Acanthurus triostegus",
     "Centropyge flavissimus", "Rhinecanthus aculeatus",
@@ -135,4 +137,16 @@ test("46.12 retains family identification and separates the fifth specimen", () 
   assert.equal(props.specimens[4].commonName, "White-banded triggerfish");
   assert.equal(props.specimens[4].catalogNumber, "BC72-0041");
   assert.doesNotMatch(props.specimens[3].notes, /triggerfish/);
+});
+
+test("Irish elk skull remains on top of and browsable through cabinet 01.03", () => {
+  const exhibit = byIssue.get(286);
+  const props = exhibit.properties;
+  const fixture = fixtures.find((item) => item.properties.alt_name?.en === "col_1_cab_03");
+  assert.deepEqual(props.fixture_ids, [fixture.id]);
+  assert.equal(props.fixture_placement, "top");
+  assert.equal(props.route_fixture_id, "col_1_cab_03");
+  assert.ok(props.stopping_point_ids.length);
+  assert.deepEqual(exhibit.geometry.coordinates, [-123.2510217, 49.2633962]);
+  assert.equal(props.photo_text, "");
 });

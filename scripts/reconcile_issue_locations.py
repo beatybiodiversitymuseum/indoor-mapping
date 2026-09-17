@@ -158,6 +158,33 @@ def main():
     for record in records:
         if record['issue_number'] not in features:
             unresolved.append({'issue': record['issue_number'], 'reason': 'Photo has no mapped location', 'image_url': record['image_url']})
+    # Issue 134 documents the mounted reef display in cabinet 46.12. Its
+    # original issue title called it a window, but it is not a window feature.
+    cabinet_display = features.get(134)
+    if cabinet_display:
+        props = cabinet_display['properties']
+        props['name']['en'] = 'Cabinet 46.12 Display'
+        props['exhibit_type'] = 'cabinet_display'
+        props['map_display'] = 'selection-only'
+        if props.get('image'):
+            props['image']['type'] = 'cabinet_display'
+    # The Irish elk skull sits on top of cabinet 01.03. Keep its surveyed point
+    # while associating it with the cabinet for browsing and routing.
+    irish_elk = features.get(286)
+    irish_elk_fixture = fixtures.get('col_1_cab_03')
+    if irish_elk and irish_elk_fixture:
+        props = irish_elk['properties']
+        props.update(
+            related_fixture_id=irish_elk_fixture['id'],
+            fixture_id=irish_elk_fixture['id'],
+            fixture_ids=[irish_elk_fixture['id']],
+            fixture_alt_names=['col_1_cab_03'],
+            fixture_placement='top',
+            route_fixture_id='col_1_cab_03',
+        )
+        props.pop('route_association', None)
+        props['photo_text'] = ''
+        props['details'] = {'text': {'en': ''}}
     for name in ['amenity', 'opening', 'exhibit']:
         write(f'geojson/{name}.geojson', layers[name])
     report = {'imported_issue_locations': sorted(f['properties']['source_issue_number'] for f in features.values() if f['properties'].get('imported_by') == 'issue_location_reconciliation'), 'corrections': corrections, 'unresolved': unresolved, 'image_count': len(records), 'images_with_text': sum(bool(r.get('text')) for r in records), 'images_without_text': sum(not r.get('text') for r in records)}

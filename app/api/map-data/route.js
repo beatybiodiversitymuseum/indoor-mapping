@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { LAYERS } from "../../constants";
+import { collectionForFixture } from "../../collection-style";
 
 export const dynamic = "force-static";
 
@@ -14,6 +15,7 @@ export async function GET() {
         ...feature.properties,
         viewer_feature_id: feature.id ?? null,
         viewer_layer: layer,
+        ...(layer === "fixture" && collectionForFixture(feature) ? { viewer_collection: collectionForFixture(feature).id } : {}),
       },
     }));
   }));

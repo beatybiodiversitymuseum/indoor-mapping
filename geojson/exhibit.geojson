@@ -114526,7 +114526,7 @@
         "category": "exhibit",
         "accessibility": null,
         "name": {
-          "en": "Cabinet 46.12 Window"
+          "en": "Cabinet 46.12 Display"
         },
         "alt_name": {
           "en": "cabinet_46_12_window"
@@ -114590,7 +114590,8 @@
         ],
         "imported_by": "issue_location_reconciliation",
         "duration_type": "permanent",
-        "exhibit_type": "window",
+        "exhibit_type": "cabinet_display",
+        "map_display": "selection-only",
         "fixture_ids": [
           "e895b953-fafa-45a9-bcf1-dee3cb2da1ad"
         ],
@@ -114643,7 +114644,7 @@
         "photo_text_source_url": "https://github.com/user-attachments/assets/9e1b4be0-a8e3-4574-bf35-9e58385be623",
         "image": {
           "url": "https://github.com/user-attachments/assets/a52177da-9454-4516-842a-f73f4cc23948",
-          "type": "window"
+          "type": "cabinet_display"
         },
         "details": {
           "text": {
@@ -135231,22 +135232,32 @@
           }
         ],
         "imported_by": "issue_location_reconciliation",
-        "photo_text": "AD\nFAGH AL\nA Phylogeny of",
+        "photo_text": "",
         "photo_text_source_url": "https://github.com/user-attachments/assets/ef26c51e-dc2b-43b5-90b8-5290da25c5a6",
         "duration_type": "permanent",
         "exhibit_type": "display",
         "details": {
           "text": {
-            "en": "AD\nFAGH AL\nA Phylogeny of"
+            "en": ""
           }
         },
         "specimens": [],
         "navigation_point_ids": [
           "8a6eb9ea-ff35-5405-9961-1181fb5c4cd6"
         ],
-        "stopping_point_ids": [],
-        "route_fixture_id": "irish_elk_skull",
-        "route_association": "nearest_approved_access_projection"
+        "stopping_point_ids": [
+          "40eb9282-2dbc-49da-b3dc-1c9e53dfad7a"
+        ],
+        "route_fixture_id": "col_1_cab_03",
+        "related_fixture_id": "74dcb7cf-0f88-4783-9e00-be2100f1b535",
+        "fixture_id": "74dcb7cf-0f88-4783-9e00-be2100f1b535",
+        "fixture_ids": [
+          "74dcb7cf-0f88-4783-9e00-be2100f1b535"
+        ],
+        "fixture_alt_names": [
+          "col_1_cab_03"
+        ],
+        "fixture_placement": "top"
       },
       "geometry": {
         "type": "Point",

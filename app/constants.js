@@ -2,8 +2,8 @@ export const LAYERS = [
   { id: "venue", label: "Venue", color: "#2563a6", enabledByDefault: false },
   { id: "building", label: "Buildings", color: "#64748b", enabledByDefault: false },
   { id: "footprint", label: "Footprints", color: "#8898a7", enabledByDefault: true },
-  { id: "level", label: "Levels", color: "#2f766d", enabledByDefault: true },
-  { id: "unit", label: "Units", color: "#89a35c", enabledByDefault: true },
+  { id: "level", label: "Levels", color: "#8b9299", enabledByDefault: true },
+  { id: "unit", label: "Units", color: "#a6adb3", enabledByDefault: true },
   { id: "detail", label: "Details", color: "#c9943b", enabledByDefault: true },
   { id: "fixture", label: "Fixtures", color: "#8a5a44", enabledByDefault: true },
   { id: "opening", label: "Openings", color: "#d85d4d", enabledByDefault: true },
@@ -18,15 +18,18 @@ export const LEVELS = [
   { id: "41d0e8ca-d315-4b25-938c-7955db2daf2e", label: "B" },
 ];
 
+export const UBC_NORTH_BEARING = 331.74;
+
 export const MAP = {
   center: [-123.25065, 49.26335],
-  initialZoom: 19.2,
-  featureZoom: 21,
-  maxZoom: 24,
+  initialZoom: 19.75,
+  featureZoom: 19.75,
+  maxZoom: 22,
   flyDurationMs: 900,
+  extentPadding: 36,
   backgroundColor: "#e8ecee",
-  bearing: 340,
-  pitch: 45
+  bearing: UBC_NORTH_BEARING,
+  pitch: 0
 };
 
 export const BASEMAP = {
@@ -111,9 +114,6 @@ export const ROUTING = {
   endpointTextColor: "#fff",
   endpointFont: "Noto Sans Regular",
   endpointFontSize: 11,
-  fitPadding: 70,
-  fitMaxZoom: 22,
-  fitDurationMs: 700,
 };
 
 export const GEOJSON = {

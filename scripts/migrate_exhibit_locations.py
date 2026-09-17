@@ -167,7 +167,7 @@ def migrate():
             f['geometry'] = {'type': 'Point', 'coordinates': p['display_point']['coordinates']}
         focused = [fixtures[i] for i in p.get('fixture_ids', []) if i in fixtures]
         # Position cabinet-mounted content on the visitor-facing cabinet boundary.
-        if p.get('exhibit_type') in {'label','window','shadowbox'} and len(focused) == 1:
+        if p.get('exhibit_type') in {'label','window','shadowbox','cabinet_display'} and len(focused) == 1:
             fixture = focused[0]; stop = stops_by_fixture.get(fixture['id'])
             if stop and fixture['geometry']['type'] == 'Polygon':
                 f['geometry'] = {'type':'Point','coordinates':face_point(fixture,stop['geometry']['coordinates'])}

@@ -20,11 +20,13 @@ test('exhibit migration separates services, fixture content and stopping points'
     for(const id of exhibit.properties.stopping_point_ids) assert.ok(ids.has(id));
   }
   const floors = exhibits.features.filter(f=>f.properties.exhibit_type==='floor');
-  const standaloneDisplays = exhibits.features.filter(f=>f.properties.exhibit_type==='display');
+  const displays = exhibits.features.filter(f=>f.properties.exhibit_type==='display');
+  const standaloneDisplays = displays.filter(f=>!f.properties.fixture_ids?.length);
   const floorFixtures = fixtures.features.filter(f=>f.properties.local_category==='floor_display_fixture');
   assert.equal(floors.length,9);
   assert.equal(floorFixtures.length,9);
-  assert.equal(standaloneDisplays.length,36);
+  assert.equal(displays.length,36);
+  assert.equal(standaloneDisplays.length,35);
   for (const display of standaloneDisplays) {
     assert.equal(display.properties.route_association, 'nearest_approved_access_projection');
     assert.equal(display.properties.navigation_point_ids.length, 1);

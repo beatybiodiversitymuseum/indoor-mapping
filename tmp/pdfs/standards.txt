@@ -1,0 +1,138 @@
+Graphic Standards
+Footprints in Time
+                                         Logo
+The Beaty Biodiversity Museum logo was designed
+in 2005, and reflects a recurring branching pattern
+found in nature within a circular field of view.
+
+
+
+Primary
+The primary logo with wordmark should be used
+wherever possible. In print, the logo is rich black
+CMYK 60/60/60/100.
+
+
+
+
+Secondary
+The secondary “stacked” logo may be used where
+a vertical or more square format is needed.
+
+
+
+
+Symbol
+The circle without the wordmark is used rarely,
+and only on occasions where the wordmark
+would be redundant or illegible.
+
+
+
+
+Reverse and brand colour
+The logo may be reversed in white CMYK
+0/0/0/0 with 100% opacity against a high-
+contrast background. When a brand colour is
+needed, “Beaty red” CMYK 0/100/100/0 is used.
+
+
+
+
+Spacing
+There should be adequate space surrounding all
+sides of the logo, equivalent to half the height or
+width of the circle.
+Collections and colours
+   Each collection in the museum has its own logo and
+   colour assigned to it for wayfinding and branding.
+
+
+
+   Fossil Collection
+   Trilobite
+   CMYK 3/92/84/12
+
+
+
+   Fish Collection
+   Salmonid skeleton
+   CMYK 96/53/5/24
+
+
+
+   Spencer Entomological Collection
+   Western tiger swallowtail butterfly
+   CMYK 66/76/0/0/
+
+
+
+   Herbarium - Fungi
+   Gilled mushrooms represent the fungi, a separate
+   kingdom from the rest of the Herbarium collection
+   CMYK 17/28/52/0
+
+
+
+
+   Herbarium - Plants
+   Garry oak leaf
+   CMYK 78/5/98/24
+
+
+
+   Marine Invertebrate Collection
+   Conch shell
+   CMYK 0/33/75/0
+
+
+
+   Cowan Tetrapod Collection
+   Bird primary feather
+   CMYK 18/79/71/56
+                                        Fonts and text
+                       Several fonts are employed by the museum. Text
+                       boxes are generally set left-justified, rag-right,
+                       without hyphenation at the end of lines. The museum
+                       follows standard taxonomic formatting, and common
+                       names of organisms are not capitalized.
+
+
+
+
+Wh
+     Ann               Whitney
+     201 uAl           UBC’s brand font, used for external
+        9–2    R
+            020 epo    communication documents, the main website,
+                    Rt and temporary exhibit body text.
+
+
+
+
+Ba
+                         Book Antiqua
+                         Permanent exhibit body text and
+                         museum-wide specimen labels.
+
+
+
+
+Op
+                         Optima
+                         Exhibit titles and emphasized text.
+
+
+
+
+Ve
+                         Verdana
+                         Numbers and diagrams where
+                         sans-serif font is required.
+
+
+
+
+                         Helvetica Neue
+                         Building signage and wayfinding.
+

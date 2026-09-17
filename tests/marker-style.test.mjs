@@ -6,7 +6,7 @@ import { INTERACTIVE_MAP_LAYERS } from "../app/map-layer-policy.js";
 test("the primary marker style uses map-flat symbols for mapped exhibit types", () => {
   assert.deepEqual(ICON_EXHIBIT_TYPES, ["window", "shadowbox", "floor"]);
   assert.deepEqual(exhibitImageExpression.slice(0, 2), ["match", ["get", "exhibit_type"]]);
-  assert.equal(exhibitPointFilter.length, 4);
+  assert.equal(exhibitPointFilter.length, 6);
   assert.ok(INTERACTIVE_MAP_LAYERS.includes("imdf-exhibit-icons"));
 });
 
