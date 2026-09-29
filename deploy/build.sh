@@ -11,6 +11,8 @@ APP_BASE_PATH="$SERVICE_CREATOR_INGRESS_PATH"
 export APP_BASE_PATH
 npm ci
 npm run build
+[[ -f "$ROOT/.next/standalone/node_modules/better-sqlite3/prebuilds/linux-x64.node" ]] \
+  || { echo "Standalone artifact is missing the Linux x64 better-sqlite3 binary" >&2; exit 1; }
 
 ARTIFACT="$ROOT/.deploy-artifact"
 TEMP_ARTIFACT="$ROOT/.deploy-artifact.new.$$"

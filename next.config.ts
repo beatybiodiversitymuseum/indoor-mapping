@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   basePath,
   allowedDevOrigins: ["localhost", "127.0.0.1"],
   serverExternalPackages: ["better-sqlite3"],
+  outputFileTracingIncludes: {
+    "/*": ["./node_modules/better-sqlite3/prebuilds/**/*"],
+  },
 };
 
 export default nextConfig;
