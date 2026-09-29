@@ -90,9 +90,8 @@ export function recordIssueReportAttempt(sessionId, status) {
     .run(text(sessionId, 64), text(status, 24) || "unknown");
 }
 
-export function getUsageAnalytics(days = 30) {
+export function summarizeUsageDatabase(db, days = 30) {
   const selectedDays = Math.max(1, Math.min(365, Number(days) || 30));
-  const db = getDatabase();
   const since = `-${selectedDays - 1} days`;
   const totals = db.prepare(`SELECT
       COUNT(DISTINCT session_id) AS sessions,
@@ -118,9 +117,13 @@ export function getUsageAnalytics(days = 30) {
       WHERE event_type IN ('feature_selected', 'image_opened') AND feature_id IS NOT NULL AND julianday(occurred_at) >= julianday('now', ?)
       GROUP BY feature_id ORDER BY count DESC, label LIMIT 10`).all(since);
   const routeStats = db.prepare(`SELECT COUNT(*) AS total,
-      SUM(CASE WHEN json_extract(metadata, '$.found') = 1 THEN 1 ELSE 0 END) AS found
+      SUM(CASE WHEN json_valid(metadata) THEN json_extract(metadata, '$.found') = 1 ELSE 0 END) AS found
       FROM usage_events WHERE event_type = 'route' AND julianday(occurred_at) >= julianday('now', ?)`).get(since);
   return { days: selectedDays, totals, daily, eventTypes, searches, features, routeStats };
+}
+
+export function getUsageAnalytics(days = 30) {
+  return summarizeUsageDatabase(getDatabase(), days);
 }
 
 export { databasePath };
