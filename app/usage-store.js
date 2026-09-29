@@ -95,6 +95,7 @@ export function summarizeUsageDatabase(db, days = 30) {
   const since = `-${selectedDays - 1} days`;
   const totals = db.prepare(`SELECT
       COUNT(DISTINCT session_id) AS sessions,
+      COUNT(DISTINCT CASE WHEN event_type NOT IN ('session_started', 'session_ended') THEN session_id END) AS engaged_sessions,
       COUNT(*) AS events,
       SUM(event_type = 'search') AS searches,
       SUM(event_type = 'feature_selected') AS feature_selections,
@@ -102,6 +103,10 @@ export function summarizeUsageDatabase(db, days = 30) {
       SUM(event_type = 'image_opened') AS images_opened,
       SUM(event_type = 'issue_reported') AS issues_reported
     FROM usage_events WHERE julianday(occurred_at) >= julianday('now', ?)`).get(since);
+  const sessionStats = db.prepare(`SELECT
+      AVG(CASE WHEN json_valid(metadata) THEN json_extract(metadata, '$.duration_seconds') END) AS average_duration_seconds,
+      MAX(CASE WHEN json_valid(metadata) THEN json_extract(metadata, '$.duration_seconds') END) AS longest_duration_seconds
+    FROM usage_events WHERE event_type = 'session_ended' AND julianday(occurred_at) >= julianday('now', ?)`).get(since);
   const daily = db.prepare(`WITH RECURSIVE dates(day) AS (
       SELECT date('now', ?)
       UNION ALL SELECT date(day, '+1 day') FROM dates WHERE day < date('now')
@@ -113,13 +118,27 @@ export function summarizeUsageDatabase(db, days = 30) {
   const searches = db.prepare(`SELECT query AS label, COUNT(*) AS count FROM usage_events
       WHERE event_type = 'search' AND query IS NOT NULL AND query != '' AND julianday(occurred_at) >= julianday('now', ?)
       GROUP BY lower(query) ORDER BY count DESC, label LIMIT 10`).all(since);
+  const searchStats = db.prepare(`SELECT
+      COUNT(*) AS total,
+      SUM(CASE WHEN json_valid(metadata) AND json_extract(metadata, '$.result_count') = 0 THEN 1 ELSE 0 END) AS no_results,
+      SUM(CASE WHEN json_valid(metadata) AND json_extract(metadata, '$.selected') = 1 THEN 1 ELSE 0 END) AS selected
+    FROM usage_events WHERE event_type = 'search' AND julianday(occurred_at) >= julianday('now', ?)`).get(since);
+  const noResultSearches = db.prepare(`SELECT query AS label, COUNT(*) AS count FROM usage_events
+      WHERE event_type = 'search' AND query IS NOT NULL AND query != ''
+        AND json_valid(metadata) AND json_extract(metadata, '$.result_count') = 0
+        AND julianday(occurred_at) >= julianday('now', ?)
+      GROUP BY lower(query) ORDER BY count DESC, label LIMIT 10`).all(since);
   const features = db.prepare(`SELECT feature_id AS label, COUNT(*) AS count FROM usage_events
       WHERE event_type IN ('feature_selected', 'image_opened') AND feature_id IS NOT NULL AND julianday(occurred_at) >= julianday('now', ?)
       GROUP BY feature_id ORDER BY count DESC, label LIMIT 10`).all(since);
   const routeStats = db.prepare(`SELECT COUNT(*) AS total,
-      SUM(CASE WHEN json_valid(metadata) THEN json_extract(metadata, '$.found') = 1 ELSE 0 END) AS found
+      SUM(CASE WHEN json_valid(metadata) THEN json_extract(metadata, '$.found') = 1 ELSE 0 END) AS found,
+      AVG(CASE WHEN json_valid(metadata) AND json_extract(metadata, '$.found') = 1 THEN json_extract(metadata, '$.distance_meters') END) AS average_distance_meters
       FROM usage_events WHERE event_type = 'route' AND julianday(occurred_at) >= julianday('now', ?)`).get(since);
-  return { days: selectedDays, totals, daily, eventTypes, searches, features, routeStats };
+  const routeDestinations = db.prepare(`SELECT feature_id AS label, COUNT(*) AS count FROM usage_events
+      WHERE event_type = 'route' AND feature_id IS NOT NULL AND julianday(occurred_at) >= julianday('now', ?)
+      GROUP BY feature_id ORDER BY count DESC, label LIMIT 10`).all(since);
+  return { days: selectedDays, totals, sessionStats, daily, eventTypes, searches, searchStats, noResultSearches, features, routeStats, routeDestinations };
 }
 
 export function getUsageAnalytics(days = 30) {
