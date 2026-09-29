@@ -90,4 +90,37 @@ export function recordIssueReportAttempt(sessionId, status) {
     .run(text(sessionId, 64), text(status, 24) || "unknown");
 }
 
+export function getUsageAnalytics(days = 30) {
+  const selectedDays = Math.max(1, Math.min(365, Number(days) || 30));
+  const db = getDatabase();
+  const since = `-${selectedDays - 1} days`;
+  const totals = db.prepare(`SELECT
+      COUNT(DISTINCT session_id) AS sessions,
+      COUNT(*) AS events,
+      SUM(event_type = 'search') AS searches,
+      SUM(event_type = 'feature_selected') AS feature_selections,
+      SUM(event_type = 'route') AS routes,
+      SUM(event_type = 'image_opened') AS images_opened,
+      SUM(event_type = 'issue_reported') AS issues_reported
+    FROM usage_events WHERE julianday(occurred_at) >= julianday('now', ?)`).get(since);
+  const daily = db.prepare(`WITH RECURSIVE dates(day) AS (
+      SELECT date('now', ?)
+      UNION ALL SELECT date(day, '+1 day') FROM dates WHERE day < date('now')
+    ) SELECT dates.day, COUNT(DISTINCT usage_events.session_id) AS sessions, COUNT(usage_events.id) AS events
+      FROM dates LEFT JOIN usage_events ON date(usage_events.occurred_at) = dates.day
+      GROUP BY dates.day ORDER BY dates.day`).all(since);
+  const eventTypes = db.prepare(`SELECT event_type AS label, COUNT(*) AS count FROM usage_events
+      WHERE julianday(occurred_at) >= julianday('now', ?) GROUP BY event_type ORDER BY count DESC`).all(since);
+  const searches = db.prepare(`SELECT query AS label, COUNT(*) AS count FROM usage_events
+      WHERE event_type = 'search' AND query IS NOT NULL AND query != '' AND julianday(occurred_at) >= julianday('now', ?)
+      GROUP BY lower(query) ORDER BY count DESC, label LIMIT 10`).all(since);
+  const features = db.prepare(`SELECT feature_id AS label, COUNT(*) AS count FROM usage_events
+      WHERE event_type IN ('feature_selected', 'image_opened') AND feature_id IS NOT NULL AND julianday(occurred_at) >= julianday('now', ?)
+      GROUP BY feature_id ORDER BY count DESC, label LIMIT 10`).all(since);
+  const routeStats = db.prepare(`SELECT COUNT(*) AS total,
+      SUM(CASE WHEN json_extract(metadata, '$.found') = 1 THEN 1 ELSE 0 END) AS found
+      FROM usage_events WHERE event_type = 'route' AND julianday(occurred_at) >= julianday('now', ?)`).get(since);
+  return { days: selectedDays, totals, daily, eventTypes, searches, features, routeStats };
+}
+
 export { databasePath };

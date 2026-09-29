@@ -103,6 +103,11 @@ database to CSV with:
 npm run usage:export -- usage-events.csv
 ```
 
+A read-only summary dashboard is available at `/map/analytics`. It uses HTTP
+Basic authentication, defaulting to username `beaty` and password `beaty`.
+Set `ANALYTICS_USERNAME` and `ANALYTICS_PASSWORD` in production to override
+those credentials.
+
 ## Visitor problem reports
 
 The in-map **Report a problem** form sends a structured issue to GitHub without
