@@ -798,6 +798,190 @@
       },
       "id": "185f3072-d4c3-5fe4-810b-9624990b86be",
       "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2508324,
+            49.2631664
+          ],
+          [
+            -123.2508035,
+            49.2631772
+          ]
+        ]
+      },
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Theatre East Doors"
+        },
+        "alt_name": {
+          "en": "theatre_east_doors"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/362",
+        "source_issue_number": 362,
+        "source_issue_title": "Location: Theatre East Doors",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Refer to #229 for measurements",
+        "reference_points": "Physical location: \n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "id": "92273571-cb3d-5fd7-afb1-f31c89004edb",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Theatre West Doors"
+        },
+        "alt_name": {
+          "en": "theatre_west_doors"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/363",
+        "source_issue_number": 363,
+        "source_issue_title": "Location: Theatre West Doors",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Refer to #230 for measurements",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.250892,
+            49.2631436
+          ],
+          [
+            -123.2509215,
+            49.2631336
+          ]
+        ]
+      },
+      "id": "8cb66236-a913-5326-9284-031217ce43b2",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Theatre Accessibility Ramp Entrance"
+        },
+        "alt_name": {
+          "en": "theatre_accessibility_ramp_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/366",
+        "source_issue_number": 366,
+        "source_issue_title": "Location: Theatre Accessibility Ramp Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Refer to #253 for measurements",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2509016,
+            49.2631102
+          ],
+          [
+            -123.2509093,
+            49.2631198
+          ]
+        ]
+      },
+      "id": "bba4630e-98f9-5546-ac5b-e1879b7ab12a",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Theatre Accessibility Ramp Exit"
+        },
+        "alt_name": {
+          "en": "theatre_accessibility_ramp_exit"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/367",
+        "source_issue_number": 367,
+        "source_issue_title": "Location: Theatre Accessibility Ramp Exit",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Refer to #254 for measurements",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507194,
+            49.2630529
+          ],
+          [
+            -123.2507032,
+            49.263059
+          ]
+        ]
+      },
+      "id": "693ab504-fa94-5ddb-b486-bc19e0804ad9",
+      "feature_type": "opening"
     }
   ]
 }
