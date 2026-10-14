@@ -79056,6 +79056,67 @@
         ],
         "review_status": "locally_confirmed"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Theatre Projection Booth"
+        },
+        "alt_name": {
+          "en": "theatre_projection_booth"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_fixture",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "unit_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/365",
+        "source_issue_number": 365,
+        "source_issue_title": "Location: Theatre Projection Booth",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Refer to #195 for measurements",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.2508428,
+              49.2631783
+            ],
+            [
+              -123.250821,
+              49.2631533
+            ],
+            [
+              -123.2508818,
+              49.2631311
+            ],
+            [
+              -123.2509021,
+              49.2631564
+            ],
+            [
+              -123.2508428,
+              49.2631783
+            ]
+          ]
+        ]
+      },
+      "id": "d07de08d-54bc-52d4-833c-2539e6fa962d",
+      "feature_type": "fixture"
     }
   ]
 }

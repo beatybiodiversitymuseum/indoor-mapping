@@ -1475,6 +1475,222 @@
       },
       "id": "bda2a537-5d01-583f-b47e-3fbde1d4379f",
       "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "service",
+        "accessibility": null,
+        "name": {
+          "en": "Garbage and Recycling Bins"
+        },
+        "alt_name": {
+          "en": "garbage_and_recycling_bins"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/368",
+        "source_issue_number": 368,
+        "source_issue_title": "Location: Garbage and Recycling Bins",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "Refer to #285 for measurements",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508515,
+          49.2632113
+        ]
+      },
+      "id": "7851d15d-9a16-508b-a8c2-09e9adbd6bc8",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "service",
+        "accessibility": null,
+        "name": {
+          "en": "Men's Restroom"
+        },
+        "alt_name": {
+          "en": "men_s_restroom"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/370",
+        "source_issue_number": 370,
+        "source_issue_title": "Location: Men's Restroom",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507849,
+          49.2632087
+        ]
+      },
+      "id": "dc895c7d-7d49-5dbf-adfa-96c10d3c634a",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "service",
+        "accessibility": null,
+        "name": {
+          "en": "Handicap Restroom"
+        },
+        "alt_name": {
+          "en": "handicap_restroom"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/371",
+        "source_issue_number": 371,
+        "source_issue_title": "Location: Handicap Restroom",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507567,
+          49.2632187
+        ]
+      },
+      "id": "d3d976de-b5b2-5baf-9611-e0f6d1368f94",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "service",
+        "accessibility": null,
+        "name": {
+          "en": "Women's Restroom"
+        },
+        "alt_name": {
+          "en": "women_s_restroom"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/372",
+        "source_issue_number": 372,
+        "source_issue_title": "Location: Women's Restroom",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507473,
+          49.2632369
+        ]
+      },
+      "id": "9dec45a8-95e8-574c-a54f-a198b8b97892",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "service",
+        "accessibility": null,
+        "name": {
+          "en": "Gift Shop"
+        },
+        "alt_name": {
+          "en": "gift_shop"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/373",
+        "source_issue_number": 373,
+        "source_issue_title": "Location: Gift Shop",
+        "confirmation_methods": [
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Tables situated on upper level between front desk and balcony\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508785,
+          49.263149
+        ]
+      },
+      "id": "543ba68d-9e2a-5c00-b082-4ce9a5f33bf3",
+      "feature_type": "amenity"
     }
   ]
 }
