@@ -65,9 +65,23 @@ The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-ma
 
 ## Pending comparisons
 
+The six incoming images below do not show new exhibit content. #351–#354 are
+175×85 thumbnails of the same panels shown by the current 1920-pixel-wide
+map photos. The museum archive also has complete 2061×500 panels for
+[37.07–37.08](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/07.08.jpg)
+and [37.24–37.25](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/24.25.jpg).
+#310 and #312 are photographs of the same panels as their current images.
+Recommendation: retain the current primary images for all six. These issues
+remain open until that choice is confirmed; no image or searchable text has
+been changed for them.
+
 ### Issue 310
 
 **Cabinet Face 36.07** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/310)
+
+The incoming photograph and [full-size archive image](https://explore.beatymuseum.ubc.ca/docs/labels/Face36/07.jpg)
+show the same rock-shield moss panel. The current archive image is cleaner.
+[Open incoming photograph at original size](https://github.com/user-attachments/assets/a82225d3-b40f-4320-92dd-37963ad90f62).
 
 | Current map image | Incoming image |
 | --- | --- |
@@ -77,6 +91,11 @@ The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-ma
 
 **Cabinet Face 36.10** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/312)
 
+The incoming photograph and [full-size archive image](https://explore.beatymuseum.ubc.ca/docs/labels/Face36/10.jpg)
+show the same Penicillium/medical-treatment panel already selected from #342.
+The [current image](https://github.com/user-attachments/assets/f2aacbe8-1746-4647-8184-fe62dcad0daa)
+is cleaner. [Open incoming photograph at original size](https://github.com/user-attachments/assets/5522877e-9757-4016-95c9-342ce7292e25).
+
 | Current map image | Incoming image |
 | --- | --- |
 | <img src="https://github.com/user-attachments/assets/f2aacbe8-1746-4647-8184-fe62dcad0daa" alt="Current image of Cabinet Face 36.10" width="360"> | <img src="https://github.com/user-attachments/assets/5522877e-9757-4016-95c9-342ce7292e25" alt="Incoming issue 312 image of Cabinet Face 36.10" width="360"> |
@@ -84,6 +103,11 @@ The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-ma
 ### Issue 351
 
 **Cabinet Face 37.07** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/351)
+
+The incoming 175×85 thumbnail is the left side of the
+[full-size Odonata panel](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/07.08.jpg).
+The [current 1920×855 photo](https://github.com/user-attachments/assets/17d34bcd-a675-4f68-9431-94d90fcf0c42)
+shows this side more clearly.
 
 | Current map image | Incoming image |
 | --- | --- |
@@ -93,6 +117,11 @@ The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-ma
 
 **Cabinet Face 37.08** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/352)
 
+The incoming 175×85 thumbnail is the right side of the
+[full-size Odonata panel](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/07.08.jpg).
+The [current 1920×800 photo](https://github.com/user-attachments/assets/81057238-99b7-48f3-b58c-dd1de9a7917b)
+shows this side more clearly.
+
 | Current map image | Incoming image |
 | --- | --- |
 | <img src="https://github.com/user-attachments/assets/81057238-99b7-48f3-b58c-dd1de9a7917b" alt="Current image of Cabinet Face 37.08" width="360"> | <img src="https://github.com/user-attachments/assets/3e850e72-540a-46aa-a997-884a9439fa2e" alt="Incoming issue 352 image of Cabinet Face 37.08" width="360"> |
@@ -101,6 +130,11 @@ The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-ma
 
 **Cabinet Face 37.24** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/353)
 
+The incoming 175×85 thumbnail is the left side of the
+[full-size Lepidoptera panel](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/24.25.jpg).
+The [current 1920×846 photo](https://github.com/user-attachments/assets/e8d996d6-ae43-49ec-806f-a657a4a70e52)
+shows this side more clearly.
+
 | Current map image | Incoming image |
 | --- | --- |
 | <img src="https://github.com/user-attachments/assets/e8d996d6-ae43-49ec-806f-a657a4a70e52" alt="Current image of Cabinet Face 37.24" width="360"> | <img src="https://github.com/user-attachments/assets/761d31c1-66e4-4f99-b92d-8cc04e7c86aa" alt="Incoming issue 353 image of Cabinet Face 37.24" width="360"> |
@@ -108,6 +142,11 @@ The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-ma
 ### Issue 354
 
 **Cabinet Face 37.25** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/354)
+
+The incoming 175×85 thumbnail is the right side of the
+[full-size Lepidoptera panel](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/24.25.jpg).
+The [current 1920×828 photo](https://github.com/user-attachments/assets/a2bf709d-2f6d-4c40-8333-c3e176392819)
+shows this side more clearly.
 
 | Current map image | Incoming image |
 | --- | --- |
