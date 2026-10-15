@@ -942,6 +942,7 @@ export default function Viewer() {
       {selectedExhibits.length > 0 && <section className="exhibit-panel"><div className="section-title"><MapPin size={ICON_SIZE.section} /><h2>Exhibits at this spot</h2><span>{selectedExhibits.length}</span></div><div className="exhibit-list">
         {selectedExhibits.map((exhibit) => {
           const imageUrl = exhibitImageUrl(exhibit);
+          const issueImageUrls = (exhibit.properties?.source_image_urls || []).filter((url) => url !== imageUrl);
           const specimenNames = exhibitSpecimenNames(exhibit);
           const specimens = exhibitSpecimens(exhibit);
           const narrative = exhibitNarrative(exhibit);
@@ -949,6 +950,7 @@ export default function Viewer() {
           return <article className="exhibit-card" key={exhibit.id}>
             {imageUrl && <button className="exhibit-image-button" onClick={() => { setViewedImage({ url: imageUrl, alt: nameOf(exhibit) }); sendUsageEvent(usageSessionRef.current, "image_opened", { feature_id: String(exhibit.id) }); }} aria-label={`View image of ${nameOf(exhibit)}`}><img src={imageUrl} alt="" loading="lazy" /></button>}
             <div><small>{exhibitSubtitle(exhibit)}</small><strong>{exhibitSummary(exhibit)}</strong><span>{nameOf(exhibit)}</span>
+              {issueImageUrls.map((url, index) => <button className="issue-image-link" key={url} onClick={() => { setViewedImage({ url, alt: `${nameOf(exhibit)} issue photo ${index + 1}` }); sendUsageEvent(usageSessionRef.current, "image_opened", { feature_id: String(exhibit.id) }); }}>View issue photo{issueImageUrls.length > 1 ? ` ${index + 1}` : ""}</button>)}
               {specimenNames.length > 0 && <ul className="exhibit-names">{specimenNames.map(({ scientificName, commonName }) => <li key={`${scientificName || ""}-${commonName || ""}`}>{scientificName && <em>{scientificName}</em>}{scientificName && commonName ? " · " : ""}{commonName}</li>)}</ul>}
               {(specimens.length > 0 || narrative || notes) && <details className="exhibit-details"><summary>Full details</summary>
                 {narrative && <section><h3>Narrative</h3><p>{narrative}</p></section>}

@@ -81,4 +81,4 @@ The broad open tasks #2 and #40–#46 need additional location evidence or furth
 
 ## Issue images
 
-Attached issue images are linked on 16 new exhibit features. The other new issues contain no image attachments.
+All 56 image attachments from current location issues are linked to their matching exhibit features. New exhibits use the submitted image as their primary thumbnail; existing exhibits retain their archive thumbnail and offer the submitted photo in the inspector. Other new issues contain no image attachments.
