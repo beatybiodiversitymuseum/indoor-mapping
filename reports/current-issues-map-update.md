@@ -78,3 +78,7 @@ The following open issues supplied new map features for review. Existing same-na
 - #368
 
 The broad open tasks #2 and #40–#46 need additional location evidence or further area coverage.
+
+## Issue images
+
+Attached issue images are linked on 16 new exhibit features. The other new issues contain no image attachments.
