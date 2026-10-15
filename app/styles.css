@@ -93,6 +93,7 @@ button { color: inherit; }
 .exhibit-card small { color: var(--accent); font-size: 9px; font-weight: 700; text-transform: uppercase; }
 .exhibit-card strong { font-size: 12px; line-height: 15px; }
 .exhibit-card span { color: var(--muted); font-family: var(--font-exhibit); font-size: 11px; line-height: 14px; overflow-wrap: anywhere; }
+.issue-image-link { width: fit-content; padding: 0; border: 0; background: none; color: var(--accent); font: inherit; font-size: 11px; text-decoration: underline; cursor: pointer; }
 .exhibit-names { display: grid; gap: 1px; margin: 2px 0 0; padding: 0; list-style: none; }
 .exhibit-names li { color: #332d2e; font-family: var(--font-exhibit); font-size: 10px; line-height: 13px; overflow-wrap: anywhere; }
 .exhibit-names em { font-style: italic; }

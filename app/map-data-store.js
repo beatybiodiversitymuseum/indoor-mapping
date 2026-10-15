@@ -39,7 +39,7 @@ export function loadMapData() {
 
 const deferredPropertyNames = new Set([
   "archive", "details", "image", "image_transcriptions", "location_correction",
-  "metadata", "note", "photo_text", "sources", "specimens", "taxonomy",
+  "metadata", "note", "photo_text", "photo_text_source_url", "photo_text_review_status", "source_image_urls", "sources", "specimens", "taxonomy",
 ]);
 
 export function mapShellData(collection) {

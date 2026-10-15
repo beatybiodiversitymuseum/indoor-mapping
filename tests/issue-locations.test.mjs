@@ -68,13 +68,17 @@ test("all photo transcriptions preserve their ticket association and evidence UR
   const photos = [...amenities, ...openings, ...exhibits, ...fixtures].flatMap((feature) => {
     const entries = feature.properties.image_transcriptions || [];
     for (const entry of entries) {
-      assert.equal(entry.issue_number, feature.properties.source_issue_number);
+      if (feature.properties.source_issue_number !== undefined) {
+        assert.equal(entry.issue_number, feature.properties.source_issue_number);
+      } else {
+        assert.equal(typeof entry.issue_number, "number");
+      }
       assert.equal(entry.review_status, "machine_transcribed_unreviewed");
       assert.match(entry.image_url, /^https:\/\/github.com\/user-attachments\/assets\//);
     }
     return entries;
   });
-  assert.equal(photos.length, 390);
+  assert.equal(photos.length, 440);
   assert.match(byIssue.get(74).properties.image_transcriptions[0].text, /Physiological adaptations to the environment in fishes/);
 });
 

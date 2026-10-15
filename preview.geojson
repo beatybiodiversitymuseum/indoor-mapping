@@ -84822,6 +84822,182 @@
     {
       "type": "Feature",
       "properties": {
+        "category": "restroom",
+        "accessibility": null,
+        "name": {
+          "en": "Men's Restroom"
+        },
+        "alt_name": {
+          "en": "men_s_restroom"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/370",
+        "source_issue_number": 370,
+        "source_issue_title": "Location: Men's Restroom",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507849,
+          49.2632087
+        ]
+      },
+      "id": "dc895c7d-7d49-5dbf-adfa-96c10d3c634a",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restroom",
+        "accessibility": "wheelchair",
+        "name": {
+          "en": "Handicap Restroom"
+        },
+        "alt_name": {
+          "en": "handicap_restroom"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/371",
+        "source_issue_number": 371,
+        "source_issue_title": "Location: Handicap Restroom",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507567,
+          49.2632187
+        ]
+      },
+      "id": "d3d976de-b5b2-5baf-9611-e0f6d1368f94",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restroom",
+        "accessibility": null,
+        "name": {
+          "en": "Women's Restroom"
+        },
+        "alt_name": {
+          "en": "women_s_restroom"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/372",
+        "source_issue_number": 372,
+        "source_issue_title": "Location: Women's Restroom",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507473,
+          49.2632369
+        ]
+      },
+      "id": "9dec45a8-95e8-574c-a54f-a198b8b97892",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "shop",
+        "accessibility": null,
+        "name": {
+          "en": "Gift Shop"
+        },
+        "alt_name": {
+          "en": "gift_shop"
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/373",
+        "source_issue_number": 373,
+        "source_issue_title": "Location: Gift Shop",
+        "confirmation_methods": [
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Tables situated on upper level between front desk and balcony\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508785,
+          49.263149
+        ]
+      },
+      "id": "543ba68d-9e2a-5c00-b082-4ce9a5f33bf3",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "category": "pedestrian",
         "accessibility": null,
         "name": {
@@ -85627,6 +85803,147 @@
         ]
       },
       "id": "185f3072-d4c3-5fe4-810b-9624990b86be",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Men's Restroom Entrance"
+        },
+        "alt_name": {
+          "en": "men_s_restroom_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/355",
+        "source_issue_number": 355,
+        "source_issue_title": "Location: Men's Restroom Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Door is located 2.4m to the left of the east theatre entrance\n\nRelated fixture, if any: Theatre East Doors\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Door is 110cm in width",
+        "contributor_notes": "",
+        "preview_layer": "opening"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507953,
+            49.2632113
+          ],
+          [
+            -123.250782,
+            49.2632159
+          ]
+        ]
+      },
+      "id": "68fd2ea6-d125-5ad5-a486-7e08a5979226",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Handicap Restroom Entrance"
+        },
+        "alt_name": {
+          "en": "handicap_restroom_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/356",
+        "source_issue_number": 356,
+        "source_issue_title": "Location: Handicap Restroom Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Door is located 1.2m to the left of the men's restroom entrance\n\nRelated fixture, if any: Men's Restroom Entrance\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Door is 110cm in width",
+        "contributor_notes": "",
+        "preview_layer": "opening"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507679,
+            49.2632212
+          ],
+          [
+            -123.2507544,
+            49.2632259
+          ]
+        ]
+      },
+      "id": "315546be-d07a-5f11-9746-6d1620bf0ecf",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Women's Restroom Entrance"
+        },
+        "alt_name": {
+          "en": "women_s_restroom_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/357",
+        "source_issue_number": 357,
+        "source_issue_title": "Location: Women's Restroom Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Door is placed directly to the left of handicap restroom door on the perpendicular wall\n\nRelated fixture, if any: Handicap Restroom Entrance\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Door is 110cm in width",
+        "contributor_notes": "",
+        "preview_layer": "opening"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507538,
+            49.263229
+          ],
+          [
+            -123.250761,
+            49.2632377
+          ]
+        ]
+      },
+      "id": "d2ece1e6-acd8-5821-bbaf-7bfd8e5b5433",
       "feature_type": "opening"
     },
     {
@@ -127610,15 +127927,13 @@
         },
         "fixture_id": "dfb4e7de-e34c-4eb1-94f6-165b88fbcf11",
         "image": {
-          "id": "Face17_08",
-          "path": "labels/Face17/08.jpg",
-          "type": "header"
-        },
-        "taxonomy": {
-          "family_name": "Dicranaceae"
+          "url": "https://github.com/user-attachments/assets/8d3adc29-c5f5-4e44-b002-b7750a83ed84",
+          "type": "info"
         },
         "details": {
-          "notes": "Left portion of a header panel. Shows family name Dicranaceae and the beginning of the common group name: 'Dicranella, Dicranum,' — title continues on image 09. Text 'Inside the cabinet' visible vertically on left side."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 8,
         "physical_cabinet_number": 8,
@@ -127630,6 +127945,23 @@
           "1dc0f3df-6ae3-4c14-b429-62616fe8bcad"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/8d3adc29-c5f5-4e44-b002-b7750a83ed84"
+        ],
+        "photo_text": "",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 313,
+            "image_url": "https://github.com/user-attachments/assets/8d3adc29-c5f5-4e44-b002-b7750a83ed84",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/8d3adc29-c5f5-4e44-b002-b7750a83ed84",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -127671,26 +128003,14 @@
         },
         "fixture_id": "aaaabdd1-2493-47e8-8987-b67f72322ac6",
         "image": {
-          "id": "Face17_09",
-          "path": "labels/Face17/09.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/736712a2-0ebd-4a88-9f21-e730c3f94a95",
+          "type": "info"
         },
-        "taxonomy": {
-          "family_name": "Dicranaceae",
-          "common_group_name": "Dicranella, Dicranum, and Paraleucobryum",
-          "tree": "Land Plants > Bryophyta > Bryopsida > Dicranales > Dicranaceae"
-        },
-        "specimens": [
-          {
-            "scientificName": "Dicranum scoparium",
-            "commonName": "Brook moss",
-            "specimenType": "moss",
-            "presence": "referenced",
-            "catalogNumber": null
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Right portion of header panel continued from image 08. Shows 'and Paraleucobryum' completing the title. Photo of Brook moss (Dicranum scoparium) by Frank Young. Taxonomy tree visible in upper right."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 9,
         "physical_cabinet_number": 9,
@@ -127702,6 +128022,25 @@
           "42e00d11-ad43-4c64-8711-6923efa9a080"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/736712a2-0ebd-4a88-9f21-e730c3f94a95"
+        ],
+        "photo_text": "Dicranaceae. Dicranella, Dicranum.",
+        "image_transcriptions": [
+          {
+            "issue_number": 329,
+            "image_url": "https://github.com/user-attachments/assets/736712a2-0ebd-4a88-9f21-e730c3f94a95",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Dicranaceae\nDicranella, Dicranum,",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/736712a2-0ebd-4a88-9f21-e730c3f94a95",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "family_name": "Dicranaceae"
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -127743,12 +128082,13 @@
         },
         "fixture_id": "d1062b5a-9e97-4bdf-a549-ae59ebea1584",
         "image": {
-          "id": "Face17_10",
-          "path": "labels/Face17/10.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/f1b13874-f7c9-46fe-bf29-7fc6e08ea41e",
+          "type": "info"
         },
         "details": {
-          "notes": "Dark/black panel with small grey rectangle in upper left corner and green/yellow horizontal stripe at bottom edge. No readable text or specimen content visible."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 10,
         "physical_cabinet_number": 10,
@@ -127760,6 +128100,41 @@
           "db3158f2-bb71-4e27-b573-733930aa953e"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f1b13874-f7c9-46fe-bf29-7fc6e08ea41e"
+        ],
+        "photo_text": "Dicranaceae. Dicranella, Dicranum, and Paraleucobryum. Land Plants, Bryophyta, Bryopsida, Dicranales, Dicranaceae. Brook moss. Dicranum scoparium.",
+        "specimens": [
+          {
+            "scientificName": "Dicranum scoparium",
+            "commonName": "Brook moss",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 330,
+            "image_url": "https://github.com/user-attachments/assets/f1b13874-f7c9-46fe-bf29-7fc6e08ea41e",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Land Pknts\nBryophyta\n6ryop&da\nDi(ranales\nDicrana¢eae\nandP\nry4,m",
+            "confidence": 0.571,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/f1b13874-f7c9-46fe-bf29-7fc6e08ea41e",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "family_name": "Dicranaceae",
+          "tree": [
+            "Land Plants",
+            "Bryophyta",
+            "Bryopsida",
+            "Dicranales",
+            "Dicranaceae"
+          ]
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -129336,15 +129711,13 @@
         },
         "fixture_id": "5e540c24-cd37-4c35-8807-78987ef16529",
         "image": {
-          "id": "Face19_03",
-          "path": "labels/Face19/03.jpg",
-          "type": "header"
-        },
-        "taxonomy": {
-          "family_name": "Grimmiaceae"
+          "url": "https://github.com/user-attachments/assets/d8f8c74b-904e-4cf3-b25e-ab3745eb3819",
+          "type": "info"
         },
         "details": {
-          "notes": "Left portion of a two-part header label. Shows family name 'Grimmiaceae' and genera 'Grimmia, Racomitrium' (cut off, continues to next image). Text 'Inside the cabinet' appears vertically on left side."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 3,
         "physical_cabinet_number": 3,
@@ -129356,6 +129729,23 @@
           "980431a1-387a-4074-ad7b-e65c4ab8ab22"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/d8f8c74b-904e-4cf3-b25e-ab3745eb3819"
+        ],
+        "photo_text": "",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 314,
+            "image_url": "https://github.com/user-attachments/assets/d8f8c74b-904e-4cf3-b25e-ab3745eb3819",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/d8f8c74b-904e-4cf3-b25e-ab3745eb3819",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -129397,32 +129787,14 @@
         },
         "fixture_id": "ad98a3ff-eaab-4cac-8d5f-843ed9ece811",
         "image": {
-          "id": "Face19_04",
-          "path": "labels/Face19/04.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/cab66092-a480-4093-a061-9af83a9ff486",
+          "type": "info"
         },
-        "taxonomy": {
-          "family_name": "Grimmiaceae",
-          "tree": [
-            "Land Plants",
-            "Bryophyta",
-            "Bryopsida",
-            "Grimmiales",
-            "Grimmiaceae"
-          ]
-        },
-        "specimens": [
-          {
-            "scientificName": "Grimmia pulvinata",
-            "commonName": "Grey cushion moss",
-            "specimenType": null,
-            "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Photo caption identifies this species. Photo credit: Michael Becker."
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Right portion of two-part header label. Continues with 'and Schistidium'. Includes photo of Grimmia pulvinata (Grey cushion moss) and taxonomy tree ending at Grimmiaceae (highlighted)."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 4,
         "physical_cabinet_number": 4,
@@ -129434,6 +129806,25 @@
           "196d29a7-ece6-4996-bb1b-d797f55a68c1"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/cab66092-a480-4093-a061-9af83a9ff486"
+        ],
+        "photo_text": "Grimmiaceae. Grimmia, Racomitrium.",
+        "image_transcriptions": [
+          {
+            "issue_number": 331,
+            "image_url": "https://github.com/user-attachments/assets/cab66092-a480-4093-a061-9af83a9ff486",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Grimmiaceae\nGrimmia,Racomitriu",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/cab66092-a480-4093-a061-9af83a9ff486",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "family_name": "Grimmiaceae"
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -129475,25 +129866,22 @@
         },
         "fixture_id": "05029e94-0b5b-4dc8-9618-671cf08501d2",
         "image": {
-          "id": "Face19_05",
-          "path": "labels/Face19/05.jpg",
+          "url": "https://github.com/user-attachments/assets/d1c0c739-9f23-4045-8d35-3a6c7a442a20",
           "type": "info"
         },
         "specimens": [
           {
-            "scientificName": "Racomitrium sp.",
-            "commonName": "Racomitrium moss",
+            "scientificName": "Grimmia pulvinata",
+            "commonName": "Grey cushion moss",
             "specimenType": null,
             "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Photo caption identifies this species. Photo credit: David Gilbar."
+            "catalogNumber": null
           }
         ],
         "details": {
           "text": {
-            "en": "Bryophyte leaves are very thin, usually only one cell layer thick, so they absorb nutrients from the atmosphere — and pollutants too! Bryophytes that are sensitive to pollution are sometimes used as pollution indicators."
-          },
-          "notes": "Info panel with photo of Racomitrium moss and narrative text about bryophyte leaf structure and pollution sensitivity."
+            "en": ""
+          }
         },
         "source_cabinet_number": 5,
         "physical_cabinet_number": 5,
@@ -129505,6 +129893,32 @@
           "fc3de150-c123-4621-9766-6ae6f644633a"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/d1c0c739-9f23-4045-8d35-3a6c7a442a20"
+        ],
+        "photo_text": "Grimmiaceae. Grimmia, Racomitrium, and Schistidium. Land Plants, Bryophyta, Bryopsida, Grimmiales, Grimmiaceae. Grey cushion moss. Grimmia pulvinata.",
+        "image_transcriptions": [
+          {
+            "issue_number": 332,
+            "image_url": "https://github.com/user-attachments/assets/d1c0c739-9f23-4045-8d35-3a6c7a442a20",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Land PkMS\nBryophyta\n6ryopslda\nGrimmiales\nGrimmirKeae\nand Schi\nG(eyoJthoDThx",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/d1c0c739-9f23-4045-8d35-3a6c7a442a20",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "family_name": "Grimmiaceae",
+          "tree": [
+            "Land Plants",
+            "Bryophyta",
+            "Bryopsida",
+            "Grimmiales",
+            "Grimmiaceae"
+          ]
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -129546,22 +129960,22 @@
         },
         "fixture_id": "ea902bf7-6e7d-42ba-9d20-aaa595c3230d",
         "image": {
-          "id": "Face19_06",
-          "path": "labels/Face19/06.jpg",
+          "url": "https://github.com/user-attachments/assets/18728db4-cd59-43f9-89cc-10c9e5f5ff10",
           "type": "info"
         },
         "specimens": [
           {
             "scientificName": "Racomitrium sp.",
-            "commonName": "Point-cap moss",
+            "commonName": "Racomitrium moss",
             "specimenType": null,
             "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Photo caption identifies this species. Photo credit: Kristian Peters."
+            "catalogNumber": null
           }
         ],
         "details": {
-          "notes": "Photo panel showing close-up of Point-cap moss (Racomitrium sp.)."
+          "text": {
+            "en": "Bryophyte leaves are very thin, usually only one cell layer thick, so they absorb nutrients from the atmosphere—and pollutants too! Bryophytes that are sensitive to pollution are sometimes used as pollution indicators."
+          }
         },
         "source_cabinet_number": 6,
         "physical_cabinet_number": 6,
@@ -129573,6 +129987,22 @@
           "ef652e9e-77c9-4d62-8a3b-ecbbd4741357"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/18728db4-cd59-43f9-89cc-10c9e5f5ff10"
+        ],
+        "photo_text": "Bryophyte leaves are very thin, usually only one cell layer thick, so they absorb nutrients from the atmosphere—and pollutants too! Bryophytes that are sensitive to pollution are sometimes used as pollution indicators. Racomitrium moss. Racomitrium sp.",
+        "image_transcriptions": [
+          {
+            "issue_number": 333,
+            "image_url": "https://github.com/user-attachments/assets/18728db4-cd59-43f9-89cc-10c9e5f5ff10",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Bryophyte leaves are very th in, usually only\none cell layer thick, so they absorb nutrients\nfrom the atmosphere- and pollutants too!\nBryophytes that are sensitive to pollution are\nsometimes used as pollution indicators.",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/18728db4-cd59-43f9-89cc-10c9e5f5ff10",
+        "photo_text_review_status": "reviewed_against_image",
         "preview_layer": "exhibit"
       }
     },
@@ -129614,12 +130044,13 @@
         },
         "fixture_id": "b550b767-7766-4134-af49-28458d55f91c",
         "image": {
-          "id": "Face19_07",
-          "path": "labels/Face19/07.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/20899a19-afb5-4c8a-a4e3-09447c6ec0f3",
+          "type": "info"
         },
         "details": {
-          "notes": "Blank panel with only the green/yellow decorative border stripe at bottom. No text or specimen content."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 7,
         "physical_cabinet_number": 7,
@@ -129631,6 +130062,31 @@
           "b5007a7d-a02c-49a8-8a49-1e8286e36f0e"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/20899a19-afb5-4c8a-a4e3-09447c6ec0f3"
+        ],
+        "photo_text": "Point-cap moss. Racomitrium sp.",
+        "specimens": [
+          {
+            "scientificName": "Racomitrium sp.",
+            "commonName": "Point-cap moss",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 334,
+            "image_url": "https://github.com/user-attachments/assets/20899a19-afb5-4c8a-a4e3-09447c6ec0f3",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/20899a19-afb5-4c8a-a4e3-09447c6ec0f3",
+        "photo_text_review_status": "reviewed_against_image",
         "preview_layer": "exhibit"
       }
     },
@@ -130518,36 +130974,14 @@
         },
         "fixture_id": "6c143877-c9b0-4379-a369-82780ca5314c",
         "image": {
-          "id": "Face19_21",
-          "path": "labels/Face19/21.jpg",
+          "url": "https://github.com/user-attachments/assets/a1113788-b0ca-4714-b53b-1a4ebc482a24",
           "type": "info"
         },
-        "taxonomy": {
-          "common_group_name": "Mosses"
-        },
-        "specimens": [
-          {
-            "scientificName": "Polytrichum juniperinum",
-            "commonName": "Juniper hair-cap moss",
-            "specimenType": "moss",
-            "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Labeled as acrocarpus example; family Polytrichaceae. Photo credit: Cheryl Moorehead."
-          },
-          {
-            "scientificName": "Hypnum imponens",
-            "commonName": "Hypnum moss",
-            "specimenType": "moss",
-            "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Labeled as pleurocarpus example. Photo credit: Uli Lorimer."
-          }
-        ],
+        "specimens": [],
         "details": {
           "text": {
-            "en": "Mosses grow in different forms. Moss that grows straight up with little branching is called acrocarpus. Moss that grows along the ground and has branches is called pleurocarpus."
-          },
-          "notes": "Info panel with two circular photos comparing acrocarpus and pleurocarpus moss growth forms. Left photo: Juniper hair-cap moss / Polytrichum juniperinum (Polytrichaceae), credit Cheryl Moorehead. Right photo: Hypnum moss / Hypnum imponens, credit Uli Lorimer."
+            "en": ""
+          }
         },
         "source_cabinet_number": 21,
         "physical_cabinet_number": 21,
@@ -130559,6 +130993,22 @@
           "967fc552-1dd2-42fb-b581-69d64de8b06f"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/a1113788-b0ca-4714-b53b-1a4ebc482a24"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 335,
+            "image_url": "https://github.com/user-attachments/assets/a1113788-b0ca-4714-b53b-1a4ebc482a24",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/a1113788-b0ca-4714-b53b-1a4ebc482a24",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -130600,12 +131050,13 @@
         },
         "fixture_id": "7fbb4b62-242b-4ab0-807e-33db4e3203ab",
         "image": {
-          "id": "Face19_22",
-          "path": "labels/Face19/22.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/756222b6-79dc-421f-b031-a2491be8fa63",
+          "type": "info"
         },
         "details": {
-          "notes": "Dark/black image with small grey rectangle in upper left and green/yellow stripe along bottom edge. No visible text content."
+          "text": {
+            "en": "Mosses grow in different forms. Moss that grows straight up with little branching is called acrocarpus. Moss that grows along the ground and has branches is called pleurocarpus."
+          }
         },
         "source_cabinet_number": 22,
         "physical_cabinet_number": 22,
@@ -130617,6 +131068,38 @@
           "47f284c1-e6bc-4630-b611-fa5092210be9"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/756222b6-79dc-421f-b031-a2491be8fa63"
+        ],
+        "photo_text": "Mosses grow in different forms. Moss that grows straight up with little branching is called acrocarpus. Moss that grows along the ground and has branches is called pleurocarpus. Juniper hair-cap moss. Polytrichum juniperinum. Hypnum moss. Hypnum imponens.",
+        "specimens": [
+          {
+            "scientificName": "Polytrichum juniperinum",
+            "commonName": "Juniper hair-cap moss",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          },
+          {
+            "scientificName": "Hypnum imponens",
+            "commonName": "Hypnum moss",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 336,
+            "image_url": "https://github.com/user-attachments/assets/756222b6-79dc-421f-b031-a2491be8fa63",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Mosses grow in different forms. Moss that\ngrows straight up with little branching is called\naLro(iiryus. Moss that grows along the ground\nand has branches is called pleurocaryus.\nIttlFtridu(uE)",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/756222b6-79dc-421f-b031-a2491be8fa63",
+        "photo_text_review_status": "reviewed_against_image",
         "preview_layer": "exhibit"
       }
     },
@@ -155836,30 +156319,22 @@
         },
         "fixture_id": "2296ed65-67d4-4d83-be6a-2aa4be74d684",
         "image": {
-          "id": "Face35_03",
-          "path": "labels/Face35/03.jpg",
-          "type": "header"
-        },
-        "taxonomy": {
-          "common_group_name": "Jelly fungi",
-          "tree": [
-            "Fungi",
-            "Basidiomycota",
-            "Tremellomycetes"
-          ]
+          "url": "https://github.com/user-attachments/assets/265e9b46-7f39-4e6d-90ef-05bb15eae2e9",
+          "type": "info"
         },
         "specimens": [
           {
-            "scientificName": "Tremella mesenterica",
-            "commonName": "Yellow brain",
-            "specimenType": "referenced",
-            "presence": "photo only",
-            "catalogNumber": null,
-            "notes": "Photo credit: Jean-Pierre Lachenal"
+            "scientificName": "Puccinia lagenophorae",
+            "commonName": "Stem rust",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
           }
         ],
         "details": {
-          "notes": "Header label for Tremellomycetes section. Text reads 'Inside the cabinet' vertically on left side."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 3,
         "physical_cabinet_number": 3,
@@ -155871,6 +156346,30 @@
           "9c95999a-d72b-4f1a-ba99-5986c71ceff5"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/265e9b46-7f39-4e6d-90ef-05bb15eae2e9"
+        ],
+        "photo_text": "Pucciniomycetes. Rust fungi and allies. Stem rust (on Senecio). Puccinia lagenophorae.",
+        "image_transcriptions": [
+          {
+            "issue_number": 337,
+            "image_url": "https://github.com/user-attachments/assets/265e9b46-7f39-4e6d-90ef-05bb15eae2e9",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": ",+\nFungl\nBasidiomycots\nPucclnlomycetes\nPucciniomycetes\nRust fungi 4.\nd allies\nrkrok lan",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/265e9b46-7f39-4e6d-90ef-05bb15eae2e9",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Rust fungi and allies",
+          "tree": [
+            "Fungi",
+            "Basidiomycota",
+            "Pucciniomycetes"
+          ]
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -155912,12 +156411,13 @@
         },
         "fixture_id": "e0577db9-0040-49d9-89d8-0cf4e9282877",
         "image": {
-          "id": "Face35_04",
-          "path": "labels/Face35/04.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/8626cfe9-134b-4eae-a85e-9ed7184897e8",
+          "type": "info"
         },
         "details": {
-          "notes": "Blank dark panel with green/gold decorative strip at bottom. No text or specimen content visible."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 4,
         "physical_cabinet_number": 4,
@@ -155929,6 +156429,31 @@
           "4dcaebaf-f61b-46de-88af-f16a9b257463"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/8626cfe9-134b-4eae-a85e-9ed7184897e8"
+        ],
+        "photo_text": "Rust fungus (on Hypericum). Melampsora hypericorum. 7.8×, 25×, 110×.",
+        "specimens": [
+          {
+            "scientificName": "Melampsora hypericorum",
+            "commonName": "Rust fungus",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 338,
+            "image_url": "https://github.com/user-attachments/assets/8626cfe9-134b-4eae-a85e-9ed7184897e8",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/8626cfe9-134b-4eae-a85e-9ed7184897e8",
+        "photo_text_review_status": "reviewed_against_image",
         "preview_layer": "exhibit"
       }
     },
@@ -155970,30 +156495,22 @@
         },
         "fixture_id": "4b5b6026-3d85-4464-afcd-43b4d43e8172",
         "image": {
-          "id": "Face35_05",
-          "path": "labels/Face35/05.jpg",
-          "type": "header"
-        },
-        "taxonomy": {
-          "common_group_name": "Rust fungi and allies",
-          "tree": [
-            "Fungi",
-            "Basidiomycota",
-            "Pucciniomycetes"
-          ]
+          "url": "https://github.com/user-attachments/assets/5c4873fd-7ce6-41d5-9d6b-11bd6306a8c4",
+          "type": "info"
         },
         "specimens": [
           {
-            "scientificName": "Puccinia lagenophorae",
-            "commonName": "Stem rust",
-            "specimenType": "referenced",
-            "presence": "photo only",
-            "catalogNumber": null,
-            "notes": "Described as 'Stem rust (on Senecio)'. Photo credit: Derek Tan"
+            "scientificName": "Tremella mesenterica",
+            "commonName": "Yellow brain",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
           }
         ],
         "details": {
-          "notes": "Header label for Pucciniomycetes section. Text reads 'Inside the cabinet' vertically on left side."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 5,
         "physical_cabinet_number": 5,
@@ -156005,6 +156522,30 @@
           "fc4c9380-f890-45fa-912b-a842f31d7640"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/5c4873fd-7ce6-41d5-9d6b-11bd6306a8c4"
+        ],
+        "photo_text": "Tremellomycetes. Jelly fungi. Yellow brain. Tremella mesenterica.",
+        "image_transcriptions": [
+          {
+            "issue_number": 339,
+            "image_url": "https://github.com/user-attachments/assets/5c4873fd-7ce6-41d5-9d6b-11bd6306a8c4",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Fungl\nBasidi(Thycots\nTremellomycetes\nTremellomycetes\nJelly fungi",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/5c4873fd-7ce6-41d5-9d6b-11bd6306a8c4",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Jelly fungi",
+          "tree": [
+            "Fungi",
+            "Basidiomycota",
+            "Tremellomycetes"
+          ]
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -156046,22 +156587,14 @@
         },
         "fixture_id": "595faf2e-c809-4ba3-a7a3-00a88d665413",
         "image": {
-          "id": "Face35_06",
-          "path": "labels/Face35/06.jpg",
+          "url": "https://github.com/user-attachments/assets/f27ed566-7414-4ca9-88ad-6027306a302e",
           "type": "info"
         },
-        "specimens": [
-          {
-            "scientificName": "Melampsora hypericorum",
-            "commonName": "Rust fungus",
-            "specimenType": "referenced",
-            "presence": "photo only",
-            "catalogNumber": null,
-            "notes": "Described as 'Rust fungus (on Hypericum)'. Three magnification photos shown at 7.8x, 25x, and 110x. Photo credit: Derek Tan"
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Info panel showing three progressively magnified photos of rust fungus on Hypericum leaf."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 6,
         "physical_cabinet_number": 6,
@@ -156073,6 +156606,22 @@
           "01d561ee-6d34-41b5-9b08-28243126cdfe"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f27ed566-7414-4ca9-88ad-6027306a302e"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 315,
+            "image_url": "https://github.com/user-attachments/assets/f27ed566-7414-4ca9-88ad-6027306a302e",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/f27ed566-7414-4ca9-88ad-6027306a302e",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -156172,28 +156721,22 @@
         },
         "fixture_id": "926993a1-69c1-48ed-ab3e-37137f19049b",
         "image": {
-          "id": "Face35_08",
-          "path": "labels/Face35/08.jpg",
+          "url": "https://github.com/user-attachments/assets/7a8a14a3-f62c-45ad-854c-33d5a9af0566",
           "type": "info"
-        },
-        "taxonomy": {
-          "common_group_name": "Fungi"
         },
         "specimens": [
           {
             "scientificName": "Penicillium chrysogenum",
             "commonName": "Blue mold",
-            "specimenType": "fungus",
-            "presence": "displayed",
-            "catalogNumber": null,
-            "notes": "Shown in microscope images at 40x and 100x magnification, plus petri dish photo"
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
           }
         ],
         "details": {
           "text": {
-            "en": "Fungi play an important role in medical treatments. Penicillin, the first drug found to be effective against infections like syphilis and Staphylococcus, was derived from Penicillium molds. Three scientists were awarded Nobel prizes for their role in the development."
-          },
-          "notes": "Photo credit: Stephen Peterson. Microscope images at 40x and 100x shown alongside petri dish culture photo."
+            "en": ""
+          }
         },
         "source_cabinet_number": 8,
         "physical_cabinet_number": 8,
@@ -156205,6 +156748,30 @@
           "c0dea0a7-b603-430a-99bb-fbe986604b22"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/7a8a14a3-f62c-45ad-854c-33d5a9af0566"
+        ],
+        "photo_text": "Eurotiomycetes. Penicillin and ringworm. Blue mold. Penicillium chrysogenum.",
+        "image_transcriptions": [
+          {
+            "issue_number": 340,
+            "image_url": "https://github.com/user-attachments/assets/7a8a14a3-f62c-45ad-854c-33d5a9af0566",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Ascom¥cvt\neurotlomycetes\nEurotiomycetes\nPenicillin and ri",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/7a8a14a3-f62c-45ad-854c-33d5a9af0566",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Penicillin and ringworm",
+          "tree": [
+            "Fungi",
+            "Ascomycota",
+            "Eurotiomycetes"
+          ]
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -156317,25 +156884,14 @@
         },
         "fixture_id": "0ea8221d-8e80-4191-895f-272a9d2a1618",
         "image": {
-          "id": "Face35_10",
-          "path": "labels/Face35/10.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/47ff75ff-b239-4e6e-8f5e-2596a1bbcfeb",
+          "type": "info"
         },
-        "taxonomy": {
-          "common_group_name": "Lichens"
-        },
-        "specimens": [
-          {
-            "scientificName": "Peltigera polydactylon",
-            "commonName": null,
-            "specimenType": "lichen",
-            "presence": "displayed",
-            "catalogNumber": null,
-            "notes": null
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Photo of lichen specimen with scientific name label. Photo credit: Tim Wheeler."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 10,
         "physical_cabinet_number": 10,
@@ -156347,6 +156903,22 @@
           "178ccdfb-921f-4120-82ce-208daa285eb5"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/47ff75ff-b239-4e6e-8f5e-2596a1bbcfeb"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 316,
+            "image_url": "https://github.com/user-attachments/assets/47ff75ff-b239-4e6e-8f5e-2596a1bbcfeb",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/47ff75ff-b239-4e6e-8f5e-2596a1bbcfeb",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -156459,28 +157031,22 @@
         },
         "fixture_id": "8c12b0a9-67d7-46b0-8642-8377e2378213",
         "image": {
-          "id": "Face35_12",
-          "path": "labels/Face35/12.jpg",
+          "url": "https://github.com/user-attachments/assets/e03b4b49-bed4-420a-8c9d-7ed03d6a7970",
           "type": "info"
-        },
-        "taxonomy": {
-          "common_group_name": "Lichens"
         },
         "specimens": [
           {
-            "scientificName": "Pilophorus acicularis",
-            "commonName": "Devil's matchstick",
-            "specimenType": "lichen",
-            "presence": "displayed",
-            "catalogNumber": null,
-            "notes": "Featured specimen photo accompanying narrative text"
+            "scientificName": "Peltigera polydactylon",
+            "commonName": null,
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
           }
         ],
         "details": {
           "text": {
-            "en": "There are about 14,000 known species of lichens, and these vary greatly in size, colour, and shape. Their habitats vary greatly — lichens are found on soil, sand, rocks, trees, and even some animals."
-          },
-          "notes": "Photo credit: David Gilbar."
+            "en": ""
+          }
         },
         "source_cabinet_number": 12,
         "physical_cabinet_number": 12,
@@ -156492,6 +157058,22 @@
           "f315eaaa-6d25-4ec9-9831-1566b52bf12b"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/e03b4b49-bed4-420a-8c9d-7ed03d6a7970"
+        ],
+        "photo_text": "Peltigera polydactylon.",
+        "image_transcriptions": [
+          {
+            "issue_number": 341,
+            "image_url": "https://github.com/user-attachments/assets/e03b4b49-bed4-420a-8c9d-7ed03d6a7970",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/e03b4b49-bed4-420a-8c9d-7ed03d6a7970",
+        "photo_text_review_status": "reviewed_against_image",
         "preview_layer": "exhibit"
       }
     },
@@ -156533,25 +157115,14 @@
         },
         "fixture_id": "7fc8b542-d2dd-4a40-af47-75be63630f56",
         "image": {
-          "id": "Face35_13",
-          "path": "labels/Face35/13.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/4361cdae-2ee9-4bb2-ba40-13d203cada2e",
+          "type": "info"
         },
-        "taxonomy": {
-          "common_group_name": "Lichens"
-        },
-        "specimens": [
-          {
-            "scientificName": "Polychidium muscicola",
-            "commonName": null,
-            "specimenType": "lichen",
-            "presence": "displayed",
-            "catalogNumber": null,
-            "notes": null
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Close-up photo of lichen specimen. Photo credit: David Gilbar."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 13,
         "physical_cabinet_number": 13,
@@ -156563,6 +157134,22 @@
           "94f2bfbd-ad80-49d1-99ef-7a0febc155d3"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/4361cdae-2ee9-4bb2-ba40-13d203cada2e"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 317,
+            "image_url": "https://github.com/user-attachments/assets/4361cdae-2ee9-4bb2-ba40-13d203cada2e",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/4361cdae-2ee9-4bb2-ba40-13d203cada2e",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -156604,25 +157191,14 @@
         },
         "fixture_id": "f53cb6e6-f923-4906-aa2b-1709b580b049",
         "image": {
-          "id": "Face35_14",
-          "path": "labels/Face35/14.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/f8c99a59-d984-49ee-a238-ad6acb9c569c",
+          "type": "info"
         },
-        "taxonomy": {
-          "common_group_name": "Lichens"
-        },
-        "specimens": [
-          {
-            "scientificName": "Pseudocyphellaria crocata",
-            "commonName": "Specklebelly lichen",
-            "specimenType": "lichen",
-            "presence": "displayed",
-            "catalogNumber": null,
-            "notes": null
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Close-up photo of lichen specimen with yellow-green soredia on margins. Photo credit: Tim Wheeler."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 14,
         "physical_cabinet_number": 14,
@@ -156634,6 +157210,22 @@
           "95beca6e-06ac-4ff4-8d11-990a6da8c1e2"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f8c99a59-d984-49ee-a238-ad6acb9c569c"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 318,
+            "image_url": "https://github.com/user-attachments/assets/f8c99a59-d984-49ee-a238-ad6acb9c569c",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/f8c99a59-d984-49ee-a238-ad6acb9c569c",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -156814,22 +157406,14 @@
         },
         "fixture_id": "a6088723-ad88-412a-ba82-db3ea031bed4",
         "image": {
-          "id": "Face35_17",
-          "path": "labels/Face35/17.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/7f1a5427-1d1c-4d45-b67e-eb2648c5ec0f",
+          "type": "info"
         },
-        "specimens": [
-          {
-            "scientificName": "Stereocaulon ranulosum",
-            "commonName": null,
-            "specimenType": "lichen",
-            "presence": "displayed",
-            "catalogNumber": null,
-            "notes": null
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Macro photograph of a lichen with a dark reddish-brown apothecium atop a granular stalk. Photo credit: Shannon Mortimer. Grey rectangle in upper-left corner."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 17,
         "physical_cabinet_number": 17,
@@ -156841,6 +157425,22 @@
           "3c3df5ac-0d95-4328-9fba-d742a99ab00e"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/7f1a5427-1d1c-4d45-b67e-eb2648c5ec0f"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 319,
+            "image_url": "https://github.com/user-attachments/assets/7f1a5427-1d1c-4d45-b67e-eb2648c5ec0f",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/7f1a5427-1d1c-4d45-b67e-eb2648c5ec0f",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -156956,23 +157556,10 @@
         },
         "fixture_id": "b4271dce-f980-412d-a3aa-79f5fd39e656",
         "image": {
-          "id": "Face36_02",
-          "path": "labels/Face36/02.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/c73ceb97-f0a2-4fc8-a2d3-5c3e5e13a39a",
+          "type": "info"
         },
-        "taxonomy": {
-          "common_group_name": "Lichens"
-        },
-        "specimens": [
-          {
-            "scientificName": "Umbilicaria hyperborea",
-            "commonName": "Blistered rock tripe",
-            "specimenType": "dried specimen",
-            "presence": "displayed",
-            "catalogNumber": null,
-            "notes": "Label states 'dried specimen'. Photo credit David Gilbar."
-          }
-        ],
+        "specimens": [],
         "source_cabinet_number": 2,
         "physical_cabinet_number": 2,
         "location_review_status": "derived_cabinet_face",
@@ -156983,6 +157570,27 @@
           "f5f4df98-048d-4b89-9774-f46cc39d3a8a"
         ],
         "marker_bearing": 62.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/c73ceb97-f0a2-4fc8-a2d3-5c3e5e13a39a"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 309,
+            "image_url": "https://github.com/user-attachments/assets/c73ceb97-f0a2-4fc8-a2d3-5c3e5e13a39a",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/c73ceb97-f0a2-4fc8-a2d3-5c3e5e13a39a",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -157369,15 +157977,13 @@
         },
         "fixture_id": "a68518dc-2065-4c4e-b629-d00aff4fee99",
         "image": {
-          "id": "Face36_08",
-          "path": "labels/Face36/08.jpg",
+          "url": "https://github.com/user-attachments/assets/f57d7e8e-cb70-412f-9333-214e064cc05e",
           "type": "info"
         },
-        "taxonomy": {
-          "common_group_name": "Lichens"
-        },
         "details": {
-          "notes": "Photo of lichens on rock surface showing orange and white crustose lichens. Caption reads 'Lichens'. No species names or catalog numbers visible."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 8,
         "physical_cabinet_number": 8,
@@ -157389,6 +157995,23 @@
           "9d85d096-a622-4a0b-b889-5f5ddf3210d9"
         ],
         "marker_bearing": 62.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f57d7e8e-cb70-412f-9333-214e064cc05e"
+        ],
+        "photo_text": "",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 311,
+            "image_url": "https://github.com/user-attachments/assets/f57d7e8e-cb70-412f-9333-214e064cc05e",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/f57d7e8e-cb70-412f-9333-214e064cc05e",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -157491,30 +158114,22 @@
         },
         "fixture_id": "3a2c70f9-fc3a-4778-bfdf-adec92f4a785",
         "image": {
-          "id": "Face36_10",
-          "path": "labels/Face36/10.jpg",
-          "type": "header"
-        },
-        "taxonomy": {
-          "common_group_name": "Eurotiomycetes",
-          "tree": [
-            "Fungi",
-            "Ascomycota",
-            "Eurotiomycetes"
-          ]
+          "url": "https://github.com/user-attachments/assets/f2aacbe8-1746-4647-8184-fe62dcad0daa",
+          "type": "info"
         },
         "specimens": [
           {
             "scientificName": "Penicillium chrysogenum",
             "commonName": "Blue mold",
-            "specimenType": "fungus",
+            "specimenType": null,
             "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Shown in circular photo; image credit Stephen Peterson"
+            "catalogNumber": null
           }
         ],
         "details": {
-          "notes": "Header panel for Eurotiomycetes section titled 'Penicillin and ringworm'. Text 'Inside the cabinet' appears vertically on left side."
+          "text": {
+            "en": "Fungi play an important role in medical treatments. Penicillin, the first drug found to be effective against infections like syphilis and Staphylococcus, was derived from Penicillium molds. Three scientists were awarded Nobel prizes for their role in the development."
+          }
         },
         "source_cabinet_number": 10,
         "physical_cabinet_number": 10,
@@ -157526,6 +158141,22 @@
           "62076bc3-bf6d-4645-a35b-ed144d4e1e2f"
         ],
         "marker_bearing": 62.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f2aacbe8-1746-4647-8184-fe62dcad0daa"
+        ],
+        "photo_text": "Fungi play an important role in medical treatments. Penicillin, the first drug found to be effective against infections like syphilis and Staphylococcus, was derived from Penicillium molds. Three scientists were awarded Nobel prizes for their role in the development. Blue mold. Penicillium chrysogenum.",
+        "image_transcriptions": [
+          {
+            "issue_number": 342,
+            "image_url": "https://github.com/user-attachments/assets/f2aacbe8-1746-4647-8184-fe62dcad0daa",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Vi*\nFungi play an important role inmedical\ntreatments. Penicillin, the first drug found to be effective\nagainst iMections like syphilis and StaphJi lococcus, was\nderived from Penicilliuin molds. Three scientists were\nawarded Nobel prizes for their role in the development.",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/f2aacbe8-1746-4647-8184-fe62dcad0daa",
+        "photo_text_review_status": "reviewed_against_image",
         "preview_layer": "exhibit"
       }
     },
@@ -158668,22 +159299,22 @@
         },
         "fixture_id": "53cd8f29-e863-4ee3-bdd6-2bf60e2e2da8",
         "image": {
-          "id": "Face37_14",
-          "path": "labels/Face37/14.jpg",
+          "url": "https://github.com/user-attachments/assets/a4a95358-bf2e-49ad-bd4e-e85a86d0591b",
           "type": "info"
         },
         "specimens": [
           {
-            "scientificName": "Tibicen chloromera",
-            "commonName": "Cicada",
-            "specimenType": "cast skin with emerging adult",
+            "scientificName": "Coreus marginatus",
+            "commonName": "Dock bug",
+            "specimenType": null,
             "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Photo shows cast skin with emerging adult. Photo credit: Anita Gould."
+            "catalogNumber": null
           }
         ],
         "details": {
-          "notes": "Panel showing cicada emerging from cast skin. Caption: \"Cicada (cast skin with emerging adult)\"."
+          "text": {
+            "en": "More than 90 per cent of the world's animal species are insects. There may be 10 million or more species of insects in the world."
+          }
         },
         "source_cabinet_number": 14,
         "physical_cabinet_number": 14,
@@ -158695,6 +159326,22 @@
           "40d76d05-fb26-4d5f-a43f-f0040942a681"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/a4a95358-bf2e-49ad-bd4e-e85a86d0591b"
+        ],
+        "photo_text": "More than 90 per cent of the world's animal species are insects. There may be 10 million or more species of insects in the world. Dock bug. Coreus marginatus.",
+        "image_transcriptions": [
+          {
+            "issue_number": 344,
+            "image_url": "https://github.com/user-attachments/assets/a4a95358-bf2e-49ad-bd4e-e85a86d0591b",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "More than 90 per cent ofthe\nworld's animal species are insects.\nThere may be 10 million or more\nspecies of insects in the world.\nDo&b",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/a4a95358-bf2e-49ad-bd4e-e85a86d0591b",
+        "photo_text_review_status": "reviewed_against_image",
         "preview_layer": "exhibit"
       }
     },
@@ -162589,34 +163236,14 @@
         },
         "fixture_id": "d78dc4bc-8f18-4d68-87dc-841e5cf816fc",
         "image": {
-          "id": "Face39_15",
-          "path": "labels/Face39/15.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/9ed7e3f4-08d8-43db-b160-f984ee960ff4",
+          "type": "info"
         },
-        "taxonomy": {
-          "family_name": "Clupeidae",
-          "common_group_name": "Herrings, shads, and sardines",
-          "tree": [
-            "Chordata",
-            "Craniata",
-            "Actinopterygii",
-            "Teleostei",
-            "Clupeiformes",
-            "Clupeidae"
-          ]
-        },
-        "specimens": [
-          {
-            "scientificName": "Clupea harengus",
-            "commonName": "Atlantic herring",
-            "specimenType": null,
-            "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Photo caption species; photo credit Jacob Botter"
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Header label with 'Inside the cabinet' sidebar text"
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 15,
         "physical_cabinet_number": 15,
@@ -162628,6 +163255,22 @@
           "c585905d-aa52-4032-8a73-7f1abba531cd"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/9ed7e3f4-08d8-43db-b160-f984ee960ff4"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 320,
+            "image_url": "https://github.com/user-attachments/assets/9ed7e3f4-08d8-43db-b160-f984ee960ff4",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/9ed7e3f4-08d8-43db-b160-f984ee960ff4",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -164434,25 +165077,14 @@
         },
         "fixture_id": "a07880af-b7e8-4c58-9050-035f14c93961",
         "image": {
-          "id": "Face40_15",
-          "path": "labels/Face40/15.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/13d8ad4c-ed61-4caa-a477-d921215dec5d",
+          "type": "info"
         },
-        "taxonomy": {
-          "family_name": "Salmonidae"
-        },
-        "specimens": [
-          {
-            "scientificName": null,
-            "commonName": "Salmon (eggs and alevins)",
-            "specimenType": "eggs and alevins",
-            "presence": "displayed",
-            "catalogNumber": null,
-            "notes": null
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Photo of salmon eggs and alevins; label reads 'Salmon (eggs and alevins)' and 'Salmonidae'"
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 15,
         "physical_cabinet_number": 15,
@@ -164464,6 +165096,22 @@
           "10901245-fbff-49a7-a84d-6ec316091b6e"
         ],
         "marker_bearing": 62.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/13d8ad4c-ed61-4caa-a477-d921215dec5d"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 321,
+            "image_url": "https://github.com/user-attachments/assets/13d8ad4c-ed61-4caa-a477-d921215dec5d",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/13d8ad4c-ed61-4caa-a477-d921215dec5d",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -165781,23 +166429,13 @@
         },
         "fixture_id": "f7214402-7200-4757-bcf4-d7869abee988",
         "image": {
-          "id": "Face41_09",
-          "path": "labels/Face41/09.jpg",
+          "url": "https://github.com/user-attachments/assets/d20e0fcc-c2d0-457f-aa4a-0dc221e21c2a",
           "type": "info"
         },
-        "specimens": [
-          {
-            "scientificName": "Oncorhynchus nerka",
-            "commonName": "Sockeye salmon",
-            "specimenType": "photograph",
-            "presence": "displayed",
-            "catalogNumber": null,
-            "notes": "Photo of spawning sockeye salmon in a stream. Photo credit: Matt Casselman"
-          }
-        ],
+        "specimens": [],
         "details": {
           "text": {
-            "en": "Why do spawning male sockeye salmon turn red? Scientists believe the vibrant red colour helps make male spawners more visible and attractive to potential mates."
+            "en": ""
           }
         },
         "source_cabinet_number": 9,
@@ -165810,6 +166448,22 @@
           "f91fba63-3523-4a40-94ea-68c8ada37ba2"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/d20e0fcc-c2d0-457f-aa4a-0dc221e21c2a"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 345,
+            "image_url": "https://github.com/user-attachments/assets/d20e0fcc-c2d0-457f-aa4a-0dc221e21c2a",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/d20e0fcc-c2d0-457f-aa4a-0dc221e21c2a",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -165851,12 +166505,13 @@
         },
         "fixture_id": "7199722b-9944-4c7e-8892-019258908ada",
         "image": {
-          "id": "Face41_10",
-          "path": "labels/Face41/10.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/ee7e50c8-e782-42aa-9807-c81e8db0d292",
+          "type": "info"
         },
         "details": {
-          "notes": "Dark/blank panel with blue bar at bottom. No visible text or specimens."
+          "text": {
+            "en": "Why do spawning male sockeye salmon turn red? Scientists believe the vibrant red colour helps make male spawners more visible and attractive to potential mates."
+          }
         },
         "source_cabinet_number": 10,
         "physical_cabinet_number": 10,
@@ -165868,6 +166523,23 @@
           "3372aebb-b13c-4949-b6f1-313cc51bd485"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/ee7e50c8-e782-42aa-9807-c81e8db0d292"
+        ],
+        "photo_text": "Why do spawning male sockeye salmon turn red? Scientists believe the vibrant red colour helps make male spawners more visible and attractive to potential mates.",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 322,
+            "image_url": "https://github.com/user-attachments/assets/ee7e50c8-e782-42aa-9807-c81e8db0d292",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Why do spawn i ng male sockeye salmon turn red? &ientists believe\nthe vibrant red colour helps nthke male spawners mo\nvisible and attractive to potential mates.",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/ee7e50c8-e782-42aa-9807-c81e8db0d292",
+        "photo_text_review_status": "reviewed_against_image",
         "preview_layer": "exhibit"
       }
     },
@@ -166551,12 +167223,13 @@
         },
         "fixture_id": "895299cc-184a-4efa-80ab-62b59ff9603d",
         "image": {
-          "id": "Face41_21",
-          "path": "labels/Face41/21.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/194355ff-194b-45ad-93f7-891f5f4976b2",
+          "type": "info"
         },
         "details": {
-          "notes": "Dark/blank panel with no visible text or specimen content; blue strip at bottom"
+          "text": {
+            "en": "“Perhaps the greatest of all advances in vertebrate history was the development of jaws and the consequent revolution in the mode of life of early fishes.” — Alfred Sherwood Romer, 1968"
+          }
         },
         "source_cabinet_number": 21,
         "physical_cabinet_number": 21,
@@ -166568,6 +167241,31 @@
           "8ab6cd4b-7182-4a45-a52f-6c2199aca025"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/194355ff-194b-45ad-93f7-891f5f4976b2"
+        ],
+        "photo_text": "Perhaps the greatest of all advances in vertebrate history was the development of jaws and the consequent revolution in the mode of life of early fishes. Alfred Sherwood Romer, 1968. Coho salmon. Oncorhynchus kisutch.",
+        "specimens": [
+          {
+            "scientificName": "Oncorhynchus kisutch",
+            "commonName": "Coho salmon",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 346,
+            "image_url": "https://github.com/user-attachments/assets/194355ff-194b-45ad-93f7-891f5f4976b2",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "7+\n\" Perhaps the greatest of al l advances in vertebrate history was\nthe development of jaws and the consequent Trvolution\nin the mode ol life of early £ishes.\"",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/194355ff-194b-45ad-93f7-891f5f4976b2",
+        "photo_text_review_status": "reviewed_against_image",
         "preview_layer": "exhibit"
       }
     },
@@ -166609,25 +167307,22 @@
         },
         "fixture_id": "34cab06c-2dab-4039-98a4-10192d0b2692",
         "image": {
-          "id": "Face41_22",
-          "path": "labels/Face41/22.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/f6a8763c-7fd9-4eaf-966e-10d087514888",
+          "type": "info"
         },
         "specimens": [
           {
-            "scientificName": "Oncorhynchus kisutch",
-            "commonName": "Coho salmon",
+            "scientificName": "Chauliodus sloani",
+            "commonName": "Sloane's viperfish",
             "specimenType": null,
             "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Labeled on photograph; photo credit: Ernest Keeley"
+            "catalogNumber": null
           }
         ],
         "details": {
           "text": {
-            "en": "\"Perhaps the greatest of all advances in vertebrate history was the development of jaws and the consequent revolution in the mode of life of early fishes.\" — Alfred Sherwood Romer, 1968"
-          },
-          "notes": "Header panel with large quote text, photograph of a Coho salmon head on right side, and a grey rectangle (possibly obscured or placeholder) in upper left corner. Photo credit 'Ernest Keeley' in small text at bottom right."
+            "en": ""
+          }
         },
         "source_cabinet_number": 22,
         "physical_cabinet_number": 22,
@@ -166639,6 +167334,33 @@
           "6732a209-96ce-45b6-8a0a-974c070f844f"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f6a8763c-7fd9-4eaf-966e-10d087514888"
+        ],
+        "photo_text": "Stomiiformes. Bristlemouths and dragonfishes. Chordata, Craniata, Actinopterygii, Teleostei, Stenopterygii, Stomiiformes. Sloane's viperfish. Chauliodus sloani.",
+        "image_transcriptions": [
+          {
+            "issue_number": 347,
+            "image_url": "https://github.com/user-attachments/assets/f6a8763c-7fd9-4eaf-966e-10d087514888",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Chordats\nCran&ita\nActinopterygii\nTeleostei\nstenopterygii\n- Stomiiformes\nr¥t\nBristlemouths and dralgonfishes",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/f6a8763c-7fd9-4eaf-966e-10d087514888",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Bristlemouths and dragonfishes",
+          "tree": [
+            "Chordata",
+            "Craniata",
+            "Actinopterygii",
+            "Teleostei",
+            "Stenopterygii",
+            "Stomiiformes"
+          ]
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -166759,26 +167481,14 @@
         },
         "fixture_id": "b97ac256-a146-4c94-865a-5d71cae2a91b",
         "image": {
-          "id": "Face42_02",
-          "path": "labels/Face42/02.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/be128c6c-1009-40ff-8c04-528c8b950dc1",
+          "type": "info"
         },
-        "taxonomy": {
-          "family_name": "Esocidae",
-          "common_group_name": "Pikes and muskies"
-        },
-        "specimens": [
-          {
-            "scientificName": "Esox lucius",
-            "commonName": "Pikes",
-            "specimenType": null,
-            "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Shown in photograph; photo credit Bas Kers"
-          }
-        ],
+        "specimens": [],
         "details": {
-          "notes": "Header label for family Esocidae. Text reads 'Inside the cabinet' on left side."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 2,
         "physical_cabinet_number": 2,
@@ -166790,6 +167500,22 @@
           "98a12df3-2946-4254-ba89-306755c1819d"
         ],
         "marker_bearing": 62.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/be128c6c-1009-40ff-8c04-528c8b950dc1"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 323,
+            "image_url": "https://github.com/user-attachments/assets/be128c6c-1009-40ff-8c04-528c8b950dc1",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/be128c6c-1009-40ff-8c04-528c8b950dc1",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -171930,29 +172656,14 @@
         },
         "fixture_id": "721ecb13-7ef9-495c-8b66-5dd3661ba552",
         "image": {
-          "id": "Face45_07",
-          "path": "labels/Face45/07.jpg",
+          "url": "https://github.com/user-attachments/assets/8b1c1add-05c0-475b-935a-3764c485e043",
           "type": "info"
         },
-        "taxonomy": {
-          "family_name": "Pleuronectidae",
-          "common_group_name": "Righteye flounders"
-        },
-        "specimens": [
-          {
-            "scientificName": null,
-            "commonName": "Righteye flounders",
-            "specimenType": null,
-            "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Family Pleuronectidae. Photo credit: Brian Smith"
-          }
-        ],
+        "specimens": [],
         "details": {
           "text": {
-            "en": "Oddly enough, some flounders are “right-eyed,” meaning their left eye has migrated across their heads to the right side, and some are “left-eyed,” meaning their right eye has migrated to the left."
-          },
-          "notes": "Info panel with narrative text about flounder eye migration"
+            "en": ""
+          }
         },
         "source_cabinet_number": 7,
         "physical_cabinet_number": 7,
@@ -171964,6 +172675,22 @@
           "7fccf6d6-27c4-40b0-95d8-2a7b356075df"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/8b1c1add-05c0-475b-935a-3764c485e043"
+        ],
+        "photo_text": "",
+        "image_transcriptions": [
+          {
+            "issue_number": 324,
+            "image_url": "https://github.com/user-attachments/assets/8b1c1add-05c0-475b-935a-3764c485e043",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/8b1c1add-05c0-475b-935a-3764c485e043",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
         "preview_layer": "exhibit"
       }
     },
@@ -172075,12 +172802,13 @@
         },
         "fixture_id": "16ea2359-2799-4bb6-b6ed-3b83ec9c9872",
         "image": {
-          "id": "Face45_09",
-          "path": "labels/Face45/09.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/e3ce669a-8018-4f51-9a8d-099ef42bc794",
+          "type": "info"
         },
         "details": {
-          "notes": "Dark/blank panel with no visible text or specimen content. Blue strip along bottom edge consistent with other panels in this face."
+          "text": {
+            "en": "Oddly enough, some flounders are “right-eyed,” meaning their left eye has migrated across their heads to the right side, and some are “left-eyed,” meaning their right eye has migrated to the left."
+          }
         },
         "source_cabinet_number": 9,
         "physical_cabinet_number": 9,
@@ -172092,6 +172820,27 @@
           "b13fefa4-9bb0-493a-8010-54b1fd356f75"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/e3ce669a-8018-4f51-9a8d-099ef42bc794"
+        ],
+        "photo_text": "Oddly enough, some flounders are “right-eyed,” meaning their left eye has migrated across their heads to the right side, and some are “left-eyed,” meaning their right eye has migrated to the left. Righteye flounders. Pleuronectidae.",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 348,
+            "image_url": "https://github.com/user-attachments/assets/e3ce669a-8018-4f51-9a8d-099ef42bc794",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Oddly enough, some flounders are \"right*yed,\"\nmeaning their left eye has migrated across their\nheads to the right side, and some are \"left-eyed,\"\nmeaning their right eye has migrated to the left.",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/e3ce669a-8018-4f51-9a8d-099ef42bc794",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "family_name": "Pleuronectidae",
+          "common_group_name": "Righteye flounders"
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -179610,35 +180359,22 @@
         },
         "fixture_id": "ec27a960-385d-4a7a-9317-5b0c522fb068",
         "image": {
-          "id": "Face49_26",
-          "path": "labels/Face49/26.jpg",
-          "type": "header"
-        },
-        "taxonomy": {
-          "family_name": "Anarhichadidae",
-          "tree": [
-            "Chordata",
-            "Craniata",
-            "Actinopterygii",
-            "Teleostei",
-            "Acanthopterygii",
-            "Percifomes",
-            "Blenniidae",
-            "Anarhichadidae"
-          ]
+          "url": "https://github.com/user-attachments/assets/1ee331c6-713f-43b7-94cd-32555cb8ea58",
+          "type": "info"
         },
         "specimens": [
           {
-            "scientificName": "Anarrhichthys ocellatus",
-            "commonName": "Wolf eel",
+            "scientificName": "Anarhichas lupus",
+            "commonName": "Atlantic wolffish",
             "specimenType": null,
             "presence": "referenced",
-            "catalogNumber": null,
-            "notes": "Photo caption identifying species; photographer credit: Ronald DeCloux"
+            "catalogNumber": null
           }
         ],
         "details": {
-          "notes": "Continuation of the Blenniidae/Anarhichadidae header panel. Shows taxonomy tree and blue-toned photograph of a wolf eel. Partial letter 's' visible at far left (end of 'Wolffishes' from previous panel). Note: taxonomy tree on image reads 'Percifomes' (possible typo on exhibit for Perciformes)."
+          "text": {
+            "en": ""
+          }
         },
         "source_cabinet_number": 26,
         "physical_cabinet_number": 26,
@@ -179650,6 +180386,25 @@
           "649fac2d-de19-4b61-9982-800978d72729"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/1ee331c6-713f-43b7-94cd-32555cb8ea58"
+        ],
+        "photo_text": "Atlantic wolffish. Anarhichas lupus.",
+        "image_transcriptions": [
+          {
+            "issue_number": 303,
+            "image_url": "https://github.com/user-attachments/assets/1ee331c6-713f-43b7-94cd-32555cb8ea58",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Ll",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/1ee331c6-713f-43b7-94cd-32555cb8ea58",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "family_name": "Anarhichadidae"
+        },
         "preview_layer": "exhibit"
       }
     },
@@ -222730,6 +223485,1413 @@
         ]
       },
       "id": "2c2ce243-517b-5e08-99ae-ba9a914bacf0",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.07"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_07"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "00dead78-0113-4f5b-86f6-05c4fa7e3678"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/304",
+        "source_issue_number": 304,
+        "source_issue_title": "Location: Cabinet 37.07 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.07\n\nRelated fixture, if any: Cabinet 37.07\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_07"
+        ],
+        "fixture_id": "00dead78-0113-4f5b-86f6-05c4fa7e3678",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.07"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/17d34bcd-a675-4f68-9431-94d90fcf0c42",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/17d34bcd-a675-4f68-9431-94d90fcf0c42"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Odonata. Dragonflies and damselflies. Calopterygidae, Lestidae, Coenagrionidae, Petaluridae, Aeshnidae, Gomphidae, Cordulegastridae, Macromiidae, Corduliidae, Libellulidae.",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 304,
+            "image_url": "https://github.com/user-attachments/assets/17d34bcd-a675-4f68-9431-94d90fcf0c42",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "IB4VELOPFS)\nCALYOThYGIDAE\n, COENAGRTONIDAE\nPETALUKtDAE\nCOADULEGAsfRID\n, MACROMIIDAE\n., COROUUIDAE\nOdonata\nDragonflies ai",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/17d34bcd-a675-4f68-9431-94d90fcf0c42",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Dragonflies and damselflies"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504336,
+          49.2635792
+        ]
+      },
+      "id": "776c3ae1-fd97-5e54-ad08-c44d0fe9f4ef",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.08"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_08"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "1f47cc33-eee6-4a57-a451-6f5c748761a4"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/305",
+        "source_issue_number": 305,
+        "source_issue_title": "Location: Cabinet 37.08 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.08\n\nRelated fixture, if any: Cabinet 37.08\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_08"
+        ],
+        "fixture_id": "1f47cc33-eee6-4a57-a451-6f5c748761a4",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.08"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/81057238-99b7-48f3-b58c-dd1de9a7917b",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/81057238-99b7-48f3-b58c-dd1de9a7917b"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Odonata. Dragonflies and damselflies. Eight-spotted skimmer. Libellula forensis.",
+        "specimens": [
+          {
+            "scientificName": "Libellula forensis",
+            "commonName": "Eight-spotted skimmer",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 305,
+            "image_url": "https://github.com/user-attachments/assets/81057238-99b7-48f3-b58c-dd1de9a7917b",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "ArthrowJa\nInsecta\nALYoYfERYGIDA\nSTIDAE\nOENAGRIONIDAE\nPIOPHLEBIIDAE\nETALURIDAE\nESklNIDAE\nOMPHIOAE\nRDIJLEGASTRID\nACROMIIDAE\nORDUUIDAE\nBELWLIDAE\nOdon?ta\n--k*\nEight.5iNxl¢d",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/81057238-99b7-48f3-b58c-dd1de9a7917b",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Dragonflies and damselflies"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504301,
+          49.2635745
+        ]
+      },
+      "id": "6bc398c3-c15e-5571-9a29-900b7ce9602e",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.11"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_11"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "d07af95a-58a0-4aa4-a743-b64e162caa3b"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/306",
+        "source_issue_number": 306,
+        "source_issue_title": "Location: Cabinet 37.11 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.11\n\nRelated fixture, if any: Cabinet 37.11\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_11"
+        ],
+        "fixture_id": "d07af95a-58a0-4aa4-a743-b64e162caa3b",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.11"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/b0b9da1c-9c1e-4c34-bd4c-9bc31e72c3c8",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/b0b9da1c-9c1e-4c34-bd4c-9bc31e72c3c8"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Hemiptera. True bugs.",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 306,
+            "image_url": "https://github.com/user-attachments/assets/b0b9da1c-9c1e-4c34-bd4c-9bc31e72c3c8",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "True\"bugs",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/b0b9da1c-9c1e-4c34-bd4c-9bc31e72c3c8",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "True bugs"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503945,
+          49.2635301
+        ]
+      },
+      "id": "a5f441b1-b9f9-57fd-b823-df2f239e284f",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.24"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_24"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "55642ccf-e621-4869-a578-9e87acefb4d2"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/307",
+        "source_issue_number": 307,
+        "source_issue_title": "Location: Cabinet 37.24 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.24\n\nRelated fixture, if any: Cabinet 37.24\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_24"
+        ],
+        "fixture_id": "55642ccf-e621-4869-a578-9e87acefb4d2",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.24"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/e8d996d6-ae43-49ec-806f-a657a4a70e52",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/e8d996d6-ae43-49ec-806f-a657a4a70e52"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Lepidoptera. Butterflies and moths. Microlepidoptera. Papilionidae.",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 307,
+            "image_url": "https://github.com/user-attachments/assets/e8d996d6-ae43-49ec-806f-a657a4a70e52",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "37.2\nLepidoptera\nButterflies an",
+            "confidence": 0.667,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/e8d996d6-ae43-49ec-806f-a657a4a70e52",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Butterflies and moths"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250338,
+          49.263459
+        ]
+      },
+      "id": "8492409c-45cc-55ce-bff9-9f1cf9831113",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.25"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_25"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "833b49a9-2e2a-425c-8d19-6c629fca4ebd"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/308",
+        "source_issue_number": 308,
+        "source_issue_title": "Location: Cabinet 37.25 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.25\n\nRelated fixture, if any: Cabinet 37.25\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_25"
+        ],
+        "fixture_id": "833b49a9-2e2a-425c-8d19-6c629fca4ebd",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.25"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/a2bf709d-2f6d-4c40-8333-c3e176392819",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/a2bf709d-2f6d-4c40-8333-c3e176392819"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Lepidoptera. Butterflies and moths. Hesperiidae, Pieridae, Riodinidae, Lycaenidae. Monarch butterfly. Danaus plexippus.",
+        "specimens": [
+          {
+            "scientificName": "Danaus plexippus",
+            "commonName": "Monarch butterfly",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 308,
+            "image_url": "https://github.com/user-attachments/assets/a2bf709d-2f6d-4c40-8333-c3e176392819",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "A¢kKopod\nInsecta\nHESPERIIDAE\nPIERIDAE\nRIODINIOAE\nLYCAENIDAE\nLepldoptera\n37.2\nMon4rh bu¢t¢rfy\nDAnai*plexlppu$",
+            "confidence": 0.55,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/a2bf709d-2f6d-4c40-8333-c3e176392819",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Butterflies and moths"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503342,
+          49.2634541
+        ]
+      },
+      "id": "2466f6dd-b2ab-5a2a-b087-4edb1407adda",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.06"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_06"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "b672ad78-428d-48bf-8c18-efa9e65fe2ab"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/325",
+        "source_issue_number": 325,
+        "source_issue_title": "Location: Cabinet 01.06 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.06\n\nRelated fixture, if any: Cabinet 01.06\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_06"
+        ],
+        "fixture_id": "b672ad78-428d-48bf-8c18-efa9e65fe2ab",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.06"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/9453fa4b-3d90-4352-bc4f-e8e57e4e2b63",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/9453fa4b-3d90-4352-bc4f-e8e57e4e2b63"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Bovidae. Bovids. Tetrapoda, Amniota, Mammalia, Artiodactyla, Bovidae. American bison. Bison bison.",
+        "specimens": [
+          {
+            "scientificName": "Bison bison",
+            "commonName": "American bison",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 325,
+            "image_url": "https://github.com/user-attachments/assets/9453fa4b-3d90-4352-bc4f-e8e57e4e2b63",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Tetrzpada\nAmniota\nMammalia\nArtiodactyla\n- Bovidae\nBovids",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/9453fa4b-3d90-4352-bc4f-e8e57e4e2b63",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "family_name": "Bovidae",
+          "common_group_name": "Bovids",
+          "tree": [
+            "Tetrapoda",
+            "Amniota",
+            "Mammalia",
+            "Artiodactyla",
+            "Bovidae"
+          ]
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509985,
+          49.2633671
+        ]
+      },
+      "id": "50109853-bf8f-54de-aedf-22ff4390ad93",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.07"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_07"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "2d63e88e-937c-4acb-a4b0-5a25b395c96c"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/326",
+        "source_issue_number": 326,
+        "source_issue_title": "Location: Cabinet 01.07 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.07\n\nRelated fixture, if any: Cabinet 01.07\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_07"
+        ],
+        "fixture_id": "2d63e88e-937c-4acb-a4b0-5a25b395c96c",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.07"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/6393049c-2c29-4ed9-ad37-3931b16a045a",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/6393049c-2c29-4ed9-ad37-3931b16a045a"
+        ],
+        "details": {
+          "text": {
+            "en": "Bovids include antelope, goats, sheep, mountain goats, and muskoxen."
+          }
+        },
+        "photo_text": "Bovids include antelope, goats, sheep, mountain goats, and muskoxen. Water buffalo. Bubalus bubalis.",
+        "specimens": [
+          {
+            "scientificName": "Bubalus bubalis",
+            "commonName": "Water buffalo",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 326,
+            "image_url": "https://github.com/user-attachments/assets/6393049c-2c29-4ed9-ad37-3931b16a045a",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Bovi ds i nc l u de antelope, goats, sheep,\nmountain goats, and muskoxen.\nWat&bDffaIo",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/6393049c-2c29-4ed9-ad37-3931b16a045a",
+        "photo_text_review_status": "reviewed_against_image",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509911,
+          49.2633577
+        ]
+      },
+      "id": "53f952ea-942f-593d-b38c-8fbbff4e0601",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.19"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_19"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "dad10f89-c063-4bae-85fd-6de65f2e4a9e"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/327",
+        "source_issue_number": 327,
+        "source_issue_title": "Location: Cabinet 01.19 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.19\n\nRelated fixture, if any: Cabinet 01.19\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_19"
+        ],
+        "fixture_id": "dad10f89-c063-4bae-85fd-6de65f2e4a9e",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.19"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/462eeb02-fd3f-4a12-9010-70f6289eaf9b",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/462eeb02-fd3f-4a12-9010-70f6289eaf9b"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Hubbs' beaked whale (skull). Mesoplodon carlhubbsi.",
+        "specimens": [
+          {
+            "scientificName": "Mesoplodon carlhubbsi",
+            "commonName": "Hubbs' beaked whale",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 327,
+            "image_url": "https://github.com/user-attachments/assets/462eeb02-fd3f-4a12-9010-70f6289eaf9b",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "HnbigithedTh4w]?1sknJ]il",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/462eeb02-fd3f-4a12-9010-70f6289eaf9b",
+        "photo_text_review_status": "reviewed_against_image",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508993,
+          49.2632424
+        ]
+      },
+      "id": "9c4d9681-a4c4-5652-9289-5771c078ae97",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.21"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_21"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "3218b587-1910-47c9-9fc1-07a88a12b80c"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/328",
+        "source_issue_number": 328,
+        "source_issue_title": "Location: Cabinet 01.21 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.21\n\nRelated fixture, if any: Cabinet 01.21\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_21"
+        ],
+        "fixture_id": "3218b587-1910-47c9-9fc1-07a88a12b80c",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.21"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/2fff42b4-bc85-40c8-95d1-fee962de3496",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/2fff42b4-bc85-40c8-95d1-fee962de3496"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Killer whale. Orcinus orca.",
+        "specimens": [
+          {
+            "scientificName": "Orcinus orca",
+            "commonName": "Killer whale",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 328,
+            "image_url": "https://github.com/user-attachments/assets/2fff42b4-bc85-40c8-95d1-fee962de3496",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "J4cknpFb1deDn",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/2fff42b4-bc85-40c8-95d1-fee962de3496",
+        "photo_text_review_status": "reviewed_against_image",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508842,
+          49.263223
+        ]
+      },
+      "id": "dc572462-d95b-58af-8006-bb425dda7ab9",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.12"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_12"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "fe4797d0-5ef9-4c85-b1c8-134bcc35ad26"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/343",
+        "source_issue_number": 343,
+        "source_issue_title": "Location: Cabinet 37.12 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.12\n\nRelated fixture, if any: Cabinet 37.12\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_12"
+        ],
+        "fixture_id": "fe4797d0-5ef9-4c85-b1c8-134bcc35ad26",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.12"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/d23d714e-c0e1-4e77-8151-22acd24d93da",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/d23d714e-c0e1-4e77-8151-22acd24d93da"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Cicada (cast skin with emerging adult). Tibicen chloromera.",
+        "specimens": [
+          {
+            "scientificName": "Tibicen chloromera",
+            "commonName": "Cicada",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 343,
+            "image_url": "https://github.com/user-attachments/assets/d23d714e-c0e1-4e77-8151-22acd24d93da",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "CiE&d&lcast5bnvnthaDeTp4adD]t}",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/d23d714e-c0e1-4e77-8151-22acd24d93da",
+        "photo_text_review_status": "reviewed_against_image",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503911,
+          49.2635252
+        ]
+      },
+      "id": "d134dbd7-2fe4-5689-8f0e-8c7884331ea6",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 38.22"
+        },
+        "alt_name": {
+          "en": "cabinet_face_38_22"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "bea9eebb-d74e-4b0b-91f6-0f7d98e26119"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/349",
+        "source_issue_number": 349,
+        "source_issue_title": "Location: Cabinet 38.22 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 38.22\n\nRelated fixture, if any: Cabinet 38.22\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "Picture has very low resolution",
+        "fixture_alt_names": [
+          "col_38_cab_22"
+        ],
+        "fixture_id": "bea9eebb-d74e-4b0b-91f6-0f7d98e26119",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "38.22"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/9393cc1c-607d-4c4f-b5cb-6eee5eec6ed7",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/9393cc1c-607d-4c4f-b5cb-6eee5eec6ed7"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Hymenoptera. Bees, wasps,",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 349,
+            "image_url": "https://github.com/user-attachments/assets/9393cc1c-607d-4c4f-b5cb-6eee5eec6ed7",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "ees, wasps,",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/9393cc1c-607d-4c4f-b5cb-6eee5eec6ed7",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Bees, wasps, ants, and sawflies"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503865,
+          49.2635325
+        ]
+      },
+      "id": "cfa4751c-0006-5ec3-8ec9-1b3b713d0f81",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 38.23"
+        },
+        "alt_name": {
+          "en": "cabinet_face_38_23"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "3ec0a3a3-ccb1-4a69-9e96-798eec1f9c57"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/350",
+        "source_issue_number": 350,
+        "source_issue_title": "Location: Cabinet 38.23 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 38.23\n\nRelated fixture, if any: Cabinet 38.23\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "Picture has very low resolution",
+        "fixture_alt_names": [
+          "col_38_cab_23"
+        ],
+        "fixture_id": "3ec0a3a3-ccb1-4a69-9e96-798eec1f9c57",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "38.23"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/8d718a6d-7961-4fb9-a123-41e6b55bf0a9",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/8d718a6d-7961-4fb9-a123-41e6b55bf0a9"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Ants and sawflies.",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 350,
+            "image_url": "https://github.com/user-attachments/assets/8d718a6d-7961-4fb9-a123-41e6b55bf0a9",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/8d718a6d-7961-4fb9-a123-41e6b55bf0a9",
+        "photo_text_review_status": "reviewed_against_image",
+        "taxonomy": {
+          "common_group_name": "Bees, wasps, ants, and sawflies"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503905,
+          49.2635374
+        ]
+      },
+      "id": "9aa17395-a19c-5fe9-8b4f-940a422f41f5",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Dinosaur Footprint Fossil 1"
+        },
+        "alt_name": {
+          "en": "dinosaur_footprint_fossil_1"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "fossil",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/358",
+        "source_issue_number": 358,
+        "source_issue_title": "Location: Dinosaur Footprint Fossil 1",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Located 110 cm to the right of Footprints in Time Interactive Display\n\nRelated fixture, if any: Footprints in Time Interactive Display\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Fossil is 170cm in width",
+        "contributor_notes": "",
+        "image": {
+          "url": "https://github.com/user-attachments/assets/d9a3caa9-51be-4ae0-9dae-148aacb6f90c",
+          "type": "fossil"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/d9a3caa9-51be-4ae0-9dae-148aacb6f90c"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 358,
+            "image_url": "https://github.com/user-attachments/assets/d9a3caa9-51be-4ae0-9dae-148aacb6f90c",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Sure Hands\nèanand Dry",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/d9a3caa9-51be-4ae0-9dae-148aacb6f90c",
+        "photo_text_review_status": "blank_or_no_legible_exhibit_text",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501543,
+          49.2636694
+        ]
+      },
+      "id": "a5a0f153-a8d4-587e-9d25-cebd1b8b9482",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Dinosaur Footprint Fossil 2"
+        },
+        "alt_name": {
+          "en": "dinosaur_footprint_fossil_2"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "fossil",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/359",
+        "source_issue_number": 359,
+        "source_issue_title": "Location: Dinosaur Footprint Fossil 2",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: 46cm to the right of Dinosaur Footprint Fossil 1\n\nRelated fixture, if any: Dinosaur Footprint Fossil 1\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Fossil is 279cm in width",
+        "contributor_notes": "",
+        "image": {
+          "url": "https://github.com/user-attachments/assets/4b2f48be-3138-4d45-a91d-d5e6a53f93b8",
+          "type": "fossil"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/4b2f48be-3138-4d45-a91d-d5e6a53f93b8"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "How many toes does this dinosaur have? What were these dinosaurs doing? Do these footprints look familiar?",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 359,
+            "image_url": "https://github.com/user-attachments/assets/4b2f48be-3138-4d45-a91d-d5e6a53f93b8",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "",
+            "confidence": 0,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/4b2f48be-3138-4d45-a91d-d5e6a53f93b8",
+        "photo_text_review_status": "reviewed_against_image",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250137,
+          49.2636483
+        ]
+      },
+      "id": "a901a4a1-4904-5545-933d-2007f3b29055",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Dinosaur Footprint Fossil 3"
+        },
+        "alt_name": {
+          "en": "dinosaur_footprint_fossil_3"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "fossil",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/360",
+        "source_issue_number": 360,
+        "source_issue_title": "Location: Dinosaur Footprint Fossil 3",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Located 51cm to the right of Dinosaur Footprint Fossil 2\n\nRelated fixture, if any: Dinosaur Footprint Fossil 2\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Fossil is 230cm in width",
+        "contributor_notes": "",
+        "image": {
+          "url": "https://github.com/user-attachments/assets/344cac61-b904-410a-af3a-717f6ee1a877",
+          "type": "fossil"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/344cac61-b904-410a-af3a-717f6ee1a877"
+        ],
+        "details": {
+          "text": {
+            "en": ""
+          }
+        },
+        "photo_text": "Footprints in Time.",
+        "specimens": [],
+        "image_transcriptions": [
+          {
+            "issue_number": 360,
+            "image_url": "https://github.com/user-attachments/assets/344cac61-b904-410a-af3a-717f6ee1a877",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "E40()tprints\niii'l\"ime",
+            "confidence": 0.5,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/344cac61-b904-410a-af3a-717f6ee1a877",
+        "photo_text_review_status": "reviewed_against_image",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501176,
+          49.2636239
+        ]
+      },
+      "id": "8e22ae02-6647-5631-b6c9-f19d6f2c8baf",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Water Painting Activity"
+        },
+        "alt_name": {
+          "en": "water_painting_activity"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "activity",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/361",
+        "source_issue_number": 361,
+        "source_issue_title": "Location: Water Painting Activity",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Located 458cm to the right of Dinosaur Footprint Fossil 3\n\nRelated fixture, if any: Dinosaur Footprint Fossil 3\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2500804,
+          49.2635785
+        ]
+      },
+      "id": "b768c638-e901-5a68-a6e4-1d950c57c81e",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.03"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_03"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "74dcb7cf-0f88-4783-9e00-be2100f1b535"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/369",
+        "source_issue_number": 369,
+        "source_issue_title": "Location: Cabinet 01.03 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.03\n\nRelated fixture, if any: Cabient 01.03\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_03"
+        ],
+        "fixture_id": "74dcb7cf-0f88-4783-9e00-be2100f1b535",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.03"
+        },
+        "image": {
+          "url": "https://github.com/user-attachments/assets/45a750cc-624e-4fcd-b71b-3256ac148e5b",
+          "type": "info"
+        },
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/45a750cc-624e-4fcd-b71b-3256ac148e5b"
+        ],
+        "details": {
+          "text": {
+            "en": "The Irish elk is an extinct giant deer that lived in what is now Eurasia from about 450,000 years ago to 7,700 years ago. Its antlers reached up to 3.5 metres across, the largest of any known deer. Its closest living relative is the European fallow deer."
+          }
+        },
+        "photo_text": "Megaloceros giganteus (skull). Irish elk. The Irish elk is an extinct giant deer that lived in what is now Eurasia from about 450,000 years ago to 7,700 years ago. Its antlers reached up to 3.5 metres across, the largest of any known deer. Its closest living relative is the European fallow deer. Caribou. Moose. European fallow deer.",
+        "specimens": [
+          {
+            "scientificName": "Megaloceros giganteus",
+            "commonName": "Irish elk",
+            "specimenType": null,
+            "presence": "referenced",
+            "catalogNumber": null
+          }
+        ],
+        "image_transcriptions": [
+          {
+            "issue_number": 369,
+            "image_url": "https://github.com/user-attachments/assets/45a750cc-624e-4fcd-b71b-3256ac148e5b",
+            "engine": "Apple Vision accurate (en-US)",
+            "text": "Megaloceros &ganteus (skull)\nIrish elk\nThis exhibit is supported by Eric Watts\nLook up.\nThe I ri sh el k is an extinct giant deer\nthat lived in what is now Eurasia\nfrom about 450,000 years ago to\n7,700 years ago. Its antlers reached\nup to 3.5 metres across, the largest\nof any known deer. Its closest living\nrelative is the European fallow deer.\nRangifer tarandus\nAlces alces\nMoose\nDerek Tan\nMetres",
+            "confidence": 0.531,
+            "review_status": "machine_transcribed_unreviewed"
+          }
+        ],
+        "photo_text_source_url": "https://github.com/user-attachments/assets/45a750cc-624e-4fcd-b71b-3256ac148e5b",
+        "photo_text_review_status": "reviewed_against_image",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2510217,
+          49.2633962
+        ]
+      },
+      "id": "7823262d-53b7-53da-83d2-191b11e0659a",
       "feature_type": "exhibit"
     }
   ]

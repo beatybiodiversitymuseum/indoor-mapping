@@ -13,6 +13,38 @@
 
 ## Exhibit presentation and OCR
 
+Agents must follow the approval and text replacement policy in
+`AGENTS.md` when handling new exhibit images. The steps below describe the
+current approved batch.
+
+For an approved primary image replacement, run OCR on the exact selected image,
+then review the result against that image. Apply the reviewed exhibit prose to
+`details.text.en`, visible captions and labels to `photo_text`, and identified
+specimens to the existing `specimens` structure. Remove old `details.notes`,
+`specimens`, and `taxonomy` values that the replacement image does not
+support. Preserve the feature ID, geometry, fixture association, and public
+reference code. The raw OCR remains in `image_transcriptions` for audit, but
+search uses reviewed text only. Each applied record stores
+`photo_text_source_url` and `photo_text_review_status` so future replacements
+can detect stale text.
+
+The 15 selected, byte-identical blank placeholder submissions have empty
+searchable image text and specimen lists by explicit reviewer choice. Images
+with no legible exhibit text are handled the same way; unrelated signage is
+excluded. The six unchecked image replacements remain pending and retain their
+current image and text. To repeat the approved-image pass:
+
+```sh
+python3 scripts/extract_issue_image_text.py --issues /tmp/indoor-issues.json --cache /tmp/indoor-photo-cache --approved-geojson geojson/exhibit.geojson --vision-python /path/to/python-with-PyObjC --workers 1 --output reports/approved-issue-image-transcriptions.json
+python3 scripts/apply_approved_issue_image_text.py
+python3 scripts/validate_geojson.py
+npm run check
+```
+
+The reviewed strings in `apply_approved_issue_image_text.py` must be checked
+against any newly selected image before rerunning the apply step. The script
+asserts that its issue set matches the OCR report exactly.
+
 Window exhibits appear under “Exhibits at this spot” when selecting their cabinet. They use the normal exhibit card and layer behavior. GitHub provenance stays in the data and is not displayed in the visitor interface.
 
 One narrative is selected per exhibit, using OCR confidence and text length to prefer a legible detail image over a noisy overview. Very short fragments are excluded when a substantive transcription exists. The overview remains the card image; repeated per-photo narratives and detail-view cards are not rendered or indexed. Raw OCR and photo references remain available internally for review. Confidence is an OCR estimate, not a human verification of scientific names.

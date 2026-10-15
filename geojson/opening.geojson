@@ -798,6 +798,144 @@
       },
       "id": "185f3072-d4c3-5fe4-810b-9624990b86be",
       "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Men's Restroom Entrance"
+        },
+        "alt_name": {
+          "en": "men_s_restroom_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/355",
+        "source_issue_number": 355,
+        "source_issue_title": "Location: Men's Restroom Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Door is located 2.4m to the left of the east theatre entrance\n\nRelated fixture, if any: Theatre East Doors\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Door is 110cm in width",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507953,
+            49.2632113
+          ],
+          [
+            -123.250782,
+            49.2632159
+          ]
+        ]
+      },
+      "id": "68fd2ea6-d125-5ad5-a486-7e08a5979226",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Handicap Restroom Entrance"
+        },
+        "alt_name": {
+          "en": "handicap_restroom_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/356",
+        "source_issue_number": 356,
+        "source_issue_title": "Location: Handicap Restroom Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Door is located 1.2m to the left of the men's restroom entrance\n\nRelated fixture, if any: Men's Restroom Entrance\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Door is 110cm in width",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507679,
+            49.2632212
+          ],
+          [
+            -123.2507544,
+            49.2632259
+          ]
+        ]
+      },
+      "id": "315546be-d07a-5f11-9746-6d1620bf0ecf",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Women's Restroom Entrance"
+        },
+        "alt_name": {
+          "en": "women_s_restroom_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/357",
+        "source_issue_number": 357,
+        "source_issue_title": "Location: Women's Restroom Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Door is placed directly to the left of handicap restroom door on the perpendicular wall\n\nRelated fixture, if any: Handicap Restroom Entrance\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Door is 110cm in width",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507538,
+            49.263229
+          ],
+          [
+            -123.250761,
+            49.2632377
+          ]
+        ]
+      },
+      "id": "d2ece1e6-acd8-5821-bbaf-7bfd8e5b5433",
+      "feature_type": "opening"
     }
   ]
 }
