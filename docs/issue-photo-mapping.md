@@ -11,6 +11,17 @@
 
 `reports/issue-location-reconciliation.json` contains before/after coordinates, reference feature IDs, and unresolved matches (currently none). `reports/issue-image-transcriptions.json` records source URLs, OCR engine, confidence, and text. An association being resolved does not mean the OCR text is verified.
 
+## Public exhibit source collections
+
+- [Labels](http://explore.beatymuseum.ubc.ca/docs/labels/)
+- [Windows](https://explore.beatymuseum.ubc.ca/docs/windows/)
+- [Shadowboxes](https://explore.beatymuseum.ubc.ca/docs/shadowboxes/)
+- [Drawers](https://explore.beatymuseum.ubc.ca/docs/drawers/)
+
+These collections are useful references when checking map images and
+transcriptions. We have not determined how many entries in each collection are
+fully updated; verify each exhibit's image and text individually.
+
 ## Exhibit presentation and OCR
 
 Agents must follow the approval and text replacement policy in
