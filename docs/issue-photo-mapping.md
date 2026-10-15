@@ -22,6 +22,45 @@ These collections are useful references when checking map images and
 transcriptions. We have not determined how many entries in each collection are
 fully updated; verify each exhibit's image and text individually.
 
+### Automated cross-comparison
+
+`scripts/audit_exhibit_images.py` inventories the full-size images linked by
+all four collection pages and matches them to map records. Exact archive paths
+take precedence; otherwise it uses the explicit public reference code. A
+combined label such as `Face37/24.25.jpg` can match both 37.24 and 37.25.
+Ambiguous and unmatched records stay in the review queue. The script never
+edits `geojson/exhibit.geojson`.
+
+```sh
+python3 scripts/audit_exhibit_images.py
+python3 scripts/audit_exhibit_images.py --fetch-images --limit 50 --ocr --output /tmp/exhibit-audit-50.json --markdown /tmp/exhibit-audit-50.md
+python3 scripts/audit_exhibit_images.py --fetch-images --limit 0 --refresh --previous /tmp/exhibit-audit-50.json --output /tmp/exhibit-audit-next.json --markdown /tmp/exhibit-audit-next.md
+```
+
+The first command refreshes the source inventory without downloading the image
+set. The second downloads up to 50 matched comparisons, prioritizing map
+records with issue photos, and uses local Tesseract for OCR. Install Pillow in
+the Python environment to include dimensions, EXIF metadata, image contrast,
+and a rough full/crop similarity score. The last command refetches all matched
+images and flags source byte changes at the same URL against a previous audit;
+it can take considerable time and bandwidth. `--collection labels` (or
+`windows`, `shadowboxes`, `drawers`) narrows a run. `--html-dir DIR` reads local
+copies of the four index pages for an offline inventory.
+
+The JSON report holds the inventory, hashes, dates, dimensions, rough visual
+score, and unreviewed OCR. The Markdown report has separate checkboxes for
+display image, OCR evidence, and reviewed searchable text on each comparison
+that needs a decision. When current-image OCR matches a different source code,
+the report marks an identity conflict and asks for exhibit identity to be
+checked first. A same-code URL match is only a candidate: issue photos may
+be shifted or swapped across neighboring labels. Downloaded images remain in `/tmp/indoor-public-image-audit`
+by default; use `--cache` to keep them elsewhere. `--refresh` bypasses that
+local cache. HTTP `Last-Modified` and EXIF dates are only clues about file
+handling, not proof that exhibit content was updated. Neither the similarity
+score nor OCR token overlap establishes identity, freshness, or approval.
+Inspect combined panels and details by eye, then follow `AGENTS.md` before
+changing a primary image or its searchable text.
+
 ## Exhibit presentation and OCR
 
 Agents must follow the approval and text replacement policy in

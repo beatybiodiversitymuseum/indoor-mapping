@@ -8,3 +8,4 @@ out/
 .deploy-artifact/
 .deploy-artifact.new.*/
 .data/
+__pycache__/
