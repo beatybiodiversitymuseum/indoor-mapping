@@ -31,8 +31,9 @@ can detect stale text.
 The 15 selected, byte-identical blank placeholder submissions have empty
 searchable image text and specimen lists by explicit reviewer choice. Images
 with no legible exhibit text are handled the same way; unrelated signage is
-excluded. The six unchecked image replacements remain pending and retain their
-current image and text. To repeat the approved-image pass:
+excluded. Six other submissions (#310, #312, #351–#354) were reviewed as
+duplicates or lower-quality versions of current images; their current image
+and text were retained. To repeat the approved-image pass:
 
 ```sh
 python3 scripts/extract_issue_image_text.py --issues /tmp/indoor-issues.json --cache /tmp/indoor-photo-cache --approved-geojson geojson/exhibit.geojson --vision-python /path/to/python-with-PyObjC --workers 1 --output reports/approved-issue-image-transcriptions.json

@@ -1,8 +1,8 @@
 # Issue image review
 
-56 submitted images: 16 accepted for features with no image, 34 approved replacements, 6 pending replacements. Existing archive images stay in place unless individually replaced.
+56 submitted images: 16 accepted for features with no image, 34 approved replacements, and 6 reviewed duplicate or lower-quality submissions whose current images were retained. Existing archive images stay in place unless individually replaced.
 
-The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-mapping/pull/374) records the checked choices. The comparisons below show the current map image beside each still-pending photo.
+The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-mapping/pull/374) records the replacement choices. The comparisons below show why the remaining six submissions were not used.
 
 | Issue | Location | Incoming image | Status |
 | --- | --- | --- | --- |
@@ -13,9 +13,9 @@ The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-ma
 | [#307](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/307) | Cabinet Face 37.24 | [View image 1](https://github.com/user-attachments/assets/e8d996d6-ae43-49ec-806f-a657a4a70e52) | accepted: empty image slot |
 | [#308](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/308) | Cabinet Face 37.25 | [View image 1](https://github.com/user-attachments/assets/a2bf709d-2f6d-4c40-8333-c3e176392819) | accepted: empty image slot |
 | [#309](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/309) | Cabinet Face 36.02 | [View image 1](https://github.com/user-attachments/assets/c73ceb97-f0a2-4fc8-a2d3-5c3e5e13a39a) | approved replacement |
-| [#310](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/310) | Cabinet Face 36.07 | [View image 1](https://github.com/user-attachments/assets/a82225d3-b40f-4320-92dd-37963ad90f62) · [Compare](#issue-310) | pending replacement |
+| [#310](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/310) | Cabinet Face 36.07 | [View image 1](https://github.com/user-attachments/assets/a82225d3-b40f-4320-92dd-37963ad90f62) · [Compare](#issue-310) | duplicate; current retained |
 | [#311](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/311) | Cabinet Face 36.08 | [View image 1](https://github.com/user-attachments/assets/f57d7e8e-cb70-412f-9333-214e064cc05e) | approved replacement |
-| [#312](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/312) | Cabinet Face 36.10 | [View image 1](https://github.com/user-attachments/assets/5522877e-9757-4016-95c9-342ce7292e25) · [Compare](#issue-312) | pending replacement |
+| [#312](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/312) | Cabinet Face 36.10 | [View image 1](https://github.com/user-attachments/assets/5522877e-9757-4016-95c9-342ce7292e25) · [Compare](#issue-312) | duplicate; current retained |
 | [#313](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/313) | Cabinet Face 17.08 | [View image 1](https://github.com/user-attachments/assets/8d3adc29-c5f5-4e44-b002-b7750a83ed84) | approved replacement |
 | [#314](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/314) | Cabinet Face 19.03 | [View image 1](https://github.com/user-attachments/assets/d8f8c74b-904e-4cf3-b25e-ab3745eb3819) | approved replacement |
 | [#315](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/315) | Cabinet Face 35.06 | [View image 1](https://github.com/user-attachments/assets/f27ed566-7414-4ca9-88ad-6027306a302e) | approved replacement |
@@ -54,16 +54,16 @@ The [PR approval checklist](https://github.com/beatybiodiversitymuseum/indoor-ma
 | [#348](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/348) | Cabinet Face 45.09 | [View image 1](https://github.com/user-attachments/assets/e3ce669a-8018-4f51-9a8d-099ef42bc794) | approved replacement |
 | [#349](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/349) | Cabinet Face 38.22 | [View image 1](https://github.com/user-attachments/assets/9393cc1c-607d-4c4f-b5cb-6eee5eec6ed7) | accepted: empty image slot |
 | [#350](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/350) | Cabinet Face 38.23 | [View image 1](https://github.com/user-attachments/assets/8d718a6d-7961-4fb9-a123-41e6b55bf0a9) | accepted: empty image slot |
-| [#351](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/351) | Cabinet Face 37.07 | [View image 1](https://github.com/user-attachments/assets/08f0bad2-82a9-4992-adc7-1d9358e8db1f) · [Compare](#issue-351) | pending replacement |
-| [#352](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/352) | Cabinet Face 37.08 | [View image 1](https://github.com/user-attachments/assets/3e850e72-540a-46aa-a997-884a9439fa2e) · [Compare](#issue-352) | pending replacement |
-| [#353](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/353) | Cabinet Face 37.24 | [View image 1](https://github.com/user-attachments/assets/761d31c1-66e4-4f99-b92d-8cc04e7c86aa) · [Compare](#issue-353) | pending replacement |
-| [#354](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/354) | Cabinet Face 37.25 | [View image 1](https://github.com/user-attachments/assets/8579c013-1b29-4883-9b38-2ba4487b3e10) · [Compare](#issue-354) | pending replacement |
+| [#351](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/351) | Cabinet Face 37.07 | [View image 1](https://github.com/user-attachments/assets/08f0bad2-82a9-4992-adc7-1d9358e8db1f) · [Compare](#issue-351) | low-resolution duplicate; current retained |
+| [#352](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/352) | Cabinet Face 37.08 | [View image 1](https://github.com/user-attachments/assets/3e850e72-540a-46aa-a997-884a9439fa2e) · [Compare](#issue-352) | low-resolution duplicate; current retained |
+| [#353](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/353) | Cabinet Face 37.24 | [View image 1](https://github.com/user-attachments/assets/761d31c1-66e4-4f99-b92d-8cc04e7c86aa) · [Compare](#issue-353) | low-resolution duplicate; current retained |
+| [#354](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/354) | Cabinet Face 37.25 | [View image 1](https://github.com/user-attachments/assets/8579c013-1b29-4883-9b38-2ba4487b3e10) · [Compare](#issue-354) | low-resolution duplicate; current retained |
 | [#358](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/358) | Dinosaur Footprint Fossil 1 | [View image 1](https://github.com/user-attachments/assets/d9a3caa9-51be-4ae0-9dae-148aacb6f90c) | accepted: empty image slot |
 | [#359](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/359) | Dinosaur Footprint Fossil 2 | [View image 1](https://github.com/user-attachments/assets/4b2f48be-3138-4d45-a91d-d5e6a53f93b8) | accepted: empty image slot |
 | [#360](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/360) | Dinosaur Footprint Fossil 3 | [View image 1](https://github.com/user-attachments/assets/344cac61-b904-410a-af3a-717f6ee1a877) | accepted: empty image slot |
 | [#369](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/369) | Cabinet Face 01.03 | [View image 1](https://github.com/user-attachments/assets/45a750cc-624e-4fcd-b71b-3256ac148e5b) | accepted: empty image slot |
 
-## Pending comparisons
+## Reviewed duplicate comparisons
 
 The six incoming images below do not show new exhibit content. #351–#354 are
 175×85 thumbnails of the same panels shown by the current 1920-pixel-wide
@@ -71,13 +71,12 @@ map photos. The museum archive also has complete 2061×500 panels for
 [37.07–37.08](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/07.08.jpg)
 and [37.24–37.25](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/24.25.jpg).
 #310 and #312 are photographs of the same panels as their current images.
-Recommendation: retain the current primary images for all six. These issues
-remain open until that choice is confirmed; no image or searchable text has
-been changed for them.
+The reviewer chose to retain the current primary images for all six. No image
+or searchable text was changed for them.
 
 ### Issue 310
 
-**Cabinet Face 36.07** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/310)
+**Cabinet Face 36.07** · [Issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/310)
 
 The incoming photograph and [full-size archive image](https://explore.beatymuseum.ubc.ca/docs/labels/Face36/07.jpg)
 show the same rock-shield moss panel. The current archive image is cleaner.
@@ -89,7 +88,7 @@ show the same rock-shield moss panel. The current archive image is cleaner.
 
 ### Issue 312
 
-**Cabinet Face 36.10** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/312)
+**Cabinet Face 36.10** · [Issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/312)
 
 The incoming photograph and [full-size archive image](https://explore.beatymuseum.ubc.ca/docs/labels/Face36/10.jpg)
 show the same Penicillium/medical-treatment panel already selected from #342.
@@ -102,7 +101,7 @@ is cleaner. [Open incoming photograph at original size](https://github.com/user-
 
 ### Issue 351
 
-**Cabinet Face 37.07** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/351)
+**Cabinet Face 37.07** · [Issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/351)
 
 The incoming 175×85 thumbnail is the left side of the
 [full-size Odonata panel](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/07.08.jpg).
@@ -115,7 +114,7 @@ shows this side more clearly.
 
 ### Issue 352
 
-**Cabinet Face 37.08** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/352)
+**Cabinet Face 37.08** · [Issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/352)
 
 The incoming 175×85 thumbnail is the right side of the
 [full-size Odonata panel](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/07.08.jpg).
@@ -128,7 +127,7 @@ shows this side more clearly.
 
 ### Issue 353
 
-**Cabinet Face 37.24** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/353)
+**Cabinet Face 37.24** · [Issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/353)
 
 The incoming 175×85 thumbnail is the left side of the
 [full-size Lepidoptera panel](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/24.25.jpg).
@@ -141,7 +140,7 @@ shows this side more clearly.
 
 ### Issue 354
 
-**Cabinet Face 37.25** · [Open issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/354)
+**Cabinet Face 37.25** · [Issue](https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/354)
 
 The incoming 175×85 thumbnail is the right side of the
 [full-size Lepidoptera panel](https://explore.beatymuseum.ubc.ca/docs/labels/Face37/24.25.jpg).
