@@ -84822,6 +84822,182 @@
     {
       "type": "Feature",
       "properties": {
+        "category": "restroom",
+        "accessibility": null,
+        "name": {
+          "en": "Men's Restroom"
+        },
+        "alt_name": {
+          "en": "men_s_restroom"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/370",
+        "source_issue_number": 370,
+        "source_issue_title": "Location: Men's Restroom",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507849,
+          49.2632087
+        ]
+      },
+      "id": "dc895c7d-7d49-5dbf-adfa-96c10d3c634a",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restroom",
+        "accessibility": "wheelchair",
+        "name": {
+          "en": "Handicap Restroom"
+        },
+        "alt_name": {
+          "en": "handicap_restroom"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/371",
+        "source_issue_number": 371,
+        "source_issue_title": "Location: Handicap Restroom",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507567,
+          49.2632187
+        ]
+      },
+      "id": "d3d976de-b5b2-5baf-9611-e0f6d1368f94",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "restroom",
+        "accessibility": null,
+        "name": {
+          "en": "Women's Restroom"
+        },
+        "alt_name": {
+          "en": "women_s_restroom"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/372",
+        "source_issue_number": 372,
+        "source_issue_title": "Location: Women's Restroom",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2507473,
+          49.2632369
+        ]
+      },
+      "id": "9dec45a8-95e8-574c-a54f-a198b8b97892",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "shop",
+        "accessibility": null,
+        "name": {
+          "en": "Gift Shop"
+        },
+        "alt_name": {
+          "en": "gift_shop"
+        },
+        "level_id": "553481bd-bdec-4fe2-8e59-6110190e9b94",
+        "correlation_id": null,
+        "local_category": "issue_submitted_amenity",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "hours": null,
+        "phone": null,
+        "website": null,
+        "unit_ids": [],
+        "address_id": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/373",
+        "source_issue_number": 373,
+        "source_issue_title": "Location: Gift Shop",
+        "confirmation_methods": [
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Tables situated on upper level between front desk and balcony\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "amenity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508785,
+          49.263149
+        ]
+      },
+      "id": "543ba68d-9e2a-5c00-b082-4ce9a5f33bf3",
+      "feature_type": "amenity"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "category": "pedestrian",
         "accessibility": null,
         "name": {
@@ -85627,6 +85803,147 @@
         ]
       },
       "id": "185f3072-d4c3-5fe4-810b-9624990b86be",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Men's Restroom Entrance"
+        },
+        "alt_name": {
+          "en": "men_s_restroom_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/355",
+        "source_issue_number": 355,
+        "source_issue_title": "Location: Men's Restroom Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Door is located 2.4m to the left of the east theatre entrance\n\nRelated fixture, if any: Theatre East Doors\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Door is 110cm in width",
+        "contributor_notes": "",
+        "preview_layer": "opening"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507953,
+            49.2632113
+          ],
+          [
+            -123.250782,
+            49.2632159
+          ]
+        ]
+      },
+      "id": "68fd2ea6-d125-5ad5-a486-7e08a5979226",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Handicap Restroom Entrance"
+        },
+        "alt_name": {
+          "en": "handicap_restroom_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/356",
+        "source_issue_number": 356,
+        "source_issue_title": "Location: Handicap Restroom Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Door is located 1.2m to the left of the men's restroom entrance\n\nRelated fixture, if any: Men's Restroom Entrance\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Door is 110cm in width",
+        "contributor_notes": "",
+        "preview_layer": "opening"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507679,
+            49.2632212
+          ],
+          [
+            -123.2507544,
+            49.2632259
+          ]
+        ]
+      },
+      "id": "315546be-d07a-5f11-9746-6d1620bf0ecf",
+      "feature_type": "opening"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "pedestrian",
+        "accessibility": null,
+        "name": {
+          "en": "Women's Restroom Entrance"
+        },
+        "alt_name": {
+          "en": "women_s_restroom_entrance"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_opening",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/357",
+        "source_issue_number": 357,
+        "source_issue_title": "Location: Women's Restroom Entrance",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Door is placed directly to the left of handicap restroom door on the perpendicular wall\n\nRelated fixture, if any: Handicap Restroom Entrance\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Door is 110cm in width",
+        "contributor_notes": "",
+        "preview_layer": "opening"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -123.2507538,
+            49.263229
+          ],
+          [
+            -123.250761,
+            49.2632377
+          ]
+        ]
+      },
+      "id": "d2ece1e6-acd8-5821-bbaf-7bfd8e5b5433",
       "feature_type": "opening"
     },
     {
@@ -222730,6 +223047,901 @@
         ]
       },
       "id": "2c2ce243-517b-5e08-99ae-ba9a914bacf0",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.07"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_07"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "00dead78-0113-4f5b-86f6-05c4fa7e3678"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/304",
+        "source_issue_number": 304,
+        "source_issue_title": "Location: Cabinet 37.07 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.07\n\nRelated fixture, if any: Cabinet 37.07\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_07"
+        ],
+        "fixture_id": "00dead78-0113-4f5b-86f6-05c4fa7e3678",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.07"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504336,
+          49.2635792
+        ]
+      },
+      "id": "776c3ae1-fd97-5e54-ad08-c44d0fe9f4ef",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.08"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_08"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "1f47cc33-eee6-4a57-a451-6f5c748761a4"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/305",
+        "source_issue_number": 305,
+        "source_issue_title": "Location: Cabinet 37.08 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.08\n\nRelated fixture, if any: Cabinet 37.08\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_08"
+        ],
+        "fixture_id": "1f47cc33-eee6-4a57-a451-6f5c748761a4",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.08"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2504301,
+          49.2635745
+        ]
+      },
+      "id": "6bc398c3-c15e-5571-9a29-900b7ce9602e",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.11"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_11"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "d07af95a-58a0-4aa4-a743-b64e162caa3b"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/306",
+        "source_issue_number": 306,
+        "source_issue_title": "Location: Cabinet 37.11 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.11\n\nRelated fixture, if any: Cabinet 37.11\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_11"
+        ],
+        "fixture_id": "d07af95a-58a0-4aa4-a743-b64e162caa3b",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.11"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503945,
+          49.2635301
+        ]
+      },
+      "id": "a5f441b1-b9f9-57fd-b823-df2f239e284f",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.24"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_24"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "55642ccf-e621-4869-a578-9e87acefb4d2"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/307",
+        "source_issue_number": 307,
+        "source_issue_title": "Location: Cabinet 37.24 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.24\n\nRelated fixture, if any: Cabinet 37.24\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_24"
+        ],
+        "fixture_id": "55642ccf-e621-4869-a578-9e87acefb4d2",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.24"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250338,
+          49.263459
+        ]
+      },
+      "id": "8492409c-45cc-55ce-bff9-9f1cf9831113",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.25"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_25"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "833b49a9-2e2a-425c-8d19-6c629fca4ebd"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/308",
+        "source_issue_number": 308,
+        "source_issue_title": "Location: Cabinet 37.25 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.25\n\nRelated fixture, if any: Cabinet 37.25\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_25"
+        ],
+        "fixture_id": "833b49a9-2e2a-425c-8d19-6c629fca4ebd",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.25"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503342,
+          49.2634541
+        ]
+      },
+      "id": "2466f6dd-b2ab-5a2a-b087-4edb1407adda",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.06"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_06"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "b672ad78-428d-48bf-8c18-efa9e65fe2ab"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/325",
+        "source_issue_number": 325,
+        "source_issue_title": "Location: Cabinet 01.06 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.06\n\nRelated fixture, if any: Cabinet 01.06\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_06"
+        ],
+        "fixture_id": "b672ad78-428d-48bf-8c18-efa9e65fe2ab",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.06"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509985,
+          49.2633671
+        ]
+      },
+      "id": "50109853-bf8f-54de-aedf-22ff4390ad93",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.07"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_07"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "2d63e88e-937c-4acb-a4b0-5a25b395c96c"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/326",
+        "source_issue_number": 326,
+        "source_issue_title": "Location: Cabinet 01.07 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.07\n\nRelated fixture, if any: Cabinet 01.07\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_07"
+        ],
+        "fixture_id": "2d63e88e-937c-4acb-a4b0-5a25b395c96c",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.07"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2509911,
+          49.2633577
+        ]
+      },
+      "id": "53f952ea-942f-593d-b38c-8fbbff4e0601",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.19"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_19"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "dad10f89-c063-4bae-85fd-6de65f2e4a9e"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/327",
+        "source_issue_number": 327,
+        "source_issue_title": "Location: Cabinet 01.19 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.19\n\nRelated fixture, if any: Cabinet 01.19\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_19"
+        ],
+        "fixture_id": "dad10f89-c063-4bae-85fd-6de65f2e4a9e",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.19"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508993,
+          49.2632424
+        ]
+      },
+      "id": "9c4d9681-a4c4-5652-9289-5771c078ae97",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.21"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_21"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "3218b587-1910-47c9-9fc1-07a88a12b80c"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/328",
+        "source_issue_number": 328,
+        "source_issue_title": "Location: Cabinet 01.21 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.21\n\nRelated fixture, if any: Cabinet 01.21\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_21"
+        ],
+        "fixture_id": "3218b587-1910-47c9-9fc1-07a88a12b80c",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.21"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2508842,
+          49.263223
+        ]
+      },
+      "id": "dc572462-d95b-58af-8006-bb425dda7ab9",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 37.12"
+        },
+        "alt_name": {
+          "en": "cabinet_face_37_12"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "fe4797d0-5ef9-4c85-b1c8-134bcc35ad26"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/343",
+        "source_issue_number": 343,
+        "source_issue_title": "Location: Cabinet 37.12 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 37.12\n\nRelated fixture, if any: Cabinet 37.12\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_37_cab_12"
+        ],
+        "fixture_id": "fe4797d0-5ef9-4c85-b1c8-134bcc35ad26",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "37.12"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503911,
+          49.2635252
+        ]
+      },
+      "id": "d134dbd7-2fe4-5689-8f0e-8c7884331ea6",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 38.22"
+        },
+        "alt_name": {
+          "en": "cabinet_face_38_22"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "bea9eebb-d74e-4b0b-91f6-0f7d98e26119"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/349",
+        "source_issue_number": 349,
+        "source_issue_title": "Location: Cabinet 38.22 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 38.22\n\nRelated fixture, if any: Cabinet 38.22\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "Picture has very low resolution",
+        "fixture_alt_names": [
+          "col_38_cab_22"
+        ],
+        "fixture_id": "bea9eebb-d74e-4b0b-91f6-0f7d98e26119",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "38.22"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503865,
+          49.2635325
+        ]
+      },
+      "id": "cfa4751c-0006-5ec3-8ec9-1b3b713d0f81",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 38.23"
+        },
+        "alt_name": {
+          "en": "cabinet_face_38_23"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "3ec0a3a3-ccb1-4a69-9e96-798eec1f9c57"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/350",
+        "source_issue_number": 350,
+        "source_issue_title": "Location: Cabinet 38.23 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 38.23\n\nRelated fixture, if any: Cabinet 38.23\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "Picture has very low resolution",
+        "fixture_alt_names": [
+          "col_38_cab_23"
+        ],
+        "fixture_id": "3ec0a3a3-ccb1-4a69-9e96-798eec1f9c57",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "38.23"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2503905,
+          49.2635374
+        ]
+      },
+      "id": "9aa17395-a19c-5fe9-8b4f-940a422f41f5",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Dinosaur Footprint Fossil 1"
+        },
+        "alt_name": {
+          "en": "dinosaur_footprint_fossil_1"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "fossil",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/358",
+        "source_issue_number": 358,
+        "source_issue_title": "Location: Dinosaur Footprint Fossil 1",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Located 110 cm to the right of Footprints in Time Interactive Display\n\nRelated fixture, if any: Footprints in Time Interactive Display\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Fossil is 170cm in width",
+        "contributor_notes": "",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501543,
+          49.2636694
+        ]
+      },
+      "id": "a5a0f153-a8d4-587e-9d25-cebd1b8b9482",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Dinosaur Footprint Fossil 2"
+        },
+        "alt_name": {
+          "en": "dinosaur_footprint_fossil_2"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "fossil",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/359",
+        "source_issue_number": 359,
+        "source_issue_title": "Location: Dinosaur Footprint Fossil 2",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: 46cm to the right of Dinosaur Footprint Fossil 1\n\nRelated fixture, if any: Dinosaur Footprint Fossil 1\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Fossil is 279cm in width",
+        "contributor_notes": "",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.250137,
+          49.2636483
+        ]
+      },
+      "id": "a901a4a1-4904-5545-933d-2007f3b29055",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Dinosaur Footprint Fossil 3"
+        },
+        "alt_name": {
+          "en": "dinosaur_footprint_fossil_3"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "fossil",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/360",
+        "source_issue_number": 360,
+        "source_issue_title": "Location: Dinosaur Footprint Fossil 3",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Located 51cm to the right of Dinosaur Footprint Fossil 2\n\nRelated fixture, if any: Dinosaur Footprint Fossil 2\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references: Fossil is 230cm in width",
+        "contributor_notes": "",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2501176,
+          49.2636239
+        ]
+      },
+      "id": "8e22ae02-6647-5631-b6c9-f19d6f2c8baf",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Water Painting Activity"
+        },
+        "alt_name": {
+          "en": "water_painting_activity"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "activity",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/361",
+        "source_issue_number": 361,
+        "source_issue_title": "Location: Water Painting Activity",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Measured on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Located 458cm to the right of Dinosaur Footprint Fossil 3\n\nRelated fixture, if any: Dinosaur Footprint Fossil 3\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2500804,
+          49.2635785
+        ]
+      },
+      "id": "b768c638-e901-5a68-a6e4-1d950c57c81e",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 01.03"
+        },
+        "alt_name": {
+          "en": "cabinet_face_01_03"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "label",
+        "fixture_ids": [
+          "74dcb7cf-0f88-4783-9e00-be2100f1b535"
+        ],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/369",
+        "source_issue_number": 369,
+        "source_issue_title": "Location: Cabinet 01.03 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 01.03\n\nRelated fixture, if any: Cabient 01.03\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "",
+        "fixture_alt_names": [
+          "col_1_cab_03"
+        ],
+        "fixture_id": "74dcb7cf-0f88-4783-9e00-be2100f1b535",
+        "unit_ids": [],
+        "archive": {
+          "collection": "labels",
+          "public_reference_code": "01.03"
+        },
+        "preview_layer": "exhibit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2510217,
+          49.2633962
+        ]
+      },
+      "id": "7823262d-53b7-53da-83d2-191b11e0659a",
       "feature_type": "exhibit"
     }
   ]

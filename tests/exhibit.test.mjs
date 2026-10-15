@@ -13,7 +13,7 @@ const exhibitsById = new Map(exhibit.features.map((feature) => [feature.id, feat
 test("accepted exhibits all resolve to existing map features", () => {
   assert.equal(exhibit.type, "FeatureCollection");
   assert.equal(exhibit.features.filter((feature) => !feature.properties.source_issue_number).length, 1499);
-  assert.equal(exhibit.features.filter((feature) => feature.properties.source_issue_number).length, 230);
+  assert.equal(exhibit.features.filter((feature) => feature.properties.source_issue_number).length, 247);
   for (const feature of exhibit.features) {
     assert.equal(feature.feature_type, "exhibit");
     assert.equal(feature.properties.duration_type, "permanent");
