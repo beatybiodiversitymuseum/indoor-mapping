@@ -42,7 +42,7 @@ for relative in (
         errors.append(f"manifest asset is missing: {relative}")
 
 package = json.loads((root / "package.json").read_text(encoding="utf-8"))
-if package.get("engines", {}).get("node") != ">=20.9.0":
+if package.get("engines", {}).get("node") != ">=22":
     errors.append("package.json must pin the supported Node runtime")
 if package.get("scripts", {}).get("build") is None:
     errors.append("package.json must define a build command")

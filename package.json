@@ -3,7 +3,7 @@
   "type": "module",
   "packageManager": "npm@11.5.1",
   "engines": {
-    "node": ">=20.9.0"
+    "node": ">=22"
   },
   "scripts": {
     "predev": "node scripts/print-dev-url.mjs",
