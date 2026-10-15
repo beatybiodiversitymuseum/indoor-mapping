@@ -81,4 +81,4 @@ The broad open tasks #2 and #40–#46 need additional location evidence or furth
 
 ## Issue images
 
-16 submitted photos fill previously empty image slots. The photo from #342 is the one approved replacement for Cabinet Face 36.10. The remaining 39 photos compete with an image already on their mapped feature and await individual review in `reports/issue-image-review.md`.
+16 submitted photos fill previously empty image slots. The photo from #342 and 33 replacements checked in PR #374 are approved. Six unchecked replacement photos remain pending in `reports/issue-image-review.md`; their existing images stay on the map.

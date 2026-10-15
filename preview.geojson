@@ -127927,9 +127927,8 @@
         },
         "fixture_id": "dfb4e7de-e34c-4eb1-94f6-165b88fbcf11",
         "image": {
-          "id": "Face17_08",
-          "path": "labels/Face17/08.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/8d3adc29-c5f5-4e44-b002-b7750a83ed84",
+          "type": "info"
         },
         "taxonomy": {
           "family_name": "Dicranaceae"
@@ -127947,6 +127946,9 @@
           "1dc0f3df-6ae3-4c14-b429-62616fe8bcad"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/8d3adc29-c5f5-4e44-b002-b7750a83ed84"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -127988,9 +127990,8 @@
         },
         "fixture_id": "aaaabdd1-2493-47e8-8987-b67f72322ac6",
         "image": {
-          "id": "Face17_09",
-          "path": "labels/Face17/09.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/736712a2-0ebd-4a88-9f21-e730c3f94a95",
+          "type": "info"
         },
         "taxonomy": {
           "family_name": "Dicranaceae",
@@ -128019,6 +128020,9 @@
           "42e00d11-ad43-4c64-8711-6923efa9a080"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/736712a2-0ebd-4a88-9f21-e730c3f94a95"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -128060,9 +128064,8 @@
         },
         "fixture_id": "d1062b5a-9e97-4bdf-a549-ae59ebea1584",
         "image": {
-          "id": "Face17_10",
-          "path": "labels/Face17/10.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/f1b13874-f7c9-46fe-bf29-7fc6e08ea41e",
+          "type": "info"
         },
         "details": {
           "notes": "Dark/black panel with small grey rectangle in upper left corner and green/yellow horizontal stripe at bottom edge. No readable text or specimen content visible."
@@ -128077,6 +128080,9 @@
           "db3158f2-bb71-4e27-b573-733930aa953e"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f1b13874-f7c9-46fe-bf29-7fc6e08ea41e"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -129653,9 +129659,8 @@
         },
         "fixture_id": "5e540c24-cd37-4c35-8807-78987ef16529",
         "image": {
-          "id": "Face19_03",
-          "path": "labels/Face19/03.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/d8f8c74b-904e-4cf3-b25e-ab3745eb3819",
+          "type": "info"
         },
         "taxonomy": {
           "family_name": "Grimmiaceae"
@@ -129673,6 +129678,9 @@
           "980431a1-387a-4074-ad7b-e65c4ab8ab22"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/d8f8c74b-904e-4cf3-b25e-ab3745eb3819"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -129714,9 +129722,8 @@
         },
         "fixture_id": "ad98a3ff-eaab-4cac-8d5f-843ed9ece811",
         "image": {
-          "id": "Face19_04",
-          "path": "labels/Face19/04.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/cab66092-a480-4093-a061-9af83a9ff486",
+          "type": "info"
         },
         "taxonomy": {
           "family_name": "Grimmiaceae",
@@ -129751,6 +129758,9 @@
           "196d29a7-ece6-4996-bb1b-d797f55a68c1"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/cab66092-a480-4093-a061-9af83a9ff486"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -129792,8 +129802,7 @@
         },
         "fixture_id": "05029e94-0b5b-4dc8-9618-671cf08501d2",
         "image": {
-          "id": "Face19_05",
-          "path": "labels/Face19/05.jpg",
+          "url": "https://github.com/user-attachments/assets/d1c0c739-9f23-4045-8d35-3a6c7a442a20",
           "type": "info"
         },
         "specimens": [
@@ -129822,6 +129831,9 @@
           "fc3de150-c123-4621-9766-6ae6f644633a"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/d1c0c739-9f23-4045-8d35-3a6c7a442a20"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -129863,8 +129875,7 @@
         },
         "fixture_id": "ea902bf7-6e7d-42ba-9d20-aaa595c3230d",
         "image": {
-          "id": "Face19_06",
-          "path": "labels/Face19/06.jpg",
+          "url": "https://github.com/user-attachments/assets/18728db4-cd59-43f9-89cc-10c9e5f5ff10",
           "type": "info"
         },
         "specimens": [
@@ -129890,6 +129901,9 @@
           "ef652e9e-77c9-4d62-8a3b-ecbbd4741357"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/18728db4-cd59-43f9-89cc-10c9e5f5ff10"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -129931,9 +129945,8 @@
         },
         "fixture_id": "b550b767-7766-4134-af49-28458d55f91c",
         "image": {
-          "id": "Face19_07",
-          "path": "labels/Face19/07.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/20899a19-afb5-4c8a-a4e3-09447c6ec0f3",
+          "type": "info"
         },
         "details": {
           "notes": "Blank panel with only the green/yellow decorative border stripe at bottom. No text or specimen content."
@@ -129948,6 +129961,9 @@
           "b5007a7d-a02c-49a8-8a49-1e8286e36f0e"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/20899a19-afb5-4c8a-a4e3-09447c6ec0f3"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -130835,8 +130851,7 @@
         },
         "fixture_id": "6c143877-c9b0-4379-a369-82780ca5314c",
         "image": {
-          "id": "Face19_21",
-          "path": "labels/Face19/21.jpg",
+          "url": "https://github.com/user-attachments/assets/a1113788-b0ca-4714-b53b-1a4ebc482a24",
           "type": "info"
         },
         "taxonomy": {
@@ -130876,6 +130891,9 @@
           "967fc552-1dd2-42fb-b581-69d64de8b06f"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/a1113788-b0ca-4714-b53b-1a4ebc482a24"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -130917,9 +130935,8 @@
         },
         "fixture_id": "7fbb4b62-242b-4ab0-807e-33db4e3203ab",
         "image": {
-          "id": "Face19_22",
-          "path": "labels/Face19/22.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/756222b6-79dc-421f-b031-a2491be8fa63",
+          "type": "info"
         },
         "details": {
           "notes": "Dark/black image with small grey rectangle in upper left and green/yellow stripe along bottom edge. No visible text content."
@@ -130934,6 +130951,9 @@
           "47f284c1-e6bc-4630-b611-fa5092210be9"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/756222b6-79dc-421f-b031-a2491be8fa63"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -156153,9 +156173,8 @@
         },
         "fixture_id": "2296ed65-67d4-4d83-be6a-2aa4be74d684",
         "image": {
-          "id": "Face35_03",
-          "path": "labels/Face35/03.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/265e9b46-7f39-4e6d-90ef-05bb15eae2e9",
+          "type": "info"
         },
         "taxonomy": {
           "common_group_name": "Jelly fungi",
@@ -156188,6 +156207,9 @@
           "9c95999a-d72b-4f1a-ba99-5986c71ceff5"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/265e9b46-7f39-4e6d-90ef-05bb15eae2e9"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -156229,9 +156251,8 @@
         },
         "fixture_id": "e0577db9-0040-49d9-89d8-0cf4e9282877",
         "image": {
-          "id": "Face35_04",
-          "path": "labels/Face35/04.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/8626cfe9-134b-4eae-a85e-9ed7184897e8",
+          "type": "info"
         },
         "details": {
           "notes": "Blank dark panel with green/gold decorative strip at bottom. No text or specimen content visible."
@@ -156246,6 +156267,9 @@
           "4dcaebaf-f61b-46de-88af-f16a9b257463"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/8626cfe9-134b-4eae-a85e-9ed7184897e8"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -156287,9 +156311,8 @@
         },
         "fixture_id": "4b5b6026-3d85-4464-afcd-43b4d43e8172",
         "image": {
-          "id": "Face35_05",
-          "path": "labels/Face35/05.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/5c4873fd-7ce6-41d5-9d6b-11bd6306a8c4",
+          "type": "info"
         },
         "taxonomy": {
           "common_group_name": "Rust fungi and allies",
@@ -156322,6 +156345,9 @@
           "fc4c9380-f890-45fa-912b-a842f31d7640"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/5c4873fd-7ce6-41d5-9d6b-11bd6306a8c4"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -156363,8 +156389,7 @@
         },
         "fixture_id": "595faf2e-c809-4ba3-a7a3-00a88d665413",
         "image": {
-          "id": "Face35_06",
-          "path": "labels/Face35/06.jpg",
+          "url": "https://github.com/user-attachments/assets/f27ed566-7414-4ca9-88ad-6027306a302e",
           "type": "info"
         },
         "specimens": [
@@ -156390,6 +156415,9 @@
           "01d561ee-6d34-41b5-9b08-28243126cdfe"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f27ed566-7414-4ca9-88ad-6027306a302e"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -156489,8 +156517,7 @@
         },
         "fixture_id": "926993a1-69c1-48ed-ab3e-37137f19049b",
         "image": {
-          "id": "Face35_08",
-          "path": "labels/Face35/08.jpg",
+          "url": "https://github.com/user-attachments/assets/7a8a14a3-f62c-45ad-854c-33d5a9af0566",
           "type": "info"
         },
         "taxonomy": {
@@ -156522,6 +156549,9 @@
           "c0dea0a7-b603-430a-99bb-fbe986604b22"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/7a8a14a3-f62c-45ad-854c-33d5a9af0566"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -156634,9 +156664,8 @@
         },
         "fixture_id": "0ea8221d-8e80-4191-895f-272a9d2a1618",
         "image": {
-          "id": "Face35_10",
-          "path": "labels/Face35/10.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/47ff75ff-b239-4e6e-8f5e-2596a1bbcfeb",
+          "type": "info"
         },
         "taxonomy": {
           "common_group_name": "Lichens"
@@ -156664,6 +156693,9 @@
           "178ccdfb-921f-4120-82ce-208daa285eb5"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/47ff75ff-b239-4e6e-8f5e-2596a1bbcfeb"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -156776,8 +156808,7 @@
         },
         "fixture_id": "8c12b0a9-67d7-46b0-8642-8377e2378213",
         "image": {
-          "id": "Face35_12",
-          "path": "labels/Face35/12.jpg",
+          "url": "https://github.com/user-attachments/assets/e03b4b49-bed4-420a-8c9d-7ed03d6a7970",
           "type": "info"
         },
         "taxonomy": {
@@ -156809,6 +156840,9 @@
           "f315eaaa-6d25-4ec9-9831-1566b52bf12b"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/e03b4b49-bed4-420a-8c9d-7ed03d6a7970"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -156850,9 +156884,8 @@
         },
         "fixture_id": "7fc8b542-d2dd-4a40-af47-75be63630f56",
         "image": {
-          "id": "Face35_13",
-          "path": "labels/Face35/13.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/4361cdae-2ee9-4bb2-ba40-13d203cada2e",
+          "type": "info"
         },
         "taxonomy": {
           "common_group_name": "Lichens"
@@ -156880,6 +156913,9 @@
           "94f2bfbd-ad80-49d1-99ef-7a0febc155d3"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/4361cdae-2ee9-4bb2-ba40-13d203cada2e"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -156921,9 +156957,8 @@
         },
         "fixture_id": "f53cb6e6-f923-4906-aa2b-1709b580b049",
         "image": {
-          "id": "Face35_14",
-          "path": "labels/Face35/14.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/f8c99a59-d984-49ee-a238-ad6acb9c569c",
+          "type": "info"
         },
         "taxonomy": {
           "common_group_name": "Lichens"
@@ -156951,6 +156986,9 @@
           "95beca6e-06ac-4ff4-8d11-990a6da8c1e2"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f8c99a59-d984-49ee-a238-ad6acb9c569c"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -157131,9 +157169,8 @@
         },
         "fixture_id": "a6088723-ad88-412a-ba82-db3ea031bed4",
         "image": {
-          "id": "Face35_17",
-          "path": "labels/Face35/17.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/7f1a5427-1d1c-4d45-b67e-eb2648c5ec0f",
+          "type": "info"
         },
         "specimens": [
           {
@@ -157158,6 +157195,9 @@
           "3c3df5ac-0d95-4328-9fba-d742a99ab00e"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/7f1a5427-1d1c-4d45-b67e-eb2648c5ec0f"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -157273,9 +157313,8 @@
         },
         "fixture_id": "b4271dce-f980-412d-a3aa-79f5fd39e656",
         "image": {
-          "id": "Face36_02",
-          "path": "labels/Face36/02.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/c73ceb97-f0a2-4fc8-a2d3-5c3e5e13a39a",
+          "type": "info"
         },
         "taxonomy": {
           "common_group_name": "Lichens"
@@ -157300,6 +157339,9 @@
           "f5f4df98-048d-4b89-9774-f46cc39d3a8a"
         ],
         "marker_bearing": 62.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/c73ceb97-f0a2-4fc8-a2d3-5c3e5e13a39a"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -157686,8 +157728,7 @@
         },
         "fixture_id": "a68518dc-2065-4c4e-b629-d00aff4fee99",
         "image": {
-          "id": "Face36_08",
-          "path": "labels/Face36/08.jpg",
+          "url": "https://github.com/user-attachments/assets/f57d7e8e-cb70-412f-9333-214e064cc05e",
           "type": "info"
         },
         "taxonomy": {
@@ -157706,6 +157747,9 @@
           "9d85d096-a622-4a0b-b889-5f5ddf3210d9"
         ],
         "marker_bearing": 62.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f57d7e8e-cb70-412f-9333-214e064cc05e"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -158987,8 +159031,7 @@
         },
         "fixture_id": "53cd8f29-e863-4ee3-bdd6-2bf60e2e2da8",
         "image": {
-          "id": "Face37_14",
-          "path": "labels/Face37/14.jpg",
+          "url": "https://github.com/user-attachments/assets/a4a95358-bf2e-49ad-bd4e-e85a86d0591b",
           "type": "info"
         },
         "specimens": [
@@ -159014,6 +159057,9 @@
           "40d76d05-fb26-4d5f-a43f-f0040942a681"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/a4a95358-bf2e-49ad-bd4e-e85a86d0591b"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -162908,9 +162954,8 @@
         },
         "fixture_id": "d78dc4bc-8f18-4d68-87dc-841e5cf816fc",
         "image": {
-          "id": "Face39_15",
-          "path": "labels/Face39/15.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/9ed7e3f4-08d8-43db-b160-f984ee960ff4",
+          "type": "info"
         },
         "taxonomy": {
           "family_name": "Clupeidae",
@@ -162947,6 +162992,9 @@
           "c585905d-aa52-4032-8a73-7f1abba531cd"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/9ed7e3f4-08d8-43db-b160-f984ee960ff4"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -164753,9 +164801,8 @@
         },
         "fixture_id": "a07880af-b7e8-4c58-9050-035f14c93961",
         "image": {
-          "id": "Face40_15",
-          "path": "labels/Face40/15.jpg",
-          "type": "specimen"
+          "url": "https://github.com/user-attachments/assets/13d8ad4c-ed61-4caa-a477-d921215dec5d",
+          "type": "info"
         },
         "taxonomy": {
           "family_name": "Salmonidae"
@@ -164783,6 +164830,9 @@
           "10901245-fbff-49a7-a84d-6ec316091b6e"
         ],
         "marker_bearing": 62.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/13d8ad4c-ed61-4caa-a477-d921215dec5d"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -166100,8 +166150,7 @@
         },
         "fixture_id": "f7214402-7200-4757-bcf4-d7869abee988",
         "image": {
-          "id": "Face41_09",
-          "path": "labels/Face41/09.jpg",
+          "url": "https://github.com/user-attachments/assets/d20e0fcc-c2d0-457f-aa4a-0dc221e21c2a",
           "type": "info"
         },
         "specimens": [
@@ -166129,6 +166178,9 @@
           "f91fba63-3523-4a40-94ea-68c8ada37ba2"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/d20e0fcc-c2d0-457f-aa4a-0dc221e21c2a"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -166170,9 +166222,8 @@
         },
         "fixture_id": "7199722b-9944-4c7e-8892-019258908ada",
         "image": {
-          "id": "Face41_10",
-          "path": "labels/Face41/10.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/ee7e50c8-e782-42aa-9807-c81e8db0d292",
+          "type": "info"
         },
         "details": {
           "notes": "Dark/blank panel with blue bar at bottom. No visible text or specimens."
@@ -166187,6 +166238,9 @@
           "3372aebb-b13c-4949-b6f1-313cc51bd485"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/ee7e50c8-e782-42aa-9807-c81e8db0d292"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -166870,9 +166924,8 @@
         },
         "fixture_id": "895299cc-184a-4efa-80ab-62b59ff9603d",
         "image": {
-          "id": "Face41_21",
-          "path": "labels/Face41/21.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/194355ff-194b-45ad-93f7-891f5f4976b2",
+          "type": "info"
         },
         "details": {
           "notes": "Dark/blank panel with no visible text or specimen content; blue strip at bottom"
@@ -166887,6 +166940,9 @@
           "8ab6cd4b-7182-4a45-a52f-6c2199aca025"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/194355ff-194b-45ad-93f7-891f5f4976b2"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -166928,9 +166984,8 @@
         },
         "fixture_id": "34cab06c-2dab-4039-98a4-10192d0b2692",
         "image": {
-          "id": "Face41_22",
-          "path": "labels/Face41/22.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/f6a8763c-7fd9-4eaf-966e-10d087514888",
+          "type": "info"
         },
         "specimens": [
           {
@@ -166958,6 +167013,9 @@
           "6732a209-96ce-45b6-8a0a-974c070f844f"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/f6a8763c-7fd9-4eaf-966e-10d087514888"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -167078,9 +167136,8 @@
         },
         "fixture_id": "b97ac256-a146-4c94-865a-5d71cae2a91b",
         "image": {
-          "id": "Face42_02",
-          "path": "labels/Face42/02.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/be128c6c-1009-40ff-8c04-528c8b950dc1",
+          "type": "info"
         },
         "taxonomy": {
           "family_name": "Esocidae",
@@ -167109,6 +167166,9 @@
           "98a12df3-2946-4254-ba89-306755c1819d"
         ],
         "marker_bearing": 62.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/be128c6c-1009-40ff-8c04-528c8b950dc1"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -172249,8 +172309,7 @@
         },
         "fixture_id": "721ecb13-7ef9-495c-8b66-5dd3661ba552",
         "image": {
-          "id": "Face45_07",
-          "path": "labels/Face45/07.jpg",
+          "url": "https://github.com/user-attachments/assets/8b1c1add-05c0-475b-935a-3764c485e043",
           "type": "info"
         },
         "taxonomy": {
@@ -172283,6 +172342,9 @@
           "7fccf6d6-27c4-40b0-95d8-2a7b356075df"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/8b1c1add-05c0-475b-935a-3764c485e043"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -172394,9 +172456,8 @@
         },
         "fixture_id": "16ea2359-2799-4bb6-b6ed-3b83ec9c9872",
         "image": {
-          "id": "Face45_09",
-          "path": "labels/Face45/09.jpg",
-          "type": "blank"
+          "url": "https://github.com/user-attachments/assets/e3ce669a-8018-4f51-9a8d-099ef42bc794",
+          "type": "info"
         },
         "details": {
           "notes": "Dark/blank panel with no visible text or specimen content. Blue strip along bottom edge consistent with other panels in this face."
@@ -172411,6 +172472,9 @@
           "b13fefa4-9bb0-493a-8010-54b1fd356f75"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/e3ce669a-8018-4f51-9a8d-099ef42bc794"
+        ],
         "preview_layer": "exhibit"
       }
     },
@@ -179929,9 +179993,8 @@
         },
         "fixture_id": "ec27a960-385d-4a7a-9317-5b0c522fb068",
         "image": {
-          "id": "Face49_26",
-          "path": "labels/Face49/26.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/1ee331c6-713f-43b7-94cd-32555cb8ea58",
+          "type": "info"
         },
         "taxonomy": {
           "family_name": "Anarhichadidae",
@@ -179969,6 +180032,9 @@
           "649fac2d-de19-4b61-9982-800978d72729"
         ],
         "marker_bearing": 242.53,
+        "source_image_urls": [
+          "https://github.com/user-attachments/assets/1ee331c6-713f-43b7-94cd-32555cb8ea58"
+        ],
         "preview_layer": "exhibit"
       }
     },
