@@ -81,4 +81,4 @@ The broad open tasks #2 and #40–#46 need additional location evidence or furth
 
 ## Issue images
 
-Only the photo from #342 is approved and displayed as the image for Cabinet Face 36.10. The other 55 issue photos are pending individual review in `reports/issue-image-review.md`. Existing archive images remain available for other exhibits.
+16 submitted photos fill previously empty image slots. The photo from #342 is the one approved replacement for Cabinet Face 36.10. The remaining 39 photos compete with an image already on their mapped feature and await individual review in `reports/issue-image-review.md`.
