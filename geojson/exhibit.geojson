@@ -70960,9 +70960,8 @@
         },
         "fixture_id": "3a2c70f9-fc3a-4778-bfdf-adec92f4a785",
         "image": {
-          "id": "Face36_10",
-          "path": "labels/Face36/10.jpg",
-          "type": "header"
+          "url": "https://github.com/user-attachments/assets/f2aacbe8-1746-4647-8184-fe62dcad0daa",
+          "type": "info"
         },
         "taxonomy": {
           "common_group_name": "Eurotiomycetes",
@@ -70996,8 +70995,7 @@
         ],
         "marker_bearing": 62.53,
         "source_image_urls": [
-          "https://github.com/user-attachments/assets/f2aacbe8-1746-4647-8184-fe62dcad0daa",
-          "https://github.com/user-attachments/assets/5522877e-9757-4016-95c9-342ce7292e25"
+          "https://github.com/user-attachments/assets/f2aacbe8-1746-4647-8184-fe62dcad0daa"
         ]
       }
     },

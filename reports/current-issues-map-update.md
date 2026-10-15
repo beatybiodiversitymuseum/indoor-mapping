@@ -81,4 +81,4 @@ The broad open tasks #2 and #40–#46 need additional location evidence or furth
 
 ## Issue images
 
-All 56 image attachments from current location issues are linked to their matching exhibit features. New exhibits use the submitted image as their primary thumbnail; existing exhibits retain their archive thumbnail and offer the submitted photo in the inspector. Other new issues contain no image attachments.
+55 image attachments from current location issues are linked to their matching exhibit features. The photo from #312 was excluded from Cabinet Face 36.10 after review; #342 is its only image. New exhibits use the submitted image as their primary thumbnail; other existing exhibits retain their archive thumbnail and offer the submitted photo in the inspector. Other new issues contain no image attachments.
