@@ -81,4 +81,4 @@ The broad open tasks #2 and #40–#46 need additional location evidence or furth
 
 ## Issue images
 
-55 image attachments from current location issues are linked to their matching exhibit features. The photo from #312 was excluded from Cabinet Face 36.10 after review; #342 is its only image. New exhibits use the submitted image as their primary thumbnail; other existing exhibits retain their archive thumbnail and offer the submitted photo in the inspector. Other new issues contain no image attachments.
+Only the photo from #342 is approved and displayed as the image for Cabinet Face 36.10. The other 55 issue photos are pending individual review in `reports/issue-image-review.md`. Existing archive images remain available for other exhibits.
