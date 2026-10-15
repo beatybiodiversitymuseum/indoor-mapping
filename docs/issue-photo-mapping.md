@@ -13,6 +13,10 @@
 
 ## Exhibit presentation and OCR
 
+Agents must follow the approval and text replacement policy in
+`AGENTS.md` when handling new exhibit images. The steps below describe the
+current approved batch.
+
 For an approved primary image replacement, run OCR on the exact selected image,
 then review the result against that image. Apply the reviewed exhibit prose to
 `details.text.en`, visible captions and labels to `photo_text`, and identified
