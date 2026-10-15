@@ -81,4 +81,4 @@ The broad open tasks #2 and #40–#46 need additional location evidence or furth
 
 ## Issue images
 
-16 submitted photos fill previously empty image slots. The photo from #342 and 33 replacements checked in PR #374 are approved. Six unchecked replacement photos remain pending in `reports/issue-image-review.md`; their existing images stay on the map.
+16 submitted photos fill previously empty image slots. The photo from #342 and 33 replacements checked in PR #374 are approved. The remaining six submissions (#310, #312, #351–#354) were reviewed against clearer existing images and retained as duplicate evidence; their existing images stay on the map. See `reports/issue-image-review.md`.
