@@ -137202,6 +137202,92 @@
       },
       "id": "7823262d-53b7-53da-83d2-191b11e0659a",
       "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 20.05"
+        },
+        "alt_name": {
+          "en": "cabinet_face_20_05"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "display",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/378",
+        "source_issue_number": 378,
+        "source_issue_title": "Location: Cabinet 20.05 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 20.05\n\nRelated fixture, if any: Cabinet 20.05\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2506087,
+          49.2633576
+        ]
+      },
+      "id": "6a588e9f-72c7-591d-adea-f270d90bc65c",
+      "feature_type": "exhibit"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "exhibit",
+        "accessibility": null,
+        "name": {
+          "en": "Cabinet Face 21.12"
+        },
+        "alt_name": {
+          "en": "cabinet_face_21_12"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_exhibit",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "duration_type": "permanent",
+        "exhibit_type": "display",
+        "fixture_ids": [],
+        "navigation_point_ids": [],
+        "stopping_point_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/379",
+        "source_issue_number": 379,
+        "source_issue_title": "Location: Cabinet 21.12 Label",
+        "confirmation_methods": [
+          "Visually confirmed on site",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location: Attached to front of Cabinet 21.12\n\nRelated fixture, if any: Cabinet 21.12\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2506539,
+          49.2634522
+        ]
+      },
+      "id": "d17b2e6d-b9e2-5fcd-b72e-6f2066aebdc8",
+      "feature_type": "exhibit"
     }
   ]
 }
