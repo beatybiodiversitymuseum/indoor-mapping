@@ -5,6 +5,9 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import DrawingPreview from "./drawing-preview.js";
+import { installMeasurementHover } from "./measurement-hover.js";
+import { MAP_ICON_OPTIONS, mapIconOption } from "./map-icon-options.js";
 import maplibregl from "maplibre-gl";
 import MiniSearch from "minisearch";
 import { exhibitMarkerVisible } from "./exhibit-visibility.js";
@@ -13,7 +16,7 @@ import { CABINET_EXHIBIT_ICON_LAYER_ID, DRAWER_MARKER_OFFSET_PX, DRAWER_TOP_ICON
 import { DRAWER_OVERLAY_LAYERS, INTERACTIVE_MAP_LAYERS } from "./map-layer-policy.js";
 import { appendRouteStop, findMultiStopRoute, nextRouteSelection, routeStopLabel, routeStoppingCoordinate, isMapBackground } from "./route-interaction.js";
 import { relatedExhibitsForFeature } from "./exhibits.js";
-import { Building2, ChevronLeft, ChevronRight, Flag, Layers3, LocateFixed, MapPin, Navigation, Route, Search, X } from "lucide-react";
+import { Building2, ChevronLeft, ChevronRight, Flag, Keyboard, Layers3, LocateFixed, MapPin, Navigation, Pentagon, Route, Search, Waypoints, X } from "lucide-react";
 import { BASEMAP, DRAWER_GROUPS, GEOJSON, ICON_SIZE, LAYERS, LEVELS, MAP, MAP_LAYERS, POINT_CATEGORIES, ROUTING, VIEWER } from "./constants.js";
 import { buildRoutingNetwork, isRoutableFeature } from "./routing.js";
 import { COLLECTIONS, COLLECTION_BADGE_SCALE, collectionBadgeFeatures, collectionBadgeIconOffset, collectionFixtureColorExpression, collectionSectionFeatures } from "./collection-style.js";
@@ -21,6 +24,7 @@ import { AMENITY_ICON_IDS, AMENITY_ICON_OFFSET_EXPRESSION, AMENITY_ICON_SIZE_EXP
 import { POINT_FEATURE_ICON_IDS, POINT_FEATURE_ICON_SCALE, pointFeatureIconFeatures } from "./point-feature-style.js";
 import { KEYBOARD_ROWS, applyVirtualKey, virtualKeyWithCaps } from "./virtual-keyboard.js";
 import { sendUsageEvent } from "./usage-client.js";
+import { drawingGeometry, drawingVertices, drawingSummary, drawingMeasurementLabels, referenceMeasurementLines } from "./drawing.js";
 import { REPORT_TYPES } from "./report-issue.js";
 import { WHALE_ICON_SCALE, WHALE_IMAGE_ID, whaleOverlayFeature } from "./whale-style.js";
 
@@ -384,6 +388,14 @@ export default function Viewer() {
   const [keyboardTarget, setKeyboardTarget] = useState("search");
   const [keyboardCaps, setKeyboardCaps] = useState(false);
   const [viewedImage, setViewedImage] = useState(null);
+  const [drawing, setDrawing] = useState(null);
+  const drawingRef = useRef(null);
+  const [referencePoint, setReferencePoint] = useState(null);
+  const [settingReference, setSettingReference] = useState(false);
+  const referencePlacementRef = useRef(false);
+  const referenceHandleRef = useRef(null);
+  const drawingHandlesRef = useRef([]);
+  const suppressDrawingClickUntil = useRef(0);
   const [report, setReport] = useState(null);
   const [reportSubmitting, setReportSubmitting] = useState(false);
   const [reportError, setReportError] = useState("");
@@ -642,7 +654,23 @@ export default function Viewer() {
       for (const id of ["approved-route-casing", "approved-route", "approved-route-endpoints", "approved-route-endpoint-labels"]) map.moveLayer(id);
       const deferredImageLayers = ["imdf-point-feature-icons", "imdf-amenity-icons", "collection-badges", "whale-overlay", ICON_LAYER_ID, CABINET_EXHIBIT_ICON_LAYER_ID, "imdf-drawer-group-half", "imdf-drawer-group"];
       for (const id of deferredImageLayers) map.setLayoutProperty(id, "visibility", "none");
+      map.addSource("map-addition", { type: "geojson", data: emptyCollection() });
+      map.addLayer({ id: "map-addition-fill", type: "fill", source: "map-addition", filter: ["==", ["geometry-type"], "Polygon"], paint: { "fill-color": "#b51635", "fill-opacity": 0.2 } });
+      map.addLayer({ id: "map-addition-line", type: "line", source: "map-addition", filter: ["all", ["!=", ["geometry-type"], "Point"], ["!=", ["get", "reference_measurement"], true]], paint: { "line-color": "#b51635", "line-width": 5 } });
+      map.addLayer({ id: "map-reference-lines", type: "line", source: "map-addition", filter: ["==", ["get", "reference_measurement"], true], paint: { "line-color": "#193d72", "line-width": 2, "line-dasharray": [3, 2] } });
+      map.addLayer({ id: "map-addition-points", type: "circle", source: "map-addition", filter: ["==", ["geometry-type"], "Point"], paint: { "circle-radius": 7, "circle-color": "#b51635", "circle-stroke-color": "#fff", "circle-stroke-width": 2 } });
       map.on("click", (event) => {
+        if (event.originalEvent?.target?.closest?.(".drawing-point-handle") || performance.now() < suppressDrawingClickUntil.current) return;
+        if (drawingRef.current && referencePlacementRef.current) {
+          setReferencePoint([event.lngLat.lng, event.lngLat.lat]);
+          setSettingReference(false);
+          return;
+        }
+        if (drawingRef.current) {
+          const coordinate = [event.lngLat.lng, event.lngLat.lat];
+          setDrawing((current) => current ? { ...current, coordinates: current.type === "Point" ? [coordinate] : [...current.coordinates, coordinate].slice(0, 500) } : current);
+          return;
+        }
         const hits = map.queryRenderedFeatures(event.point, { layers: INTERACTIVE_MAP_LAYERS });
         const hit = hits.find(f => !isMapBackground(f));
         if (!hit) { clearSelectionRef.current(); return; }
@@ -847,7 +875,116 @@ export default function Viewer() {
     },
   }))];
 
+  useEffect(() => {
+    drawingRef.current = drawing;
+    referencePlacementRef.current = settingReference;
+    const map = mapRef.current;
+    if (!map) return;
+    map.getCanvas().style.cursor = drawing ? "crosshair" : "";
+    if (drawing) map.doubleClickZoom.disable();
+    else map.doubleClickZoom.enable();
+    const coordinates = drawing?.coordinates || [];
+    const geometry = report?.geometry;
+    const features = coordinates.map((coordinate) => ({ type: "Feature", properties: {}, geometry: { type: "Point", coordinates: coordinate } }));
+    if (drawing && drawing.type !== "Point" && coordinates.length > 1) features.unshift({ type: "Feature", properties: {}, geometry: drawingGeometry(drawing.type === "Polygon" && coordinates.length < 3 ? "LineString" : drawing.type, coordinates) });
+    if (!drawing && geometry) features.push({ type: "Feature", properties: {}, geometry });
+    const reference = drawing ? referencePoint : report?.referencePoint;
+    const vertices = drawing ? coordinates : geometry ? drawingVertices(geometry) : [];
+    features.push(...referenceMeasurementLines(reference, vertices));
+    map.getSource("map-addition")?.setData({ type: "FeatureCollection", features });
+    const labelType = drawing?.type || geometry?.type;
+    const labelVertices = drawing ? coordinates : geometry ? drawingVertices(geometry) : [];
+    return installMeasurementHover(map, drawingMeasurementLabels(labelType, labelVertices, reference));
+  }, [drawing, report, referencePoint, settingReference]);
+
+  // Keep handles alive across coordinate updates so an active drag is never interrupted.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const handles = drawingHandlesRef.current;
+    if (!drawing) suppressDrawingClickUntil.current = 0;
+    const coordinates = drawing?.coordinates || [];
+    while (handles.length > coordinates.length) handles.pop().remove();
+    coordinates.forEach((coordinate, index) => {
+      if (!handles[index]) {
+        const element = document.createElement("button");
+        element.type = "button";
+        element.className = "drawing-point-handle";
+        element.addEventListener("click", (event) => event.stopPropagation());
+        const marker = new maplibregl.Marker({ element, draggable: true, anchor: "center" }).setLngLat(coordinate).addTo(map);
+        const updateCoordinate = () => {
+          const position = marker.getLngLat();
+          setDrawing((current) => current ? { ...current, coordinates: current.coordinates.map((point, pointIndex) => pointIndex === index ? [position.lng, position.lat] : point) } : current);
+        };
+        marker.on("dragstart", () => { suppressDrawingClickUntil.current = Infinity; });
+        marker.on("drag", updateCoordinate);
+        marker.on("dragend", () => {
+          updateCoordinate();
+          suppressDrawingClickUntil.current = performance.now() + 250;
+        });
+        handles.push(marker);
+      }
+      const element = handles[index].getElement();
+      const label = `Point ${index + 1}`;
+      element.setAttribute("aria-label", `${label}: drag to move`);
+      element.title = `${label}: drag to move`;
+      handles[index].setLngLat(coordinate);
+    });
+  }, [drawing]);
+
+  useEffect(() => {
+    const handles = drawingHandlesRef.current;
+    return () => handles.splice(0).forEach((marker) => marker.remove());
+  }, []);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    if (!drawing || !referencePoint) {
+      referenceHandleRef.current?.remove();
+      referenceHandleRef.current = null;
+      return;
+    }
+    if (!referenceHandleRef.current) {
+      const element = document.createElement("button");
+      element.type = "button";
+      element.className = "drawing-point-handle reference-point-handle";
+      element.title = "Reference point: drag to move";
+      element.setAttribute("aria-label", element.title);
+      element.addEventListener("click", (event) => event.stopPropagation());
+      const marker = new maplibregl.Marker({ element, draggable: true }).setLngLat(referencePoint).addTo(map);
+      const moveReference = () => { const position = marker.getLngLat(); setReferencePoint([position.lng, position.lat]); };
+      marker.on("dragstart", () => { suppressDrawingClickUntil.current = Infinity; });
+      marker.on("drag", moveReference);
+      marker.on("dragend", () => { moveReference(); suppressDrawingClickUntil.current = performance.now() + 250; });
+      referenceHandleRef.current = marker;
+    }
+    referenceHandleRef.current.setLngLat(referencePoint);
+  }, [drawing, referencePoint]);
+
+  useEffect(() => () => { referenceHandleRef.current?.remove(); }, []);
+
+  function startDrawing() {
+    setReferencePoint(null);
+    setSettingReference(false);
+    setReport(null);
+    setKeyboardOpen(false);
+    setSelected(null);
+    setSelectedGroup(null);
+    setDrawing({ type: "Point", coordinates: [], levelId: activeLevel });
+    setSidebarOpen(false);
+  }
+
+  function finishDrawing() {
+    const geometry = drawingGeometry(drawing.type, drawing.coordinates);
+    setReport({ issueType: "missing_feature", description: "", feature: null, ...drawing.draftReport, icon: drawing.type === "Point" ? drawing.draftReport?.icon || "" : "", step: "edit", geometry, referencePoint, levelId: drawing.levelId });
+    setReportError("");
+    setDrawing(null);
+    setSettingReference(false);
+  }
+
   function openReport() {
+    setDrawing(null);
     setReport({ step: "edit", issueType: "incorrect_information", description: "", feature: selected, result: null });
     setReportError("");
     setKeyboardOpen(false);
@@ -857,6 +994,10 @@ export default function Viewer() {
     setReport(null);
     setReportError("");
     setKeyboardOpen(false);
+  }
+
+  function handlePhysicalTyping(event) {
+    if (event.key.length === 1 || ["Backspace", "Delete", "Enter"].includes(event.key)) setKeyboardOpen(false);
   }
 
   function applyKeyboardKey(key) {
@@ -877,6 +1018,10 @@ export default function Viewer() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          geometry: report.geometry,
+          reference_point: report.referencePoint,
+          icon: report.geometry?.type === "Point" ? report.icon : undefined,
+          level_id: report.levelId,
           issue_type: report.issueType,
           description: report.description,
           session_id: usageSessionRef.current,
@@ -888,11 +1033,11 @@ export default function Viewer() {
         }),
       });
       const result = await response.json();
-      if (!response.ok) throw new Error(result.error || "The report could not be submitted.");
+      if (!response.ok) throw new Error(result.error || (report.geometry ? "The feature could not be submitted." : "The report could not be submitted."));
       setReport((current) => ({ ...current, step: "success", result }));
       sendUsageEvent(usageSessionRef.current, "issue_reported", { feature_id: feature ? String(feature.id) : null, metadata: { issue_type: report.issueType, issue_number: result.number } });
     } catch (error) {
-      setReportError(error.message || "The report could not be submitted.");
+      setReportError(error.message || (report.geometry ? "The feature could not be submitted." : "The report could not be submitted."));
     } finally {
       setReportSubmitting(false);
     }
@@ -902,11 +1047,22 @@ export default function Viewer() {
     if (!mapNode.current?.contains(event.target) && !event.target.closest("button, input, textarea, label, a, summary, .search-results, .exhibit-panel, .virtual-keyboard, .image-viewer, .report-overlay")) clearSelectionRef.current();
   }}>
     <div ref={mapNode} className="map" />
+    {drawing && <section className="draw-overlay" aria-label="Draw on map">
+      <strong>Draw on map</strong>
+      <p>Drag any placed point to adjust it. Hover over a point or line to see measurements.</p>
+      <div className="drawing-tools">{[["Point", "Point", MapPin], ["LineString", "Polyline", Waypoints], ["Polygon", "Polygon", Pentagon]].map(([type, label, ToolIcon]) => <button key={type} aria-pressed={drawing.type === type} className={drawing.type === type ? "active" : ""} onClick={() => setDrawing((current) => ({ ...current, type, coordinates: [] }))}><ToolIcon size={16} aria-hidden="true" /><span>{label}</span></button>)}</div>
+      <div className="reference-controls"><button type="button" className="reference-toggle" aria-pressed={settingReference || Boolean(referencePoint)} onClick={() => { if (referencePoint) { setReferencePoint(null); setSettingReference(false); } else setSettingReference((current) => !current); }}><LocateFixed size={14} aria-hidden="true" />{referencePoint ? "Unset reference point" : settingReference ? "Cancel reference" : "Set reference point"}</button>{settingReference && <p aria-live="polite">Tap the map to place the reference.</p>}</div>
+      <p aria-live="polite">{drawing.type === "Point" ? "Tap the map to place or move a point." : `Tap the map to add vertices (${drawing.coordinates.length}/500).`}</p>
+      {drawing.type === "Polygon" && <p>Next closes the polygon.</p>}
+      <div className="report-actions"><button disabled={!drawing.coordinates.length || settingReference} onClick={() => setDrawing((current) => ({ ...current, coordinates: current.coordinates.slice(0, -1) }))}>Undo</button><button disabled={settingReference || drawing.coordinates.length < (drawing.type === "Point" ? 1 : drawing.type === "Polygon" ? 3 : 2)} className="drawing-next-button" onClick={finishDrawing}>Next: add details</button><button onClick={() => { setDrawing(null); setSettingReference(false); }}>Cancel</button></div>
+      <p className="drawing-next-hint">Describe your feature, then review and submit.</p>
+    </section>}
+
     <header className="brand-bar"><Image className="brand-logo" src="/map/branding/beaty-logo-stacked.svg" alt="Beaty Biodiversity Museum" width={55} height={64} priority /><span>Indoor map</span></header>
     <button className={`sidebar-toggle icon-button ${sidebarOpen ? "is-open" : ""}`} onClick={() => setSidebarOpen((value) => !value)} title={sidebarOpen ? "Close layers panel" : "Open layers panel"}>{sidebarOpen ? <ChevronLeft /> : <ChevronRight />}</button>
     <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
       <section className="place-search">
-        <div className="search-wrap"><Search size={ICON_SIZE.search} /><input value={query} onChange={(event) => setQuery(event.target.value)} onFocus={() => { setKeyboardTarget("search"); setKeyboardOpen(true); }} inputMode="none" autoComplete="off" placeholder="Search places or exhibit text" aria-label="Search places or exhibit text" />{query && <button className="clear-button" onClick={() => setQuery("")} title="Clear search"><X size={ICON_SIZE.clear} /></button>}</div>
+        <div className="search-wrap"><Search size={ICON_SIZE.search} /><input value={query} onKeyDown={handlePhysicalTyping} onCompositionStart={() => setKeyboardOpen(false)} onChange={(event) => setQuery(event.target.value)} onFocus={() => { setKeyboardTarget("search"); }} inputMode="none" autoComplete="off" placeholder="Search places or exhibit text" aria-label="Search places or exhibit text" /><button type="button" className="keyboard-toggle" aria-label={keyboardOpen && keyboardTarget === "search" ? "Hide search keyboard" : "Show search keyboard"} title={keyboardOpen && keyboardTarget === "search" ? "Hide search keyboard" : "Show search keyboard"} aria-expanded={keyboardOpen && keyboardTarget === "search"} aria-controls="virtual-keyboard" onClick={() => { setKeyboardTarget("search"); setKeyboardOpen((current) => keyboardTarget === "search" ? !current : true); }}><Keyboard size={20} /></button>{query && <button className="clear-button" onClick={() => setQuery("")} title="Clear search"><X size={ICON_SIZE.clear} /></button>}</div>
         {query && <div className="search-results">{matches.length ? matches.map(({ feature, document }) => {
           const snippet = searchSnippet(document, searchResultTokens);
           return <div className="search-result" key={`${feature.properties.viewer_layer}-${feature.id}`}>
@@ -930,7 +1086,7 @@ export default function Viewer() {
         <label><input type="checkbox" checked={showNavigationDebug} onChange={() => setShowNavigationDebug((value) => !value)} /><i style={{ background: MAP_LAYERS.navigationDebug.lineColor }} /><span>Navigation</span><small>{navigationData?.features.length || 0}</small></label>
       </div></section>
       <p className="usage-notice">Anonymous searches, routes and exhibit interactions are recorded to improve this map.</p>
-      <button className="report-problem-button" onClick={openReport}><Flag size={16} />Report a problem</button>
+      <div className="map-feedback-actions"><button className="report-problem-button" onClick={openReport}><Flag size={16} />Report a problem</button><button className="report-problem-button" onClick={startDrawing} disabled={loading}><MapPin size={16} />Add to map</button></div>
       <section><div className="section-title"><Building2 size={ICON_SIZE.section} /><h2>Level</h2></div><div className="segments">{LEVELS.map((level) => <button className={activeLevel === level.id ? "active" : ""} key={level.id} onClick={() => setActiveLevel(level.id)}>{level.label}</button>)}</div></section>
     </aside>
     <button className="locate-button icon-button" onClick={() => mapRef.current && fitLevelExtents(mapRef.current, data, MAP.flyDurationMs)} title="Return to museum"><LocateFixed /></button>
@@ -968,19 +1124,22 @@ export default function Viewer() {
     </aside>}
     {report && <div className="report-overlay" role="dialog" aria-modal="true" aria-labelledby="report-title">
       <div className="report-dialog">
-        <div className="report-head"><div><small>Visitor feedback</small><h2 id="report-title">Report a problem</h2></div><button className="icon-button" onClick={closeReport} title="Close report form"><X /></button></div>
+        <div className="report-head"><div><small>{report.geometry ? "New map feature" : "Visitor feedback"}</small><h2 id="report-title">{report.geometry ? "Add to map" : "Report a problem"}</h2></div><button className="icon-button" onClick={closeReport} title={report.geometry ? "Close feature form" : "Close report form"}><X /></button></div>
         {report.step === "edit" && <div className="report-content">
-          <div className="report-context"><strong>{report.feature ? nameOf(report.feature) : "General map report"}</strong><span>{report.feature ? `Selected ${report.feature.properties.viewer_layer || "feature"}` : "No map feature selected"}</span></div>
-          <fieldset><legend>What kind of problem is this?</legend><div className="report-types">{REPORT_TYPES.map((type) => <button type="button" className={report.issueType === type.id ? "active" : ""} aria-pressed={report.issueType === type.id} key={type.id} onClick={() => setReport((current) => ({ ...current, issueType: type.id }))}>{type.label}</button>)}</div></fieldset>
-          <label className="report-description"><span>What should we know?</span><textarea value={report.description} maxLength={1000} inputMode="none" placeholder="Describe what is wrong and what you expected to see." onChange={(event) => setReport((current) => ({ ...current, description: event.target.value }))} onFocus={() => { setKeyboardTarget("report"); setKeyboardOpen(true); }} /><small>{report.description.length}/1000</small></label>
-          <div className="report-actions"><button onClick={closeReport}>Cancel</button><button disabled={report.description.trim().length < 10} onClick={() => { setKeyboardOpen(false); setReport((current) => ({ ...current, step: "review" })); }}>Review report</button></div>
+          {report.geometry && <div className="report-context"><strong>{drawingSummary(report.geometry)}</strong><DrawingPreview geometry={report.geometry} mapData={renderData} icon={report.icon} referencePoint={report.referencePoint} /><span>Level: {report.levelId === "all" ? "All levels" : report.levelId}. Submitted for review before appearing on the map.</span><button type="button" className="edit-drawing-button" onClick={() => { setReferencePoint(report.referencePoint || null); setSettingReference(false); setDrawing({ type: report.geometry.type, coordinates: drawingVertices(report.geometry), levelId: report.levelId, draftReport: report }); setReport(null); setKeyboardOpen(false); }}>Edit drawing</button></div>}
+          {report.geometry?.type === "Point" && <fieldset><legend>Choose a map icon (optional)</legend><div className="map-icon-picker"><button type="button" aria-pressed={!report.icon} className={!report.icon ? "active" : ""} onClick={() => setReport((current) => ({ ...current, icon: "" }))}>No icon</button>{MAP_ICON_OPTIONS.map((option) => <button type="button" key={option.id} aria-pressed={report.icon === option.id} className={report.icon === option.id ? "active" : ""} onClick={() => setReport((current) => ({ ...current, icon: option.id }))}><img src={option.url} alt="" width={32} height={32} /><span>{option.label}</span></button>)}</div></fieldset>}
+          {!report.geometry && <div className="report-context"><strong>{report.feature ? nameOf(report.feature) : "General map report"}</strong><span>{report.feature ? `Selected ${report.feature.properties.viewer_layer || "feature"}` : "No map feature selected"}</span></div>}
+          {!report.geometry && <fieldset><legend>What kind of problem is this?</legend><div className="report-types">{REPORT_TYPES.map((type) => <button type="button" className={report.issueType === type.id ? "active" : ""} aria-pressed={report.issueType === type.id} key={type.id} onClick={() => setReport((current) => ({ ...current, issueType: type.id }))}>{type.label}</button>)}</div></fieldset>}
+          <div className="description-keyboard-control"><button type="button" className="keyboard-toggle" aria-label={keyboardOpen && keyboardTarget === "report" ? "Hide description keyboard" : "Show description keyboard"} title={keyboardOpen && keyboardTarget === "report" ? "Hide description keyboard" : "Show description keyboard"} aria-expanded={keyboardOpen && keyboardTarget === "report"} aria-controls="virtual-keyboard" onClick={() => { setKeyboardTarget("report"); setKeyboardOpen((current) => keyboardTarget === "report" ? !current : true); }}><Keyboard size={20} /></button></div>
+          <label className="report-description"><span>{report.geometry ? "Describe your feature" : "What should we know?"}</span><textarea onKeyDown={handlePhysicalTyping} onCompositionStart={() => setKeyboardOpen(false)} value={report.description} maxLength={1000} inputMode="none" placeholder={report.geometry ? "Name and describe the feature you would like to add." : "Describe what is wrong and what you expected to see."} onChange={(event) => setReport((current) => ({ ...current, description: event.target.value }))} onFocus={() => { setKeyboardTarget("report"); }} /><small>{report.description.length}/1000</small></label>
+          <div className="report-actions"><button onClick={closeReport}>Cancel</button><button disabled={report.description.trim().length < 10} onClick={() => { setKeyboardOpen(false); setReport((current) => ({ ...current, step: "review" })); }}>{report.geometry ? "Review feature" : "Review report"}</button></div>
         </div>}
-        {report.step === "review" && <div className="report-content report-review"><p><strong>Issue type</strong><span>{REPORT_TYPES.find(({ id }) => id === report.issueType)?.label}</span></p><p><strong>Map context</strong><span>{report.feature ? nameOf(report.feature) : "General map"}</span></p><p><strong>Description</strong><span>{report.description}</span></p>{reportError && <div className="report-error" role="alert">{reportError}</div>}<div className="report-actions"><button disabled={reportSubmitting} onClick={() => setReport((current) => ({ ...current, step: "edit" }))}>Back</button><button disabled={reportSubmitting} onClick={submitReport}>{reportSubmitting ? "Submitting…" : "Submit report"}</button></div></div>}
-        {report.step === "success" && <div className="report-content report-success"><Flag /><h3>Thank you</h3><p>Your report was submitted as issue #{report.result.number}.</p><button onClick={closeReport}>Done</button></div>}
+        {report.step === "review" && <div className="report-content report-review">{report.geometry && <DrawingPreview geometry={report.geometry} mapData={renderData} icon={report.icon} referencePoint={report.referencePoint} />}{report.geometry && <p><strong>Drawing</strong><span>{drawingSummary(report.geometry)} · Level: {report.levelId}</span></p>}{report.geometry?.type === "Point" && <p><strong>Map icon</strong><span>{mapIconOption(report.icon)?.label || "No icon"}</span></p>}{!report.geometry && <><p><strong>Issue type</strong><span>{REPORT_TYPES.find(({ id }) => id === report.issueType)?.label}</span></p><p><strong>Map context</strong><span>{report.feature ? nameOf(report.feature) : "General map"}</span></p></>}<p><strong>Description</strong><span>{report.description}</span></p>{reportError && <div className="report-error" role="alert">{reportError}</div>}<div className="report-actions"><button disabled={reportSubmitting} onClick={() => setReport((current) => ({ ...current, step: "edit" }))}>Back</button><button disabled={reportSubmitting} onClick={submitReport}>{reportSubmitting ? "Submitting…" : report.geometry ? "Submit feature" : "Submit report"}</button></div></div>}
+        {report.step === "success" && <div className="report-content report-success">{report.geometry ? <MapPin /> : <Flag />}<h3>Thank you</h3><p>{report.geometry ? `Your feature was submitted for review (#${report.result.number}). It will appear on the map after approval.` : `Your report was submitted as issue #${report.result.number}.`}</p><button onClick={closeReport}>Done</button></div>}
       </div>
     </div>}
-    {keyboardOpen && <section className="virtual-keyboard" aria-label={`On-screen ${keyboardTarget === "report" ? "report" : "search"} keyboard`}>
-      <div className="keyboard-head"><strong>{keyboardTarget === "report" ? "Description keyboard" : "Search keyboard"}</strong><button onClick={() => setKeyboardOpen(false)} aria-label="Close keyboard"><X /></button></div>
+    {keyboardOpen && <section id="virtual-keyboard" className="virtual-keyboard" aria-label={`On-screen ${keyboardTarget === "report" ? "description" : "search"} keyboard`}>
+      <div className="keyboard-head"><strong>{keyboardTarget === "report" ? "Description keyboard" : "Search keyboard"}</strong><button onClick={() => setKeyboardOpen(false)} aria-label="Hide keyboard" title="Hide keyboard"><Keyboard size={20} /></button></div>
       {KEYBOARD_ROWS.map((row, index) => <div className={`keyboard-row keyboard-row-${index}`} key={index}>{row.map((key) => <button key={key} onPointerDown={(event) => event.preventDefault()} onClick={() => applyKeyboardKey(virtualKeyWithCaps(key, keyboardCaps))}>{key}</button>)}</div>)}
       <div className="keyboard-row keyboard-actions"><button className={keyboardCaps ? "caps-key active" : "caps-key"} aria-pressed={keyboardCaps} onClick={() => setKeyboardCaps((value) => !value)}>Caps</button><button onClick={() => applyKeyboardKey("clear")}>Clear</button><button className="space-key" onClick={() => applyKeyboardKey("space")}>Space</button><button onClick={() => applyKeyboardKey("backspace")}>⌫</button><button onClick={() => setKeyboardOpen(false)}>Done</button></div>
     </section>}

@@ -116,6 +116,32 @@ giving visitors access to GitHub credentials or arbitrary issue fields. Configur
 on this repository. `GITHUB_ISSUE_REPOSITORY` selects the fixed destination and
 defaults to `beatybiodiversitymuseum/indoor-mapping`.
 
+The adjacent **Add to map** button opens a **Draw on map** overlay. Visitors can
+place a point or tap successive polyline or polygon vertices, undo, and finish the
+drawing. **Next: add details** closes polygon outlines and opens the details form, where
+visitors adding a point can choose an optional feature or amenity icon.
+Polylines and polygons use their drawn geometry without an icon. The selected
+icon appears in the preview and is saved with the proposed feature in the issue. The overlay shows approximate
+length in metres, or polygon area in square metres and perimeter; measurements
+are also included in the review and submitted issue. Segment distances and totals
+appear on hover over their point or line, keeping the map clear otherwise.
+**Set reference point** places a separate anchor without changing the drawing.
+Every drawn point or vertex is measured from that anchor with dashed guide lines
+and distance labels shown on hover. **Unset reference point** removes the anchor and
+measurements while preserving the drawing. Submissions retain the reference and
+each vertex's east/north offsets and distance in metres.
+Search and description fields have a keyboard icon to show or hide the on-screen
+keyboard. The keyboard header has the same icon to collapse it. Focusing either
+field does not force the keyboard open. Typing on a physical keyboard collapses
+the on-screen keyboard automatically.
+Drag any placed point or vertex to reposition it, including the reference anchor
+and drawn vertices. Lines, polygon outlines, and measurement labels update
+while dragging; dragging does not add a new point.
+They can describe the feature, edit the drawing, and review the submission before
+sending it through the same reporting endpoint. The issue includes the proposed
+GeoJSON geometry and current level for maintainer review. Additions do not appear
+on the published map automatically.
+
 Reports receive only the `needs review` label so the map-data ingestion workflow
 cannot process visitor text before a maintainer reviews it. The persistent
 per-session submission limit defaults to five reports per hour and can be changed

@@ -10,14 +10,14 @@ export async function POST(request) {
     assertIssueReportAllowed(report.sessionId);
   } catch (error) {
     const rateLimited = error?.message === "Report rate limit exceeded";
-    return Response.json({ error: rateLimited ? "Too many reports have been submitted. Please try again later." : error?.message || "Invalid report" }, { status: rateLimited ? 429 : 400 });
+    return Response.json({ error: rateLimited ? "Too many submissions have been made. Please try again later." : error?.message || "Invalid report" }, { status: rateLimited ? 429 : 400 });
   }
 
   const token = process.env.GITHUB_ISSUE_TOKEN;
   const repository = process.env.GITHUB_ISSUE_REPOSITORY || "beatybiodiversitymuseum/indoor-mapping";
   if (!token || !/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository)) {
     console.error("GitHub issue reporting is not configured");
-    return Response.json({ error: "Problem reporting is temporarily unavailable." }, { status: 503 });
+    return Response.json({ error: "Submissions are temporarily unavailable." }, { status: 503 });
   }
 
   recordIssueReportAttempt(report.sessionId, "started");
@@ -37,6 +37,6 @@ export async function POST(request) {
     return Response.json({ number: issue.number });
   } catch (error) {
     console.error("Unable to create GitHub issue", error);
-    return Response.json({ error: "The report could not be submitted. Please try again." }, { status: 502 });
+    return Response.json({ error: "The submission could not be sent. Please try again." }, { status: 502 });
   }
 }
