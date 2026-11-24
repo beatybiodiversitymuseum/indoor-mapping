@@ -79056,6 +79056,577 @@
         ],
         "review_status": "locally_confirmed"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Wall"
+        },
+        "alt_name": {
+          "en": "wall"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_fixture",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "unit_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/381",
+        "source_issue_number": 381,
+        "source_issue_title": "Location: Walls 1",
+        "confirmation_methods": [
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "NOT FINISHED MEASURING. DO NOT ADD TO MAP YET."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.2508659,
+              49.2631948
+            ],
+            [
+              -123.2507663,
+              49.2632419
+            ],
+            [
+              -123.2507628,
+              49.2632377
+            ],
+            [
+              -123.2507591,
+              49.2632389
+            ],
+            [
+              -123.2507627,
+              49.2632434
+            ],
+            [
+              -123.250729,
+              49.2632418
+            ],
+            [
+              -123.2506807,
+              49.2631843
+            ],
+            [
+              -123.2507178,
+              49.2631715
+            ],
+            [
+              -123.2507401,
+              49.263198
+            ],
+            [
+              -123.2507293,
+              49.2632018
+            ],
+            [
+              -123.2507448,
+              49.2632209
+            ],
+            [
+              -123.2507478,
+              49.2632199
+            ],
+            [
+              -123.2507349,
+              49.2632039
+            ],
+            [
+              -123.2507596,
+              49.2631954
+            ],
+            [
+              -123.2507727,
+              49.2632112
+            ],
+            [
+              -123.2507623,
+              49.2632148
+            ],
+            [
+              -123.2507637,
+              49.2632164
+            ],
+            [
+              -123.2507757,
+              49.2632122
+            ],
+            [
+              -123.2507528,
+              49.2631845
+            ],
+            [
+              -123.2507456,
+              49.2631871
+            ],
+            [
+              -123.2507292,
+              49.2631675
+            ],
+            [
+              -123.2507748,
+              49.2631515
+            ],
+            [
+              -123.250813,
+              49.2631977
+            ],
+            [
+              -123.2507909,
+              49.2632054
+            ],
+            [
+              -123.2507923,
+              49.2632071
+            ],
+            [
+              -123.2508207,
+              49.2631973
+            ],
+            [
+              -123.2506803,
+              49.2630273
+            ],
+            [
+              -123.2508329,
+              49.2629767
+            ],
+            [
+              -123.2512228,
+              49.2634398
+            ],
+            [
+              -123.2511836,
+              49.2634534
+            ],
+            [
+              -123.2509649,
+              49.2631868
+            ],
+            [
+              -123.2509519,
+              49.2631915
+            ],
+            [
+              -123.2511859,
+              49.2634677
+            ],
+            [
+              -123.251142,
+              49.2634848
+            ],
+            [
+              -123.2511491,
+              49.2634901
+            ],
+            [
+              -123.2512251,
+              49.2634637
+            ],
+            [
+              -123.2512203,
+              49.2634585
+            ],
+            [
+              -123.251201,
+              49.2634657
+            ],
+            [
+              -123.2511921,
+              49.2634574
+            ],
+            [
+              -123.2512319,
+              49.2634463
+            ],
+            [
+              -123.2512522,
+              49.2634738
+            ],
+            [
+              -123.2510775,
+              49.263534
+            ],
+            [
+              -123.2510261,
+              49.2634718
+            ],
+            [
+              -123.2511132,
+              49.2634393
+            ],
+            [
+              -123.2511066,
+              49.2634311
+            ],
+            [
+              -123.2502214,
+              49.2637375
+            ],
+            [
+              -123.2502319,
+              49.2637489
+            ],
+            [
+              -123.2501537,
+              49.2637764
+            ],
+            [
+              -123.2501612,
+              49.2637811
+            ],
+            [
+              -123.2502411,
+              49.2637526
+            ],
+            [
+              -123.2502328,
+              49.2637409
+            ],
+            [
+              -123.2510181,
+              49.2634749
+            ],
+            [
+              -123.2510767,
+              49.263543
+            ],
+            [
+              -123.2512663,
+              49.2634785
+            ],
+            [
+              -123.2508345,
+              49.2629681
+            ],
+            [
+              -123.2506664,
+              49.263024
+            ],
+            [
+              -123.2507725,
+              49.2631486
+            ],
+            [
+              -123.2506734,
+              49.2631832
+            ],
+            [
+              -123.2507239,
+              49.2632442
+            ],
+            [
+              -123.250716,
+              49.2632469
+            ],
+            [
+              -123.2507173,
+              49.2632486
+            ],
+            [
+              -123.2507183,
+              49.2632482
+            ],
+            [
+              -123.2508673,
+              49.2631965
+            ],
+            [
+              -123.2508659,
+              49.2631948
+            ]
+          ]
+        ]
+      },
+      "id": "9970c7d0-6ff9-528c-a461-99fa19611a2e",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Wall"
+        },
+        "alt_name": {
+          "en": "wall"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_fixture",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "unit_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/382",
+        "source_issue_number": 382,
+        "source_issue_title": "Location: Walls 2",
+        "confirmation_methods": [
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "NOT FINISHED MEASURING. DO NOT ADD TO MAP YET."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.250912,
+              49.2631188
+            ],
+            [
+              -123.2508237,
+              49.2630121
+            ],
+            [
+              -123.2507173,
+              49.2630519
+            ],
+            [
+              -123.2507117,
+              49.263044
+            ],
+            [
+              -123.2508282,
+              49.2630024
+            ],
+            [
+              -123.2509234,
+              49.2631143
+            ],
+            [
+              -123.250912,
+              49.2631188
+            ]
+          ]
+        ]
+      },
+      "id": "2ee0d0ae-5742-5ef9-9fe0-cb7d9585921e",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Wall"
+        },
+        "alt_name": {
+          "en": "wall"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_fixture",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "unit_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/383",
+        "source_issue_number": 383,
+        "source_issue_title": "Location: Walls 3",
+        "confirmation_methods": [
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "NOT FINISHED DRAWING YET. DO NOT ADD TO MAP."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.2509583,
+              49.2631437
+            ],
+            [
+              -123.250947,
+              49.263147
+            ],
+            [
+              -123.2511797,
+              49.2634202
+            ],
+            [
+              -123.2511918,
+              49.2634167
+            ],
+            [
+              -123.2509583,
+              49.2631437
+            ]
+          ]
+        ]
+      },
+      "id": "8e169f7f-0331-5d5b-899e-9375d976ba5a",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Wall"
+        },
+        "alt_name": {
+          "en": "wall"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_fixture",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "unit_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/384",
+        "source_issue_number": 384,
+        "source_issue_title": "Location: Walls 4",
+        "confirmation_methods": [
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "NOT FINISHED DRAWING. DO NOT ADD TO MAP YET."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.2506945,
+              49.2632562
+            ],
+            [
+              -123.2506918,
+              49.2632522
+            ],
+            [
+              -123.2499838,
+              49.2634948
+            ],
+            [
+              -123.2500024,
+              49.2635183
+            ],
+            [
+              -123.2500113,
+              49.2635181
+            ],
+            [
+              -123.249992,
+              49.2634965
+            ],
+            [
+              -123.2506945,
+              49.2632562
+            ]
+          ]
+        ]
+      },
+      "id": "0ba20094-5d41-550f-8013-07cfefb0ba92",
+      "feature_type": "fixture"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "furniture",
+        "accessibility": null,
+        "name": {
+          "en": "Wall"
+        },
+        "alt_name": {
+          "en": "wall"
+        },
+        "level_id": "41d0e8ca-d315-4b25-938c-7955db2daf2e",
+        "correlation_id": null,
+        "local_category": "issue_submitted_fixture",
+        "pedestrian_importance": true,
+        "visible_to_visitors": null,
+        "unit_ids": [],
+        "source": "GitHub issue",
+        "source_url": "https://github.com/beatybiodiversitymuseum/indoor-mapping/issues/385",
+        "source_issue_number": 385,
+        "source_issue_title": "Location: Walls 5",
+        "confirmation_methods": [
+          "Checked against a floor plan",
+          "Derived from existing wayfinding data"
+        ],
+        "confirmation_details": "",
+        "reference_points": "Physical location:\n\nRelated fixture, if any:\n\nPreferred viewing or arrival point, if different:\n\nMeasurements or other references:",
+        "contributor_notes": "NOT FINISHED DRAWING YET. DO NOT ADD TO MAP."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.2500084,
+              49.2635292
+            ],
+            [
+              -123.2500207,
+              49.2635258
+            ],
+            [
+              -123.2501845,
+              49.2637175
+            ],
+            [
+              -123.2501784,
+              49.26372
+            ],
+            [
+              -123.2501079,
+              49.2636353
+            ],
+            [
+              -123.2500558,
+              49.2636551
+            ],
+            [
+              -123.2501412,
+              49.2637612
+            ],
+            [
+              -123.2501333,
+              49.2637634
+            ],
+            [
+              -123.2500431,
+              49.2636509
+            ],
+            [
+              -123.2500972,
+              49.2636317
+            ],
+            [
+              -123.2500084,
+              49.2635292
+            ]
+          ]
+        ]
+      },
+      "id": "6a6201b5-39f6-5db2-9585-3a8c8e6e7b5e",
+      "feature_type": "fixture"
     }
   ]
 }
